@@ -1,0 +1,182 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "MemberID",
+          "DestinationColumn": "MemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicareBeneficiaryID",
+          "DestinationColumn": "MedicareBeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicaidID",
+          "DestinationColumn": "MedicaidID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanID",
+          "DestinationColumn": "PlanID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LastName",
+          "DestinationColumn": "LastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FirstName",
+          "DestinationColumn": "FirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MiddleInitial",
+          "DestinationColumn": "MiddleInitial",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DateOfBirth",
+          "DestinationColumn": "DateOfBirth",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Gender",
+          "DestinationColumn": "Gender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SuspectedHCC",
+          "DestinationColumn": "SuspectedHCC",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HCCType",
+          "DestinationColumn": "HCCType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HCCVersion",
+          "DestinationColumn": "HCCVersion",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EvidenceCodeValue",
+          "DestinationColumn": "EvidenceCodeValue",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EvidenceCodeType",
+          "DestinationColumn": "EvidenceCodeType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EvidenceCodeDescription",
+          "DestinationColumn": "EvidenceCodeDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EvidenceDateOfService",
+          "DestinationColumn": "EvidenceDateOfService",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EvidenceCodeResult",
+          "DestinationColumn": "EvidenceCodeResult",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EvidenceIdentifier",
+          "DestinationColumn": "EvidenceIdentifier",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProbabilityScore",
+          "DestinationColumn": "ProbabilityScore",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SourceName",
+          "DestinationColumn": "SourceName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "GapYear",
+          "DestinationColumn": "GapYear",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "GapType",
+          "DestinationColumn": "GapType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RAGain",
+          "DestinationColumn": "RAGain",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

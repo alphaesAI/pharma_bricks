@@ -1,0 +1,114 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MBI",
+      "OrdinalPosition": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "MemberID",
+      "OrdinalPosition": 1,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "DOB",
+      "OrdinalPosition": 2,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "ddMMMyyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "Gender",
+      "OrdinalPosition": 3,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "LIS",
+      "OrdinalPosition": 4,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "EnrollmentStart",
+      "OrdinalPosition": 5,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "ddMMMyyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "EnrollmentEnd",
+      "OrdinalPosition": 6,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "ddMMMyyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "SUPDNumeratorFlag",
+      "OrdinalPosition": 7,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    }
+  ]
+}

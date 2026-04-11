@@ -1,0 +1,112 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Format": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "PlanMemberID",
+            "OrdinalPosition": "1",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "GenderCode",
+            "OrdinalPosition": "2",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "MemberAge",
+            "OrdinalPosition": "3",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "RiskAdjustmentFactorTypeCode",
+            "OrdinalPosition": "4",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MedicaidIndicator",
+            "OrdinalPosition": "5",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OREC",
+            "OrdinalPosition": "6",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MedicaidDualStatusCode",
+            "OrdinalPosition": "7",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Hospice",
+            "OrdinalPosition": "8",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ESRD",
+            "OrdinalPosition": "9",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "IsLatest",
+            "OrdinalPosition": "10",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DemographicRiskAdjustmentFactor",
+            "OrdinalPosition": "11",
+            "DataType": "decimal(6,3)",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                },
+                {
+                    "Name": "isDataTypeNotRequired",
+                    "Value": "decimal(6,3)"
+                }
+            ]
+        },
+        {
+            "FieldName": "ProgramYear",
+            "OrdinalPosition": "12",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProgramYearMonth",
+            "OrdinalPosition": "13",
+            "DataType": "string"
+        }
+    ]
+}

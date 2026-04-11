@@ -1,0 +1,3001 @@
+{
+    "RecordTypes": [
+        {
+            "Type": "C",
+            "TempViewName": "DetailCData",
+            "ColumnNames": [
+                {
+                    "FieldName": "RecordType",
+                    "OrdinalPosition": 1
+                },
+                {
+                    "FieldName": "EncounterICN",
+                    "OrdinalPosition": 2
+                },
+                {
+                    "FieldName": "CMSContractNumber",
+                    "OrdinalPosition": 3
+                },
+                {
+                    "FieldName": "BillingProviderLastOrOrg",
+                    "OrdinalPosition": 4
+                },
+                {
+                    "FieldName": "BillingProviderFirstName",
+                    "OrdinalPosition": 5
+                },
+                {
+                    "FieldName": "BillingProviderMiddleName",
+                    "OrdinalPosition": 6
+                },
+                {
+                    "FieldName": "BillingProviderNameSuffix",
+                    "OrdinalPosition": 7
+                },
+                {
+                    "FieldName": "BillingProviderNPI",
+                    "OrdinalPosition": 8
+                },
+                {
+                    "FieldName": "BillingProviderAddressLine1",
+                    "OrdinalPosition": 9
+                },
+                {
+                    "FieldName": "BillingProviderAddressLine2",
+                    "OrdinalPosition": 10
+                },
+                {
+                    "FieldName": "BillingProviderCity",
+                    "OrdinalPosition": 11
+                },
+                {
+                    "FieldName": "BillingProviderState",
+                    "OrdinalPosition": 12
+                },
+                {
+                    "FieldName": "BillingProviderZip",
+                    "OrdinalPosition": 13
+                },
+                {
+                    "FieldName": "BillingProviderTIN",
+                    "OrdinalPosition": 14
+                },
+                {
+                    "FieldName": "MemberLastName",
+                    "OrdinalPosition": 15
+                },
+                {
+                    "FieldName": "MemberFirstName",
+                    "OrdinalPosition": 16
+                },
+                {
+                    "FieldName": "MemberMiddleName",
+                    "OrdinalPosition": 17
+                },
+                {
+                    "FieldName": "MemberNameSuffix",
+                    "OrdinalPosition": 18
+                },
+                {
+                    "FieldName": "HICNumber",
+                    "OrdinalPosition": 19
+                },
+                {
+                    "FieldName": "MemberAddress1",
+                    "OrdinalPosition": 20
+                },
+                {
+                    "FieldName": "MemberAddress2",
+                    "OrdinalPosition": 21
+                },
+                {
+                    "FieldName": "MemberCity",
+                    "OrdinalPosition": 22
+                },
+                {
+                    "FieldName": "MemberState",
+                    "OrdinalPosition": 23
+                },
+                {
+                    "FieldName": "MemberZip",
+                    "OrdinalPosition": 24
+                },
+                {
+                    "FieldName": "MemberCountry",
+                    "OrdinalPosition": 25
+                },
+                {
+                    "FieldName": "MemberCountrySubdivision",
+                    "OrdinalPosition": 26
+                },
+                {
+                    "FieldName": "MemberDOB",
+                    "OrdinalPosition": 27
+                },
+                {
+                    "FieldName": "MemberGender",
+                    "OrdinalPosition": 28
+                },
+                {
+                    "FieldName": "PropCasualty",
+                    "OrdinalPosition": 29
+                },
+                {
+                    "FieldName": "BilledAmount",
+                    "OrdinalPosition": 30
+                },
+                {
+                    "FieldName": "PlaceOfService",
+                    "OrdinalPosition": 31
+                },
+                {
+                    "FieldName": "FrequencyTypeCd",
+                    "OrdinalPosition": 32
+                },
+                {
+                    "FieldName": "PrvSignFile",
+                    "OrdinalPosition": 33
+                },
+                {
+                    "FieldName": "PrvAcceptAssignCd",
+                    "OrdinalPosition": 34
+                },
+                {
+                    "FieldName": "BeneAssignCertInd",
+                    "OrdinalPosition": 35
+                },
+                {
+                    "FieldName": "ReleaseOfInfoCd",
+                    "OrdinalPosition": 36
+                },
+                {
+                    "FieldName": "PatientSignSrcCd",
+                    "OrdinalPosition": 37
+                },
+                {
+                    "FieldName": "AutoAccidentInd",
+                    "OrdinalPosition": 38
+                },
+                {
+                    "FieldName": "EmploymentAccidentInd",
+                    "OrdinalPosition": 39
+                },
+                {
+                    "FieldName": "OtherAccidentInd",
+                    "OrdinalPosition": 40
+                },
+                {
+                    "FieldName": "SpcPrgCd",
+                    "OrdinalPosition": 41
+                },
+                {
+                    "FieldName": "DelayReasonCd",
+                    "OrdinalPosition": 42
+                },
+                {
+                    "FieldName": "OnsetDate",
+                    "OrdinalPosition": 43
+                },
+                {
+                    "FieldName": "InitialTreatmentDate",
+                    "OrdinalPosition": 44
+                },
+                {
+                    "FieldName": "LastSeen",
+                    "OrdinalPosition": 45
+                },
+                {
+                    "FieldName": "AccuteMan",
+                    "OrdinalPosition": 46
+                },
+                {
+                    "FieldName": "AccidentDt",
+                    "OrdinalPosition": 47
+                },
+                {
+                    "FieldName": "MenPrd",
+                    "OrdinalPosition": 48
+                },
+                {
+                    "FieldName": "LastXray",
+                    "OrdinalPosition": 49
+                },
+                {
+                    "FieldName": "HVPDate",
+                    "OrdinalPosition": 50
+                },
+                {
+                    "FieldName": "DisabStart",
+                    "OrdinalPosition": 51
+                },
+                {
+                    "FieldName": "DisabEnd",
+                    "OrdinalPosition": 52
+                },
+                {
+                    "FieldName": "LastWrkd",
+                    "OrdinalPosition": 53
+                },
+                {
+                    "FieldName": "RtnWork",
+                    "OrdinalPosition": 54
+                },
+                {
+                    "FieldName": "HospAdmitDt",
+                    "OrdinalPosition": 55
+                },
+                {
+                    "FieldName": "HospDischargeDt",
+                    "OrdinalPosition": 56
+                },
+                {
+                    "FieldName": "AssmDate",
+                    "OrdinalPosition": 57
+                },
+                {
+                    "FieldName": "RLQDate",
+                    "OrdinalPosition": 58
+                },
+                {
+                    "FieldName": "PropCasualtyDate",
+                    "OrdinalPosition": 59
+                },
+                {
+                    "FieldName": "RepricerReceivedDate",
+                    "OrdinalPosition": 60
+                },
+                {
+                    "FieldName": "SuppInfo0101",
+                    "OrdinalPosition": 61
+                },
+                {
+                    "FieldName": "SuppInfo0102",
+                    "OrdinalPosition": 62
+                },
+                {
+                    "FieldName": "SuppInfo0106",
+                    "OrdinalPosition": 63
+                },
+                {
+                    "FieldName": "SuppInfo0201",
+                    "OrdinalPosition": 64
+                },
+                {
+                    "FieldName": "SuppInfo0202",
+                    "OrdinalPosition": 65
+                },
+                {
+                    "FieldName": "SuppInfo0206",
+                    "OrdinalPosition": 66
+                },
+                {
+                    "FieldName": "SuppInfo0301",
+                    "OrdinalPosition": 67
+                },
+                {
+                    "FieldName": "SuppInfo0302",
+                    "OrdinalPosition": 68
+                },
+                {
+                    "FieldName": "SuppInfo0306",
+                    "OrdinalPosition": 69
+                },
+                {
+                    "FieldName": "SuppInfo0401",
+                    "OrdinalPosition": 70
+                },
+                {
+                    "FieldName": "SuppInfo0402",
+                    "OrdinalPosition": 71
+                },
+                {
+                    "FieldName": "SuppInfo0406",
+                    "OrdinalPosition": 72
+                },
+                {
+                    "FieldName": "SuppInfo0501",
+                    "OrdinalPosition": 73
+                },
+                {
+                    "FieldName": "SuppInfo0502",
+                    "OrdinalPosition": 74
+                },
+                {
+                    "FieldName": "SuppInfo0506",
+                    "OrdinalPosition": 75
+                },
+                {
+                    "FieldName": "SuppInfo0601",
+                    "OrdinalPosition": 76
+                },
+                {
+                    "FieldName": "SuppInfo0602",
+                    "OrdinalPosition": 77
+                },
+                {
+                    "FieldName": "SuppInfo0606",
+                    "OrdinalPosition": 78
+                },
+                {
+                    "FieldName": "SuppInfo0701",
+                    "OrdinalPosition": 79
+                },
+                {
+                    "FieldName": "SuppInfo0702",
+                    "OrdinalPosition": 80
+                },
+                {
+                    "FieldName": "SuppInfo0706",
+                    "OrdinalPosition": 81
+                },
+                {
+                    "FieldName": "SuppInfo0801",
+                    "OrdinalPosition": 82
+                },
+                {
+                    "FieldName": "SuppInfo0802",
+                    "OrdinalPosition": 83
+                },
+                {
+                    "FieldName": "SuppInfo0806",
+                    "OrdinalPosition": 84
+                },
+                {
+                    "FieldName": "SuppInfo0901",
+                    "OrdinalPosition": 85
+                },
+                {
+                    "FieldName": "SuppInfo0902",
+                    "OrdinalPosition": 86
+                },
+                {
+                    "FieldName": "SuppInfo0906",
+                    "OrdinalPosition": 87
+                },
+                {
+                    "FieldName": "SuppInfo1001",
+                    "OrdinalPosition": 88
+                },
+                {
+                    "FieldName": "SuppInfo1002",
+                    "OrdinalPosition": 89
+                },
+                {
+                    "FieldName": "SuppInfo1006",
+                    "OrdinalPosition": 90
+                },
+                {
+                    "FieldName": "ContractTypeCd02",
+                    "OrdinalPosition": 91
+                },
+                {
+                    "FieldName": "Contractamt",
+                    "OrdinalPosition": 92
+                },
+                {
+                    "FieldName": "ContractPrcnt",
+                    "OrdinalPosition": 93
+                },
+                {
+                    "FieldName": "ContractCode",
+                    "OrdinalPosition": 94
+                },
+                {
+                    "FieldName": "ContractDiscnt",
+                    "OrdinalPosition": 95
+                },
+                {
+                    "FieldName": "ContractVer",
+                    "OrdinalPosition": 96
+                },
+                {
+                    "FieldName": "SrvAuthExcptCode",
+                    "OrdinalPosition": 97
+                },
+                {
+                    "FieldName": "MamCertNum",
+                    "OrdinalPosition": 98
+                },
+                {
+                    "FieldName": "ReferralNum",
+                    "OrdinalPosition": 99
+                },
+                {
+                    "FieldName": "AuthNum",
+                    "OrdinalPosition": 100
+                },
+                {
+                    "FieldName": "OrigClaimNum",
+                    "OrdinalPosition": 101
+                },
+                {
+                    "FieldName": "CLIANum",
+                    "OrdinalPosition": 102
+                },
+                {
+                    "FieldName": "ReprcRef",
+                    "OrdinalPosition": 103
+                },
+                {
+                    "FieldName": "AdjReprcRef",
+                    "OrdinalPosition": 104
+                },
+                {
+                    "FieldName": "InvDevNum",
+                    "OrdinalPosition": 105
+                },
+                {
+                    "FieldName": "TraceNum",
+                    "OrdinalPosition": 106
+                },
+                {
+                    "FieldName": "K301",
+                    "OrdinalPosition": 107
+                },
+                {
+                    "FieldName": "K302",
+                    "OrdinalPosition": 108
+                },
+                {
+                    "FieldName": "K303",
+                    "OrdinalPosition": 109
+                },
+                {
+                    "FieldName": "K304",
+                    "OrdinalPosition": 110
+                },
+                {
+                    "FieldName": "K305",
+                    "OrdinalPosition": 111
+                },
+                {
+                    "FieldName": "K306",
+                    "OrdinalPosition": 112
+                },
+                {
+                    "FieldName": "K307",
+                    "OrdinalPosition": 113
+                },
+                {
+                    "FieldName": "K308",
+                    "OrdinalPosition": 114
+                },
+                {
+                    "FieldName": "K309",
+                    "OrdinalPosition": 115
+                },
+                {
+                    "FieldName": "K310",
+                    "OrdinalPosition": 116
+                },
+                {
+                    "FieldName": "Nte0101",
+                    "OrdinalPosition": 117
+                },
+                {
+                    "FieldName": "Nte0102",
+                    "OrdinalPosition": 118
+                },
+                {
+                    "FieldName": "Nte0201",
+                    "OrdinalPosition": 119
+                },
+                {
+                    "FieldName": "Nte0202",
+                    "OrdinalPosition": 120
+                },
+                {
+                    "FieldName": "Nte0301",
+                    "OrdinalPosition": 121
+                },
+                {
+                    "FieldName": "Nte0302",
+                    "OrdinalPosition": 122
+                },
+                {
+                    "FieldName": "Nte0401",
+                    "OrdinalPosition": 123
+                },
+                {
+                    "FieldName": "Nte0402",
+                    "OrdinalPosition": 124
+                },
+                {
+                    "FieldName": "Nte0501",
+                    "OrdinalPosition": 125
+                },
+                {
+                    "FieldName": "Nte0502",
+                    "OrdinalPosition": 126
+                },
+                {
+                    "FieldName": "Nte0601",
+                    "OrdinalPosition": 127
+                },
+                {
+                    "FieldName": "Nte0602",
+                    "OrdinalPosition": 128
+                },
+                {
+                    "FieldName": "Nte0701",
+                    "OrdinalPosition": 129
+                },
+                {
+                    "FieldName": "Nte0702",
+                    "OrdinalPosition": 130
+                },
+                {
+                    "FieldName": "Nte0801",
+                    "OrdinalPosition": 131
+                },
+                {
+                    "FieldName": "Nte0802",
+                    "OrdinalPosition": 132
+                },
+                {
+                    "FieldName": "Nte0901",
+                    "OrdinalPosition": 133
+                },
+                {
+                    "FieldName": "Nte0902",
+                    "OrdinalPosition": 134
+                },
+                {
+                    "FieldName": "Nte1001",
+                    "OrdinalPosition": 135
+                },
+                {
+                    "FieldName": "Nte1002",
+                    "OrdinalPosition": 136
+                },
+                {
+                    "FieldName": "PatWght",
+                    "OrdinalPosition": 137
+                },
+                {
+                    "FieldName": "AmbulTransRsn",
+                    "OrdinalPosition": 138
+                },
+                {
+                    "FieldName": "AmbulMiles",
+                    "OrdinalPosition": 139
+                },
+                {
+                    "FieldName": "AmbulPurpose",
+                    "OrdinalPosition": 140
+                },
+                {
+                    "FieldName": "AmbulStretcher",
+                    "OrdinalPosition": 141
+                },
+                {
+                    "FieldName": "SpinalPtCond",
+                    "OrdinalPosition": 142
+                },
+                {
+                    "FieldName": "SpinalPtCondDes1",
+                    "OrdinalPosition": 143
+                },
+                {
+                    "FieldName": "SpinalPtCondDes2",
+                    "OrdinalPosition": 144
+                },
+                {
+                    "FieldName": "AmbulCert0102",
+                    "OrdinalPosition": 145
+                },
+                {
+                    "FieldName": "AmbulCertCond0103",
+                    "OrdinalPosition": 146
+                },
+                {
+                    "FieldName": "AmbulCertCond0104",
+                    "OrdinalPosition": 147
+                },
+                {
+                    "FieldName": "AmbulCertCond0105",
+                    "OrdinalPosition": 148
+                },
+                {
+                    "FieldName": "AmbulCertCond0106",
+                    "OrdinalPosition": 149
+                },
+                {
+                    "FieldName": "AmbulCertCond0107",
+                    "OrdinalPosition": 150
+                },
+                {
+                    "FieldName": "AmbulCert0202",
+                    "OrdinalPosition": 151
+                },
+                {
+                    "FieldName": "AmbulCertCond0203",
+                    "OrdinalPosition": 152
+                },
+                {
+                    "FieldName": "AmbulCertCond0204",
+                    "OrdinalPosition": 153
+                },
+                {
+                    "FieldName": "AmbulCertCond0205",
+                    "OrdinalPosition": 154
+                },
+                {
+                    "FieldName": "AmbulCertCond0206",
+                    "OrdinalPosition": 155
+                },
+                {
+                    "FieldName": "AmbulCertCond0207",
+                    "OrdinalPosition": 156
+                },
+                {
+                    "FieldName": "AmbulCert0302",
+                    "OrdinalPosition": 157
+                },
+                {
+                    "FieldName": "AmbulCertCond0303",
+                    "OrdinalPosition": 158
+                },
+                {
+                    "FieldName": "AmbulCertCond0304",
+                    "OrdinalPosition": 159
+                },
+                {
+                    "FieldName": "AmbulCertCond0305",
+                    "OrdinalPosition": 160
+                },
+                {
+                    "FieldName": "AmbulCertCond0306",
+                    "OrdinalPosition": 161
+                },
+                {
+                    "FieldName": "AmbulCertCond0307",
+                    "OrdinalPosition": 162
+                },
+                {
+                    "FieldName": "Vision0101",
+                    "OrdinalPosition": 163
+                },
+                {
+                    "FieldName": "Vision0102",
+                    "OrdinalPosition": 164
+                },
+                {
+                    "FieldName": "Vision0103",
+                    "OrdinalPosition": 165
+                },
+                {
+                    "FieldName": "Vision0104",
+                    "OrdinalPosition": 166
+                },
+                {
+                    "FieldName": "Vision0105",
+                    "OrdinalPosition": 167
+                },
+                {
+                    "FieldName": "Vision0106",
+                    "OrdinalPosition": 168
+                },
+                {
+                    "FieldName": "Vision0107",
+                    "OrdinalPosition": 169
+                },
+                {
+                    "FieldName": "Vision0201",
+                    "OrdinalPosition": 170
+                },
+                {
+                    "FieldName": "Vision0202",
+                    "OrdinalPosition": 171
+                },
+                {
+                    "FieldName": "Vision0203",
+                    "OrdinalPosition": 172
+                },
+                {
+                    "FieldName": "Vision0204",
+                    "OrdinalPosition": 173
+                },
+                {
+                    "FieldName": "Vision0205",
+                    "OrdinalPosition": 174
+                },
+                {
+                    "FieldName": "Vision0206",
+                    "OrdinalPosition": 175
+                },
+                {
+                    "FieldName": "Vision0207",
+                    "OrdinalPosition": 176
+                },
+                {
+                    "FieldName": "Vision0301",
+                    "OrdinalPosition": 177
+                },
+                {
+                    "FieldName": "Vision0302",
+                    "OrdinalPosition": 178
+                },
+                {
+                    "FieldName": "Vision0303",
+                    "OrdinalPosition": 179
+                },
+                {
+                    "FieldName": "Vision0304",
+                    "OrdinalPosition": 180
+                },
+                {
+                    "FieldName": "Vision0305",
+                    "OrdinalPosition": 181
+                },
+                {
+                    "FieldName": "Vision0306",
+                    "OrdinalPosition": 182
+                },
+                {
+                    "FieldName": "Vision0307",
+                    "OrdinalPosition": 183
+                },
+                {
+                    "FieldName": "Homebound",
+                    "OrdinalPosition": 184
+                },
+                {
+                    "FieldName": "EPSDT02",
+                    "OrdinalPosition": 185
+                },
+                {
+                    "FieldName": "EPSDT03",
+                    "OrdinalPosition": 186
+                },
+                {
+                    "FieldName": "EPSDT04",
+                    "OrdinalPosition": 187
+                },
+                {
+                    "FieldName": "EPSDT05",
+                    "OrdinalPosition": 188
+                },
+                {
+                    "FieldName": "Diag1",
+                    "OrdinalPosition": 189
+                },
+                {
+                    "FieldName": "Diag2",
+                    "OrdinalPosition": 190
+                },
+                {
+                    "FieldName": "Diag3",
+                    "OrdinalPosition": 191
+                },
+                {
+                    "FieldName": "Diag4",
+                    "OrdinalPosition": 192
+                },
+                {
+                    "FieldName": "Diag5",
+                    "OrdinalPosition": 193
+                },
+                {
+                    "FieldName": "Diag6",
+                    "OrdinalPosition": 194
+                },
+                {
+                    "FieldName": "Diag7",
+                    "OrdinalPosition": 195
+                },
+                {
+                    "FieldName": "Diag8",
+                    "OrdinalPosition": 196
+                },
+                {
+                    "FieldName": "Diag9",
+                    "OrdinalPosition": 197
+                },
+                {
+                    "FieldName": "Diag10",
+                    "OrdinalPosition": 198
+                },
+                {
+                    "FieldName": "Diag11",
+                    "OrdinalPosition": 199
+                },
+                {
+                    "FieldName": "Diag12",
+                    "OrdinalPosition": 200
+                },
+                {
+                    "FieldName": "Anesthesia01",
+                    "OrdinalPosition": 201
+                },
+                {
+                    "FieldName": "Anesthesia02",
+                    "OrdinalPosition": 202
+                },
+                {
+                    "FieldName": "ConditionCd01",
+                    "OrdinalPosition": 203
+                },
+                {
+                    "FieldName": "ConditionCd02",
+                    "OrdinalPosition": 204
+                },
+                {
+                    "FieldName": "ConditionCd03",
+                    "OrdinalPosition": 205
+                },
+                {
+                    "FieldName": "ConditionCd04",
+                    "OrdinalPosition": 206
+                },
+                {
+                    "FieldName": "ConditionCd05",
+                    "OrdinalPosition": 207
+                },
+                {
+                    "FieldName": "ConditionCd06",
+                    "OrdinalPosition": 208
+                },
+                {
+                    "FieldName": "ConditionCd07",
+                    "OrdinalPosition": 209
+                },
+                {
+                    "FieldName": "ConditionCd08",
+                    "OrdinalPosition": 210
+                },
+                {
+                    "FieldName": "ConditionCd09",
+                    "OrdinalPosition": 211
+                },
+                {
+                    "FieldName": "ConditionCd10",
+                    "OrdinalPosition": 212
+                },
+                {
+                    "FieldName": "ConditionCd11",
+                    "OrdinalPosition": 213
+                },
+                {
+                    "FieldName": "ConditionCd12",
+                    "OrdinalPosition": 214
+                },
+                {
+                    "FieldName": "ConditionCd13",
+                    "OrdinalPosition": 215
+                },
+                {
+                    "FieldName": "ConditionCd14",
+                    "OrdinalPosition": 216
+                },
+                {
+                    "FieldName": "ConditionCd15",
+                    "OrdinalPosition": 217
+                },
+                {
+                    "FieldName": "ConditionCd16",
+                    "OrdinalPosition": 218
+                },
+                {
+                    "FieldName": "ConditionCd17",
+                    "OrdinalPosition": 219
+                },
+                {
+                    "FieldName": "ConditionCd18",
+                    "OrdinalPosition": 220
+                },
+                {
+                    "FieldName": "ConditionCd19",
+                    "OrdinalPosition": 221
+                },
+                {
+                    "FieldName": "ConditionCd20",
+                    "OrdinalPosition": 222
+                },
+                {
+                    "FieldName": "ConditionCd21",
+                    "OrdinalPosition": 223
+                },
+                {
+                    "FieldName": "ConditionCd22",
+                    "OrdinalPosition": 224
+                },
+                {
+                    "FieldName": "ConditionCd23",
+                    "OrdinalPosition": 225
+                },
+                {
+                    "FieldName": "ConditionCd24",
+                    "OrdinalPosition": 226
+                },
+                {
+                    "FieldName": "PriceMethod",
+                    "OrdinalPosition": 227
+                },
+                {
+                    "FieldName": "RepriceAllowedAmt",
+                    "OrdinalPosition": 228
+                },
+                {
+                    "FieldName": "RepriceSaveAmt",
+                    "OrdinalPosition": 229
+                },
+                {
+                    "FieldName": "RepriceOrigId",
+                    "OrdinalPosition": 230
+                },
+                {
+                    "FieldName": "RepriceDiemFlat",
+                    "OrdinalPosition": 231
+                },
+                {
+                    "FieldName": "RepriceDRGAPGCode",
+                    "OrdinalPosition": 232
+                },
+                {
+                    "FieldName": "RepriceDRGAPGAmt",
+                    "OrdinalPosition": 233
+                },
+                {
+                    "FieldName": "RejReasonCode",
+                    "OrdinalPosition": 234
+                },
+                {
+                    "FieldName": "CompCode",
+                    "OrdinalPosition": 235
+                },
+                {
+                    "FieldName": "ExceptCode",
+                    "OrdinalPosition": 236
+                },
+                {
+                    "FieldName": "ReferringProviderLastName",
+                    "OrdinalPosition": 237
+                },
+                {
+                    "FieldName": "ReferringProviderFirstName",
+                    "OrdinalPosition": 238
+                },
+                {
+                    "FieldName": "ReferringProviderMiddleName",
+                    "OrdinalPosition": 239
+                },
+                {
+                    "FieldName": "ReferringProviderNameSuffix",
+                    "OrdinalPosition": 240
+                },
+                {
+                    "FieldName": "ReferringProviderNPI",
+                    "OrdinalPosition": 241
+                },
+                {
+                    "FieldName": "RenderingProviderLastName",
+                    "OrdinalPosition": 242
+                },
+                {
+                    "FieldName": "RenderingProviderFirstName",
+                    "OrdinalPosition": 243
+                },
+                {
+                    "FieldName": "RenderingProviderMiddleName",
+                    "OrdinalPosition": 244
+                },
+                {
+                    "FieldName": "RenderingProviderNameSuffix",
+                    "OrdinalPosition": 245
+                },
+                {
+                    "FieldName": "RenderingProviderNPI",
+                    "OrdinalPosition": 246
+                },
+                {
+                    "FieldName": "SvcFacName",
+                    "OrdinalPosition": 247
+                },
+                {
+                    "FieldName": "SvcFacNPI",
+                    "OrdinalPosition": 248
+                },
+                {
+                    "FieldName": "SvcFacAddressLine1",
+                    "OrdinalPosition": 249
+                },
+                {
+                    "FieldName": "SvcFacAddressLine2",
+                    "OrdinalPosition": 250
+                },
+                {
+                    "FieldName": "SvcFacCity",
+                    "OrdinalPosition": 251
+                },
+                {
+                    "FieldName": "SvcFacState",
+                    "OrdinalPosition": 252
+                },
+                {
+                    "FieldName": "SvcFacZIP",
+                    "OrdinalPosition": 253
+                },
+                {
+                    "FieldName": "SupervisingProviderLastName",
+                    "OrdinalPosition": 254
+                },
+                {
+                    "FieldName": "SupervisingProviderFirstName",
+                    "OrdinalPosition": 255
+                },
+                {
+                    "FieldName": "SupervisingProviderMiddleName",
+                    "OrdinalPosition": 256
+                },
+                {
+                    "FieldName": "SupervisingProviderNameSuffix",
+                    "OrdinalPosition": 257
+                },
+                {
+                    "FieldName": "SupervisingProviderNPI",
+                    "OrdinalPosition": 258
+                },
+                {
+                    "FieldName": "AmbulPickupAddrLine1",
+                    "OrdinalPosition": 259
+                },
+                {
+                    "FieldName": "AmbulPickupAddrLine2",
+                    "OrdinalPosition": 260
+                },
+                {
+                    "FieldName": "AmbulPickupCity",
+                    "OrdinalPosition": 261
+                },
+                {
+                    "FieldName": "AmbulPickupState",
+                    "OrdinalPosition": 262
+                },
+                {
+                    "FieldName": "AmbulPickupZip",
+                    "OrdinalPosition": 263
+                },
+                {
+                    "FieldName": "AmbulDropoffAddrLine1",
+                    "OrdinalPosition": 264
+                },
+                {
+                    "FieldName": "AmbulDropoffAddrLine2",
+                    "OrdinalPosition": 265
+                },
+                {
+                    "FieldName": "AmbulDropoffCity",
+                    "OrdinalPosition": 266
+                },
+                {
+                    "FieldName": "AmbulDropoffState",
+                    "OrdinalPosition": 267
+                },
+                {
+                    "FieldName": "AmbulDropoffZip",
+                    "OrdinalPosition": 268
+                },
+                {
+                    "FieldName": "PayerResponseCd",
+                    "OrdinalPosition": 269
+                },
+                {
+                    "FieldName": "PolicyNum",
+                    "OrdinalPosition": 270
+                },
+                {
+                    "FieldName": "PlanName",
+                    "OrdinalPosition": 271
+                },
+                {
+                    "FieldName": "PayerResponseCdCOB",
+                    "OrdinalPosition": 272
+                },
+                {
+                    "FieldName": "ClmAdjGrpCd1",
+                    "OrdinalPosition": 273
+                },
+                {
+                    "FieldName": "ClmAdjReasCd101",
+                    "OrdinalPosition": 274
+                },
+                {
+                    "FieldName": "ClmAdjAmt101",
+                    "OrdinalPosition": 275
+                },
+                {
+                    "FieldName": "ClmAdjQty101",
+                    "OrdinalPosition": 276
+                },
+                {
+                    "FieldName": "ClmAdjReasCd102",
+                    "OrdinalPosition": 277
+                },
+                {
+                    "FieldName": "ClmAdjAmt102",
+                    "OrdinalPosition": 278
+                },
+                {
+                    "FieldName": "ClmAdjQty102",
+                    "OrdinalPosition": 279
+                },
+                {
+                    "FieldName": "ClmAdjReasCd103",
+                    "OrdinalPosition": 280
+                },
+                {
+                    "FieldName": "ClmAdjAmt103",
+                    "OrdinalPosition": 281
+                },
+                {
+                    "FieldName": "ClmAdjQty103",
+                    "OrdinalPosition": 282
+                },
+                {
+                    "FieldName": "ClmAdjReasCd104",
+                    "OrdinalPosition": 283
+                },
+                {
+                    "FieldName": "ClmAdjAmt104",
+                    "OrdinalPosition": 284
+                },
+                {
+                    "FieldName": "ClmAdjQty104",
+                    "OrdinalPosition": 285
+                },
+                {
+                    "FieldName": "ClmAdjReasCd105",
+                    "OrdinalPosition": 286
+                },
+                {
+                    "FieldName": "ClmAdjAmt105",
+                    "OrdinalPosition": 287
+                },
+                {
+                    "FieldName": "ClmAdjQty105",
+                    "OrdinalPosition": 288
+                },
+                {
+                    "FieldName": "ClmAdjReasCd106",
+                    "OrdinalPosition": 289
+                },
+                {
+                    "FieldName": "ClmAdjAmt106",
+                    "OrdinalPosition": 290
+                },
+                {
+                    "FieldName": "ClmAdjQty106",
+                    "OrdinalPosition": 291
+                },
+                {
+                    "FieldName": "ClmAdjGrpCd2",
+                    "OrdinalPosition": 292
+                },
+                {
+                    "FieldName": "ClmAdjReasCd201",
+                    "OrdinalPosition": 293
+                },
+                {
+                    "FieldName": "ClmAdjAmt201",
+                    "OrdinalPosition": 294
+                },
+                {
+                    "FieldName": "ClmAdjQty201",
+                    "OrdinalPosition": 295
+                },
+                {
+                    "FieldName": "ClmAdjReasCd202",
+                    "OrdinalPosition": 296
+                },
+                {
+                    "FieldName": "ClmAdjAmt202",
+                    "OrdinalPosition": 297
+                },
+                {
+                    "FieldName": "ClmAdjQty202",
+                    "OrdinalPosition": 298
+                },
+                {
+                    "FieldName": "ClmAdjReasCd203",
+                    "OrdinalPosition": 299
+                },
+                {
+                    "FieldName": "ClmAdjAmt203",
+                    "OrdinalPosition": 300
+                },
+                {
+                    "FieldName": "ClmAdjQty203",
+                    "OrdinalPosition": 301
+                },
+                {
+                    "FieldName": "ClmAdjReasCd204",
+                    "OrdinalPosition": 302
+                },
+                {
+                    "FieldName": "ClmAdjAmt204",
+                    "OrdinalPosition": 303
+                },
+                {
+                    "FieldName": "ClmAdjQty204",
+                    "OrdinalPosition": 304
+                },
+                {
+                    "FieldName": "ClmAdjReasCd205",
+                    "OrdinalPosition": 305
+                },
+                {
+                    "FieldName": "ClmAdjAmt205",
+                    "OrdinalPosition": 306
+                },
+                {
+                    "FieldName": "ClmAdjQty205",
+                    "OrdinalPosition": 307
+                },
+                {
+                    "FieldName": "ClmAdjReasCd206",
+                    "OrdinalPosition": 308
+                },
+                {
+                    "FieldName": "ClmAdjAmt206",
+                    "OrdinalPosition": 309
+                },
+                {
+                    "FieldName": "ClmAdjQty206",
+                    "OrdinalPosition": 310
+                },
+                {
+                    "FieldName": "ClmAdjGrpCd3",
+                    "OrdinalPosition": 311
+                },
+                {
+                    "FieldName": "ClmAdjReasCd301",
+                    "OrdinalPosition": 312
+                },
+                {
+                    "FieldName": "ClmAdjAmt301",
+                    "OrdinalPosition": 313
+                },
+                {
+                    "FieldName": "ClmAdjQty301",
+                    "OrdinalPosition": 314
+                },
+                {
+                    "FieldName": "ClmAdjReasCd302",
+                    "OrdinalPosition": 315
+                },
+                {
+                    "FieldName": "ClmAdjAmt302",
+                    "OrdinalPosition": 316
+                },
+                {
+                    "FieldName": "ClmAdjQty302",
+                    "OrdinalPosition": 317
+                },
+                {
+                    "FieldName": "ClmAdjReasCd303",
+                    "OrdinalPosition": 318
+                },
+                {
+                    "FieldName": "ClmAdjAmt303",
+                    "OrdinalPosition": 319
+                },
+                {
+                    "FieldName": "ClmAdjQty303",
+                    "OrdinalPosition": 320
+                },
+                {
+                    "FieldName": "ClmAdjReasCd304",
+                    "OrdinalPosition": 321
+                },
+                {
+                    "FieldName": "ClmAdjAmt304",
+                    "OrdinalPosition": 322
+                },
+                {
+                    "FieldName": "ClmAdjQty304",
+                    "OrdinalPosition": 323
+                },
+                {
+                    "FieldName": "ClmAdjReasCd305",
+                    "OrdinalPosition": 324
+                },
+                {
+                    "FieldName": "ClmAdjAmt305",
+                    "OrdinalPosition": 325
+                },
+                {
+                    "FieldName": "ClmAdjQty305",
+                    "OrdinalPosition": 326
+                },
+                {
+                    "FieldName": "ClmAdjReasCd306",
+                    "OrdinalPosition": 327
+                },
+                {
+                    "FieldName": "ClmAdjAmt306",
+                    "OrdinalPosition": 328
+                },
+                {
+                    "FieldName": "ClmAdjQty306",
+                    "OrdinalPosition": 329
+                },
+                {
+                    "FieldName": "ClmAdjGrpCd4",
+                    "OrdinalPosition": 330
+                },
+                {
+                    "FieldName": "ClmAdjReasCd401",
+                    "OrdinalPosition": 331
+                },
+                {
+                    "FieldName": "ClmAdjAmt401",
+                    "OrdinalPosition": 332
+                },
+                {
+                    "FieldName": "ClmAdjQty401",
+                    "OrdinalPosition": 333
+                },
+                {
+                    "FieldName": "ClmAdjReasCd402",
+                    "OrdinalPosition": 334
+                },
+                {
+                    "FieldName": "ClmAdjAmt402",
+                    "OrdinalPosition": 335
+                },
+                {
+                    "FieldName": "ClmAdjQty402",
+                    "OrdinalPosition": 336
+                },
+                {
+                    "FieldName": "ClmAdjReasCd403",
+                    "OrdinalPosition": 337
+                },
+                {
+                    "FieldName": "ClmAdjAmt403",
+                    "OrdinalPosition": 338
+                },
+                {
+                    "FieldName": "ClmAdjQty403",
+                    "OrdinalPosition": 339
+                },
+                {
+                    "FieldName": "ClmAdjReasCd404",
+                    "OrdinalPosition": 340
+                },
+                {
+                    "FieldName": "ClmAdjAmt404",
+                    "OrdinalPosition": 341
+                },
+                {
+                    "FieldName": "ClmAdjQty404",
+                    "OrdinalPosition": 342
+                },
+                {
+                    "FieldName": "ClmAdjReasCd405",
+                    "OrdinalPosition": 343
+                },
+                {
+                    "FieldName": "ClmAdjAmt405",
+                    "OrdinalPosition": 344
+                },
+                {
+                    "FieldName": "ClmAdjQty405",
+                    "OrdinalPosition": 345
+                },
+                {
+                    "FieldName": "ClmAdjReasCd406",
+                    "OrdinalPosition": 346
+                },
+                {
+                    "FieldName": "ClmAdjAmt406",
+                    "OrdinalPosition": 347
+                },
+                {
+                    "FieldName": "ClmAdjQty406",
+                    "OrdinalPosition": 348
+                },
+                {
+                    "FieldName": "ClmAdjGrpCd5",
+                    "OrdinalPosition": 349
+                },
+                {
+                    "FieldName": "ClmAdjReasCd501",
+                    "OrdinalPosition": 350
+                },
+                {
+                    "FieldName": "ClmAdjAmt501",
+                    "OrdinalPosition": 351
+                },
+                {
+                    "FieldName": "ClmAdjQty501",
+                    "OrdinalPosition": 352
+                },
+                {
+                    "FieldName": "ClmAdjReasCd502",
+                    "OrdinalPosition": 353
+                },
+                {
+                    "FieldName": "ClmAdjAmt502",
+                    "OrdinalPosition": 354
+                },
+                {
+                    "FieldName": "ClmAdjQty502",
+                    "OrdinalPosition": 355
+                },
+                {
+                    "FieldName": "ClmAdjReasCd503",
+                    "OrdinalPosition": 356
+                },
+                {
+                    "FieldName": "ClmAdjAmt503",
+                    "OrdinalPosition": 357
+                },
+                {
+                    "FieldName": "ClmAdjQty503",
+                    "OrdinalPosition": 358
+                },
+                {
+                    "FieldName": "ClmAdjReasCd504",
+                    "OrdinalPosition": 359
+                },
+                {
+                    "FieldName": "ClmAdjAmt504",
+                    "OrdinalPosition": 360
+                },
+                {
+                    "FieldName": "ClmAdjQty504",
+                    "OrdinalPosition": 361
+                },
+                {
+                    "FieldName": "ClmAdjReasCd505",
+                    "OrdinalPosition": 362
+                },
+                {
+                    "FieldName": "ClmAdjAmt505",
+                    "OrdinalPosition": 363
+                },
+                {
+                    "FieldName": "ClmAdjQty505",
+                    "OrdinalPosition": 364
+                },
+                {
+                    "FieldName": "ClmAdjReasCd506",
+                    "OrdinalPosition": 365
+                },
+                {
+                    "FieldName": "ClmAdjAmt506",
+                    "OrdinalPosition": 366
+                },
+                {
+                    "FieldName": "ClmAdjQty506",
+                    "OrdinalPosition": 367
+                },
+                {
+                    "FieldName": "MSPIND",
+                    "OrdinalPosition": 368
+                },
+                {
+                    "FieldName": "PaidAmount",
+                    "OrdinalPosition": 369
+                },
+                {
+                    "FieldName": "NonCovrdChrgAmt",
+                    "OrdinalPosition": 370
+                },
+                {
+                    "FieldName": "RemainPatientLiab",
+                    "OrdinalPosition": 371
+                },
+                {
+                    "FieldName": "OthInsuredLastName",
+                    "OrdinalPosition": 372
+                },
+                {
+                    "FieldName": "OthInsuredFirstName",
+                    "OrdinalPosition": 373
+                },
+                {
+                    "FieldName": "OthInsuredMiddleName",
+                    "OrdinalPosition": 374
+                },
+                {
+                    "FieldName": "OtherInsuredSuffix",
+                    "OrdinalPosition": 375
+                },
+                {
+                    "FieldName": "OthSubsHICNbr",
+                    "OrdinalPosition": 376
+                },
+                {
+                    "FieldName": "OthSubsAddrLine1",
+                    "OrdinalPosition": 377
+                },
+                {
+                    "FieldName": "OthSubsAddrLine2",
+                    "OrdinalPosition": 378
+                },
+                {
+                    "FieldName": "OthSubsCity",
+                    "OrdinalPosition": 379
+                },
+                {
+                    "FieldName": "OthSubsState",
+                    "OrdinalPosition": 380
+                },
+                {
+                    "FieldName": "OthSubsZip",
+                    "OrdinalPosition": 381
+                },
+                {
+                    "FieldName": "OthSubsCountryCode",
+                    "OrdinalPosition": 382
+                },
+                {
+                    "FieldName": "OthSubsCountrySubdivisionCode",
+                    "OrdinalPosition": 383
+                },
+                {
+                    "FieldName": "OthPayrOrgName",
+                    "OrdinalPosition": 384
+                },
+                {
+                    "FieldName": "OthPayrPlanID",
+                    "OrdinalPosition": 385
+                },
+                {
+                    "FieldName": "OthPayrAddrLine1",
+                    "OrdinalPosition": 386
+                },
+                {
+                    "FieldName": "OthPayrAddrLine2",
+                    "OrdinalPosition": 387
+                },
+                {
+                    "FieldName": "OthPayrCity",
+                    "OrdinalPosition": 388
+                },
+                {
+                    "FieldName": "OthPayrState",
+                    "OrdinalPosition": 389
+                },
+                {
+                    "FieldName": "OthPayrZip",
+                    "OrdinalPosition": 390
+                },
+                {
+                    "FieldName": "CheckRemitDt",
+                    "OrdinalPosition": 391
+                },
+                {
+                    "FieldName": "OthPayrAdjClaimCtrlNum",
+                    "OrdinalPosition": 392
+                },
+                {
+                    "FieldName": "PaidAmountCOB",
+                    "OrdinalPosition": 393
+                },
+                {
+                    "FieldName": "NonCovrdChrgAmtCOB",
+                    "OrdinalPosition": 394
+                },
+                {
+                    "FieldName": "RemainPatientLiabCOB",
+                    "OrdinalPosition": 395
+                },
+                {
+                    "FieldName": "OthInsuredLastNameCOB",
+                    "OrdinalPosition": 396
+                },
+                {
+                    "FieldName": "OthInsuredFirstNameCOB",
+                    "OrdinalPosition": 397
+                },
+                {
+                    "FieldName": "OthInsuredMiddleNameCOB",
+                    "OrdinalPosition": 398
+                },
+                {
+                    "FieldName": "OtherInsuredSuffixCOB",
+                    "OrdinalPosition": 399
+                },
+                {
+                    "FieldName": "OthSubsHICNbrCOB",
+                    "OrdinalPosition": 400
+                },
+                {
+                    "FieldName": "OthSubsAddrLine1COB",
+                    "OrdinalPosition": 401
+                },
+                {
+                    "FieldName": "OthSubsAddrLine2COB",
+                    "OrdinalPosition": 402
+                },
+                {
+                    "FieldName": "OthSubsCityCOB",
+                    "OrdinalPosition": 403
+                },
+                {
+                    "FieldName": "OthSubsStateCOB",
+                    "OrdinalPosition": 404
+                },
+                {
+                    "FieldName": "OthSubsZipCOB",
+                    "OrdinalPosition": 405
+                },
+                {
+                    "FieldName": "OthPayrOrgNameCOB",
+                    "OrdinalPosition": 406
+                },
+                {
+                    "FieldName": "OthPayrPayerId",
+                    "OrdinalPosition": 407
+                },
+                {
+                    "FieldName": "OthPayrAddrLine1COB",
+                    "OrdinalPosition": 408
+                },
+                {
+                    "FieldName": "OthPayrAddrLine2COB",
+                    "OrdinalPosition": 409
+                },
+                {
+                    "FieldName": "OthPayrCityCOB",
+                    "OrdinalPosition": 410
+                },
+                {
+                    "FieldName": "OthPayrStateCOB",
+                    "OrdinalPosition": 411
+                },
+                {
+                    "FieldName": "OthPayrZipCOB",
+                    "OrdinalPosition": 412
+                },
+                {
+                    "FieldName": "CheckRemitDtCOB",
+                    "OrdinalPosition": 413
+                },
+                {
+                    "FieldName": "RenderingProviderTaxonomy",
+                    "OrdinalPosition": 414
+                },
+                {
+                    "FieldName": "BillingProviderTaxonomy",
+                    "OrdinalPosition": 415
+                },
+                {
+                    "FieldName": "MRN",
+                    "OrdinalPosition": 416
+                },
+                {
+                    "FieldName": "PrimaryCareProviderFirstName",
+                    "OrdinalPosition": 417
+                },
+                {
+                    "FieldName": "PrimaryCareProviderMiddleName",
+                    "OrdinalPosition": 418
+                },
+                {
+                    "FieldName": "PrimaryCareProviderLastName",
+                    "OrdinalPosition": 419
+                },
+                {
+                    "FieldName": "PrimaryCareProviderSuffix",
+                    "OrdinalPosition": 420
+                },
+                {
+                    "FieldName": "PrimaryCareProviderNPI",
+                    "OrdinalPosition": 421
+                },
+                {
+                    "FieldName": "PayToAddressLine1",
+                    "OrdinalPosition": 422
+                },
+                {
+                    "FieldName": "PayToAddressLine2",
+                    "OrdinalPosition": 423
+                },
+                {
+                    "FieldName": "PayToCity",
+                    "OrdinalPosition": 424
+                },
+                {
+                    "FieldName": "PayToState",
+                    "OrdinalPosition": 425
+                },
+                {
+                    "FieldName": "PayToZip",
+                    "OrdinalPosition": 426
+                },
+                {
+                    "FieldName": "BillingProviderContactName",
+                    "OrdinalPosition": 427
+                },
+                {
+                    "FieldName": "BillingProviderCommQual1",
+                    "OrdinalPosition": 428
+                },
+                {
+                    "FieldName": "BillingProviderCommNum1",
+                    "OrdinalPosition": 429
+                },
+                {
+                    "FieldName": "BillingProviderCommQual2",
+                    "OrdinalPosition": 430
+                },
+                {
+                    "FieldName": "BillingProviderCommNum2",
+                    "OrdinalPosition": 431
+                },
+                {
+                    "FieldName": "BillingProviderCommQual3",
+                    "OrdinalPosition": 432
+                },
+                {
+                    "FieldName": "BillingProviderCommNum3",
+                    "OrdinalPosition": 433
+                },
+                {
+                    "FieldName": "AutoAccidentState",
+                    "OrdinalPosition": 434
+                }
+            ]
+        },
+        {
+            "Type": "L",
+            "TempViewName": "DetailLData",
+            "ColumnNames": [
+                {
+                    "FieldName": "ClaimLineRecordType",
+                    "OrdinalPosition": 1
+                },
+                {
+                    "FieldName": "ClaimLineEncounterICN",
+                    "OrdinalPosition": 2
+                },
+                {
+                    "FieldName": "ClaimLineNumber",
+                    "OrdinalPosition": 3
+                },
+                {
+                    "FieldName": "ProcedureCodeQualifier",
+                    "OrdinalPosition": 4
+                },
+                {
+                    "FieldName": "ProcedureCode",
+                    "OrdinalPosition": 5
+                },
+                {
+                    "FieldName": "CPTMod1",
+                    "OrdinalPosition": 6
+                },
+                {
+                    "FieldName": "CPTMod2",
+                    "OrdinalPosition": 7
+                },
+                {
+                    "FieldName": "CPTMod3",
+                    "OrdinalPosition": 8
+                },
+                {
+                    "FieldName": "CPTMod4",
+                    "OrdinalPosition": 9
+                },
+                {
+                    "FieldName": "ProcedureDescription",
+                    "OrdinalPosition": 10
+                },
+                {
+                    "FieldName": "BilledAmountLine",
+                    "OrdinalPosition": 11
+                },
+                {
+                    "FieldName": "LiUomQual",
+                    "OrdinalPosition": 12
+                },
+                {
+                    "FieldName": "LiServiceUnitCnt",
+                    "OrdinalPosition": 13
+                },
+                {
+                    "FieldName": "PlaceOfServiceLine",
+                    "OrdinalPosition": 14
+                },
+                {
+                    "FieldName": "LiDiagcdPtr1",
+                    "OrdinalPosition": 15
+                },
+                {
+                    "FieldName": "LiDiagcdPtr2",
+                    "OrdinalPosition": 16
+                },
+                {
+                    "FieldName": "LiDiagcdPtr3",
+                    "OrdinalPosition": 17
+                },
+                {
+                    "FieldName": "LiDiagcdPtr4",
+                    "OrdinalPosition": 18
+                },
+                {
+                    "FieldName": "EmergencyIndicator",
+                    "OrdinalPosition": 19
+                },
+                {
+                    "FieldName": "EPSDTIndicator",
+                    "OrdinalPosition": 20
+                },
+                {
+                    "FieldName": "FamilyPlanningIndicator",
+                    "OrdinalPosition": 21
+                },
+                {
+                    "FieldName": "CopayExemptIndicator",
+                    "OrdinalPosition": 22
+                },
+                {
+                    "FieldName": "SuppInfoLine101",
+                    "OrdinalPosition": 23
+                },
+                {
+                    "FieldName": "SuppInfoLine102",
+                    "OrdinalPosition": 24
+                },
+                {
+                    "FieldName": "SuppInfoLine106",
+                    "OrdinalPosition": 25
+                },
+                {
+                    "FieldName": "SuppInfoLine201",
+                    "OrdinalPosition": 26
+                },
+                {
+                    "FieldName": "SuppInfoLine202",
+                    "OrdinalPosition": 27
+                },
+                {
+                    "FieldName": "SuppInfoLine206",
+                    "OrdinalPosition": 28
+                },
+                {
+                    "FieldName": "SuppInfoLine301",
+                    "OrdinalPosition": 29
+                },
+                {
+                    "FieldName": "SuppInfoLine302",
+                    "OrdinalPosition": 30
+                },
+                {
+                    "FieldName": "SuppInfoLine306",
+                    "OrdinalPosition": 31
+                },
+                {
+                    "FieldName": "SuppInfoLine401",
+                    "OrdinalPosition": 32
+                },
+                {
+                    "FieldName": "SuppInfoLine402",
+                    "OrdinalPosition": 33
+                },
+                {
+                    "FieldName": "SuppInfoLine406",
+                    "OrdinalPosition": 34
+                },
+                {
+                    "FieldName": "SuppInfoLine501",
+                    "OrdinalPosition": 35
+                },
+                {
+                    "FieldName": "SuppInfoLine502",
+                    "OrdinalPosition": 36
+                },
+                {
+                    "FieldName": "SuppInfoLine506",
+                    "OrdinalPosition": 37
+                },
+                {
+                    "FieldName": "SuppInfoLine601",
+                    "OrdinalPosition": 38
+                },
+                {
+                    "FieldName": "SuppInfoLine602",
+                    "OrdinalPosition": 39
+                },
+                {
+                    "FieldName": "SuppInfoLine606",
+                    "OrdinalPosition": 40
+                },
+                {
+                    "FieldName": "SuppInfoLine701",
+                    "OrdinalPosition": 41
+                },
+                {
+                    "FieldName": "SuppInfoLine702",
+                    "OrdinalPosition": 42
+                },
+                {
+                    "FieldName": "SuppInfoLine706",
+                    "OrdinalPosition": 43
+                },
+                {
+                    "FieldName": "SuppInfoLine801",
+                    "OrdinalPosition": 44
+                },
+                {
+                    "FieldName": "SuppInfoLine802",
+                    "OrdinalPosition": 45
+                },
+                {
+                    "FieldName": "SuppInfoLine806",
+                    "OrdinalPosition": 46
+                },
+                {
+                    "FieldName": "SuppInfoLine901",
+                    "OrdinalPosition": 47
+                },
+                {
+                    "FieldName": "SuppInfoLine902",
+                    "OrdinalPosition": 48
+                },
+                {
+                    "FieldName": "SuppInfoLine906",
+                    "OrdinalPosition": 49
+                },
+                {
+                    "FieldName": "SuppInfoLine1001",
+                    "OrdinalPosition": 50
+                },
+                {
+                    "FieldName": "SuppInfoLine1002",
+                    "OrdinalPosition": 51
+                },
+                {
+                    "FieldName": "SuppInfoLine1006",
+                    "OrdinalPosition": 52
+                },
+                {
+                    "FieldName": "PatientWeightLine",
+                    "OrdinalPosition": 53
+                },
+                {
+                    "FieldName": "AmbulanceTransportReasonCode",
+                    "OrdinalPosition": 54
+                },
+                {
+                    "FieldName": "AmbulanceMilesLine",
+                    "OrdinalPosition": 55
+                },
+                {
+                    "FieldName": "AmbulancePurposeLine",
+                    "OrdinalPosition": 56
+                },
+                {
+                    "FieldName": "AmbulanceStretcherLine",
+                    "OrdinalPosition": 57
+                },
+                {
+                    "FieldName": "AmbulCert0102Line",
+                    "OrdinalPosition": 58
+                },
+                {
+                    "FieldName": "AmbulCertCond0103Line",
+                    "OrdinalPosition": 59
+                },
+                {
+                    "FieldName": "AmbulCertCond0104Line",
+                    "OrdinalPosition": 60
+                },
+                {
+                    "FieldName": "AmbulCertCond0105Line",
+                    "OrdinalPosition": 61
+                },
+                {
+                    "FieldName": "AmbulCertCond0106Line",
+                    "OrdinalPosition": 62
+                },
+                {
+                    "FieldName": "AmbulCertCond0107Line",
+                    "OrdinalPosition": 63
+                },
+                {
+                    "FieldName": "AmbulCert0202Line",
+                    "OrdinalPosition": 64
+                },
+                {
+                    "FieldName": "AmbulCertCond0203Line",
+                    "OrdinalPosition": 65
+                },
+                {
+                    "FieldName": "AmbulCertCond0204Line",
+                    "OrdinalPosition": 66
+                },
+                {
+                    "FieldName": "AmbulCertCond0205Line",
+                    "OrdinalPosition": 67
+                },
+                {
+                    "FieldName": "AmbulCertCond0206Line",
+                    "OrdinalPosition": 68
+                },
+                {
+                    "FieldName": "AmbulCertCond0207Line",
+                    "OrdinalPosition": 69
+                },
+                {
+                    "FieldName": "AmbulCert0302Line",
+                    "OrdinalPosition": 70
+                },
+                {
+                    "FieldName": "AmbulCertCond0303Line",
+                    "OrdinalPosition": 71
+                },
+                {
+                    "FieldName": "AmbulCertCond0304Line",
+                    "OrdinalPosition": 72
+                },
+                {
+                    "FieldName": "AmbulCertCond0305Line",
+                    "OrdinalPosition": 73
+                },
+                {
+                    "FieldName": "AmbulCertCond0306Line",
+                    "OrdinalPosition": 74
+                },
+                {
+                    "FieldName": "AmbulCertCond0307Line",
+                    "OrdinalPosition": 75
+                },
+                {
+                    "FieldName": "HospiceEmployedProviderIndicator",
+                    "OrdinalPosition": 76
+                },
+                {
+                    "FieldName": "DetailServiceFrom",
+                    "OrdinalPosition": 77
+                },
+                {
+                    "FieldName": "DetailServiceThru",
+                    "OrdinalPosition": 78
+                },
+                {
+                    "FieldName": "HvpDateLine",
+                    "OrdinalPosition": 79
+                },
+                {
+                    "FieldName": "CertDateLine",
+                    "OrdinalPosition": 80
+                },
+                {
+                    "FieldName": "TherDateLine",
+                    "OrdinalPosition": 81
+                },
+                {
+                    "FieldName": "LastSeenLine",
+                    "OrdinalPosition": 82
+                },
+                {
+                    "FieldName": "Test1DateLine",
+                    "OrdinalPosition": 83
+                },
+                {
+                    "FieldName": "Test2DateLine",
+                    "OrdinalPosition": 84
+                },
+                {
+                    "FieldName": "ShipDateLine",
+                    "OrdinalPosition": 85
+                },
+                {
+                    "FieldName": "LastXrayLine",
+                    "OrdinalPosition": 86
+                },
+                {
+                    "FieldName": "InitialTxDateLine",
+                    "OrdinalPosition": 87
+                },
+                {
+                    "FieldName": "AmbulPtCnt",
+                    "OrdinalPosition": 88
+                },
+                {
+                    "FieldName": "ObAddUnt",
+                    "OrdinalPosition": 89
+                },
+                {
+                    "FieldName": "Result101",
+                    "OrdinalPosition": 90
+                },
+                {
+                    "FieldName": "Result102",
+                    "OrdinalPosition": 91
+                },
+                {
+                    "FieldName": "Result103",
+                    "OrdinalPosition": 92
+                },
+                {
+                    "FieldName": "Result201",
+                    "OrdinalPosition": 93
+                },
+                {
+                    "FieldName": "Result202",
+                    "OrdinalPosition": 94
+                },
+                {
+                    "FieldName": "Result203",
+                    "OrdinalPosition": 95
+                },
+                {
+                    "FieldName": "Result301",
+                    "OrdinalPosition": 96
+                },
+                {
+                    "FieldName": "Result302",
+                    "OrdinalPosition": 97
+                },
+                {
+                    "FieldName": "Result303",
+                    "OrdinalPosition": 98
+                },
+                {
+                    "FieldName": "Result401",
+                    "OrdinalPosition": 99
+                },
+                {
+                    "FieldName": "Result402",
+                    "OrdinalPosition": 100
+                },
+                {
+                    "FieldName": "Result403",
+                    "OrdinalPosition": 101
+                },
+                {
+                    "FieldName": "Result501",
+                    "OrdinalPosition": 102
+                },
+                {
+                    "FieldName": "Result502",
+                    "OrdinalPosition": 103
+                },
+                {
+                    "FieldName": "Result503",
+                    "OrdinalPosition": 104
+                },
+                {
+                    "FieldName": "ContractAmtLine",
+                    "OrdinalPosition": 105
+                },
+                {
+                    "FieldName": "ContractPrcntLine",
+                    "OrdinalPosition": 106
+                },
+                {
+                    "FieldName": "ContractCodeLine",
+                    "OrdinalPosition": 107
+                },
+                {
+                    "FieldName": "ContractDiscntLine",
+                    "OrdinalPosition": 108
+                },
+                {
+                    "FieldName": "ContractVerLine",
+                    "OrdinalPosition": 109
+                },
+                {
+                    "FieldName": "ReprcRefLine",
+                    "OrdinalPosition": 110
+                },
+                {
+                    "FieldName": "AdjReprcRefLine",
+                    "OrdinalPosition": 111
+                },
+                {
+                    "FieldName": "AuthNumLine",
+                    "OrdinalPosition": 112
+                },
+                {
+                    "FieldName": "Licn",
+                    "OrdinalPosition": 113
+                },
+                {
+                    "FieldName": "MamCertNumLine",
+                    "OrdinalPosition": 114
+                },
+                {
+                    "FieldName": "CliaNumLine",
+                    "OrdinalPosition": 115
+                },
+                {
+                    "FieldName": "CliaFacNumLine",
+                    "OrdinalPosition": 116
+                },
+                {
+                    "FieldName": "ImmBtchNumLine",
+                    "OrdinalPosition": 117
+                },
+                {
+                    "FieldName": "ReferralNumLine",
+                    "OrdinalPosition": 118
+                },
+                {
+                    "FieldName": "SalesTax",
+                    "OrdinalPosition": 119
+                },
+                {
+                    "FieldName": "Postage",
+                    "OrdinalPosition": 120
+                },
+                {
+                    "FieldName": "K301Line",
+                    "OrdinalPosition": 121
+                },
+                {
+                    "FieldName": "K302Line",
+                    "OrdinalPosition": 122
+                },
+                {
+                    "FieldName": "K303Line",
+                    "OrdinalPosition": 123
+                },
+                {
+                    "FieldName": "K304Line",
+                    "OrdinalPosition": 124
+                },
+                {
+                    "FieldName": "K305Line",
+                    "OrdinalPosition": 125
+                },
+                {
+                    "FieldName": "K306Line",
+                    "OrdinalPosition": 126
+                },
+                {
+                    "FieldName": "K307Line",
+                    "OrdinalPosition": 127
+                },
+                {
+                    "FieldName": "K308Line",
+                    "OrdinalPosition": 128
+                },
+                {
+                    "FieldName": "K309Line",
+                    "OrdinalPosition": 129
+                },
+                {
+                    "FieldName": "K310Line",
+                    "OrdinalPosition": 130
+                },
+                {
+                    "FieldName": "LiNoteTextRefCd",
+                    "OrdinalPosition": 131
+                },
+                {
+                    "FieldName": "LiNoteText",
+                    "OrdinalPosition": 132
+                },
+                {
+                    "FieldName": "LiTpoNoteText",
+                    "OrdinalPosition": 133
+                },
+                {
+                    "FieldName": "PurchAmt",
+                    "OrdinalPosition": 134
+                },
+                {
+                    "FieldName": "PriceMethodLine",
+                    "OrdinalPosition": 135
+                },
+                {
+                    "FieldName": "RepriceAllowedAmtLine",
+                    "OrdinalPosition": 136
+                },
+                {
+                    "FieldName": "RepriceSaveAmtLine",
+                    "OrdinalPosition": 137
+                },
+                {
+                    "FieldName": "RepriceOrgIdLine",
+                    "OrdinalPosition": 138
+                },
+                {
+                    "FieldName": "RepriceDiemFlatLine",
+                    "OrdinalPosition": 139
+                },
+                {
+                    "FieldName": "RepriceDrgApgCodeLine",
+                    "OrdinalPosition": 140
+                },
+                {
+                    "FieldName": "RepriceDrgApgAmtLine",
+                    "OrdinalPosition": 141
+                },
+                {
+                    "FieldName": "RepriceHcpcsCode",
+                    "OrdinalPosition": 142
+                },
+                {
+                    "FieldName": "RepriceHcpcsCodeLine",
+                    "OrdinalPosition": 143
+                },
+                {
+                    "FieldName": "RepriceBasisLine",
+                    "OrdinalPosition": 144
+                },
+                {
+                    "FieldName": "RepriceUnitCntLine",
+                    "OrdinalPosition": 145
+                },
+                {
+                    "FieldName": "RejReasonCodeLine",
+                    "OrdinalPosition": 146
+                },
+                {
+                    "FieldName": "CompCodeLine",
+                    "OrdinalPosition": 147
+                },
+                {
+                    "FieldName": "ExceptCodeLine",
+                    "OrdinalPosition": 148
+                },
+                {
+                    "FieldName": "NationalDrugCd",
+                    "OrdinalPosition": 149
+                },
+                {
+                    "FieldName": "DrugUnitCnt",
+                    "OrdinalPosition": 150
+                },
+                {
+                    "FieldName": "DrugUomQual",
+                    "OrdinalPosition": 151
+                },
+                {
+                    "FieldName": "DrugScrptQual",
+                    "OrdinalPosition": 152
+                },
+                {
+                    "FieldName": "DrugScrptNum",
+                    "OrdinalPosition": 153
+                },
+                {
+                    "FieldName": "ClaimLineRenderingProviderLastName",
+                    "OrdinalPosition": 154
+                },
+                {
+                    "FieldName": "ClaimLineRenderingProviderFirstName",
+                    "OrdinalPosition": 155
+                },
+                {
+                    "FieldName": "ClaimLineRenderingProviderMiddleName",
+                    "OrdinalPosition": 156
+                },
+                {
+                    "FieldName": "ClaimLineRenderingProviderNameSuffix",
+                    "OrdinalPosition": 157
+                },
+                {
+                    "FieldName": "ClaimLineRenderingProviderNPIA",
+                    "OrdinalPosition": 158
+                },
+                {
+                    "FieldName": "PurchasedServiceProviderLastName",
+                    "OrdinalPosition": 159
+                },
+                {
+                    "FieldName": "PurchasedServiceProviderFirstName",
+                    "OrdinalPosition": 160
+                },
+                {
+                    "FieldName": "PurchasedServiceProviderMiddleName",
+                    "OrdinalPosition": 161
+                },
+                {
+                    "FieldName": "PurchasedServiceProviderNameSuffix",
+                    "OrdinalPosition": 162
+                },
+                {
+                    "FieldName": "PurchasedServiceProviderNPI",
+                    "OrdinalPosition": 163
+                },
+                {
+                    "FieldName": "ClaimLineSvcFacName",
+                    "OrdinalPosition": 164
+                },
+                {
+                    "FieldName": "SvcFacNpiLine",
+                    "OrdinalPosition": 165
+                },
+                {
+                    "FieldName": "ClaimLineSvcFacAddressLine1",
+                    "OrdinalPosition": 166
+                },
+                {
+                    "FieldName": "ClaimLineSvcFacAddressLine2",
+                    "OrdinalPosition": 167
+                },
+                {
+                    "FieldName": "ClaimLineSvcFacCity",
+                    "OrdinalPosition": 168
+                },
+                {
+                    "FieldName": "ClaimLineSvcFacState",
+                    "OrdinalPosition": 169
+                },
+                {
+                    "FieldName": "ClaimLineSvcFacZIPA",
+                    "OrdinalPosition": 170
+                },
+                {
+                    "FieldName": "ClaimLineSupervisingProviderLastName",
+                    "OrdinalPosition": 171
+                },
+                {
+                    "FieldName": "ClaimLineSupervisingProviderFirstName",
+                    "OrdinalPosition": 172
+                },
+                {
+                    "FieldName": "ClaimLineSupervisingProviderMiddleName",
+                    "OrdinalPosition": 173
+                },
+                {
+                    "FieldName": "ClaimLineSupervisingProviderNameSuffix",
+                    "OrdinalPosition": 174
+                },
+                {
+                    "FieldName": "SupervisingProviderNPIA",
+                    "OrdinalPosition": 175
+                },
+                {
+                    "FieldName": "OrderingProviderLastName",
+                    "OrdinalPosition": 176
+                },
+                {
+                    "FieldName": "OrderingProviderFirstName",
+                    "OrdinalPosition": 177
+                },
+                {
+                    "FieldName": "OrderingProviderMiddleName",
+                    "OrdinalPosition": 178
+                },
+                {
+                    "FieldName": "OrderingProviderSuffix",
+                    "OrdinalPosition": 179
+                },
+                {
+                    "FieldName": "OrderingProviderNPI",
+                    "OrdinalPosition": 180
+                },
+                {
+                    "FieldName": "OrderingProviderAddressLine1",
+                    "OrdinalPosition": 181
+                },
+                {
+                    "FieldName": "OrderingProviderAddressLine2",
+                    "OrdinalPosition": 182
+                },
+                {
+                    "FieldName": "OrderingProviderCity",
+                    "OrdinalPosition": 183
+                },
+                {
+                    "FieldName": "OrderingProviderState",
+                    "OrdinalPosition": 184
+                },
+                {
+                    "FieldName": "OrderingProviderZIP",
+                    "OrdinalPosition": 185
+                },
+                {
+                    "FieldName": "OrderingProviderContactName",
+                    "OrdinalPosition": 186
+                },
+                {
+                    "FieldName": "OrderingProviderCommQual1",
+                    "OrdinalPosition": 187
+                },
+                {
+                    "FieldName": "OrderingProviderCommNum1",
+                    "OrdinalPosition": 188
+                },
+                {
+                    "FieldName": "OrderingProviderCommQual2",
+                    "OrdinalPosition": 189
+                },
+                {
+                    "FieldName": "OrderingProviderCommNum2",
+                    "OrdinalPosition": 190
+                },
+                {
+                    "FieldName": "OrderingProviderCommQual3",
+                    "OrdinalPosition": 191
+                },
+                {
+                    "FieldName": "OrderingProviderCommNum3",
+                    "OrdinalPosition": 192
+                },
+                {
+                    "FieldName": "ClaimLineReferringProviderLastName",
+                    "OrdinalPosition": 193
+                },
+                {
+                    "FieldName": "ClaimLineReferringProviderFirstName",
+                    "OrdinalPosition": 194
+                },
+                {
+                    "FieldName": "ClaimLineReferringProviderMiddleName",
+                    "OrdinalPosition": 195
+                },
+                {
+                    "FieldName": "ClaimLineReferringProviderNameSuffix",
+                    "OrdinalPosition": 196
+                },
+                {
+                    "FieldName": "ClaimLineReferringProviderNPI",
+                    "OrdinalPosition": 197
+                },
+                {
+                    "FieldName": "BilledAmountLineCOB",
+                    "OrdinalPosition": 198
+                },
+                {
+                    "FieldName": "PaidamountLineCOB",
+                    "OrdinalPosition": 199
+                },
+                {
+                    "FieldName": "ProcedureCodeQualifierCOB",
+                    "OrdinalPosition": 200
+                },
+                {
+                    "FieldName": "CPTCodeLine",
+                    "OrdinalPosition": 201
+                },
+                {
+                    "FieldName": "CPTMod1Line",
+                    "OrdinalPosition": 202
+                },
+                {
+                    "FieldName": "CPTMod2Line",
+                    "OrdinalPosition": 203
+                },
+                {
+                    "FieldName": "CPTMod3Line",
+                    "OrdinalPosition": 204
+                },
+                {
+                    "FieldName": "CPTMod4Line",
+                    "OrdinalPosition": 205
+                },
+                {
+                    "FieldName": "LiPaidSvcUnitCnt",
+                    "OrdinalPosition": 206
+                },
+                {
+                    "FieldName": "LiBundledLineNbr",
+                    "OrdinalPosition": 207
+                },
+                {
+                    "FieldName": "ClmAdjLineGrpCd1",
+                    "OrdinalPosition": 208
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd101",
+                    "OrdinalPosition": 209
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt101",
+                    "OrdinalPosition": 210
+                },
+                {
+                    "FieldName": "ClmAdjLineQty101",
+                    "OrdinalPosition": 211
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd102",
+                    "OrdinalPosition": 212
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt102",
+                    "OrdinalPosition": 213
+                },
+                {
+                    "FieldName": "ClmAdjLineQty102",
+                    "OrdinalPosition": 214
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd103",
+                    "OrdinalPosition": 215
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt103",
+                    "OrdinalPosition": 216
+                },
+                {
+                    "FieldName": "ClmAdjLineQty103",
+                    "OrdinalPosition": 217
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd104",
+                    "OrdinalPosition": 218
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt104",
+                    "OrdinalPosition": 219
+                },
+                {
+                    "FieldName": "ClmAdjLineQty104",
+                    "OrdinalPosition": 220
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd105",
+                    "OrdinalPosition": 221
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt105",
+                    "OrdinalPosition": 222
+                },
+                {
+                    "FieldName": "ClmAdjLineQty105",
+                    "OrdinalPosition": 223
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd106",
+                    "OrdinalPosition": 224
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt106",
+                    "OrdinalPosition": 225
+                },
+                {
+                    "FieldName": "ClmAdjLineQty106",
+                    "OrdinalPosition": 226
+                },
+                {
+                    "FieldName": "ClmAdjLineGrpCd2",
+                    "OrdinalPosition": 227
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd201",
+                    "OrdinalPosition": 228
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt201",
+                    "OrdinalPosition": 229
+                },
+                {
+                    "FieldName": "ClmAdjLineQty201",
+                    "OrdinalPosition": 230
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd202",
+                    "OrdinalPosition": 231
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt202",
+                    "OrdinalPosition": 232
+                },
+                {
+                    "FieldName": "ClmAdjLineQty202",
+                    "OrdinalPosition": 233
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd203",
+                    "OrdinalPosition": 234
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt203",
+                    "OrdinalPosition": 235
+                },
+                {
+                    "FieldName": "ClmAdjLineQty203",
+                    "OrdinalPosition": 236
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd204",
+                    "OrdinalPosition": 237
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt204",
+                    "OrdinalPosition": 238
+                },
+                {
+                    "FieldName": "ClmAdjLineQty204",
+                    "OrdinalPosition": 239
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd205",
+                    "OrdinalPosition": 240
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt205",
+                    "OrdinalPosition": 241
+                },
+                {
+                    "FieldName": "ClmAdjLineQty205",
+                    "OrdinalPosition": 242
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd206",
+                    "OrdinalPosition": 243
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt206",
+                    "OrdinalPosition": 244
+                },
+                {
+                    "FieldName": "ClmAdjLineQty206",
+                    "OrdinalPosition": 245
+                },
+                {
+                    "FieldName": "ClmAdjLineGrpCd3",
+                    "OrdinalPosition": 246
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd301",
+                    "OrdinalPosition": 247
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt301",
+                    "OrdinalPosition": 248
+                },
+                {
+                    "FieldName": "ClmAdjLineQty301",
+                    "OrdinalPosition": 249
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd302",
+                    "OrdinalPosition": 250
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt302",
+                    "OrdinalPosition": 251
+                },
+                {
+                    "FieldName": "ClmAdjLineQty302",
+                    "OrdinalPosition": 252
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd303",
+                    "OrdinalPosition": 253
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt303",
+                    "OrdinalPosition": 254
+                },
+                {
+                    "FieldName": "ClmAdjLineQty303",
+                    "OrdinalPosition": 255
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd304",
+                    "OrdinalPosition": 256
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt304",
+                    "OrdinalPosition": 257
+                },
+                {
+                    "FieldName": "ClmAdjLineQty304",
+                    "OrdinalPosition": 258
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd305",
+                    "OrdinalPosition": 259
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt305",
+                    "OrdinalPosition": 260
+                },
+                {
+                    "FieldName": "ClmAdjLineQty305",
+                    "OrdinalPosition": 261
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd306",
+                    "OrdinalPosition": 262
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt306",
+                    "OrdinalPosition": 263
+                },
+                {
+                    "FieldName": "ClmAdjLineQty306",
+                    "OrdinalPosition": 264
+                },
+                {
+                    "FieldName": "ClmAdjLineGrpCd4",
+                    "OrdinalPosition": 265
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd401",
+                    "OrdinalPosition": 266
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt401",
+                    "OrdinalPosition": 267
+                },
+                {
+                    "FieldName": "ClmAdjLineQty401",
+                    "OrdinalPosition": 268
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd402",
+                    "OrdinalPosition": 269
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt402",
+                    "OrdinalPosition": 270
+                },
+                {
+                    "FieldName": "ClmAdjLineQty402",
+                    "OrdinalPosition": 271
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd403",
+                    "OrdinalPosition": 272
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt403",
+                    "OrdinalPosition": 273
+                },
+                {
+                    "FieldName": "ClmAdjLineQty403",
+                    "OrdinalPosition": 274
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd404",
+                    "OrdinalPosition": 275
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt404",
+                    "OrdinalPosition": 276
+                },
+                {
+                    "FieldName": "ClmAdjLineQty404",
+                    "OrdinalPosition": 277
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd405",
+                    "OrdinalPosition": 278
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt405",
+                    "OrdinalPosition": 279
+                },
+                {
+                    "FieldName": "ClmAdjLineQty405",
+                    "OrdinalPosition": 280
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd406",
+                    "OrdinalPosition": 281
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt406",
+                    "OrdinalPosition": 282
+                },
+                {
+                    "FieldName": "ClmAdjLineQty406",
+                    "OrdinalPosition": 283
+                },
+                {
+                    "FieldName": "ClmAdjLineGrpCd5",
+                    "OrdinalPosition": 284
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd501",
+                    "OrdinalPosition": 285
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt501",
+                    "OrdinalPosition": 286
+                },
+                {
+                    "FieldName": "ClmAdjLineQty501",
+                    "OrdinalPosition": 287
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd502",
+                    "OrdinalPosition": 288
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt502",
+                    "OrdinalPosition": 289
+                },
+                {
+                    "FieldName": "ClmAdjLineQty502",
+                    "OrdinalPosition": 290
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd503",
+                    "OrdinalPosition": 291
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt503",
+                    "OrdinalPosition": 292
+                },
+                {
+                    "FieldName": "ClmAdjLineQty503",
+                    "OrdinalPosition": 293
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd504",
+                    "OrdinalPosition": 294
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt504",
+                    "OrdinalPosition": 295
+                },
+                {
+                    "FieldName": "ClmAdjLineQty504",
+                    "OrdinalPosition": 296
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd505",
+                    "OrdinalPosition": 297
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt505",
+                    "OrdinalPosition": 298
+                },
+                {
+                    "FieldName": "ClmAdjLineQty505",
+                    "OrdinalPosition": 299
+                },
+                {
+                    "FieldName": "ClmAdjLineReasCd506",
+                    "OrdinalPosition": 300
+                },
+                {
+                    "FieldName": "ClmAdjLineAmt506",
+                    "OrdinalPosition": 301
+                },
+                {
+                    "FieldName": "ClmAdjLineQty506",
+                    "OrdinalPosition": 302
+                },
+                {
+                    "FieldName": "LineCheckRemitDt",
+                    "OrdinalPosition": 303
+                },
+                {
+                    "FieldName": "LineRemainPatientLiab",
+                    "OrdinalPosition": 304
+                },
+                {
+                    "FieldName": "ClaimLineCheckRemitDtCOB",
+                    "OrdinalPosition": 305
+                },
+                {
+                    "FieldName": "ClaimLineRemainPatientLiabCOB",
+                    "OrdinalPosition": 306
+                },
+                {
+                    "FieldName": "DMECertType",
+                    "OrdinalPosition": 307
+                },
+                {
+                    "FieldName": "DMEDuration",
+                    "OrdinalPosition": 308
+                },
+                {
+                    "FieldName": "DMEConditionIndicator",
+                    "OrdinalPosition": 309
+                },
+                {
+                    "FieldName": "DMEConditionCode1",
+                    "OrdinalPosition": 310
+                },
+                {
+                    "FieldName": "DMEconditionCode2",
+                    "OrdinalPosition": 311
+                }
+            ]
+        }
+    ],
+    "Queries": [
+        {
+            "FinalQuery": "SELECT c.*, concat(c.EncounterICN, '-', '#FileID', '-', '#ClientID') AS Submitted837PMedicalClaimKey, l.* FROM DetailCData c\r\n\tLEFT JOIN DetailLData l ON c.EncounterICN = l.ClaimLineEncounterICN"
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "RecordType",
+          "DestinationColumn": "RecordType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MCOContractNumber",
+          "DestinationColumn": "MCOContractNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBPNumber",
+          "DestinationColumn": "PBPNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BeneficiaryID",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Surname",
+          "DestinationColumn": "Surname",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FirstName",
+          "DestinationColumn": "FirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MiddleInitial",
+          "DestinationColumn": "MiddleInitial",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Sex",
+          "DestinationColumn": "Sex",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DateofBirth",
+          "DestinationColumn": "DateofBirth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LowIncomePeriodStartDate",
+          "DestinationColumn": "LowIncomePeriodStartDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LowIncomePeriodEndDate",
+          "DestinationColumn": "LowIncomePeriodEndDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LIPSpercentage",
+          "DestinationColumn": "LIPSpercentage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PremiumLISAmount",
+          "DestinationColumn": "PremiumLISAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LowIncomeCoPayLevelID",
+          "DestinationColumn": "LowIncomeCoPayLevelID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BeneficiarySourceofSubsidyCode",
+          "DestinationColumn": "BeneficiarySourceofSubsidyCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LISActivityFlag",
+          "DestinationColumn": "LISActivityFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBPStartDate",
+          "DestinationColumn": "PBPStartDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NetPartDPremiumAmount",
+          "DestinationColumn": "NetPartDPremiumAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ContractYear",
+          "DestinationColumn": "ContractYear",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "InstitutionalStatusIndicator",
+          "DestinationColumn": "InstitutionalStatusIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBPEnrollmentTerminationDate",
+          "DestinationColumn": "PBPEnrollmentTerminationDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Filler",
+          "DestinationColumn": "Filler",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

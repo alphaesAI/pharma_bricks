@@ -1,0 +1,33 @@
+CREATE TABLE [devidap1].[gold_ma_riskbyhcc]
+( 
+	 [clientCode] nvarchar(20) NULL
+	,[snapshotDate] date NULL
+	,[reportMonth] int NULL
+	,[serviceYear] int NULL
+	,[beneficiaryID] nvarchar(60) NULL
+	,[planMemberID] nvarchar(100) NULL
+	,[memberClientkey] nvarchar(20) NULL
+	,[hccNumber] nvarchar(20) NULL
+	,[hccDescription] nvarchar(510) NULL
+	,[riskScore] int NULL
+	,[medTriggerCode] nvarchar(20) NULL
+	,[providerTIN] nvarchar(50) NULL
+	,[providerNPI] nvarchar(50) NULL
+	,[dateCoded] nvarchar(20) NULL
+	,[timesCoded] int NULL
+	,[rxTriggerCode] nvarchar(20) NULL
+	,[rxTriggerClinc] nvarchar(200) NULL
+	,[latestPrecriptionFilledDate] nvarchar(20) NULL
+	,[confidenceLevel] nvarchar(200) NULL
+	,[isCoded] nvarchar(2) NULL
+	,[incurredEnddate] nvarchar(20) NULL
+	,[paidThroughDate] nvarchar(20) NULL
+	,[cmsRiskModel] nvarchar(100) NULL
+	,[runDate] date NULL
+	,[evidenceSource] nvarchar(100) NULL
+	,[gapType] nvarchar(50) NULL
+	,[suspectTypedescription] nvarchar(50) NULL
+	,[isDroppedHCC] int NULL
+	,[evidenceDescription] nvarchar(200) NULL
+	,[evidenceType] nvarchar(50) NULL
+) 

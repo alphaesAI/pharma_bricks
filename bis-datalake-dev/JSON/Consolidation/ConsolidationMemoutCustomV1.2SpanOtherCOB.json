@@ -1,0 +1,488 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "TransactionType",
+          "Value": "COB"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "TransactionType",
+          "DestinationColumn": "SpanType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimsSubscriberIDNumber",
+          "DestinationColumn": "SubscriberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StartDate",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EndDate",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HICN",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AddressType",
+          "DestinationColumn": "AddressType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentAddress1",
+          "DestinationColumn": "MemberPermanentAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentAddress2",
+          "DestinationColumn": "MemberPermanentAddress2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentAddress3",
+          "DestinationColumn": "MemberPermanentAddress3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentCity",
+          "DestinationColumn": "MemberPermanentCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentCounty",
+          "DestinationColumn": "MemberPermanentCounty",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentState",
+          "DestinationColumn": "MemberPermanentState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentSCC",
+          "DestinationColumn": "MemberPermanentSCC",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentZipCode",
+          "DestinationColumn": "MemberPermanentZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingAddress1",
+          "DestinationColumn": "MemberMailingAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingAddress2",
+          "DestinationColumn": "MemberMailingAddress2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingAddress3",
+          "DestinationColumn": "MemberMailingAddress3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingCity",
+          "DestinationColumn": "MemberMailingCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingState",
+          "DestinationColumn": "MemberMailingState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingZipCode",
+          "DestinationColumn": "MemberMailingZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingAddress1",
+          "DestinationColumn": "MemberBillingAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingAddress2",
+          "DestinationColumn": "MemberBillingAddress2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingAddress3",
+          "DestinationColumn": "MemberBillingAddress3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingCity",
+          "DestinationColumn": "MemberBillingCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingState",
+          "DestinationColumn": "MemberBillingState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingZipCode",
+          "DestinationColumn": "MemberBillingZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BrokerName",
+          "DestinationColumn": "BrokerName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BrokerCode",
+          "DestinationColumn": "BrokerCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BrokerAssociation",
+          "DestinationColumn": "BrokerAssociation",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CreditableCoverageFlag",
+          "DestinationColumn": "CreditableCoverageFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LEPNumberofUncoveredMonths",
+          "DestinationColumn": "LEPNumberofUncoveredMonths",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PartDLEPAmount",
+          "DestinationColumn": "PartDLEPAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PartDLEPWaivedAmount",
+          "DestinationColumn": "PartDLEPWaivedAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PartDLEPSubsidyAmount",
+          "DestinationColumn": "PartDLEPSubsidyAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LEPSource",
+          "DestinationColumn": "LEPSource",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CurrentLISPremiumSubsidy",
+          "DestinationColumn": "CurrentLISPremiumSubsidy",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PartDLISSubsidyLevel",
+          "DestinationColumn": "PartDLISSubsidyLevel",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PartDLISCopayCategory",
+          "DestinationColumn": "PartDLISCopayCategory",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LISSourceCode",
+          "DestinationColumn": "LISSourceCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Segment",
+          "DestinationColumn": "Segment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "GroupID",
+          "DestinationColumn": "GroupID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Subgroup",
+          "DestinationColumn": "Subgroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClassID",
+          "DestinationColumn": "ClassID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanCode",
+          "DestinationColumn": "PlanCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },             
+        {
+          "SourceColumn": "PlanRider",
+          "DestinationColumn": "PlanRider",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RiderCode",
+          "DestinationColumn": "RiderCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PaymentMethodType",
+          "DestinationColumn": "PaymentMethodType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PremiumWithholdOption",
+          "DestinationColumn": "PremiumWithholdOption",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NameofAccountHolder",
+          "DestinationColumn": "NameofAccountHolder",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AccountNumber",
+          "DestinationColumn": "AccountNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BankRoutingNumber",
+          "DestinationColumn": "BankRoutingNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BankAccountType",
+          "DestinationColumn": "BankAccountType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CreditCardType",
+          "DestinationColumn": "CreditCardType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CreditCardAccountHolderName",
+          "DestinationColumn": "CreditCardAccountHolderName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CreditCardNumber",
+          "DestinationColumn": "CreditCardNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CreditcardSecurityCode",
+          "DestinationColumn": "CreditCardSecurityCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CreditCardExpirationDate",
+          "DestinationColumn": "CreditCardExpirationDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HospiceFlag",
+          "DestinationColumn": "HospiceFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicaidFlag",
+          "DestinationColumn": "MedicaidFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "WorkingAgedFlag",
+          "DestinationColumn": "WorkingAgedFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "InstitutionalFlag",
+          "DestinationColumn": "InstitutionalFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ESRDFlag",
+          "DestinationColumn": "ESRDFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "TransplantFlag",
+          "DestinationColumn": "TransplantFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DialysisFlag",
+          "DestinationColumn": "DialysisFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DisabledFlag",
+          "DestinationColumn": "DisabledFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanOverrideIndicator",
+          "DestinationColumn": "PlanOverrideIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DualStatusCode",
+          "DestinationColumn": "DualStatusCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicaidRecordType",
+          "DestinationColumn": "MedicaidRecordType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "COBUpdateDate",
+          "DestinationColumn": "COBUpdateDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NameofOtherCoverage",
+          "DestinationColumn": "NameofOtherCoverage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SubscriberIDofOtherCoverage",
+          "DestinationColumn": "SubscriberIDofOtherCoverage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "GroupIDofOtherCoverage",
+          "DestinationColumn": "GroupIDofOtherCoverage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "KindofOtherInsurance",
+          "DestinationColumn": "KindofOtherInsurance",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NameofOtherInsuranceCompany",
+          "DestinationColumn": "NameofOtherInsuranceCompany",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

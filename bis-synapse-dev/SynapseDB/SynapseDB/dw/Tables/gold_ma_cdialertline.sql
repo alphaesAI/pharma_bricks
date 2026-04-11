@@ -1,0 +1,66 @@
+CREATE TABLE [devidap1].[gold_ma_cdialertline]
+( 
+ [reportMonth] nvarchar(12) NOT NULL PRIMARY KEY NONCLUSTERED ([reportMonth] ASC, [alertID] ASC, [clientCode] ASC) NOT ENFORCED
+    ,[attributedPOCode] nvarchar(255) NULL
+    ,[attributedPOName] nvarchar(255) NULL
+    ,[attributedPracticeCode] nvarchar(255) NULL
+    ,[attributedPracticeName] nvarchar(255) NULL
+    ,[attributedMarket] nvarchar(255) NULL
+    ,[attributedEngagement] nvarchar(255) NULL
+    ,[attributedNPI] nvarchar(255) NULL
+    ,[attributedProviderID] nvarchar(255) NULL
+    ,[attributedProviderName] nvarchar(255) NULL
+    ,[alertID] bigint NOT NULL
+    ,[clientCode] nvarchar(10) NOT NULL
+    ,[LOB] nvarchar(20) NULL
+    ,[snapshotDate] date NULL
+    ,[cdiAlertEntityDetailID] bigint NULL
+    ,[cdiAlertEntityID] bigint NULL
+    ,[planMemberID] nvarchar(100) NULL
+    ,[memberName] nvarchar(255) NULL
+    ,[memberDateOfBirth] date NULL
+    ,[pcpProviderID] nvarchar(255) NULL
+    ,[apptProviderID] nvarchar(255) NULL
+    ,[queriesDistributed] bigint NULL
+    ,[queriesReturned] bigint NULL
+    ,[appointmentDate] date NULL
+    ,[appointmentTypeID] int NULL
+    ,[cdiReceivedDate] date NULL
+    ,[initialMedicalRecordReviewID] bigint NULL
+    ,[mrrReviewDate] date NULL
+    ,[alertResponseOptionID] int NULL
+    ,[isApptDateCurrentYear] bit NULL
+    ,[isReceivedDateCurrentYear] bit NULL
+    ,[deliveryDate] date NULL
+    ,[queryReceivedFromCoderDate] date NULL
+    ,[queryForwardedToDoctorDate] date NULL
+    ,[queryResponseReceivedDate] date NULL
+    ,[alertLineText] nvarchar(1000) NULL
+    ,[alertGroupID] int NULL
+    ,[hcc] nvarchar(20) NULL
+    ,[icd] nvarchar(20) NULL
+    ,[isConditionIdentified] bit NULL
+    ,[isConditionAddressed] bit NULL
+    ,[cdiAlertWorkflowStatusID] int NULL
+    ,[cdiAlertWorkflowExceptionOptionID] int NULL
+    ,[cdiAlertWorkflowID] int NULL
+    ,[cdiAlertQueryCodeID] int NULL
+    ,[cdiAlertQueryResponseID] int NULL
+    ,[alertResponseOptionText] varchar(100) NULL
+    ,[alertResponseType] varchar(20) NULL
+    ,[filterDate] date NULL
+    ,[appointmentTypeDesc] varchar(100) NULL
+    ,[cdiAlertStatusDesc] varchar(100) NULL
+    ,[cdiStatus] varchar(100) NULL
+    ,[currentMonthFlag] int NULL
+    ,[currentlyActive] bit NULL
+    ,[alertsDistributedFlag] int NULL
+    ,[alertsReturnedFlag] int NULL
+    ,[alertsReturnedCompliantFlag] int NULL
+    ,[alertsReturnedCompliant100pctFlag] int NULL
+    ,[umarQualifiedFlag] int NULL
+    ,[incentiveQualifiedFlag] int NULL
+    ,[memberApptCDIReceivedNumber] varchar(7) NULL
+    ,[duplicateFlag] int NULL
+    ,[hashKey] nvarchar(510) NULL
+) 

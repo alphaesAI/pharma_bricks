@@ -1,0 +1,1429 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "TimestampType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "LongType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "ContractNumber",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "RunDate",
+      "DataType": "DateType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "PaymentYearandMonth",
+      "DataType": "IntegerType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "RecordType",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "BeneficiaryLastName",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "BeneficiaryFirstName",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "BeneficiaryInitial",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "DateOfBirth",
+      "DataType": "DateType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "Sex",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "SocialSecurityNumber",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "RASESRDIndicatorSwitch",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "AgeGroupFemale0To34",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "AgeGroupFemale35To44",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "AgeGroupFemale45To54",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "AgeGroupFemale55To59",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "AgeGroupFemale60To64",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "AgeGroupFemale65To69",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "AgeGroupFemale70To74",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "AgeGroupFemale75To79",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "AgeGroupFemale80To84",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "AgeGroupFemale85To89",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "AgeGroupFemale90To94",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "AgeGroupFemale95ToGT",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "AgeGroupMale0To34",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "AgeGroupMale35To44",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "AgeGroupMale45To54",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "AgeGroupMale55To59",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "AgeGroupMale60To64",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "AgeGroupMale65To69",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "AgeGroupMale70To74",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "AgeGroupMale75To79",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "AgeGroupMale80To84",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "AgeGroupMale85To89",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "AgeGroupMale90To94",
+      "DataType": "StringType",
+      "Ordinal": 40
+    },
+    {
+      "FieldName": "AgeGroupMale95ToGT",
+      "DataType": "StringType",
+      "Ordinal": 41
+    },
+    {
+      "FieldName": "MedicaidFemaleDisabled",
+      "DataType": "StringType",
+      "Ordinal": 42
+    },
+    {
+      "FieldName": "MedicaidFemaleAged",
+      "DataType": "StringType",
+      "Ordinal": 43
+    },
+    {
+      "FieldName": "MedicaidMaleDisabled",
+      "DataType": "StringType",
+      "Ordinal": 44
+    },
+    {
+      "FieldName": "MedicaidMaleAged",
+      "DataType": "StringType",
+      "Ordinal": 45
+    },
+    {
+      "FieldName": "OriginallyDisabledFemale",
+      "DataType": "StringType",
+      "Ordinal": 46
+    },
+    {
+      "FieldName": "OriginallyDisabledMale",
+      "DataType": "StringType",
+      "Ordinal": 47
+    },
+    {
+      "FieldName": "OriginallyESRDFemale",
+      "DataType": "StringType",
+      "Ordinal": 48
+    },
+    {
+      "FieldName": "OriginallyESRDMale",
+      "DataType": "StringType",
+      "Ordinal": 49
+    },
+    {
+      "FieldName": "HCC001",
+      "DataType": "StringType",
+      "Ordinal": 50
+    },
+    {
+      "FieldName": "HCC002",
+      "DataType": "StringType",
+      "Ordinal": 51
+    },
+    {
+      "FieldName": "HCC006",
+      "DataType": "StringType",
+      "Ordinal": 52
+    },
+    {
+      "FieldName": "HCC008",
+      "DataType": "StringType",
+      "Ordinal": 53
+    },
+    {
+      "FieldName": "HCC009",
+      "DataType": "StringType",
+      "Ordinal": 54
+    },
+    {
+      "FieldName": "HCC010",
+      "DataType": "StringType",
+      "Ordinal": 55
+    },
+    {
+      "FieldName": "HCC011",
+      "DataType": "StringType",
+      "Ordinal": 56
+    },
+    {
+      "FieldName": "HCC012",
+      "DataType": "StringType",
+      "Ordinal": 57
+    },
+    {
+      "FieldName": "HCC017",
+      "DataType": "StringType",
+      "Ordinal": 58
+    },
+    {
+      "FieldName": "HCC018",
+      "DataType": "StringType",
+      "Ordinal": 59
+    },
+    {
+      "FieldName": "HCC019",
+      "DataType": "StringType",
+      "Ordinal": 60
+    },
+    {
+      "FieldName": "HCC021",
+      "DataType": "StringType",
+      "Ordinal": 61
+    },
+    {
+      "FieldName": "HCC022",
+      "DataType": "StringType",
+      "Ordinal": 62
+    },
+    {
+      "FieldName": "HCC023",
+      "DataType": "StringType",
+      "Ordinal": 63
+    },
+    {
+      "FieldName": "HCC027",
+      "DataType": "StringType",
+      "Ordinal": 64
+    },
+    {
+      "FieldName": "HCC028",
+      "DataType": "StringType",
+      "Ordinal": 65
+    },
+    {
+      "FieldName": "HCC029",
+      "DataType": "StringType",
+      "Ordinal": 66
+    },
+    {
+      "FieldName": "HCC033",
+      "DataType": "StringType",
+      "Ordinal": 67
+    },
+    {
+      "FieldName": "HCC034",
+      "DataType": "StringType",
+      "Ordinal": 68
+    },
+    {
+      "FieldName": "HCC035",
+      "DataType": "StringType",
+      "Ordinal": 69
+    },
+    {
+      "FieldName": "HCC039",
+      "DataType": "StringType",
+      "Ordinal": 70
+    },
+    {
+      "FieldName": "HCC040",
+      "DataType": "StringType",
+      "Ordinal": 71
+    },
+    {
+      "FieldName": "HCC046",
+      "DataType": "StringType",
+      "Ordinal": 72
+    },
+    {
+      "FieldName": "HCC047",
+      "DataType": "StringType",
+      "Ordinal": 73
+    },
+    {
+      "FieldName": "HCC048",
+      "DataType": "StringType",
+      "Ordinal": 74
+    },
+    {
+      "FieldName": "HCC051",
+      "DataType": "StringType",
+      "Ordinal": 75
+    },
+    {
+      "FieldName": "HCC052",
+      "DataType": "StringType",
+      "Ordinal": 76
+    },
+    {
+      "FieldName": "HCC054",
+      "DataType": "StringType",
+      "Ordinal": 77
+    },
+    {
+      "FieldName": "HCC055",
+      "DataType": "StringType",
+      "Ordinal": 78
+    },
+    {
+      "FieldName": "HCC056",
+      "DataType": "StringType",
+      "Ordinal": 79
+    },
+    {
+      "FieldName": "HCC057",
+      "DataType": "StringType",
+      "Ordinal": 80
+    },
+    {
+      "FieldName": "HCC058",
+      "DataType": "StringType",
+      "Ordinal": 81
+    },
+    {
+      "FieldName": "HCC059",
+      "DataType": "StringType",
+      "Ordinal": 82
+    },
+    {
+      "FieldName": "HCC060",
+      "DataType": "StringType",
+      "Ordinal": 83
+    },
+    {
+      "FieldName": "HCC070",
+      "DataType": "StringType",
+      "Ordinal": 84
+    },
+    {
+      "FieldName": "HCC071",
+      "DataType": "StringType",
+      "Ordinal": 85
+    },
+    {
+      "FieldName": "HCC072",
+      "DataType": "StringType",
+      "Ordinal": 86
+    },
+    {
+      "FieldName": "HCC073",
+      "DataType": "StringType",
+      "Ordinal": 87
+    },
+    {
+      "FieldName": "HCC074",
+      "DataType": "StringType",
+      "Ordinal": 88
+    },
+    {
+      "FieldName": "HCC075",
+      "DataType": "StringType",
+      "Ordinal": 89
+    },
+    {
+      "FieldName": "HCC076",
+      "DataType": "StringType",
+      "Ordinal": 90
+    },
+    {
+      "FieldName": "HCC077",
+      "DataType": "StringType",
+      "Ordinal": 91
+    },
+    {
+      "FieldName": "HCC078",
+      "DataType": "StringType",
+      "Ordinal": 92
+    },
+    {
+      "FieldName": "HCC079",
+      "DataType": "StringType",
+      "Ordinal": 93
+    },
+    {
+      "FieldName": "HCC080",
+      "DataType": "StringType",
+      "Ordinal": 94
+    },
+    {
+      "FieldName": "HCC082",
+      "DataType": "StringType",
+      "Ordinal": 95
+    },
+    {
+      "FieldName": "HCC083",
+      "DataType": "StringType",
+      "Ordinal": 96
+    },
+    {
+      "FieldName": "HCC084",
+      "DataType": "StringType",
+      "Ordinal": 97
+    },
+    {
+      "FieldName": "HCC085",
+      "DataType": "StringType",
+      "Ordinal": 98
+    },
+    {
+      "FieldName": "HCC086",
+      "DataType": "StringType",
+      "Ordinal": 99
+    },
+    {
+      "FieldName": "HCC087",
+      "DataType": "StringType",
+      "Ordinal": 100
+    },
+    {
+      "FieldName": "HCC088",
+      "DataType": "StringType",
+      "Ordinal": 101
+    },
+    {
+      "FieldName": "HCC096",
+      "DataType": "StringType",
+      "Ordinal": 102
+    },
+    {
+      "FieldName": "HCC099",
+      "DataType": "StringType",
+      "Ordinal": 103
+    },
+    {
+      "FieldName": "HCC100",
+      "DataType": "StringType",
+      "Ordinal": 104
+    },
+    {
+      "FieldName": "HCC103",
+      "DataType": "StringType",
+      "Ordinal": 105
+    },
+    {
+      "FieldName": "HCC104",
+      "DataType": "StringType",
+      "Ordinal": 106
+    },
+    {
+      "FieldName": "HCC106",
+      "DataType": "StringType",
+      "Ordinal": 107
+    },
+    {
+      "FieldName": "HCC107",
+      "DataType": "StringType",
+      "Ordinal": 108
+    },
+    {
+      "FieldName": "HCC108",
+      "DataType": "StringType",
+      "Ordinal": 109
+    },
+    {
+      "FieldName": "HCC110",
+      "DataType": "StringType",
+      "Ordinal": 110
+    },
+    {
+      "FieldName": "HCC111",
+      "DataType": "StringType",
+      "Ordinal": 111
+    },
+    {
+      "FieldName": "HCC112",
+      "DataType": "StringType",
+      "Ordinal": 112
+    },
+    {
+      "FieldName": "HCC114",
+      "DataType": "StringType",
+      "Ordinal": 113
+    },
+    {
+      "FieldName": "HCC115",
+      "DataType": "StringType",
+      "Ordinal": 114
+    },
+    {
+      "FieldName": "HCC122",
+      "DataType": "StringType",
+      "Ordinal": 115
+    },
+    {
+      "FieldName": "HCC124",
+      "DataType": "StringType",
+      "Ordinal": 116
+    },
+    {
+      "FieldName": "HCC134",
+      "DataType": "StringType",
+      "Ordinal": 117
+    },
+    {
+      "FieldName": "HCC135",
+      "DataType": "StringType",
+      "Ordinal": 118
+    },
+    {
+      "FieldName": "HCC136",
+      "DataType": "StringType",
+      "Ordinal": 119
+    },
+    {
+      "FieldName": "HCC137",
+      "DataType": "StringType",
+      "Ordinal": 120
+    },
+    {
+      "FieldName": "HCC138",
+      "DataType": "StringType",
+      "Ordinal": 121
+    },
+    {
+      "FieldName": "HCC139",
+      "DataType": "StringType",
+      "Ordinal": 122
+    },
+    {
+      "FieldName": "HCC140",
+      "DataType": "StringType",
+      "Ordinal": 123
+    },
+    {
+      "FieldName": "HCC141",
+      "DataType": "StringType",
+      "Ordinal": 124
+    },
+    {
+      "FieldName": "HCC157",
+      "DataType": "StringType",
+      "Ordinal": 125
+    },
+    {
+      "FieldName": "HCC158",
+      "DataType": "StringType",
+      "Ordinal": 126
+    },
+    {
+      "FieldName": "HCC159",
+      "DataType": "StringType",
+      "Ordinal": 127
+    },
+    {
+      "FieldName": "HCC160",
+      "DataType": "StringType",
+      "Ordinal": 128
+    },
+    {
+      "FieldName": "HCC161",
+      "DataType": "StringType",
+      "Ordinal": 129
+    },
+    {
+      "FieldName": "HCC162",
+      "DataType": "StringType",
+      "Ordinal": 130
+    },
+    {
+      "FieldName": "HCC166",
+      "DataType": "StringType",
+      "Ordinal": 131
+    },
+    {
+      "FieldName": "HCC167",
+      "DataType": "StringType",
+      "Ordinal": 132
+    },
+    {
+      "FieldName": "HCC169",
+      "DataType": "StringType",
+      "Ordinal": 133
+    },
+    {
+      "FieldName": "HCC170",
+      "DataType": "StringType",
+      "Ordinal": 134
+    },
+    {
+      "FieldName": "HCC173",
+      "DataType": "StringType",
+      "Ordinal": 135
+    },
+    {
+      "FieldName": "HCC176",
+      "DataType": "StringType",
+      "Ordinal": 136
+    },
+    {
+      "FieldName": "HCC186",
+      "DataType": "StringType",
+      "Ordinal": 137
+    },
+    {
+      "FieldName": "HCC188",
+      "DataType": "StringType",
+      "Ordinal": 138
+    },
+    {
+      "FieldName": "HCC189",
+      "DataType": "StringType",
+      "Ordinal": 139
+    },
+    {
+      "FieldName": "DDHCC006",
+      "DataType": "StringType",
+      "Ordinal": 140
+    },
+    {
+      "FieldName": "DDHCC034",
+      "DataType": "StringType",
+      "Ordinal": 141
+    },
+    {
+      "FieldName": "DDHCC046",
+      "DataType": "StringType",
+      "Ordinal": 142
+    },
+    {
+      "FieldName": "DDHCC054",
+      "DataType": "StringType",
+      "Ordinal": 143
+    },
+    {
+      "FieldName": "DDHCC055",
+      "DataType": "StringType",
+      "Ordinal": 144
+    },
+    {
+      "FieldName": "DDHCC110",
+      "DataType": "StringType",
+      "Ordinal": 145
+    },
+    {
+      "FieldName": "DDHCC176",
+      "DataType": "StringType",
+      "Ordinal": 146
+    },
+    {
+      "FieldName": "CancerImmune",
+      "DataType": "StringType",
+      "Ordinal": 147
+    },
+    {
+      "FieldName": "CHFCOPD",
+      "DataType": "StringType",
+      "Ordinal": 148
+    },
+    {
+      "FieldName": "CHFRenal",
+      "DataType": "StringType",
+      "Ordinal": 149
+    },
+    {
+      "FieldName": "COPDCardRespFail",
+      "DataType": "StringType",
+      "Ordinal": 150
+    },
+    {
+      "FieldName": "DiabetesCHF",
+      "DataType": "StringType",
+      "Ordinal": 151
+    },
+    {
+      "FieldName": "SepsisCardRespFail",
+      "DataType": "StringType",
+      "Ordinal": 152
+    },
+    {
+      "FieldName": "DINTHCC47gCancer",
+      "DataType": "StringType",
+      "Ordinal": 153
+    },
+    {
+      "FieldName": "DINTDiabetesCHF",
+      "DataType": "StringType",
+      "Ordinal": 154
+    },
+    {
+      "FieldName": "DINTCHFgCopdCF",
+      "DataType": "StringType",
+      "Ordinal": 155
+    },
+    {
+      "FieldName": "DINTHCC85gDiabetesMellit",
+      "DataType": "StringType",
+      "Ordinal": 156
+    },
+    {
+      "FieldName": "DINTHCC85_gCopdCF",
+      "DataType": "StringType",
+      "Ordinal": 157
+    },
+    {
+      "FieldName": "DINTHCC85gRenal",
+      "DataType": "StringType",
+      "Ordinal": 158
+    },
+    {
+      "FieldName": "DINTHCC85gRenalv24",
+      "DataType": "StringType",
+      "Ordinal": 159
+    },
+    {
+      "FieldName": "DINTsgCopdCFCardRespFail",
+      "DataType": "StringType",
+      "Ordinal": 160
+    },
+    {
+      "FieldName": "DINTHCC85HCC96",
+      "DataType": "StringType",
+      "Ordinal": 161
+    },
+    {
+      "FieldName": "DINTgRespDepandArregCOPDCF",
+      "DataType": "StringType",
+      "Ordinal": 162
+    },
+    {
+      "FieldName": "DINTgSubstanceAbusegPsychiatric",
+      "DataType": "StringType",
+      "Ordinal": 163
+    },
+    {
+      "FieldName": "Medicaid",
+      "DataType": "StringType",
+      "Ordinal": 164
+    },
+    {
+      "FieldName": "OriginallyDisabled",
+      "DataType": "StringType",
+      "Ordinal": 165
+    },
+    {
+      "FieldName": "DDHCC39",
+      "DataType": "StringType",
+      "Ordinal": 166
+    },
+    {
+      "FieldName": "DDHCC77",
+      "DataType": "StringType",
+      "Ordinal": 167
+    },
+    {
+      "FieldName": "DDHCC85",
+      "DataType": "StringType",
+      "Ordinal": 168
+    },
+    {
+      "FieldName": "DDHCC161",
+      "DataType": "StringType",
+      "Ordinal": 169
+    },
+    {
+      "FieldName": "DINTARTOpeningsPressureUlcer",
+      "DataType": "StringType",
+      "Ordinal": 170
+    },
+    {
+      "FieldName": "DINTASPSpecBactPneumPresUlcer",
+      "DataType": "StringType",
+      "Ordinal": 171
+    },
+    {
+      "FieldName": "DINTCOPDCFASPSpecBactPneum",
+      "DataType": "StringType",
+      "Ordinal": 172
+    },
+    {
+      "FieldName": "DisabledPressureUlcer",
+      "DataType": "StringType",
+      "Ordinal": 173
+    },
+    {
+      "FieldName": "DINTSchizoPhreniaCHF",
+      "DataType": "StringType",
+      "Ordinal": 174
+    },
+    {
+      "FieldName": "DINTSchizoPhreniagCopdCF",
+      "DataType": "StringType",
+      "Ordinal": 175
+    },
+    {
+      "FieldName": "DINTSchizoPhreniaSeizures",
+      "DataType": "StringType",
+      "Ordinal": 176
+    },
+    {
+      "FieldName": "DINTSepsisArtifOpenings",
+      "DataType": "StringType",
+      "Ordinal": 177
+    },
+    {
+      "FieldName": "DINTSepsisASPSpecBactPneum",
+      "DataType": "StringType",
+      "Ordinal": 178
+    },
+    {
+      "FieldName": "DINTSepsisPressureUlcer",
+      "DataType": "StringType",
+      "Ordinal": 179
+    },
+    {
+      "FieldName": "PaymentHCCCount",
+      "DataType": "StringType",
+      "Ordinal": 180
+    },
+    {
+      "FieldName": "DINTNONAGEDgSubstanceUseDsgPsych",
+      "DataType": "StringType",
+      "Ordinal": 181
+    },
+    {
+      "FieldName": "DINTgSubstanceUseDisordergPsychV24",
+      "DataType": "StringType",
+      "Ordinal": 182
+    },
+    {
+      "FieldName": "DINTSEPSISPRESSUREULCERV24",
+      "DataType": "StringType",
+      "Ordinal": 183
+    },
+    {
+      "FieldName": "DINTARTOPENINGSPRESSULCERV24",
+      "DataType": "StringType",
+      "Ordinal": 184
+    },
+    {
+      "FieldName": "DINTASPSPECBPNEUMPRESULCV24",
+      "DataType": "StringType",
+      "Ordinal": 185
+    },
+    {
+      "FieldName": "DDNONAGEDPRESSUREULCERV24",
+      "DataType": "StringType",
+      "Ordinal": 186
+    },
+    {
+      "FieldName": "HCC020",
+      "DataType": "StringType",
+      "Ordinal": 187
+    },
+    {
+      "FieldName": "HCC036",
+      "DataType": "StringType",
+      "Ordinal": 188
+    },
+    {
+      "FieldName": "HCC037",
+      "DataType": "StringType",
+      "Ordinal": 189
+    },
+    {
+      "FieldName": "HCC038",
+      "DataType": "StringType",
+      "Ordinal": 190
+    },
+    {
+      "FieldName": "HCC049",
+      "DataType": "StringType",
+      "Ordinal": 191
+    },
+    {
+      "FieldName": "HCC050",
+      "DataType": "StringType",
+      "Ordinal": 192
+    },
+    {
+      "FieldName": "HCC062",
+      "DataType": "StringType",
+      "Ordinal": 193
+    },
+    {
+      "FieldName": "HCC063",
+      "DataType": "StringType",
+      "Ordinal": 194
+    },
+    {
+      "FieldName": "HCC064",
+      "DataType": "StringType",
+      "Ordinal": 195
+    },
+    {
+      "FieldName": "HCC065",
+      "DataType": "StringType",
+      "Ordinal": 196
+    },
+    {
+      "FieldName": "HCC068",
+      "DataType": "StringType",
+      "Ordinal": 197
+    },
+    {
+      "FieldName": "HCC081",
+      "DataType": "StringType",
+      "Ordinal": 198
+    },
+    {
+      "FieldName": "HCC092",
+      "DataType": "StringType",
+      "Ordinal": 199
+    },
+    {
+      "FieldName": "HCC093",
+      "DataType": "StringType",
+      "Ordinal": 200
+    },
+    {
+      "FieldName": "HCC094",
+      "DataType": "StringType",
+      "Ordinal": 201
+    },
+    {
+      "FieldName": "HCC109",
+      "DataType": "StringType",
+      "Ordinal": 202
+    },
+    {
+      "FieldName": "HCC125",
+      "DataType": "StringType",
+      "Ordinal": 203
+    },
+    {
+      "FieldName": "HCC126",
+      "DataType": "StringType",
+      "Ordinal": 204
+    },
+    {
+      "FieldName": "HCC127",
+      "DataType": "StringType",
+      "Ordinal": 205
+    },
+    {
+      "FieldName": "HCC151",
+      "DataType": "StringType",
+      "Ordinal": 206
+    },
+    {
+      "FieldName": "HCC152",
+      "DataType": "StringType",
+      "Ordinal": 207
+    },
+    {
+      "FieldName": "HCC153",
+      "DataType": "StringType",
+      "Ordinal": 208
+    },
+    {
+      "FieldName": "HCC154",
+      "DataType": "StringType",
+      "Ordinal": 209
+    },
+    {
+      "FieldName": "HCC155",
+      "DataType": "StringType",
+      "Ordinal": 210
+    },
+    {
+      "FieldName": "HCC180",
+      "DataType": "StringType",
+      "Ordinal": 211
+    },
+    {
+      "FieldName": "HCC181",
+      "DataType": "StringType",
+      "Ordinal": 212
+    },
+    {
+      "FieldName": "HCC182",
+      "DataType": "StringType",
+      "Ordinal": 213
+    },
+    {
+      "FieldName": "HCC190",
+      "DataType": "StringType",
+      "Ordinal": 214
+    },
+    {
+      "FieldName": "HCC191",
+      "DataType": "StringType",
+      "Ordinal": 215
+    },
+    {
+      "FieldName": "HCC192",
+      "DataType": "StringType",
+      "Ordinal": 216
+    },
+    {
+      "FieldName": "HCC193",
+      "DataType": "StringType",
+      "Ordinal": 217
+    },
+    {
+      "FieldName": "HCC195",
+      "DataType": "StringType",
+      "Ordinal": 218
+    },
+    {
+      "FieldName": "HCC196",
+      "DataType": "StringType",
+      "Ordinal": 219
+    },
+    {
+      "FieldName": "HCC197",
+      "DataType": "StringType",
+      "Ordinal": 220
+    },
+    {
+      "FieldName": "HCC198",
+      "DataType": "StringType",
+      "Ordinal": 221
+    },
+    {
+      "FieldName": "HCC199",
+      "DataType": "StringType",
+      "Ordinal": 222
+    },
+    {
+      "FieldName": "HCC200",
+      "DataType": "StringType",
+      "Ordinal": 223
+    },
+    {
+      "FieldName": "HCC201",
+      "DataType": "StringType",
+      "Ordinal": 224
+    },
+    {
+      "FieldName": "HCC202",
+      "DataType": "StringType",
+      "Ordinal": 225
+    },
+    {
+      "FieldName": "HCC211",
+      "DataType": "StringType",
+      "Ordinal": 226
+    },
+    {
+      "FieldName": "HCC212",
+      "DataType": "StringType",
+      "Ordinal": 227
+    },
+    {
+      "FieldName": "HCC213",
+      "DataType": "StringType",
+      "Ordinal": 228
+    },
+    {
+      "FieldName": "HCC221",
+      "DataType": "StringType",
+      "Ordinal": 229
+    },
+    {
+      "FieldName": "HCC222",
+      "DataType": "StringType",
+      "Ordinal": 230
+    },
+    {
+      "FieldName": "HCC223",
+      "DataType": "StringType",
+      "Ordinal": 231
+    },
+    {
+      "FieldName": "HCC224",
+      "DataType": "StringType",
+      "Ordinal": 232
+    },
+    {
+      "FieldName": "HCC225",
+      "DataType": "StringType",
+      "Ordinal": 233
+    },
+    {
+      "FieldName": "HCC226",
+      "DataType": "StringType",
+      "Ordinal": 234
+    },
+    {
+      "FieldName": "HCC227",
+      "DataType": "StringType",
+      "Ordinal": 235
+    },
+    {
+      "FieldName": "HCC228",
+      "DataType": "StringType",
+      "Ordinal": 236
+    },
+    {
+      "FieldName": "HCC229",
+      "DataType": "StringType",
+      "Ordinal": 237
+    },
+    {
+      "FieldName": "HCC238",
+      "DataType": "StringType",
+      "Ordinal": 238
+    },
+    {
+      "FieldName": "HCC248",
+      "DataType": "StringType",
+      "Ordinal": 239
+    },
+    {
+      "FieldName": "HCC249",
+      "DataType": "StringType",
+      "Ordinal": 240
+    },
+    {
+      "FieldName": "HCC253",
+      "DataType": "StringType",
+      "Ordinal": 241
+    },
+    {
+      "FieldName": "HCC254",
+      "DataType": "StringType",
+      "Ordinal": 242
+    },
+    {
+      "FieldName": "HCC263",
+      "DataType": "StringType",
+      "Ordinal": 243
+    },
+    {
+      "FieldName": "HCC264",
+      "DataType": "StringType",
+      "Ordinal": 244
+    },
+    {
+      "FieldName": "HCC267",
+      "DataType": "StringType",
+      "Ordinal": 245
+    },
+    {
+      "FieldName": "HCC276",
+      "DataType": "StringType",
+      "Ordinal": 246
+    },
+    {
+      "FieldName": "HCC277",
+      "DataType": "StringType",
+      "Ordinal": 247
+    },
+    {
+      "FieldName": "HCC278",
+      "DataType": "StringType",
+      "Ordinal": 248
+    },
+    {
+      "FieldName": "HCC279",
+      "DataType": "StringType",
+      "Ordinal": 249
+    },
+    {
+      "FieldName": "HCC280",
+      "DataType": "StringType",
+      "Ordinal": 250
+    },
+    {
+      "FieldName": "HCC282",
+      "DataType": "StringType",
+      "Ordinal": 251
+    },
+    {
+      "FieldName": "HCC283",
+      "DataType": "StringType",
+      "Ordinal": 252
+    },
+    {
+      "FieldName": "HCC298",
+      "DataType": "StringType",
+      "Ordinal": 253
+    },
+    {
+      "FieldName": "HCC300",
+      "DataType": "StringType",
+      "Ordinal": 254
+    },
+    {
+      "FieldName": "HCC326",
+      "DataType": "StringType",
+      "Ordinal": 255
+    },
+    {
+      "FieldName": "HCC327",
+      "DataType": "StringType",
+      "Ordinal": 256
+    },
+    {
+      "FieldName": "HCC328",
+      "DataType": "StringType",
+      "Ordinal": 257
+    },
+    {
+      "FieldName": "HCC329",
+      "DataType": "StringType",
+      "Ordinal": 258
+    },
+    {
+      "FieldName": "HCC379",
+      "DataType": "StringType",
+      "Ordinal": 259
+    },
+    {
+      "FieldName": "HCC380",
+      "DataType": "StringType",
+      "Ordinal": 260
+    },
+    {
+      "FieldName": "HCC381",
+      "DataType": "StringType",
+      "Ordinal": 261
+    },
+    {
+      "FieldName": "HCC382",
+      "DataType": "StringType",
+      "Ordinal": 262
+    },
+    {
+      "FieldName": "HCC383",
+      "DataType": "StringType",
+      "Ordinal": 263
+    },
+    {
+      "FieldName": "HCC385",
+      "DataType": "StringType",
+      "Ordinal": 264
+    },
+    {
+      "FieldName": "HCC387",
+      "DataType": "StringType",
+      "Ordinal": 265
+    },
+    {
+      "FieldName": "HCC397",
+      "DataType": "StringType",
+      "Ordinal": 266
+    },
+    {
+      "FieldName": "HCC398",
+      "DataType": "StringType",
+      "Ordinal": 267
+    },
+    {
+      "FieldName": "HCC399",
+      "DataType": "StringType",
+      "Ordinal": 268
+    },
+    {
+      "FieldName": "HCC401",
+      "DataType": "StringType",
+      "Ordinal": 269
+    },
+    {
+      "FieldName": "HCC402",
+      "DataType": "StringType",
+      "Ordinal": 270
+    },
+    {
+      "FieldName": "HCC405",
+      "DataType": "StringType",
+      "Ordinal": 271
+    },
+    {
+      "FieldName": "HCC409",
+      "DataType": "StringType",
+      "Ordinal": 272
+    },
+    {
+      "FieldName": "HCC454",
+      "DataType": "StringType",
+      "Ordinal": 273
+    },
+    {
+      "FieldName": "HCC463",
+      "DataType": "StringType",
+      "Ordinal": 274
+    },
+    {
+      "FieldName": "DINTgCOPDCFASPSpecBactPneum",
+      "DataType": "StringType",
+      "Ordinal": 275
+    },
+    {
+      "FieldName": "DIntDiabetesHeartFailure",
+      "DataType": "StringType",
+      "Ordinal": 276
+    },
+    {
+      "FieldName": "DIntHeartFailureChronicLungDisorder",
+      "DataType": "StringType",
+      "Ordinal": 277
+    },
+    {
+      "FieldName": "DIntHeartFailureKidney",
+      "DataType": "StringType",
+      "Ordinal": 278
+    },
+    {
+      "FieldName": "DIntChronicLungDisorderCardiorespiratoryFailure",
+      "DataType": "StringType",
+      "Ordinal": 279
+    },
+    {
+      "FieldName": "DIntHeartFailureHCC238",
+      "DataType": "StringType",
+      "Ordinal": 280
+    },
+    {
+      "FieldName": "DDINTDisabledHeartFailure",
+      "DataType": "StringType",
+      "Ordinal": 281
+    },
+    {
+      "FieldName": "DDIntDisabledCancer",
+      "DataType": "StringType",
+      "Ordinal": 282
+    },
+    {
+      "FieldName": "DDIntDisabledNeuro",
+      "DataType": "StringType",
+      "Ordinal": 283
+    },
+    {
+      "FieldName": "DDIntDisabledChronicLungDisorder",
+      "DataType": "StringType",
+      "Ordinal": 284
+    },
+    {
+      "FieldName": "DisabledUlcer",
+      "DataType": "StringType",
+      "Ordinal": 285
+    }
+  ]
+}

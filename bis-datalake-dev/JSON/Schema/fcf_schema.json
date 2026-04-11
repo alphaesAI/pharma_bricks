@@ -1,0 +1,3902 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_CLAIM_NUM",
+      "OrdinalPosition": 0,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_TYPE",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_FACILITY_CLAIM_TYPE",
+      "OrdinalPosition": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_GROUP_BASE",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_GROUP_SUFFIX",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_DEID_NUM",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBSCRIBER_ID",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_FIRST_NAME",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_LAST_NAME",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_DOB",
+      "OrdinalPosition": 9,
+      "DataType": "date",
+      "Validators": [
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_PATIENT_GENDER",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PAY_TO_PROVIDER_ID",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PROVIDER_TAX_ID_TYPE",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PROVIDER_TAXONOMY",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_TO_PROVIDER_TAX_ID",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILLING_PROVIDER_LAST_NAME",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILLING_PROVIDER_FIRST_NAME",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_ADDRESS_LINE_1",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_ADDRESS_LINE_2",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_ADDRESS_LINE_3",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_CITY",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_STATE",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_ZIP",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_TRANSACTION_TYPE",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUSTMENT_CODE",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_STATUS",
+      "OrdinalPosition": 25,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "O",
+            "6",
+            "8",
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_PAY_DIRECTION",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_ACCESS_FEE_AMT",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_HOME_HOST_IND",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_TYPE_IND",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_NTWK_ELIG_IND",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BEGINNING_DOS",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_LOB",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PAYMENT_TYPE",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TAX_FORM_CODE",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TAX_FORM_BOX",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_TOTAL_CHARGE_AMT",
+      "OrdinalPosition": 36,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ALLOWED_AMT",
+      "OrdinalPosition": 37,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CHECK_DATE",
+      "OrdinalPosition": 38,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CHECK_NUM",
+      "OrdinalPosition": 39,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CHECK_AMT",
+      "OrdinalPosition": 40,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_FINALIZED_FILE_CREATE_DATE",
+      "OrdinalPosition": 41,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_RECEIVE_DATE",
+      "OrdinalPosition": 42,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SPLIT_CLAIM_ID",
+      "OrdinalPosition": 43,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_DOC_CNTL_NUM",
+      "OrdinalPosition": 44,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ID_ORIG",
+      "OrdinalPosition": 45,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ID_PREV",
+      "OrdinalPosition": 46,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_FINALIZED_DT",
+      "OrdinalPosition": 47,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ENTRY_EMP",
+      "OrdinalPosition": 48,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ENTRY_DT",
+      "OrdinalPosition": 49,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_UPDATED_BY",
+      "OrdinalPosition": 50,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_UPDATED_DT",
+      "OrdinalPosition": 51,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_CLAIM_SOURCE",
+      "OrdinalPosition": 52,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_STATUS_PREV",
+      "OrdinalPosition": 53,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_STATUS_REPRICED",
+      "OrdinalPosition": 54,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_EDI_ADJUST_CODE_LIST",
+      "OrdinalPosition": 55,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PAID_HEADER_LEVEL",
+      "OrdinalPosition": 56,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_INSURANCE_PLAN_NAME",
+      "OrdinalPosition": 57,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_INSURANCE_PLAN_ID",
+      "OrdinalPosition": 58,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PAYER_ID_ADJUDICATED",
+      "OrdinalPosition": 59,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_HIC_NUM",
+      "OrdinalPosition": 60,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_FIRST_NAME",
+      "OrdinalPosition": 61,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_LAST_NAME",
+      "OrdinalPosition": 62,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_MIDDLE_NAME",
+      "OrdinalPosition": 63,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_NAME_SUFFIX",
+      "OrdinalPosition": 64,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_ADDR1",
+      "OrdinalPosition": 65,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_ADDR2",
+      "OrdinalPosition": 66,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_CITY",
+      "OrdinalPosition": 67,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_ZIPCODE",
+      "OrdinalPosition": 68,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_COUNTRY",
+      "OrdinalPosition": 69,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_STATE",
+      "OrdinalPosition": 70,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_PHONE1",
+      "OrdinalPosition": 71,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_BIRTH_DATE",
+      "OrdinalPosition": 72,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_GENDER",
+      "OrdinalPosition": 73,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_EMPLOYER",
+      "OrdinalPosition": 74,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_COMPANY_CD",
+      "OrdinalPosition": 75,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_COB_IND",
+      "OrdinalPosition": 76,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SUBCRIBER_PATIENT_RELCODE",
+      "OrdinalPosition": 77,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_ID_NUM",
+      "OrdinalPosition": 78,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_INSUR_PLAN_NAME",
+      "OrdinalPosition": 79,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_INSUR_PLAN_ID",
+      "OrdinalPosition": 80,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_FIRST_NAME",
+      "OrdinalPosition": 81,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_LAST_NAME",
+      "OrdinalPosition": 82,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_MIDDLE_NAME",
+      "OrdinalPosition": 83,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_NAME_SUFFIX",
+      "OrdinalPosition": 84,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_BIRTH_DATE",
+      "OrdinalPosition": 85,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_GENDER",
+      "OrdinalPosition": 86,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_EMPLOYER",
+      "OrdinalPosition": 87,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_COB_IND",
+      "OrdinalPosition": 88,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_SBSCRBR_PATIENT_RELCODE",
+      "OrdinalPosition": 89,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_ID_NUM",
+      "OrdinalPosition": 90,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_INSUR_PLAN_NAME",
+      "OrdinalPosition": 91,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_INSUR_PLAN_ID",
+      "OrdinalPosition": 92,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_FIRST_NAME",
+      "OrdinalPosition": 93,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_LAST_NAME",
+      "OrdinalPosition": 94,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_MIDDLE_NAME",
+      "OrdinalPosition": 95,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_NAME_SUFFIX",
+      "OrdinalPosition": 96,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_BIRTH_DATE",
+      "OrdinalPosition": 97,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_GENDER",
+      "OrdinalPosition": 98,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_EMPLOYER",
+      "OrdinalPosition": 99,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_SBSCRBR_PATIENT_RELCODE",
+      "OrdinalPosition": 100,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_MIDDLE_NAME",
+      "OrdinalPosition": 101,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_NAME_SUFFIX",
+      "OrdinalPosition": 102,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_ADDR1",
+      "OrdinalPosition": 103,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_ADDR2",
+      "OrdinalPosition": 104,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_CITY",
+      "OrdinalPosition": 105,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_ZIPCODE",
+      "OrdinalPosition": 106,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_COUNTRY",
+      "OrdinalPosition": 107,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_STATE",
+      "OrdinalPosition": 108,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_PHONE1",
+      "OrdinalPosition": 109,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_MARITAL_STATUS",
+      "OrdinalPosition": 110,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_EMPLOYMENT_STATUS",
+      "OrdinalPosition": 111,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_STUDENT_STATUS",
+      "OrdinalPosition": 112,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_RLSE_OF_INFO_IND",
+      "OrdinalPosition": 113,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BENEFIT_PLAN_ID",
+      "OrdinalPosition": 114,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BENEFIT_NETWORK_ID",
+      "OrdinalPosition": 115,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BENEFIT_PERIOD_BEGIN_DT",
+      "OrdinalPosition": 116,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BENEFIT_PERIOD_END_DT",
+      "OrdinalPosition": 117,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_NPI",
+      "OrdinalPosition": 118,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_PORTICO_ID",
+      "OrdinalPosition": 119,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_FIRST_NAME",
+      "OrdinalPosition": 120,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_LAST_NAME",
+      "OrdinalPosition": 121,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_MIDDLE_NAME",
+      "OrdinalPosition": 122,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_ADDR1",
+      "OrdinalPosition": 123,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_CITY",
+      "OrdinalPosition": 124,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_STATE",
+      "OrdinalPosition": 125,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_ZIPCODE",
+      "OrdinalPosition": 126,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_COUNTRY",
+      "OrdinalPosition": 127,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PCP_FED_TAX_ID",
+      "OrdinalPosition": 128,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_NPI",
+      "OrdinalPosition": 129,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_PORTICO_ID",
+      "OrdinalPosition": 130,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_FIRST_NAME",
+      "OrdinalPosition": 131,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_LAST_NAME",
+      "OrdinalPosition": 132,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_MIDDLE_NAME",
+      "OrdinalPosition": 133,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_TAXONOMY",
+      "OrdinalPosition": 134,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_TYPE_CODE",
+      "OrdinalPosition": 135,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_FED_TAX_ID",
+      "OrdinalPosition": 136,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RNDR_PROV_MEDICARE_LIC_NUM",
+      "OrdinalPosition": 137,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_NPI",
+      "OrdinalPosition": 138,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_PORTICO_ID",
+      "OrdinalPosition": 139,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_TYPE_CODE",
+      "OrdinalPosition": 140,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_FIRST_NAME",
+      "OrdinalPosition": 141,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_LAST_NAME",
+      "OrdinalPosition": 142,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_MIDDLE_NAME",
+      "OrdinalPosition": 143,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_NPI",
+      "OrdinalPosition": 144,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_PORTICO_ID",
+      "OrdinalPosition": 145,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_LOCATION_NAME",
+      "OrdinalPosition": 146,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_ADDR1",
+      "OrdinalPosition": 147,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_ADDR2",
+      "OrdinalPosition": 148,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_CITY",
+      "OrdinalPosition": 149,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_ZIPCODE",
+      "OrdinalPosition": 150,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_COUNTRY",
+      "OrdinalPosition": 151,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SVC_FAC_STATE",
+      "OrdinalPosition": 152,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_PORTICO_ID",
+      "OrdinalPosition": 153,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_TYPE_CODE",
+      "OrdinalPosition": 154,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_MIDDLE_NAME",
+      "OrdinalPosition": 155,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_TAXONOMY",
+      "OrdinalPosition": 156,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_BILL_PROV_COUNTRY",
+      "OrdinalPosition": 157,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_COND_EMPLOYMENT",
+      "OrdinalPosition": 158,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_COND_AUTO_ACCIDENT",
+      "OrdinalPosition": 159,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_COND_AUTO_ACCDNT_ST",
+      "OrdinalPosition": 160,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_COND_OTHER_ACCIDENT",
+      "OrdinalPosition": 161,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_CURRENT_ILLNESS_DT",
+      "OrdinalPosition": 162,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_SIMILAR_ILLNESS_DT",
+      "OrdinalPosition": 163,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_REASON_CD1",
+      "OrdinalPosition": 164,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_REASON_CD2",
+      "OrdinalPosition": 165,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_REASON_CD3",
+      "OrdinalPosition": 166,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PROSPECT_PYMT_SYST_IND",
+      "OrdinalPosition": 167,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_LAST_WORKED_DT",
+      "OrdinalPosition": 168,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_RETURN_WORK_DT",
+      "OrdinalPosition": 169,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_ADMIT_DT",
+      "OrdinalPosition": 170,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_DISCHARGE_DT",
+      "OrdinalPosition": 171,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_RFRG_PROV_AUTH_NUM",
+      "OrdinalPosition": 172,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_AMBULATORY_GROUP",
+      "OrdinalPosition": 173,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_ACCOUNT_NUM",
+      "OrdinalPosition": 174,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CMS_CONTRACT_NUM",
+      "OrdinalPosition": 175,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ACCEPT_ASSGN_IND1",
+      "OrdinalPosition": 176,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ACCEPT_ASSGN_IND2",
+      "OrdinalPosition": 177,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ACCEPT_ASSGN_IND3",
+      "OrdinalPosition": 178,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_SIGNATURE",
+      "OrdinalPosition": 179,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ATTACHMT_IND",
+      "OrdinalPosition": 180,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PROVIDER_CONTRACT",
+      "OrdinalPosition": 181,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_CS_NETWORK",
+      "OrdinalPosition": 182,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PROVIDER_NETWORK",
+      "OrdinalPosition": 183,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD1",
+      "OrdinalPosition": 184,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD2",
+      "OrdinalPosition": 185,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD3",
+      "OrdinalPosition": 186,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD4",
+      "OrdinalPosition": 187,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD5",
+      "OrdinalPosition": 188,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD6",
+      "OrdinalPosition": 189,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD7",
+      "OrdinalPosition": 190,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD8",
+      "OrdinalPosition": 191,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD9",
+      "OrdinalPosition": 192,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD10",
+      "OrdinalPosition": 193,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD11",
+      "OrdinalPosition": 194,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EXPLANATION_CD12",
+      "OrdinalPosition": 195,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD1",
+      "OrdinalPosition": 196,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD2",
+      "OrdinalPosition": 197,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD3",
+      "OrdinalPosition": 198,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD4",
+      "OrdinalPosition": 199,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD5",
+      "OrdinalPosition": 200,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD6",
+      "OrdinalPosition": 201,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EVENT_CD7",
+      "OrdinalPosition": 202,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OVERRIDE_ACTION",
+      "OrdinalPosition": 203,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PROCESS_COUNT",
+      "OrdinalPosition": 204,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_CORRECTION_LEVEL",
+      "OrdinalPosition": 205,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_SUBMITTER_ID",
+      "OrdinalPosition": 206,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_REJECTED_ID",
+      "OrdinalPosition": 207,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD1",
+      "OrdinalPosition": 208,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD2",
+      "OrdinalPosition": 209,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD3",
+      "OrdinalPosition": 210,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD4",
+      "OrdinalPosition": 211,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD5",
+      "OrdinalPosition": 212,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD6",
+      "OrdinalPosition": 213,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD7",
+      "OrdinalPosition": 214,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD8",
+      "OrdinalPosition": 215,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD9",
+      "OrdinalPosition": 216,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD10",
+      "OrdinalPosition": 217,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD11",
+      "OrdinalPosition": 218,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD12",
+      "OrdinalPosition": 219,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD13",
+      "OrdinalPosition": 220,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD14",
+      "OrdinalPosition": 221,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD15",
+      "OrdinalPosition": 222,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD16",
+      "OrdinalPosition": 223,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD17",
+      "OrdinalPosition": 224,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD18",
+      "OrdinalPosition": 225,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD19",
+      "OrdinalPosition": 226,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_CD20",
+      "OrdinalPosition": 227,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_REASON_CD",
+      "OrdinalPosition": 228,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADMIN_SVC_TYPE",
+      "OrdinalPosition": 229,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_NONIKA_PRIM_PAYER_ALLOW_AMT",
+      "OrdinalPosition": 230,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PRIM_COB_RECVD_AMT",
+      "OrdinalPosition": 231,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_SEC_COB_RECVD_AMT",
+      "OrdinalPosition": 232,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TER_COB_RECVD_AMT",
+      "OrdinalPosition": 233,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_MEDICAL_RECORD_NUM",
+      "OrdinalPosition": 234,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_INTERNAL_CONTROL_NUM",
+      "OrdinalPosition": 235,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TYPE_OF_BILL",
+      "OrdinalPosition": 236,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_STATEMENT_FROM_DT",
+      "OrdinalPosition": 237,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_STATEMENT_TO_DT",
+      "OrdinalPosition": 238,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_ADMIT_HOUR",
+      "OrdinalPosition": 239,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_ADMIT_TYPE",
+      "OrdinalPosition": 240,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_DISCHARGE_HOUR",
+      "OrdinalPosition": 241,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_ADMIT_SOURCE",
+      "OrdinalPosition": 242,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PATIENT_DISCHARGE_STATUS",
+      "OrdinalPosition": 243,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_HOSP_CVD_DAYS",
+      "OrdinalPosition": 244,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COINS_DAYS",
+      "OrdinalPosition": 245,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_LIFETIME_RESERVE_DAYS",
+      "OrdinalPosition": 246,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PHYSICIAN_SIGNATURE",
+      "OrdinalPosition": 247,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD1",
+      "OrdinalPosition": 248,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD2",
+      "OrdinalPosition": 249,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD3",
+      "OrdinalPosition": 250,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD4",
+      "OrdinalPosition": 251,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD5",
+      "OrdinalPosition": 252,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD6",
+      "OrdinalPosition": 253,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD7",
+      "OrdinalPosition": 254,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD8",
+      "OrdinalPosition": 255,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD9",
+      "OrdinalPosition": 256,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD10",
+      "OrdinalPosition": 257,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD11",
+      "OrdinalPosition": 258,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD12",
+      "OrdinalPosition": 259,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD13",
+      "OrdinalPosition": 260,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD14",
+      "OrdinalPosition": 261,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD15",
+      "OrdinalPosition": 262,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD16",
+      "OrdinalPosition": 263,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD17",
+      "OrdinalPosition": 264,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD18",
+      "OrdinalPosition": 265,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD19",
+      "OrdinalPosition": 266,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD20",
+      "OrdinalPosition": 267,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD21",
+      "OrdinalPosition": 268,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD22",
+      "OrdinalPosition": 269,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD23",
+      "OrdinalPosition": 270,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COND_CD24",
+      "OrdinalPosition": 271,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD1",
+      "OrdinalPosition": 272,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT1",
+      "OrdinalPosition": 273,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD2",
+      "OrdinalPosition": 274,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT2",
+      "OrdinalPosition": 275,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD3",
+      "OrdinalPosition": 276,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT3",
+      "OrdinalPosition": 277,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD4",
+      "OrdinalPosition": 278,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT4",
+      "OrdinalPosition": 279,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD5",
+      "OrdinalPosition": 280,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT5",
+      "OrdinalPosition": 281,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD6",
+      "OrdinalPosition": 282,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT6",
+      "OrdinalPosition": 283,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD7",
+      "OrdinalPosition": 284,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT7",
+      "OrdinalPosition": 285,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD8",
+      "OrdinalPosition": 286,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT8",
+      "OrdinalPosition": 287,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD9",
+      "OrdinalPosition": 288,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT9",
+      "OrdinalPosition": 289,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD10",
+      "OrdinalPosition": 290,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT10",
+      "OrdinalPosition": 291,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD11",
+      "OrdinalPosition": 292,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT11",
+      "OrdinalPosition": 293,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD12",
+      "OrdinalPosition": 294,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT12",
+      "OrdinalPosition": 295,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD13",
+      "OrdinalPosition": 296,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT13",
+      "OrdinalPosition": 297,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD14",
+      "OrdinalPosition": 298,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT14",
+      "OrdinalPosition": 299,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD15",
+      "OrdinalPosition": 300,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT15",
+      "OrdinalPosition": 301,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD16",
+      "OrdinalPosition": 302,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT16",
+      "OrdinalPosition": 303,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD17",
+      "OrdinalPosition": 304,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT17",
+      "OrdinalPosition": 305,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD18",
+      "OrdinalPosition": 306,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT18",
+      "OrdinalPosition": 307,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD19",
+      "OrdinalPosition": 308,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT19",
+      "OrdinalPosition": 309,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD20",
+      "OrdinalPosition": 310,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT20",
+      "OrdinalPosition": 311,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD21",
+      "OrdinalPosition": 312,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT21",
+      "OrdinalPosition": 313,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD22",
+      "OrdinalPosition": 314,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT22",
+      "OrdinalPosition": 315,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD23",
+      "OrdinalPosition": 316,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT23",
+      "OrdinalPosition": 317,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_CD24",
+      "OrdinalPosition": 318,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_DT24",
+      "OrdinalPosition": 319,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD1",
+      "OrdinalPosition": 320,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT1",
+      "OrdinalPosition": 321,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT1",
+      "OrdinalPosition": 322,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD2",
+      "OrdinalPosition": 323,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT2",
+      "OrdinalPosition": 324,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT2",
+      "OrdinalPosition": 325,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD3",
+      "OrdinalPosition": 326,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT3",
+      "OrdinalPosition": 327,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT3",
+      "OrdinalPosition": 328,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD4",
+      "OrdinalPosition": 329,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT4",
+      "OrdinalPosition": 330,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT4",
+      "OrdinalPosition": 331,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD5",
+      "OrdinalPosition": 332,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT5",
+      "OrdinalPosition": 333,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT5",
+      "OrdinalPosition": 334,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD6",
+      "OrdinalPosition": 335,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT6",
+      "OrdinalPosition": 336,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT6",
+      "OrdinalPosition": 337,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD7",
+      "OrdinalPosition": 338,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT7",
+      "OrdinalPosition": 339,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT7",
+      "OrdinalPosition": 340,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD8",
+      "OrdinalPosition": 341,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT8",
+      "OrdinalPosition": 342,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT8",
+      "OrdinalPosition": 343,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD9",
+      "OrdinalPosition": 344,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT9",
+      "OrdinalPosition": 345,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT9",
+      "OrdinalPosition": 346,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD10",
+      "OrdinalPosition": 347,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT10",
+      "OrdinalPosition": 348,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT10",
+      "OrdinalPosition": 349,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD11",
+      "OrdinalPosition": 350,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT11",
+      "OrdinalPosition": 351,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT11",
+      "OrdinalPosition": 352,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD12",
+      "OrdinalPosition": 353,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT12",
+      "OrdinalPosition": 354,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT12",
+      "OrdinalPosition": 355,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD13",
+      "OrdinalPosition": 356,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT13",
+      "OrdinalPosition": 357,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT13",
+      "OrdinalPosition": 358,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD14",
+      "OrdinalPosition": 359,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT14",
+      "OrdinalPosition": 360,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT14",
+      "OrdinalPosition": 361,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD15",
+      "OrdinalPosition": 362,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT15",
+      "OrdinalPosition": 363,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT15",
+      "OrdinalPosition": 364,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD16",
+      "OrdinalPosition": 365,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT16",
+      "OrdinalPosition": 366,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT16",
+      "OrdinalPosition": 367,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD17",
+      "OrdinalPosition": 368,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT17",
+      "OrdinalPosition": 369,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT17",
+      "OrdinalPosition": 370,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD18",
+      "OrdinalPosition": 371,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT18",
+      "OrdinalPosition": 372,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT18",
+      "OrdinalPosition": 373,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD19",
+      "OrdinalPosition": 374,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT19",
+      "OrdinalPosition": 375,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT19",
+      "OrdinalPosition": 376,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD20",
+      "OrdinalPosition": 377,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT20",
+      "OrdinalPosition": 378,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT20",
+      "OrdinalPosition": 379,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD21",
+      "OrdinalPosition": 380,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT21",
+      "OrdinalPosition": 381,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT21",
+      "OrdinalPosition": 382,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD22",
+      "OrdinalPosition": 383,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT22",
+      "OrdinalPosition": 384,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT22",
+      "OrdinalPosition": 385,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD23",
+      "OrdinalPosition": 386,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT23",
+      "OrdinalPosition": 387,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT23",
+      "OrdinalPosition": 388,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_CD24",
+      "OrdinalPosition": 389,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_FROM_DT24",
+      "OrdinalPosition": 390,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OCCUR_SPAN_TO_DT24",
+      "OrdinalPosition": 391,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD39A",
+      "OrdinalPosition": 392,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT39A",
+      "OrdinalPosition": 393,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD39B",
+      "OrdinalPosition": 394,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT39B",
+      "OrdinalPosition": 395,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD39C",
+      "OrdinalPosition": 396,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT39C",
+      "OrdinalPosition": 397,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD39D",
+      "OrdinalPosition": 398,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT39D",
+      "OrdinalPosition": 399,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD40A",
+      "OrdinalPosition": 400,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT40A",
+      "OrdinalPosition": 401,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD40B",
+      "OrdinalPosition": 402,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT40B",
+      "OrdinalPosition": 403,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD40C",
+      "OrdinalPosition": 404,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT40C",
+      "OrdinalPosition": 405,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD40D",
+      "OrdinalPosition": 406,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT40D",
+      "OrdinalPosition": 407,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD41A",
+      "OrdinalPosition": 408,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT41A",
+      "OrdinalPosition": 409,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD41B",
+      "OrdinalPosition": 410,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT41B",
+      "OrdinalPosition": 411,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD41C",
+      "OrdinalPosition": 412,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT41C",
+      "OrdinalPosition": 413,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_CD41D",
+      "OrdinalPosition": 414,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_VALUE_AMT41D",
+      "OrdinalPosition": 415,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIOR_PYMTN_A",
+      "OrdinalPosition": 416,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIOR_PYMTN_B",
+      "OrdinalPosition": 417,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIOR_PYMTN_C",
+      "OrdinalPosition": 418,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PROV_CLAIM_ID_A",
+      "OrdinalPosition": 419,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ICD_VERSION_IND",
+      "OrdinalPosition": 420,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIM_DIAG_CD",
+      "OrdinalPosition": 421,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADMIT_DIAG_CD",
+      "OrdinalPosition": 422,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD2",
+      "OrdinalPosition": 423,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD3",
+      "OrdinalPosition": 424,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD4",
+      "OrdinalPosition": 425,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD5",
+      "OrdinalPosition": 426,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD6",
+      "OrdinalPosition": 427,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD7",
+      "OrdinalPosition": 428,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD8",
+      "OrdinalPosition": 429,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD9",
+      "OrdinalPosition": 430,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD10",
+      "OrdinalPosition": 431,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD11",
+      "OrdinalPosition": 432,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD12",
+      "OrdinalPosition": 433,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD13",
+      "OrdinalPosition": 434,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD14",
+      "OrdinalPosition": 435,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD15",
+      "OrdinalPosition": 436,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD16",
+      "OrdinalPosition": 437,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD17",
+      "OrdinalPosition": 438,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD18",
+      "OrdinalPosition": 439,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD19",
+      "OrdinalPosition": 440,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD20",
+      "OrdinalPosition": 441,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD21",
+      "OrdinalPosition": 442,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD22",
+      "OrdinalPosition": 443,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD23",
+      "OrdinalPosition": 444,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD24",
+      "OrdinalPosition": 445,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD25",
+      "OrdinalPosition": 446,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD26",
+      "OrdinalPosition": 447,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD27",
+      "OrdinalPosition": 448,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD28",
+      "OrdinalPosition": 449,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD29",
+      "OrdinalPosition": 450,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD30",
+      "OrdinalPosition": 451,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD31",
+      "OrdinalPosition": 452,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD32",
+      "OrdinalPosition": 453,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD33",
+      "OrdinalPosition": 454,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD34",
+      "OrdinalPosition": 455,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD35",
+      "OrdinalPosition": 456,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_DIAG_CD36",
+      "OrdinalPosition": 457,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADMIT_POA",
+      "OrdinalPosition": 458,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIM_POA",
+      "OrdinalPosition": 459,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA2",
+      "OrdinalPosition": 460,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA3",
+      "OrdinalPosition": 461,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA4",
+      "OrdinalPosition": 462,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA5",
+      "OrdinalPosition": 463,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA6",
+      "OrdinalPosition": 464,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA7",
+      "OrdinalPosition": 465,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA8",
+      "OrdinalPosition": 466,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA9",
+      "OrdinalPosition": 467,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA10",
+      "OrdinalPosition": 468,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA11",
+      "OrdinalPosition": 469,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA12",
+      "OrdinalPosition": 470,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA13",
+      "OrdinalPosition": 471,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA14",
+      "OrdinalPosition": 472,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA15",
+      "OrdinalPosition": 473,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA16",
+      "OrdinalPosition": 474,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA17",
+      "OrdinalPosition": 475,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA18",
+      "OrdinalPosition": 476,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA19",
+      "OrdinalPosition": 477,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA20",
+      "OrdinalPosition": 478,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA21",
+      "OrdinalPosition": 479,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA22",
+      "OrdinalPosition": 480,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA23",
+      "OrdinalPosition": 481,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA24",
+      "OrdinalPosition": 482,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA25",
+      "OrdinalPosition": 483,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA26",
+      "OrdinalPosition": 484,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA27",
+      "OrdinalPosition": 485,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA28",
+      "OrdinalPosition": 486,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA29",
+      "OrdinalPosition": 487,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA30",
+      "OrdinalPosition": 488,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA31",
+      "OrdinalPosition": 489,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA32",
+      "OrdinalPosition": 490,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA33",
+      "OrdinalPosition": 491,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA34",
+      "OrdinalPosition": 492,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA35",
+      "OrdinalPosition": 493,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_POA36",
+      "OrdinalPosition": 494,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIM_PROC_CODE",
+      "OrdinalPosition": 495,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PRIM_PROC_DT",
+      "OrdinalPosition": 496,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_2",
+      "OrdinalPosition": 497,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_2",
+      "OrdinalPosition": 498,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_3",
+      "OrdinalPosition": 499,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_3",
+      "OrdinalPosition": 500,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_4",
+      "OrdinalPosition": 501,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_4",
+      "OrdinalPosition": 502,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_5",
+      "OrdinalPosition": 503,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_5",
+      "OrdinalPosition": 504,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_6",
+      "OrdinalPosition": 505,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_6",
+      "OrdinalPosition": 506,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_7",
+      "OrdinalPosition": 507,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_7",
+      "OrdinalPosition": 508,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_8",
+      "OrdinalPosition": 509,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_8",
+      "OrdinalPosition": 510,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_9",
+      "OrdinalPosition": 511,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_9",
+      "OrdinalPosition": 512,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_10",
+      "OrdinalPosition": 513,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_10",
+      "OrdinalPosition": 514,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_11",
+      "OrdinalPosition": 515,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_11",
+      "OrdinalPosition": 516,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_12",
+      "OrdinalPosition": 517,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_12",
+      "OrdinalPosition": 518,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_13",
+      "OrdinalPosition": 519,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_13",
+      "OrdinalPosition": 520,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_14",
+      "OrdinalPosition": 521,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_14",
+      "OrdinalPosition": 522,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_15",
+      "OrdinalPosition": 523,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_15",
+      "OrdinalPosition": 524,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_16",
+      "OrdinalPosition": 525,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_16",
+      "OrdinalPosition": 526,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_17",
+      "OrdinalPosition": 527,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_17",
+      "OrdinalPosition": 528,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_18",
+      "OrdinalPosition": 529,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_18",
+      "OrdinalPosition": 530,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_19",
+      "OrdinalPosition": 531,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_19",
+      "OrdinalPosition": 532,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_20",
+      "OrdinalPosition": 533,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_20",
+      "OrdinalPosition": 534,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_21",
+      "OrdinalPosition": 535,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_21",
+      "OrdinalPosition": 536,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_22",
+      "OrdinalPosition": 537,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_22",
+      "OrdinalPosition": 538,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_23",
+      "OrdinalPosition": 539,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_23",
+      "OrdinalPosition": 540,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_CD_24",
+      "OrdinalPosition": 541,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OTHER_PROC_DT_24",
+      "OrdinalPosition": 542,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ATTND_PROV_NPI",
+      "OrdinalPosition": 543,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ATTND_PROV_LAST_NAME",
+      "OrdinalPosition": 544,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ATTND_PROV_FIRST_NAME",
+      "OrdinalPosition": 545,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ATTND_PROV_MIDDLE_NAME",
+      "OrdinalPosition": 546,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ATTND_PROV_NAME_SUFFIX",
+      "OrdinalPosition": 547,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OPER_PROV_NPI",
+      "OrdinalPosition": 548,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OPER_PROV_LAST_NAME",
+      "OrdinalPosition": 549,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OPER_PROV_FIRST_NAME",
+      "OrdinalPosition": 550,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OPER_PROV_MIDDLE_NAME",
+      "OrdinalPosition": 551,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OPER_PROV_NAME_SUFFIX",
+      "OrdinalPosition": 552,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OTH_OPER_PROV_NPI",
+      "OrdinalPosition": 553,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OTH_OPER_PROV_LAST_NAME",
+      "OrdinalPosition": 554,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OTH_OPER_PROV_FIRST_NAME",
+      "OrdinalPosition": 555,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OTH_OPER_PROV_MIDDLE_NAME",
+      "OrdinalPosition": 556,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_OTH_OPER_PROV_NAME_SUFFIX",
+      "OrdinalPosition": 557,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ANOTHER_HEALTH_PLAN",
+      "OrdinalPosition": 558,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COPAY_AMT",
+      "OrdinalPosition": 559,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COINS_AMT",
+      "OrdinalPosition": 560,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_DEDUCT_AMT",
+      "OrdinalPosition": 561,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OOP_AMT",
+      "OrdinalPosition": 562,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_NON_CVD_AMT",
+      "OrdinalPosition": 563,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_COB_SAVINGS_AMT",
+      "OrdinalPosition": 564,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PAYMENT_PAYEE_ID",
+      "OrdinalPosition": 565,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_CHECK_CONTRB_AMT",
+      "OrdinalPosition": 566,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_CHECK_STATUS",
+      "OrdinalPosition": 567,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PAYMENT_TYPE",
+      "OrdinalPosition": 568,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_CHECK_NOTIFICATION_NO",
+      "OrdinalPosition": 569,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_INTEREST_AMT",
+      "OrdinalPosition": 570,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PAPER_PYMT_INT_RULE",
+      "OrdinalPosition": 571,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EDI_PYMT_INT_RULE",
+      "OrdinalPosition": 572,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_PAPER_INT_THRESHOLD",
+      "OrdinalPosition": 573,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EDI_INT_THRESHOLD",
+      "OrdinalPosition": 574,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_CLEAN_IND",
+      "OrdinalPosition": 575,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_ADJUST_AMT",
+      "OrdinalPosition": 576,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_REFUND_AMT",
+      "OrdinalPosition": 577,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_OFFSET",
+      "OrdinalPosition": 578,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_DRG",
+      "OrdinalPosition": 579,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_DRG_CALCULATED",
+      "OrdinalPosition": 580,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_SCCF_NUM",
+      "OrdinalPosition": 581,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_ACCESS_PCT_FEE_AMT",
+      "OrdinalPosition": 582,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_ADMIN_FEE",
+      "OrdinalPosition": 583,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_ALPHA_PREFIX_CD",
+      "OrdinalPosition": 584,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_CFA_PAID_IND",
+      "OrdinalPosition": 585,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_ACCESS_PCT",
+      "OrdinalPosition": 586,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_PAY_IND",
+      "OrdinalPosition": 587,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_PRICING_METHOD_CD",
+      "OrdinalPosition": 588,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_PRICING_RULE",
+      "OrdinalPosition": 589,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_PROCESS_PLAN_CD",
+      "OrdinalPosition": 590,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_MESSAGE_CD",
+      "OrdinalPosition": 591,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_CLASS_PROV_CD",
+      "OrdinalPosition": 592,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_HOLD_REASON_CD",
+      "OrdinalPosition": 593,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_SURCHG_PCT_NUM",
+      "OrdinalPosition": 594,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_SURCHG_AMT",
+      "OrdinalPosition": 595,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_PROV_NAME",
+      "OrdinalPosition": 596,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_SERIAL_NUM",
+      "OrdinalPosition": 597,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_FILLER",
+      "OrdinalPosition": 598,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLAIM_EOB_SEND_OPTION_IND",
+      "OrdinalPosition": 599,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_ITS_CLM_RF_POST_DT",
+      "OrdinalPosition": 600,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_BACKOUT_DT",
+      "OrdinalPosition": 601,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PROVIDER_1099_LEGAL_NAME",
+      "OrdinalPosition": 602,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_01",
+      "OrdinalPosition": 603,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_02",
+      "OrdinalPosition": 604,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_03",
+      "OrdinalPosition": 605,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_04",
+      "OrdinalPosition": 606,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_05",
+      "OrdinalPosition": 607,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_06",
+      "OrdinalPosition": 608,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_07",
+      "OrdinalPosition": 609,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_08",
+      "OrdinalPosition": 610,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_09",
+      "OrdinalPosition": 611,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_10",
+      "OrdinalPosition": 612,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_11",
+      "OrdinalPosition": 613,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_12",
+      "OrdinalPosition": 614,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_13",
+      "OrdinalPosition": 615,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_14",
+      "OrdinalPosition": 616,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_15",
+      "OrdinalPosition": 617,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_16",
+      "OrdinalPosition": 618,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_17",
+      "OrdinalPosition": 619,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_18",
+      "OrdinalPosition": 620,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_19",
+      "OrdinalPosition": 621,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_HDR_FILLER_20",
+      "OrdinalPosition": 622,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CLAIM_NUM",
+      "OrdinalPosition": 623,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_CLAIM_LINE_NUM",
+      "OrdinalPosition": 624,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_TYPE_OF_SERVICE",
+      "OrdinalPosition": 625,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_PLACE_OF_SERVICE",
+      "OrdinalPosition": 626,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_STATUS_CODE",
+      "OrdinalPosition": 627,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_TOTAL_CHARGE_AMT",
+      "OrdinalPosition": 628,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ALLOWED_AMT",
+      "OrdinalPosition": 629,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PURE_PAYMENT_AMT",
+      "OrdinalPosition": 630,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_INTEREST_AMT",
+      "OrdinalPosition": 631,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_COPAY_AMT",
+      "OrdinalPosition": 632,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DEDUCTIBLE_AMT",
+      "OrdinalPosition": 633,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_OOP_AMT",
+      "OrdinalPosition": 634,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CPT_TYPE_SERVICE",
+      "OrdinalPosition": 635,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_SERVICE_FROM_DT",
+      "OrdinalPosition": 636,
+      "DataType": "date",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_LINE_SERVICE_TO_DT",
+      "OrdinalPosition": 637,
+      "DataType": "date",
+      "Validators": [
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "MA_LINE_PROC_CD_ORIG",
+      "OrdinalPosition": 638,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD1_ORIG",
+      "OrdinalPosition": 639,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD2_ORIG",
+      "OrdinalPosition": 640,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD3_ORIG",
+      "OrdinalPosition": 641,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD4_ORIG",
+      "OrdinalPosition": 642,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD1",
+      "OrdinalPosition": 643,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD2",
+      "OrdinalPosition": 644,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD3",
+      "OrdinalPosition": 645,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD4",
+      "OrdinalPosition": 646,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD5",
+      "OrdinalPosition": 647,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD6",
+      "OrdinalPosition": 648,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD7",
+      "OrdinalPosition": 649,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD8",
+      "OrdinalPosition": 650,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD9",
+      "OrdinalPosition": 651,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD10",
+      "OrdinalPosition": 652,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD11",
+      "OrdinalPosition": 653,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DIAG_CD12",
+      "OrdinalPosition": 654,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EMERGENCY_IND",
+      "OrdinalPosition": 655,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_REVENUE_CD",
+      "OrdinalPosition": 656,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_NON_CVD_CHGS_TOTAL",
+      "OrdinalPosition": 657,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_CD",
+      "OrdinalPosition": 658,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD1",
+      "OrdinalPosition": 659,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD2",
+      "OrdinalPosition": 660,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD3",
+      "OrdinalPosition": 661,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROC_MOD4",
+      "OrdinalPosition": 662,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CATEGORY_NUM",
+      "OrdinalPosition": 663,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_MULTI_CATEGORY_NUM",
+      "OrdinalPosition": 664,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CLASSIFICATION",
+      "OrdinalPosition": 665,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CLASSIFICATION_ADDTNL",
+      "OrdinalPosition": 666,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EDI_ADJUST_CD_LIST",
+      "OrdinalPosition": 667,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD1",
+      "OrdinalPosition": 668,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD2",
+      "OrdinalPosition": 669,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD3",
+      "OrdinalPosition": 670,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD4",
+      "OrdinalPosition": 671,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD5",
+      "OrdinalPosition": 672,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD6",
+      "OrdinalPosition": 673,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD7",
+      "OrdinalPosition": 674,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD8",
+      "OrdinalPosition": 675,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD9",
+      "OrdinalPosition": 676,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD10",
+      "OrdinalPosition": 677,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD11",
+      "OrdinalPosition": 678,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD12",
+      "OrdinalPosition": 679,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD13",
+      "OrdinalPosition": 680,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EVENT_CD14",
+      "OrdinalPosition": 681,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_HIPAA_ADJ_RSN_CD",
+      "OrdinalPosition": 682,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_REMIT_ADVICE_CD",
+      "OrdinalPosition": 683,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_AUTHORIZATION_NUM",
+      "OrdinalPosition": 684,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_AUTHORIZATION_OVERRIDE",
+      "OrdinalPosition": 685,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_NDC_CD_LIST",
+      "OrdinalPosition": 686,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ENCOUNTER_FLAG",
+      "OrdinalPosition": 687,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CE_OVR",
+      "OrdinalPosition": 688,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CE_ACTION",
+      "OrdinalPosition": 689,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CE_EVENT_CD",
+      "OrdinalPosition": 690,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CE_LINE_DISP",
+      "OrdinalPosition": 691,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_EPSDT",
+      "OrdinalPosition": 692,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_FAMILY_PLAN_IND",
+      "OrdinalPosition": 693,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_TOTAL_CHARGE_AMT_ORIG",
+      "OrdinalPosition": 694,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ALLOWED_AMT_ORIG",
+      "OrdinalPosition": 695,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_CONTRACT_ALLOWED_AMT",
+      "OrdinalPosition": 696,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_QUANTITY",
+      "OrdinalPosition": 697,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_UNIT_TYPE",
+      "OrdinalPosition": 698,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_UNIT_RATE",
+      "OrdinalPosition": 699,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_COB_SAVINGS_AMT",
+      "OrdinalPosition": 700,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_COB_PAID_AMT",
+      "OrdinalPosition": 701,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DUPLICATE_IND",
+      "OrdinalPosition": 702,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_DUPLICATE_OPTION",
+      "OrdinalPosition": 703,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_GL_CD",
+      "OrdinalPosition": 704,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_GL_DT",
+      "OrdinalPosition": 705,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PROFILE",
+      "OrdinalPosition": 706,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD1",
+      "OrdinalPosition": 707,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD2",
+      "OrdinalPosition": 708,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD3",
+      "OrdinalPosition": 709,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD4",
+      "OrdinalPosition": 710,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD5",
+      "OrdinalPosition": 711,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD6",
+      "OrdinalPosition": 712,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD7",
+      "OrdinalPosition": 713,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD8",
+      "OrdinalPosition": 714,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD9",
+      "OrdinalPosition": 715,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD10",
+      "OrdinalPosition": 716,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD11",
+      "OrdinalPosition": 717,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD12",
+      "OrdinalPosition": 718,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD13",
+      "OrdinalPosition": 719,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD14",
+      "OrdinalPosition": 720,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD15",
+      "OrdinalPosition": 721,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD16",
+      "OrdinalPosition": 722,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD17",
+      "OrdinalPosition": 723,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD18",
+      "OrdinalPosition": 724,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD19",
+      "OrdinalPosition": 725,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_ADJUST_CD20",
+      "OrdinalPosition": 726,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_MEMBER_OBLIGATION_AMT",
+      "OrdinalPosition": 727,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_NUM_ORIG",
+      "OrdinalPosition": 728,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_ALLOWED_AMT",
+      "OrdinalPosition": 729,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_DEDUCT_AMT",
+      "OrdinalPosition": 730,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_COPAY_AMT",
+      "OrdinalPosition": 731,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_COINS_AMT",
+      "OrdinalPosition": 732,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_NON_CVD_AMT",
+      "OrdinalPosition": 733,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PAID_AMT",
+      "OrdinalPosition": 734,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_MEMBER_OBLIGATION",
+      "OrdinalPosition": 735,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_CONTRCT_ADJST_AMT",
+      "OrdinalPosition": 736,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_EOB_CD",
+      "OrdinalPosition": 737,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_PRIM_DISCOUNT",
+      "OrdinalPosition": 738,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_IKA_PRICING_SCHEDLE_CD",
+      "OrdinalPosition": 739,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_WITHHOLD_AMT",
+      "OrdinalPosition": 740,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_REBUNDLE_AMT",
+      "OrdinalPosition": 741,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_LINE_RIDER",
+      "OrdinalPosition": 742,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_CD",
+      "OrdinalPosition": 743,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_OCE_VERSION_NUM",
+      "OrdinalPosition": 744,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_PAYMENT",
+      "OrdinalPosition": 745,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_STATUS_IND",
+      "OrdinalPosition": 746,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_BILATERAL_MOD_FLAG",
+      "OrdinalPosition": 747,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_DISCOUNT_IND",
+      "OrdinalPosition": 748,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_MAXIMUM_UNITS",
+      "OrdinalPosition": 749,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_PACKAGING_FLAG",
+      "OrdinalPosition": 750,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_APC_COMPOSITE_LINE",
+      "OrdinalPosition": 751,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_01",
+      "OrdinalPosition": 752,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_02",
+      "OrdinalPosition": 753,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_03",
+      "OrdinalPosition": 754,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_04",
+      "OrdinalPosition": 755,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_05",
+      "OrdinalPosition": 756,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_06",
+      "OrdinalPosition": 757,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_07",
+      "OrdinalPosition": 758,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_08",
+      "OrdinalPosition": 759,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_09",
+      "OrdinalPosition": 760,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MA_CLM_DTL_FILLER_10",
+      "OrdinalPosition": 761,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "FILE_ID",
+      "OrdinalPosition": 762,
+      "DataType": "string"
+    }
+  ],
+  "Rules": [
+    {
+      "Name": "VerifyTotalClaimCount",
+      "Data_file_query": "select count(MA_CLAIM_NUM) from data_file",
+      "Control_file_query": "select MA_CLAIM_COUNT from control_file"
+    },
+    {
+      "Name": "VerifyTotalClaimLineCount",
+      "Data_file_query": "select count(*) from data_file",
+      "Control_file_query": "select MA_CLAIM_LINE_COUNT from control_file"
+    },
+    {
+      "Name": "VerifyTotalBilledAmount",
+      "Data_file_query": "select cast(sum(MA_CLAIM_TOTAL_CHARGE_AMT) as decimal(20,2)) from data_file",
+      "Control_file_query": "select cast(MA_TOTAL_BILLED_AMT as decimal(20,2)) from control_file"
+    },
+    {
+      "Name": "VerifyTotalPaidAmount",
+      "Data_file_query": "select cast(sum(MA_LINE_PURE_PAYMENT_AMT) as decimal(20,2)) from data_file",
+      "Control_file_query": "select cast(MA_TOTAL_PAID_AMT as decimal(20,2)) from control_file"
+    }
+  ]
+}

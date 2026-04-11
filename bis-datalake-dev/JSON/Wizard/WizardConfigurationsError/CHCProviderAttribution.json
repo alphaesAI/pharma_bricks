@@ -1,0 +1,31 @@
+{
+  "DestinationTableName": "CHCProviderAttributionErrors",
+  "DestinationTablePath": "/mnt/export#clientCode/BatchAuditErrors/ACA/CHCProviderAttributionErrors",
+  "SourceTables": [
+    {
+      "IsSource": "1",
+      "TableName": "SourceTable",
+      "TablePath": "/mnt/#clientCode/consolidated/ACA/Data/PCPAttribution",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "BatchTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/ACA/CHCProviderAttributionBatch",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "AuditTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/export_audit",
+      "TableFormat": "delta"
+    }
+  ],
+  "Validations": [
+    {
+      "Field": "StartDate",
+      "Validator": "IsCustom",
+      "SQLQuery": "SELECT\r\n       FileId\r\n      ,BatchId\r\n      ,'' AS ColumnName\r\n      ,'IsCustom' AS ErrorCode\r\n      ,'StartDateIsGreaterThanOrEqualToEndDate' AS ErrorDescription\r\n      ,HashOfRow\r\n      ,SourceFileName    FROM QueryResult\r\n    WHERE\r\n    StartDate >= EndDate\r\n"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "PlanMemberID",
+          "DestinationColumn": "PlanMemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberLastName",
+          "DestinationColumn": "MemberLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberFirstName",
+          "DestinationColumn": "MemberFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MRN",
+          "DestinationColumn": "MRN",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderFirstName",
+          "DestinationColumn": "ProviderFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderLastName",
+          "DestinationColumn": "ProviderLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanProviderID",
+          "DestinationColumn": "PlanProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderNPI",
+          "DestinationColumn": "ProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PracticeID",
+          "DestinationColumn": "PracticeID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PracticeName",
+          "DestinationColumn": "PracticeName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "VisitDate",
+          "DestinationColumn": "VisitDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CDIAlertEntityID",
+          "DestinationColumn": "CDIAlertEntityID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CDIAlertEntityDetailID",
+          "DestinationColumn": "CDIAlertEntityDetailID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SelectedAlertResponseOptionID",
+          "DestinationColumn": "SelectedAlertResponseOptionID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Client",
+          "DestinationColumn": "Client",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOB",
+          "DestinationColumn": "LOB",
+          "SourceColumnFormat": "yyyy-MM-dd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

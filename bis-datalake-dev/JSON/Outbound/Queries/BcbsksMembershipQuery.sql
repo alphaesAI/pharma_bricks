@@ -1,0 +1,32 @@
+Select
+MemberID
+,MemberFirstName
+,MemberLastName
+,EnrollmentStartDate
+,EnrollmentEndDate
+,MemberDOB
+,MemberGender
+,BeneficiaryID
+,CMSContractnumber
+,PlanDescription
+,ProviderID
+,ProviderEffectiveStartDate
+,ProviderEffectiveEndDate
+,MemberAge
+,PermanentAddressLine1
+,PermanentAddressLine2
+,PermanentAddressLine3
+,PermanentCity
+,PermanentCounty
+,PermanentState
+,PermanentZIPCode
+,PBP
+,ProviderNPI
+,Providername
+,ProviderTIN
+,ProviderOrganization
+,PracticeUnit
+,PoolID
+,SnapShotdate
+From Membership 
+where Month(to_date(ReportMonth, "yyyyMM"))= Month(current_date()) and Year(to_date(ReportMonth, "yyyyMM"))= Year(current_date())

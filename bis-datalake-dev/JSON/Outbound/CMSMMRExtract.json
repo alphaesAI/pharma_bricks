@@ -1,0 +1,28 @@
+{
+  "ClientCode": "#clientCode",
+  "SubClientCode": "#subClientCode",
+  "LOB": "MA",
+  "OutboundFileReferenceId": "#outboundFileReferenceId",
+  "OutboundFileExtract": [
+    {
+      "DestinationType":"csv",
+      "DestinationArchiveTablePath": "/Outbound/Archive/CMSMMR",
+      "DestinationTablePath": "/Outbound/CMSMMR",
+      "DestinationFileName": "<ClientCode>_MMR_<Env>_<YYYYMMDDhhmm>",
+      "DestinationDelimiter": ",",
+      "DestinationExtension": ".csv",
+      "DestinationFirstRowAsHeader": "true",
+      "SourceTables": [
+        {
+          "Entity": "MMR",
+          "SourcePath": "/consolidated/MA/Data/MMR",
+          "Source": "DataLake",
+          "SourceFormat": "delta"
+        }
+      ],
+      "IsInlineQuery": "No",
+      "SQLScript": "",
+      "SQLScriptPath": "/fileconfig/JSON/Outbound/Queries/CMSMMRQuery.sql"
+    }
+  ]
+}

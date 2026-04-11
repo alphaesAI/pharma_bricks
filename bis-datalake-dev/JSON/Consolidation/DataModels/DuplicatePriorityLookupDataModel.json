@@ -1,0 +1,49 @@
+{
+    "Fields": [
+        {
+            "FieldName": "ClientID",
+            "DataType": "StringType",
+            "Ordinal": 1
+        },
+        {
+            "FieldName": "LoadDateTime",
+            "DataType": "DateType",
+            "Ordinal": 2
+        },
+        {
+            "FieldName": "FileID",
+            "DataType": "IntegerType",
+            "Ordinal": 3
+        },
+        {
+            "FieldName": "FileLayoutID",
+            "DataType": "IntegerType",
+            "Ordinal": 4
+        },
+        {
+            "FieldName": "FileLayoutDescription",
+            "DataType": "StringType",
+            "Ordinal": 5
+        },
+        {
+            "FieldName": "CDIAlertStatusDesc",
+            "DataType": "StringType",
+            "Ordinal": 6
+        },
+        {
+            "FieldName": "AppointmentTypeDesc",
+            "DataType": "StringType",
+            "Ordinal": 7
+        },
+        {
+            "FieldName": "CDIStatus",
+            "DataType": "StringType",
+            "Ordinal": 8
+        },
+        {
+            "FieldName": "FinalRankStandard",
+            "DataType": "StringType",
+            "Ordinal": 9
+        }
+    ]
+}

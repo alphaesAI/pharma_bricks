@@ -1,0 +1,116 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "Client",
+          "DestinationColumn": "Client",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PECProgramYear",
+          "DestinationColumn": "PECProgramYear",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POCode",
+          "DestinationColumn": "POCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POName",
+          "DestinationColumn": "POName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PracticeCode",
+          "DestinationColumn": "PracticeCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PracticeName",
+          "DestinationColumn": "PracticeName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EngagedDate",
+          "DestinationColumn": "EngagedDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DisengagedDate",
+          "DestinationColumn": "DisengagedDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "TargetStatus",
+          "DestinationColumn": "TargetStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ParticipationDecision",
+          "DestinationColumn": "ParticipationDecision",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Product",
+          "DestinationColumn": "Product",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FileLoadDate",
+          "DestinationColumn": "FileLoadDate",
+          "SourceColumnFormat": "yyyy-MM-dd",
+          "ColumnQuery": ""
+        },                            
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

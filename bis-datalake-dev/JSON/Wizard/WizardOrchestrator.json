@@ -1,0 +1,89 @@
+{
+	"ExportAuditTable": "#clientCode/BatchAudit/export_audit",
+	"ExportAuditTableMountPoint": "Export",
+	"ExportAuditTrackingTable": "#clientCode/BatchAudit/export_audit_tracking",
+	"ExportAuditTrackingTableMountPoint": "Export",
+	"Entities": [
+		{
+			"Entity": "CHCProduct",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/CHCProduct.json",
+			"ErrorConfigFile": "",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "CHCMember",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/CHCMember.json",
+			"ErrorConfigFile": "JSON/Wizard/WizardConfigurationsError/CHCMemberError.json",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "CHCProvider",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/CHCProvider.json",
+			"ErrorConfigFile": "JSON/Wizard/WizardConfigurationsError/CHCProvider.json",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "CHCProviderHierarchy",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/CHCProviderHierarchy.json",
+			"ErrorConfigFile": "JSON/Wizard/WizardConfigurationsError/CHCProviderHierarchy.json",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "CHCEnrollment",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/CHCEnrollment.json",
+			"ErrorConfigFile": "",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "CHCProviderAttribution",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/CHCProviderAttribution.json",
+			"ErrorConfigFile": "JSON/Wizard/WizardConfigurationsError/CHCProviderAttribution.json",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "ACAMemberConditionGap",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/ACAMemberConditionGap.json",
+			"ErrorConfigFile": "JSON/Wizard/WizardConfigurationsError/ACAMemberConditionGapErrors.json",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "ACA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "MemberConditionGap",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/MemberConditionGap.json",
+			"ErrorConfigFile": "",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "MA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		},
+		{
+			"Entity": "MemberRiskByCondition",
+			"ConfigFile": "JSON/Wizard/WizardConfigurations/MemberRiskByCondition.json",
+			"ErrorConfigFile": "",
+			"ConfigMountPoint": "FileConfig",
+			"LOB": "MA",
+			"SourceLayer": "Consolidated",
+			"BatchSize": 10000
+		}
+	]
+}

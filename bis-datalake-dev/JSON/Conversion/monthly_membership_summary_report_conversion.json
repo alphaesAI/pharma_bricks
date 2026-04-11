@@ -1,0 +1,178 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"StartPos": "TEMPLATE",
+			"Length": "TEMPLATE"
+		},
+		{
+			"FieldName": "MCOContractNumber",
+			"OrdinalPosition": "1",
+			"StartPos": "1",
+			"Length": "5"
+		},
+		{
+			"FieldName": "RunDate",
+			"OrdinalPosition": "2",
+			"StartPos": "6",
+			"Length": "8"
+		},
+		{
+			"FieldName": "PaymentDate",
+			"OrdinalPosition": "3",
+			"StartPos": "14",
+			"Length": "6"
+		},
+		{
+			"FieldName": "AdjustmentReasonCode",
+			"OrdinalPosition": "4",
+			"StartPos": "20",
+			"Length": "2"
+		},
+		{
+			"FieldName": "RecordDescription",
+			"OrdinalPosition": "5",
+			"StartPos": "22",
+			"Length": "10"
+		},
+		{
+			"FieldName": "PaymentAdjustmentCount",
+			"OrdinalPosition": "6",
+			"StartPos": "32",
+			"Length": "7"
+		},
+		{
+			"FieldName": "MonthCount",
+			"OrdinalPosition": "7",
+			"StartPos": "39",
+			"Length": "7"
+		},
+		{
+			"FieldName": "PartAMemberCount",
+			"OrdinalPosition": "8",
+			"StartPos": "46",
+			"Length": "7" 
+		},
+		{
+			"FieldName": "PartAMonthCount",
+			"OrdinalPosition": "9",
+			"StartPos": "53",
+			"Length": "7"
+		},
+		{
+			"FieldName": "PartBMemberCount",
+			"OrdinalPosition": "10",
+			"StartPos": "60",
+			"Length": "7"
+		},
+		{
+			"FieldName": "PartBMonthCount",
+			"OrdinalPosition": "11",
+			"StartPos": "67",
+			"Length": "7"
+		},
+		{
+			"FieldName": "PartAPaymentAdjustmentAmount",
+			"OrdinalPosition": "12",
+			"StartPos": "74",
+			"Length": "15"
+		},
+		{
+			"FieldName": "PartBPaymentAdjustmentAmount",
+			"OrdinalPosition": "13",
+			"StartPos": "89",
+			"Length": "15"
+		},
+		{
+			"FieldName": "TotalAmount",
+			"OrdinalPosition": "14",
+			"StartPos": "104",
+			"Length": "15"
+		},
+		{
+			"FieldName": "PartAAverage",
+			"OrdinalPosition": "15",
+			"StartPos": "119",
+			"Length": "9"
+		},
+		{
+			"FieldName": "PartBAverage",
+			"OrdinalPosition": "16",
+			"StartPos": "128",
+			"Length": "9"
+		},
+		{
+			"FieldName": "PaymentAdjustmentIndicator",
+			"OrdinalPosition": "17",
+			"StartPos": "137",
+			"Length": "1"
+		},
+		{
+			"FieldName": "PBPNumber",
+			"OrdinalPosition": "18",
+			"StartPos": "138",
+			"Length": "3"
+		},
+		{
+			"FieldName": "SegmentNumber",
+			"OrdinalPosition": "19",
+			"StartPos": "141",
+			"Length": "3"
+		},
+		{
+			"FieldName": "PartDMemberCount",
+			"OrdinalPosition": "20",
+			"StartPos": "144",
+			"Length": "7"
+		},
+		{
+			"FieldName": "PartDMonthCount",
+			"OrdinalPosition": "21",
+			"StartPos": "151",
+			"Length": "7"
+		},
+		{
+			"FieldName": "PartDAmount",
+			"OrdinalPosition": "22",
+			"StartPos": "158",
+			"Length": "15"
+		},
+		{
+			"FieldName": "PartDAverage",
+			"OrdinalPosition": "23",
+			"StartPos": "173",
+			"Length": "9"
+		},
+		{
+			"FieldName": "LISBand25MemberCount",
+			"OrdinalPosition": "24",
+			"StartPos": "182",
+			"Length": "7"
+		},
+		{
+			"FieldName": "LISBand50MemberCount",
+			"OrdinalPosition": "25",
+			"StartPos": "189",
+			"Length": "7"
+		},
+		{
+			"FieldName": "LISBand75MemberCount",
+			"OrdinalPosition": "26",
+			"StartPos": "196",
+			"Length": "7"
+		},
+		{
+			"FieldName": "LISBand100MemberCount",
+			"OrdinalPosition": "27",
+			"StartPos": "203",
+			"Length": "7"
+		},
+		{
+			"FieldName": "Filler",
+			"OrdinalPosition": "28",
+			"StartPos": "210",
+			"Length": "11"
+		}
+	]
+}

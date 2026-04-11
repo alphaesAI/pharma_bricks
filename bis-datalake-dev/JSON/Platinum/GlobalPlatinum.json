@@ -1,0 +1,46 @@
+{
+    "LayerGrouping": [
+        {
+            "LayerOrder": 1,
+            "LayerGrouping": "GlobalRefData",
+            "SubGrouping": [
+                {
+                    "SubGroupEntity": "dimDate",
+                    "SubGroupingOrder": 1,
+                    "SubConfigPath": "",
+                    "Notebook": "./DimDateDimMonthProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimAlertGroup",
+                    "SubGroupingOrder": 2,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimAlertGroup.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimHCC",
+                    "SubGroupingOrder": 3,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimHCC.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimICD",
+                    "SubGroupingOrder": 4,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimICD.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimProviderNPI",
+                    "SubGroupingOrder": 5,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimProviderNPI.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimQualityYearMonth",
+                    "SubGroupingOrder": 6,
+                    "SubConfigPath": "",
+                    "Notebook": "./DimQualityYearMonth"
+                }
+            ]
+        }
+    ]
+}

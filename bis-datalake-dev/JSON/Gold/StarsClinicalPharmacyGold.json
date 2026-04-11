@@ -1,0 +1,22 @@
+{
+  "LayerGrouping": [
+      {
+          "LayerOrder": 1,
+          "LayerGrouping": "StarsClinicalPharmacyGoldLayerGeneric",
+          "SubGrouping": [
+              {
+                  "SubGroupEntity": "StarsClinicalPharmacy",
+                  "SubGroupingOrder": 1,
+                  "SubConfigPath": "",
+                  "Notebook": "./StarsClinicalPharmacy"
+              },
+              {
+                  "SubGroupEntity": "Q360GapsInCare",
+                  "SubGroupingOrder": 2,
+                  "SubConfigPath": "",
+                  "Notebook": "./StarsClinicalPharmacyQ360GapsInCare"
+              }
+          ]
+      }
+  ]
+}

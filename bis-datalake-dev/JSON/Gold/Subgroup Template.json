@@ -1,0 +1,22 @@
+{
+    "SubLayerProcessing": [
+        {
+            "SubGroupEntity": "Name",
+            "DestinationTable": "#clientCode\/paht\/path",
+            "SourceTables": [
+                {
+                    "Entity": "ent1",
+                    "SourceTable": "#clientCode\/paht\/path\/ent1",
+                    "SourceFormat": "fileformat"
+                },
+                {
+                    "Entity": "ent2",
+                    "SourceTable": "#clientCode\/paht\/path\/ent2",
+                    "SourceFormat": "fileformat"
+                }
+            ],
+            "SQLScript": "sql query",
+            "MergeScript":"MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s "
+        }
+    ]
+}

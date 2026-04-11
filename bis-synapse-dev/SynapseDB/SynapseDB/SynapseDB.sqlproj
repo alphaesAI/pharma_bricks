@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SynapseDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{af4cf625-f910-4526-bcf9-e7a9672d1cc8}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath />
+    <RootNamespace>ConfigurationDB</RootNamespace>
+    <AssemblyName>ConfigurationDB</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Security\" />
+    <Folder Include="PostDeployment" />
+    <Folder Include="PostDeployment\Merges" />
+    <Folder Include="Snapshots" />
+    <Folder Include="dw" />
+    <Folder Include="dw\Stored Procedures" />
+    <Folder Include="dw\Tables" />
+    <Folder Include="dw\Views" />
+    <Folder Include="PreDeployment" />
+    <Folder Include="Security\Schemas" />
+    <Folder Include="PostDeployment\ReleaseScripts" />
+    <Folder Include="PostDeployment\ReleaseScripts\20.16" />
+    <Folder Include="PreDeployment\ReleaseScripts" />
+    <Folder Include="PreDeployment\ReleaseScripts\21.06" />
+    <Folder Include="PostDeployment\ReleaseScripts\21.06" />
+    <Folder Include="PostDeployment\ReleaseScripts\21.07" />
+    <Folder Include="PreDeployment\ReleaseScripts\SR_32_20230628_Release" />
+    <Folder Include="PreDeployment\ReleaseScripts\SR_35_Release" />
+    <Folder Include="PreDeployment\ReleaseScripts\SR_36_Release" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PostDeployment\R2ReEnableAutoStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dw\Tables\LISHIST.sql" />
+    <Build Include="dw\Tables\MMR.sql" />
+    <Build Include="Security\Schemas\devidap1.sql" />
+    <None Include="PostDeployment\ReleaseScripts\20.16\IDAP-966_LoadExistingDataNewSchema.sql" />
+    <Build Include="dw\Tables\HICN_MBI_CrossWalk.sql" />
+    <Build Include="dw\Tables\Lab.sql" />
+    <Build Include="dw\Tables\Provider.sql" />
+    <Build Include="dw\Tables\Product.sql" />
+    <Build Include="dw\Tables\ProviderHierarchy.sql" />
+    <Build Include="dw\Tables\Pharmacy.sql" />
+    <Build Include="dw\Tables\MemberEnrollment.sql" />
+    <Build Include="dw\Tables\MemberRoster.sql" />
+    <Build Include="dw\Tables\VisionClaimHeader.sql" />
+    <Build Include="dw\Tables\VisionClaimLine.sql" />
+    <Build Include="dw\Tables\MedicalClaimHeader.sql" />
+    <Build Include="dw\Tables\MedicalClaimLine.sql" />
+    <PreDeploy Include="PreDeployment\PreDeploymentMaster.sql" />
+    <None Include="PreDeployment\ReleaseScripts\21.06\IDAP-1849_SW_GCHModel_Changes.sql" />
+    <None Include="PreDeployment\ReleaseScripts\21.06\IDAP-1849_SW_GCModel_Changes.sql" />
+    <Build Include="dw\Tables\MAO002.sql" />
+    <Build Include="dw\Tables\MAO004.sql" />
+    <Build Include="dw\Tables\PCPAttribution.sql" />
+    <Build Include="dw\Tables\RAPSReturn.sql" />
+    <None Include="PostDeployment\ReleaseScripts\21.06\IDAP-1849_SW_GCHModel_Changes.sql" />
+    <None Include="PostDeployment\ReleaseScripts\21.06\IDAP-1849_SW_GCModel_Changes.sql" />
+    <Build Include="dw\Tables\MOR.sql" />
+    <Build Include="dw\Tables\SpanOther.sql" />
+    <Build Include="dw\Tables\MORD.sql" />
+    <None Include="PostDeployment\ReleaseScripts\21.07\IDAP-2123_DeleteDataInMember.sql" />
+    <None Include="PostDeployment\IDAP-2296_DropTables.sql" />
+    <Build Include="dw\Tables\CampaignRoster.sql" />
+    <Build Include="dw\Tables\ConsolidatedMMR.sql" />
+    <Build Include="dw\Tables\ChaseList.sql" />
+    <None Include="PreDeployment\IDAP-1925_AlterAndTruncPharmacyTbl.sql" />
+    <None Include="PreDeployment\BIS-47_TruncMedicalVision712Tbls.sql" />
+    <Build Include="dw\Tables\platinum_dimmember.sql" />
+    <Build Include="dw\Tables\platinum_dimprovider.sql" />
+    <Build Include="dw\Tables\ProviderRollup.sql" />
+    <Build Include="dw\Tables\gold_alertgroup.sql" />
+    <Build Include="dw\Tables\gold_alertresponseoption.sql" />
+    <Build Include="dw\Tables\gold_appointmenttype.sql" />
+    <Build Include="dw\Tables\gold_ma_cachesuspectanalysis.sql" />
+    <Build Include="dw\Tables\gold_ma_cachesuspectanalysishistory.sql" />
+    <Build Include="dw\Tables\gold_ma_cdialertline.sql" />
+    <Build Include="dw\Tables\gold_cdialertquerycode.sql" />
+    <Build Include="dw\Tables\gold_cdialertqueryresponse.sql" />
+    <Build Include="dw\Tables\gold_cdialertworkflowexceptionoption.sql" />
+    <Build Include="dw\Tables\gold_cdialertworkflowstatus.sql" />
+    <Build Include="dw\Tables\gold_cdistatus.sql" />
+    <Build Include="dw\Tables\gold_ma_chaseproviderlist.sql" />
+    <Build Include="dw\Tables\gold_ma_consolidatedmmr.sql" />
+    <Build Include="dw\Tables\gold_ma_gapsincare.sql" />
+    <Build Include="dw\Tables\gold_ma_gapsincarerr.sql" />
+    <Build Include="dw\Tables\gold_hcc.sql" />
+    <Build Include="dw\Tables\gold_icd.sql" />
+    <Build Include="dw\Tables\gold_icdhccxref.sql" />
+    <Build Include="dw\Tables\gold_ma_mamembershipstars.sql" />
+    <Build Include="dw\Tables\gold_ma_responsemao004diagnosis.sql" />
+    <Build Include="dw\Tables\gold_ma_medicalgoldenclaimdiagnosis.sql" />
+    <Build Include="dw\Tables\gold_ma_medicalgoldenclaimlineproccodes.sql" />
+    <Build Include="dw\Tables\gold_ma_member.sql" />
+    <Build Include="dw\Tables\gold_ma_memberroster.sql" />
+    <Build Include="dw\Tables\gold_ma_membership.sql" />
+    <Build Include="dw\Tables\gold_ma_pecreportbase.sql" />
+    <Build Include="dw\Tables\gold_practicetargetengagementstatus.sql" />
+    <Build Include="dw\Tables\gold_ma_provider.sql" />
+    <Build Include="dw\Tables\gold_ma_providergroupreference.sql" />
+    <Build Include="dw\Tables\gold_ma_providerhierarchy.sql" />
+    <Build Include="dw\Tables\gold_ma_riskbyhcc.sql" />
+    <Build Include="dw\Tables\gold_ma_riskbymember.sql" />
+    <Build Include="dw\Tables\gold_ma_supplementaldiagnosis.sql" />
+    <Build Include="dw\Tables\gold_trumpinghcc.sql" />
+    <Build Include="dw\Tables\platinum_dimalertgroup.sql" />
+    <Build Include="dw\Tables\platinum_dimclosurereason.sql" />
+    <Build Include="dw\Tables\platinum_dimdate.sql" />
+    <Build Include="dw\Tables\platinum_dimhcc.sql" />
+    <Build Include="dw\Tables\platinum_dimicd.sql" />
+    <Build Include="dw\Tables\platinum_dimmonth.sql" />
+    <Build Include="dw\Tables\platinum_factmonthlymembercdialert.sql" />
+    <Build Include="dw\Tables\platinum_factmemberrevenuegap.sql" />
+    <Build Include="dw\Tables\EMRLab.sql" />
+    <Build Include="dw\Tables\EMRMedicalClaims.sql" />
+    <Build Include="dw\Tables\DemographicsRiskScore.sql" />
+    <Build Include="dw\Tables\FEFD.sql" />
+    <Build Include="dw\Tables\platinum_dimcdialertworkflowstatus.sql" />
+    <Build Include="dw\Tables\gold_closurereason.sql" />
+    <Build Include="dw\Tables\platinum_dimclient.sql" />
+    <Build Include="dw\Tables\Member.sql" />
+    <Build Include="dw\Tables\gold_ma_product.sql" />
+    <Build Include="dw\Tables\gold_ma_demographicriskscore.sql" />
+    <Build Include="dw\Tables\gold_ma_membergroup.sql" />
+    <Build Include="dw\Tables\gold_ma_memberpersonbridge.sql" />
+    <Build Include="dw\Tables\platinum_dimQualityMeasure.sql" />
+    <Build Include="dw\Tables\platinum_dimqualityevent.sql" />
+    <Build Include="dw\Tables\platinum_dimqualityyearmonth.sql" />
+    <Build Include="dw\Tables\gold_ma_pcpattribution.sql" />
+    <Build Include="dw\Tables\gold_mult_providerNPI.sql" />
+    <Build Include="dw\Tables\platinum_dimProviderNPI.sql" />
+    <Build Include="dw\Tables\gold_ma_memberrevenuegap.sql" />
+    <Build Include="dw\Tables\platinum_dimPracticeUnit.sql" />
+    <Build Include="dw\Tables\platinum_dimProviderOrg.sql" />
+    <Build Include="dw\Tables\platinum_factgapsincare.sql" />
+    <Build Include="dw\Tables\platinum_factgapsincarerr.sql" />
+    <None Include="PreDeployment\ReleaseScripts\SR_32_20230628_Release\BIS-4718_TruncCDIAlertline.sql" />
+    <None Include="PreDeployment\ReleaseScripts\SR_32_20230628_Release\BIS-5355_TruncMemberPersonBridge.sql" />
+    <Build Include="dw\Tables\StarsClinicalPharmacy.sql" />
+    <Build Include="dw\Tables\PecReportbaseLockdownParameters.sql" />
+    <Build Include="dw\Tables\gold_ma_stars_clinical_pharmacy.sql" />
+    <None Include="PreDeployment\ReleaseScripts\SR_35_Release\BIS-4632_SW_DropACAMedicalClaims.sql" />
+    <None Include="PreDeployment\ReleaseScripts\SR_35_Release\BIS-6185_DS_DropCMSTables.sql" />
+    <Build Include="dw\Tables\gold_ma_q360membershipstars.sql" />
+    <None Include="PreDeployment\ReleaseScripts\SR_36_Release\BIS-6351_PL_TruncateDimQualityYearMonth.sql" />
+    <Build Include="dw\Tables\MemberConditionGap.sql" />
+    <Build Include="dw\Tables\gold_ma_q360gapsincare.sql" />
+    <Build Include="dw\Tables\gold_ma_goldenclaimhistory.sql" />
+    <Build Include="dw\Tables\gold_ma_goldenclaim.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PreDeployment\R2DropStatisticsforClaimWeight.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostDeployment\PostDeploymentMaster.sql" />
+  </ItemGroup>
+</Project>

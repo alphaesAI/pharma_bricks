@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "AlertResponseOption",
+      "DestinationTable": "#clientCode/Gold/alertResponseOption",
+      "SourceTables": [
+        {
+          "Entity": "AlertResponseOption",
+          "SourceTable": "#clientCode/OperationalData/RAQ/AlertReference/dbo/AlertResponseOption",
+          "SourceFormat": "parquet"
+        }       
+      ],
+      "SQLScript": "SELECT alertResponseOptionID ,alertPromptID ,alertResponseType ,alertResponseOptionText ,displayCol ,sortOrder ,isActive ,hashKey FROM( SELECT AlertResponseOptionID AS alertResponseOptionID ,AlertPromptID AS alertPromptID , AlertResponseType AS alertResponseType ,AlertResponseOptionText AS alertResponseOptionText ,DisplayCol AS displayCol ,SortOrder AS sortOrder ,Active AS isActive ,hash(concat(IfNull(AlertResponseOptionID,\"\") ,\"|\",IfNull(AlertPromptID,\"\") ,\"|\",IfNull(AlertResponseType,\"\"),\"|\",IfNull(AlertResponseOptionText,\"\"),\"|\",IfNull(DisplayCol,\"\"),\"|\",IfNull(SortOrder,\"\"),\"|\",IfNull(Active,false))) AS hashKey FROM AlertResponseOption)",
+      "MergeScript": "MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.alertResponseOptionID,\"\")=IfNull(t.alertResponseOptionID,\"\") WHEN MATCHED AND t.hashKey <> s.hashKey THEN  UPDATE SET  alertResponseOptionID = s.alertResponseOptionID ,alertPromptID = s.alertPromptID ,alertResponseType = s.alertResponseType ,alertResponseOptionText = s.alertResponseOptionText ,displayCol = s.displayCol ,sortOrder = s.sortOrder ,isActive = s.isActive ,updatedDateTime = CURRENT_TIMESTAMP ,hashKey = s.hashKey WHEN NOT MATCHED THEN  INSERT(alertResponseOptionID ,alertPromptID ,alertResponseType ,alertResponseOptionText ,displayCol ,sortOrder ,isActive ,createdDateTime ,updatedDateTime , hashKey) VALUES ( s.alertResponseOptionID ,s.alertPromptID ,s.alertResponseType ,s.alertResponseOptionText ,s.displayCol ,s.sortOrder ,s.isActive, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, s.hashKey) "
+	  }
+  ]
+}

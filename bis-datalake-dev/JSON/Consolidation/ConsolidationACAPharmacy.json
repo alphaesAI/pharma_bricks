@@ -1,0 +1,236 @@
+{
+    "columnMapping": [
+        {
+            "recordType": [
+                {
+                    "Field": "",
+                    "Value": ""
+                }
+            ],
+            "selectColumns": [
+                {
+                    "SourceColumn": "LOAD_DATETIME",
+                    "DestinationColumn": "LoadDateTime",
+                    "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FILE_ID",
+                    "DestinationColumn": "FileID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_ID",
+                    "DestinationColumn": "FileLayoutID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+                    "DestinationColumn": "FileLayoutDescription",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLIENT_ID",
+                    "DestinationColumn": "ClientId",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_ID",
+                    "DestinationColumn": "ClaimNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "LINE_ID",
+                    "DestinationColumn": "ClaimLineNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MEMBER_ID",
+                    "DestinationColumn": "UniquePersonKey",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FINALIZED_DATE",
+                    "DestinationColumn": "ClaimProcessDate",
+                    "SourceColumnFormat": "yyyyMMdd",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_STATUS",
+                    "DestinationColumn": "ClaimStatus",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_RECEIVED_DATE",
+                    "DestinationColumn": "ClaimReceivedDate",
+                    "SourceColumnFormat": "yyyyMMdd",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "ALLOWED_AMOUNT",
+                    "DestinationColumn": "AllowedAmt",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BILL_AMOUNT",
+                    "DestinationColumn": "BillAmt",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "COINSURANCE_AMT",
+                    "DestinationColumn": "CoInsurance",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "DEDUCTIBLE_AMT",
+                    "DestinationColumn": "Deductible",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "PAID_AMOUNT",
+                    "DestinationColumn": "PaidAmount",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "QUANTITY",
+                    "DestinationColumn": "Quantity",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "PAID_DATE",
+                    "DestinationColumn": "PaidDate",
+                    "SourceColumnFormat": "yyyyMMdd",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_PAID_AMOUNT",
+                    "DestinationColumn": "ClaimPaidAmt",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "SERVICE_FROM_DATE",
+                    "DestinationColumn": "LineServiceFrom",
+                    "SourceColumnFormat": "yyyyMMdd",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "SERVICE_THROUGH_DATE",
+                    "DestinationColumn": "LineServiceThu",
+                    "SourceColumnFormat": "yyyyMMdd",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_TYPE",
+                    "DestinationColumn": "ClaimType",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BILL_PROVIDER_ID",
+                    "DestinationColumn": "BillingProviderID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BILL_PROVIDER_NPI",
+                    "DestinationColumn": "BillingProviderNPI",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "PROVIDER_ID",
+                    "DestinationColumn": "RenderingProviderID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "NATIONAL_PROVIDER_ID",
+                    "DestinationColumn": "RenderingProvNPI",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "ORIGINAL_CLAIM_ID",
+                    "DestinationColumn": "OriginalClaimNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "PRESCRIPTION_NUMBER",
+                    "DestinationColumn": "PrescriptionReferenceNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "DISPENSING_FEE",
+                    "DestinationColumn": "DispensingFee",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "DISPENSING_FEE_PAID",
+                    "DestinationColumn": "DispensingFeePaid",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "NDC1",
+                    "DestinationColumn": "NDCCodeSTD",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "NDC1_UOM",
+                    "DestinationColumn": "UnitsOfMeasure",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "NDC1_UNITS",
+                    "DestinationColumn": "Units",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "",
+                    "DestinationColumn": "ProductID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": "LEFT(COMMERCIAL_PLAN_ID,10)"
+                },
+                {
+                    "SourceColumn": "MEDICARE_BENEFICIARY_ID",
+                    "DestinationColumn": "BeneficiaryID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "DAYS_SUPPLY",
+                    "DestinationColumn": "DaysSupply",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MEMBER_ID",
+                    "DestinationColumn": "PlanMemberID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                }
+            ]
+        }
+    ]
+}

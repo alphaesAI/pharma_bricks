@@ -1,0 +1,58 @@
+{
+  "LayerGrouping": [
+    {
+      "LayerOrder": 200,
+      "LayerGrouping": "GoldLayerGeneric",
+      "SubGrouping": [
+        {
+          "SubGroupEntity": "Member",
+          "SubGroupingOrder": 1,
+          "SubConfigPath": "",
+          "Notebook": "./Member"
+        },
+        {
+          "SubGroupEntity": "Provider",
+          "SubGroupingOrder": 2,
+          "SubConfigPath": "fileconfig/JSON/Gold/Provider.json",
+          "Notebook": "./GenericSubGroupProcessing"
+        },
+        {
+          "SubGroupEntity": "ProviderHiearchy",
+          "SubGroupingOrder": 3,
+          "SubConfigPath": "",
+          "Notebook": "./ProviderHierarchyProcessing"
+        },
+        {
+          "SubGroupEntity": "Product",
+          "SubGroupingOrder": 4,
+          "SubConfigPath": "",
+          "Notebook": "./ProductProcessing"
+        },
+        {
+          "SubGroupEntity": "MemberGroup",
+          "SubGroupingOrder": 5,
+          "SubConfigPath": "",
+          "Notebook": "./MemberGroupProcessing"
+        },
+        {
+          "SubGroupEntity": "CMMR",
+          "SubGroupingOrder": 6,
+          "SubConfigPath": "",
+          "Notebook": "./CMMRProcessing"
+        },
+        {
+          "SubGroupEntity": "PCPAttribution",
+          "SubGroupingOrder": 8,
+          "SubConfigPath": "",
+          "Notebook": "./PCPAttributionProcessing"
+        },
+        {
+          "SubGroupEntity": "MemberRoster",
+          "SubGroupingOrder": 9,
+          "SubConfigPath": "fileconfig/JSON/Gold/MemberRoster.json",
+          "Notebook": "./GenericSubGroupDupChkProcessing"
+        }
+      ]
+    }
+  ]
+}

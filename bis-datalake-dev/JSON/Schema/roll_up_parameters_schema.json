@@ -1,0 +1,171 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Format": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "Client",
+      "Ordinal": 0,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+    },
+    {
+      "FieldName": "RollUp",
+      "Ordinal": 1,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+        {
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"3"
+					]
+				}
+			]
+    },
+    {
+      "FieldName": "RollUpDesc",
+      "Ordinal": 2,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+        {
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"Standard",
+						"Hybrid"
+					]
+				}
+			]
+    },
+    {
+      "FieldName": "CountNAs",
+      "Ordinal": 3,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+        {
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"0",
+						"1"
+					]
+				}
+			]
+    },
+    {
+      "FieldName": "GapAddressedOnly",
+      "Ordinal": 4,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+        {
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"0",
+						"1"
+					]
+				}
+			]
+    },
+    {
+      "FieldName": "IsActive",
+      "Ordinal": 5,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+        {
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"0",
+						"1"
+					]
+				}
+			]
+    },
+    {
+      "FieldName": "MonthRunDay",
+      "Ordinal": 6,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+    },
+    {
+      "FieldName": "SubClients",
+      "Ordinal": 7,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+        {
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"0",
+						"1"
+					]
+				}
+			]
+    },
+    {
+      "FieldName": "ApptLookback",
+      "Ordinal": 8,
+      "DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+    },
+    {
+      "FieldName": "Server",
+      "Ordinal": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LatestStatus",
+      "Ordinal": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RunStatus",
+      "Ordinal": 11,
+      "DataType": "string"
+    }
+  ]
+}

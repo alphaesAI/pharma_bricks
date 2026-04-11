@@ -1,0 +1,853 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Format": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "TransactionType",
+            "OrdinalPosition": "1",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "ClaimsSubscriberIDNumber",
+            "OrdinalPosition": "2",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "StartDate",
+            "OrdinalPosition": "3",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "EndDate",
+            "OrdinalPosition": "4",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SubscriberFlag",
+            "OrdinalPosition": "5",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "HICN",
+            "OrdinalPosition": "6",
+            "DataType": "string"            
+        },
+        {
+            "FieldName": "MemberName",
+            "OrdinalPosition": "7",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberLastName",
+            "OrdinalPosition": "8",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberFirstName",
+            "OrdinalPosition": "9",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MiddleInitial",
+            "OrdinalPosition": "10",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberTitle",
+            "OrdinalPosition": "11",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "GatewayMemberStatus",
+            "OrdinalPosition": "12",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternateMemberID",
+            "OrdinalPosition": "13",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberDOB",
+            "OrdinalPosition": "14",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "MemberDateofDeath",
+            "OrdinalPosition": "15",
+            "DataType": "string"         
+        },
+        {
+            "FieldName": "MemberGender",
+            "OrdinalPosition": "16",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "MemberSocialSecurityNumber",
+            "OrdinalPosition": "17",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AddressType",
+            "OrdinalPosition": "18",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "MemberPermanentAddress1",
+            "OrdinalPosition": "19",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentAddress2",
+            "OrdinalPosition": "20",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentAddress3",
+            "OrdinalPosition": "21",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentCity",
+            "OrdinalPosition": "22",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentCounty",
+            "OrdinalPosition": "23",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentState",
+            "OrdinalPosition": "24",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentSCC",
+            "OrdinalPosition": "25",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberPermanentZipCode",
+            "OrdinalPosition": "26",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMailingAddress1",
+            "OrdinalPosition": "27",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMailingAddress2",
+            "OrdinalPosition": "28",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMailingAddress3",
+            "OrdinalPosition": "29",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMailingCity",
+            "OrdinalPosition": "30",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMailingState",
+            "OrdinalPosition": "31",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMailingZipCode",
+            "OrdinalPosition": "32",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberBillingAddress1",
+            "OrdinalPosition": "33",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberBillingAddress2",
+            "OrdinalPosition": "34",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberBillingAddress3",
+            "OrdinalPosition": "35",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberBillingCity",
+            "OrdinalPosition": "36",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberBillingState",
+            "OrdinalPosition": "37",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberBillingZipCode",
+            "OrdinalPosition": "38",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberHomePhoneNumber",
+            "OrdinalPosition": "39",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternateMemberPhoneNumber",
+            "OrdinalPosition": "40",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberEmailAddress",
+            "OrdinalPosition": "41",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NameOfEmergencyContact",
+            "OrdinalPosition": "42",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EmergencyContactRelationshiptoMember",
+            "OrdinalPosition": "43",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EmergencyContactPhoneNumber",
+            "OrdinalPosition": "44",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "IDCardTriggerflag",
+            "OrdinalPosition": "45",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EndangeredMemberFlag",
+            "OrdinalPosition": "46",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "MemberinOOAProcess",
+            "OrdinalPosition": "47",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SourceforplacinginOOAprocess",
+            "OrdinalPosition": "48",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DateofMove",
+            "OrdinalPosition": "49",
+            "DataType": "date"        
+        },
+        {
+            "FieldName": "MoveDeadline",
+            "OrdinalPosition": "50",
+            "DataType": "date"          
+        },
+        {
+            "FieldName": "MedicaidID",
+            "OrdinalPosition": "51",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MedicarePartAEffDate",
+            "OrdinalPosition": "52",
+            "DataType": "date"        
+        },
+        {
+            "FieldName": "MedicarePartAEndDate",
+            "OrdinalPosition": "53",
+            "DataType": "date"          
+        },
+        {
+            "FieldName": "Medicare_Part_B_Eff_Date",
+            "OrdinalPosition": "54",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "Medicare_Part_B_End_Date",
+            "OrdinalPosition": "55",
+            "DataType": "date"         
+        },
+        {
+            "FieldName": "MedicarePartDEffDate",
+            "OrdinalPosition": "56",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "MedicarePartDEndDate",
+            "OrdinalPosition": "57",
+            "DataType": "date"         
+        },
+        {
+            "FieldName": "LanguageCode",
+            "OrdinalPosition": "58",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternativeFormatLargePrint",
+            "OrdinalPosition": "59",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternativeFormatBraille",
+            "OrdinalPosition": "60",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternativeFormatAudioTape",
+            "OrdinalPosition": "61",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FaxNumber",
+            "OrdinalPosition": "62",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "InLEPProcessStatus",
+            "OrdinalPosition": "63",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAName",
+            "OrdinalPosition": "64",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAAddress1",
+            "OrdinalPosition": "65",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAAddress2",
+            "OrdinalPosition": "66",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAAddress3",
+            "OrdinalPosition": "67",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POACity",
+            "OrdinalPosition": "68",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POACounty",
+            "OrdinalPosition": "69",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAState",
+            "OrdinalPosition": "70",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAZipCode",
+            "OrdinalPosition": "71",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POAPhoneNumber",
+            "OrdinalPosition": "72",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "POARelationship",
+            "OrdinalPosition": "73",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RaceCode",
+            "OrdinalPosition": "74",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "ikaUniqueID",
+            "OrdinalPosition": "75",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FamilyLinkIndicator",
+            "OrdinalPosition": "76",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "InPremiumDelinquencyProcess",
+            "OrdinalPosition": "77",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Ethnicity",
+            "OrdinalPosition": "78",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_1",
+            "OrdinalPosition": "79",
+            "DataType": "string"       
+        },
+        {
+            "FieldName": "Filler_2",
+            "OrdinalPosition": "80",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "Filler_3",
+            "OrdinalPosition": "81",
+            "DataType": "string"
+        },      
+        {
+            "FieldName": "ProviderNumber",
+            "OrdinalPosition": "82",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProviderAddressSuffix",
+            "OrdinalPosition": "83",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProviderEffDate",
+            "OrdinalPosition": "84",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "Filler_4",
+            "OrdinalPosition": "85",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_5",
+            "OrdinalPosition": "86",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BrokerName",
+            "OrdinalPosition": "87",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BrokerCode",
+            "OrdinalPosition": "88",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BrokerAssociation",
+            "OrdinalPosition": "89",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_6",
+            "OrdinalPosition": "90",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_7",
+            "OrdinalPosition": "91",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_8",
+            "OrdinalPosition": "92",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_9",
+            "OrdinalPosition": "93",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CreditableCoverageFlag",
+            "OrdinalPosition": "94",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LEPNumberofUncoveredMonths",
+            "OrdinalPosition": "95",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PartDLEPAmount",
+            "OrdinalPosition": "96",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PartDLEPWaivedAmount",
+            "OrdinalPosition": "97",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PartDLEPSubsidyAmount",
+            "OrdinalPosition": "98",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LEPSource",
+            "OrdinalPosition": "99",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_10",
+            "OrdinalPosition": "100",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_11",
+            "OrdinalPosition": "101",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CurrentLISPremiumSubsidy",
+            "OrdinalPosition": "102",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PartDLISSubsidyLevel",
+            "OrdinalPosition": "103",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PartDLISCopayCategory",
+            "OrdinalPosition": "104",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LISSourceCode",
+            "OrdinalPosition": "105",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_12",
+            "OrdinalPosition": "106",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_13",
+            "OrdinalPosition": "107",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractNumber",
+            "OrdinalPosition": "108",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "PBPNumber",
+            "OrdinalPosition": "109",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Segment",
+            "OrdinalPosition": "110",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "GroupID",
+            "OrdinalPosition": "111",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Subgroup",
+            "OrdinalPosition": "112",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClassID",
+            "OrdinalPosition": "113",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PlanCode",
+            "OrdinalPosition": "114",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DisenrollmentReasonCode",
+            "OrdinalPosition": "115",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_14",
+            "OrdinalPosition": "116",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_15",
+            "OrdinalPosition": "117",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_16",
+            "OrdinalPosition": "118",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SignatureDate",
+            "OrdinalPosition": "119",
+            "DataType": "string"         
+        },
+        {
+            "FieldName": "CSNPDisenrollmentEffDate",
+            "OrdinalPosition": "120",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ElectionType",
+            "OrdinalPosition": "121",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TermReasonCode",
+            "OrdinalPosition": "122",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PlanRider",
+            "OrdinalPosition": "123",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RiderCode",
+            "OrdinalPosition": "124",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_17",
+            "OrdinalPosition": "125",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_18",
+            "OrdinalPosition": "126",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PaymentMethodType",
+            "OrdinalPosition": "127",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PremiumWithholdOption",
+            "OrdinalPosition": "128",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "NameofAccountHolder",
+            "OrdinalPosition": "129",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AccountNumber",
+            "OrdinalPosition": "130",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BankRoutingNumber",
+            "OrdinalPosition": "131",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BankAccountType",
+            "OrdinalPosition": "132",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CreditCardType",
+            "OrdinalPosition": "133",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CreditCardAccountHolderName",
+            "OrdinalPosition": "134",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CreditCardNumber",
+            "OrdinalPosition": "135",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CreditcardSecurityCode",
+            "OrdinalPosition": "136",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CreditCardExpirationDate",
+            "OrdinalPosition": "137",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_19",
+            "OrdinalPosition": "138",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_20",
+            "OrdinalPosition": "139",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HospiceFlag",
+            "OrdinalPosition": "140",
+            "DataType": "string"         
+        },
+        {
+            "FieldName": "MedicaidFlag",
+            "OrdinalPosition": "141",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "WorkingAgedFlag",
+            "OrdinalPosition": "142",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "InstitutionalFlag",
+            "OrdinalPosition": "143",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "ESRDFlag",
+            "OrdinalPosition": "144",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "TransplantFlag",
+            "OrdinalPosition": "145",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "DialysisFlag",
+            "OrdinalPosition": "146",
+            "DataType": "string"           
+        },
+        {
+            "FieldName": "DisabledFlag",
+            "OrdinalPosition": "147",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "PlanOverrideIndicator",
+            "OrdinalPosition": "148",
+            "DataType": "string"          
+        },
+        {
+            "FieldName": "DualStatusCode",
+            "OrdinalPosition": "149",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MedicaidRecordType",
+            "OrdinalPosition": "150",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COBUpdateDate",
+            "OrdinalPosition": "151",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NameofOtherCoverage",
+            "OrdinalPosition": "152",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SubscriberIDofOtherCoverage",
+            "OrdinalPosition": "153",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "GroupIDofotherCoverage",
+            "OrdinalPosition": "154",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "KindofOtherInsurance",
+            "OrdinalPosition": "155",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NameofOtherInsuranceCompany",
+            "OrdinalPosition": "156",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SPAPType",
+            "OrdinalPosition": "157",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SPAPID",
+            "OrdinalPosition": "158",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TransplantFlagType",
+            "OrdinalPosition": "159",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_22",
+            "OrdinalPosition": "160",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_23",
+            "OrdinalPosition": "161",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_24",
+            "OrdinalPosition": "162",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_25",
+            "OrdinalPosition": "163",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_26",
+            "OrdinalPosition": "164",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_27",
+            "OrdinalPosition": "165",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Filler_28",
+            "OrdinalPosition": "166",
+            "DataType": "string"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+  "ClientCode": "#clientCode",
+  "SubClientCode": "#subClientCode",
+  "LOB": "MA",
+  "OutboundFileReferenceId": "#outboundFileReferenceId",
+  "OutboundFileExtract": [
+    {
+      "DestinationType":"csv",
+      "DestinationArchiveTablePath":"/Outbound/Archive/Q360/Q360AgeInPharmacy",
+      "DestinationTablePath": "/Outbound/Q360/Q360AgeInPharmacy",
+      "DestinationFileName": "AgeInPharmacy_<ClientCode>_<YYYYMMDDhhmmss>",
+      "DestinationDelimiter": "|",
+      "DestinationExtension": ".txt",
+      "DestinationFirstRowAsHeader": "false",
+      "SourceTables": [
+        {
+          "Entity": "Q360AgeInPharmacy",
+          "SourcePath": "/Gold/MA/Q360/Q360AgeInPharmacy",
+          "Source": "DataLake",
+          "SourceFormat": "delta"
+        }
+      ],
+      "IsInlineQuery": "No",
+      "SQLScript": "",
+      "SQLScriptPath": "/fileconfig/JSON/Outbound/Queries/Q360AgeInPharmacyQuery.sql"
+    }
+  ]
+}

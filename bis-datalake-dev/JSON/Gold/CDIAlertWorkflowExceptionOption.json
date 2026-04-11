@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "cdiAlertWorkflowExceptionOption",
+      "DestinationTable": "#clientCode/Gold/cdiAlertWorkflowExceptionOption",
+      "SourceTables": [
+        {
+          "Entity": "CDIAlertWorkflowExceptionOption",
+          "SourceTable": "#clientCode/OperationalData/RAQ/TepAlert/dbo/CDIAlertWorkflowExceptionOption",
+          "SourceFormat": "parquet"
+        }       
+      ],
+      "SQLScript": "SELECT CDIAlertWorkflowExceptionOptionID cdiAlertWorkflowExceptionOptionID ,ExceptionOptionText exceptionOptionText ,hash(concat(IfNull(CDIAlertWorkflowExceptionOptionID,\"\") ,\"|\",IfNull(ExceptionOptionText,\"\"))) AS hashKey FROM CDIAlertWorkflowExceptionOption",
+      "MergeScript": "MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.cdiAlertWorkflowExceptionOptionID,\"\")=IfNull(t.cdiAlertWorkflowExceptionOptionID,\"\") WHEN MATCHED AND t.hashKey <> s.hashKey THEN UPDATE SET  cdiAlertWorkflowExceptionOptionID = s.cdiAlertWorkflowExceptionOptionID ,exceptionOptionText = s.exceptionOptionText ,updatedDatetime = CURRENT_TIMESTAMP,hashKey = s.hashKey WHEN NOT MATCHED THEN INSERT(cdiAlertWorkflowExceptionOptionID ,exceptionOptionText ,createdDatetime ,updatedDatetime ,hashKey) VALUES (s.cdiAlertWorkflowExceptionOptionID ,s.exceptionOptionText ,CURRENT_TIMESTAMP ,CURRENT_TIMESTAMP ,s.hashKey)"
+	  }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "notebookname": "GroupLayerBatchProcessing",
+    "parameterNames": [
+      {
+        "p1": "ClientContainer",
+        "p2": "GroupConfigPath"
+      }
+    ]
+  }
+  ,{
+    "notebookname": "GlobalGroupLayerBatchProcessing",
+    "parameterNames": [
+      {
+        "p1": "ClientContainer",
+        "p2": "GroupConfigPath"
+      }
+    ]
+  }
+  ,{
+    "notebookname": "ExecuteStreamingGoldAndPlatinum",
+    "parameterNames": [
+      {
+        "p1": "ClientContainer",
+        "p2": "GroupConfigPath"
+      }
+    ]
+  }
+  ,{
+    "notebookname": "Quality360Processing",
+    "parameterNames": [
+      {
+        "p1": "ClientContainer",
+        "p2": "ConfigPath"
+      }
+    ]
+  }
+  ,{
+    "notebookname": "RunMaintenanceOnUnmanagedTables",
+    "parameterNames": [
+      {
+        "p1": "ClientContainer",
+        "p2": "ConfigPath"
+      }
+    ]
+  }
+]

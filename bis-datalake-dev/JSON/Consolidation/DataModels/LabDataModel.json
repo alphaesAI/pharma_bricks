@@ -1,0 +1,205 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "UniquePersonKey",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "MemberNumber",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "ProviderID",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "ClaimNumber",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "ClaimLineNumber",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "ProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "LocationID",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "DOS",
+      "DataType": "DateType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "ProductID",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "ProviderSpecialty",
+      "DataType": "stringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "ClaimStatus",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "LabCode",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "BillingIden",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "ClientNumber",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "RefPCP",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "UPIN",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "DiagCode",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "OrderCode",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "OrderName",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "CPTCode",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "HCPCSCode",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "HCPCSModifier",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "SNOMEDCode",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "LOINCode",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "ResultCode",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "ResultName",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "ResultValue",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "ResultUnit",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "RefRangeLow",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "RefRangeHigh",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "RefRangeAlpha",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "Comments",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "ClaimSourceIndicator",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "DateEnd",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "SourceName",
+      "DataType": "StringType",
+      "Ordinal": 40
+    } 
+  ]
+}
+

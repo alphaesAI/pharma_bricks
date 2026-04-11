@@ -1,0 +1,183 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"StartPos": "TEMPLATE",
+			"EndPos": "TEMPLATE",
+			"Length": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "Contract",
+			"OrdinalPosition": "1",
+			"DataType": "string",
+			"StartPos": "1",
+			"EndPos": "5",
+			"Length": "5",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PBP",
+			"OrdinalPosition": "2",
+			"DataType": "string",
+			"StartPos": "6",
+			"EndPos": "8",
+			"Length": "3",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "HICN",
+			"OrdinalPosition": "3",
+			"DataType": "string",
+			"StartPos": "9",
+			"EndPos": "20",
+			"Length": "12",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MBI",
+			"OrdinalPosition": "4",
+			"DataType": "string",
+			"StartPos": "21",
+			"EndPos": "31",
+			"Length": "11",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "Surname",
+			"OrdinalPosition": "5",
+			"DataType": "string",
+			"StartPos": "32",
+			"EndPos": "61",
+			"Length": "30",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FirstName",
+			"OrdinalPosition": "6",
+			"DataType": "string",
+			"StartPos": "62",
+			"EndPos": "73",
+			"Length": "12",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "DateOfBirth",
+			"OrdinalPosition": "7",
+			"DataType": "string",
+			"StartPos": "74",
+			"EndPos": "81",
+			"Length": "8",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DateOfDeath",
+			"OrdinalPosition": "8",
+			"DataType": "string",
+			"StartPos": "82",
+			"EndPos": "89",
+			"Length": "8",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "Gender",
+			"OrdinalPosition": "9",
+			"DataType": "string",
+			"StartPos": "90",
+			"EndPos": "90",
+			"Length": "1",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"0",
+						"1",
+						"2"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RecentEnrollmentDate",
+			"OrdinalPosition": "10",
+			"DataType": "string",
+			"StartPos": "91",
+			"EndPos": "98",
+			"Length": "8",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "RecentDisenrollmentDate",
+			"OrdinalPosition": "11",
+			"DataType": "string",
+			"StartPos": "99",
+			"EndPos": "106",
+			"Length": "8",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		}
+	]
+}

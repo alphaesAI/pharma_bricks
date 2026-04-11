@@ -1,0 +1,314 @@
+{
+    "columnMapping": [
+        {
+            "recordType": [
+                {
+                    "Field": "",
+                    "Value": ""
+                }
+            ],
+            "selectColumns": [
+                {
+                    "SourceColumn": "FILE_ID",
+                    "DestinationColumn": "FileId",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "CLIENT_ID",
+                    "DestinationColumn": "ClientId",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_ID",
+                    "DestinationColumn": "FilelayoutID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+                    "DestinationColumn": "FileLayoutDescription",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "LOAD_DATETIME",
+                    "DestinationColumn": "LoadDateTime",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "UniquePersonKey",
+                    "DestinationColumn": "UniquePersonKey",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MemberID",
+                    "DestinationColumn": "PlanMemberID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MedicareBeneficiaryID",
+                    "DestinationColumn": "BeneficiaryID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MedicaidID",
+                    "DestinationColumn": "MedicaidID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "StartDate",
+                    "DestinationColumn": "StartDate",
+                    "SourceColumnFormat": "MM/dd/yyyy",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "EndDate",
+                    "DestinationColumn": "EndDate",
+                    "SourceColumnFormat": "MM/dd/yyyy",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "RenderingProviderID",
+                    "DestinationColumn": "ProviderID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting1",
+                    "DestinationColumn": "AltPCPReporting1",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting2",
+                    "DestinationColumn": "AltPCPReporting2",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting3",
+                    "DestinationColumn": "AltPCPReporting3",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting4",
+                    "DestinationColumn": "AltPCPReporting4",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting5",
+                    "DestinationColumn": "AltPCPReporting5",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting6",
+                    "DestinationColumn": "AltPCPReporting6",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting7",
+                    "DestinationColumn": "AltPCPReporting7",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting8",
+                    "DestinationColumn": "AltPCPReporting8",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting9",
+                    "DestinationColumn": "AltPCPReporting9",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "AltPCPReporting10",
+                    "DestinationColumn": "AltPCPReporting10",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "RenderingProviderFirstName",
+                    "DestinationColumn": "ProviderFirstName",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "RenderingProviderLastName",
+                    "DestinationColumn": "ProviderLastName",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "RenderingProviderMiddleInitial",
+                    "DestinationColumn": "ProviderMiddleInitial",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MemberFirstName",
+                    "DestinationColumn": "MemberFirstName",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MemberLastName",
+                    "DestinationColumn": "MemberLastName",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MemberMiddleIntial",
+                    "DestinationColumn": "MemberMiddleInitial",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "MemberDateOfBirth",
+                    "DestinationColumn": "MemberDOB",
+                    "SourceColumnFormat": "MM/dd/yyyy",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "PlanID",
+                    "DestinationColumn": "CMSContractNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "RenderingNPI",
+                    "DestinationColumn": "ProviderNPI",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "TaxonomyCode",
+                    "DestinationColumn": "ProviderTaxonomy",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "RenderingTIN",
+                    "DestinationColumn": "ProviderTIN",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderAddressLine1",
+                    "DestinationColumn": "BillingProviderAddressLine1",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderAddressLine2",
+                    "DestinationColumn": "BillingProviderAddressLine2",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderCity",
+                    "DestinationColumn": "BillingProviderCity",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderState",
+                    "DestinationColumn": "BillingProviderState",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderZip",
+                    "DestinationColumn": "BillingProviderZip",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderCountyCode",
+                    "DestinationColumn": "BillingProviderCountyCode",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderPhoneNumber",
+                    "DestinationColumn": "BillingProviderPhoneNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderFaxNumber",
+                    "DestinationColumn": "BillingProviderFaxNumber",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderEmail",
+                    "DestinationColumn": "BillingProviderEmail",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderID",
+                    "DestinationColumn": "BillingProviderID",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderLastName",
+                    "DestinationColumn": "BillingProviderLastName",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderMiddleInitial",
+                    "DestinationColumn": "BillingProviderMiddleInitial",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingProviderFirstName",
+                    "DestinationColumn": "BillingProviderFirstName",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingNPI",
+                    "DestinationColumn": "BillingProviderNPI",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "BillingTIN",
+                    "DestinationColumn": "BillingProviderTIN",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "Source",
+                    "DestinationColumn": "Source",
+                    "SourceColumnFormat": "",
+                    "ColumnQuery": ""
+                },
+                {
+                    "SourceColumn": "FileGenerationDateTime",
+                    "DestinationColumn": "FileGenerationDateTime",
+                    "SourceColumnFormat": "YYyyMMddHHmm",
+                    "ColumnQuery": ""
+                }
+            ]
+        }
+    ]
+}

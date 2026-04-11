@@ -1,0 +1,350 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "MEMBERNUMBER",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "HICNUMBER",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MEDICAIDID",
+			"OrdinalPosition": 2,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LASTNAME",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FIRSTNAME",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MIDDLEINITIAL",
+			"OrdinalPosition": 5,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DATEOFBIRTH",
+			"OrdinalPosition": 6,
+			"DataType": "Date",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "GENDER",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"F",
+						"M",
+						"U"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "SUBSCRIBERID",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ENROLLEEUNIQUEID",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PERMANENTADDRESSLINE1",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PERMANENTADDRESSLINE2",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PERMANENTCITY",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PERMANENTSTATE",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PERMANENTZIPCODE",
+			"OrdinalPosition": 14,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PERMANENTCOUNTY",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TELEPHONENUMBER",
+			"OrdinalPosition": 16,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "EMAIL",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FAX",
+			"OrdinalPosition": 18,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "MAILINGADDRESSLINE1",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MAILINGADDRESSLINE2",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MAILINGCITY",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MAILINGSTATE",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MAILINGZIPCODE",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MAILINGCOUNTY",
+			"OrdinalPosition": 24,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CARETAKERFIRSTNAME",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CARETAKERLASTNAME",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CARETAKERMIDDLEINITIAL",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RACE",
+			"OrdinalPosition": 28,
+			"DataType": "int",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"00",
+						"01",
+						"02",
+						"03",
+						"04",
+						"05",
+						"06",
+						"07",
+						"08",
+						"09"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RACEDATASOURCE",
+			"OrdinalPosition": 29,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "ETHNICITY",
+			"OrdinalPosition": 30,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "ETHNICITYDATASOURCE",
+			"OrdinalPosition": 31,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "SPOKENLANGUAGE",
+			"OrdinalPosition": 32,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "SPOKENLANGUAGESOURCE",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "WRITTENLANGUAGE",
+			"OrdinalPosition": 34,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "WRITTENLANGUAGESOURCE",
+			"OrdinalPosition": 35,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "OTHERLANGUAGE",
+			"OrdinalPosition": 36,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "OTHERLANGUAGESOURCE",
+			"OrdinalPosition": 37,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "USCITIZEN",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY1",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY2",
+			"OrdinalPosition": 40,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY3",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY4",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY5",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY6",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY7",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY8",
+			"OrdinalPosition": 46,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY9",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ALTERNATEKEY10",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FILE_ID",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(distinct(MEMBERNUMBER)) from data_file",
+			"control_file_query": "select _c8 from control_file"
+		},
+		{
+			"Name": "VerifyTotalLineCount",
+			"Data_file_query": "select count(distinct(MEMBERNUMBER)) + 1 from data_file",
+			"control_file_query": "select _c7 from control_file"
+		}
+	]
+}

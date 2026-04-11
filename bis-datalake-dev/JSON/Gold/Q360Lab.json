@@ -1,0 +1,33 @@
+{
+  "Entity": "Q360Lab",
+  "DestinationTable": "#clientCode/Gold/MA/Q360/Q360Lab",
+  "SourceTables": [
+    {
+      "Entity": "Lab",
+      "SourceTable": "#clientCode/consolidated/MA/Data/Lab",
+      "SourceFormat": "delta"
+    },
+    {
+      "Entity": "Provider",
+      "SourceTable": "#clientCode/consolidated/MA/Data/Provider",
+      "SourceFormat": "delta"
+    },
+    {
+      "Entity": "EMRLab",
+      "SourceTable": "#clientCode/consolidated/MA/Data/EMRLab",
+      "SourceFormat": "delta"
+    },
+    {
+      "Entity": "HedisEligibleMember",
+      "SourceTable": "#clientCode/Gold/MA/Q360/HedisEligibleMember",
+      "SourceFormat": "delta"
+    },
+    {
+      "Entity": "MemberPersonBridge",
+      "SourceTable": "#clientCode/Gold/MA/Client/MemberPersonBridge",
+      "SourceFormat": "delta"
+    }
+  ],
+  "SQLScript": "WITH EligibleMemberData AS(\r\nSELECT DISTINCT   \r\n    COALESCE(nullif(mpb.UniquePersonKey,'None'),nullif(mpb.PlanMemberID,'None')) AS MemberID\r\n  ,COALESCE(nullif(ompb.UniquePersonKey,'None'),nullif(ompb.PlanMemberID,'None')) AS OriginalMemberID\r\nFROM MemberPersonBridge mpb\r\n  INNER JOIN HedisEligibleMember hem\r\n    ON mpb.BISInternalPersonId = hem.BISInternalPersonId\r\n  LEFT JOIN MemberPersonBridge ompb\r\n    ON ompb.BISInternalPersonId = hem.BISInternalPersonId\r\n    AND ompb.IsOriginalMemberId = 1\r\n),\r\nProviderData as (\r\nSELECT\r\n  ProviderID\r\n ,NPI\r\n ,ROW_NUMBER() OVER(PARTITION BY NPI ORDER BY FileID DESC,ProviderID DESC) as RowNumber\r\nFROM Provider\r\n),\r\nEMRData AS (\r\nSELECT \r\n COALESCE(nullif(el.UniquePersonKey,'None'),nullif(el.PlanMemberID,'None')) AS MemberID\r\n,el.CPTCode\r\n,el.LOINCode\r\n,CASE\r\n    WHEN CAST(el.ResultValue as DECIMAL(28,10)) IS NOT NULL THEN el.ResultValue\r\n    ELSE NULL\r\n END AS Result \r\n,date_format(to_date(el.DOS), 'yyyyMMdd') AS DOS\r\n,CASE \r\n    WHEN el.ProviderID LIKE 'NPI-%' THEN COALESCE(p.providerId,el.ProviderID)\r\n    ELSE el.ProviderID\r\n END AS ProviderID\r\n,el.SourceName\r\n,CASE\r\n    WHEN CAST(el.ResultValue as DECIMAL(28,10)) IS NULL THEN el.ResultValue \r\n    ELSE NULL\r\n END AS AdditionalColumn1 \r\n,'' AS AdditionalColumn2\r\n,'' AS AdditionalColumn3\r\n,'' AS AdditionalColumn4\r\n,'' AS AdditionalColumn5\r\n,ROW_NUMBER() OVER(PARTITION BY COALESCE(nullif(el.UniquePersonKey,'None'),nullif(el.PlanMemberId,'None')), el.ClaimNumber,el.ClaimLineNumber,el.DOS,el.LOINCode,el.ResultValue, el.CPTCode  ORDER BY el.FileId DESC) AS RowNumber\r\nFROM EMRLab el \r\n  LEFT JOIN Providerdata p\r\n      ON REPLACE(UPPER(el.ProviderID), 'NPI-', '') = p.NPI\r\n        AND p.RowNumber = 1\r\n),\r\nLabData AS (\r\nSELECT \r\n COALESCE(nullif(l.UniquePersonKey,'None'),nullif(l.MemberNumber,'None')) AS MemberID\r\n,l.CPTCode\r\n,l.LOINCode\r\n,CASE \r\n    WHEN CAST(l.ResultValue as DECIMAL(28,10)) IS NOT NULL THEN l.ResultValue\r\n    ELSE NULL\r\n END AS Result \r\n,date_format(to_date(l.DOS), 'yyyyMMdd') AS DOS\r\n,CASE \r\n    WHEN l.ProviderID LIKE 'NPI-%' THEN COALESCE(p.providerId,l.ProviderID)\r\n    ELSE l.ProviderID\r\n END AS ProviderID\r\n,l.SourceName\r\n,CASE  \r\n    WHEN CAST(l.ResultValue as DECIMAL(28,10)) IS NULL THEN l.ResultValue \r\n    ELSE NULL\r\n END AS AdditionalColumn1 \r\n,'' AS AdditionalColumn2\r\n,'' AS AdditionalColumn3\r\n,'' AS AdditionalColumn4\r\n,'' AS AdditionalColumn5\r\n,ROW_NUMBER() OVER(PARTITION BY COALESCE(nullif(l.UniquePersonKey,'None'),nullif(l.MemberNumber,'None')), l.ClaimNumber,l.ClaimLineNumber,l.DOS,l.LOINCode,l.ResultValue, l.CPTCode ORDER BY l.FileId DESC) AS RowNumber\r\nFROM Lab l\r\n  LEFT JOIN Providerdata p\r\n      ON REPLACE(UPPER(l.ProviderID), 'NPI-', '') = p.NPI\r\n        AND p.RowNumber = 1\r\n),\r\nCombinedLab AS(\r\nSELECT\r\n   MemberID\r\n  ,CPTCode\r\n  ,LOINCode\r\n  ,Result\r\n  ,DOS\r\n  ,ProviderID\r\n  ,SourceName\r\n  ,AdditionalColumn1\r\n  ,AdditionalColumn2\r\n  ,AdditionalColumn3\r\n  ,AdditionalColumn4\r\n  ,AdditionalColumn5\r\nFROM EMRData \r\nWHERE\r\nRowNumber = 1\r\nUNION ALL\r\nSELECT \r\n   MemberID\r\n  ,CPTCode\r\n  ,LOINCode\r\n  ,Result\r\n  ,DOS\r\n  ,ProviderID\r\n  ,SourceName\r\n  ,AdditionalColumn1\r\n  ,AdditionalColumn2\r\n  ,AdditionalColumn3\r\n  ,AdditionalColumn4\r\n  ,AdditionalColumn5\r\nFROM LabData\r\nWHERE\r\nRowNumber = 1\r\n)\r\nSELECT DISTINCT\r\n   em.OriginalMemberId AS MemberId\r\n  ,cl.CPTCode\r\n  ,cl.LOINCode AS LOINCCode\r\n  ,cl.Result AS TestResultValue\r\n  ,cl.DOS AS DateOfService\r\n  ,COALESCE(cl.providerId,'00000000') AS ProviderID\r\n  ,cl.SourceName AS DataSourceName\r\n  ,cl.AdditionalColumn1\r\n  ,cl.AdditionalColumn2\r\n  ,cl.AdditionalColumn3\r\n  ,cl.AdditionalColumn4\r\n  ,cl.AdditionalColumn5\r\n  ,current_timestamp() AS LoadDateTime\r\nFROM CombinedLab cl\r\n  INNER JOIN EligibleMemberData em \r\n    ON cl.MemberId = em.MemberId\r\n",
+  "TruncateScript": "DELETE FROM Q360Lab"
+}

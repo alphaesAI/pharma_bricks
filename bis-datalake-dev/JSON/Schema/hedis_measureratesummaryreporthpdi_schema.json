@@ -1,0 +1,102 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "SubmissionName",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ReviewSet",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BaseMeasureID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BaseMeasureName",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MeasureName",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Age",
+			"OrdinalPosition": 5,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Language",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Race",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Ethnicity",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMonths",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberCount",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberCountRate",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		}			
+	]
+}

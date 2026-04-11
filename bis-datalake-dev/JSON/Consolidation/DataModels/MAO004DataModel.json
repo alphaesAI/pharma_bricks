@@ -1,0 +1,489 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+	{
+      "FieldName": "ReportDate",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "RecordType",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "ReportID",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "MedicareAdvantageContractID",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "EncounterICN",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "EncounterTypeSwitch",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "ICNofEncounterLinkedTo",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "AllowedDisallowedStatusofEncounterLinkedTo",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "EncounterSubmissionDate",
+      "DataType": "DateType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "FromDateofService",
+      "DataType": "DateType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "ThroughDateofService",
+      "DataType": "DateType",
+      "Ordinal": 16
+    },
+	    {
+      "FieldName": "ServiceType",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "AllowedDisallowedflag",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "AllowedDisallowedReasonCode",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "DiagnosesICD",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "DiagnosisCode1",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "AddorDeleteflag1",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "DiagnosisCode2",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "AddorDeleteflag2",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "DiagnosisCode3",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "AddorDeleteflag3",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+	{
+      "FieldName": "DiagnosisCode4",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "AddorDeleteflag4",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "DiagnosisCode5",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "AddorDeleteflag5",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "DiagnosisCode6",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "AddorDeleteflag6",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+	{
+      "FieldName": "DiagnosisCode7",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "AddorDeleteflag7",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "DiagnosisCode8",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "AddorDeleteflag8",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "DiagnosisCode9",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "AddorDeleteflag9",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "DiagnosisCode10",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "AddorDeleteflag10",
+      "DataType": "StringType",
+      "Ordinal": 40
+    },
+    {
+      "FieldName": "DiagnosisCode11",
+      "DataType": "StringType",
+      "Ordinal": 41
+    },
+    {
+      "FieldName": "AddorDeleteflag11",
+      "DataType": "StringType",
+      "Ordinal": 42
+    },
+    {
+      "FieldName": "DiagnosisCode12",
+      "DataType": "StringType",
+      "Ordinal": 43
+    },
+    {
+      "FieldName": "AddorDeleteflag12",
+      "DataType": "StringType",
+      "Ordinal": 44
+    },
+    {
+      "FieldName": "DiagnosisCode13",
+      "DataType": "StringType",
+      "Ordinal": 45
+    },
+    {
+      "FieldName": "AddorDeleteflag13",
+      "DataType": "StringType",
+      "Ordinal": 46
+    },
+	{
+      "FieldName": "DiagnosisCode14",
+      "DataType": "StringType",
+      "Ordinal": 47
+    },
+    {
+      "FieldName": "AddorDeleteflag14",
+      "DataType": "StringType",
+      "Ordinal": 48
+    },
+    {
+      "FieldName": "DiagnosisCode15",
+      "DataType": "StringType",
+      "Ordinal": 49
+    },
+    {
+      "FieldName": "AddorDeleteflag15",
+      "DataType": "StringType",
+      "Ordinal": 50
+    },
+    {
+      "FieldName": "DiagnosisCode16",
+      "DataType": "StringType",
+      "Ordinal": 51
+    },
+    {
+      "FieldName": "AddorDeleteflag16",
+      "DataType": "StringType",
+      "Ordinal": 52
+    },
+	{
+      "FieldName": "DiagnosisCode17",
+      "DataType": "StringType",
+      "Ordinal": 53
+    },
+    {
+      "FieldName": "AddorDeleteflag17",
+      "DataType": "StringType",
+      "Ordinal": 54
+    },
+    {
+      "FieldName": "DiagnosisCode18",
+      "DataType": "StringType",
+      "Ordinal": 55
+    },
+    {
+      "FieldName": "AddorDeleteflag18",
+      "DataType": "StringType",
+      "Ordinal": 56
+    },
+    {
+      "FieldName": "DiagnosisCode19",
+      "DataType": "StringType",
+      "Ordinal": 57
+    },
+    {
+      "FieldName": "AddorDeleteflag19",
+      "DataType": "StringType",
+      "Ordinal": 58
+    },
+    {
+      "FieldName": "DiagnosisCode20",
+      "DataType": "StringType",
+      "Ordinal": 59
+    },
+    {
+      "FieldName": "AddorDeleteflag20",
+      "DataType": "StringType",
+      "Ordinal": 60
+    },
+    {
+      "FieldName": "DiagnosisCode21",
+      "DataType": "StringType",
+      "Ordinal": 61
+    },
+    {
+      "FieldName": "AddorDeleteflag21",
+      "DataType": "StringType",
+      "Ordinal": 62
+    },
+    {
+      "FieldName": "DiagnosisCode22",
+      "DataType": "StringType",
+      "Ordinal": 63
+    },
+    {
+      "FieldName": "AddorDeleteflag22",
+      "DataType": "StringType",
+      "Ordinal": 64
+    },
+    {
+      "FieldName": "DiagnosisCode23",
+      "DataType": "StringType",
+      "Ordinal": 65
+    },
+    {
+      "FieldName": "AddorDeleteflag23",
+      "DataType": "StringType",
+      "Ordinal": 66
+    },
+	{
+      "FieldName": "DiagnosisCode24",
+      "DataType": "StringType",
+      "Ordinal": 67
+    },
+    {
+      "FieldName": "AddorDeleteflag24",
+      "DataType": "StringType",
+      "Ordinal": 68
+    },
+    {
+      "FieldName": "DiagnosisCode25",
+      "DataType": "StringType",
+      "Ordinal": 69
+    },
+    {
+      "FieldName": "AddorDeleteflag25",
+      "DataType": "StringType",
+      "Ordinal": 70
+    },
+    {
+      "FieldName": "DiagnosisCode26",
+      "DataType": "StringType",
+      "Ordinal": 71
+    },
+    {
+      "FieldName": "AddorDeleteflag26",
+      "DataType": "StringType",
+      "Ordinal": 72
+    },
+	{
+      "FieldName": "DiagnosisCode27",
+      "DataType": "StringType",
+      "Ordinal": 73
+    },
+    {
+      "FieldName": "AddorDeleteflag27",
+      "DataType": "StringType",
+      "Ordinal": 74
+    },
+    {
+      "FieldName": "DiagnosisCode28",
+      "DataType": "StringType",
+      "Ordinal": 75
+    },
+    {
+      "FieldName": "AddorDeleteflag28",
+      "DataType": "StringType",
+      "Ordinal": 76
+    },
+    {
+      "FieldName": "DiagnosisCode29",
+      "DataType": "StringType",
+      "Ordinal": 77
+    },
+    {
+      "FieldName": "AddorDeleteflag29",
+      "DataType": "StringType",
+      "Ordinal": 78
+    },
+    {
+      "FieldName": "DiagnosisCode30",
+      "DataType": "StringType",
+      "Ordinal": 79
+    },
+    {
+      "FieldName": "AddorDeleteflag30",
+      "DataType": "StringType",
+      "Ordinal": 80
+    },
+    {
+      "FieldName": "DiagnosisCode31",
+      "DataType": "StringType",
+      "Ordinal": 81
+    },
+    {
+      "FieldName": "AddorDeleteflag31",
+      "DataType": "StringType",
+      "Ordinal": 82
+    },
+    {
+      "FieldName": "DiagnosisCode32",
+      "DataType": "StringType",
+      "Ordinal": 83
+    },
+    {
+      "FieldName": "AddorDeleteflag32",
+      "DataType": "StringType",
+      "Ordinal": 84
+    },
+    {
+      "FieldName": "DiagnosisCode33",
+      "DataType": "StringType",
+      "Ordinal": 85
+    },
+    {
+      "FieldName": "AddorDeleteflag33",
+      "DataType": "StringType",
+      "Ordinal": 86
+    },
+	{
+      "FieldName": "DiagnosisCode34",
+      "DataType": "StringType",
+      "Ordinal": 87
+    },
+    {
+      "FieldName": "AddorDeleteflag34",
+      "DataType": "StringType",
+      "Ordinal": 88
+    },
+    {
+      "FieldName": "DiagnosisCode35",
+      "DataType": "StringType",
+      "Ordinal": 89
+    },
+    {
+      "FieldName": "AddorDeleteflag35",
+      "DataType": "StringType",
+      "Ordinal": 90
+    },
+    {
+      "FieldName": "DiagnosisCode36",
+      "DataType": "StringType",
+      "Ordinal": 91
+    },
+    {
+      "FieldName": "AddorDeleteflag36",
+      "DataType": "StringType",
+      "Ordinal": 92
+    },
+	{
+      "FieldName": "DiagnosisCode37",
+      "DataType": "StringType",
+      "Ordinal": 93
+    },
+    {
+      "FieldName": "AddorDeleteflag37",
+      "DataType": "StringType",
+      "Ordinal": 94
+    },
+    {
+      "FieldName": "DiagnosisCode38",
+      "DataType": "StringType",
+      "Ordinal": 95
+    },
+    {
+      "FieldName": "AddorDeleteflag38",
+      "DataType": "StringType",
+      "Ordinal": 96
+    }
+  ]
+}

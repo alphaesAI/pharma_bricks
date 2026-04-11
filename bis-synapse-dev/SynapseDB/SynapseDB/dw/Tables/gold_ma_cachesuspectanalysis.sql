@@ -1,0 +1,29 @@
+CREATE TABLE [devidap1].[gold_ma_cachesuspectanalysis]
+( 
+	 [StatisticsID] int NULL
+	,[ReviewTypeID] int NULL
+	,[ReviewTypeDescription] nvarchar(20) NULL
+	,[PlanMemberID] nvarchar(100) NULL
+	,[ProviderID] nvarchar(100) NULL
+	,[SuspectFor] nvarchar(40) NULL
+	,[HCC] nvarchar(20) NULL
+	,[HCCGroup] int NULL
+	,[RuleUsed] int NULL
+	,[SuspectType] int NULL
+	,[InsertedDate] datetime2(7) NULL
+	,[Weight] int NULL
+	,[RAF] float NULL
+	,[IsSuspect] bit NULL
+	,[WeightDesc] nvarchar(1000) NULL
+	,[RAGain] float NULL
+	,[TrumpingHCC] nvarchar(20) NULL
+	,[BaseRate] float NULL
+	,[DiseaseSuspectPriority] nvarchar(200) NULL
+	,[RecordType] nvarchar(20) NULL
+	,[DOSYear] int NULL
+	,[EvidenceType] nvarchar(20) NULL
+	,[EvidenceValue] nvarchar(40) NULL
+	,[EvidenceResult] nvarchar(50) NULL
+	,[EvidenceDate] date NULL
+	,[HashKey] nvarchar(2000) NULL
+) 

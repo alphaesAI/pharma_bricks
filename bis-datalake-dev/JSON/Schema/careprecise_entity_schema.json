@@ -1,0 +1,162 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "NPI",
+      "OrdinalPosition": 0,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EntityType",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ReplacementNPI",
+      "OrdinalPosition": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EIN",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EnumDate",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UpdateDate",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DeactReason",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DeactDate",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ReactDate",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Gender",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "IsSoleProp",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "IsOrgSubpart",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ParentOrgTIN",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "InPECOS",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Warning",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ExclType",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ExclDate",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UPIN",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Group",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "County",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CountyFIPS",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StateFIPS",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TimeZone",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DLSTime",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MSA",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PMSA",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Population",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Zip5",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    }
+  ]
+}

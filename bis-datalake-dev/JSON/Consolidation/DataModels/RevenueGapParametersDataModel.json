@@ -1,0 +1,74 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "LongType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "Client",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "Market",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "ClientMarket",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "ConfigID",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "LockDownMonthStart",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "LockDownDayStart",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "LockDownMonthEnd",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "LockDownDayEnd",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "NotOnCurrentAlert",
+      "DataType": "StringType",
+      "Ordinal": 14
+    }
+  ]
+}

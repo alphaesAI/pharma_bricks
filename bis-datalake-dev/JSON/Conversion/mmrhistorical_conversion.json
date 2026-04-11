@@ -1,0 +1,550 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "StartPos": "TEMPLATE",
+			"Length": "TEMPLATE"		
+        },
+        {
+            "FieldName": "ContractNumber",
+            "OrdinalPosition": "1",
+            "StartPos": "1",
+            "Length": "5"
+        },
+        {
+            "FieldName": "RunDate",
+            "OrdinalPosition": "2",
+            "StartPos": "6",
+            "Length": "8"
+        },
+        {
+            "FieldName": "PaymentDate",
+            "OrdinalPosition": "3",
+            "StartPos": "14",
+            "Length": "6"
+        },
+        {
+            "FieldName": "BeneficiaryID",
+            "OrdinalPosition": "4",
+            "StartPos": "20",
+            "Length": "12"
+        },
+        {
+            "FieldName": "Surname",
+            "OrdinalPosition": "5",
+            "StartPos": "32",
+            "Length": "7"
+        },
+        {
+            "FieldName": "FirstInitial",
+            "OrdinalPosition": "6",
+            "StartPos": "39",
+            "Length": "1"
+        },
+        {
+            "FieldName": "GenderCode",
+            "OrdinalPosition": "7",
+            "StartPos": "40",
+            "Length": "1"
+        },
+        {
+            "FieldName": "DateOfBirth",
+            "OrdinalPosition": "8",
+            "StartPos": "41",
+            "Length": "8"
+        },
+        {
+            "FieldName": "AgeGroup",
+            "OrdinalPosition": "9",
+            "StartPos": "49",
+            "Length": "4"
+        },
+        {
+            "FieldName": "StateAndCountyCode",
+            "OrdinalPosition": "10",
+            "StartPos": "53",
+            "Length": "5"
+        },
+        {
+            "FieldName": "OutOfAreaIndicator",
+            "OrdinalPosition": "11",
+            "StartPos": "58",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PartAEntitlement",
+            "OrdinalPosition": "12",
+            "StartPos": "59",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PartBEntitlement",
+            "OrdinalPosition": "13",
+            "StartPos": "60",
+            "Length": "1"
+        },
+        {
+            "FieldName": "Hospice",
+            "OrdinalPosition": "14",
+            "StartPos": "61",
+            "Length": "1"
+        },
+        {
+            "FieldName": "Esrd",
+            "OrdinalPosition": "15",
+            "StartPos": "62",
+            "Length": "1"
+        },
+        {
+            "FieldName": "AgedDisabledMsp",
+            "OrdinalPosition": "16",
+            "StartPos": "63",
+            "Length": "1"
+        },
+        {
+            "FieldName": "Institutional",
+            "OrdinalPosition": "17",
+            "StartPos": "64",
+            "Length": "1"
+        },
+        {
+            "FieldName": "NHC",
+            "OrdinalPosition": "18",
+            "StartPos": "65",
+            "Length": "1"
+        },
+        {
+            "FieldName": "NewMedicareBeneficiaryMedicaidStatusFlag",
+            "OrdinalPosition": "19",
+            "StartPos": "66",
+            "Length": "1"
+        },
+        {
+            "FieldName": "LTIFlag",
+            "OrdinalPosition": "20",
+            "StartPos": "67",
+            "Length": "1"
+        },
+        {
+            "FieldName": "MedicaidIndicator",
+            "OrdinalPosition": "21",
+            "StartPos": "68",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PIPDCG ",
+            "OrdinalPosition": "22",
+            "StartPos": "69",
+            "Length": "2"
+        },
+        {
+            "FieldName": "DefaultRiskFactorCode",
+            "OrdinalPosition": "23",
+            "StartPos": "71",
+            "Length": "1"
+        },
+        {
+            "FieldName": "RiskAdjusterFactorA",
+            "OrdinalPosition": "24",
+            "StartPos": "72",
+            "Length": "7"
+        },
+        {
+            "FieldName": "RiskAdjusterFactorB",
+            "OrdinalPosition": "25",
+            "StartPos": "79",
+            "Length": "7"
+        },
+        {
+            "FieldName": "NumberOfPaymentAdjustmentMonthsPartA",
+            "OrdinalPosition": "26",
+            "StartPos": "86",
+            "Length": "2"
+        },
+        {
+            "FieldName": "NumberOfPaymentAdjustmentMonthsPartB",
+            "OrdinalPosition": "27",
+            "StartPos": "88",
+            "Length": "2"
+        },
+        {
+            "FieldName": "AdjustmentReasonCode",
+            "OrdinalPosition": "28",
+            "StartPos": "90",
+            "Length": "2"
+        },
+        {
+            "FieldName": "PaymentAdjustmentStartDate",
+            "OrdinalPosition": "29",
+            "StartPos": "92",
+            "Length": "8"
+        },
+        {
+            "FieldName": "PaymentAdjustmentEndDate",
+            "OrdinalPosition": "30",
+            "StartPos": "100",
+            "Length": "8"
+        },
+        {
+            "FieldName": "DemographicPaymentAdjustmentRatePartA",
+            "OrdinalPosition": "31",
+            "StartPos": "108",
+            "Length": "9"
+        },
+        {
+            "FieldName": "DemographicPaymentAdjustmentRatePartB",
+            "OrdinalPosition": "32",
+            "StartPos": "117",
+            "Length": "9"
+        },
+        {
+            "FieldName": "MonthlyPaymentAdjustmentAmountRateA",
+            "OrdinalPosition": "33",
+            "StartPos": "126",
+            "Length": "9"
+        },
+        {
+            "FieldName": "MonthlyPaymentAdjustmentAmountRateB",
+            "OrdinalPosition": "34",
+            "StartPos": "135",
+            "Length": "9"
+        },
+        {
+            "FieldName": "LisPremiumSubsidy",
+            "OrdinalPosition": "35",
+            "StartPos": "144",
+            "Length": "8"
+        },
+        {
+            "FieldName": "EsrdMspFlag",
+            "OrdinalPosition": "36",
+            "StartPos": "152",
+            "Length": "1"
+        },
+        {
+            "FieldName": "MTMAddOn",
+            "OrdinalPosition": "37",
+            "StartPos": "153",
+            "Length": "18"
+        },       
+        {
+            "FieldName": "MedicaidFullPartialNondual",
+            "OrdinalPosition": "38",
+            "StartPos": "171",
+            "Length": "1"
+        },
+        {
+            "FieldName": "RiskAdjustmentAgeGroup",
+            "OrdinalPosition": "39",
+            "StartPos": "172",
+            "Length": "4"
+        },
+        {
+            "FieldName": "PreviousDisableRatio",
+            "OrdinalPosition": "40",
+            "StartPos": "176",
+            "Length": "7"
+        },
+        {
+            "FieldName": "DeMinimisPartD",
+            "OrdinalPosition": "41",
+            "StartPos": "183",
+            "Length": "1"
+        },
+        {
+            "FieldName": "ConcurrentEnrollment",
+            "OrdinalPosition": "42",
+            "StartPos": "184",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PlanBenefitPackageID",
+            "OrdinalPosition": "43",
+            "StartPos": "185",
+            "Length": "3"
+        },
+        {
+            "FieldName": "RaceCode",
+            "OrdinalPosition": "44",
+            "StartPos": "188",
+            "Length": "1"
+        },
+        {
+            "FieldName": "RiskAdjustmentFactorTypeCode",
+            "OrdinalPosition": "45",
+            "StartPos": "189",
+            "Length": "2"
+        },
+        {
+            "FieldName": "FrailtyIndicator",
+            "OrdinalPosition": "46",
+            "StartPos": "191",
+            "Length": "1"
+        },
+        {
+            "FieldName": "OriginalReasonForEntitlementCode",
+            "OrdinalPosition": "47",
+            "StartPos": "192",
+            "Length": "1"
+        },
+        {
+            "FieldName": "LagIndicator",
+            "OrdinalPosition": "48",
+            "StartPos": "193",
+            "Length": "1"
+        },
+        {
+            "FieldName": "SegmentNumber",
+            "OrdinalPosition": "49",
+            "StartPos": "194",
+            "Length": "3"
+        },
+        {
+            "FieldName": "EnrollmentSource",
+            "OrdinalPosition": "50",
+            "StartPos": "197",
+            "Length": "1"
+        },
+        {
+            "FieldName": "EGHPFlag",
+            "OrdinalPosition": "51",
+            "StartPos": "198",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PartCBasicPremiumPartAAmount",
+            "OrdinalPosition": "52",
+            "StartPos": "199",
+            "Length": "8"
+        },
+        {
+            "FieldName": "PartCBasicPremiumPartBAmount",
+            "OrdinalPosition": "53",
+            "StartPos": "207",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForPartACostSharingReduction",
+            "OrdinalPosition": "54",
+            "StartPos": "215",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForPartBCostSharingReduction",
+            "OrdinalPosition": "55",
+            "StartPos": "223",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForOtherPartAMandatorySupplementalBenefits",
+            "OrdinalPosition": "56",
+            "StartPos": "231",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForOtherPartBMandatorySupplementalBenefits",
+            "OrdinalPosition": "57",
+            "StartPos": "239",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForPartBPremiumReductionPartAAmount",
+            "OrdinalPosition": "58",
+            "StartPos": "247",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForPartBPremiumReductionPartBAmount",
+            "OrdinalPosition": "59",
+            "StartPos": "255",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForPartDSupplementalBenefitsPartAAmount",
+            "OrdinalPosition": "60",
+            "StartPos": "263",
+            "Length": "8"
+        },
+        {
+            "FieldName": "RebateForPartDSupplementalBenefitsPartBAmount",
+            "OrdinalPosition": "61",
+            "StartPos": "271",
+            "Length": "8"
+        },
+        {
+            "FieldName": "TotalPartAMAPayment",
+            "OrdinalPosition": "62",
+            "StartPos": "279",
+            "Length": "10"
+        },
+        {
+            "FieldName": "TotalPartBMAPayment",
+            "OrdinalPosition": "63",
+            "StartPos": "289",
+            "Length": "10"
+        },
+        {
+            "FieldName": "TotalMAPaymentAmount",
+            "OrdinalPosition": "64",
+            "StartPos": "299",
+            "Length": "11"
+        },
+        {
+            "FieldName": "PartDRAFactor",
+            "OrdinalPosition": "65",
+            "StartPos": "310",
+            "Length": "7"
+        },
+        {
+            "FieldName": "PartDLowIncomeIndicator",
+            "OrdinalPosition": "66",
+            "StartPos": "317",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PartDLowIncomeMultiplier",
+            "OrdinalPosition": "67",
+            "StartPos": "318",
+            "Length": "7"
+        },
+        {
+            "FieldName": "PartDLongTermInstitutionalIndicator",
+            "OrdinalPosition": "68",
+            "StartPos": "325",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PartDLongTermInstitutionalMultiplier",
+            "OrdinalPosition": "69",
+            "StartPos": "326",
+            "Length": "7"
+        },
+        {
+            "FieldName": "RebateForPartDBasicPremiumReduction",
+            "OrdinalPosition": "70",
+            "StartPos": "333",
+            "Length": "8"
+        },
+        {
+            "FieldName": "PartDBasicPremiumAmount",
+            "OrdinalPosition": "71",
+            "StartPos": "341",
+            "Length": "8"
+        },
+        {
+            "FieldName": "PartDDirectSubsidyMonthlyPaymentAmount",
+            "OrdinalPosition": "72",
+            "StartPos": "349",
+            "Length": "10"
+        },
+        {
+            "FieldName": "ReinsuranceSubsidyAmount",
+            "OrdinalPosition": "73",
+            "StartPos": "359",
+            "Length": "10"
+        },
+        {
+            "FieldName": "LowIncomeSubsidyCostSharingAmount",
+            "OrdinalPosition": "74",
+            "StartPos": "369",
+            "Length": "10"
+        },
+        {
+            "FieldName": "TotalPartDPayment",
+            "OrdinalPosition": "75",
+            "StartPos": "379",
+            "Length": "11"
+        },
+        {
+            "FieldName": "NumberOfPaymentAdjustmentMonthsPartD",
+            "OrdinalPosition": "76",
+            "StartPos": "390",
+            "Length": "2"
+        },
+        {
+            "FieldName": "PACEPremiumAddOn",
+            "OrdinalPosition": "77",
+            "StartPos": "392",
+            "Length": "10"
+        },
+        {
+            "FieldName": "PACECostSharingAddOn",
+            "OrdinalPosition": "78",
+            "StartPos": "402",
+            "Length": "10"
+        },
+        {
+            "FieldName": "PartCFrailtyScoreFactor",
+            "OrdinalPosition": "79",
+            "StartPos": "412",
+            "Length": "7"
+        },
+        {
+            "FieldName": "MSPFactor",
+            "OrdinalPosition": "80",
+            "StartPos": "419",
+            "Length": "7"
+        },
+        {
+            "FieldName": "MSPReductionReductionAdjustmentAmountPartA",
+            "OrdinalPosition": "81",
+            "StartPos": "426",
+            "Length": "10"
+        },
+        {
+            "FieldName": "MSPReductionReductionAdjustmentAmountPartB",
+            "OrdinalPosition": "82",
+            "StartPos": "436",
+            "Length": "10"
+        },
+        {
+            "FieldName": "MedicaidDualStatusCode",
+            "OrdinalPosition": "83",
+            "StartPos": "446",
+            "Length": "2"
+        },
+        {
+            "FieldName": "PartDCoverageGapDiscountAmount",
+            "OrdinalPosition": "84",
+            "StartPos": "448",
+            "Length": "8"
+        },
+        {
+            "FieldName": "PartDRiskAdjustmentFactorType",
+            "OrdinalPosition": "85",
+            "StartPos": "456",
+            "Length": "2"
+        },
+        {
+            "FieldName": "DefaultPartDRiskAdjustmentFactorCode",
+            "OrdinalPosition": "86",
+            "StartPos": "458",
+            "Length": "1"
+        },
+        {
+            "FieldName": "PartARiskAdjustedMonthlyRateAmountForPaymentAdjustment",
+            "OrdinalPosition": "87",
+            "StartPos": "459",
+            "Length": "9"
+        },
+        {
+            "FieldName": "PartBRiskAdjustedMonthlyRateAmountForPaymentAdjustment",
+            "OrdinalPosition": "88",
+            "StartPos": "468",
+            "Length": "9"
+        },
+        {
+            "FieldName": "PartDDirectSubsidyMonthlyRateAmountForPaymentAdjustment",
+            "OrdinalPosition": "89",
+            "StartPos": "477",
+            "Length": "9"
+        },
+        {
+            "FieldName": "CleanupID",
+            "OrdinalPosition": "90",
+            "StartPos": "486",
+            "Length": "10"
+        }
+    ]
+}

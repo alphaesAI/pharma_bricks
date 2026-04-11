@@ -1,0 +1,302 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedVisionClaimsUniqueKey",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CONCAT(COALESCE(OriginalClaimNumber,''),COALESCE(ClaimNumber,''),COALESCE(ClaimProcessDate,''),COALESCE(ClaimStatus,''),COALESCE(CLIENT_ID,''),COALESCE(FILE_ID,''))"
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DetailServiceDate",
+          "DestinationColumn": "DetailServiceDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimLineNumber",
+          "DestinationColumn": "ClaimLineNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LineServiceFrom",
+          "DestinationColumn": "LineServiceFrom",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "LineServiceThu",
+          "DestinationColumn": "LineServiceToDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CPTCode",
+          "DestinationColumn": "ProcCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CPTModifier1",
+          "DestinationColumn": "ProcMod1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CPTModifier2",
+          "DestinationColumn": "ProcMod2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code1",
+          "DestinationColumn": "DiagCode1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code2",
+          "DestinationColumn": "DiagCode2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code3",
+          "DestinationColumn": "DiagCode3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code4",
+          "DestinationColumn": "DiagCode4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code5",
+          "DestinationColumn": "DiagCode5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code6",
+          "DestinationColumn": "DiagCode6",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code7",
+          "DestinationColumn": "DiagCode7",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code8",
+          "DestinationColumn": "DiagCode8",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code9",
+          "DestinationColumn": "DiagCode9",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code10",
+          "DestinationColumn": "DiagCode10",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code11",
+          "DestinationColumn": "DiagCode11",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code12",
+          "DestinationColumn": "DiagCode12",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code13",
+          "DestinationColumn": "DiagCode13",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code14",
+          "DestinationColumn": "DiagCode14",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code15",
+          "DestinationColumn": "DiagCode15",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code16",
+          "DestinationColumn": "DiagCode16",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code17",
+          "DestinationColumn": "DiagCode17",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code18",
+          "DestinationColumn": "DiagCode18",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code19",
+          "DestinationColumn": "DiagCode19",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code20",
+          "DestinationColumn": "DiagCode20",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code21",
+          "DestinationColumn": "DiagCode21",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code22",
+          "DestinationColumn": "DiagCode22",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code23",
+          "DestinationColumn": "DiagCode23",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code24",
+          "DestinationColumn": "DiagCode24",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code25",
+          "DestinationColumn": "DiagCode25",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code26",
+          "DestinationColumn": "DiagCode26",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code27",
+          "DestinationColumn": "DiagCode27",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code28",
+          "DestinationColumn": "DiagCode28",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code29",
+          "DestinationColumn": "DiagCode29",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code30",
+          "DestinationColumn": "DiagCode30",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code31",
+          "DestinationColumn": "DiagCode31",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code32",
+          "DestinationColumn": "DiagCode32",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code33",
+          "DestinationColumn": "DiagCode33",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code34",
+          "DestinationColumn": "DiagCode34",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code35",
+          "DestinationColumn": "DiagCode35",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code36",
+          "DestinationColumn": "DiagCode36",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code37",
+          "DestinationColumn": "DiagCode37",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICD9/10_Code38",
+          "DestinationColumn": "DiagCode38",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RevenueCode",
+          "DestinationColumn": "RevenueCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

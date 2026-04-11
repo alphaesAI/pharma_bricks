@@ -1,0 +1,67 @@
+CREATE TABLE [devidap1].[gold_ma_q360membershipstars]
+( 
+	 [YEAR_MTH_KEY] int NOT NULL
+	,[MEMBER_ID] nvarchar(20) NOT NULL
+	,[MBI] nvarchar(13) NULL
+	,[MEMBER_LAST_NAME]  nvarchar(80) NULL
+	,[MEMBER_FIRST_NAME]  nvarchar(80) NULL
+	,[MEMBER_GENDER]  nvarchar(1) NULL
+	,[MEMBER_DOB]  nvarchar(8) NULL
+	,[MEMBER_DOD]  nvarchar(8) NULL
+	,[MEMBER_DEATH_IND]  int NULL
+	,[MEMBER_ADDRESS1]  nvarchar(100) NULL
+	,[MEMBER_ADDRESS2]  nvarchar(100) NULL
+	,[MEMBER_CITY]  nvarchar(50) NULL
+	,[MEMBER_STATE]  nvarchar(20) NULL
+	,[MEMBER_ZIP]  nvarchar(20) NULL
+	,[MEMBER_COUNTY]  nvarchar(50) NULL
+	,[MEMBER_PHONE]  nvarchar(15) NULL
+	,[MEMBER_EMAIL]  nvarchar(100) NULL
+	,[PLAN_ID]  nvarchar(5) NULL
+	,[PRODUCT_NAME]  nvarchar(5) NULL
+	,[PBP]  nvarchar(15) NULL
+	,[MEMBER_GROUP_NUMBER]  nvarchar(12) NULL
+	,[MEMBER_GROUP_NAME]  nvarchar(100) NULL
+	,[MEMBER_GROUP_CATEGORY]  nvarchar(30) NULL
+	,[ATTRIBUTION_CLASS]  nvarchar(14) NULL
+	,[ENRL_MIN_BEGIN_DATE] nvarchar(8) NULL
+	,[ENRL_BEGIN_DT]  nvarchar(8) NULL
+	,[ENRL_END_DT]  nvarchar(8) NULL
+	,[HOSPICE_IND]  int NULL
+	,[ESRD_IND]  int NULL
+	,[INSTL_IND]  int NULL
+	,[RISK_SCORE_cMMR]  nvarchar(14) NULL
+	,[LIS_IND]  int NULL
+	,[RX_FLAG]  int NULL
+	,[PO_ID]  nvarchar(50) NULL
+	,[PO_NAME]  nvarchar(255) NULL
+	,[PU_ID]  nvarchar(50) NULL
+	,[PU_NAME]  nvarchar(255) NULL
+	,[PROVIDER_ID]  nvarchar(20) NULL
+	,[NPI]  nvarchar(20) NULL
+	,[TIN]  nvarchar(20) NULL
+	,[PROVIDER_LAST_NAME]  nvarchar(150) NULL
+	,[PROVIDER_FIRST_NAME]  nvarchar(150) NULL
+	,[PROVIDER_ADDRESS1]  nvarchar(100) NULL
+	,[PROVIDER_ADDRESS2]  nvarchar(100) NULL
+	,[PROVIDER_CITY]  nvarchar(50) NULL
+	,[PROVIDER_STATE]  nvarchar(50) NULL
+	,[PROVIDER_ZIP]  nvarchar(50) NULL
+	,[PROVIDER_COUNTY]  nvarchar(50) NULL
+	,[PROVIDER_EMAIL]  nvarchar(100) NULL
+	,[PROVIDER_PHONE]  nvarchar(35) NULL
+	,[PROVIDER_FAX]  nvarchar(35) NULL
+	,[PROVIDER_TYPE]  nvarchar(100) NULL
+	,[PCMH]  int NULL
+	,[CURR_CVG_IND]  int NULL
+	,[PROVIDER_TAXONOMY]  nvarchar(100) NULL
+	,[PROVIDER_SPECIALTY]  nvarchar(100) NULL
+	,[MEMBER_DO_NOT_CONTACT]  int NULL
+	,[ALT_MEMBER_ID9]  nvarchar(20) NULL
+	,[ALT_MEMBER_ID_CURR]  nvarchar(20) NULL
+	,[MEMBER_ADDRESS_TYPE]  nvarchar(50) NULL
+	,[ALT_PROVIDER_REPORTING_01]  nvarchar(100) NULL
+	,[BILLING_PROVIDER_TIN]  nvarchar(25) NULL
+	,[ATTRIBUTION_SOURCE]  nvarchar(25) NULL
+	,[LOAD_DATE]  datetime2(7) NOT NULL	
+) 

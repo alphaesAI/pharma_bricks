@@ -1,0 +1,68 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileId",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientId",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FilelayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MEMBER_ID",
+          "DestinationColumn": "UniquePersonKey",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_ID",
+          "DestinationColumn": "ProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "START_DATE",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": "CASE WHEN YEAR(to_date(START_DATE,'yyyyMMdd')) > YEAR(current_date()) AND to_date(END_DATE,'yyyyMMdd') is null THEN to_date(last_day(add_months(date_trunc('yyyy', to_date(START_DATE,'yyyyMMdd')),11)),'yyyyMMdd') WHEN to_date(END_DATE,'yyyyMMdd') is null THEN to_date(last_day(add_months(date_trunc('yyyy', current_date()),11)),'yyyyMMdd') WHEN YEAR(to_date(START_DATE,'yyyyMMdd')) > YEAR(current_date()) AND YEAR(to_date(END_DATE,'yyyyMMdd')) > YEAR(to_date(START_DATE,'yyyyMMdd')) THEN to_date(last_day(add_months(date_trunc('yyyy', to_date(START_DATE,'yyyyMMdd')),11)),'yyyyMMdd') WHEN YEAR(to_date(START_DATE,'yyyyMMdd')) <= YEAR(current_date()) AND YEAR(to_date(END_DATE,'yyyyMMdd')) > YEAR(current_date()) THEN to_date(last_day(add_months(date_trunc('yyyy', current_date()),11)),'yyyyMMdd') ELSE to_date(END_DATE,'yyyyMMdd') END"
+        }
+      ]
+    }
+  ]
+}

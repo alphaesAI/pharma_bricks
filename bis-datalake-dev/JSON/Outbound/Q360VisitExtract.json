@@ -1,0 +1,28 @@
+{
+  "ClientCode": "#clientCode",
+  "SubClientCode": "#subClientCode",
+  "LOB": "MA",
+  "OutboundFileReferenceId": "#outboundFileReferenceId",
+  "OutboundFileExtract": [
+    {
+      "DestinationType":"csv",
+      "DestinationArchiveTablePath": "/Outbound/Archive/Q360/Q360Visit",
+      "DestinationTablePath": "/Outbound/Q360/Q360Visit",
+      "DestinationFileName": "Visit_<ClientCode>_<YYYYMMDDhhmmss>",
+      "DestinationDelimiter": "|",
+      "DestinationExtension": ".txt",
+      "DestinationFirstRowAsHeader": "false",
+      "SourceTables": [
+        {
+          "Entity": "Q360Visit",
+          "SourcePath": "/Gold/MA/Q360/Q360Visit",
+          "Source": "DataLake",
+          "SourceFormat": "delta"
+        }
+      ],
+      "IsInlineQuery": "No",
+      "SQLScript": "",
+      "SQLScriptPath": "/fileconfig/JSON/Outbound/Queries/Q360VisitQuery.sql"
+    }
+  ]
+}

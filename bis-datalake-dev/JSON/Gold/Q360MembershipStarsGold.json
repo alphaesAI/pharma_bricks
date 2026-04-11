@@ -1,0 +1,16 @@
+{
+  "LayerGrouping": [
+    {
+      "LayerOrder": 1,
+      "LayerGrouping": "Q360MembershipStarsGold",
+      "SubGrouping": [                
+        {
+          "SubGroupEntity": "Q360MembershipStarsGold",
+          "SubGroupingOrder": 1,
+          "SubConfigPath": "",
+          "Notebook": "./Q360MembershipStars"
+        }          
+      ]
+    }
+  ]
+}

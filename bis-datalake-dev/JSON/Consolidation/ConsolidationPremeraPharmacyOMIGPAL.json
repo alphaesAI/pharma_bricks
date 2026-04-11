@@ -1,0 +1,182 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "RecordType",
+          "Value": "DE"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "CardHolderID",
+          "DestinationColumn": "PlanMemberID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProviderID",
+          "ColumnQuery": "CASE WHEN PrescriberIDQualifier = '01' THEN PrescriberID  ELSE  PrescriberNPINumber END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriberNPINumber",
+          "DestinationColumn": "ProviderNPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "TransactionID",
+          "DestinationColumn": "ClaimNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProductID",
+          "ColumnQuery": "'HMO'",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "NDCCodeSTD",
+          "ColumnQuery": "CASE WHEN ProductServiceIDQualifier = '03' THEN ProductServiceID  ELSE '00000000000' END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "DateOfService",
+          "DestinationColumn": "RxFillDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "yyyyMMdd"
+        },
+        {
+          "SourceColumn": "ConvertedDaysSupply",
+          "DestinationColumn": "RxDaysSupply",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "GenericProductIdentifier",
+          "DestinationColumn": "GPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "Quantity",
+          "ColumnQuery": "CASE WHEN QuantityDispensed>= 1000 THEN (QuantityDispensed /1000) ELSE  QuantityDispensed END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "UnitofMeasure",
+          "DestinationColumn": "UnitsOfMeasure",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriberNPINumber",
+          "DestinationColumn": "PrescriberNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriberNPINumber",
+          "DestinationColumn": "PrescriberID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RecordStatusCode",
+          "DestinationColumn": "ClaimStatus",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AdjudicationDate",
+          "DestinationColumn": "AdjudicationDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "PharmacyNPI",
+          "ColumnQuery": "CASE WHEN ServiceProviderIDQualifier = '01' THEN ServiceProviderID  ELSE '00000000000' END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriptionServiceReferenceNumberRxNumber",
+          "DestinationColumn": "PrescriptionReferenceNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ClaimSourceIndicator",
+          "ColumnQuery": "'A'",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimAdjudicationBeganTimestamp",
+          "DestinationColumn": "AlternateKey1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "TimeClaimAdded",
+          "DestinationColumn": "AlternateKey2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriberSpecialtyCode",
+          "DestinationColumn": "ProviderSpecialty",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "SourceName",
+          "ColumnQuery": "'CVS Rx'",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PrescriberDEANumber",
+          "DestinationColumn": "DEANumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+    "RecordTypes": [
+		{
+			"Type": "H",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "MCOContractNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"Length": "5",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "FileDate",
+					"OrdinalPosition": "3",
+					"StartPos": "7",
+					"Length": "8",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "CalenderMonth",
+					"OrdinalPosition": "3",
+					"StartPos": "15",
+					"Length": "6",
+					"ControlFile": "True"
+				}
+			]
+		},
+		{
+			"Type": "T",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "MCOContractNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"Length": "5"
+				},
+				{
+					"FieldName": "TotalNumberOfDetailRecords",
+					"OrdinalPosition": "3",
+					"StartPos": "7",
+					"Length": "8",
+					"ControlFile": "True"
+				}
+			]
+		},
+		{
+			"Type": "D",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"EndPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "MCOContractNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"EndPos": "6",
+					"Length": "5"
+				},
+				{
+					"FieldName": "PBPNumber",
+					"OrdinalPosition": "3",
+					"StartPos": "7",
+					"EndPos": "9",
+					"Length": "3"
+				},
+				{
+					"FieldName": "BeneficiaryID",
+					"OrdinalPosition": "4",
+					"StartPos": "10",
+					"EndPos": "21",
+					"Length": "12"
+				},
+				{
+					"FieldName": "Surname",
+					"OrdinalPosition": "5",
+					"StartPos": "22",
+					"EndPos": "33",
+					"Length": "12"
+				},
+				{
+					"FieldName": "FirstName",
+					"OrdinalPosition": "6",
+					"StartPos": "34",
+					"EndPos": "40",
+					"Length": "7"
+				},
+				{
+					"FieldName": "MiddleInitial",
+					"OrdinalPosition": "7",
+					"StartPos": "41",
+					"EndPos": "41",
+					"Length": "1"
+				},
+				{
+					"FieldName": "Sex",
+					"OrdinalPosition": "8",
+					"StartPos": "42",
+					"EndPos": "42",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DateOfBirth",
+					"OrdinalPosition": "9",
+					"StartPos": "43",
+					"EndPos": "50",
+					"Length": "8"
+				},
+				{
+					"FieldName": "LowIncomePeriodStartDate",
+					"OrdinalPosition": "10",
+					"StartPos": "51",
+					"EndPos": "58",
+					"Length": "8"
+				},
+				{
+					"FieldName": "LowIncomePeriodEndDate",
+					"OrdinalPosition": "11",
+					"StartPos": "59",
+					"EndPos": "66",
+					"Length": "8"
+				},
+				{
+					"FieldName": "LIPSPercentage",
+					"OrdinalPosition": "12",
+					"StartPos": "67",
+					"EndPos": "69",
+					"Length": "3"
+				},
+				{
+					"FieldName": "PremiumLISAmount",
+					"OrdinalPosition": "13",
+					"StartPos": "70",
+					"EndPos": "77",
+					"Length": "8"
+				},
+				{
+					"FieldName": "LowIncomeCoPayLevelID",
+					"OrdinalPosition": "14",
+					"StartPos": "78",
+					"EndPos": "78",
+					"Length": "1"
+				},
+				{
+					"FieldName": "BeneficiarySourceofSubsidyCode",
+					"OrdinalPosition": "15",
+					"StartPos": "79",
+					"EndPos": "79",
+					"Length": "1"
+				},
+				{
+					"FieldName": "LISActivityFlag",
+					"OrdinalPosition": "16",
+					"StartPos": "80",
+					"EndPos": "80",
+					"Length": "1"
+				},
+				{
+					"FieldName": "PBPStartDate",
+					"OrdinalPosition": "17",
+					"StartPos": "81",
+					"EndPos": "88",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "NetPartDPremiumAmount",
+					"OrdinalPosition": "18",
+					"StartPos": "89",
+					"EndPos": "96",
+					"Length": "8"
+				},
+				{
+					"FieldName": "ContractYear",
+					"OrdinalPosition": "19",
+					"StartPos": "97",
+					"EndPos": "100",
+					"Length": "4"
+				},
+				{
+					"FieldName": "InstitutionalStatusIndicator",
+					"OrdinalPosition": "20",
+					"StartPos": "101",
+					"EndPos": "101",
+					"Length": "1"
+				},
+				{
+					"FieldName": "PBPEnrollmentTerminationDate",
+					"OrdinalPosition": "21",
+					"StartPos": "102",
+					"EndPos": "109",
+					"Length": "8"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "22",
+					"StartPos": "110",
+					"EndPos": "165",
+					"Length": "56"
+				}
+			]
+		}
+	]
+}

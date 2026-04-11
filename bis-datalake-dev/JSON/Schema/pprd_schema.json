@@ -1,0 +1,392 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "ContractNumber",
+      "OrdinalPosition": 0,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RecordType",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ContractName",
+      "OrdinalPosition": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PaymentCycleDate",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RunDate",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TableIDNumber",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdjustmentReasonCode",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartATotalMembers",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartBTotalMembers",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDTotalMembers",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartAPaymentAmount",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartBPaymentAmount",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDPaymentAmount",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CoverageGapDiscountAmount",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalPayment",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartCPremiumWithholdingAmount",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDPremiumWithholdingAmount",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLowIncomePremiumSubsidy",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLateEnrollmentPenalty",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalPremiumSettlementAmount",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NMECPartASubjecttoFee",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NMECPartARate",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartAFeeAmount",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NMECPartBSubjecttoFee",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NMECPartBRate",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartBFeeAmount",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NMECPartDSubjecttoFee",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NMECPartDRate",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDFeemount",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalNMECFeeAssessed",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalProspectivePartDMembers",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RateforCOBFees",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AmountofCOBFees",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalofAssessedFees",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DocumentId",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Source",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Description",
+      "OrdinalPosition": 36,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdjustmentType",
+      "OrdinalPosition": 37,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdjustmentToPartA",
+      "OrdinalPosition": 38,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdjustmentToPartB",
+      "OrdinalPosition": 39,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdjustmentToPartD",
+      "OrdinalPosition": 40,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PremiumCWithholdingPartA",
+      "OrdinalPosition": 41,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PremiumCWithholdingPartB",
+      "OrdinalPosition": 42,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PremiumDWithholding",
+      "OrdinalPosition": 43,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalAdjustmentAmount",
+      "OrdinalPosition": 44,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartACarryOverAmount",
+      "OrdinalPosition": 45,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartBCarryOverAmount",
+      "OrdinalPosition": 46,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDCarryOverAmount",
+      "OrdinalPosition": 47,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+      "OrdinalPosition": 48,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+      "OrdinalPosition": 49,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+      "OrdinalPosition": 50,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+      "OrdinalPosition": 51,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EducationUserFeeCarryOverAmount",
+      "OrdinalPosition": 52,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDCOBUserFeeCarryOverAmount",
+      "OrdinalPosition": 53,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+      "OrdinalPosition": 54,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalCarryOverAmount",
+      "OrdinalPosition": 55,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartAAmountCarryForward",
+      "OrdinalPosition": 56,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartBAmountCarryForward",
+      "OrdinalPosition": 57,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDAmountCarryForward",
+      "OrdinalPosition": 58,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+      "OrdinalPosition": 59,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+      "OrdinalPosition": 60,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+      "OrdinalPosition": 61,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+      "OrdinalPosition": 62,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EducationUserFeeAmountCarryForward",
+      "OrdinalPosition": 63,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDCOBUserFeeAmountCarryForward",
+      "OrdinalPosition": 64,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+      "OrdinalPosition": 65,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalCarryForwardAmount",
+      "OrdinalPosition": 66,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartAAmount",
+      "OrdinalPosition": 67,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartBAmount",
+      "OrdinalPosition": 68,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDAmount",
+      "OrdinalPosition": 69,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EducationUserFeeAmount",
+      "OrdinalPosition": 70,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDCOBUserFeeAmount",
+      "OrdinalPosition": 71,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CMSSpecialAdjustmentsAmount",
+      "OrdinalPosition": 72,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TotalNetPayment",
+      "OrdinalPosition": 73,
+      "DataType": "string"
+    }
+  ]
+}

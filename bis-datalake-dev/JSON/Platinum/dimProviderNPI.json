@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "dimProviderNPI",
+      "DestinationTable": "#clientCode/Platinum/dimProviderNPI",
+      "SourceTables": [
+        {
+          "Entity": "providerNPI",
+          "SourceTable": "#clientCode/Gold/MULT/providerNPI",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SQLScript": "SELECT\r\n sha2(NPI,256) as providerNPIKey\r\n,NPI\r\n,lastName\r\n,firstName\r\n,middleName\r\n,orgName\r\n,entityTypeDescription\r\n,sha2(concat(\r\n ifnull(lastName,'|'),'|'\r\n,ifnull(firstName,'|'),'|'\r\n,ifnull(middleName,'|'),'|'\r\n,ifnull(orgName,'|'),'|'\r\n,ifnull(entityTypeDescription,'|')\r\n ),256) as fullRowHash\r\nFROM providerNPI\r\nUNION ALL\r\nSELECT\r\n '-1' as providerNPIKey\r\n,'unknown' as NPI\r\n,'unknown' as lastName\r\n,'unknown' as firstName\r\n,'unknown' as middleName\r\n,'unknown' as orgName\r\n,'unknown' as entityTypeDescription\r\n,'-1' as fullRowHash",
+      "MergeScript": "MERGE INTO DestinationTable t\r\nUSING (SELECT * FROM tempSQLScript)s\r\nON s.NPI=t.NPI\r\nWHEN MATCHED AND t.fullRowHash <> s.fullRowHash\r\nTHEN UPDATE SET\r\n t.lastName = s.lastName\r\n,t.firstName = s.firstName\r\n,t.middleName = s.middleName\r\n,t.orgName = s.orgName\r\n,t.entityTypeDescription = s.entityTypeDescription\r\n,t.fullRowHash = s.fullRowHash\r\nWHEN NOT MATCHED THEN INSERT\r\n(\r\n providerNPIKey\r\n,NPI\r\n,lastName\r\n,firstName\r\n,middleName\r\n,orgName\r\n,entityTypeDescription\r\n,fullRowHash\r\n)\r\nVALUES\r\n(\r\n s.providerNPIKey\r\n,s.NPI\r\n,s.lastName\r\n,s.firstName\r\n,s.middleName\r\n,s.orgName\r\n,s.entityTypeDescription\r\n,s.fullRowHash\r\n)"
+	  }
+  ]
+}

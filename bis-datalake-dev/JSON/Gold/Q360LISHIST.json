@@ -1,0 +1,13 @@
+{
+  "Entity": "Q360LISHIST",
+  "DestinationTable": "#clientCode/Gold/MA/Q360/Q360LISHIST",
+  "SourceTables": [
+    {
+      "Entity": "LISHIST",
+      "SourceTable": "#clientCode/consolidated/MA/Data/LISHIST",
+      "SourceFormat": "delta"
+    }
+  ],
+  "SQLScript": "\r\nSELECT \r\n   RecordType\r\n  ,MCOContractNumber\r\n  ,PBPNumber\r\n  ,BeneficiaryID\r\n  ,Surname\r\n  ,FirstName\r\n  ,MiddleInitial\r\n  ,Sex\r\n  ,DateOfBirth\r\n  ,LowIncomePeriodStartDate\r\n  ,LowIncomePeriodEndDate\r\n  ,LIPSpercentage\r\n  ,PremiumLISAmount\r\n  ,LowIncomeCoPayLevelID\r\n  ,BeneficiarySourceofSubsidyCode\r\n  ,LISActivityFlag\r\n  ,PBPStartDate\r\n  ,NetPartDPremiumAmount\r\n  ,ContractYear\r\n  ,InstitutionalStatusIndicator\r\n  ,PBPEnrollmentTerminationDate\r\n  ,'' AS Filler\r\n  ,current_timestamp() AS LoadDateTime\r\nFROM LISHIST\r\nWHERE\r\nFileId = (SELECT MAX(FileId) FROM LISHIST)\r\n",
+  "TruncateScript": "DELETE FROM Q360LISHIST"
+}

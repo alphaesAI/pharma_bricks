@@ -1,0 +1,22 @@
+{
+    "SubLayerProcessing": [
+      {
+        "SubGroupEntity": "TrumpingHCC",
+        "DestinationTable": "#clientCode/Gold/TrumpingHCC",
+        "SourceTables": [
+          {
+            "Entity": "HCCDataset",
+            "SourceTable": "#clientCode/OperationalData/RAQ/TepReference/dbo/HCCDataset",
+            "SourceFormat": "parquet"
+          },
+          {
+            "Entity": "HCCHierarchy",
+            "SourceTable": "#clientCode/OperationalData/RAQ/TepReference/dbo/HCCHierarchy",
+            "SourceFormat": "parquet"
+          }
+        ],
+        "SQLScript": "SELECT DISTINCT  AA.HCCNumber AS trumpedHcc ,CC.HCCNumber AS trumpingHcc ,CC.HCCVersion AS hccVersion ,hash(concat(IfNull(AA.HCCNumber, \"  \") , \"| \",IfNull(CC.HCCNumber, \"  \") ,IfNull(CC.HCCVersion, \"  \"))) AS hashKey  FROM HCCDataset AA LEFT JOIN HCCHierarchy BB ON AA.HCCDatasetID = BB.DropHCCDatasetID LEFT JOIN HCCDataset CC ON BB.KeepHCCDatasetID = CC.HCCDatasetID AND CC.HCCVersion IN ('V21','V22','V24') LEFT JOIN HCCHierarchy DD ON AA.HCCDatasetID = DD.KeepHCCDatasetID WHERE AA.HCCVersion IN ('V21','V22','V24') AND AA.HCCEffectiveYearID > 2 ORDER BY trumpedHcc ,trumpingHcc",
+        "MergeScript": "MERGE INTO DestinationTable t USING  (SELECT ss.trumpedHcc, ss.trumpingHcc, ss.hccVersion, ifnull(ss.hashKey,dt.hashKey) AS hashKey ,CASE WHEN ss.hashKey IS NULL THEN 'RecordsToDelete'  WHEN ss.hashKey = dt.hashKey THEN 'RecordsToUpdate' ELSE 'RecordsToInsert' END AS Source FROM tempSQLScript ss FULL OUTER JOIN  DestinationTable dt ON ss.HashKey = dt.HashKey ) s ON t.hashKey = s.hashKey WHEN MATCHED AND  s.Source = 'RecordsToDelete' THEN DELETE WHEN MATCHED AND s.Source = 'RecordsToUpdate' AND s.hashKey IS NOT NULL THEN UPDATE SET trumpedHcc = s.trumpedHcc ,trumpingHcc = s.trumpingHcc ,hccVersion = s.hccVersion ,hashKey = s.hashKey WHEN NOT MATCHED AND s.hashKey IS NOT NULL THEN INSERT (trumpedHcc  ,trumpingHcc  ,hccVersion, hashkey  )  VALUES (s.trumpedHcc  ,s.trumpingHcc  ,s.hccVersion  ,s.hashkey)"
+      }
+    ]
+}

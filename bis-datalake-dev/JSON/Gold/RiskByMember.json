@@ -1,0 +1,52 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "RiskByMember",
+      "DestinationTable": "#clientCode/Gold/MA/Risk/RiskByMember",
+      "SourceTables": [
+        {
+          "Entity": "MedicalGoldenClaimDiagnosis",
+          "SourceTable": "#clientCode/Gold/MA/Risk/MedicalGoldenClaimDiagnosis",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "MedicalGoldenClaimLineProcCodes",
+          "SourceTable": "#clientCode/Gold/MA/Risk/MedicalGoldenClaimLineProcCodes",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "Segment",
+          "SourceTable": "#clientCode/Gold/MA/Risk/Segment",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "DemographicRiskScore",
+          "SourceTable": "#clientCode/Gold/MA/Risk/DemographicRiskScore",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "PlanXref",
+          "SourceTable": "#clientCode/consolidated/MA/Data/PlanXref",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "ChaseProviderList",
+          "SourceTable": "#clientCode/Gold/MA/Risk/ChaseProviderList",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "Membership",
+          "SourceTable": "#clientCode/Gold/MA/Risk/Membership",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "RiskByHCC",
+          "SourceTable": "#clientCode/Gold/MA/Risk/RiskByHCC",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SQLScript": "\r\nwith CET_DATES as (\r\nSELECT MAX(StatementToDate) as INCURREDDATE,  MAX(ClaimFinalizedDate) as PAID_THROUGH\r\nFROM MedicalGoldenClaimDiagnosis\r\nwhere YEAR(StatementToDate)= year(current_date()) \r\n),\r\nCTE_RBHCCRAF as (\r\nSELECT planMemberID\r\n\t\t,SUM(CASE WHEN isCoded = 'Y' THEN riskScore ELSE 0  END) AS CLOSED_RAF\r\n\t\t,SUM(CASE WHEN isCoded = 'N' AND isDroppedHCC = 0 THEN riskScore ELSE 0 END) AS OPEN_RAF \r\nFROM RiskByHCC \r\nWHERE year(snapshotdate) = year(current_date()) and month(snapshotdate) =  month(current_date())\r\ngroup by planMemberID \r\n),\r\n\r\nCTE_RBHCCSUS as (\r\nSELECT PlanMemberID,SUM(cnt_OPEN_SUSPECT) AS OPEN_SUSPECT_COUNT\r\nFROM\r\n(\r\nSELECT  \r\n\tPlanMemberID, cmsRiskModel \r\n\t,COUNT(*) AS  cnt_OPEN_SUSPECT\r\nFROM RiskByHCC\r\nWHERE gapType IN ('SUSPECT', 'OPPORTUNITY')\r\nAND isCoded = 'N' \r\nAND year(snapshotdate) = year(current_date()) and month(snapshotdate) =  month(current_date())\r\nGROUP BY PlanMemberID, cmsRiskModel \r\n)X\r\nGROUP BY PlanMemberID\r\n),\r\n\r\ncte_AWVClaims as (\r\nselect * from (\r\n SELECT A.PlanMemberID,\t \r\n      CASE WHEN ProcCode IN ('G0438','G0439','G0468','99497','99498') THEN 1 ELSE NULL END AS AWV_CODE_FLAG,\r\n      CASE WHEN ProcCode IN ('G0438','G0439','G0468','99497','99498') THEN c.PROVIDERID ELSE NULL END AS AWV_PROVIDERID,\r\n      CASE WHEN ProcCode IN ('G0438','G0439','G0468','99497','99498') THEN A.StatementFromDate ELSE NULL  END AS AWV_DATE,\r\n      CASE WHEN ProcCode IN ('G0438','G0439','G0468','99497','99498') THEN 1 ELSE 0 END AS AWV_DROP,\r\n      CASE WHEN ProcCode IN ('G0438','G0439','G0468','99497','99498') THEN c.ProviderTIN ELSE NULL END AS AWV_TIN,\r\n      ROW_NUMBER()OVER(PARTITION BY A.PlanMemberID ORDER BY A.CLAIMNUMBER DESC ) as RN\r\n  FROM MedicalGoldenClaimdiagnosis A\r\n  LEFT JOIN MedicalGoldenClaimLineProcCodes B\r\n\t  ON A.GeneratedMedicalClaimsUniqueKey=B.GeneratedMedicalClaimsUniqueKey\r\n LEFT JOIN  ChaseProviderList C \r\n      ON A.renderingProviderID=C.ProviderID    \r\n  WHERE YEAR(A.StatementFromDate)=year(current_date()) and ProcCode IN ('G0438','G0439','G0468','99497','99498') -- AWV_DROP = 1\r\n  ) a\r\n  WHERE RN =1\r\n)\r\n\r\nselect  distinct \r\nMBR.clientCode,\r\nMBR.snapshotdate,\r\nMBR.reportMonth,\r\nMBR.serviceYear,\r\nMBR.beneficiaryID,\r\nMBR.planMemberID,\r\n'' as MemberClientKey,\r\nmemberGender,\r\nROUND(DATEDIFF((select INCURREDDATE from CET_DATES Limit 1), MBR.memberDOB)\/365)  as memberAGE,\r\n'' as lowIncomeSubsidy,\r\nenrollmentStartDate as memberEnrollmentStartDate,\r\nenrollmentEndDate as memberEnrollmentEndDate,\r\npoolID as poCode,\r\n'ADV' as lobid,\r\np.planID,\r\np.PlanDescription,\r\nMBR.PermanentZipCode as memberZIPCode,\r\nMBR.permanentCity as memberState,\r\nMBR.permanentCounty as memberCounty,\r\nproviderID as attributedProviderID,\r\nproviderTIN as attributedProviderTIN,\r\nmemberDOB,\r\nCASE WHEN SG.HOSPICE='Y' AND DS.DEMORISKSCORE!=0 THEN 0 ELSE COALESCE(DS.DEMORISKSCORE,0.0) END AS memberDemographicRiskScore,  -- raf\r\nCOALESCE(CLOSED_RAF,0.0) AS memberCodedRiskScore, -- raf\r\nCOALESCE(OPEN_RAF,0.0) AS opportunityRiskScore,-- raf\r\nROUND(DATEDIFF(enrollmentEndDate,enrollmentStartDate)\/365) as memberMonths,\r\nto_date((select INCURREDDATE from CET_DATES Limit 1))  AS incurredEndDate,\r\nto_date((select PAID_THROUGH from CET_DATES Limit 1)) AS paidThroughDate,\r\nSG.HOSPICE as hospiceind,\r\nSG.ESRD as esrdInd,\r\n'' as inHomeAssessmentInd,\r\n'' as inHomeAssessmentDOS,\r\n'' as specialistonlyInd,\r\n'' as selfManagingInd,\r\nCASE WHEN sus.OPEN_SUSPECT_COUNT>=2 THEN 'Y' ELSE 'N' END as polyChronicInd,\r\nAWV_DATE as annualWellnessVisitDate,\r\nAWV_PROVIDERID as annualWellnessVisitProviderID,\r\nAWV_TIN as annualWellnessVisitProviderTIN,\r\nSG.MemberStatus as memberModelStatus\r\nFROM Membership MBR\r\nLEFT JOIN cte_AWVClaims AWV\r\nON MBR.PlanMemberID=AWV.PlanMemberID \r\nLEFT JOIN (select planMemberID, bround(SUM(FACRATE),2) AS DEMORISKSCORE from DemographicRiskScore group by planMemberID) DS \r\nON MBR.PlanMemberID = DS.PlanMemberID\r\nLEFT JOIN CTE_RBHCCRAF RAF\r\nON  MBR.planMemberID = RAF.planMemberID\r\nLEFT JOIN CTE_RBHCCSUS sus\r\nON MBR.planMemberID = sus.planMemberID \r\nLEFT JOIN PlanXref  p \r\nON MBR.PlanID=p.planid\r\nLEFT JOIN Segment SG \r\nON MBR.PlanMemberID=SG.PlanMemberID And MBR.EnrollmentStartdate=SG.startdate and MBR.enrollmentEndDate=SG.Enddate\t\t\t\t\t\t\t\t\t\t\t\t\t\r\nwhere year(MBR.snapshotdate) = year(current_date()) and month(snapshotdate) =  month(current_date())\r\n\r\n",
+      "MergeScript": "\r\nwith source_cte as (\r\nselect ss.*,\r\ncase when dt.snapshotdate is null then 'insert' else 'exist' end as Source\r\nFROM tempSQLScript ss \r\nLEFT JOIN DestinationTable dt \r\non ss.snapshotdate = dt.snapshotdate\r\n)\r\n\r\nMERGE INTO DestinationTable t USING source_cte as  s \r\nON s.snapshotdate = t.snapshotdate\r\nWHEN NOT MATCHED AND s.Source ='insert' \r\nTHEN INSERT (\r\nclientCode\r\n,snapshotdate\r\n,reportMonth\r\n,serviceYear \r\n,beneficiaryID\r\n,planMemberID\r\n,memberClientKey\r\n,memberGender\r\n,memberAGE\r\n,lowIncomeSubsidy\r\n,memberEnrollmentStartDate\r\n,memberEnrollmentEndDate\r\n,poCode\r\n,lobid \r\n,planID\r\n,PlanDescription \r\n,memberZIPCode\r\n,memberState\r\n,memberCounty\r\n,attributedProviderID\r\n,attributedProviderTIN\r\n,memberDOB\r\n,memberDemographicRiskScore\r\n,memberCodedRiskScore\r\n,opportunityRiskScore\r\n,memberMonths\r\n,incurredEndDate\r\n,paidThroughDate\r\n,hospiceind\r\n,esrdInd\r\n,inHomeAssessmentInd\r\n,inHomeAssessmentDOS\r\n,specialistonlyInd\r\n,selfManagingInd\r\n,polyChronicInd\r\n,annualWellnessVisitDate\r\n,annualWellnessVisitProviderID\r\n,annualWellnessVisitProviderTIN\r\n,memberModelStatus\r\n)\r\nVALUES (s.clientCode\r\n,s.snapshotdate\r\n,s.reportMonth\r\n,s.serviceYear \r\n,s.beneficiaryID\r\n,s.planMemberID\r\n,s.memberClientKey\r\n,s.memberGender\r\n,s.memberAGE\r\n,s.lowIncomeSubsidy\r\n,s.memberEnrollmentStartDate\r\n,s.memberEnrollmentEndDate\r\n,s.poCode\r\n,s.lobid \r\n,s.planID\r\n,s.PlanDescription \r\n,s.memberZIPCode\r\n,s.memberState\r\n,s.memberCounty\r\n,s.attributedProviderID\r\n,s.attributedProviderTIN\r\n,s.memberDOB\r\n,s.memberDemographicRiskScore\r\n,s.memberCodedRiskScore\r\n,s.opportunityRiskScore\r\n,s.memberMonths\r\n,s.incurredEndDate\r\n,s.paidThroughDate\r\n,s.hospiceind\r\n,s.esrdInd\r\n,s.inHomeAssessmentInd\r\n,s.inHomeAssessmentDOS\r\n,s.specialistonlyInd\r\n,s.selfManagingInd\r\n,s.polyChronicInd\r\n,s.annualWellnessVisitDate\r\n,s.annualWellnessVisitProviderID\r\n,s.annualWellnessVisitProviderTIN\r\n,s.memberModelStatus)\r\n"
+    }
+  ]
+}

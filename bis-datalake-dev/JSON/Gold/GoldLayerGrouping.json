@@ -1,0 +1,232 @@
+{
+    "LayerGrouping": [
+        {
+            "LayerOrder": 100,
+            "LayerGrouping": "GlobalRefData",
+            "SubGrouping": [
+                {
+                    "SubGroupEntity": "ICD",
+                    "SubGroupingOrder": 100,
+                    "SubConfigPath": "fileconfig/JSON/Gold/ICD.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "HCC",
+                    "SubGroupingOrder": 200,
+                    "SubConfigPath": "fileconfig/JSON/Gold/HCC.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "ICDHCCXref",
+                    "SubGroupingOrder": 220,
+                    "SubConfigPath": "fileconfig/JSON/Gold/ICDHCCXref.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "TrumpingHCC",
+                    "SubGroupingOrder": 230,
+                    "SubConfigPath": "fileconfig/JSON/Gold/TrumpingHCC.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "AppointmentType",
+                    "SubGroupingOrder": 300,
+                    "SubConfigPath": "fileconfig/JSON/Gold/AppointmentType.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "CDIAlertQueryResponse",
+                    "SubGroupingOrder": 400,
+                    "SubConfigPath": "fileconfig/JSON/Gold/CDIAlertQueryResponse.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "CDIAlertWorkflowExceptionOption",
+                    "SubGroupingOrder": 410,
+                    "SubConfigPath": "fileconfig/JSON/Gold/CDIAlertWorkflowExceptionOption.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "CDIAlertWorkflowStatus",
+                    "SubGroupingOrder": 420,
+                    "SubConfigPath": "fileconfig/JSON/Gold/CDIAlertWorkflowStatus.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "AlertResponseOption",
+                    "SubGroupingOrder": 430,
+                    "SubConfigPath": "fileconfig/JSON/Gold/AlertResponseOption.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "CDIAlertQueryCode",
+                    "SubGroupingOrder": 440,
+                    "SubConfigPath": "fileconfig/JSON/Gold/CDIAlertQueryCode.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "AlertGroup",
+                    "SubGroupingOrder": 450,
+                    "SubConfigPath": "fileconfig/JSON/Gold/AlertGroup.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+              {
+                "SubGroupEntity": "PECPracticeTargetEngagementStatus",
+                "SubGroupingOrder": 500,
+                "SubConfigPath": "fileconfig/JSON/Gold/PECPracticeTargetEngagementStatus.json",
+                "Notebook": "./GenericSubGroupProcessing"
+              },
+              {
+                "SubGroupEntity": "CDIStatus",
+                "SubGroupingOrder": 510,
+                "SubConfigPath": "fileconfig/JSON/Gold/PECCDIStatus.json",
+                "Notebook": "./GenericSubGroupProcessing"
+              }
+            ]
+        },
+        {
+            "LayerOrder": 200,
+            "LayerGrouping": "GoldLayerGeneric",
+            "SubGrouping": [
+            {
+              "SubGroupEntity": "MAMembershipStars",
+              "SubGroupingOrder": 100,
+              "SubConfigPath": "fileconfig/JSON/Gold/MAMembershipStars.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+			{
+              "SubGroupEntity": "Member",
+              "SubGroupingOrder": 200,
+              "SubConfigPath": "fileconfig/JSON/Gold/Member.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "Provider",
+              "SubGroupingOrder": 300,
+              "SubConfigPath": "fileconfig/JSON/Gold/Provider.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "ProviderHiearchy",
+              "SubGroupingOrder": 310,
+              "SubConfigPath": "",
+              "Notebook": "./ProviderHierarchyProcessing"
+            },
+            {
+              "SubGroupEntity": "providerGroupReference",
+              "SubGroupingOrder": 320,
+              "SubConfigPath": "fileconfig/JSON/Gold/providerGroupReference.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },  
+			{
+			  "SubGroupEntity": "MemberRoster",
+			  "SubGroupingOrder": 330,
+			  "SubConfigPath": "fileconfig/JSON/Gold/MemberRoster.json",
+			  "Notebook": "./GenericSubGroupDupChkProcessing"
+			},			
+            {
+              "SubGroupEntity": "pecReportBase",
+              "SubGroupingOrder": 340,
+              "SubConfigPath": "fileconfig/JSON/Gold/pecReportBase.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "Product",
+              "SubGroupingOrder": 350,
+              "SubConfigPath": "",
+              "Notebook": "./ProductProcessing"
+            },
+            {
+              "SubGroupEntity": "CMMR",
+              "SubGroupingOrder": 360,
+              "SubConfigPath": "fileconfig/JSON/Gold/CMMR.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+               "SubGroupEntity": "ResponseMAO004Diagnosis",
+			   "SubGroupingOrder": 370,
+			   "SubConfigPath": "fileconfig/JSON/Gold/ResponseMAO004Diagnosis.json",
+			   "Notebook": "./GenericSubGroupDupChkProcessing"
+            },
+            {
+              "SubGroupEntity": "ChaseProviderList",
+              "SubGroupingOrder": 380,
+              "SubConfigPath": "fileconfig/JSON/Gold/ChaseProviderList.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "SupplementalDiagnosis",
+              "SubGroupingOrder": 400,
+              "SubConfigPath": "fileconfig/JSON/Gold/SupplementalDiagnosis.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "MedicalGoldenClaimDiagnosis",
+              "SubGroupingOrder": 410,
+              "SubConfigPath": "fileconfig/JSON/Gold/MedicalGoldenClaimDiagnosis.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "MedicalGoldenClaimLineProcCodes",
+              "SubGroupingOrder": 420,
+              "SubConfigPath": "fileconfig/JSON/Gold/MedicalGoldenClaimLineProcCodes.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "cdiAlertLine",
+              "SubGroupingOrder": 500,
+              "SubConfigPath": "fileconfig/JSON/Gold/cdiAlertLine.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "CacheSuspectAnalysis",
+              "SubGroupingOrder": 510,
+              "SubConfigPath": "fileconfig/JSON/Gold/CacheSuspectAnalysis.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "CacheSuspectAnalysisHistory",
+              "SubGroupingOrder": 520,
+              "SubConfigPath": "fileconfig/JSON/Gold/CacheSuspectAnalysisHistory.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "Membership",
+              "SubGroupingOrder": 530,
+              "SubConfigPath": "fileconfig/JSON/Gold/Membership.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "DemographicRiskScore",
+              "SubGroupingOrder": 540,
+              "SubConfigPath": "fileconfig/JSON/Gold/DemographicRiskScore.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "gapsInCare",
+              "SubGroupingOrder": 550,
+              "SubConfigPath": "fileconfig/JSON/Gold/gapsInCare.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "gapsInCareRR",
+              "SubGroupingOrder": 555,
+              "SubConfigPath": "fileconfig/JSON/Gold/gapsInCareRR.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },            
+			{
+			  "SubGroupEntity": "RiskByHCC",
+			  "SubGroupingOrder": 570,
+			  "SubConfigPath": "",
+			  "Notebook": "./RiskByHCC"
+			},
+		    { 
+			  "SubGroupEntity": "GoldenClaim",
+			  "SubGroupingOrder": 580,
+			  "SubConfigPath": "",
+			  "Notebook": "./GoldenClaimsGoldProcessing"
+		   }		
+          ]
+        }
+    ]
+}

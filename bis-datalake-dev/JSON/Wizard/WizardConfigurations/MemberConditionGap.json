@@ -1,0 +1,13 @@
+{
+      "SourceTable": "#clientCode/consolidated/MA/Data/MemberConditionGap",
+      "SourceTableMountPoint": "DataLake",
+      "LOB": "MA",
+      "BatchTable": "#clientCode/BatchAudit/MA/MemberConditionGapBatch",
+      "BatchTableMountPoint": "Export",
+      "ExportFilePath": "#clientCode/MA/MemberConditionGap",
+      "ExportFileMountPoint": "Export",
+      "ExportFileNamingConvention": "MemberConditionGap_<LOB>_<BatchId>_<DateTime>",
+      "ExportFileNamingExtension": ".json",
+      "ExportQuery": "WITH THIS AS(\r\nSELECT\r\n   MemberId\r\n  ,MedicareBeneficiaryID  \r\n  ,MedicaidID  \r\n  ,PlanID  \r\n  ,LastName  \r\n  ,FirstName  \r\n  ,MiddleInitial \r\n  ,DateOfBirth \r\n  ,Gender \r\n  ,GapYear\r\n  ,SourceName\r\n  ,collect_set( --removes any dups found\r\n           named_struct(\r\n            'GapType', GapType\r\n           ,'SuspectedHCC', SuspectedHCC \r\n           ,'HCCType', HCCType\r\n           ,'HCCVersion', HCCVersion\r\n           ,'EvidenceCodeValue', EvidenceCodeValue\r\n           ,'EvidenceCodeType', EvidenceCodeType\r\n           ,'EvidenceCodeDescription', EvidenceCodeDescription\r\n           ,'EvidenceDateOfService', EvidenceDateOfService\r\n           ,'EvidenceCodeResult', CAST(EvidenceCodeResult AS DECIMAL(10,4))\r\n           ,'EvidenceIdentifier', EvidenceIdentifier\r\n           ,'ProbabilityScore', CAST(ProbabilityScore AS DECIMAL(10,4))\r\n           )  \r\n   ) as memberGap \r\nFROM QueryResult WHERE FileLayoutDescription = 'MemberConditionGap' \r\nGROUP BY\r\n   MemberId\r\n  ,MedicareBeneficiaryID  \r\n  ,MedicaidID  \r\n  ,PlanID  \r\n  ,LastName  \r\n  ,FirstName  \r\n  ,MiddleInitial \r\n  ,DateOfBirth \r\n  ,Gender \r\n  ,GapYear\r\n  ,SourceName\r\n)\r\nSELECT * \r\nFROM THIS\r\n",
+  "FilterTables": []
+}

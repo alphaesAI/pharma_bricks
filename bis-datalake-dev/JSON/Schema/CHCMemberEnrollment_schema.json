@@ -1,0 +1,260 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MEMBER_ID",
+      "OrdinalPosition": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "PBP_CODE",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PHARM_PBP_CODE_RA_FACTOR_TYPE_CODE",
+      "OrdinalPosition": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BENEFIT_GROUP",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BENEFIT_SET",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HEDIS_MEDICAID_CAT",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RAP_AID_CAT",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ENROLL_DATE",
+      "OrdinalPosition": 7,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "DISENROLL_DATE",
+      "OrdinalPosition": 8,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "DENTAL_BENEFIT",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PHARM_BENEFIT",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MH_INPT_BENEFIT",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MH_INTER_BENEFIT",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MH_AMB_BENEFIT",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CD_INPT_BENEFIT",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CD_INTER_BENEFIT",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CD_AMB_BENEFIT",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_ENROLL1",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_ENROLL2",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_ENROLL3",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ENROLLMENT_TYPE_CODE",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PLAN_PREMIUM_AMOUNT",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RATE_AREA_ID",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PRIMARY_SUBSCRIBER_FLAG",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SUBSCRIBER_ID",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COMMERCIAL_PLAN_ID",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HEDIS_LOB",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MARKET",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RISK_POOL_ID",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RETROACTIVE",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VISION_BENEFIT",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RELATIONSHIP_TO_SUBSCRIBER",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SUBSIDY_FLAG",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EMPLOYER_GROUP_ID",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COST_SHARING_INDICATOR",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COST_SHARING_PCT",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OUT_OF_POCKET_MAX_AMT",
+      "OrdinalPosition": 36,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PREMIUM_TAX_CREDIT_AMOUNT",
+      "OrdinalPosition": 37,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "METAL_LEVEL",
+      "OrdinalPosition": 38,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "IN_EXCHANGE_FLAG",
+      "OrdinalPosition": 39,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COST_SHARING_AMT",
+      "OrdinalPosition": 40,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OON_OUT_PKT_MAX_AMT",
+      "OrdinalPosition": 41,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEDICARE_BENEFICIARY_ID",
+      "OrdinalPosition": 42,
+      "DataType": "string"
+    }
+  ]
+}

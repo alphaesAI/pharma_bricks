@@ -1,0 +1,28 @@
+{
+    "SubLayerProcessing": [
+        {
+            "SubGroupEntity": "providerNPI",
+            "DestinationTable": "#clientCode/Gold/MULT/providerNPI",
+            "SourceTables": [
+                {
+                    "Entity": "carePreciseEntity",
+                    "SourceTable": "#clientCode/processed/Mult/Data/CarePreciseEntity/custom/CarePreciseEntity",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "carePreciseHumanNames",
+                    "SourceTable": "#clientCode/processed/Mult/Data/CarePreciseHumanNames/custom/CarePreciseHumanNames",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "carePreciseOrgNames",
+                    "SourceTable": "#clientCode/processed/Mult/Data/CarePreciseOrgNames/custom/CarePreciseOrgNames",
+                    "SourceFormat": "parquet"
+                }
+            ],
+            "SQLScript": "select \r\n  ent.NPI\r\n ,hn.lastName\r\n ,hn.firstName\r\n ,hn.middleName\r\n ,org.orgName\r\n ,ent.entityTypeDescription\r\n ,hash(concat(\r\n  ifnull(ent.NPI,''),'|'\r\n ,ifnull(hn.lastName,''),'|'\r\n ,ifnull(hn.firstName,''),'|'\r\n ,ifnull(hn.middleName,''),'|'\r\n ,ifnull(org.orgName,''),'|'\r\n ,ifnull(ent.entityTypeDescription,''),'|'\r\n )) as hashkey\r\nfrom \r\n (select \r\n  NPI\r\n ,case when EntityType = '1' then 'Individual' when EntityType = '2' then 'Organization' end as entityTypeDescription\r\n from carePreciseEntity \r\n where FILE_ID =(select max(cast(FILE_ID as int)) from carePreciseEntity)\r\n )ent \r\nINNER JOIN \r\n (select \r\n  NPI\r\n ,LN as lastName\r\n ,FN as firstName\r\n ,MN as middleName\r\n from carePreciseHumanNames\r\n where FILE_ID = (select max(cast(FILE_ID as int)) from carePreciseHumanNames)\r\n )hn on ent.NPI = hn.NPI\r\nLEFT JOIN \r\n (select \r\n  NPI\r\n ,OrgName_LBN as orgName\r\n from carePreciseOrgNames\r\n where FILE_ID = (select max(cast(FILE_ID as int)) from carePreciseOrgNames)\r\n )org on ent.NPI = org.NPI",
+			"DupScript": "select 1\r\nfrom tempSQLScript\r\ngroup by NPI\r\nhaving count(*) > 1",
+            "MergeScript":"MERGE INTO DestinationTable t\r\nUSING \r\n(\r\n SELECT\r\n  CASE WHEN ss.NPI IS NULL THEN dt.NPI else ss.NPI END as NPI\r\n ,ss.lastName\r\n ,ss.firstName\r\n ,ss.middleName\r\n ,ss.orgName\r\n ,ss.entityTypeDescription\r\n ,ss.hashkey\r\n ,CASE WHEN ss.NPI IS NULL THEN 'delete' END as flag\r\n FROM tempSQLScript ss\r\n   FULL OUTER JOIN  DestinationTable dt\r\n   ON ss.NPI = dt.NPI\r\n) s\r\nON s.NPI = t.NPI\r\nWHEN MATCHED AND s.flag='delete' THEN DELETE\r\nWHEN MATCHED AND s.flag IS NULL AND s.hashkey<>t.hashkey THEN UPDATE\r\n  SET  t.lastName=s.lastName,\r\n       t.firstName=s.firstName,\r\n       t.middleName=s.middleName,\r\n       t.orgName=s.orgName,\r\n       t.entityTypeDescription=s.entityTypeDescription,\r\n       t.hashkey=s.hashkey\r\nWHEN NOT MATCHED THEN INSERT (\r\n  NPI\r\n ,lastName\r\n ,firstName\r\n ,middleName\r\n ,orgName\r\n ,entityTypeDescription\r\n ,hashkey\r\n) \r\nVALUES (\r\n  s.NPI\r\n ,s.lastName\r\n ,s.firstName\r\n ,s.middleName\r\n ,s.orgName\r\n ,s.entityTypeDescription\r\n ,s.hashkey\r\n )"
+        }
+    ]
+}

@@ -1,0 +1,361 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Format": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MemberNumber",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "HICNumber",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MedicaidID",
+			"OrdinalPosition": 2,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LastName",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FirstName",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MiddleInitial",
+			"OrdinalPosition": 5,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DateOfBirth",
+			"OrdinalPosition": 6,
+			"DataType": "Date",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "Gender",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"F",
+						"M",
+						"U"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "SubscriberID",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EnrolleeUniqueID",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PermanentAddressLine1",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PermanentAddressLine2",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PermanentCity",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PermanentState",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PermanentZipCode",
+			"OrdinalPosition": 14,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PermanentCounty",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TelephoneNumber",
+			"OrdinalPosition": 16,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "Email",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Fax",
+			"OrdinalPosition": 18,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "MailingAddressLine1",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MailingAddressLine2",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MailingCity",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MailingState",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MailingZipCode",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MailingCounty",
+			"OrdinalPosition": 24,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CaretakerFirstName",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CareTakerLastName",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CareTakerMiddleInitial",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Race",
+			"OrdinalPosition": 28,
+			"DataType": "int",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"00",
+						"01",
+						"02",
+						"03",
+						"04",
+						"05",
+						"06",
+						"07",
+						"08",
+						"09"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RaceDataSource",
+			"OrdinalPosition": 29,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "Ethnicity",
+			"OrdinalPosition": 30,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "EthnicityDatasource",
+			"OrdinalPosition": 31,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "SpokenLanguage",
+			"OrdinalPosition": 32,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "SpokenLanguageSource",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "WrittenLanguage",
+			"OrdinalPosition": 34,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "WrittenLanguageSource",
+			"OrdinalPosition": 35,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "OtherLanguage",
+			"OrdinalPosition": 36,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "OtherLanguageSource",
+			"OrdinalPosition": 37,
+			"DataType": "int"
+		},
+		{
+			"FieldName": "USCitizen",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey1",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey2",
+			"OrdinalPosition": 40,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey3",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey4",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey5",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey6",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey7",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey8",
+			"OrdinalPosition": 46,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey9",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey10",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FILE_ID",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select DTL_REC_CNT from control_file"
+		},
+		{
+			"Name": "VerifyTotalLineCount",
+			"Data_file_query": "select count(1)+1 from data_file",
+			"control_file_query": "select TOT_REC_CNT from control_file"
+		}
+	]
+}

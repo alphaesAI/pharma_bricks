@@ -1,0 +1,267 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MemberNumber",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "HicNumber",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderNPI",
+			"OrdinalPosition": 3,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimNumber",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProductID",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "AmountCharged",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AmtEligible",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AmountPaid",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "NDCCodeSTD",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "RxFillDate",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "RxDaysSupply",
+			"OrdinalPosition": 11,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDataType",
+					"Value": "integer"
+				}
+			]
+		},
+		{
+			"FieldName": "RxCodeType",
+			"OrdinalPosition": 12,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "USCCode",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "GPI",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "GPIName",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Quantity",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "UnitsofMeasure",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PrescriberNumber",
+			"OrdinalPosition": 18,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PrescriberID",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DEANumber",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimStatus",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AdjudicationDate",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DispensingFee",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CoPay",
+			"OrdinalPosition": 24,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CoInsurance",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Deductible",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DispenseAsWritten",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MailOrder",
+			"OrdinalPosition": 28,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SalesTax",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PharmacyNPI",
+			"OrdinalPosition": 30,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PrescriptionReferenceNumber",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlaceOfService",
+			"OrdinalPosition": 32,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SuppliesClaim",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimSourceIndicator",
+			"OrdinalPosition": 34,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey1",
+			"OrdinalPosition": 35,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateKey2",
+			"OrdinalPosition": 36,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderSpecialty",
+			"OrdinalPosition": 37,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SourceName",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		}
+	]
+}

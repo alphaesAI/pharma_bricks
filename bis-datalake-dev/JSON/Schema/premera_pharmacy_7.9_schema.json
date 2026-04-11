@@ -1,0 +1,193 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "MemberNumber",
+            "OrdinalPosition": 1,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "HICNBenID",
+            "OrdinalPosition": 2,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "ProviderID",
+            "OrdinalPosition": 3,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "ProviderNPI",
+            "OrdinalPosition": 4,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimNumber",
+            "OrdinalPosition": 5,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "ProductID",
+            "OrdinalPosition": 6,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "NDCCodeSTD",
+            "OrdinalPosition": 7,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "RxFillDate",
+            "OrdinalPosition": 8,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDate",
+                    "Value": "yyyyMMdd"
+                }
+            ]
+        },
+        {
+            "FieldName": "RxDaysSupply",
+            "OrdinalPosition": 9,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                },
+                {
+                    "Name": "IsOverPunch"
+                }
+            ]
+        },
+        {
+            "FieldName": "GPI",
+            "OrdinalPosition": 10,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Quantity",
+            "OrdinalPosition": 11,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDataType",
+                    "Value": "FLOAT"
+                }
+            ]
+        },
+        {
+            "FieldName": "UnitsofMeasure",
+            "OrdinalPosition": 12,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrescriberNumber",
+            "OrdinalPosition": 13,
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "PrescriberID",
+            "OrdinalPosition": 14,
+            "DataType": "string"
+        },
+        {
+            "OrdinalPosition": 15,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimStatus",
+            "OrdinalPosition": 16,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdjudicationDate",
+            "OrdinalPosition": 17,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimSourceIndicator",
+            "OrdinalPosition": 18,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternateKey1",
+            "OrdinalPosition": 19,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternateKey2",
+            "OrdinalPosition": 20,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProviderSpecialty",
+            "OrdinalPosition": 21,
+            "DataType": "string"
+        }
+    ],
+    "Rules": [
+        {
+            "Name": "VerifyTotalCount",
+            "Data_file_query": "select count(1) + 1 from data_file",
+            "control_file_query": "select _c7 from control_file"
+        },
+        {
+            "Name": "VerifyTotalDataCount",
+            "Data_file_query": "select count(1) from data_file",
+            "control_file_query": "select _c8 from control_file"
+        }
+    ]
+}

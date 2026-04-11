@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "cdiAlertQueryCode",
+      "DestinationTable": "#clientCode/Gold/cdiAlertQueryCode",
+      "SourceTables": [
+        {
+          "Entity": "cdiAlertQueryCode",
+          "SourceTable": "#clientCode/OperationalData/RAQ/TepAlert/dbo/CDIAlertQueryCode",
+          "SourceFormat": "parquet"
+        }       
+      ],
+      "SQLScript": "SELECT cdiAlertQueryCodeID ,cdiAlertQueryCodeDescription ,isSelectable , hashKey FROM( SELECT CDIAlertQueryCodeID AS cdiAlertQueryCodeID ,CDIAlertQueryCodeDesc AS cdiAlertQueryCodeDescription ,IsSelectable AS isSelectable ,hash(concat(IfNull(CDIAlertQueryCodeID,\"\") ,\"|\",IfNull(CDIAlertQueryCodeDesc,\"\") ,\"|\", IfNull(IsSelectable,false))) AS hashKey FROM CDIAlertQueryCode)",
+      "MergeScript": "MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.cdiAlertQueryCodeID,\"\")=IfNull(t.cdiAlertQueryCodeID,\"\") WHEN MATCHED AND t.hashKey <> s.hashKey THEN  UPDATE SET  cdiAlertQueryCodeID = s.cdiAlertQueryCodeID ,cdiAlertQueryCodeDescription = s.cdiAlertQueryCodeDescription ,isSelectable = s.isSelectable ,updatedDateTime = CURRENT_TIMESTAMP ,hashKey = s.hashKey WHEN NOT MATCHED THEN  INSERT(cdiAlertQueryCodeID ,cdiAlertQueryCodeDescription ,isSelectable ,createdDateTime ,updatedDateTime , hashKey) VALUES ( s.cdiAlertQueryCodeID ,s.cdiAlertQueryCodeDescription, s.isSelectable, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, s.hashKey) "
+	  }
+  ]
+}

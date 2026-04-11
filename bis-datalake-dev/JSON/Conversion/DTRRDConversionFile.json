@@ -1,0 +1,1534 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "P",
+      "ColumnNames": [
+        {
+          "FieldName": "BeneficiaryID",
+          "OrdinalPosition": "1",
+          "StartPos": "1",
+          "EndPos": "12",
+          "Length": "12",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "Surname",
+          "OrdinalPosition": "2",
+          "StartPos": "13",
+          "EndPos": "24",
+          "Length": "12",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "FirstName",
+          "OrdinalPosition": "3",
+          "StartPos": "25",
+          "EndPos": "31",
+          "Length": "7",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "MiddleInitial",
+          "OrdinalPosition": "4",
+          "StartPos": "32",
+          "EndPos": "32",
+          "Length": "1",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "GenderCode",
+          "OrdinalPosition": "5",
+          "StartPos": "33",
+          "EndPos": "33",
+          "Length": "1",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "DateOfBirth",
+          "OrdinalPosition": "6",
+          "StartPos": "34",
+          "EndPos": "41",
+          "Length": "8",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "7",
+          "StartPos": "42",
+          "EndPos": "42",
+          "Length": "1",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "8",
+          "StartPos": "43",
+          "EndPos": "47",
+          "Length": "5",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "StateCode",
+          "OrdinalPosition": "13",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "CountyCode",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "DisabilityIndicator",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "HoispiceIndicator",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "InstitutionalNHCHCBSIndicator",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "ESRDIndicator",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TransactionReplyCode",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "TransactionCode",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "EntitlementTypeCode",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "EffectiveDate",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "WAIndicator",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "PBP",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "TransactionDate",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "UIInitiatedChangeFlag",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "TRCValue",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "DistrictOfficeCode",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "PreviousPartDContractPBPforTrOOPTransfer",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "SourceID",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "PriorPlanBenefitPackageID",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "ApplicationDate",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "UIUserOrganizationDesignation",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "OutofAreaFlag",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "SegmentNumber",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "PartCBeneficiaryPremium",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "PartDBeneficiaryPremium",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "ElectionTypeCode",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "EnrollmentSourceCode",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "PartDOptOutFlag",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "PremiumWithholdOptionPartsCD",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "CumulativeNumberofUncoveredMonths",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "CreditableCoverageFlag",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "EmployerSubsidyOverrideFlag",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "ProcessingTimestamp",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "EndDate",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "SubmittedNumberofUncoveredMonths",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PreferredLanguageOtherThanEnglish",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "AccessibleFormat",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "SecondaryDrugInsuranceFlag",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "SecondaryRxID",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "SecondaryRxGroup",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "EGHP",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyLevel",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "LowIncomeCoPayCategory",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "LowIncomePeriodEffectiveDate",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmount",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyWaivedAmount",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltySubsidyAmount",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "LowIncomePartDPremiumSubsidyAmount",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartDRxBIN",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartDRxPCN",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDRxGroup",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartDRxID",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "SecondaryRxBIN",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "SecondaryRxPCN",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "DeMinimisDifferentialAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "MSPStatusFlag",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "LowIncomePeriodEndDate",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "LowIncomeSubsidySourceCode",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "EnrolleeTypeFlagPBPLevel",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "ApplicationDateIndicator",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "TRCShortName",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "DisenrollmentReasonCode",
+          "OrdinalPosition": "74",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "MMPOptOutFlag",
+          "OrdinalPosition": "75",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "CleanupID",
+          "OrdinalPosition": "76",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CARAStatusAddUpdateDeleteFlag",
+          "OrdinalPosition": "77",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "POSDrugEditStatus",
+          "OrdinalPosition": "78",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        },
+        {
+          "FieldName": "DrugClass",
+          "OrdinalPosition": "79",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "75"
+        },
+        {
+          "FieldName": "POSDrugEditCode",
+          "OrdinalPosition": "80",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "76"
+        },
+        {
+          "FieldName": "CARAStatusNotificationStartDate",
+          "OrdinalPosition": "81",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "77"
+        },
+        {
+          "FieldName": "CARAStatusImplementationStartDate",
+          "OrdinalPosition": "82",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "78"
+        },
+        {
+          "FieldName": "CARAStatusNotificationEndDate",
+          "OrdinalPosition": "83",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "79"
+        },
+        {
+          "FieldName": "HospiceProviderNumber",
+          "OrdinalPosition": "84",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "80"
+        },
+        {
+          "FieldName": "ICModelTypeIndicator",
+          "OrdinalPosition": "85",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "81"
+        },
+        {
+          "FieldName": "ICModelEndDateReasonCode",
+          "OrdinalPosition": "86",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "82"
+        },
+        {
+          "FieldName": "ICModelBenefitStatus",
+          "OrdinalPosition": "87",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "83"
+        },
+        {
+          "FieldName": "UpdatedMedicaidStatusCommunityRAFBeneficiary",
+          "OrdinalPosition": "88",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "84"
+        },
+        {
+          "FieldName": "CARAStatusImplementationEndDate",
+          "OrdinalPosition": "89",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "85"
+        },
+        {
+          "FieldName": "PrescriberLimitation",
+          "OrdinalPosition": "90",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "86"
+        },
+        {
+          "FieldName": "PharmacyLimitation",
+          "OrdinalPosition": "91",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "87"
+        },
+        {
+          "FieldName": "PlanTransactionText",
+          "OrdinalPosition": "9",
+          "StartPos": "48",
+          "EndPos": "347",
+          "Length": "300",
+          "DestPos": "90"
+        },
+        {
+          "FieldName": "Filler",
+          "OrdinalPosition": "9",
+          "StartPos": "348",
+          "EndPos": "473",
+          "Length": "126",
+          "DestPos": "99990"
+        },
+        {
+          "FieldName": "TransactionAcceptRejectStatusFlag",
+          "OrdinalPosition": "10",
+          "StartPos": "474",
+          "EndPos": "474",
+          "Length": "1",
+          "DestPos": "91"
+        },
+        {
+          "FieldName": "SystemAssignedTransactionTrackingID",
+          "OrdinalPosition": "11",
+          "StartPos": "475",
+          "EndPos": "485",
+          "Length": "11",
+          "DestPos": "88"
+        },
+        {
+          "FieldName": "PlanAssignedTransactionTrackingID",
+          "OrdinalPosition": "12",
+          "StartPos": "486",
+          "EndPos": "500",
+          "Length": "15",
+          "DestPos": "89"
+        },
+        {
+          "FieldName": "Filler1",
+          "OrdinalPosition": "91",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "99991"
+        },
+        {
+          "FieldName": "Filler2",
+          "OrdinalPosition": "91",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "99992"
+        },
+        {
+          "FieldName": "Filler3",
+          "OrdinalPosition": "91",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "99993"
+        }
+      ]
+    },
+    {
+      "Type": "T",
+      "ColumnNames": [
+        {
+          "FieldName": "BeneficiaryID",
+          "OrdinalPosition": "1",
+          "StartPos": "1",
+          "EndPos": "12",
+          "Length": "12",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "Surname",
+          "OrdinalPosition": "2",
+          "StartPos": "13",
+          "EndPos": "24",
+          "Length": "12",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "FirstName",
+          "OrdinalPosition": "3",
+          "StartPos": "25",
+          "EndPos": "31",
+          "Length": "7",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "MiddleInitial",
+          "OrdinalPosition": "4",
+          "StartPos": "32",
+          "EndPos": "32",
+          "Length": "1",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "GenderCode",
+          "OrdinalPosition": "5",
+          "StartPos": "33",
+          "EndPos": "33",
+          "Length": "1",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "DateOfBirth",
+          "OrdinalPosition": "6",
+          "StartPos": "34",
+          "EndPos": "41",
+          "Length": "8",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "7",
+          "StartPos": "42",
+          "EndPos": "42",
+          "Length": "1",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "8",
+          "StartPos": "43",
+          "EndPos": "47",
+          "Length": "5",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "StateCode",
+          "OrdinalPosition": "9",
+          "StartPos": "48",
+          "EndPos": "49",
+          "Length": "2",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "CountyCode",
+          "OrdinalPosition": "10",
+          "StartPos": "50",
+          "EndPos": "52",
+          "Length": "3",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "DisabilityIndicator",
+          "OrdinalPosition": "11",
+          "StartPos": "53",
+          "EndPos": "53",
+          "Length": "1",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "HoispiceIndicator",
+          "OrdinalPosition": "12",
+          "StartPos": "54",
+          "EndPos": "54",
+          "Length": "1",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "InstitutionalNHCHCBSIndicator",
+          "OrdinalPosition": "13",
+          "StartPos": "55",
+          "EndPos": "55",
+          "Length": "1",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "ESRDIndicator",
+          "OrdinalPosition": "14",
+          "StartPos": "56",
+          "EndPos": "56",
+          "Length": "1",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TransactionReplyCode",
+          "OrdinalPosition": "15",
+          "StartPos": "57",
+          "EndPos": "59",
+          "Length": "3",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "TransactionCode",
+          "OrdinalPosition": "16",
+          "StartPos": "60",
+          "EndPos": "61",
+          "Length": "2",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "EntitlementTypeCode",
+          "OrdinalPosition": "17",
+          "StartPos": "62",
+          "EndPos": "62",
+          "Length": "1",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "EffectiveDate",
+          "OrdinalPosition": "18",
+          "StartPos": "63",
+          "EndPos": "70",
+          "Length": "8",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "WAIndicator",
+          "OrdinalPosition": "19",
+          "StartPos": "71",
+          "EndPos": "71",
+          "Length": "1",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "PBP",
+          "OrdinalPosition": "20",
+          "StartPos": "72",
+          "EndPos": "74",
+          "Length": "3",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "Filler",
+          "OrdinalPosition": "21",
+          "StartPos": "75",
+          "EndPos": "75",
+          "Length": "1",
+          "DestPos": "99990"
+        },
+        {
+          "FieldName": "TransactionDate",
+          "OrdinalPosition": "21",
+          "StartPos": "76",
+          "EndPos": "83",
+          "Length": "8",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "UIInitiatedChangeFlag",
+          "OrdinalPosition": "22",
+          "StartPos": "84",
+          "EndPos": "84",
+          "Length": "1",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "TRCValue",
+          "OrdinalPosition": "23",
+          "StartPos": "85",
+          "EndPos": "96",
+          "Length": "12",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "DistrictOfficeCode",
+          "OrdinalPosition": "24",
+          "StartPos": "97",
+          "EndPos": "99",
+          "Length": "3",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "PreviousPartDContractPBPforTrOOPTransfer",
+          "OrdinalPosition": "25",
+          "StartPos": "100",
+          "EndPos": "107",
+          "Length": "8",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "Filler1",
+          "OrdinalPosition": "26",
+          "StartPos": "108",
+          "EndPos": "115",
+          "Length": "8",
+          "DestPos": "99991"
+        },
+        {
+          "FieldName": "SourceID",
+          "OrdinalPosition": "26",
+          "StartPos": "116",
+          "EndPos": "120",
+          "Length": "5",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "PriorPlanBenefitPackageID",
+          "OrdinalPosition": "27",
+          "StartPos": "121",
+          "EndPos": "123",
+          "Length": "3",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "ApplicationDate",
+          "OrdinalPosition": "28",
+          "StartPos": "124",
+          "EndPos": "131",
+          "Length": "8",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "UIUserOrganizationDesignation",
+          "OrdinalPosition": "29",
+          "StartPos": "132",
+          "EndPos": "133",
+          "Length": "2",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "OutofAreaFlag",
+          "OrdinalPosition": "30",
+          "StartPos": "134",
+          "EndPos": "134",
+          "Length": "1",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "SegmentNumber",
+          "OrdinalPosition": "31",
+          "StartPos": "135",
+          "EndPos": "137",
+          "Length": "3",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "PartCBeneficiaryPremium",
+          "OrdinalPosition": "32",
+          "StartPos": "138",
+          "EndPos": "145",
+          "Length": "8",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "PartDBeneficiaryPremium",
+          "OrdinalPosition": "33",
+          "StartPos": "146",
+          "EndPos": "153",
+          "Length": "8",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "ElectionTypeCode",
+          "OrdinalPosition": "34",
+          "StartPos": "154",
+          "EndPos": "154",
+          "Length": "1",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "EnrollmentSourceCode",
+          "OrdinalPosition": "35",
+          "StartPos": "155",
+          "EndPos": "155",
+          "Length": "1",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "PartDOptOutFlag",
+          "OrdinalPosition": "36",
+          "StartPos": "156",
+          "EndPos": "156",
+          "Length": "1",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "PremiumWithholdOptionPartsCD",
+          "OrdinalPosition": "37",
+          "StartPos": "157",
+          "EndPos": "157",
+          "Length": "1",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "CumulativeNumberofUncoveredMonths",
+          "OrdinalPosition": "38",
+          "StartPos": "158",
+          "EndPos": "160",
+          "Length": "3",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "CreditableCoverageFlag",
+          "OrdinalPosition": "39",
+          "StartPos": "161",
+          "EndPos": "161",
+          "Length": "1",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "EmployerSubsidyOverrideFlag",
+          "OrdinalPosition": "40",
+          "StartPos": "162",
+          "EndPos": "162",
+          "Length": "1",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "ProcessingTimestamp",
+          "OrdinalPosition": "41",
+          "StartPos": "163",
+          "EndPos": "163",
+          "Length": "15",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "EndDate",
+          "OrdinalPosition": "42",
+          "StartPos": "178",
+          "EndPos": "185",
+          "Length": "8",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "SubmittedNumberofUncoveredMonths",
+          "OrdinalPosition": "43",
+          "StartPos": "186",
+          "EndPos": "188",
+          "Length": "3",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "Filler2",
+          "OrdinalPosition": "43",
+          "StartPos": "189",
+          "EndPos": "195",
+          "Length": "7",
+          "DestPos": "99992"
+        },
+        {
+          "FieldName": "PreferredLanguageOtherThanEnglish",
+          "OrdinalPosition": "44",
+          "StartPos": "196",
+          "EndPos": "196",
+          "Length": "1",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "AccessibleFormat",
+          "OrdinalPosition": "45",
+          "StartPos": "197",
+          "EndPos": "197",
+          "Length": "1",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "SecondaryDrugInsuranceFlag",
+          "OrdinalPosition": "46",
+          "StartPos": "198",
+          "EndPos": "198",
+          "Length": "1",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "SecondaryRxID",
+          "OrdinalPosition": "47",
+          "StartPos": "199",
+          "EndPos": "218",
+          "Length": "20",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "SecondaryRxGroup",
+          "OrdinalPosition": "48",
+          "StartPos": "219",
+          "EndPos": "233",
+          "Length": "15",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "EGHP",
+          "OrdinalPosition": "49",
+          "StartPos": "234",
+          "EndPos": "234",
+          "Length": "1",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyLevel",
+          "OrdinalPosition": "50",
+          "StartPos": "235",
+          "EndPos": "237",
+          "Length": "3",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "LowIncomeCoPayCategory",
+          "OrdinalPosition": "51",
+          "StartPos": "238",
+          "EndPos": "238",
+          "Length": "1",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "LowIncomePeriodEffectiveDate",
+          "OrdinalPosition": "52",
+          "StartPos": "239",
+          "EndPos": "246",
+          "Length": "8",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "247",
+          "EndPos": "254",
+          "Length": "8",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyWaivedAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "255",
+          "EndPos": "262",
+          "Length": "8",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltySubsidyAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "263",
+          "EndPos": "270",
+          "Length": "8",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "LowIncomePartDPremiumSubsidyAmount",
+          "OrdinalPosition": "56",
+          "StartPos": "271",
+          "EndPos": "278",
+          "Length": "8",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartDRxBIN",
+          "OrdinalPosition": "57",
+          "StartPos": "279",
+          "EndPos": "284",
+          "Length": "6",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartDRxPCN",
+          "OrdinalPosition": "58",
+          "StartPos": "285",
+          "EndPos": "294",
+          "Length": "10",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDRxGroup",
+          "OrdinalPosition": "59",
+          "StartPos": "295",
+          "EndPos": "309",
+          "Length": "15",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartDRxID",
+          "OrdinalPosition": "60",
+          "StartPos": "310",
+          "EndPos": "329",
+          "Length": "20",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "SecondaryRxBIN",
+          "OrdinalPosition": "61",
+          "StartPos": "330",
+          "EndPos": "335",
+          "Length": "6",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "SecondaryRxPCN",
+          "OrdinalPosition": "62",
+          "StartPos": "336",
+          "EndPos": "345",
+          "Length": "10",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "DeMinimisDifferentialAmount",
+          "OrdinalPosition": "63",
+          "StartPos": "346",
+          "EndPos": "353",
+          "Length": "8",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "MSPStatusFlag",
+          "OrdinalPosition": "64",
+          "StartPos": "354",
+          "EndPos": "354",
+          "Length": "1",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "LowIncomePeriodEndDate",
+          "OrdinalPosition": "65",
+          "StartPos": "355",
+          "EndPos": "362",
+          "Length": "8",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "LowIncomeSubsidySourceCode",
+          "OrdinalPosition": "66",
+          "StartPos": "363",
+          "EndPos": "363",
+          "Length": "1",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "EnrolleeTypeFlagPBPLevel",
+          "OrdinalPosition": "67",
+          "StartPos": "364",
+          "EndPos": "364",
+          "Length": "1",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "ApplicationDateIndicator",
+          "OrdinalPosition": "68",
+          "StartPos": "365",
+          "EndPos": "365",
+          "Length": "1",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "TRCShortName",
+          "OrdinalPosition": "69",
+          "StartPos": "366",
+          "EndPos": "380",
+          "Length": "15",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "DisenrollmentReasonCode",
+          "OrdinalPosition": "70",
+          "StartPos": "381",
+          "EndPos": "382",
+          "Length": "2",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "MMPOptOutFlag",
+          "OrdinalPosition": "71",
+          "StartPos": "383",
+          "EndPos": "383",
+          "Length": "1",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "CleanupID",
+          "OrdinalPosition": "72",
+          "StartPos": "384",
+          "EndPos": "393",
+          "Length": "10",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CARAStatusAddUpdateDeleteFlag",
+          "OrdinalPosition": "73",
+          "StartPos": "394",
+          "EndPos": "394",
+          "Length": "1",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "POSDrugEditStatus",
+          "OrdinalPosition": "74",
+          "StartPos": "395",
+          "EndPos": "395",
+          "Length": "1",
+          "DestPos": "74"
+        },
+        {
+          "FieldName": "DrugClass",
+          "OrdinalPosition": "75",
+          "StartPos": "396",
+          "EndPos": "398",
+          "Length": "3",
+          "DestPos": "75"
+        },
+        {
+          "FieldName": "POSDrugEditCode",
+          "OrdinalPosition": "76",
+          "StartPos": "399",
+          "EndPos": "401",
+          "Length": "3",
+          "DestPos": "76"
+        },
+        {
+          "FieldName": "CARAStatusNotificationStartDate",
+          "OrdinalPosition": "77",
+          "StartPos": "402",
+          "EndPos": "409",
+          "Length": "8",
+          "DestPos": "77"
+        },
+        {
+          "FieldName": "CARAStatusImplementationStartDate",
+          "OrdinalPosition": "78",
+          "StartPos": "410",
+          "EndPos": "417",
+          "Length": "8",
+          "DestPos": "78"
+        },
+        {
+          "FieldName": "CARAStatusNotificationEndDate",
+          "OrdinalPosition": "79",
+          "StartPos": "418",
+          "EndPos": "425",
+          "Length": "8",
+          "DestPos": "79"
+        },
+        {
+          "FieldName": "HospiceProviderNumber",
+          "OrdinalPosition": "80",
+          "StartPos": "426",
+          "EndPos": "438",
+          "Length": "13",
+          "DestPos": "80"
+        },
+        {
+          "FieldName": "ICModelTypeIndicator",
+          "OrdinalPosition": "81",
+          "StartPos": "439",
+          "EndPos": "440",
+          "Length": "2",
+          "DestPos": "81"
+        },
+        {
+          "FieldName": "ICModelEndDateReasonCode",
+          "OrdinalPosition": "82",
+          "StartPos": "441",
+          "EndPos": "442",
+          "Length": "2",
+          "DestPos": "82"
+        },
+        {
+          "FieldName": "ICModelBenefitStatus",
+          "OrdinalPosition": "83",
+          "StartPos": "443",
+          "EndPos": "444",
+          "Length": "2",
+          "DestPos": "83"
+        },
+        {
+          "FieldName": "UpdatedMedicaidStatusCommunityRAFBeneficiary",
+          "OrdinalPosition": "84",
+          "StartPos": "445",
+          "EndPos": "445",
+          "Length": "1",
+          "DestPos": "84"
+        },
+        {
+          "FieldName": "CARAStatusImplementationEndDate",
+          "OrdinalPosition": "85",
+          "StartPos": "446",
+          "EndPos": "453",
+          "Length": "8",
+          "DestPos": "85"
+        },
+        {
+          "FieldName": "PrescriberLimitation",
+          "OrdinalPosition": "86",
+          "StartPos": "454",
+          "EndPos": "454",
+          "Length": "1",
+          "DestPos": "86"
+        },
+        {
+          "FieldName": "PharmacyLimitation",
+          "OrdinalPosition": "87",
+          "StartPos": "455",
+          "EndPos": "455",
+          "Length": "1",
+          "DestPos": "87"
+        },
+        {
+          "FieldName": "Filler3",
+          "OrdinalPosition": "88",
+          "StartPos": "456",
+          "EndPos": "474",
+          "Length": "19",
+          "DestPos": "99993"
+        },
+        {
+          "FieldName": "SystemAssignedTransactionTrackingID",
+          "OrdinalPosition": "88",
+          "StartPos": "475",
+          "EndPos": "485",
+          "Length": "11",
+          "DestPos": "88"
+        },
+        {
+          "FieldName": "PlanAssignedTransactionTrackingID",
+          "OrdinalPosition": "89",
+          "StartPos": "486",
+          "EndPos": "500",
+          "Length": "15",
+          "DestPos": "89"
+        },
+        {
+          "FieldName": "PlanTransactionText",
+          "OrdinalPosition": "90",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "90"
+        },
+        {
+          "FieldName": "TransactionAcceptRejectStatusFlag",
+          "OrdinalPosition": "91",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "91"
+        }
+      ]
+    }
+  ]
+}

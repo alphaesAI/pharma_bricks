@@ -1,0 +1,596 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+         {
+          "SourceColumn": "ReportDate",
+          "DestinationColumn": "ReportDate",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RecordType",
+          "DestinationColumn": "RecordType",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ReportID",
+          "DestinationColumn": "ReportID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicareAdvantageContractID",
+          "DestinationColumn": "MedicareAdvantageContractID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BeneficiaryIdentifier",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "EncounterICN",
+          "DestinationColumn": "EncounterICN",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EncounterTypeSwitch",
+          "DestinationColumn": "EncounterTypeSwitch",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICNofEncounterLinkedTo",
+          "DestinationColumn": "ICNofEncounterLinkedTo",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AllowedDisallowedStatusofEncounterLinkedTo",
+          "DestinationColumn": "AllowedDisallowedStatusofEncounterLinkedTo",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EncounterSubmissionDate",
+          "DestinationColumn": "EncounterSubmissionDate",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FromDateofService",
+          "DestinationColumn": "FromDateofService",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThroughDateofService",
+          "DestinationColumn": "ThroughDateofService",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ServiceType",
+          "DestinationColumn": "ServiceType",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AllowedDisallowedflag",
+          "DestinationColumn": "AllowedDisallowedflag",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AllowedDisallowedReasonCode",
+          "DestinationColumn": "AllowedDisallowedReasonCode",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosesICD",
+          "DestinationColumn": "DiagnosesICD",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode1",
+          "DestinationColumn": "DiagnosisCode1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag1",
+          "DestinationColumn": "AddorDeleteflag1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes2",
+          "DestinationColumn": "DiagnosisCode2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag2",
+          "DestinationColumn": "AddorDeleteflag2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes3",
+          "DestinationColumn": "DiagnosisCode3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag3",
+          "DestinationColumn": "AddorDeleteflag3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes4",
+          "DestinationColumn": "DiagnosisCode4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag4",
+          "DestinationColumn": "AddorDeleteflag4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes5",
+          "DestinationColumn": "DiagnosisCode5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag5",
+          "DestinationColumn": "AddorDeleteflag5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes6",
+          "DestinationColumn": "DiagnosisCode6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag6",
+          "DestinationColumn": "AddorDeleteflag6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes7",
+          "DestinationColumn": "DiagnosisCode7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag7",
+          "DestinationColumn": "AddorDeleteflag7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes8",
+          "DestinationColumn": "DiagnosisCode8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag8",
+          "DestinationColumn": "AddorDeleteflag8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes9",
+          "DestinationColumn": "DiagnosisCode9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag9",
+          "DestinationColumn": "AddorDeleteflag9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes10",
+          "DestinationColumn": "DiagnosisCode10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag10",
+          "DestinationColumn": "AddorDeleteflag10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode11",
+          "DestinationColumn": "DiagnosisCode11",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag11",
+          "DestinationColumn": "AddorDeleteflag11",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes12",
+          "DestinationColumn": "DiagnosisCode12",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag12",
+          "DestinationColumn": "AddorDeleteflag12",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes13",
+          "DestinationColumn": "DiagnosisCode13",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag13",
+          "DestinationColumn": "AddorDeleteflag13",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes14",
+          "DestinationColumn": "DiagnosisCode14",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag14",
+          "DestinationColumn": "AddorDeleteflag14",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes15",
+          "DestinationColumn": "DiagnosisCode15",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag15",
+          "DestinationColumn": "AddorDeleteflag15",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes16",
+          "DestinationColumn": "DiagnosisCode16",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag16",
+          "DestinationColumn": "AddorDeleteflag16",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes17",
+          "DestinationColumn": "DiagnosisCode17",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag17",
+          "DestinationColumn": "AddorDeleteflag17",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes18",
+          "DestinationColumn": "DiagnosisCode18",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag18",
+          "DestinationColumn": "AddorDeleteflag18",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes19",
+          "DestinationColumn": "DiagnosisCode19",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag19",
+          "DestinationColumn": "AddorDeleteflag19",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes20",
+          "DestinationColumn": "DiagnosisCode20",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag20",
+          "DestinationColumn": "AddorDeleteflag20",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode21",
+          "DestinationColumn": "DiagnosisCode21",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag21",
+          "DestinationColumn": "AddorDeleteflag21",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes22",
+          "DestinationColumn": "DiagnosisCode22",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag22",
+          "DestinationColumn": "AddorDeleteflag22",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes23",
+          "DestinationColumn": "DiagnosisCode23",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag23",
+          "DestinationColumn": "AddorDeleteflag23",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes24",
+          "DestinationColumn": "DiagnosisCode24",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag24",
+          "DestinationColumn": "AddorDeleteflag24",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes25",
+          "DestinationColumn": "DiagnosisCode25",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag25",
+          "DestinationColumn": "AddorDeleteflag25",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes26",
+          "DestinationColumn": "DiagnosisCode26",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag26",
+          "DestinationColumn": "AddorDeleteflag26",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes27",
+          "DestinationColumn": "DiagnosisCode27",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag27",
+          "DestinationColumn": "AddorDeleteflag27",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes28",
+          "DestinationColumn": "DiagnosisCode28",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag28",
+          "DestinationColumn": "AddorDeleteflag28",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes29",
+          "DestinationColumn": "DiagnosisCode29",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag29",
+          "DestinationColumn": "AddorDeleteflag29",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes30",
+          "DestinationColumn": "DiagnosisCode30",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag30",
+          "DestinationColumn": "AddorDeleteflag30",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode31",
+          "DestinationColumn": "DiagnosisCode31",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag31",
+          "DestinationColumn": "AddorDeleteflag31",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes32",
+          "DestinationColumn": "DiagnosisCode32",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag32",
+          "DestinationColumn": "AddorDeleteflag32",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes33",
+          "DestinationColumn": "DiagnosisCode33",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag33",
+          "DestinationColumn": "AddorDeleteflag33",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes34",
+          "DestinationColumn": "DiagnosisCode34",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag34",
+          "DestinationColumn": "AddorDeleteflag34",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes35",
+          "DestinationColumn": "DiagnosisCode35",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag35",
+          "DestinationColumn": "AddorDeleteflag35",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes36",
+          "DestinationColumn": "DiagnosisCode36",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag36",
+          "DestinationColumn": "AddorDeleteflag36",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes37",
+          "DestinationColumn": "DiagnosisCode37",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag37",
+          "DestinationColumn": "AddorDeleteflag37",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCodes38",
+          "DestinationColumn": "DiagnosisCode38",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "AddorDeleteflag38",
+          "DestinationColumn": "AddorDeleteflag38",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+		  "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MBI",
+      "OrdinalPosition": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "MemberID",
+      "OrdinalPosition": 1,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "DOB",
+      "OrdinalPosition": 2,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "ddMMMyyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "Gender",
+      "OrdinalPosition": 3,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "LIS",
+      "OrdinalPosition": 4,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "EnrollmentStart",
+      "OrdinalPosition": 5,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "ddMMMyyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "EnrollmentEnd",
+      "OrdinalPosition": 6,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "ddMMMyyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "DualEligible",
+      "OrdinalPosition": 7,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "Disability",
+      "OrdinalPosition": 8,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "DaysInIPDiab",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DaysInSNFDiab",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabPDCDenominator",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabPDCNumerator",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabPDCRate",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabPDCDenominatorUnadj",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabPDCNumeratorUnadj",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabPDCRateUnadj",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabNumeratorflag",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DaysInIPRAS",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DaysInSNFRAS",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASPDCDenominator",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASPDCNumerator",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASPDCRate",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASPDCDenominatorUnadj",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASPDCNumeratorUnadj",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASPDCRateUnadj",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASNumeratorflag",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DaysInIPStatin",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DaysInSNFStatin",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinPDCDenominator",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinPDCNumerator",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinPDCRate",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinPDCDenominatorUnadj",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinPDCNumeratorUnadj",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinPDCRateUnadj",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StatinNumeratorflag",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    }
+  ]
+}

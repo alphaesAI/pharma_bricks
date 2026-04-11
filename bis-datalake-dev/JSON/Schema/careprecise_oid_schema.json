@@ -1,0 +1,52 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "NPI",
+      "OrdinalPosition": 0,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OIDnum",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OtherID",
+      "OrdinalPosition": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OtherIDType",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OtherIDState",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OtherIDIssuer",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "SubmissionName",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ReviewSet",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BaseMeasureID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BaseMeasureName",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberID",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "Event",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EventType",
+			"OrdinalPosition": 6,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}				
+			]
+		},
+		{
+			"FieldName": "Code",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CodeType",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ServiceDate",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM-dd-yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "AdmissionDate",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM-dd-yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "DischargeDate",
+			"OrdinalPosition": 11,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM-dd-yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimID",
+			"OrdinalPosition": 12,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderID",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EventValue",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Datasource",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SourcefileName",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimsThroughDate",
+			"OrdinalPosition": 17,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}				
+			]
+		},
+		{
+			"FieldName": "Indicator",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		}				
+	]
+}

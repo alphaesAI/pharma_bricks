@@ -1,0 +1,77 @@
+{
+   "ColumnNames": [
+      {
+         "FieldName": "TEMPLATE",
+         "OrdinalPosition": -1,
+         "DataType": "TEMPLATE",
+         "Validators": [
+            {
+               "Name": "TEMPLATE",
+               "Value": "TEMPLATE",
+               "InputValue": [
+                  "TEMPLATE"
+               ],
+               "ConditionCol": "TEMPLATE",
+               "ConditionVal": [
+                  "TEMPLATE"
+               ]
+            }
+         ]
+      },
+      {
+         "FieldName": "MEMBER_ID",
+         "OrdinalPosition": 0,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "PROVIDER_ID",
+         "OrdinalPosition": 1,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "START_DATE",
+         "OrdinalPosition": 2,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "isDate",
+               "Value": "yyyyMMdd"
+            }
+         ]
+      },
+      {
+         "FieldName": "END_DATE",
+         "OrdinalPosition": 3,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isDate",
+               "Value": "yyyyMMdd"
+            }
+         ]
+      },
+      {
+         "FieldName": "USER_PCP1",
+         "OrdinalPosition": 4,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PCP2",
+         "OrdinalPosition": 5,
+         "DataType": "string"
+      }
+   ]
+}

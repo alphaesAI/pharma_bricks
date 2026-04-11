@@ -1,0 +1,293 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MemberID",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MedicareBeneficiaryID",
+			"OrdinalPosition": 1,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MedicaidID",
+			"OrdinalPosition": 2,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlanID",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "LastName",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FirstName",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MiddleInitial",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DateOfBirth",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "Gender",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"M",
+						"F"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "SuspectedHCC",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "HCCType",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"Rx",
+						"COMM",
+						"ESRD"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "HCCVersion",
+			"OrdinalPosition": 11,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EvidenceCodeValue",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EvidenceCodeType",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"LOINC",
+						"GPI",
+						"NDC",
+						"DME",
+						"ICD",
+						"Taxonomy",
+						"Non-DME Procedure",
+						"HCC"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "EvidenceCodeDescription",
+			"OrdinalPosition": 14,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EvidenceDateOfService",
+			"OrdinalPosition": 15,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "EvidenceCodeResult",
+			"OrdinalPosition": 16,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDataTypeNotRequired",
+					"Value": "Decimal(10,4)"
+				}
+			]
+		},
+		{
+			"FieldName": "EvidenceIdentifier",
+			"OrdinalPosition": 17,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProbabilityScore",
+			"OrdinalPosition": 18,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDataType",
+					"Value": "Decimal(5,4)"
+				}
+			]
+		},
+		{
+			"FieldName": "SourceName",
+			"OrdinalPosition": 19,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "GapYear",
+			"OrdinalPosition": 20,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDataType",
+					"Value": "Integer"
+				}
+			]
+		},
+		{
+			"FieldName": "GapType",
+			"OrdinalPosition": 21,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"Historical",
+						"Suspect"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RAGain",
+			"OrdinalPosition": 22,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDataType",
+					"Value": "Decimal(10,4)"
+				}
+			]
+		}
+	]
+}

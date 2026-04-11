@@ -1,0 +1,40 @@
+{
+	"ClientCode": "#clientCode",
+	"SubClientCode": "#subClientCode",
+	"LOB": "ACA",
+	"OutboundFileReferenceId": "#outboundFileReferenceId",
+	"OutboundFileExtract": [
+		{
+			"DestinationType": "csv",
+			"DestinationArchiveTablePath": "/Outbound/Archive/CHCErrors/ACAMemberConditionGapErrors",
+			"DestinationTablePath": "/Outbound/CHCErrors/ACAMemberConditionGapErrors",
+			"DestinationFileName": "<SubClientCode>_ACA_MemberConditionGap_InvalidData_V1.0_<YYYYMMDDhhmmss>_1",
+			"DestinationDelimiter": "|",
+			"DestinationExtension": ".txt",
+			"DestinationFirstRowAsHeader": "true",
+			"SourceTables": [
+				{
+					"Entity": "CHCMemberConditionGapConsolidated",
+					"SourcePath": "/consolidated/ACA/Data/MemberConditionGap",
+					"Source": "DataLake",
+					"SourceFormat": "delta"
+				},
+				{
+					"Entity": "CHCMemberConditionGapErrors",
+					"SourcePath": "/BatchAuditErrors/ACA/ACAMemberConditionGapErrors",
+					"Source": "ExportDataLake",
+					"SourceFormat": "delta"
+				},
+				{
+					"Entity": "ExportAudit",
+					"SourcePath": "/BatchAudit/export_audit",
+					"Source": "ExportDataLake",
+					"SourceFormat": "delta"
+				}
+			],
+			"IsInlineQuery": "No",
+			"SQLScript": "",
+			"SQLScriptPath": "/fileconfig/JSON/Outbound/Queries/ACAMemberConditionGapErrorsQuery.sql"
+		}
+	]
+}

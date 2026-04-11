@@ -1,0 +1,872 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "contract",
+          "DestinationColumn": "PlanID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "memid",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "memid_original",
+          "DestinationColumn": "BeneficiaryIDOriginal",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MBI_Indicator",
+          "DestinationColumn": "MBIIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "enr_mo",
+          "DestinationColumn": "EnrollmentMonth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "enr_yr",
+          "DestinationColumn": "EnrollmentYear",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "yearmo",
+          "DestinationColumn": "EnrollmentYearMonth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rundt",
+          "DestinationColumn": "Rundate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "lname",
+          "DestinationColumn": "Lastname",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "fname1",
+          "DestinationColumn": "FirstInitial",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "enr_src",
+          "DestinationColumn": "EnrollmentSource",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Person_Total",
+          "DestinationColumn": "PersonTotal",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pbp",
+          "DestinationColumn": "PlanBenefitPackage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "newpbp",
+          "DestinationColumn": "NewPlanBenefitPackage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "segmentID",
+          "DestinationColumn": "SegmentID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "eghp_flag",
+          "DestinationColumn": "EghpFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "fac_risk",
+          "DestinationColumn": "RiskAdjusterFactorA",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "fac_d",
+          "DestinationColumn": "PartDRAFactor",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "sex",
+          "DestinationColumn": "Gendercode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "dob",
+          "DestinationColumn": "DOB",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "agegrp",
+          "DestinationColumn": "Agegroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "agedis",
+          "DestinationColumn": "AgedDisabledIdentifier",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ssa",
+          "DestinationColumn": "StateandCountyCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ooa",
+          "DestinationColumn": "OutOfAreaIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "hospice",
+          "DestinationColumn": "Hospice",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "esrd",
+          "DestinationColumn": "ESRD",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "aged_msp",
+          "DestinationColumn": "AgedMsp",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "instit",
+          "DestinationColumn": "InstitutionalFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "nhc",
+          "DestinationColumn": "NHC",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "medicaid",
+          "DestinationColumn": "MedicaidBeneficiaryStatusFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "maddon",
+          "DestinationColumn": "MedicaidIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "current_medicaid",
+          "DestinationColumn": "CurrentMedicaidStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "dual_PartC",
+          "DestinationColumn": "PartCDualStatusFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "dual_PartD",
+          "DestinationColumn": "PartDDualStatusFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "lti_flag",
+          "DestinationColumn": "LTIFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "d_lowincome_ind",
+          "DestinationColumn": "PartDLowIncomeIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "d_lti_ind",
+          "DestinationColumn": "PartDLongTermInstitutionalIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "default_pc_ra",
+          "DestinationColumn": "PartCDefaultRiskFactorCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "esrd_msp",
+          "DestinationColumn": "ESRDMspFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "raag",
+          "DestinationColumn": "RiskAdjusterAgeGroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "prdib",
+          "DestinationColumn": "PreviousDisableRatio",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "de_minimis",
+          "DestinationColumn": "DeMinimis",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "race",
+          "DestinationColumn": "RaceCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pc_rafactype",
+          "DestinationColumn": "PartCRAFactorTypeCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "frailty",
+          "DestinationColumn": "FrailtyIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "prdibind",
+          "DestinationColumn": "OriginalReasonforEntitlement",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "lag",
+          "DestinationColumn": "LagIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "mem_a",
+          "DestinationColumn": "EnrolledInPartAIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "mem_b",
+          "DestinationColumn": "EnrolledInPartBIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "mem_c",
+          "DestinationColumn": "EnrolledInPartCIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "mem_d",
+          "DestinationColumn": "EnrolledInPartDIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PC_Status",
+          "DestinationColumn": "FinalPartCStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PD_Status",
+          "DestinationColumn": "FinalPartDStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_dmg_a",
+          "DestinationColumn": "DemographicPaymentAdjustmentRatePartA",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_dmg_b",
+          "DestinationColumn": "DemographicPaymentAdjustmentRatePartB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_risk_a",
+          "DestinationColumn": "RiskAdjusterPaymtAdjustmentRateA",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_risk_b",
+          "DestinationColumn": "RiskAdjusterPaymtAdjustmentRateB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "risk_rate",
+          "DestinationColumn": "RiskAdjusterPaymtAdjustmentRateAPlusRateB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "risk_rate_seq",
+          "DestinationColumn": "RiskAdjusterPaymtAdjustmentRateAPlusRateBSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "subsidy_lipsa",
+          "DestinationColumn": "LISPremiumSubsidy",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "prem_cbasic_a",
+          "DestinationColumn": "PartCBasicPremiumPartAAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "prem_cbasic_b",
+          "DestinationColumn": "PartCBasicPremiumPartBAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "prem_cbasic",
+          "DestinationColumn": "PartCBasicPremiumPartAAmountPlusPartBAmout",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_costshare_a",
+          "DestinationColumn": "RebateCostshareA",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_costshare_b",
+          "DestinationColumn": "RebateCostshareB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_costshare",
+          "DestinationColumn": "RebateforPartAPlusPartBCostSharingReduction",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_costshare_seq",
+          "DestinationColumn": "RebateforPartAPlusPartBCostSharingReductionSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_mandsup_a",
+          "DestinationColumn": "RebateforOtherPartAMandatorySupplementalBenefits",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_mandsup_b",
+          "DestinationColumn": "RebateforOtherPartBMandatorySupplementalBenefits",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_mandsup",
+          "DestinationColumn": "RebateforOtherPartAPlusPartBMandatorySupplementalBenefits",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_mandsup_seq",
+          "DestinationColumn": "RebateforOtherPartAPlusPartBMandatorySupplementalBenefitsSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_bpremred_a",
+          "DestinationColumn": "RebateforPartBPremiumReductionPartAAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_bpremred_b",
+          "DestinationColumn": "RebateforPartBPremiumReductionPartBAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_bpremred",
+          "DestinationColumn": "RebateforPartBPremiumReductionPartAPlusPartBAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_bpremred_seq",
+          "DestinationColumn": "RebateforPartBPremiumReductionPartAPlusPartBAmountSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_dsup_a",
+          "DestinationColumn": "RebateforPartDSupplementalBenefitsPartAAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_dsup_b",
+          "DestinationColumn": "RebateforPartDSupplementalBenefitsPartBAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_dsup",
+          "DestinationColumn": "RebateforPartDSupplementalBenefitsPartAPlusPartBAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_dsup_seq",
+          "DestinationColumn": "RebateforPartDSupplementalBenefitsPartAPlusPartBAmountSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_ma_a",
+          "DestinationColumn": "TotalPartAPayment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_ma_b",
+          "DestinationColumn": "TotalPartBPayment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_ma",
+          "DestinationColumn": "TotalPartCPayment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_dbasic",
+          "DestinationColumn": "RebateForPartDBasicPremiumReduction",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "rebate_dbasic_seq",
+          "DestinationColumn": "RebateForPartDBasicPremiumReductionSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "prem_dbasic",
+          "DestinationColumn": "PartDBasicPremiumAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "subsidy_direct",
+          "DestinationColumn": "PartDDirectSubsidyPaymentAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "subsidy_direct_seq",
+          "DestinationColumn": "PartDDirectSubsidyPaymentAmountSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "subsidy_reins",
+          "DestinationColumn": "ReinsuranceSubsidyAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "subsidy_lics",
+          "DestinationColumn": "LowIncomeSubsidyCostSharingAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pmt_d",
+          "DestinationColumn": "TotalPartDPayment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pace_prem_addon",
+          "DestinationColumn": "PacePremiumAddOn",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pace_cs_addon",
+          "DestinationColumn": "PaceCostSharingAddOn",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pddual",
+          "DestinationColumn": "BeneficiaryDualandPartDEnrollmentStatusFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pc_frailty_score",
+          "DestinationColumn": "PartCFrailtyScoreFactor",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "msp_factor",
+          "DestinationColumn": "MspFactor",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "msp_mm",
+          "DestinationColumn": "MspMemberMonths",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "msp_reduction_a",
+          "DestinationColumn": "MspReductionAdjustmentAmountPartA",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "msp_reduction_b",
+          "DestinationColumn": "MspReductionAdjustmentAmountPartB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MSP_Amt",
+          "DestinationColumn": "MspReductionAdjustmentPartAPlusPartBAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MSP_Amt_seq",
+          "DestinationColumn": "MspReductionAdjustmentPartAPlusPartBAmountSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "dual_status_code",
+          "DestinationColumn": "MedicaidDualStatusCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "gap_discount",
+          "DestinationColumn": "GapDiscount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "gap_discount_seq",
+          "DestinationColumn": "GapDiscountSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "pd_rafactype",
+          "DestinationColumn": "PdRafactype",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "default_pd_ra",
+          "DestinationColumn": "DefaultPdRa",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FinalMedicaidStatus",
+          "DestinationColumn": "Finalmedicaidstatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanType",
+          "DestinationColumn": "Plantype",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanTypeSeparator",
+          "DestinationColumn": "PlanTypeSeparator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Bid_NoRisk",
+          "DestinationColumn": "BidNoRisk",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Bid_NoRisk_Seq",
+          "DestinationColumn": "BidNoRiskSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Pmt_Risk_Wt_Seq",
+          "DestinationColumn": "PartCCountyLevelPaymentRate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Pmt_Risk_Wt",
+          "DestinationColumn": "PartCCountyLevelPaymentRateSeq",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "medicaid_status",
+          "DestinationColumn": "RSPTCBIDMedicaidStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_DEGroup",
+          "DestinationColumn": "BeneficiaryPartCDEGroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_ESRDGroup",
+          "DestinationColumn": "BeneficiaryPartCEsrdGroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_Med_Status",
+          "DestinationColumn": "BeneficiaryPartCMedicaidStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_Dual_Status",
+          "DestinationColumn": "BeneficiaryPartCDualStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_base_Unnorm_eds",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreBaseUnnormalizedEDS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_proj_Unnorm_eds",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreProjUnnormalizedEDS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_base_NormFr_eds",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreBaseNormalizedForEDS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_proj_NormFr_eds",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreProjNormalizedForEDS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_base_UnNormFr_eds",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreBaseUnNormalizedForEDS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_proj_UnNormFr_eds",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreProjUnNormalizedForEDS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_base_Unnorm_raps",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreBaseUnNormalizedRAPS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_base_NormFr_raps",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreBaseNormalizedForRAPS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_risk_score_base_UnNormFr_raps",
+          "DestinationColumn": "BeneficiaryPartCRiskScoreBaseUnNormalizedForRAPS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_RiskCohort",
+          "DestinationColumn": "BeneficiaryPartCRiskcohort",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_Flag",
+          "DestinationColumn": "BeneficiaryPartCFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BC_FrailtyMM",
+          "DestinationColumn": "BeneficiaryPartCFrailtyMemberMonths",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BD_Ben_Status",
+          "DestinationColumn": "PartDBeneficiaryFileBeneficiaryStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BD_risk_score_base_eds",
+          "DestinationColumn": "PartDBeneficiaryFileEDSRiskScore",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BD_risk_score_base_raps",
+          "DestinationColumn": "PartDBeneficiaryFileRAPSRiskScore",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BD_risk_score_proj_eds",
+          "DestinationColumn": "PartDBeneficiaryFileProjEdsRiskScore",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BD_PD_Status",
+          "DestinationColumn": "BeneficiaryFilePartDStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BD_Flag",
+          "DestinationColumn": "BeneficiaryFilePartDFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Groupnumber",
+          "DestinationColumn": "Groupnumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "GroupSuffix",
+          "DestinationColumn": "GroupSuffix",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CMMRFileCreateDate",
+          "DestinationColumn": "CMMRFileCreateDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1910 @@
+{
+    "columnMapping": [
+        {
+            "recordType": [
+                {
+                    "Field": "",
+                    "Value": ""
+                }
+            ],
+            "selectColumns": [
+                {
+                    "SourceColumn": "CLIENT_ID",
+                    "DestinationColumn": "ClientID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FILE_ID",
+                    "DestinationColumn": "FileID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LOAD_DATETIME",
+                    "DestinationColumn": "LoadDateTime",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_ID",
+                    "DestinationColumn": "FileLayoutID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+                    "DestinationColumn": "FileLayoutDescription",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Submitted837PMedicalClaimKey",
+                    "DestinationColumn": "Submitted837MedicalClaimKey",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineEncounterICN",
+                    "DestinationColumn": "ClaimLineEncounterICN",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineNumber",
+                    "DestinationColumn": "ClaimLineNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ProcedureCodeQualifier",
+                    "DestinationColumn": "ProcedureCodeQualifier",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ProcedureCode",
+                    "DestinationColumn": "ProcedureCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod1",
+                    "DestinationColumn": "CPTMod1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod2",
+                    "DestinationColumn": "CPTMod2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod3",
+                    "DestinationColumn": "CPTMod3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod4",
+                    "DestinationColumn": "CPTMod4",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ProcedureDescription",
+                    "DestinationColumn": "ProcedureDescription",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "BilledAmountLine",
+                    "DestinationColumn": "BilledAmountLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiUomQual",
+                    "DestinationColumn": "UnitForMeasurementCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiServiceUnitCnt",
+                    "DestinationColumn": "ServiceUnitCount",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine101",
+                    "DestinationColumn": "SuppInfoLine101",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine102",
+                    "DestinationColumn": "SuppInfoLine102",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine106",
+                    "DestinationColumn": "SuppInfoLine106",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine201",
+                    "DestinationColumn": "SuppInfoLine201",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine202",
+                    "DestinationColumn": "SuppInfoLine202",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine206",
+                    "DestinationColumn": "SuppInfoLine206",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine301",
+                    "DestinationColumn": "SuppInfoLine301",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine302",
+                    "DestinationColumn": "SuppInfoLine302",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine306",
+                    "DestinationColumn": "SuppInfoLine306",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine401",
+                    "DestinationColumn": "SuppInfoLine401",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine402",
+                    "DestinationColumn": "SuppInfoLine402",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine406",
+                    "DestinationColumn": "SuppInfoLine406",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine501",
+                    "DestinationColumn": "SuppInfoLine501",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine502",
+                    "DestinationColumn": "SuppInfoLine502",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine506",
+                    "DestinationColumn": "SuppInfoLine506",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine601",
+                    "DestinationColumn": "SuppInfoLine601",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine602",
+                    "DestinationColumn": "SuppInfoLine602",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine606",
+                    "DestinationColumn": "SuppInfoLine606",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine701",
+                    "DestinationColumn": "SuppInfoLine701",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine702",
+                    "DestinationColumn": "SuppInfoLine702",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine706",
+                    "DestinationColumn": "SuppInfoLine706",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine801",
+                    "DestinationColumn": "SuppInfoLine801",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine802",
+                    "DestinationColumn": "SuppInfoLine802",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine806",
+                    "DestinationColumn": "SuppInfoLine806",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine901",
+                    "DestinationColumn": "SuppInfoLine901",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine902",
+                    "DestinationColumn": "SuppInfoLine902",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine906",
+                    "DestinationColumn": "SuppInfoLine906",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine1001",
+                    "DestinationColumn": "SuppInfoLine1001",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine1002",
+                    "DestinationColumn": "SuppInfoLine1002",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SuppInfoLine1006",
+                    "DestinationColumn": "SuppInfoLine1006",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DetailServiceFrom",
+                    "DestinationColumn": "DetailServiceFromDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DetailServiceThru",
+                    "DestinationColumn": "DetailServiceThruDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Licn",
+                    "DestinationColumn": "LineItemControlNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ReprcRefLine",
+                    "DestinationColumn": "RepricedLineItemReferenceNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AdjReprcRefLine",
+                    "DestinationColumn": "AdjustedRepricedLineItemReferenceNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "NationalDrugCd",
+                    "DestinationColumn": "NationalDrugCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DrugUnitCnt",
+                    "DestinationColumn": "NationalDrugUnitCount",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DrugUomQual",
+                    "DestinationColumn": "DrugUnitOfMeasurementQualifier",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DrugScrptQual",
+                    "DestinationColumn": "DrugPrescriptionQualifier",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DrugScrptNum",
+                    "DestinationColumn": "DrugPrescriptionNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRenderingProviderLastName",
+                    "DestinationColumn": "ClaimLineRenderingProviderLastName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRenderingProviderFirstName",
+                    "DestinationColumn": "ClaimLineRenderingProviderFirstName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRenderingProviderMiddleName",
+                    "DestinationColumn": "ClaimLineRenderingProviderMiddleName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRenderingProviderNameSuffix",
+                    "DestinationColumn": "ClaimLineRenderingProviderNameSuffix",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRenderingProviderNPI",
+                    "DestinationColumn": "ClaimLineRenderingProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineReferringProviderLastName",
+                    "DestinationColumn": "ClaimLineReferringProviderLastName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineReferringProviderFirstName",
+                    "DestinationColumn": "ClaimLineReferringProviderFirstName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineReferringProviderMiddleName",
+                    "DestinationColumn": "ClaimLineReferringProviderMiddleName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineReferringProviderNameSuffix",
+                    "DestinationColumn": "ClaimLineReferringProviderNameSuffix",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineReferringProviderNPI",
+                    "DestinationColumn": "ClaimLineReferringProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PaidamountLineCOB",
+                    "DestinationColumn": "ClaimLinePaidAmount",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ProcedureCodeQualifierCOB",
+                    "DestinationColumn": "ProcedureCodeQualifierCOB",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTCodeLine",
+                    "DestinationColumn": "CPTCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod1Line",
+                    "DestinationColumn": "CPTMod1Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod2Line",
+                    "DestinationColumn": "CPTMod2Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod3Line",
+                    "DestinationColumn": "CPTMod3Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CPTMod4Line",
+                    "DestinationColumn": "CPTMod4Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiPaidSvcUnitCnt",
+                    "DestinationColumn": "LinePaidServiceUnitCount",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiBundledLineNbr",
+                    "DestinationColumn": "LineBundledLineNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineGrpCd1",
+                    "DestinationColumn": "ClaimAdjustmentGroupCode1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd101",
+                    "DestinationColumn": "ClmAdjLineReasCd101",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt101",
+                    "DestinationColumn": "ClmAdjLineAmt101",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty101",
+                    "DestinationColumn": "ClmAdjLineQty101",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd102",
+                    "DestinationColumn": "ClmAdjLineReasCd102",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt102",
+                    "DestinationColumn": "ClmAdjLineAmt102",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty102",
+                    "DestinationColumn": "ClmAdjLineQty102",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd103",
+                    "DestinationColumn": "ClmAdjLineReasCd103",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt103",
+                    "DestinationColumn": "ClmAdjLineAmt103",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty103",
+                    "DestinationColumn": "ClmAdjLineQty103",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd104",
+                    "DestinationColumn": "ClmAdjLineReasCd104",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt104",
+                    "DestinationColumn": "ClmAdjLineAmt104",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty104",
+                    "DestinationColumn": "ClmAdjLineQty104",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd105",
+                    "DestinationColumn": "ClmAdjLineReasCd105",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt105",
+                    "DestinationColumn": "ClmAdjLineAmt105",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty105",
+                    "DestinationColumn": "ClmAdjLineQty105",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd106",
+                    "DestinationColumn": "ClmAdjLineReasCd106",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt106",
+                    "DestinationColumn": "ClmAdjLineAmt106",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty106",
+                    "DestinationColumn": "ClmAdjLineQty106",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineGrpCd2",
+                    "DestinationColumn": "ClmAdjLineGrpCd2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd201",
+                    "DestinationColumn": "ClmAdjLineReasCd201",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt201",
+                    "DestinationColumn": "ClmAdjLineAmt201",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty201",
+                    "DestinationColumn": "ClmAdjLineQty201",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd202",
+                    "DestinationColumn": "ClmAdjLineReasCd202",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt202",
+                    "DestinationColumn": "ClmAdjLineAmt202",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty202",
+                    "DestinationColumn": "ClmAdjLineQty202",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd203",
+                    "DestinationColumn": "ClmAdjLineReasCd203",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt203",
+                    "DestinationColumn": "ClmAdjLineAmt203",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty203",
+                    "DestinationColumn": "ClmAdjLineQty203",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd204",
+                    "DestinationColumn": "ClmAdjLineReasCd204",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt204",
+                    "DestinationColumn": "ClmAdjLineAmt204",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty204",
+                    "DestinationColumn": "ClmAdjLineQty204",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd205",
+                    "DestinationColumn": "ClmAdjLineReasCd205",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt205",
+                    "DestinationColumn": "ClmAdjLineAmt205",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty205",
+                    "DestinationColumn": "ClmAdjLineQty205",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd206",
+                    "DestinationColumn": "ClmAdjLineReasCd206",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt206",
+                    "DestinationColumn": "ClmAdjLineAmt206",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty206",
+                    "DestinationColumn": "ClmAdjLineQty206",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineGrpCd3",
+                    "DestinationColumn": "ClmAdjLineGrpCd3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd301",
+                    "DestinationColumn": "ClmAdjLineReasCd301",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt301",
+                    "DestinationColumn": "ClmAdjLineAmt301",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty301",
+                    "DestinationColumn": "ClmAdjLineQty301",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd302",
+                    "DestinationColumn": "ClmAdjLineReasCd302",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt302",
+                    "DestinationColumn": "ClmAdjLineAmt302",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty302",
+                    "DestinationColumn": "ClmAdjLineQty302",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd303",
+                    "DestinationColumn": "ClmAdjLineReasCd303",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt303",
+                    "DestinationColumn": "ClmAdjLineAmt303",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty303",
+                    "DestinationColumn": "ClmAdjLineQty303",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd304",
+                    "DestinationColumn": "ClmAdjLineReasCd304",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt304",
+                    "DestinationColumn": "ClmAdjLineAmt304",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty304",
+                    "DestinationColumn": "ClmAdjLineQty304",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd305",
+                    "DestinationColumn": "ClmAdjLineReasCd305",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt305",
+                    "DestinationColumn": "ClmAdjLineAmt305",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty305",
+                    "DestinationColumn": "ClmAdjLineQty305",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd306",
+                    "DestinationColumn": "ClmAdjLineReasCd306",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt306",
+                    "DestinationColumn": "ClmAdjLineAmt306",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty306",
+                    "DestinationColumn": "ClmAdjLineQty306",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineGrpCd4",
+                    "DestinationColumn": "ClmAdjLineGrpCd4",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd401",
+                    "DestinationColumn": "ClmAdjLineReasCd401",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt401",
+                    "DestinationColumn": "ClmAdjLineAmt401",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty401",
+                    "DestinationColumn": "ClmAdjLineQty401",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd402",
+                    "DestinationColumn": "ClmAdjLineReasCd402",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt402",
+                    "DestinationColumn": "ClmAdjLineAmt402",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty402",
+                    "DestinationColumn": "ClmAdjLineQty402",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd403",
+                    "DestinationColumn": "ClmAdjLineReasCd403",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt403",
+                    "DestinationColumn": "ClmAdjLineAmt403",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty403",
+                    "DestinationColumn": "ClmAdjLineQty403",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd404",
+                    "DestinationColumn": "ClmAdjLineReasCd404",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt404",
+                    "DestinationColumn": "ClmAdjLineAmt404",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty404",
+                    "DestinationColumn": "ClmAdjLineQty404",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd405",
+                    "DestinationColumn": "ClmAdjLineReasCd405",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt405",
+                    "DestinationColumn": "ClmAdjLineAmt405",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty405",
+                    "DestinationColumn": "ClmAdjLineQty405",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd406",
+                    "DestinationColumn": "ClmAdjLineReasCd406",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt406",
+                    "DestinationColumn": "ClmAdjLineAmt406",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty406",
+                    "DestinationColumn": "ClmAdjLineQty406",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineGrpCd5",
+                    "DestinationColumn": "ClmAdjLineGrpCd5",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd501",
+                    "DestinationColumn": "ClmAdjLineReasCd501",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt501",
+                    "DestinationColumn": "ClmAdjLineAmt501",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty501",
+                    "DestinationColumn": "ClmAdjLineQty501",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd502",
+                    "DestinationColumn": "ClmAdjLineReasCd502",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt502",
+                    "DestinationColumn": "ClmAdjLineAmt502",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty502",
+                    "DestinationColumn": "ClmAdjLineQty502",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd503",
+                    "DestinationColumn": "ClmAdjLineReasCd503",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt503",
+                    "DestinationColumn": "ClmAdjLineAmt503",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty503",
+                    "DestinationColumn": "ClmAdjLineQty503",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd504",
+                    "DestinationColumn": "ClmAdjLineReasCd504",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt504",
+                    "DestinationColumn": "ClmAdjLineAmt504",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty504",
+                    "DestinationColumn": "ClmAdjLineQty504",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd505",
+                    "DestinationColumn": "ClmAdjLineReasCd505",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt505",
+                    "DestinationColumn": "ClmAdjLineAmt505",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty505",
+                    "DestinationColumn": "ClmAdjLineQty505",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineReasCd506",
+                    "DestinationColumn": "ClmAdjLineReasCd506",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineAmt506",
+                    "DestinationColumn": "ClmAdjLineAmt506",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClmAdjLineQty506",
+                    "DestinationColumn": "ClmAdjLineQty506",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LineCheckRemitDt",
+                    "DestinationColumn": "ClaimLineCheckRemitDt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRemainPatientLiab",
+                    "DestinationColumn": "ClaimLineRemainPatientLiab",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineCheckRemitDtCOB",
+                    "DestinationColumn": "ClaimLineCheckRemitDtCOB",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineRemainPatientLiabCOB",
+                    "DestinationColumn": "ClaimLineRemainPatientLiabilityCOB",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PlaceOfServiceLine",
+                    "DestinationColumn": "PlaceOfServiceLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiDiagcdPtr1",
+                    "DestinationColumn": "LiDiagcdPtr1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiDiagcdPtr2",
+                    "DestinationColumn": "LiDiagcdPtr2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiDiagcdPtr3",
+                    "DestinationColumn": "LiDiagcdPtr3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiDiagcdPtr4",
+                    "DestinationColumn": "LiDiagcdPtr4",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "EmergencyIndicator",
+                    "DestinationColumn": "EmergencyIndicator",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "EPSDTIndicator",
+                    "DestinationColumn": "EPSDTIndicator",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FamilyPlanningIndicator",
+                    "DestinationColumn": "FamilyPlanningIndicator",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CopayExemptIndicator",
+                    "DestinationColumn": "CopayExemptIndicator",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PatientWeightLine",
+                    "DestinationColumn": "PatientWeightLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulanceTransportReasonCode",
+                    "DestinationColumn": "AmbulanceTransportReasonCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulanceMilesLine",
+                    "DestinationColumn": "AmbulanceMilesLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulancePurposeLine",
+                    "DestinationColumn": "AmbulancePurposeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulanceStretcherLine",
+                    "DestinationColumn": "AmbulanceStretcherLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCert0102Line",
+                    "DestinationColumn": "AmbulCert0102Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0103Line",
+                    "DestinationColumn": "AmbulCertCond0103Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0104Line",
+                    "DestinationColumn": "AmbulCertCond0104Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0105Line",
+                    "DestinationColumn": "AmbulCertCond0105Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0106Line",
+                    "DestinationColumn": "AmbulCertCond0106Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0107Line",
+                    "DestinationColumn": "AmbulCertCond0107Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCert0202Line",
+                    "DestinationColumn": "AmbulCert0202Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0203Line",
+                    "DestinationColumn": "AmbulCertCond0203Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0204Line",
+                    "DestinationColumn": "AmbulCertCond0204Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0205Line",
+                    "DestinationColumn": "AmbulCertCond0205Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0206Line",
+                    "DestinationColumn": "AmbulCertCond0206Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0207Line",
+                    "DestinationColumn": "AmbulCertCond0207Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCert0302Line",
+                    "DestinationColumn": "AmbulCert0302Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0303Line",
+                    "DestinationColumn": "AmbulCertCond0303Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0304Line",
+                    "DestinationColumn": "AmbulCertCond0304Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0305Line",
+                    "DestinationColumn": "AmbulCertCond0305Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0306Line",
+                    "DestinationColumn": "AmbulCertCond0306Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulCertCond0307Line",
+                    "DestinationColumn": "AmbulCertCond0307Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "HospiceEmployedProviderIndicator",
+                    "DestinationColumn": "HospiceEmployedProviderIndicator",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "HvpDateLine",
+                    "DestinationColumn": "HvpDateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CertDateLine",
+                    "DestinationColumn": "CertDateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "TherDateLine",
+                    "DestinationColumn": "TherDateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LastSeenLine",
+                    "DestinationColumn": "LastSeenLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Test1DateLine",
+                    "DestinationColumn": "Test1DateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Test2DateLine",
+                    "DestinationColumn": "Test2DateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ShipDateLine",
+                    "DestinationColumn": "ShipDateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LastXrayLine",
+                    "DestinationColumn": "LastXrayLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "InitialTxDateLine",
+                    "DestinationColumn": "InitialTxDateLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AmbulPtCnt",
+                    "DestinationColumn": "AmbulPtCnt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ObAddUnt",
+                    "DestinationColumn": "ObAddUnt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result101",
+                    "DestinationColumn": "Result101",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result102",
+                    "DestinationColumn": "Result102",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result103",
+                    "DestinationColumn": "Result103",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result201",
+                    "DestinationColumn": "Result201",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result202",
+                    "DestinationColumn": "Result202",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result203",
+                    "DestinationColumn": "Result203",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result301",
+                    "DestinationColumn": "Result301",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result302",
+                    "DestinationColumn": "Result302",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result303",
+                    "DestinationColumn": "Result303",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result401",
+                    "DestinationColumn": "Result401",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result402",
+                    "DestinationColumn": "Result402",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result403",
+                    "DestinationColumn": "Result403",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result501",
+                    "DestinationColumn": "Result501",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result502",
+                    "DestinationColumn": "Result502",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Result503",
+                    "DestinationColumn": "Result503",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ContractAmtLine",
+                    "DestinationColumn": "ContractAmtLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ContractPrcntLine",
+                    "DestinationColumn": "ContractPrcntLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ContractCodeLine",
+                    "DestinationColumn": "ContractCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ContractDiscntLine",
+                    "DestinationColumn": "ContractDiscntLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ContractVerLine",
+                    "DestinationColumn": "ContractVerLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AuthNumLine",
+                    "DestinationColumn": "AuthNumLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "MamCertNumLine",
+                    "DestinationColumn": "MamCertNumLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CliaNumLine",
+                    "DestinationColumn": "CliaNumLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CliaFacNumLine",
+                    "DestinationColumn": "CliaFacNumLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ImmBtchNumLine",
+                    "DestinationColumn": "ImmBtchNumLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ReferralNumLine",
+                    "DestinationColumn": "ReferralNumLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SalesTax",
+                    "DestinationColumn": "SalesTax",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "Postage",
+                    "DestinationColumn": "Postage",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K301Line",
+                    "DestinationColumn": "K301Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K302Line",
+                    "DestinationColumn": "K302Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K303Line",
+                    "DestinationColumn": "K303Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K304Line",
+                    "DestinationColumn": "K304Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K305Line",
+                    "DestinationColumn": "K305Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K306Line",
+                    "DestinationColumn": "K306Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K307Line",
+                    "DestinationColumn": "K307Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K308Line",
+                    "DestinationColumn": "K308Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K309Line",
+                    "DestinationColumn": "K309Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "K310Line",
+                    "DestinationColumn": "K310Line",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiNoteTextRefCd",
+                    "DestinationColumn": "LiNoteTextRefCd",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiNoteText",
+                    "DestinationColumn": "LiNoteText",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LiTpoNoteText",
+                    "DestinationColumn": "LiTpoNoteText",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PurchAmt",
+                    "DestinationColumn": "PurchAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PriceMethodLine",
+                    "DestinationColumn": "PriceMethodLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceAllowedAmtLine",
+                    "DestinationColumn": "RepriceAllowedAmtLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceSaveAmtLine",
+                    "DestinationColumn": "RepriceSaveAmtLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceOrgIdLine",
+                    "DestinationColumn": "RepriceOrgIdLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceDiemFlatLine",
+                    "DestinationColumn": "RepriceDiemFlatLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceDrgApgCodeLine",
+                    "DestinationColumn": "RepriceDrgApgCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceDrgApgAmtLine",
+                    "DestinationColumn": "RepriceDrgApgAmtLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceHcpcsCode",
+                    "DestinationColumn": "RepriceHcpcsCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceHcpcsCodeLine",
+                    "DestinationColumn": "RepriceHcpcsCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceBasisLine",
+                    "DestinationColumn": "RepriceBasisLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RepriceUnitCntLine",
+                    "DestinationColumn": "RepriceUnitCntLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "RejReasonCodeLine",
+                    "DestinationColumn": "RejReasonCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CompCodeLine",
+                    "DestinationColumn": "CompCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ExceptCodeLine",
+                    "DestinationColumn": "ExceptCodeLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PurchasedServiceProviderLastName",
+                    "DestinationColumn": "PurchasedServiceProviderLastName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PurchasedServiceProviderFirstName",
+                    "DestinationColumn": "PurchasedServiceProviderFirstName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PurchasedServiceProviderMiddleName",
+                    "DestinationColumn": "PurchasedServiceProviderMiddleName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PurchasedServiceProviderNameSuffix",
+                    "DestinationColumn": "PurchasedServiceProviderNameSuffix",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PurchasedServiceProviderNPI",
+                    "DestinationColumn": "PurchasedServiceProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSvcFacName",
+                    "DestinationColumn": "ClaimLineSvcFacName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SvcFacNpiLine",
+                    "DestinationColumn": "SvcFacNpiLine",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSvcFacAddressLine1",
+                    "DestinationColumn": "ClaimLineSvcFacAddressLine1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSvcFacAddressLine2",
+                    "DestinationColumn": "ClaimLineSvcFacAddressLine2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSvcFacCity",
+                    "DestinationColumn": "ClaimLineSvcFacCity",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSvcFacState",
+                    "DestinationColumn": "ClaimLineSvcFacState",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSvcFacZIPA",
+                    "DestinationColumn": "ClaimLineSvcFacZIPA",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSupervisingProviderLastName",
+                    "DestinationColumn": "ClaimLineSupervisingProviderLastName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSupervisingProviderFirstName",
+                    "DestinationColumn": "ClaimLineSupervisingProviderFirstName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSupervisingProviderMiddleName",
+                    "DestinationColumn": "ClaimLineSupervisingProviderMiddleName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ClaimLineSupervisingProviderNameSuffix",
+                    "DestinationColumn": "ClaimLineSupervisingProviderNameSuffix",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SupervisingProviderNPIA",
+                    "DestinationColumn": "ClaimLineSupervisingProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderLastName",
+                    "DestinationColumn": "OrderingProviderLastName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderFirstName",
+                    "DestinationColumn": "OrderingProviderFirstName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderMiddleName",
+                    "DestinationColumn": "OrderingProviderMiddleName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderSuffix",
+                    "DestinationColumn": "OrderingProviderSuffix",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderNPI",
+                    "DestinationColumn": "OrderingProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderAddressLine1",
+                    "DestinationColumn": "OrderingProviderAddressLine1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderAddressLine2",
+                    "DestinationColumn": "OrderingProviderAddressLine2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCity",
+                    "DestinationColumn": "OrderingProviderCity",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderState",
+                    "DestinationColumn": "OrderingProviderState",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderZIP",
+                    "DestinationColumn": "OrderingProviderZIP",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderContactName",
+                    "DestinationColumn": "OrderingProviderContactName",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCommQual1",
+                    "DestinationColumn": "OrderingProviderCommQual1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCommNum1",
+                    "DestinationColumn": "OrderingProviderCommNum1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCommQual2",
+                    "DestinationColumn": "OrderingProviderCommQual2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCommNum2",
+                    "DestinationColumn": "OrderingProviderCommNum2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCommQual3",
+                    "DestinationColumn": "OrderingProviderCommQual3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "OrderingProviderCommNum3",
+                    "DestinationColumn": "OrderingProviderCommNum3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "BilledAmountLineCOB",
+                    "DestinationColumn": "BilledAmountLineCOB",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DMECertType",
+                    "DestinationColumn": "DMECertType",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DMEDuration",
+                    "DestinationColumn": "DMEDuration",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DMEConditionIndicator",
+                    "DestinationColumn": "DMEConditionIndicator",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DMEConditionCode1",
+                    "DestinationColumn": "DMEConditionCode1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DMEConditionCode2",
+                    "DestinationColumn": "DMEConditionCode2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                }
+            ]
+        }
+    ]
+}

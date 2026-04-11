@@ -1,0 +1,31 @@
+CREATE TABLE #clientCode.gold_ma_q360memberenrollment (
+MemberID  string
+,EnrollmentStartDate  string
+,DisEnrollmentDate  string
+,DentalBenefit  string
+,DrugBenefit  string
+,MentalHealthBenefitInpatient  string
+,MentalHealthBenefitIntensiveOutpatient  string
+,MentalHealthBenefitOutpatient string
+,ChemDepBenefitInpatient  string
+,ChemDepBenefitIntensiveOutpatient  string
+,ChemDepBenefitOutpatientED  string
+,MedicalBenefit  string
+,InstitutionalLTSSBenefit  string
+,HomeandCommunityLTSSBenefit  string
+,Payer  string
+,HealthPlanEmployeeDependantFlag  string
+,Indicator  string
+,PrimaryEnrollmentFlag  string
+,ProductID  string
+,ReportingID  string
+,MemberGroupCode  string
+,AdditionalColumn1  string
+,AdditionalColumn2  string
+,AdditionalColumn3  string
+,AdditionalColumn4  string
+,AdditionalColumn5  string
+,Filler  string
+,FileLayoutDescription  string
+,LoadDateTime  timestamp
+) USING delta LOCATION '/mnt/#clientCode/Gold/MA/Q360/Q360MemberEnrollment'

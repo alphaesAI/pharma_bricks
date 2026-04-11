@@ -1,0 +1,752 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedMedicalClaimsUniqueKey",
+          "ColumnQuery": "CONCAT(COALESCE(MA_LINE_CLAIM_NUM,''), '-', COALESCE(FILE_ID,''), '-',  COALESCE(CLIENT_ID,''))",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_LINE_NUM",
+          "DestinationColumn": "LineNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_TYPE_OF_SERVICE",
+          "DestinationColumn": "TypeOfService",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_PLACE_OF_SERVICE",
+          "DestinationColumn": "PlaceOfService",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_STATUS_CODE",
+          "DestinationColumn": "StatusCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_TOTAL_CHARGE_AMT",
+          "DestinationColumn": "TotalChargeAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ALLOWED_AMT",
+          "DestinationColumn": "AllowedAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PURE_PAYMENT_AMT",
+          "DestinationColumn": "PurePaymentAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_INTEREST_AMT",
+          "DestinationColumn": "InterestAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_COPAY_AMT",
+          "DestinationColumn": "CopayAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DEDUCTIBLE_AMT",
+          "DestinationColumn": "DeductibleAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_OOP_AMT",
+          "DestinationColumn": "OOPAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CPT_TYPE_SERVICE",
+          "DestinationColumn": "CPTTypeService",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_SERVICE_FROM_DT",
+          "DestinationColumn": "ServiceFromDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "MA_LINE_SERVICE_TO_DT",
+          "DestinationColumn": "ServiceToDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_CD_ORIG",
+          "DestinationColumn": "ProcCodeOrig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD1_ORIG",
+          "DestinationColumn": "ProcMod1Orig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD2_ORIG",
+          "DestinationColumn": "ProcMod2Orig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD3_ORIG",
+          "DestinationColumn": "ProcMod3Orig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD4_ORIG",
+          "DestinationColumn": "ProcMod4Orig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD1",
+          "DestinationColumn": "DiagCode1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD2",
+          "DestinationColumn": "DiagCode2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD3",
+          "DestinationColumn": "DiagCode3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD4",
+          "DestinationColumn": "DiagCode4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD5",
+          "DestinationColumn": "DiagCode5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD6",
+          "DestinationColumn": "DiagCode6",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD7",
+          "DestinationColumn": "DiagCode7",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD8",
+          "DestinationColumn": "DiagCode8",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD9",
+          "DestinationColumn": "DiagCode9",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD10",
+          "DestinationColumn": "DiagCode10",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD11",
+          "DestinationColumn": "DiagCode11",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD12",
+          "DestinationColumn": "DiagCode12",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EMERGENCY_IND",
+          "DestinationColumn": "EmergencyInd",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_REVENUE_CD",
+          "DestinationColumn": "RevenueCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_NON_CVD_CHGS_TOTAL",
+          "DestinationColumn": "NoncoveredChargesTotal",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_CD",
+          "DestinationColumn": "ProcCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+		{
+           "SourceColumn": "",
+           "DestinationColumn": "ProcCodeType",
+           "ColumnQuery": "CASE WHEN MA_LINE_PROC_CD BETWEEN 00000 AND 99999 AND LENGTH(MA_LINE_PROC_CD) = 5 THEN 'CPTCode' WHEN SUBSTRING(MA_LINE_PROC_CD,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(MA_LINE_PROC_CD,2,5) BETWEEN 0000 AND 9999 AND LENGTH(MA_LINE_PROC_CD)= 5 THEN 'HCPCSCode' WHEN MA_LINE_PROC_CD IS NOT NULL THEN 'Unknown' END",
+           "SourceColumnFormat": ""
+         },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD1",
+          "DestinationColumn": "ProcMod1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD2",
+          "DestinationColumn": "ProcMod2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD3",
+          "DestinationColumn": "ProcMod3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD4",
+          "DestinationColumn": "ProcMod4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CATEGORY_NUM",
+          "DestinationColumn": "CategoryNum",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_MULTI_CATEGORY_NUM",
+          "DestinationColumn": "MultiCategoryNum",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CLASSIFICATION",
+          "DestinationColumn": "Classification",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CLASSIFICATION_ADDTNL",
+          "DestinationColumn": "ClassificationAddtnl",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EDI_ADJUST_CD_LIST",
+          "DestinationColumn": "EDIAdjustCodeList",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD1",
+          "DestinationColumn": "EventCode1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD2",
+          "DestinationColumn": "EventCode2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD3",
+          "DestinationColumn": "EventCode3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD4",
+          "DestinationColumn": "EventCode4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD5",
+          "DestinationColumn": "EventCode5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD6",
+          "DestinationColumn": "EventCode6",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD7",
+          "DestinationColumn": "EventCode7",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD8",
+          "DestinationColumn": "EventCode8",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD9",
+          "DestinationColumn": "EventCode9",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD10",
+          "DestinationColumn": "EventCode10",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD11",
+          "DestinationColumn": "EventCode11",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD12",
+          "DestinationColumn": "EventCode12",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD13",
+          "DestinationColumn": "EventCode13",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EVENT_CD14",
+          "DestinationColumn": "EventCode14",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_HIPAA_ADJ_RSN_CD",
+          "DestinationColumn": "HIPAAAdjustReasonCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_REMIT_ADVICE_CD",
+          "DestinationColumn": "RemitAdviceCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_AUTHORIZATION_NUM",
+          "DestinationColumn": "AuthorizationNum",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_AUTHORIZATION_OVERRIDE",
+          "DestinationColumn": "AuthorizationOverride",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_NDC_CD_LIST",
+          "DestinationColumn": "NDCCodeList",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ENCOUNTER_FLAG",
+          "DestinationColumn": "EncounterFlag",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CE_OVR",
+          "DestinationColumn": "CEOverride",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CE_ACTION",
+          "DestinationColumn": "CEAction",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CE_EVENT_CD",
+          "DestinationColumn": "CEEventCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CE_LINE_DISP",
+          "DestinationColumn": "CELineDisp",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_EPSDT",
+          "DestinationColumn": "EPSDT",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_FAMILY_PLAN_IND",
+          "DestinationColumn": "FamilyPlanInd",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_TOTAL_CHARGE_AMT_ORIG",
+          "DestinationColumn": "TotalChargeAmtOrig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ALLOWED_AMT_ORIG",
+          "DestinationColumn": "AllowedAmtOrig",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CONTRACT_ALLOWED_AMT",
+          "DestinationColumn": "ContractAllowedAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_QUANTITY",
+          "DestinationColumn": "Quantity",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_UNIT_TYPE",
+          "DestinationColumn": "UnitType",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_UNIT_RATE",
+          "DestinationColumn": "UnitRate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_COB_SAVINGS_AMT",
+          "DestinationColumn": "COBSavingsAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_COB_PAID_AMT",
+          "DestinationColumn": "COBPaidAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DUPLICATE_IND",
+          "DestinationColumn": "DuplicateInd",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DUPLICATE_OPTION",
+          "DestinationColumn": "DuplicateOption",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_GL_CD",
+          "DestinationColumn": "GLCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_GL_DT",
+          "DestinationColumn": "GLDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROFILE",
+          "DestinationColumn": "Profile",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD1",
+          "DestinationColumn": "AdjustCode1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD2",
+          "DestinationColumn": "AdjustCode2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD3",
+          "DestinationColumn": "AdjustCode3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD4",
+          "DestinationColumn": "AdjustCode4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD5",
+          "DestinationColumn": "AdjustCode5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD6",
+          "DestinationColumn": "AdjustCode6",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD7",
+          "DestinationColumn": "AdjustCode7",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD8",
+          "DestinationColumn": "AdjustCode8",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD9",
+          "DestinationColumn": "AdjustCode9",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD10",
+          "DestinationColumn": "AdjustCode10",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD11",
+          "DestinationColumn": "AdjustCode11",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD12",
+          "DestinationColumn": "AdjustCode12",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD13",
+          "DestinationColumn": "AdjustCode13",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD14",
+          "DestinationColumn": "AdjustCode14",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD15",
+          "DestinationColumn": "AdjustCode15",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD16",
+          "DestinationColumn": "AdjustCode16",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD17",
+          "DestinationColumn": "AdjustCode17",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD18",
+          "DestinationColumn": "AdjustCode18",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD19",
+          "DestinationColumn": "AdjustCode19",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_ADJUST_CD20",
+          "DestinationColumn": "AdjustCode20",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_MEMBER_OBLIGATION_AMT",
+          "DestinationColumn": "MemberObligationAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_NUM_ORIG",
+          "DestinationColumn": "OriginalLineNum",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_ALLOWED_AMT",
+          "DestinationColumn": "PrimaryAllowedAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_DEDUCT_AMT",
+          "DestinationColumn": "PrimaryDeductAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_COPAY_AMT",
+          "DestinationColumn": "PrimaryCopayAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_COINS_AMT",
+          "DestinationColumn": "PrimaryCoinsAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_NON_CVD_AMT",
+          "DestinationColumn": "PrimaryNoncoveredAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PAID_AMT",
+          "DestinationColumn": "PrimaryPaidAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_MEMBER_OBLIGATION",
+          "DestinationColumn": "PrimaryMemberObligation",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_CONTRCT_ADJST_AMT",
+          "DestinationColumn": "PrimaryContractAdjstAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_EOB_CD",
+          "DestinationColumn": "PrimaryEOBCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PRIM_DISCOUNT",
+          "DestinationColumn": "PrimaryDiscount",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_IKA_PRICING_SCHEDLE_CD",
+          "DestinationColumn": "PricingScheduleCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_WITHHOLD_AMT",
+          "DestinationColumn": "WithholdAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_REBUNDLE_AMT",
+          "DestinationColumn": "RebundleAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_RIDER",
+          "DestinationColumn": "Rider",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_APC_CD",
+          "DestinationColumn": "APCCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

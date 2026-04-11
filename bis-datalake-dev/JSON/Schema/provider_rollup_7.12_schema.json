@@ -1,0 +1,234 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Format": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "RenderingProviderID",
+      "OrdinalPosition": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "RenderingProviderNPI",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier1BillingProviderID",
+      "OrdinalPosition": 2,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "Tier1BillingProviderNPI",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier1BillingsProviderTIN",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier1Description",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier2ID",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier2Description",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier3ID",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier3Description",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier4ID",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier4Description",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier5ID",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier5Description",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier6ID",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier6Description",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier7ID",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier7Description",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier8ID",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier8Description",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier9ID",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier9Description",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier10ID",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Tier10Description",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StartDate",
+      "OrdinalPosition": 24,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "EndDate",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting1",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting2",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting3",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting4",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting5",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting6",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting7",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting8",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting9",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltProvReporting10",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    }
+  ],
+  "Rules": [
+    {
+      "Name": "VerifyTotalCount",
+      "Data_file_query": "select count(1) + 1 from data_file",
+      "control_file_query": "select _c7 from control_file"
+    },
+    {
+      "Name": "VerifyTotalDataCount",
+      "Data_file_query": "select count(1) from data_file",
+      "control_file_query": "select _c8 from control_file"
+    }
+  ]
+}

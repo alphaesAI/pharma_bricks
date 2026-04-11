@@ -1,0 +1,17 @@
+{
+    "SubLayerProcessing": [
+        {
+            "SubGroupEntity": "dimICD",
+            "DestinationTable": "#clientCode/Platinum/dimICD",
+            "SourceTables": [
+                {
+                    "Entity": "icd",
+                    "SourceTable": "#clientCode/Gold/icd",
+                    "SourceFormat": "delta"
+                }
+            ],
+            "SQLScript": "SELECT * FROM icd",
+            "MergeScript":"MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.icd,\"\")=IfNull(t.icd,\"\") AND IfNull(s.icdEffectiveYear,\"\") = IfNull(t.icdEffectiveYear,\"\") WHEN MATCHED AND t.icdKey <> s.icdKey THEN  UPDATE SET icdKey = s.icdKey ,icd = s.icd ,icdCodeType = s.icdCodeType ,icdFormatted = s.icdFormatted ,icdShortDescription = s.icdShortDescription ,icdLongDescription = s.icdLongDescription ,icdDisplayDescripton = s.icdDisplayDescripton ,icdEffectiveYear = s.icdEffectiveYear ,icdEffectiveStartDate = s.icdEffectiveStartDate ,icdEffectiveEndDate = s.icdEffectiveEndDate ,isChronic = s.isChronic ,isComplete = s.isComplete WHEN NOT MATCHED THEN INSERT (icdKey ,icd ,icdCodeType ,icdFormatted ,icdShortDescription ,icdLongDescription ,icdDisplayDescripton ,icdEffectiveYear ,icdEffectiveStartDate ,icdEffectiveEndDate ,isChronic ,isComplete ) VALUES (s.icdKey ,s.icd ,s.icdCodeType ,s.icdFormatted ,s.icdShortDescription ,s.icdLongDescription ,s.icdDisplayDescripton ,s.icdEffectiveYear ,s.icdEffectiveStartDate ,s.icdEffectiveEndDate ,s.isChronic ,s.isComplete)"
+        }
+    ]
+}

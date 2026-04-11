@@ -1,0 +1,347 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "Identifier",
+			"OrdinalPosition": 1,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "MemberContractNumber",
+			"OrdinalPosition": 2,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberHIC",
+			"OrdinalPosition": 3,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberDOB",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},				
+		{
+			"FieldName": "ICD",
+			"OrdinalPosition": 5,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "HCC",
+			"OrdinalPosition": 6,
+			"DataType": "string"		
+		},
+		{
+			"FieldName": "BegDOS",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]			
+		},
+		
+		{
+			"FieldName": "EndDOS",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [				
+				{
+					"Name": "isDateNotRequired",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberFirstName",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberLastName",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberPhoneNumber",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderNPI",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderLastName",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]			
+		},
+		{
+			"FieldName": "ProviderFirstName",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FacilityName",
+			"OrdinalPosition": 15,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "ProviderAddress1",
+			"OrdinalPosition": 16,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},				
+		{
+			"FieldName": "ProviderCity",
+			"OrdinalPosition": 17,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]			
+		},
+		{
+			"FieldName": "ProviderState",
+			"OrdinalPosition": 18,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderZip",
+			"OrdinalPosition": 19,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderPhoneNumber",
+			"OrdinalPosition": 20,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "BillType",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientPractitionerID",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},		
+		{
+			"FieldName": "HPlan",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberID",
+			"OrdinalPosition": 24,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]			
+		},
+		{
+			"FieldName": "ProviderID",
+			"OrdinalPosition": 25,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "CommercialPlanID",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ChartID",
+			"OrdinalPosition": 27,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "SubID",
+			"OrdinalPosition": 28,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMI",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberGender",
+			"OrdinalPosition": 30,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderSpecialtyCode",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderFax",
+			"OrdinalPosition": 32,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "HIOSID",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EnrolleeID",
+			"OrdinalPosition": 34,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimID",
+			"OrdinalPosition": 35,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "Priority",
+			"OrdinalPosition": 36,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EMRFlag",
+			"OrdinalPosition": 37,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderOrganizationName",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderOrganizationCode",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Membership",
+			"OrdinalPosition": 40,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "RiskLevel",
+			"OrdinalPosition": 41,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "ProviderGroupCode",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderGroupName",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlaceOfService",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderSpecialty",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProjectName",
+			"OrdinalPosition": 46,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FlagForRetroPhase",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RetrievalMethod",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MCEMatch",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		}
+	]
+}

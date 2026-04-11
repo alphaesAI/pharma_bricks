@@ -1,0 +1,755 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": 0,
+            "DataType": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "contract",
+            "OrdinalPosition": "1",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "memid",
+            "OrdinalPosition": "2",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "memid_original",
+            "OrdinalPosition": "3",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MBI_Indicator",
+            "OrdinalPosition": "4",
+            "DataType": "string"
+        },
+      {
+        "FieldName": "enr_mo",
+        "OrdinalPosition": "5",
+        "DataType": "string",
+        "Validators": [
+          {
+            "Name": "isMONCCYYValid"
+          }
+        ]
+      },
+        {
+            "FieldName": "enr_yr",
+            "OrdinalPosition": "6",
+            "DataType": "string"
+        },
+		{
+            "FieldName": "yearmo",
+            "OrdinalPosition": "7",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rundt",
+            "OrdinalPosition": "8",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDate",
+                    "Value": "MM/dd/yyyy"
+                }
+            ]
+        },
+        {
+            "FieldName": "lname",
+            "OrdinalPosition": "9",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "fname1",
+            "OrdinalPosition": "10",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "enr_src",
+            "OrdinalPosition": "11",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Person_Total",
+            "OrdinalPosition": "12",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pbp",
+            "OrdinalPosition": "13",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "newpbp",
+            "OrdinalPosition": "14",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "segmentID",
+            "OrdinalPosition": "15",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "eghp_flag",
+            "OrdinalPosition": "16",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "fac_risk",
+            "OrdinalPosition": "17",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "fac_d",
+            "OrdinalPosition": "18",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "sex",
+            "OrdinalPosition": "19",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "dob",
+            "OrdinalPosition": "20",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDate",
+                    "Value": "MM/dd/yyyy"
+                }
+            ]
+        },
+        {
+            "FieldName": "agegrp",
+            "OrdinalPosition": "21",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "agedis",
+            "OrdinalPosition": "22",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ssa",
+            "OrdinalPosition": "23",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ooa",
+            "OrdinalPosition": "24",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "hospice",
+            "OrdinalPosition": "25",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "esrd",
+            "OrdinalPosition": "26",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "aged_msp",
+            "OrdinalPosition": "27",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "instit",
+            "OrdinalPosition": "28",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "nhc",
+            "OrdinalPosition": "29",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "medicaid",
+            "OrdinalPosition": "30",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "maddon",
+            "OrdinalPosition": "31",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "current_medicaid",
+            "OrdinalPosition": "32",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "dual_PartC",
+            "OrdinalPosition": "33",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "dual_PartD",
+            "OrdinalPosition": "34",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "lti_flag",
+            "OrdinalPosition": "35",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "d_lowincome_ind",
+            "OrdinalPosition": "36",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "d_lti_ind",
+            "OrdinalPosition": "37",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "default_pc_ra",
+            "OrdinalPosition": "38",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "esrd_msp",
+            "OrdinalPosition": "39",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "raag",
+            "OrdinalPosition": "40",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "prdib",
+            "OrdinalPosition": "41",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "de_minimis",
+            "OrdinalPosition": "42",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "race",
+            "OrdinalPosition": "43",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pc_rafactype",
+            "OrdinalPosition": "44",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "frailty",
+            "OrdinalPosition": "45",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "prdibind",
+            "OrdinalPosition": "46",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "lag",
+            "OrdinalPosition": "47",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "mem_a",
+            "OrdinalPosition": "48",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "mem_b",
+            "OrdinalPosition": "49",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "mem_c",
+            "OrdinalPosition": "50",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "mem_d",
+            "OrdinalPosition": "51",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PC_Status",
+            "OrdinalPosition": "52",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PD_Status",
+            "OrdinalPosition": "53",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_dmg_a",
+            "OrdinalPosition": "54",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_dmg_b",
+            "OrdinalPosition": "55",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_risk_a",
+            "OrdinalPosition": "56",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_risk_b",
+            "OrdinalPosition": "57",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "risk_rate",
+            "OrdinalPosition": "58",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "risk_rate_seq",
+            "OrdinalPosition": "59",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "subsidy_lipsa",
+            "OrdinalPosition": "60",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "prem_cbasic_a",
+            "OrdinalPosition": "61",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "prem_cbasic_b",
+            "OrdinalPosition": "62",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "prem_cbasic",
+            "OrdinalPosition": "63",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_costshare_a",
+            "OrdinalPosition": "64",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_costshare_b",
+            "OrdinalPosition": "65",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_costshare",
+            "OrdinalPosition": "66",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_costshare_seq",
+            "OrdinalPosition": "67",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_mandsup_a",
+            "OrdinalPosition": "68",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_mandsup_b",
+            "OrdinalPosition": "69",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_mandsup",
+            "OrdinalPosition": "70",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_mandsup_seq",
+            "OrdinalPosition": "71",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_bpremred_a",
+            "OrdinalPosition": "72",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_bpremred_b",
+            "OrdinalPosition": "73",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_bpremred",
+            "OrdinalPosition": "74",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_bpremred_seq",
+            "OrdinalPosition": "75",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_dsup_a",
+            "OrdinalPosition": "76",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_dsup_b",
+            "OrdinalPosition": "77",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_dsup",
+            "OrdinalPosition": "78",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_dsup_seq",
+            "OrdinalPosition": "79",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_ma_a",
+            "OrdinalPosition": "80",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_ma_b",
+            "OrdinalPosition": "81",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_ma",
+            "OrdinalPosition": "82",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_dbasic",
+            "OrdinalPosition": "83",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "rebate_dbasic_seq",
+            "OrdinalPosition": "84",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "prem_dbasic",
+            "OrdinalPosition": "85",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "subsidy_direct",
+            "OrdinalPosition": "86",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "subsidy_direct_seq",
+            "OrdinalPosition": "87",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "subsidy_reins",
+            "OrdinalPosition": "88",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "subsidy_lics",
+            "OrdinalPosition": "89",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pmt_d",
+            "OrdinalPosition": "90",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pace_prem_addon",
+            "OrdinalPosition": "91",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pace_cs_addon",
+            "OrdinalPosition": "92",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pddual",
+            "OrdinalPosition": "93",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pc_frailty_score",
+            "OrdinalPosition": "94",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "msp_factor",
+            "OrdinalPosition": "95",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "msp_mm",
+            "OrdinalPosition": "96",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "msp_reduction_a",
+            "OrdinalPosition": "97",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "msp_reduction_b",
+            "OrdinalPosition": "98",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MSP_Amt",
+            "OrdinalPosition": "99",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MSP_Amt_seq",
+            "OrdinalPosition": "100",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "dual_status_code",
+            "OrdinalPosition": "101",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "gap_discount",
+            "OrdinalPosition": "102",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "gap_discount_seq",
+            "OrdinalPosition": "103",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "pd_rafactype",
+            "OrdinalPosition": "104",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "default_pd_ra",
+            "OrdinalPosition": "105",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FinalMedicaidStatus",
+            "OrdinalPosition": "106",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PlanType",
+            "OrdinalPosition": "107",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PlanTypeSeparator",
+            "OrdinalPosition": "108",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Bid_NoRisk",
+            "OrdinalPosition": "109",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Bid_NoRisk_Seq",
+            "OrdinalPosition": "110",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Pmt_Risk_Wt_Seq",
+            "OrdinalPosition": "111",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Pmt_Risk_Wt",
+            "OrdinalPosition": "112",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CMMRFileCreateDate",
+            "OrdinalPosition": "113",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDate",
+                    "Value": "MM/dd/yyyy"
+                }
+            ]
+        },
+        {
+            "FieldName": "medicaid_status",
+            "OrdinalPosition": "114",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_DEGroup",
+            "OrdinalPosition": "115",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_ESRDGroup",
+            "OrdinalPosition": "116",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_Med_Status",
+            "OrdinalPosition": "117",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_Dual_Status",
+            "OrdinalPosition": "118",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_base_Unnorm_eds",
+            "OrdinalPosition": "119",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_proj_Unnorm_eds",
+            "OrdinalPosition": "120",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_base_NormFr_eds",
+            "OrdinalPosition": "121",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_proj_NormFr_eds",
+            "OrdinalPosition": "122",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_base_UnNormFr_eds",
+            "OrdinalPosition": "123",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_proj_UnNormFr_eds",
+            "OrdinalPosition": "124",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_base_Unnorm_raps",
+            "OrdinalPosition": "125",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_base_NormFr_raps",
+            "OrdinalPosition": "126",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_risk_score_base_UnNormFr_raps",
+            "OrdinalPosition": "127",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_RiskCohort",
+            "OrdinalPosition": "128",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_Flag",
+            "OrdinalPosition": "129",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BC_FrailtyMM",
+            "OrdinalPosition": "130",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BD_Ben_Status",
+            "OrdinalPosition": "131",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BD_risk_score_base_eds",
+            "OrdinalPosition": "132",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BD_risk_score_base_raps",
+            "OrdinalPosition": "133",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BD_risk_score_proj_eds",
+            "OrdinalPosition": "134",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BD_PD_Status",
+            "OrdinalPosition": "135",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BD_Flag",
+            "OrdinalPosition": "136",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Groupnumber",
+            "OrdinalPosition": "137",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "GroupSuffix",
+            "OrdinalPosition": "138",
+            "DataType": "string"
+        }
+    ]
+}

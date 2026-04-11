@@ -1,0 +1,352 @@
+{
+	"columnMapping": [{
+		"recordType": [{
+			"Field": "",
+			"Value": ""
+		}],
+		"selectColumns": [
+
+			{
+				"SourceColumn": "BeneficiaryID",
+				"DestinationColumn": "BeneficiaryID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+
+			},
+			{
+				"SourceColumn": "Surname",
+				"DestinationColumn": "Surname",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FirstName",
+				"DestinationColumn": "FirstName",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "MiddleInitial",
+				"DestinationColumn": "MiddleInitial",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "GenderCode",
+				"DestinationColumn": "GenderCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+
+			},
+			{
+				"SourceColumn": "DateofBirth",
+				"DestinationColumn": "DateofBirth",
+				"SourceColumnFormat": "yyyyMMdd",
+				"ColumnQuery": ""
+
+			},
+			{
+				"SourceColumn": "MedicaidIndicator",
+				"DestinationColumn": "MedicaidIndicator",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "ContractNumber",
+				"DestinationColumn": "ContractNumber",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+
+			},
+			{
+				"SourceColumn": "StateCode",
+				"DestinationColumn": "StateCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "CountyCode",
+				"DestinationColumn": "CountyCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "DisabilityIndicator",
+				"DestinationColumn": "DisabilityIndicator",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "HospiceIndicator",
+				"DestinationColumn": "HospiceIndicator",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "InstitutionalIndicator",
+				"DestinationColumn": "InstitutionalIndicator",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "ESRDIndicator",
+				"DestinationColumn": "ESRDIndicator",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "TransactionReplyCode",
+				"DestinationColumn": "TransactionReplyCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "TransactionCode",
+				"DestinationColumn": "TransactionCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "EntitlementTypeCode",
+				"DestinationColumn": "EntitlementTypeCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "EffectiveDate",
+				"DestinationColumn": "EffectiveDate",
+				"SourceColumnFormat": "yyyyMMdd",
+				"ColumnQuery": ""
+
+			},
+			{
+				"SourceColumn": "WAIndicator",
+				"DestinationColumn": "WAIndicator",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PlanBenefitPackageID",
+				"DestinationColumn": "PlanBenefitPackageID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "RaceCode",
+				"DestinationColumn": "RaceCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "TransactionDate",
+				"DestinationColumn": "TransactionDate",
+				"SourceColumnFormat": "yyyyMMdd",
+				"ColumnQuery": ""
+
+			},
+
+			{
+				"SourceColumn": "SubsidyEndDate",
+				"DestinationColumn": "SubsidyEndDate",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "DistrictOfficeCode",
+				"DestinationColumn": "DistrictOfficeCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+
+			{
+				"SourceColumn": "SourceID",
+				"DestinationColumn": "SourceID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PriorPlanBenefitPackageID",
+				"DestinationColumn": "PriorPlanBenefitPackageID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "ApplicationDate",
+				"DestinationColumn": "ApplicationDate",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+
+			{
+				"SourceColumn": "OutofAreaFlag",
+				"DestinationColumn": "OutofAreaFlag",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "SegmentNumber",
+				"DestinationColumn": "SegmentNumber",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PartCBeneficiaryPremium",
+				"DestinationColumn": "PartCBeneficiaryPremium",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PartDBeneficiaryPremium",
+				"DestinationColumn": "PartDBeneficiaryPremium",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "ElectionType",
+				"DestinationColumn": "ElectionType",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "EnrollmentSourceCode",
+				"DestinationColumn": "EnrollmentSourceCode",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+
+			},
+			{
+				"SourceColumn": "PartDOptOutFlag",
+				"DestinationColumn": "PartDOptOutFlag",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+
+			{
+				"SourceColumn": "NumberofUncoveredMonths",
+				"DestinationColumn": "NumberofUncoveredMonths",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "CreditableCoverageFlag",
+				"DestinationColumn": "CreditableCoverageFlag",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "EmployerSubsidyOverrideFlag",
+				"DestinationColumn": "EmployerSubsidyOverrideFlag",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "RxID",
+				"DestinationColumn": "RxID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "RxGroup",
+				"DestinationColumn": "RxGroup",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "SecondaryDrugInsuranceFlag",
+				"DestinationColumn": "SecondaryDrugInsuranceFlag",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "SecondaryRxID",
+				"DestinationColumn": "SecondaryRxID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "SecondaryRxGroup",
+				"DestinationColumn": "SecondaryRxGroup",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "EGHP",
+				"DestinationColumn": "EGHP",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PartDLIPSLevel",
+				"DestinationColumn": "PartDLIPSLevel",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "LowIncomeCoPayCategory",
+				"DestinationColumn": "LowIncomeCoPayCategory",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "LowIncomeCoPayEffectiveDate",
+				"DestinationColumn": "LowIncomeCoPayEffectiveDate",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PartDLEPAmount",
+				"DestinationColumn": "PartDLEPAmount",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PartDLEPWaivedAmount",
+				"DestinationColumn": "PartDLEPWaivedAmount",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "PartDLEPSubsidyAmount",
+				"DestinationColumn": "PartDLEPSubsidyAmount",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "LowIncomePartDPremiumSubsidyAmount",
+				"DestinationColumn": "LowIncomePartDPremiumSubsidyAmount",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FILE_ID",
+				"DestinationColumn": "FileID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FILE_LAYOUT_ID",
+				"DestinationColumn": "FileLayoutID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+				"DestinationColumn": "FileLayoutDescription",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "CLIENT_ID",
+				"DestinationColumn": "ClientID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "LOAD_DATETIME",
+				"DestinationColumn": "LoadDateTime",
+				"SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+				"ColumnQuery": ""
+			}
+		]
+	}]
+}

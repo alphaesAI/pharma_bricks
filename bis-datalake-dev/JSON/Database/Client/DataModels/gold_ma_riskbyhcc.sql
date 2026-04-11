@@ -1,0 +1,32 @@
+CREATE TABLE #clientCode.gold_ma_riskbyhcc (
+ clientCode string
+,snapshotDate date
+,reportMonth int
+,serviceYear int
+,beneficiaryID string
+,planMemberID string
+,memberClientkey string
+,hccNumber string
+,hccDescription string
+,riskScore int
+,medTriggerCode string
+,providerTIN string
+,providerNPI string
+,dateCoded string
+,timesCoded int
+,rxTriggerCode string
+,rxTriggerClinc string
+,latestPrecriptionFilledDate string
+,confidenceLevel string
+,isCoded string
+,incurredEnddate string
+,paidThroughDate string
+,cmsRiskModel string
+,runDate date
+,evidenceSource string
+,gapType string
+,suspectTypedescription string
+,isDroppedHCC int
+,evidenceDescription string
+,evidenceType string
+)  USING delta LOCATION '/mnt/#clientCode/Gold/MA/Risk/RiskByHCC'

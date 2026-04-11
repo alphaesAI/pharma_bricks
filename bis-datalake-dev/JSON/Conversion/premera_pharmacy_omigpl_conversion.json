@@ -1,0 +1,1620 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "PA",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1,
+          "StartPos": 1,
+          "Length": 2
+        },
+        {
+          "FieldName": "VersionReleaseNumber",
+          "OrdinalPosition": 2,
+          "StartPos": 3,
+          "Length": 2
+        },
+        {
+          "FieldName": "SendingEntityIdentifier",
+          "OrdinalPosition": 3,
+          "StartPos": 5,
+          "Length": 24
+        },
+        {
+          "FieldName": "BatchNumber",
+          "OrdinalPosition": 4,
+          "StartPos": 29,
+          "Length": 7
+        },
+        {
+          "FieldName": "CreationDate",
+          "OrdinalPosition": 5,
+          "StartPos": 36,
+          "Length": 8
+        },
+        {
+          "FieldName": "CreationTime",
+          "OrdinalPosition": 6,
+          "StartPos": 44,
+          "Length": 4
+        },
+        {
+          "FieldName": "ReceiverID",
+          "OrdinalPosition": 7,
+          "StartPos": 48,
+          "Length": 24
+        },
+        {
+          "FieldName": "ReportingPeriodStartDate",
+          "OrdinalPosition": 8,
+          "StartPos": 72,
+          "Length": 8
+        },
+        {
+          "FieldName": "ReportingPeriodEndDate",
+          "OrdinalPosition": 9,
+          "StartPos": 80,
+          "Length": 8
+        },
+        {
+          "FieldName": "FileType",
+          "OrdinalPosition": 10,
+          "StartPos": 88,
+          "Length": 1
+        },
+        {
+          "FieldName": "TransmissionAction",
+          "OrdinalPosition": 11,
+          "StartPos": 89,
+          "Length": 1
+        },
+        {
+          "FieldName": "SubmissionNumber",
+          "OrdinalPosition": 12,
+          "StartPos": 90,
+          "Length": 2
+        }
+      ]
+    },
+    {
+      "Type": "DE",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1,
+          "StartPos": 1,
+          "Length": 2
+        },
+        {
+          "FieldName": "RecordIndicator",
+          "OrdinalPosition": 2,
+          "StartPos": 3,
+          "Length": 1
+        },
+        {
+          "FieldName": "CardHolderID",
+          "OrdinalPosition": 3,
+          "StartPos": 288,
+          "Length": 20
+        },
+        {
+          "FieldName": "LastName",
+          "OrdinalPosition": 4,
+          "StartPos": 308,
+          "Length": 35
+        },
+        {
+          "FieldName": "FirstName",
+          "OrdinalPosition": 5,
+          "StartPos": 343,
+          "Length": 25
+        },
+        {
+          "FieldName": "MiddleInitial",
+          "OrdinalPosition": 6,
+          "StartPos": 368,
+          "Length": 1
+        },
+        {
+          "FieldName": "CardholderDateofBirth",
+          "OrdinalPosition": 7,
+          "StartPos": 536,
+          "Length": 8
+        },
+        {
+          "FieldName": "PatientLastName",
+          "OrdinalPosition": 8,
+          "StartPos": 569,
+          "Length": 35
+        },
+        {
+          "FieldName": "PatientFirstName",
+          "OrdinalPosition": 9,
+          "StartPos": 604,
+          "Length": 25
+        },
+        {
+          "FieldName": "PatientMiddleInitial",
+          "OrdinalPosition": 10,
+          "StartPos": 629,
+          "Length": 1
+        },
+        {
+          "FieldName": "PatientDateofBirth",
+          "OrdinalPosition": 11,
+          "StartPos": 797,
+          "Length": 8
+        },
+        {
+          "FieldName": "PatientGenderCode",
+          "OrdinalPosition": 12,
+          "StartPos": 805,
+          "Length": 1
+        },
+        {
+          "FieldName": "EligibilityPatientRelationshipCode",
+          "OrdinalPosition": 13,
+          "StartPos": 806,
+          "Length": 2
+        },
+        {
+          "FieldName": "PatientAge",
+          "OrdinalPosition": 14,
+          "StartPos": 808,
+          "Length": 3
+        },
+        {
+          "FieldName": "GroupID",
+          "OrdinalPosition": 15,
+          "StartPos": 826,
+          "Length": 15
+        },
+        {
+          "FieldName": "CarrierNumber",
+          "OrdinalPosition": 16,
+          "StartPos": 841,
+          "Length": 9
+        },
+        {
+          "FieldName": "PolicyNumber",
+          "OrdinalPosition": 17,
+          "StartPos": 850,
+          "Length": 15
+        },
+        {
+          "FieldName": "BillingAccountNumber",
+          "OrdinalPosition": 18,
+          "StartPos": 865,
+          "Length": 8
+        },
+        {
+          "FieldName": "CopayModifierID",
+          "OrdinalPosition": 19,
+          "StartPos": 878,
+          "Length": 10
+        },
+        {
+          "FieldName": "OtherCoverageCode",
+          "OrdinalPosition": 20,
+          "StartPos": 899,
+          "Length": 2
+        },
+        {
+          "FieldName": "ServiceProviderIDQualifier",
+          "OrdinalPosition": 21,
+          "StartPos": 907,
+          "Length": 2
+        },
+        {
+          "FieldName": "ServiceProviderID",
+          "OrdinalPosition": 22,
+          "StartPos": 909,
+          "Length": 15
+        },
+        {
+          "FieldName": "PharmacyName",
+          "OrdinalPosition": 23,
+          "StartPos": 948,
+          "Length": 35
+        },
+        {
+          "FieldName": "PharmacyAddressLine1",
+          "OrdinalPosition": 24,
+          "StartPos": 983,
+          "Length": 55
+        },
+        {
+          "FieldName": "PharmacyAddressLine2",
+          "OrdinalPosition": 25,
+          "StartPos": 1038,
+          "Length": 55
+        },
+        {
+          "FieldName": "City",
+          "OrdinalPosition": 26,
+          "StartPos": 1093,
+          "Length": 30
+        },
+        {
+          "FieldName": "State",
+          "OrdinalPosition": 27,
+          "StartPos": 1123,
+          "Length": 2
+        },
+        {
+          "FieldName": "Zip",
+          "OrdinalPosition": 28,
+          "StartPos": 1125,
+          "Length": 15
+        },
+        {
+          "FieldName": "PharmacyTelephoneNumber",
+          "OrdinalPosition": 29,
+          "StartPos": 1143,
+          "Length": 10
+        },
+        {
+          "FieldName": "PharmacyDispenserType",
+          "OrdinalPosition": 30,
+          "StartPos": 1153,
+          "Length": 2
+        },
+        {
+          "FieldName": "NetworkReimbursementID",
+          "OrdinalPosition": 31,
+          "StartPos": 1157,
+          "Length": 10
+        },
+        {
+          "FieldName": "PrescriberIDQualifier",
+          "OrdinalPosition": 32,
+          "StartPos": 1167,
+          "Length": 2
+        },
+        {
+          "FieldName": "PrescriberID",
+          "OrdinalPosition": 33,
+          "StartPos": 1169,
+          "Length": 15
+        },
+        {
+          "FieldName": "PrescriberLastName",
+          "OrdinalPosition": 34,
+          "StartPos": 1216,
+          "Length": 35
+        },
+        {
+          "FieldName": "PrescriberFirstName",
+          "OrdinalPosition": 35,
+          "StartPos": 1251,
+          "Length": 25
+        },
+        {
+          "FieldName": "RecordStatusCode",
+          "OrdinalPosition": 36,
+          "StartPos": 1366,
+          "Length": 1
+        },
+        {
+          "FieldName": "ClaimMediaType",
+          "OrdinalPosition": 37,
+          "StartPos": 1367,
+          "Length": 1
+        },
+        {
+          "FieldName": "ProcessorPaymentClarificationCode",
+          "OrdinalPosition": 38,
+          "StartPos": 1368,
+          "Length": 2
+        },
+        {
+          "FieldName": "ProductServiceIDQualifier",
+          "OrdinalPosition": 39,
+          "StartPos": 1380,
+          "Length": 2
+        },
+        {
+          "FieldName": "ProductServiceID",
+          "OrdinalPosition": 40,
+          "StartPos": 1382,
+          "Length": 19
+        },
+        {
+          "FieldName": "DateofService",
+          "OrdinalPosition": 41,
+          "StartPos": 1401,
+          "Length": 8
+        },
+        {
+          "FieldName": "AdjudicationDate",
+          "OrdinalPosition": 42,
+          "StartPos": 1409,
+          "Length": 8
+        },
+        {
+          "FieldName": "BillingCycleEndDate",
+          "OrdinalPosition": 43,
+          "StartPos": 1436,
+          "Length": 8
+        },
+        {
+          "FieldName": "PrescriptionServiceReferenceNumberRxNumber",
+          "OrdinalPosition": 44,
+          "StartPos": 1465,
+          "Length": 15
+        },
+        {
+          "FieldName": "PrescriptionServiceReferenceNumberQualifier",
+          "OrdinalPosition": 45,
+          "StartPos": 1480,
+          "Length": 2
+        },
+        {
+          "FieldName": "QuantityDispensed",
+          "OrdinalPosition": 46,
+          "StartPos": 1537,
+          "Length": 10
+        },
+        {
+          "FieldName": "FillNumber",
+          "OrdinalPosition": 47,
+          "StartPos": 1547,
+          "Length": 2
+        },
+        {
+          "FieldName": "DaysSupply",
+          "OrdinalPosition": 48,
+          "StartPos": 1549,
+          "Length": 3
+        },
+        {
+          "FieldName": "DatePrescriptionWritten",
+          "OrdinalPosition": 49,
+          "StartPos": 1552,
+          "Length": 8
+        },
+        {
+          "FieldName": "DispenseasWrittenDAWProductSelectionCode",
+          "OrdinalPosition": 50,
+          "StartPos": 1560,
+          "Length": 1
+        },
+        {
+          "FieldName": "NumberofRefillsAuthorized",
+          "OrdinalPosition": 51,
+          "StartPos": 1561,
+          "Length": 2
+        },
+        {
+          "FieldName": "UnitofMeasure",
+          "OrdinalPosition": 52,
+          "StartPos": 1564,
+          "Length": 2
+        },
+        {
+          "FieldName": "OriginalQuantity",
+          "OrdinalPosition": 53,
+          "StartPos": 1569,
+          "Length": 10
+        },
+        {
+          "FieldName": "OriginalDaySupply",
+          "OrdinalPosition": 54,
+          "StartPos": 1589,
+          "Length": 3
+        },
+        {
+          "FieldName": "CompoundCode",
+          "OrdinalPosition": 55,
+          "StartPos": 1594,
+          "Length": 1
+        },
+        {
+          "FieldName": "PreAdjudicationDrugSpentAmount",
+          "OrdinalPosition": 56,
+          "StartPos": 1595,
+          "Length": 10
+        },
+        {
+          "FieldName": "PlanFormularyIndicator",
+          "OrdinalPosition": 57,
+          "StartPos": 1605,
+          "Length": 1
+        },
+        {
+          "FieldName": "ClaimAdjudicationBeganTimestamp",
+          "OrdinalPosition": 58,
+          "StartPos": 1606,
+          "Length": 26
+        },
+        {
+          "FieldName": "OriginalDateSubmitted",
+          "OrdinalPosition": 59,
+          "StartPos": 1632,
+          "Length": 8
+        },
+        {
+          "FieldName": "FormularyTier",
+          "OrdinalPosition": 60,
+          "StartPos": 1640,
+          "Length": 1
+        },
+        {
+          "FieldName": "ReportedCoverageGapDiscountAmount",
+          "OrdinalPosition": 61,
+          "StartPos": 1641,
+          "Length": 10
+        },
+        {
+          "FieldName": "MedDCoverageGapGenericIndicator",
+          "OrdinalPosition": 62,
+          "StartPos": 1651,
+          "Length": 1
+        },
+        {
+          "FieldName": "PreAdjudicationTROOPAmount",
+          "OrdinalPosition": 63,
+          "StartPos": 1652,
+          "Length": 10
+        },
+        {
+          "FieldName": "FDAApplicationType",
+          "OrdinalPosition": 64,
+          "StartPos": 1662,
+          "Length": 1
+        },
+        {
+          "FieldName": "RejectCode1",
+          "OrdinalPosition": 65,
+          "StartPos": 1776,
+          "Length": 3
+        },
+        {
+          "FieldName": "RejectCode2",
+          "OrdinalPosition": 66,
+          "StartPos": 1779,
+          "Length": 3
+        },
+        {
+          "FieldName": "RejectCode3",
+          "OrdinalPosition": 67,
+          "StartPos": 1782,
+          "Length": 3
+        },
+        {
+          "FieldName": "DatabaseIndicator",
+          "OrdinalPosition": 68,
+          "StartPos": 1829,
+          "Length": 1
+        },
+        {
+          "FieldName": "ProductServiceName",
+          "OrdinalPosition": 69,
+          "StartPos": 1830,
+          "Length": 30
+        },
+        {
+          "FieldName": "GenericName",
+          "OrdinalPosition": 70,
+          "StartPos": 1860,
+          "Length": 30
+        },
+        {
+          "FieldName": "ProductStrength",
+          "OrdinalPosition": 71,
+          "StartPos": 1890,
+          "Length": 15
+        },
+        {
+          "FieldName": "DosageFormCode",
+          "OrdinalPosition": 72,
+          "StartPos": 1905,
+          "Length": 4
+        },
+        {
+          "FieldName": "DrugType",
+          "OrdinalPosition": 73,
+          "StartPos": 1917,
+          "Length": 1
+        },
+        {
+          "FieldName": "MaintenanceDrugIndicator",
+          "OrdinalPosition": 74,
+          "StartPos": 1918,
+          "Length": 1
+        },
+        {
+          "FieldName": "DrugCategoryCode",
+          "OrdinalPosition": 75,
+          "StartPos": 1919,
+          "Length": 1
+        },
+        {
+          "FieldName": "SubmissionClarificationCode",
+          "OrdinalPosition": 76,
+          "StartPos": 1922,
+          "Length": 2
+        },
+        {
+          "FieldName": "GCNNumber",
+          "OrdinalPosition": 77,
+          "StartPos": 1929,
+          "Length": 6
+        },
+        {
+          "FieldName": "UniversalSystemClassificationUSC",
+          "OrdinalPosition": 78,
+          "StartPos": 1935,
+          "Length": 6
+        },
+        {
+          "FieldName": "GenericProductIdentifier",
+          "OrdinalPosition": 79,
+          "StartPos": 1941,
+          "Length": 14
+        },
+        {
+          "FieldName": "MedBMedDIndicator",
+          "OrdinalPosition": 80,
+          "StartPos": 1955,
+          "Length": 1
+        },
+        {
+          "FieldName": "TherapeuticClassCodeAHFS",
+          "OrdinalPosition": 81,
+          "StartPos": 1966,
+          "Length": 6
+        },
+        {
+          "FieldName": "FormularyStatus",
+          "OrdinalPosition": 82,
+          "StartPos": 1972,
+          "Length": 1
+        },
+        {
+          "FieldName": "IngredientCostPaid",
+          "OrdinalPosition": 83,
+          "StartPos": 1998,
+          "Length": 8
+        },
+        {
+          "FieldName": "DispensingFeePaid",
+          "OrdinalPosition": 84,
+          "StartPos": 2006,
+          "Length": 8
+        },
+        {
+          "FieldName": "TotalAmountPaidbyallSources",
+          "OrdinalPosition": 85,
+          "StartPos": 2014,
+          "Length": 8
+        },
+        {
+          "FieldName": "AmountAttributedToSalesTax",
+          "OrdinalPosition": 86,
+          "StartPos": 2022,
+          "Length": 8
+        },
+        {
+          "FieldName": "PatientPayAmount",
+          "OrdinalPosition": 87,
+          "StartPos": 2030,
+          "Length": 8
+        },
+        {
+          "FieldName": "AmountofCopay",
+          "OrdinalPosition": 88,
+          "StartPos": 2038,
+          "Length": 8
+        },
+        {
+          "FieldName": "AmountofCoinsurance",
+          "OrdinalPosition": 89,
+          "StartPos": 2046,
+          "Length": 8
+        },
+        {
+          "FieldName": "AmountAttributedToProductSelection",
+          "OrdinalPosition": 90,
+          "StartPos": 2054,
+          "Length": 8
+        },
+        {
+          "FieldName": "AmountAppliedtoPeriodicDeductible",
+          "OrdinalPosition": 91,
+          "StartPos": 2062,
+          "Length": 8
+        },
+        {
+          "FieldName": "MACReducedIndicator",
+          "OrdinalPosition": 92,
+          "StartPos": 2078,
+          "Length": 1
+        },
+        {
+          "FieldName": "ClientPricingBasisofCost",
+          "OrdinalPosition": 93,
+          "StartPos": 2079,
+          "Length": 2
+        },
+        {
+          "FieldName": "GenericIndicator",
+          "OrdinalPosition": 94,
+          "StartPos": 2081,
+          "Length": 1
+        },
+        {
+          "FieldName": "OutofPocketApplyAmount",
+          "OrdinalPosition": 95,
+          "StartPos": 2082,
+          "Length": 8
+        },
+        {
+          "FieldName": "AverageWholesaleUnitPrice",
+          "OrdinalPosition": 96,
+          "StartPos": 2108,
+          "Length": 9
+        },
+        {
+          "FieldName": "IngredientCostSubmitted",
+          "OrdinalPosition": 97,
+          "StartPos": 2143,
+          "Length": 8
+        },
+        {
+          "FieldName": "UsualCustomaryCharge",
+          "OrdinalPosition": 98,
+          "StartPos": 2151,
+          "Length": 8
+        },
+        {
+          "FieldName": "FlatSalesTaxAmountPaid",
+          "OrdinalPosition": 99,
+          "StartPos": 2159,
+          "Length": 8
+        },
+        {
+          "FieldName": "PercentageSalesTaxAmountPaid",
+          "OrdinalPosition": 100,
+          "StartPos": 2167,
+          "Length": 8
+        },
+        {
+          "FieldName": "MailIncentiveFee",
+          "OrdinalPosition": 101,
+          "StartPos": 2202,
+          "Length": 8
+        },
+        {
+          "FieldName": "NetAmountDueTotalAmountBilledPaid",
+          "OrdinalPosition": 102,
+          "StartPos": 2260,
+          "Length": 8
+        },
+        {
+          "FieldName": "BasisofReimbursementDetermination",
+          "OrdinalPosition": 103,
+          "StartPos": 2268,
+          "Length": 2
+        },
+        {
+          "FieldName": "AccumulatedDeductibleAmount",
+          "OrdinalPosition": 104,
+          "StartPos": 2270,
+          "Length": 8
+        },
+        {
+          "FieldName": "AmountExceedingPeriodicBenefitMaximum",
+          "OrdinalPosition": 105,
+          "StartPos": 2326,
+          "Length": 8
+        },
+        {
+          "FieldName": "BasisofCalculationCopay",
+          "OrdinalPosition": 106,
+          "StartPos": 2336,
+          "Length": 2
+        },
+        {
+          "FieldName": "InvoicedAmountPAFFAmount",
+          "OrdinalPosition": 107,
+          "StartPos": 2384,
+          "Length": 11
+        },
+        {
+          "FieldName": "ProcessorDefinedPriorAuthorizationReasonCode",
+          "OrdinalPosition": 108,
+          "StartPos": 2419,
+          "Length": 2
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": 109,
+          "StartPos": 2421,
+          "Length": 3
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": 110,
+          "StartPos": 2424,
+          "Length": 1
+        },
+        {
+          "FieldName": "TransactionIDCrossReference",
+          "OrdinalPosition": 111,
+          "StartPos": 2425,
+          "Length": 30
+        },
+        {
+          "FieldName": "EligibilityCOBIndicator",
+          "OrdinalPosition": 112,
+          "StartPos": 2463,
+          "Length": 1
+        },
+        {
+          "FieldName": "OtherPayerAmountPaid",
+          "OrdinalPosition": 113,
+          "StartPos": 2483,
+          "Length": 8
+        },
+        {
+          "FieldName": "OtherPayerAmountPaidQualifier",
+          "OrdinalPosition": 114,
+          "StartPos": 2491,
+          "Length": 2
+        },
+        {
+          "FieldName": "COBPrimaryPayerCopay",
+          "OrdinalPosition": 115,
+          "StartPos": 2507,
+          "Length": 8
+        },
+        {
+          "FieldName": "TransactionID",
+          "OrdinalPosition": 116,
+          "StartPos": 2565,
+          "Length": 30
+        },
+        {
+          "FieldName": "GeneralPurpose1",
+          "OrdinalPosition": 117,
+          "StartPos": 2615,
+          "Length": 9
+        },
+        {
+          "FieldName": "GeneralPurpose2",
+          "OrdinalPosition": 118,
+          "StartPos": 2624,
+          "Length": 4
+        },
+        {
+          "FieldName": "GeneralPurpose3GroupExtensionCode",
+          "OrdinalPosition": 119,
+          "StartPos": 2628,
+          "Length": 5
+        },
+        {
+          "FieldName": "GeneralPurpose4",
+          "OrdinalPosition": 120,
+          "StartPos": 2633,
+          "Length": 2
+        },
+        {
+          "FieldName": "AccountID",
+          "OrdinalPosition": 121,
+          "StartPos": 2635,
+          "Length": 15
+        },
+        {
+          "FieldName": "CareFacility",
+          "OrdinalPosition": 122,
+          "StartPos": 2650,
+          "Length": 10
+        },
+        {
+          "FieldName": "SpecialtyRXClaim",
+          "OrdinalPosition": 123,
+          "StartPos": 2660,
+          "Length": 1
+        },
+        {
+          "FieldName": "PharmacyMedicalIndicator",
+          "OrdinalPosition": 124,
+          "StartPos": 2661,
+          "Length": 1
+        },
+        {
+          "FieldName": "BillingReportingCode",
+          "OrdinalPosition": 125,
+          "StartPos": 2662,
+          "Length": 3
+        },
+        {
+          "FieldName": "AlternateID",
+          "OrdinalPosition": 126,
+          "StartPos": 2665,
+          "Length": 20
+        },
+        {
+          "FieldName": "HealthcareSavingsAccountExclusionFlag",
+          "OrdinalPosition": 127,
+          "StartPos": 2685,
+          "Length": 1
+        },
+        {
+          "FieldName": "DeductibleExclusionFlag",
+          "OrdinalPosition": 128,
+          "StartPos": 2686,
+          "Length": 1
+        },
+        {
+          "FieldName": "StopLossExclusionFlag",
+          "OrdinalPosition": 129,
+          "StartPos": 2687,
+          "Length": 1
+        },
+        {
+          "FieldName": "MaximumBenefitExclusionFlag",
+          "OrdinalPosition": 130,
+          "StartPos": 2688,
+          "Length": 1
+        },
+        {
+          "FieldName": "LifetimeMaximumBenefitExclusionFlag",
+          "OrdinalPosition": 131,
+          "StartPos": 2689,
+          "Length": 1
+        },
+        {
+          "FieldName": "ProcessorDefinedData",
+          "OrdinalPosition": 132,
+          "StartPos": 2690,
+          "Length": 8
+        },
+        {
+          "FieldName": "PlanCodeandExtension",
+          "OrdinalPosition": 133,
+          "StartPos": 2698,
+          "Length": 21
+        },
+        {
+          "FieldName": "VaccineAdministrationFee",
+          "OrdinalPosition": 134,
+          "StartPos": 2719,
+          "Length": 8
+        },
+        {
+          "FieldName": "DrugAdminFeeTypeCode",
+          "OrdinalPosition": 135,
+          "StartPos": 2727,
+          "Length": 1
+        },
+        {
+          "FieldName": "FederalTaxId",
+          "OrdinalPosition": 136,
+          "StartPos": 3286,
+          "Length": 9
+        },
+        {
+          "FieldName": "PharmMedicaidId",
+          "OrdinalPosition": 137,
+          "StartPos": 3295,
+          "Length": 9
+        },
+        {
+          "FieldName": "ManagedAccessClaimLockInCode",
+          "OrdinalPosition": 138,
+          "StartPos": 3309,
+          "Length": 1
+        },
+        {
+          "FieldName": "DrugUtilizationReviewDURProductCode",
+          "OrdinalPosition": 139,
+          "StartPos": 3310,
+          "Length": 1
+        },
+        {
+          "FieldName": "PrescriberDEANumber",
+          "OrdinalPosition": 140,
+          "StartPos": 3311,
+          "Length": 15
+        },
+        {
+          "FieldName": "PrescriberStateLicenseNumber",
+          "OrdinalPosition": 141,
+          "StartPos": 3326,
+          "Length": 15
+        },
+        {
+          "FieldName": "PrescriberMedicaidIDNumber",
+          "OrdinalPosition": 142,
+          "StartPos": 3341,
+          "Length": 15
+        },
+        {
+          "FieldName": "CheckMailDate",
+          "OrdinalPosition": 143,
+          "StartPos": 3356,
+          "Length": 8
+        },
+        {
+          "FieldName": "PrescriberNPINumber",
+          "OrdinalPosition": 144,
+          "StartPos": 3364,
+          "Length": 15
+        },
+        {
+          "FieldName": "PharmacyNCPDPNumber",
+          "OrdinalPosition": 145,
+          "StartPos": 3379,
+          "Length": 7
+        },
+        {
+          "FieldName": "PrescriptionOriginCode",
+          "OrdinalPosition": 146,
+          "StartPos": 3386,
+          "Length": 1
+        },
+        {
+          "FieldName": "LICSLevel",
+          "OrdinalPosition": 147,
+          "StartPos": 3387,
+          "Length": 1
+        },
+        {
+          "FieldName": "LICSPremiumPercent",
+          "OrdinalPosition": 148,
+          "StartPos": 3388,
+          "Length": 3
+        },
+        {
+          "FieldName": "LICSLevelEffectiveDate",
+          "OrdinalPosition": 149,
+          "StartPos": 3391,
+          "Length": 8
+        },
+        {
+          "FieldName": "MEDDCoveredDrugFlag",
+          "OrdinalPosition": 150,
+          "StartPos": 3399,
+          "Length": 1
+        },
+        {
+          "FieldName": "TrueOutofPocketAmount",
+          "OrdinalPosition": 151,
+          "StartPos": 3400,
+          "Length": 9
+        },
+        {
+          "FieldName": "PharmacyFaxnumber",
+          "OrdinalPosition": 152,
+          "StartPos": 3409,
+          "Length": 10
+        },
+        {
+          "FieldName": "PrescriberAddress",
+          "OrdinalPosition": 153,
+          "StartPos": 3419,
+          "Length": 25
+        },
+        {
+          "FieldName": "PrescriberCity",
+          "OrdinalPosition": 154,
+          "StartPos": 3444,
+          "Length": 20
+        },
+        {
+          "FieldName": "PrescriberStateAbbreviation",
+          "OrdinalPosition": 155,
+          "StartPos": 3464,
+          "Length": 2
+        },
+        {
+          "FieldName": "PrescriberZipCode",
+          "OrdinalPosition": 156,
+          "StartPos": 3466,
+          "Length": 10
+        },
+        {
+          "FieldName": "PrescriberCommunicationNumber",
+          "OrdinalPosition": 157,
+          "StartPos": 3476,
+          "Length": 10
+        },
+        {
+          "FieldName": "HICRRBNumber",
+          "OrdinalPosition": 158,
+          "StartPos": 3486,
+          "Length": 12
+        },
+        {
+          "FieldName": "GrossAccumulatedAmount",
+          "OrdinalPosition": 159,
+          "StartPos": 3498,
+          "Length": 9
+        },
+        {
+          "FieldName": "MbrClientProductCode",
+          "OrdinalPosition": 160,
+          "StartPos": 3507,
+          "Length": 6
+        },
+        {
+          "FieldName": "MbrClientRiderCode",
+          "OrdinalPosition": 161,
+          "StartPos": 3513,
+          "Length": 6
+        },
+        {
+          "FieldName": "AFFAffiliationID",
+          "OrdinalPosition": 162,
+          "StartPos": 3519,
+          "Length": 6
+        },
+        {
+          "FieldName": "CareNetworkID",
+          "OrdinalPosition": 163,
+          "StartPos": 3525,
+          "Length": 10
+        },
+        {
+          "FieldName": "CareQualifierID",
+          "OrdinalPosition": 164,
+          "StartPos": 3535,
+          "Length": 10
+        },
+        {
+          "FieldName": "ContingherapyFlag",
+          "OrdinalPosition": 165,
+          "StartPos": 3545,
+          "Length": 1
+        },
+        {
+          "FieldName": "CostSource",
+          "OrdinalPosition": 166,
+          "StartPos": 3546,
+          "Length": 1
+        },
+        {
+          "FieldName": "CostTypeUnitCost",
+          "OrdinalPosition": 167,
+          "StartPos": 3547,
+          "Length": 9
+        },
+        {
+          "FieldName": "DrugAdministrationRoute",
+          "OrdinalPosition": 168,
+          "StartPos": 3556,
+          "Length": 2
+        },
+        {
+          "FieldName": "DrugDEACode",
+          "OrdinalPosition": 169,
+          "StartPos": 3558,
+          "Length": 1
+        },
+        {
+          "FieldName": "DrugFDATherapeuticEquiv",
+          "OrdinalPosition": 170,
+          "StartPos": 3559,
+          "Length": 2
+        },
+        {
+          "FieldName": "DrugManufacturer",
+          "OrdinalPosition": 171,
+          "StartPos": 3561,
+          "Length": 10
+        },
+        {
+          "FieldName": "DrugManufacturerID",
+          "OrdinalPosition": 172,
+          "StartPos": 3571,
+          "Length": 5
+        },
+        {
+          "FieldName": "DrugUnitDoseUnitofUse",
+          "OrdinalPosition": 173,
+          "StartPos": 3576,
+          "Length": 1
+        },
+        {
+          "FieldName": "FinalPlanCode",
+          "OrdinalPosition": 174,
+          "StartPos": 3577,
+          "Length": 10
+        },
+        {
+          "FieldName": "GroupClientBenCode",
+          "OrdinalPosition": 175,
+          "StartPos": 3587,
+          "Length": 10
+        },
+        {
+          "FieldName": "MBRAltInsuranceFlag",
+          "OrdinalPosition": 176,
+          "StartPos": 3597,
+          "Length": 1
+        },
+        {
+          "FieldName": "MBRAltInsuranceID",
+          "OrdinalPosition": 177,
+          "StartPos": 3598,
+          "Length": 10
+        },
+        {
+          "FieldName": "MBRFamilyIndicator",
+          "OrdinalPosition": 178,
+          "StartPos": 3608,
+          "Length": 1
+        },
+        {
+          "FieldName": "MBRFamilyType",
+          "OrdinalPosition": 179,
+          "StartPos": 3609,
+          "Length": 1
+        },
+        {
+          "FieldName": "MbrPAFromDate",
+          "OrdinalPosition": 180,
+          "StartPos": 3610,
+          "Length": 7
+        },
+        {
+          "FieldName": "MbrPriorAuthorizationNbr",
+          "OrdinalPosition": 181,
+          "StartPos": 3617,
+          "Length": 11
+        },
+        {
+          "FieldName": "MemberFamilyID",
+          "OrdinalPosition": 182,
+          "StartPos": 3628,
+          "Length": 20
+        },
+        {
+          "FieldName": "PharmacyDispenserClass",
+          "OrdinalPosition": 183,
+          "StartPos": 3648,
+          "Length": 3
+        },
+        {
+          "FieldName": "PharmacyStoreNumber",
+          "OrdinalPosition": 184,
+          "StartPos": 3651,
+          "Length": 15
+        },
+        {
+          "FieldName": "PlanGPIListName",
+          "OrdinalPosition": 185,
+          "StartPos": 3666,
+          "Length": 10
+        },
+        {
+          "FieldName": "PlanNDCListName",
+          "OrdinalPosition": 186,
+          "StartPos": 3676,
+          "Length": 6
+        },
+        {
+          "FieldName": "PRDNameNameExt",
+          "OrdinalPosition": 187,
+          "StartPos": 3682,
+          "Length": 70
+        },
+        {
+          "FieldName": "PrescriberSpecialtyCode",
+          "OrdinalPosition": 188,
+          "StartPos": 3752,
+          "Length": 6
+        },
+        {
+          "FieldName": "PrimaryPrescriberFirstName",
+          "OrdinalPosition": 189,
+          "StartPos": 3758,
+          "Length": 15
+        },
+        {
+          "FieldName": "PrimaryPrescriberLastName",
+          "OrdinalPosition": 190,
+          "StartPos": 3773,
+          "Length": 25
+        },
+        {
+          "FieldName": "PrimaryPrescriberMiddleInitial",
+          "OrdinalPosition": 191,
+          "StartPos": 3798,
+          "Length": 1
+        },
+        {
+          "FieldName": "PrimaryPrescriberSpecialtyCode",
+          "OrdinalPosition": 192,
+          "StartPos": 3799,
+          "Length": 6
+        },
+        {
+          "FieldName": "ProviderLockID",
+          "OrdinalPosition": 193,
+          "StartPos": 3805,
+          "Length": 15
+        },
+        {
+          "FieldName": "ProviderLockQualifier",
+          "OrdinalPosition": 194,
+          "StartPos": 3820,
+          "Length": 1
+        },
+        {
+          "FieldName": "RejectCount",
+          "OrdinalPosition": 195,
+          "StartPos": 3821,
+          "Length": 2
+        },
+        {
+          "FieldName": "RejectMessage1",
+          "OrdinalPosition": 196,
+          "StartPos": 3823,
+          "Length": 3
+        },
+        {
+          "FieldName": "RejectMessage2",
+          "OrdinalPosition": 197,
+          "StartPos": 3826,
+          "Length": 3
+        },
+        {
+          "FieldName": "RejectMessage3",
+          "OrdinalPosition": 198,
+          "StartPos": 3829,
+          "Length": 3
+        },
+        {
+          "FieldName": "ReversalDateSubmitted",
+          "OrdinalPosition": 199,
+          "StartPos": 3832,
+          "Length": 8
+        },
+        {
+          "FieldName": "SbmCustomerLocation",
+          "OrdinalPosition": 200,
+          "StartPos": 3840,
+          "Length": 2
+        },
+        {
+          "FieldName": "SbmDURConflictCode",
+          "OrdinalPosition": 201,
+          "StartPos": 3842,
+          "Length": 2
+        },
+        {
+          "FieldName": "SbmDURInterventionCode",
+          "OrdinalPosition": 202,
+          "StartPos": 3844,
+          "Length": 2
+        },
+        {
+          "FieldName": "SbmDUROutcomeCode",
+          "OrdinalPosition": 203,
+          "StartPos": 3846,
+          "Length": 2
+        },
+        {
+          "FieldName": "SbmEligibilityClarificationCode",
+          "OrdinalPosition": 204,
+          "StartPos": 3848,
+          "Length": 1
+        },
+        {
+          "FieldName": "SbmGroupNbr",
+          "OrdinalPosition": 205,
+          "StartPos": 3849,
+          "Length": 15
+        },
+        {
+          "FieldName": "SbmLevelofService",
+          "OrdinalPosition": 206,
+          "StartPos": 3864,
+          "Length": 2
+        },
+        {
+          "FieldName": "SbmPatientFirstName",
+          "OrdinalPosition": 207,
+          "StartPos": 3866,
+          "Length": 12
+        },
+        {
+          "FieldName": "SbmPatientLastName",
+          "OrdinalPosition": 208,
+          "StartPos": 3878,
+          "Length": 15
+        },
+        {
+          "FieldName": "SbmPriorAuthorizationMedicalCertificationCode",
+          "OrdinalPosition": 209,
+          "StartPos": 3893,
+          "Length": 1
+        },
+        {
+          "FieldName": "SbmProcessorControlNbr",
+          "OrdinalPosition": 210,
+          "StartPos": 3894,
+          "Length": 10
+        },
+        {
+          "FieldName": "SbmUnitDoseIndicator",
+          "OrdinalPosition": 211,
+          "StartPos": 3904,
+          "Length": 1
+        },
+        {
+          "FieldName": "TimeClaimAdded",
+          "OrdinalPosition": 212,
+          "StartPos": 3905,
+          "Length": 6
+        },
+        {
+          "FieldName": "TotalOtherAmt",
+          "OrdinalPosition": 213,
+          "StartPos": 3911,
+          "Length": 9
+        },
+        {
+          "FieldName": "SubmittedMemberID",
+          "OrdinalPosition": 214,
+          "StartPos": 3920,
+          "Length": 20
+        },
+        {
+          "FieldName": "SubmittedBasisCostDetermination",
+          "OrdinalPosition": 215,
+          "StartPos": 3940,
+          "Length": 2
+        },
+        {
+          "FieldName": "CIN",
+          "OrdinalPosition": 216,
+          "StartPos": 3942,
+          "Length": 12
+        }
+      ]
+    },
+    {
+      "Type": "MC",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1,
+          "StartPos": 1,
+          "Length": 2
+        },
+        {
+          "FieldName": "RecordIndicator",
+          "OrdinalPosition": 2,
+          "StartPos": 3,
+          "Length": 1
+        },
+        {
+          "FieldName": "RecordStatusCode",
+          "OrdinalPosition": 3,
+          "StartPos": 4,
+          "Length": 1
+        },
+        {
+          "FieldName": "TransactionID",
+          "OrdinalPosition": 4,
+          "StartPos": 5,
+          "Length": 30
+        },
+        {
+          "FieldName": "PrescriptionServiceReferenceNumberRxNumber",
+          "OrdinalPosition": 5,
+          "StartPos": 35,
+          "Length": 15
+        },
+        {
+          "FieldName": "PrescriptionServiceReferenceNumberQualifier",
+          "OrdinalPosition": 6,
+          "StartPos": 50,
+          "Length": 2
+        },
+        {
+          "FieldName": "CompoundSequenceNumber",
+          "OrdinalPosition": 7,
+          "StartPos": 52,
+          "Length": 3
+        },
+        {
+          "FieldName": "CompoundProductIDQual",
+          "OrdinalPosition": 8,
+          "StartPos": 55,
+          "Length": 2
+        },
+        {
+          "FieldName": "CompoundProductID",
+          "OrdinalPosition": 9,
+          "StartPos": 57,
+          "Length": 20
+        },
+        {
+          "FieldName": "SubmittedCompoundIngredientQuantity",
+          "OrdinalPosition": 10,
+          "StartPos": 77,
+          "Length": 11
+        },
+        {
+          "FieldName": "SubmittedCompoundBasisofCost",
+          "OrdinalPosition": 11,
+          "StartPos": 88,
+          "Length": 2
+        },
+        {
+          "FieldName": "IngredientReBillCost",
+          "OrdinalPosition": 12,
+          "StartPos": 90,
+          "Length": 9
+        },
+        {
+          "FieldName": "IngredientDrugStatus",
+          "OrdinalPosition": 13,
+          "StartPos": 99,
+          "Length": 1
+        },
+        {
+          "FieldName": "Status",
+          "OrdinalPosition": 14,
+          "StartPos": 100,
+          "Length": 1
+        },
+        {
+          "FieldName": "GPI",
+          "OrdinalPosition": 15,
+          "StartPos": 101,
+          "Length": 14
+        },
+        {
+          "FieldName": "ReBillPriceSchedule",
+          "OrdinalPosition": 16,
+          "StartPos": 115,
+          "Length": 10
+        },
+        {
+          "FieldName": "ReBillCostType",
+          "OrdinalPosition": 17,
+          "StartPos": 125,
+          "Length": 10
+        },
+        {
+          "FieldName": "ReBillCostSource",
+          "OrdinalPosition": 18,
+          "StartPos": 135,
+          "Length": 10
+        },
+        {
+          "FieldName": "RouteofAdmin",
+          "OrdinalPosition": 19,
+          "StartPos": 145,
+          "Length": 2
+        },
+        {
+          "FieldName": "MetricQuantity",
+          "OrdinalPosition": 20,
+          "StartPos": 147,
+          "Length": 5
+        },
+        {
+          "FieldName": "PricingTableName",
+          "OrdinalPosition": 21,
+          "StartPos": 152,
+          "Length": 6
+        },
+        {
+          "FieldName": "ReBillPriceType",
+          "OrdinalPosition": 22,
+          "StartPos": 158,
+          "Length": 10
+        },
+        {
+          "FieldName": "ReBillUnitIngredientCost",
+          "OrdinalPosition": 23,
+          "StartPos": 168,
+          "Length": 9
+        },
+        {
+          "FieldName": "SCC08AppliedIndicator",
+          "OrdinalPosition": 24,
+          "StartPos": 177,
+          "Length": 1
+        },
+        {
+          "FieldName": "ClientFundedAmount",
+          "OrdinalPosition": 25,
+          "StartPos": 178,
+          "Length": 9
+        },
+        {
+          "FieldName": "ClientUnfundedAmount",
+          "OrdinalPosition": 26,
+          "StartPos": 187,
+          "Length": 9
+        },
+        {
+          "FieldName": "PharmacyFundedAmount",
+          "OrdinalPosition": 27,
+          "StartPos": 196,
+          "Length": 9
+        },
+        {
+          "FieldName": "FundedCopayAmount",
+          "OrdinalPosition": 28,
+          "StartPos": 205,
+          "Length": 9
+        },
+        {
+          "FieldName": "UnfundedCoinsuranceamount",
+          "OrdinalPosition": 29,
+          "StartPos": 214,
+          "Length": 9
+        },
+        {
+          "FieldName": "DrugTier",
+          "OrdinalPosition": 30,
+          "StartPos": 223,
+          "Length": 2
+        },
+        {
+          "FieldName": "MedPartDIndicator",
+          "OrdinalPosition": 31,
+          "StartPos": 225,
+          "Length": 1
+        },
+        {
+          "FieldName": "PANumberApplied",
+          "OrdinalPosition": 32,
+          "StartPos": 226,
+          "Length": 11
+        },
+        {
+          "FieldName": "FundedUnfunded",
+          "OrdinalPosition": 33,
+          "StartPos": 237,
+          "Length": 1
+        },
+        {
+          "FieldName": "CompoundProductName",
+          "OrdinalPosition": 34,
+          "StartPos": 238,
+          "Length": 30
+        }
+      ]
+    },
+    {
+      "Type": "PT",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1,
+          "StartPos": 1,
+          "Length": 2
+        },
+        {
+          "FieldName": "TotalRecordCount",
+          "OrdinalPosition": 2,
+          "StartPos": 3,
+          "Length": 10
+        },
+        {
+          "FieldName": "TotalNetAmountDue",
+          "OrdinalPosition": 3,
+          "StartPos": 13,
+          "Length": 12
+        }
+      ]
+    }
+  ],
+  "Querries": [
+    {
+      "DetailFile":"SELECT \r\n   RecordType\r\n  ,VersionReleaseNumber\r\n  ,SendingEntityIdentifier\r\n  ,BatchNumber\r\n  ,CreationDate\r\n  ,CreationTime\r\n  ,ReceiverID\r\n  ,ReportingPeriodStartDate\r\n  ,ReportingPeriodEndDate\r\n  ,FileType\r\n  ,TransmissionAction\r\n  ,SubmissionNumber\r\n  ,RecordIndicator\r\n  ,CardHolderID\r\n  ,LastName\r\n  ,FirstName\r\n  ,MiddleInitial\r\n  ,CardholderDateofBirth\r\n  ,PatientLastName\r\n  ,PatientFirstName\r\n  ,PatientMiddleInitial\r\n  ,PatientDateofBirth\r\n  ,PatientGenderCode\r\n  ,EligibilityPatientRelationshipCode\r\n  ,PatientAge\r\n  ,GroupID\r\n  ,CarrierNumber\r\n  ,PolicyNumber\r\n  ,BillingAccountNumber\r\n  ,CopayModifierID\r\n  ,OtherCoverageCode\r\n  ,ServiceProviderIDQualifier\r\n  ,ServiceProviderID\r\n  ,PharmacyName\r\n  ,PharmacyAddressLine1\r\n  ,PharmacyAddressLine2\r\n  ,City\r\n  ,State\r\n  ,Zip\r\n  ,PharmacyTelephoneNumber\r\n  ,PharmacyDispenserType\r\n  ,NetworkReimbursementID\r\n  ,PrescriberIDQualifier\r\n  ,PrescriberID\r\n  ,PrescriberLastName\r\n  ,PrescriberFirstName\r\n  ,RecordStatusCode\r\n  ,ClaimMediaType\r\n  ,ProcessorPaymentClarificationCode\r\n  ,ProductServiceIDQualifier\r\n  ,ProductServiceID\r\n  ,DateofService\r\n  ,AdjudicationDate\r\n  ,BillingCycleEndDate\r\n  ,PrescriptionServiceReferenceNumberRxNumber\r\n  ,PrescriptionServiceReferenceNumberQualifier\r\n  ,QuantityDispensed\r\n  ,FillNumber\r\n  ,DaysSupply\r\n  ,DatePrescriptionWritten\r\n  ,DispenseasWrittenDAWProductSelectionCode\r\n  ,NumberofRefillsAuthorized\r\n  ,UnitofMeasure\r\n  ,OriginalQuantity\r\n  ,OriginalDaySupply\r\n  ,CompoundCode\r\n  ,PreAdjudicationDrugSpentAmount\r\n  ,PlanFormularyIndicator\r\n  ,ClaimAdjudicationBeganTimestamp\r\n  ,OriginalDateSubmitted\r\n  ,FormularyTier\r\n  ,ReportedCoverageGapDiscountAmount\r\n  ,MedDCoverageGapGenericIndicator\r\n  ,PreAdjudicationTROOPAmount\r\n  ,FDAApplicationType\r\n  ,RejectCode1\r\n  ,RejectCode2\r\n  ,RejectCode3\r\n  ,DatabaseIndicator\r\n  ,ProductServiceName\r\n  ,GenericName\r\n  ,ProductStrength\r\n  ,DosageFormCode\r\n  ,DrugType\r\n  ,MaintenanceDrugIndicator\r\n  ,DrugCategoryCode\r\n  ,SubmissionClarificationCode\r\n  ,GCNNumber\r\n  ,UniversalSystemClassificationUSC\r\n  ,GenericProductIdentifier\r\n  ,MedBMedDIndicator\r\n  ,TherapeuticClassCodeAHFS\r\n  ,FormularyStatus\r\n  ,IngredientCostPaid\r\n  ,DispensingFeePaid\r\n  ,TotalAmountPaidbyallSources\r\n  ,AmountAttributedToSalesTax\r\n  ,PatientPayAmount\r\n  ,AmountofCopay\r\n  ,AmountofCoinsurance\r\n  ,AmountAttributedToProductSelection\r\n  ,AmountAppliedtoPeriodicDeductible\r\n  ,MACReducedIndicator\r\n  ,ClientPricingBasisofCost\r\n  ,GenericIndicator\r\n  ,OutofPocketApplyAmount\r\n  ,AverageWholesaleUnitPrice\r\n  ,IngredientCostSubmitted\r\n  ,UsualCustomaryCharge\r\n  ,FlatSalesTaxAmountPaid\r\n  ,PercentageSalesTaxAmountPaid\r\n  ,MailIncentiveFee\r\n  ,NetAmountDueTotalAmountBilledPaid\r\n  ,BasisofReimbursementDetermination\r\n  ,AccumulatedDeductibleAmount\r\n  ,AmountExceedingPeriodicBenefitMaximum\r\n  ,BasisofCalculationCopay\r\n  ,InvoicedAmountPAFFAmount\r\n  ,ProcessorDefinedPriorAuthorizationReasonCode\r\n  ,AdjustmentReasonCode\r\n  ,AdjustmentType\r\n  ,TransactionIDCrossReference\r\n  ,EligibilityCOBIndicator\r\n  ,OtherPayerAmountPaid\r\n  ,OtherPayerAmountPaidQualifier\r\n  ,COBPrimaryPayerCopay\r\n  ,TransactionID\r\n  ,GeneralPurpose1\r\n  ,GeneralPurpose2\r\n  ,GeneralPurpose3GroupExtensionCode\r\n  ,GeneralPurpose4\r\n  ,AccountID\r\n  ,CareFacility\r\n  ,SpecialtyRXClaim\r\n  ,PharmacyMedicalIndicator\r\n  ,BillingReportingCode\r\n  ,AlternateID\r\n  ,HealthcareSavingsAccountExclusionFlag\r\n  ,DeductibleExclusionFlag\r\n  ,StopLossExclusionFlag\r\n  ,MaximumBenefitExclusionFlag\r\n  ,LifetimeMaximumBenefitExclusionFlag\r\n  ,ProcessorDefinedData\r\n  ,PlanCodeandExtension\r\n  ,VaccineAdministrationFee\r\n  ,DrugAdminFeeTypeCode\r\n  ,FederalTaxId\r\n  ,PharmMedicaidId\r\n  ,ManagedAccessClaimLockInCode\r\n  ,DrugUtilizationReviewDURProductCode\r\n  ,PrescriberDEANumber\r\n  ,PrescriberStateLicenseNumber\r\n  ,PrescriberMedicaidIDNumber\r\n  ,CheckMailDate\r\n  ,PrescriberNPINumber\r\n  ,PharmacyNCPDPNumber\r\n  ,PrescriptionOriginCode\r\n  ,LICSLevel\r\n  ,LICSPremiumPercent\r\n  ,LICSLevelEffectiveDate\r\n  ,MEDDCoveredDrugFlag\r\n  ,TrueOutofPocketAmount\r\n  ,PharmacyFaxnumber\r\n  ,PrescriberAddress\r\n  ,PrescriberCity\r\n  ,PrescriberStateAbbreviation\r\n  ,PrescriberZipCode\r\n  ,PrescriberCommunicationNumber\r\n  ,HICRRBNumber\r\n  ,GrossAccumulatedAmount\r\n  ,MbrClientProductCode\r\n  ,MbrClientRiderCode\r\n  ,AFFAffiliationID\r\n  ,CareNetworkID\r\n  ,CareQualifierID\r\n  ,ContingherapyFlag\r\n  ,CostSource\r\n  ,CostTypeUnitCost\r\n  ,DrugAdministrationRoute\r\n  ,DrugDEACode\r\n  ,DrugFDATherapeuticEquiv\r\n  ,DrugManufacturer\r\n  ,DrugManufacturerID\r\n  ,DrugUnitDoseUnitofUse\r\n  ,FinalPlanCode\r\n  ,GroupClientBenCode\r\n  ,MBRAltInsuranceFlag\r\n  ,MBRAltInsuranceID\r\n  ,MBRFamilyIndicator\r\n  ,MBRFamilyType\r\n  ,MbrPAFromDate\r\n  ,MbrPriorAuthorizationNbr\r\n  ,MemberFamilyID\r\n  ,PharmacyDispenserClass\r\n  ,PharmacyStoreNumber\r\n  ,PlanGPIListName\r\n  ,PlanNDCListName\r\n  ,PRDNameNameExt\r\n  ,PrescriberSpecialtyCode\r\n  ,PrimaryPrescriberFirstName\r\n  ,PrimaryPrescriberLastName\r\n  ,PrimaryPrescriberMiddleInitial\r\n  ,PrimaryPrescriberSpecialtyCode\r\n  ,ProviderLockID\r\n  ,ProviderLockQualifier\r\n  ,RejectCount\r\n  ,RejectMessage1\r\n  ,RejectMessage2\r\n  ,RejectMessage3\r\n  ,ReversalDateSubmitted\r\n  ,SbmCustomerLocation\r\n  ,SbmDURConflictCode\r\n  ,SbmDURInterventionCode\r\n  ,SbmDUROutcomeCode\r\n  ,SbmEligibilityClarificationCode\r\n  ,SbmGroupNbr\r\n  ,SbmLevelofService\r\n  ,SbmPatientFirstName\r\n  ,SbmPatientLastName\r\n  ,SbmPriorAuthorizationMedicalCertificationCode\r\n  ,SbmProcessorControlNbr\r\n  ,SbmUnitDoseIndicator\r\n  ,TimeClaimAdded\r\n  ,TotalOtherAmt\r\n  ,SubmittedMemberID\r\n  ,SubmittedBasisCostDetermination\r\n  ,CIN\r\n  ,CompoundSequenceNumber\r\n  ,CompoundProductIDQual\r\n  ,CompoundProductID\r\n  ,SubmittedCompoundIngredientQuantity\r\n  ,SubmittedCompoundBasisofCost\r\n  ,IngredientReBillCost\r\n  ,IngredientDrugStatus\r\n  ,Status\r\n  ,GPI\r\n  ,ReBillPriceSchedule\r\n  ,ReBillCostType\r\n  ,ReBillCostSource\r\n  ,RouteofAdmin\r\n  ,MetricQuantity\r\n  ,PricingTableName\r\n  ,ReBillPriceType\r\n  ,ReBillUnitIngredientCost\r\n  ,SCC08AppliedIndicator\r\n  ,ClientFundedAmount\r\n  ,ClientUnfundedAmount\r\n  ,PharmacyFundedAmount\r\n  ,FundedCopayAmount\r\n  ,UnfundedCoinsuranceamount\r\n  ,DrugTier\r\n  ,MedPartDIndicator\r\n  ,PANumberApplied\r\n  ,FundedUnfunded\r\n  ,CompoundProductName\r\n  ,TotalRecordCount\r\n  ,TotalNetAmountDue\r\n  ,overpunch(CASE WHEN RecordType = 'DE' THEN DaysSupply ELSE 0 END) AS ConvertedDaysSupply\r\n  ,overpunch(CASE WHEN RecordType = 'DE' THEN NetAmountDueTotalAmountBilledPaid ELSE 0 END) AS ConvertedNetAmountDueTotalAmountBilledPaid\r\n  ,overpunch(CASE WHEN RecordType = 'PT' THEN TotalNetAmountDue ELSE 0 END) AS ConvertedTotalNetAmountDue\r\nFROM UnionDetail\r\n\r\n",
+      "ControlFile": "WITH Header AS(\r\nSELECT \r\n   ReportingPeriodStartDate\r\n  ,ReportingPeriodEndDate\r\nFROM UnionDetail \r\nWHERE RecordType = 'PA'\r\n),\r\nTrailer AS(\r\nSELECT \r\n   CAST(SUM(TotalRecordCount) AS INT) AS TotalRecordCount\r\n  ,CAST(SUM(overpunch(TotalNetAmountDue)) AS BIGINT) AS TotalNetAmountDue\r\nFROM UnionDetail \r\nWHERE RecordType = 'PT'\r\n)\r\nSELECT \r\n   ReportingPeriodStartDate\r\n  ,ReportingPeriodEndDate\r\n  ,TotalRecordCount\r\n  ,TotalNetAmountDue\r\nFROM Header\r\n  CROSS JOIN Trailer"
+    }
+  ]
+}

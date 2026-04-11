@@ -1,0 +1,719 @@
+{
+  "Fields": [
+    {
+      "FieldName": "PlanID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "DataType": "StringType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "BeneficiaryIDOriginal",
+      "DataType": "StringType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "MBIIndicator",
+      "DataType": "StringType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "EnrollmentMonth",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "EnrollmentYear",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+	{
+      "FieldName": "EnrollmentYearMonth",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "Rundate",
+      "DataType": "DateType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "Lastname",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "FirstInitial",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "EnrollmentSource",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "PersonTotal",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "PlanBenefitPackage",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "NewPlanBenefitPackage",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "SegmentID",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "EghpFlag",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "RiskAdjusterFactorA",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "PartDRAFactor",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "Gendercode",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "DOB",
+      "DataType": "DateType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "Agegroup",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "AgedDisabledIdentifier",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "StateandCountyCode",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "OutOfAreaIndicator",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "Hospice",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "ESRD",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "AgedMsp",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "InstitutionalFlag",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "NHC",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "MedicaidBeneficiaryStatusFlag",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "MedicaidIndicator",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "CurrentMedicaidStatus",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "PartCDualStatusFlag",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "PartDDualStatusFlag",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "LTIFlag",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "PartDLowIncomeIndicator",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "PartDLongTermInstitutionalIndicator",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "PartCDefaultRiskFactorCode",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "ESRDMspFlag",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "RiskAdjusterAgeGroup",
+      "DataType": "StringType",
+      "Ordinal": 40
+    },
+    {
+      "FieldName": "PreviousDisableRatio",
+      "DataType": "StringType",
+      "Ordinal": 41
+    },
+    {
+      "FieldName": "DeMinimis",
+      "DataType": "StringType",
+      "Ordinal": 42
+    },
+    {
+      "FieldName": "RaceCode",
+      "DataType": "StringType",
+      "Ordinal": 43
+    },
+    {
+      "FieldName": "PartCRAFactorTypeCode",
+      "DataType": "StringType",
+      "Ordinal": 44
+    },
+    {
+      "FieldName": "FrailtyIndicator",
+      "DataType": "StringType",
+      "Ordinal": 45
+    },
+    {
+      "FieldName": "OriginalReasonforEntitlement",
+      "DataType": "StringType",
+      "Ordinal": 46
+    },
+    {
+      "FieldName": "LagIndicator",
+      "DataType": "StringType",
+      "Ordinal": 47
+    },
+    {
+      "FieldName": "EnrolledInPartAIndicator",
+      "DataType": "StringType",
+      "Ordinal": 48
+    },
+    {
+      "FieldName": "EnrolledInPartBIndicator",
+      "DataType": "StringType",
+      "Ordinal": 49
+    },
+    {
+      "FieldName": "EnrolledInPartCIndicator",
+      "DataType": "StringType",
+      "Ordinal": 50
+    },
+    {
+      "FieldName": "EnrolledInPartDIndicator",
+      "DataType": "StringType",
+      "Ordinal": 51
+    },
+    {
+      "FieldName": "FinalPartCStatus",
+      "DataType": "StringType",
+      "Ordinal": 52
+    },
+    {
+      "FieldName": "FinalPartDStatus",
+      "DataType": "StringType",
+      "Ordinal": 53
+    },
+    {
+      "FieldName": "DemographicPaymentAdjustmentRatePartA",
+      "DataType": "StringType",
+      "Ordinal": 54
+    },
+    {
+      "FieldName": "DemographicPaymentAdjustmentRatePartB",
+      "DataType": "StringType",
+      "Ordinal": 55
+    },
+    {
+      "FieldName": "RiskAdjusterPaymtAdjustmentRateA",
+      "DataType": "StringType",
+      "Ordinal": 56
+    },
+    {
+      "FieldName": "RiskAdjusterPaymtAdjustmentRateB",
+      "DataType": "StringType",
+      "Ordinal": 57
+    },
+    {
+      "FieldName": "RiskAdjusterPaymtAdjustmentRateAPlusRateB",
+      "DataType": "StringType",
+      "Ordinal": 58
+    },
+    {
+      "FieldName": "RiskAdjusterPaymtAdjustmentRateAPlusRateBSeq",
+      "DataType": "StringType",
+      "Ordinal": 59
+    },
+    {
+      "FieldName": "LISPremiumSubsidy",
+      "DataType": "StringType",
+      "Ordinal": 60
+    },
+    {
+      "FieldName": "PartCBasicPremiumPartAAmount",
+      "DataType": "StringType",
+      "Ordinal": 61
+    },
+    {
+      "FieldName": "PartCBasicPremiumPartBAmount",
+      "DataType": "StringType",
+      "Ordinal": 62
+    },
+    {
+      "FieldName": "PartCBasicPremiumPartAAmountPlusPartBAmout",
+      "DataType": "StringType",
+      "Ordinal": 63
+    },
+    {
+      "FieldName": "RebateCostshareA",
+      "DataType": "StringType",
+      "Ordinal": 64
+    },
+    {
+      "FieldName": "RebateCostshareB",
+      "DataType": "StringType",
+      "Ordinal": 65
+    },
+    {
+      "FieldName": "RebateforPartAPlusPartBCostSharingReduction",
+      "DataType": "StringType",
+      "Ordinal": 66
+    },
+    {
+      "FieldName": "RebateforPartAPlusPartBCostSharingReductionSeq",
+      "DataType": "StringType",
+      "Ordinal": 67
+    },
+    {
+      "FieldName": "RebateforOtherPartAMandatorySupplementalBenefits",
+      "DataType": "StringType",
+      "Ordinal": 68
+    },
+    {
+      "FieldName": "RebateforOtherPartBMandatorySupplementalBenefits",
+      "DataType": "StringType",
+      "Ordinal": 69
+    },
+    {
+      "FieldName": "RebateforOtherPartAPlusPartBMandatorySupplementalBenefits",
+      "DataType": "StringType",
+      "Ordinal": 70
+    },
+    {
+      "FieldName": "RebateforOtherPartAPlusPartBMandatorySupplementalBenefitsSeq",
+      "DataType": "StringType",
+      "Ordinal": 71
+    },
+    {
+      "FieldName": "RebateforPartBPremiumReductionPartAAmount",
+      "DataType": "StringType",
+      "Ordinal": 72
+    },
+    {
+      "FieldName": "RebateforPartBPremiumReductionPartBAmount",
+      "DataType": "StringType",
+      "Ordinal": 73
+    },
+    {
+      "FieldName": "RebateforPartBPremiumReductionPartAPlusPartBAmount",
+      "DataType": "StringType",
+      "Ordinal": 74
+    },
+    {
+      "FieldName": "RebateforPartBPremiumReductionPartAPlusPartBAmountSeq",
+      "DataType": "StringType",
+      "Ordinal": 75
+    },
+    {
+      "FieldName": "RebateforPartDSupplementalBenefitsPartAAmount",
+      "DataType": "StringType",
+      "Ordinal": 76
+    },
+    {
+      "FieldName": "RebateforPartDSupplementalBenefitsPartBAmount",
+      "DataType": "StringType",
+      "Ordinal": 77
+    },
+    {
+      "FieldName": "RebateforPartDSupplementalBenefitsPartAPlusPartBAmount",
+      "DataType": "StringType",
+      "Ordinal": 78
+    },
+    {
+      "FieldName": "RebateforPartDSupplementalBenefitsPartAPlusPartBAmountSeq",
+      "DataType": "StringType",
+      "Ordinal": 79
+    },
+    {
+      "FieldName": "TotalPartAPayment",
+      "DataType": "StringType",
+      "Ordinal": 80
+    },
+    {
+      "FieldName": "TotalPartBPayment",
+      "DataType": "StringType",
+      "Ordinal": 81
+    },
+    {
+      "FieldName": "TotalPartCPayment",
+      "DataType": "StringType",
+      "Ordinal": 82
+    },
+    {
+      "FieldName": "RebateForPartDBasicPremiumReduction",
+      "DataType": "StringType",
+      "Ordinal": 83
+    },
+    {
+      "FieldName": "RebateForPartDBasicPremiumReductionSeq",
+      "DataType": "StringType",
+      "Ordinal": 84
+    },
+    {
+      "FieldName": "PartDBasicPremiumAmount",
+      "DataType": "StringType",
+      "Ordinal": 85
+    },
+    {
+      "FieldName": "PartDDirectSubsidyPaymentAmount",
+      "DataType": "StringType",
+      "Ordinal": 86
+    },
+    {
+      "FieldName": "PartDDirectSubsidyPaymentAmountSeq",
+      "DataType": "StringType",
+      "Ordinal": 87
+    },
+    {
+      "FieldName": "ReinsuranceSubsidyAmount",
+      "DataType": "StringType",
+      "Ordinal": 88
+    },
+    {
+      "FieldName": "LowIncomeSubsidyCostSharingAmount",
+      "DataType": "StringType",
+      "Ordinal": 89
+    },
+    {
+      "FieldName": "TotalPartDPayment",
+      "DataType": "StringType",
+      "Ordinal": 90
+    },
+    {
+      "FieldName": "PacePremiumAddOn",
+      "DataType": "StringType",
+      "Ordinal": 91
+    },
+    {
+      "FieldName": "PaceCostSharingAddOn",
+      "DataType": "StringType",
+      "Ordinal": 92
+    },
+    {
+      "FieldName": "BeneficiaryDualandPartDEnrollmentStatusFlag",
+      "DataType": "StringType",
+      "Ordinal": 93
+    },
+    {
+      "FieldName": "PartCFrailtyScoreFactor",
+      "DataType": "StringType",
+      "Ordinal": 94
+    },
+    {
+      "FieldName": "MspFactor",
+      "DataType": "StringType",
+      "Ordinal": 95
+    },
+    {
+      "FieldName": "MspMemberMonths",
+      "DataType": "StringType",
+      "Ordinal": 96
+    },
+    {
+      "FieldName": "MspReductionAdjustmentAmountPartA",
+      "DataType": "StringType",
+      "Ordinal": 97
+    },
+    {
+      "FieldName": "MspReductionAdjustmentAmountPartB",
+      "DataType": "StringType",
+      "Ordinal": 98
+    },
+    {
+      "FieldName": "MspReductionAdjustmentPartAPlusPartBAmount",
+      "DataType": "StringType",
+      "Ordinal": 99
+    },
+    {
+      "FieldName": "MspReductionAdjustmentPartAPlusPartBAmountSeq",
+      "DataType": "StringType",
+      "Ordinal": 100
+    },
+    {
+      "FieldName": "MedicaidDualStatusCode",
+      "DataType": "StringType",
+      "Ordinal": 101
+    },
+    {
+      "FieldName": "GapDiscount",
+      "DataType": "StringType",
+      "Ordinal": 102
+    },
+    {
+      "FieldName": "GapDiscountSeq",
+      "DataType": "StringType",
+      "Ordinal": 103
+    },
+    {
+      "FieldName": "PdRafactype",
+      "DataType": "StringType",
+      "Ordinal": 104
+    },
+    {
+      "FieldName": "DefaultPdRa",
+      "DataType": "StringType",
+      "Ordinal": 105
+    },
+    {
+      "FieldName": "Finalmedicaidstatus",
+      "DataType": "StringType",
+      "Ordinal": 106
+    },
+    {
+      "FieldName": "Plantype",
+      "DataType": "StringType",
+      "Ordinal": 107
+    },
+    {
+      "FieldName": "PlanTypeSeparator",
+      "DataType": "StringType",
+      "Ordinal": 108
+    },
+    {
+      "FieldName": "BidNoRisk",
+      "DataType": "StringType",
+      "Ordinal": 109
+    },
+    {
+      "FieldName": "BidNoRiskSeq",
+      "DataType": "StringType",
+      "Ordinal": 110
+    },
+    {
+      "FieldName": "PartCCountyLevelPaymentRate",
+      "DataType": "StringType",
+      "Ordinal": 111
+    },
+    {
+      "FieldName": "PartCCountyLevelPaymentRateSeq",
+      "DataType": "StringType",
+      "Ordinal": 112
+    },
+    {
+      "FieldName": "RSPTCBIDMedicaidStatus",
+      "DataType": "StringType",
+      "Ordinal": 113
+    },
+    {
+      "FieldName": "BeneficiaryPartCDEGroup",
+      "DataType": "StringType",
+      "Ordinal": 114
+    },
+    {
+      "FieldName": "BeneficiaryPartCEsrdGroup",
+      "DataType": "StringType",
+      "Ordinal": 115
+    },
+    {
+      "FieldName": "BeneficiaryPartCMedicaidStatus",
+      "DataType": "StringType",
+      "Ordinal": 116
+    },
+    {
+      "FieldName": "BeneficiaryPartCDualStatus",
+      "DataType": "StringType",
+      "Ordinal": 117
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreBaseUnnormalizedEDS",
+      "DataType": "StringType",
+      "Ordinal": 118
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreProjUnnormalizedEDS",
+      "DataType": "StringType",
+      "Ordinal": 119
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreBaseNormalizedForEDS",
+      "DataType": "StringType",
+      "Ordinal": 120
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreProjNormalizedForEDS",
+      "DataType": "StringType",
+      "Ordinal": 121
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreBaseUnNormalizedForEDS",
+      "DataType": "StringType",
+      "Ordinal": 122
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreProjUnNormalizedForEDS",
+      "DataType": "StringType",
+      "Ordinal": 123
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreBaseUnNormalizedRAPS",
+      "DataType": "StringType",
+      "Ordinal": 124
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreBaseNormalizedForRAPS",
+      "DataType": "StringType",
+      "Ordinal": 125
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskScoreBaseUnNormalizedForRAPS",
+      "DataType": "StringType",
+      "Ordinal": 126
+    },
+    {
+      "FieldName": "BeneficiaryPartCRiskcohort",
+      "DataType": "StringType",
+      "Ordinal": 127
+    },
+    {
+      "FieldName": "BeneficiaryPartCFlag",
+      "DataType": "StringType",
+      "Ordinal": 128
+    },
+    {
+      "FieldName": "BeneficiaryPartCFrailtyMemberMonths",
+      "DataType": "StringType",
+      "Ordinal": 129
+    },
+    {
+      "FieldName": "PartDBeneficiaryFileBeneficiaryStatus",
+      "DataType": "StringType",
+      "Ordinal": 130
+    },
+    {
+      "FieldName": "PartDBeneficiaryFileEDSRiskScore",
+      "DataType": "StringType",
+      "Ordinal": 131
+    },
+    {
+      "FieldName": "PartDBeneficiaryFileRAPSRiskScore",
+      "DataType": "StringType",
+      "Ordinal": 132
+    },
+    {
+      "FieldName": "PartDBeneficiaryFileProjEdsRiskScore",
+      "DataType": "StringType",
+      "Ordinal": 133
+    },
+    {
+      "FieldName": "BeneficiaryFilePartDStatus",
+      "DataType": "StringType",
+      "Ordinal": 134
+    },
+    {
+      "FieldName": "BeneficiaryFilePartDFlag",
+      "DataType": "StringType",
+      "Ordinal": 135
+    },
+    {
+      "FieldName": "Groupnumber",
+      "DataType": "StringType",
+      "Ordinal": 136
+    },
+    {
+      "FieldName": "GroupSuffix",
+      "DataType": "StringType",
+      "Ordinal": 137
+    },
+	{
+      "FieldName": "CMMRFileCreateDate",
+      "DataType": "DateType",
+      "Ordinal": 138
+    },
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 139
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 140
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 141
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 142
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 143
+    }
+  ]
+}

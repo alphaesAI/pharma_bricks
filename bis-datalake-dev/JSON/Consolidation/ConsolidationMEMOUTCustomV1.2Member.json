@@ -1,0 +1,512 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "TransactionType",
+          "Value": "DEM"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "TransactionType",
+          "DestinationColumn": "TransactionType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimsSubscriberIDNumber",
+          "DestinationColumn": "SubscriberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StartDate",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EndDate",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SubscriberFlag",
+          "DestinationColumn": "SubscriberFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HICN",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberName",
+          "DestinationColumn": "FullName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberLastName",
+          "DestinationColumn": "LastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberFirstName",
+          "DestinationColumn": "FirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MiddleInitial",
+          "DestinationColumn": "MiddleInitial",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberTitle",
+          "DestinationColumn": "Title",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "GatewayMemberStatus",
+          "DestinationColumn": "GateWayMemberStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AlternateMemberID",
+          "DestinationColumn": "AlternateMemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberDOB",
+          "DestinationColumn": "DateofBirth",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberDateofDeath",
+          "DestinationColumn": "DeceasedDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberGender",
+          "DestinationColumn": "Gender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberSocialSecurityNumber",
+          "DestinationColumn": "MemberSSN",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentAddress1",
+          "DestinationColumn": "PermanentAddressLine1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentAddress2",
+          "DestinationColumn": "PermanentAddressLine2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentAddress3",
+          "DestinationColumn": "PermanentAddressLine3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentCity",
+          "DestinationColumn": "PermanentCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentCounty",
+          "DestinationColumn": "PermanentCounty",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentState",
+          "DestinationColumn": "PermanentState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentSCC",
+          "DestinationColumn": "PermanentSCC",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberPermanentZipCode",
+          "DestinationColumn": "PermanentZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingAddress1",
+          "DestinationColumn": "MailingAddressLine1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingAddress2",
+          "DestinationColumn": "MailingAddressLine2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingAddress3",
+          "DestinationColumn": "MailingAddressLine3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingCity",
+          "DestinationColumn": "MailingCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingState",
+          "DestinationColumn": "MailingState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMailingZipCode",
+          "DestinationColumn": "MailingZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "MemberBillingAddress1",
+          "DestinationColumn": "BillingAddressLine1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingAddress2",
+          "DestinationColumn": "BillingAddressLine2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingAddress3",
+          "DestinationColumn": "BillingAddressLine3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingCity",
+          "DestinationColumn": "BillingCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingState",
+          "DestinationColumn": "BillingState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberBillingZipCode",
+          "DestinationColumn": "BillingZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberHomePhoneNumber",
+          "DestinationColumn": "PhoneNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AlternateMemberPhoneNumber",
+          "DestinationColumn": "AlternatePhoneNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberEmailAddress",
+          "DestinationColumn": "Email",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NameofEmergencyContact",
+          "DestinationColumn": "EmergencyContactName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EmergencyContactRelationshiptoMember",
+          "DestinationColumn": "EmergencyContactRelationship",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EmergencyContactPhoneNumber",
+          "DestinationColumn": "EmergencyContactPhoneNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "IDCardTriggerflag",
+          "DestinationColumn": "IDCardTriggerflag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EndangeredMemberFlag",
+          "DestinationColumn": "EndangeredMemberFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberinOOAProcess",
+          "DestinationColumn": "OOAProcess",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SourceforplacinginOOAprocess",
+          "DestinationColumn": "OOASource",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DateofMove",
+          "DestinationColumn": "DateofMove",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MoveDeadline",
+          "DestinationColumn": "MoveDeadline",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicaidID",
+          "DestinationColumn": "MedicaidID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicarePartAEffDate",
+          "DestinationColumn": "MedicarePartAEffDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicarePartAEndDate",
+          "DestinationColumn": "MedicarePartAEndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Medicare_Part_B_Eff_Date",
+          "DestinationColumn": "MedicarePartBEffDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Medicare_Part_B_End_Date",
+          "DestinationColumn": "MedicarePartBEndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicarePartDEffDate",
+          "DestinationColumn": "MedicarePartDEffDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicarePartDEndDate",
+          "DestinationColumn": "MedicarePartDEndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LanguageCode",
+          "DestinationColumn": "Languagecode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AlternativeFormatLargePrint",
+          "DestinationColumn": "AlternativeFormatLargePrint",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AlternativeFormatBraille",
+          "DestinationColumn": "AlternativeFormatBraille",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AlternativeFormatAudioTape",
+          "DestinationColumn": "AlternativeFormatAudioTape",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FaxNumber",
+          "DestinationColumn": "Fax",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "InLEPProcessStatus",
+          "DestinationColumn": "InLEPProcessStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAName",
+          "DestinationColumn": "POAName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAAddress1",
+          "DestinationColumn": "POAAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAAddress2",
+          "DestinationColumn": "POAAddress2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAAddress3",
+          "DestinationColumn": "POAAddress3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POACity",
+          "DestinationColumn": "POACity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POACounty",
+          "DestinationColumn": "POACounty",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAState",
+          "DestinationColumn": "POAState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAZipCode",
+          "DestinationColumn": "POAZipCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POAPhoneNumber",
+          "DestinationColumn": "POAPhoneNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POARelationship",
+          "DestinationColumn": "POARelationShip",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RaceCode",
+          "DestinationColumn": "RaceCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ikaUniqueID",
+          "DestinationColumn": "ikaUniqueID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FamilyLinkIndicator",
+          "DestinationColumn": "FamilyLinkIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "InPremiumDelinquencyProcess",
+          "DestinationColumn": "InPremiumDelinquencyProcess",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Ethnicity",
+          "DestinationColumn": "EthnicityCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },              
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "FullRowHash",
+          "ColumnQuery": "sha2(concat('|',COALESCE(TransactionType,''),'|',COALESCE(ClaimsSubscriberIDNumber,''),'|',COALESCE(StartDate,''),'|',COALESCE(EndDate,''),'|',COALESCE(SubscriberFlag,''),'|',COALESCE(HICN,''),'|',COALESCE(MemberName,''),'|',COALESCE(MemberLastName,''),'|',COALESCE(MemberFirstName,''),'|',COALESCE(MiddleInitial,''),'|',COALESCE(MemberTitle,''),'|',COALESCE(GatewayMemberStatus,''),'|',COALESCE(AlternateMemberID,''),'|',COALESCE(MemberDOB,''),'|',COALESCE(MemberDateofDeath,''),'|',COALESCE(MemberGender,''),'|',COALESCE(MemberSocialSecurityNumber,''),'|',COALESCE(MemberPermanentAddress1,''),'|',COALESCE(MemberPermanentAddress2,''),'|',COALESCE(MemberPermanentAddress3,''),'|',COALESCE(MemberPermanentCity,''),'|',COALESCE(MemberPermanentCounty,''),'|',COALESCE(MemberPermanentState,''),'|',COALESCE(MemberPermanentSCC,''),'|',COALESCE(MemberPermanentZipCode,''),'|',COALESCE(MemberMailingAddress1,''),'|',COALESCE(MemberMailingAddress2,''),'|',COALESCE(MemberMailingAddress3,''),'|',COALESCE(MemberMailingCity,''),'|',COALESCE(MemberMailingState,''),'|',COALESCE(MemberMailingZipCode,''),'|',COALESCE(MemberBillingAddress1,''),'|',COALESCE(MemberBillingAddress2,''),'|',COALESCE(MemberBillingAddress3,''),'|',COALESCE(MemberBillingCity,''),'|',COALESCE(MemberBillingState,''),'|',COALESCE(MemberBillingZipCode,''),'|',COALESCE(MemberHomePhoneNumber,''),'|',COALESCE(AlternateMemberPhoneNumber,''),'|',COALESCE(MemberEmailAddress,''),'|',COALESCE(NameofEmergencyContact,''),'|',COALESCE(EmergencyContactRelationshiptoMember,''),'|',COALESCE(EmergencyContactPhoneNumber,''),'|',COALESCE(IDCardTriggerflag,''),'|',COALESCE(EndangeredMemberFlag,''),'|',COALESCE(MemberinOOAProcess,''),'|',COALESCE(SourceforplacinginOOAprocess,''),'|',COALESCE(DateofMove,''),'|',COALESCE(MoveDeadline,''),'|',COALESCE(MedicaidID,''),'|',COALESCE(MedicarePartAEffDate,''),'|',COALESCE(MedicarePartAEndDate,''),'|',COALESCE(Medicare_Part_B_Eff_Date,''),'|',COALESCE(Medicare_Part_B_End_Date,''),'|',COALESCE(MedicarePartDEffDate,''),'|',COALESCE(MedicarePartDEndDate,''),'|',COALESCE(LanguageCode,''),'|',COALESCE(AlternativeFormatLargePrint,''),'|',COALESCE(AlternativeFormatBraille,''),'|',COALESCE(AlternativeFormatAudioTape,''),'|',COALESCE(FaxNumber,''),'|',COALESCE(InLEPProcessStatus,''),'|',COALESCE(POAName,''),'|',COALESCE(POAAddress1,''),'|',COALESCE(POAAddress2,''),'|',COALESCE(POAAddress3,''),'|',COALESCE(POACity,''),'|',COALESCE(POACounty,''),'|',COALESCE(POAState,''),'|',COALESCE(POAZipCode,''),'|',COALESCE(POAPhoneNumber,''),'|',COALESCE(POARelationship,''),'|',COALESCE(RaceCode,''),'|',COALESCE(ikaUniqueID,''),'|',COALESCE(FamilyLinkIndicator,''),'|',COALESCE(InPremiumDelinquencyProcess,''),'|',COALESCE(Ethnicity,''),'|',COALESCE(FILE_ID,''),'|',COALESCE(FILE_LAYOUT_ID,''),'|',COALESCE(FILE_LAYOUT_DESCRIPTION,''),'|',COALESCE(CLIENT_ID,''),'|',COALESCE(LOAD_DATETIME,'')),256)",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

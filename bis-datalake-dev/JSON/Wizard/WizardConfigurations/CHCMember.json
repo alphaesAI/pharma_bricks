@@ -1,0 +1,13 @@
+{
+  "SourceTable": "#clientCode/consolidated/ACA/Data/Member",
+  "SourceTableMountPoint": "DataLake",
+  "LOB": "ACA",
+  "BatchTable": "#clientCode/BatchAudit/ACA/CHCMemberBatch",
+  "BatchTableMountPoint": "Export",
+  "ExportFilePath": "#clientCode/ACA/CHCMember",
+  "ExportFileMountPoint": "Export",
+  "ExportFileNamingConvention": "CHCMember_<LOB>_<BatchId>_<DateTime>",
+  "ExportFileNamingExtension": ".json",
+  "ExportQuery": "select uniquePersonKey,\r\nbeneficiaryID,\r\nmedicaidID,\r\nnamed_struct('first',FirstName,'last',LastName,'middle',MiddleInitial) as name,\r\ndate_format(dateOfBirth, 'MM\/dd\/yyyy') as dateOfBirth,\r\nifnull(gender,'U')  as gender,\r\nnamed_struct('line1', PermanentAddressLine1, \"line2\", PermanentAddressLine2, 'city',PermanentCity, 'state', PermanentState, 'zipCode',  PermanentZipCode, 'county', PermanentCounty) as  permanent,\r\nPhoneNumber as telephone,\r\nemail,\r\nfax,\r\nnamed_struct('line1', MailingAddressLine1, \"line2\", MailingAddressLine2, 'city',MailingCity, 'state', MailingState, 'zipCode',  MailingZipCode, 'county', MailingCounty) as mailing,\r\nnamed_struct('first',POAFirstName,'last',POALastName,'middle',POAMiddleInitial) as caretaker,\r\n'9' as race, \r\n'28' as raceDataSource, \r\n'19' as ethnicity,\r\n'98' as ethnicityDataSource, \r\n'39' as spokeLanguage,\r\n'41' as spokeLanguageSource,\r\nifnull(WrittenLanguageCode, '59') as writtenLanguage, \r\nifnull(WrittenLanguageSourceCode, '61') as writtenLanguageSource, \r\nifnull(otherLanguage, '79') as otherLanguage,\r\nifnull(OtherLanguageSourceCode, '81') as otherLanguageSource, \r\nifnull(usCitizen, 'M') as usCitizen,\r\ndate_format(deceasedDate, 'MM\/dd\/yyyy') as deceasedDate,\r\nmaskedMemberId,\r\nenrolleeEducation,\r\nenrolleeEmployment,\r\narray(AlternateKey1,AlternateKey2,AlternateKey3,AlternateKey4,AlternateKey5,AlternateKey6,AlternateKey7,AlternateKey8,AlternateKey9,AlternateKey10) as  alternateKey\r\nfrom QueryResult\r\nwhere FileLayoutDescription = 'CHCMember'\r\n AND ifnull(PlanMemberID,'')<>''\r\nand ifnull(FirstName,'')<>''\r\nand ifnull(Gender,'')<>''\r\nand ifnull(LastName,'')<>''\r\nand ifnull(PermanentAddressLine1,'')<>''\r\nand ifnull(PermanentCity,'')<>''\r\nand ifnull(DateOfBirth,'')<>''\r\nand ifnull(PermanentState,'')<>''\r\nand ifnull(PermanentZipCode,'')<>''\r\n",
+  "FilterTables": []
+}

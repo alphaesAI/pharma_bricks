@@ -1,0 +1,37 @@
+CREATE TABLE [devidap1].[gold_ma_gapsincare]
+( 
+	 [gapsInCareID] bigint NULL
+	,[yearMonth] int NULL
+	,[planMemberID] nvarchar(100) NULL
+	,[measureID] bigint NULL
+	,[subMeasureID] int NULL
+	,[measureCode] nvarchar(40) NULL
+	,[measureName] nvarchar(200) NULL
+	,[numerCnt] int NULL
+	,[denomCnt] int NULL
+	,[eventName] nvarchar(200) NULL
+	,[dateOfService] date NULL
+	,[providerID] nvarchar(50) NULL
+	,[providerName] nvarchar(400) NULL
+	,[dataLoadName] nvarchar(200) NULL
+	,[dataFileName] nvarchar(200) NULL
+	,[expectedRate] decimal(28,10) NULL
+	,[serviceNeededByDate] date NULL
+	,[PDC] decimal(28,10) NULL
+	,[lastHBVal] decimal(28,10) NULL
+	,[lastHBDate] date NULL
+	,[lastBPDia] int NULL
+	,[lastBPSys] int NULL
+	,[lastBPDate] date NULL
+	,[category] nvarchar(2000) NULL
+	,[memberServiceMeasureID] int NULL
+	,[memberMeasureID] int NULL
+	,[serviceMeasureID] int NULL
+	,[flaggedEventID] int NULL
+	,[pharmacyQualGapID] int NULL
+	,[pharmacyQualGapSUPDID] int NULL
+	,[claimNumber] nvarchar(200) NULL
+	,[creationDateTime] datetime2(7) NULL
+	,[HashRowKey] int NULL
+	,[hbTest] int NULL
+) 

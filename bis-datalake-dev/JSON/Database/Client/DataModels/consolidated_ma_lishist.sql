@@ -1,0 +1,29 @@
+CREATE TABLE #clientCode.consolidated_ma_lishist (
+ ClientID  string
+,FileID  int
+,LoadDateTime date
+,FileLayoutID  int
+,FileLayoutDescription  string
+,RecordType  string
+,MCOContractNumber  string
+,PBPNumber  string
+,BeneficiaryID  string
+,Surname  string
+,FirstName  string
+,MiddleInitial  string
+,Sex  string
+,DateofBirth  int
+,LowIncomePeriodStartDate  int
+,LowIncomePeriodEndDate  int
+,LIPSpercentage  string
+,PremiumLISAmount  string
+,LowIncomeCoPayLevelID  int
+,BeneficiarySourceofSubsidyCode  string
+,LISActivityFlag  string
+,PBPStartDate  int
+,NetPartDPremiumAmount  string
+,ContractYear  int
+,InstitutionalStatusIndicator  int
+,PBPEnrollmentTerminationDate  int
+,Filler  string
+) USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/LISHIST'

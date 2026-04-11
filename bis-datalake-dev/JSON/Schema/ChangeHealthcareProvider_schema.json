@@ -1,0 +1,402 @@
+{
+   "ColumnNames": [
+      {
+         "FieldName": "TEMPLATE",
+         "OrdinalPosition": -1,
+         "DataType": "TEMPLATE",
+         "Validators": [
+            {
+               "Name": "TEMPLATE",
+               "Value": "TEMPLATE",
+               "InputValue": [
+                  "TEMPLATE"
+               ],
+               "ConditionCol": "TEMPLATE",
+               "ConditionVal": [
+                  "TEMPLATE"
+               ]
+            }
+         ]
+      },
+      {
+         "FieldName": "PROVIDER_ID",
+         "OrdinalPosition": 0,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "ORIG_PROVIDER_ID",
+         "OrdinalPosition": 1,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEDICAID_PROVIDER_ID",
+         "OrdinalPosition": 2,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "NATIONAL_PROVIDER_ID",
+         "OrdinalPosition": 3,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "COMMON_PRACTITIONER_ID",
+         "OrdinalPosition": 4,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_CLASS",
+         "OrdinalPosition": 5,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_FIRST_NAME",
+         "OrdinalPosition": 6,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_LAST_NAME",
+         "OrdinalPosition": 7,
+         "DataType": "string"         
+      },
+      {
+         "FieldName": "PROVIDER_MID_INITIAL",
+         "OrdinalPosition": 8,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_TITLE",
+         "OrdinalPosition": 9,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SUB_PROJECT_ID",
+         "OrdinalPosition": 10,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SUB_PROJECT_NAME",
+         "OrdinalPosition": 11,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_ADDRESS1",
+         "OrdinalPosition": 12,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_ADDRESS2",
+         "OrdinalPosition": 13,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_CITY",
+         "OrdinalPosition": 14,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_STATE",
+         "OrdinalPosition": 15,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_ZIP",
+         "OrdinalPosition": 16,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_COUNTY",
+         "OrdinalPosition": 17,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_REGION",
+         "OrdinalPosition": 18,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "ADDRESS_TYPE",
+         "OrdinalPosition": 19,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PRIMARY_LOCATION",
+         "OrdinalPosition": 20,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_PHONE",
+         "OrdinalPosition": 21,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_FAX",
+         "OrdinalPosition": 22,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_ADDRESS1",
+         "OrdinalPosition": 23,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_ADDRESS2",
+         "OrdinalPosition": 24,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_CITY",
+         "OrdinalPosition": 25,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_STATE",
+         "OrdinalPosition": 26,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_ZIP",
+         "OrdinalPosition": 27,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_COUNTY",
+         "OrdinalPosition": 28,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_PHONE",
+         "OrdinalPosition": 29,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CHART_FAX",
+         "OrdinalPosition": 30,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_EMAIL_ADDRESS",
+         "OrdinalPosition": 31,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CLAIMS_SUBMISSION_METHOD",
+         "OrdinalPosition": 32,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CONTRACT_TYPE",
+         "OrdinalPosition": 33,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_EFF_DATE",
+         "OrdinalPosition": 34,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROVIDER_TERM_DATE",
+         "OrdinalPosition": 35,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "TAXONOMY_CODE",
+         "OrdinalPosition": 36,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "FEDERAL_TAX_ID",
+         "OrdinalPosition": 37,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "STATE_LICENCE_NUMBER",
+         "OrdinalPosition": 38,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "DEA",
+         "OrdinalPosition": 39,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SPECIALTY_ID",
+         "OrdinalPosition": 40,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PCP_INDICATOR",
+         "OrdinalPosition": 41,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PROV_PRES",
+         "OrdinalPosition": 42,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PHARMACY_NABP",
+         "OrdinalPosition": 43,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "TYPE",
+         "OrdinalPosition": 44,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MA_TYPE",
+         "OrdinalPosition": 45,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BOARD_CERT",
+         "OrdinalPosition": 46,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CURRENT_PAR_IND",
+         "OrdinalPosition": 47,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "EXCLUDE_FROM_CHART_PURSUIT",
+         "OrdinalPosition": 48,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER1",
+         "OrdinalPosition": 49,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER2",
+         "OrdinalPosition": 50,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER3",
+         "OrdinalPosition": 51,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SERVICE_LOCATION_ID",
+         "OrdinalPosition": 52,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PHONE_NUMBER",
+         "OrdinalPosition": 53,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER4",
+         "OrdinalPosition": 54,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER5",
+         "OrdinalPosition": 55,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER6",
+         "OrdinalPosition": 56,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER7",
+         "OrdinalPosition": 57,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER8",
+         "OrdinalPosition": 58,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER9",
+         "OrdinalPosition": 59,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER10",
+         "OrdinalPosition": 60,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER11",
+         "OrdinalPosition": 61,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER12",
+         "OrdinalPosition": 62,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER13",
+         "OrdinalPosition": 63,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER14",
+         "OrdinalPosition": 64,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER15",
+         "OrdinalPosition": 65,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER16",
+         "OrdinalPosition": 66,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER17",
+         "OrdinalPosition": 67,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER18",
+         "OrdinalPosition": 68,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER19",
+         "OrdinalPosition": 69,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_PROVIDER20",
+         "OrdinalPosition": 70,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CONTACT_FIRST_NAME",
+         "OrdinalPosition": 71,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CONTACT_LAST_NAME",
+         "OrdinalPosition": 72,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SPECIALTY_ID2",
+         "OrdinalPosition": 73,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "ALTEGRA_PROVIDER_ID",
+         "OrdinalPosition": 74,
+         "DataType": "string"
+      }
+   ]
+}

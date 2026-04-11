@@ -1,0 +1,656 @@
+{
+    "columnMapping": [
+        {
+        "recordType": [
+            {
+                "Field": "LINE_ID",
+                "Value": "1"
+            }
+        ],
+        "selectColumns": [
+                {
+                    "SourceColumn": "",
+                    "DestinationColumn": "GeneratedMedicalClaimsUniqueKey",
+                    "ColumnQuery": "CONCAT(COALESCE(CLAIM_ID,''),'-',COALESCE(FILE_ID,''),'-',COALESCE(CLIENT_ID,''))",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FILE_ID",
+                    "DestinationColumn": "FileID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_ID",
+                    "DestinationColumn": "FileLayoutID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLIENT_ID",
+                    "DestinationColumn": "ClientID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LOAD_DATETIME",
+                    "DestinationColumn": "LoadDateTime",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+                    "DestinationColumn": "FileLayoutDescription",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_ID",
+                    "DestinationColumn": "ClaimNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_STATUS",
+                    "DestinationColumn": "ClaimStatus",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FINALIZED_DATE",
+                    "DestinationColumn": "ClaimProcessDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "MEMBER_ACCT_NUMBER",
+                    "DestinationColumn": "MemberAcctNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "MEMBER_MED_REC_NUMBER",
+                    "DestinationColumn": "MemberMedRecNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_RECEIVED_DATE",
+                    "DestinationColumn": "ClaimReceivedDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "CLAIM_WITHHOLD_AMOUNT",
+                    "DestinationColumn": "WithholdAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PAID_DATE",
+                    "DestinationColumn": "PaidDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "CLAIM_PAID_AMOUNT",
+                    "DestinationColumn": "ClaimPaidAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_ADMIT_DATE",
+                    "DestinationColumn": "AdmissionDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "CLAIM_DISCHARGE_DATE",
+                    "DestinationColumn": "DischargeDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "STATEMENT_COVERS_FROM_DT",
+                    "DestinationColumn": "StatementCoversFromDt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "STATEMENT_COVERS_TO_DT",
+                    "DestinationColumn": "StatementCoversToDt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "BILL_TYPE",
+                    "DestinationColumn": "BillTypeCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DAYS_DENIED",
+                    "DestinationColumn": "DaysDenied",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_TYPE",
+                    "DestinationColumn": "ClaimTypeInd",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ADMIT_DIAGNOSIS",
+                    "DestinationColumn": "AdmitDiagCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ICD_INDICATOR",
+                    "DestinationColumn": "ICDVersion",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PRINCIPAL_DIAGNOSIS",
+                    "DestinationColumn": "PrimaryDiagCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG2",
+                    "DestinationColumn": "DiagCode2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG3",
+                    "DestinationColumn": "DiagCode3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG4",
+                    "DestinationColumn": "DiagCode4",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG5",
+                    "DestinationColumn": "DiagCode5",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG6",
+                    "DestinationColumn": "DiagCode6",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG7",
+                    "DestinationColumn": "DiagCode7",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG8",
+                    "DestinationColumn": "DiagCode8",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG9",
+                    "DestinationColumn": "DiagCode9",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG10",
+                    "DestinationColumn": "DiagCode10",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG11",
+                    "DestinationColumn": "DiagCode11",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG12",
+                    "DestinationColumn": "DiagCode12",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG13",
+                    "DestinationColumn": "DiagCode13",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG14",
+                    "DestinationColumn": "DiagCode14",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG15",
+                    "DestinationColumn": "DiagCode15",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG16",
+                    "DestinationColumn": "DiagCode16",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG17",
+                    "DestinationColumn": "DiagCode17",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG18",
+                    "DestinationColumn": "DiagCode18",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG19",
+                    "DestinationColumn": "DiagCode19",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG20",
+                    "DestinationColumn": "DiagCode20",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG21",
+                    "DestinationColumn": "DiagCode21",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG22",
+                    "DestinationColumn": "DiagCode22",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG23",
+                    "DestinationColumn": "DiagCode23",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG24",
+                    "DestinationColumn": "DiagCode24",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG25",
+                    "DestinationColumn": "DiagCode25",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DIAG26",
+                    "DestinationColumn": "DiagCode26",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE1",
+                    "DestinationColumn": "PrimaryProcCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE1",
+                    "DestinationColumn": "PrimaryProcCodeDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE2",
+                    "DestinationColumn": "PrimaryProcCode2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE2",
+                    "DestinationColumn": "PrimaryProcCode2Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE3",
+                    "DestinationColumn": "PrimaryProcCode3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE3",
+                    "DestinationColumn": "PrimaryProcCode3Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE4",
+                    "DestinationColumn": "PrimaryProcCode4",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE4",
+                    "DestinationColumn": "PrimaryProcCode4Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE5",
+                    "DestinationColumn": "PrimaryProcCode5",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE5",
+                    "DestinationColumn": "PrimaryProcCode5Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE6",
+                    "DestinationColumn": "PrimaryProcCode6",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE6",
+                    "DestinationColumn": "PrimaryProcCode6Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE7",
+                    "DestinationColumn": "PrimaryProcCode7",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE7",
+                    "DestinationColumn": "PrimaryProcCode7Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE8",
+                    "DestinationColumn": "PrimaryProcCode8",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE8",
+                    "DestinationColumn": "PrimaryProcCode8Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE9",
+                    "DestinationColumn": "PrimaryProcCode9",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE9",
+                    "DestinationColumn": "PrimaryProcCode9Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE10",
+                    "DestinationColumn": "PrimaryProcCode10",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE10",
+                    "DestinationColumn": "PrimaryProcCode10Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE11",
+                    "DestinationColumn": "PrimaryProcCode11",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE11",
+                    "DestinationColumn": "PrimaryProcCode11Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE12",
+                    "DestinationColumn": "PrimaryProcCode12",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE12",
+                    "DestinationColumn": "PrimaryProcCode12Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE13",
+                    "DestinationColumn": "PrimaryProcCode13",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE13",
+                    "DestinationColumn": "PrimaryProcCode13Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE14",
+                    "DestinationColumn": "PrimaryProcCode14",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE14",
+                    "DestinationColumn": "PrimaryProcCode14Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE15",
+                    "DestinationColumn": "PrimaryProcCode15",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE15",
+                    "DestinationColumn": "PrimaryProcCode15Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE16",
+                    "DestinationColumn": "PrimaryProcCode16",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE16",
+                    "DestinationColumn": "PrimaryProcCode16Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE17",
+                    "DestinationColumn": "PrimaryProcCode17",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE17",
+                    "DestinationColumn": "PrimaryProcCode17Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE18",
+                    "DestinationColumn": "PrimaryProcCode18",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE18",
+                    "DestinationColumn": "PrimaryProcCode18Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE19",
+                    "DestinationColumn": "PrimaryProcCode19",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE19",
+                    "DestinationColumn": "PrimaryProcCode19Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE20",
+                    "DestinationColumn": "PrimaryProcCode20",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE20",
+                    "DestinationColumn": "PrimaryProcCode20Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE21",
+                    "DestinationColumn": "PrimaryProcCode21",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE21",
+                    "DestinationColumn": "PrimaryProcCode21Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE22",
+                    "DestinationColumn": "PrimaryProcCode22",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE22",
+                    "DestinationColumn": "PrimaryProcCode22Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE23",
+                    "DestinationColumn": "PrimaryProcCode23",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE23",
+                    "DestinationColumn": "PrimaryProcCode23Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE24",
+                    "DestinationColumn": "PrimaryProcCode24",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROCEDURE_DATE24",
+                    "DestinationColumn": "PrimaryProcCode24Date",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "TOTAL_BILL_AMT",
+                    "DestinationColumn": "ClaimTotalChargeAmount",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "BILL_PROVIDER_ID",
+                    "DestinationColumn": "BillingProviderID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "BILL_PROVIDER_NPI",
+                    "DestinationColumn": "BillingProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "BILL_PROVIDER_TAX_ID",
+                    "DestinationColumn": "BillingProviderTIN",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ATTENDING_PROVIDER_NPI",
+                    "DestinationColumn": "AttendingProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DESTINATION_CODE",
+                    "DestinationColumn": "DischargeStatusCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ORIGINAL_CLAIM_ID",
+                    "DestinationColumn": "OriginalClaimNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "COMMERCIAL_PLAN_ID",
+                    "DestinationColumn": "ProductID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "MEMBER_ID",
+                    "DestinationColumn": "UniquePersonKey",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                }
+            ]
+        }
+    ]
+}

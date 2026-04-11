@@ -1,0 +1,29 @@
+CREATE TABLE #clientCode.gold_ma_q360providerlookup (
+ProviderID string
+,ProviderNPI string
+,Taxonomy string
+,SpecialtyCode string
+,Prescriber string
+,InNetworkFlag string
+,FirstName string
+,LastName string
+,LocationID string
+,LocationName string
+,LocationType string
+,ServiceLocation string
+,Address1 string
+,Address2 string
+,City string
+,State string
+,Zip string
+,Country string
+,AddressType string
+,Phone1 string
+,Phone2 string
+,Fax string
+,Email string
+,TIN string
+,ProviderGroupName string
+,ProviderType string
+,LoadDateTime timestamp
+) USING delta LOCATION '/mnt/#clientCode/Gold/MA/Q360/Q360ProviderLookup'

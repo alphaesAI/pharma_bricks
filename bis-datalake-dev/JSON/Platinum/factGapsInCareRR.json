@@ -1,0 +1,53 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "factGapsInCareRR",
+      "DestinationTable": "#clientCode/Platinum/factGapsInCareRR",
+      "SourceTables": [
+        {
+          "Entity": "gold_ma_gapsincarerr",
+          "SourceTable": "#clientCode/Gold/MA/Quality/GapsInCareRR",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimProvider",
+          "SourceTable": "#clientCode/Platinum/dimProvider",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimprovidernpi",
+          "SourceTable": "global/Platinum/dimProviderNPI",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimQualityYearMonth",
+          "SourceTable": "global/Platinum/dimQualityYearMonth",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimMember",
+          "SourceTable": "#clientCode/Platinum/dimMember",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimQualityMeasure",
+          "SourceTable": "#clientCode/Platinum/dimQualityMeasure",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimQualityEvent",
+          "SourceTable": "#clientCode/Platinum/dimQualityEvent",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "platinum_dimDate",
+          "SourceTable": "global/Platinum/dimDate",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SQLScript": "with NPIKeyRaw AS(\r\n    -- NpiKey1: if gapsincarerr.providerID = dimProvider.providerID, then evaluate isCurrent provider's dimProvider.NPI against dimProviderNPI.NPI\r\n    -- NpiKey2: if gapsincarerr.providerID = dimProviderNPI.NPI\r\n    -- NpiKey3: if replace(gold_ma_gapsInCarerr.providerID,'npi-','') = dimProviderNPI.NPI\r\n    select gic.gapsInCareID, dimprovidernpi1.providerNPIKey as NpiKey1, dimprovidernpi2.providerNPIKey as NpiKey2, dimprovidernpi3.providerNPIKey as NpiKey3\r\n    from gold_ma_gapsincarerr gic\r\n        left join platinum_dimProvider dimProvider\r\n            on gic.providerID = dimProvider.providerID\r\n            and dimProvider.isCurrent = 1 \r\n        left join platinum_dimprovidernpi dimprovidernpi1\r\n            on dimProvider.npi = dimprovidernpi1.NPI\r\n            and dimProvider.providerKey is not null\r\n        left join platinum_dimprovidernpi dimprovidernpi2\r\n            on gic.providerID = dimprovidernpi2.NPI\r\n            and dimProvider.providerKey is null\r\n        left join platinum_dimprovidernpi dimprovidernpi3\r\n            on replace(lower(gic.providerID),'npi-','') = dimprovidernpi3.NPI\r\n            and dimProvider.providerKey is null\r\n),\r\nSourceRaw AS(\r\n    select distinct gic.gapsInCareID\r\n    ,ifnull(dimQualityYearMonth.qualityYearMonthKey, -1) as qualityYearMonthKey\r\n    ,ifnull(dimMember.memberKey, -1) as memberKey\r\n    ,ifnull(dimQualityMeasure.qualityMeasureKey, -1) as qualityMeasureKey\r\n    ,ifnull(dimQualityEvent.qualityEventKey, -1) as qualityEventKey\r\n    ,gic.numerCnt\r\n    ,gic.denomCnt\r\n    ,ifnull(dimDate1.dateKey, -1) as dateOfServiceDateKey\r\n    ,gic.providerID as gapsEventProviderKey\r\n    ,ifnull(dimProvider.providerKey, -1) as planProviderKey\r\n    ,coalesce(npi.NpiKey1, npi.NpiKey2, npi.NpiKey3, -1) as providerNPIKey \r\n    ,gic.expectedRate\r\n    ,ifnull(dimDate2.dateKey, -1) as serviceNeededByDateKey\r\n    ,gic.PDC as pdc\r\n    ,gic.lastHBVal\r\n    ,ifnull(dimDate3.dateKey, -1) as lastHBDateKey\r\n    ,gic.lastBPDia\r\n    ,gic.lastBPSys\r\n    ,gic.claimNumber\r\n    ,gic.hbTest   \r\n    from gold_ma_gapsincarerr gic\r\n        left join platinum_dimQualityYearMonth dimQualityYearMonth\r\n            on gic.yearMonth = concat(dimQualityYearMonth.yearNumber, lpad(dimQualityYearMonth.monthNumber,2,'0'))\r\n        left join platinum_dimMember dimMember\r\n            on gic.planMemberID = dimMember.planMemberID\r\n            and dimMember.isCurrent = 1\r\n        left join platinum_dimQualityMeasure dimQualityMeasure\r\n            on gic.measurecode = dimQualityMeasure.qualityMeasureCode\r\n            and left(gic.yearMonth, 4) = dimQualityMeasure.measureYear\r\n            and gic.measureName = dimQualityMeasure.qualityMeasureName\r\n        left join platinum_dimQualityEvent dimQualityEvent\r\n            on gic.eventName = dimQualityEvent.qualityEventDescription\r\n        left join platinum_dimDate dimDate1\r\n            on gic.dateOfService = dimDate1.date\r\n        left join platinum_dimDate dimDate2\r\n            on gic.serviceNeededByDate = dimDate2.date\r\n        left join platinum_dimDate dimDate3\r\n            on gic.lastHBDate = dimDate3.date\r\n        left join platinum_dimProvider dimProvider\r\n            on gic.providerID = dimProvider.providerID\r\n            and dimProvider.isCurrent = 1\r\n        left join NPIKeyRaw npi\r\n            on gic.gapsInCareID = npi.gapsInCareID\r\n)\r\nselect distinct gapsInCareID\r\n    ,qualityYearMonthKey\r\n    ,memberKey\r\n    ,qualityMeasureKey\r\n    ,qualityEventKey\r\n    ,numerCnt\r\n    ,denomCnt\r\n    ,dateOfServiceDateKey\r\n    ,gapsEventProviderKey\r\n    ,planProviderKey\r\n    ,providerNPIKey\r\n    ,expectedRate\r\n    ,serviceNeededByDateKey\r\n    ,pdc\r\n    ,lastHBVal\r\n    ,lastHBDateKey\r\n    ,lastBPDia\r\n    ,lastBPSys\r\n    ,claimNumber\r\n    ,hbTest\r\n    ,sha2(concat_ws('|', qualityYearMonthKey\r\n        ,memberKey\r\n        ,qualityMeasureKey\r\n        ,qualityEventKey\r\n        ,ifnull(numerCnt, '|')\r\n        ,ifnull(denomCnt, '|')\r\n        ,dateOfServiceDateKey\r\n        ,ifnull(gapsEventProviderKey, '|')\r\n        ,planProviderKey\r\n        ,providerNPIKey\r\n        ,ifnull(expectedRate, '|')\r\n        ,serviceNeededByDateKey\r\n        ,ifnull(pdc, '|')\r\n        ,ifnull(lastHBVal, '|')\r\n        ,lastHBDateKey\r\n        ,ifnull(lastBPDia, '|')\r\n        ,ifnull(lastBPSys, '|')\r\n        ,ifnull(claimNumber, '|')\r\n        ,ifnull(hbTest, '|'))\r\n    ,256) as fullRowHash\r\nfrom SourceRaw\r\n    ",
+      "DupScript": "SELECT gapsInCareID\r\n FROM tempSQLScript \r\n GROUP BY gapsInCareID\r\n HAVING COUNT(1) > 1\r\n\r\n",
+      "MergeScript": "MERGE INTO DestinationTable t\r\nUSING (SELECT * FROM tempSQLScript) s\r\n    ON s.gapsInCareID = t.gapsInCareID    \r\nWHEN MATCHED\r\nAND s.fullRowHash <> t.fullRowHash\r\nTHEN UPDATE SET\r\n     qualityYearMonthKey = s.qualityYearMonthKey\r\n    ,memberKey = s.memberKey\r\n    ,qualityMeasureKey = s.qualityMeasureKey\r\n    ,qualityEventKey = s.qualityEventKey\r\n    ,numerCnt = s.numerCnt\r\n    ,denomCnt = s.denomCnt\r\n    ,dateOfServiceDateKey = s.dateOfServiceDateKey\r\n    ,gapsEventProviderKey = s.gapsEventProviderKey\r\n    ,planProviderKey = s.planProviderKey\r\n    ,providerNPIKey = s.providerNPIKey\r\n    ,expectedRate = s.expectedRate\r\n    ,serviceNeededByDateKey = s.serviceNeededByDateKey\r\n    ,pdc = s.pdc\r\n    ,lastHBVal = s.lastHBVal\r\n    ,lastHBDateKey = s.lastHBDateKey\r\n    ,lastBPDia = s.lastBPDia\r\n    ,lastBPSys = s.lastBPSys\r\n    ,claimNumber = s.claimNumber\r\n    ,hbTest = s.hbTest\r\n    ,fullRowHash = s.fullRowHash\r\nWHEN NOT MATCHED \r\nTHEN INSERT\r\n(\r\n     gapsInCareID\r\n    ,qualityYearMonthKey\r\n    ,memberKey\r\n    ,qualityMeasureKey\r\n    ,qualityEventKey\r\n    ,numerCnt\r\n    ,denomCnt\r\n    ,dateOfServiceDateKey\r\n    ,gapsEventProviderKey\r\n    ,planProviderKey\r\n    ,providerNPIKey\r\n    ,expectedRate\r\n    ,serviceNeededByDateKey\r\n    ,pdc\r\n    ,lastHBVal\r\n    ,lastHBDateKey\r\n    ,lastBPDia\r\n    ,lastBPSys\r\n    ,claimNumber\r\n    ,hbTest\r\n    ,fullRowHash\r\n)\r\nVALUES\r\n(\r\n     s.gapsInCareID\r\n    ,s.qualityYearMonthKey\r\n    ,s.memberKey\r\n    ,s.qualityMeasureKey\r\n    ,s.qualityEventKey\r\n    ,s.numerCnt\r\n    ,s.denomCnt\r\n    ,s.dateOfServiceDateKey\r\n    ,s.gapsEventProviderKey\r\n    ,s.planProviderKey\r\n    ,s.providerNPIKey\r\n    ,s.expectedRate\r\n    ,s.serviceNeededByDateKey\r\n    ,s.pdc\r\n    ,s.lastHBVal\r\n    ,s.lastHBDateKey\r\n    ,s.lastBPDia\r\n    ,s.lastBPSys\r\n    ,s.claimNumber\r\n    ,s.hbTest\r\n    ,s.fullRowHash\r\n)\r\n"
+    }
+  ]
+}

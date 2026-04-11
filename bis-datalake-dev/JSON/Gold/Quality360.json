@@ -1,0 +1,69 @@
+{
+  "Quality360Files": [
+    {
+      "Entity": "Q360LISHIST",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360LISHIST.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360MonthlyMembershipDetail",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360MonthlyMembershipDetail.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "HedisEligibleMember",
+      "ConfigPath": "fileconfig/JSON/Gold/HedisEligibleMember.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360MemberEnrollment",
+      "ConfigPath": "",
+      "SubNotebook": "./Q360MemberEnrollmentProcessing"
+    }, 
+    {
+      "Entity": "Q360Membership",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360Membership.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360Visit",
+      "ConfigPath": "",
+      "SubNotebook": "./Q360VisitProcessing"
+    }, 
+    {
+      "Entity": "Q360EMRVisit",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360EMRVisit.json",
+      "SubNotebook": ""
+    }, 
+    {
+      "Entity": "Q360MemberPCP",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360MemberPCP.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360Lab",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360Lab.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360Pharmacy",
+      "ConfigPath": "",
+      "SubNotebook": "./Q360Pharmacy"
+    },
+    {
+      "Entity": "Q360AgeInPharmacy",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360AgeInPharmacy.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360ProviderLookup",
+      "ConfigPath": "fileconfig/JSON/Gold/Q360ProviderLookup.json",
+      "SubNotebook": ""
+    },
+    {
+      "Entity": "Q360Provider",
+      "ConfigPath": "",
+      "SubNotebook": "./Q360ProviderProcessing"
+    }
+  ]
+}

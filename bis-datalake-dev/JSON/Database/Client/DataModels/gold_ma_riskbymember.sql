@@ -1,0 +1,41 @@
+CREATE TABLE #clientCode.gold_ma_riskbymember (
+ clientCode string
+,snapshotdate date
+,reportMonth string
+,serviceYear int
+,beneficiaryID string
+,planMemberID string
+,MemberClientKey string
+,memberGender string
+,memberAGE string
+,lowIncomeSubsidy string
+,memberEnrollmentStartDate date
+,memberEnrollmentEndDate date
+,poCode string
+,lobid string
+,planID string
+,PlanDescription string
+,memberZIPCode string
+,memberState string
+,memberCounty string
+,attributedProviderID string
+,attributedProviderTIN string
+,memberDOB date
+,memberDemographicRiskScore double
+,memberCodedRiskScore string
+,opportunityRiskScore string
+,memberMonths double
+,incurredEndDate date
+,paidThroughDate date
+,hospiceind string
+,esrdInd string
+,inHomeAssessmentInd string
+,inHomeAssessmentDOS string
+,specialistonlyInd string
+,selfManagingInd string
+,polyChronicInd string
+,annualWellnessVisitDate string
+,annualWellnessVisitProviderID string
+,annualWellnessVisitProviderTIN string
+,memberModelStatus string
+)  USING delta LOCATION '/mnt/#clientCode/Gold/MA/Risk/RiskByMember'

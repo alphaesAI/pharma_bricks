@@ -1,0 +1,44 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+	{
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "PlanID",
+      "DataType": "StringType",
+      "Ordinal": "6"
+    },
+    {
+      "FieldName": "PlanDescription",
+      "DataType": "StringType",
+      "Ordinal": "7"
+    },
+    {
+      "FieldName": "IsActive",
+      "DataType": "StringType",
+      "Ordinal": "8"
+    }
+  ]
+}

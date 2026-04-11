@@ -1,0 +1,98 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "TransactionType",
+          "Value": "PCP"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "HICN",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StartDate",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EndDate",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderNumber",
+          "DestinationColumn": "ProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimsSubscriberIDNumber",
+          "DestinationColumn": "SubscriberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderAddressSuffix",
+          "DestinationColumn": "ProviderAddressSuffix",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderEffDate",
+          "DestinationColumn": "ProviderEffDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderFirstName",
+          "DestinationColumn": "ProviderFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderLastName",
+          "DestinationColumn": "ProviderLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileId",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientId",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

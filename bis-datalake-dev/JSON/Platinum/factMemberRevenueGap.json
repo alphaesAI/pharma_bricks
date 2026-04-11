@@ -1,0 +1,52 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "factMemberRevenueGap",
+      "DestinationTable": "#clientCode/Platinum/factMemberRevenueGap",
+      "SourceTables": [
+        {
+          "Entity": "memberRevenueGap",
+          "SourceTable": "#clientCode/Gold/MA/PEC/MemberRevenueGap",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimMonth",
+          "SourceTable": "global/Platinum/dimMonth",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimClient",
+          "SourceTable": "#clientCode/Platinum/dimClient",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimMember",
+          "SourceTable": "#clientCode/Platinum/dimMember",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimHCC",
+          "SourceTable": "global/Platinum/dimHCC",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimProvider",
+          "SourceTable": "#clientCode/Platinum/dimProvider",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimAlertGroup",
+          "SourceTable": "global/Platinum/dimAlertGroup",
+          "SourceFormat": "delta"
+        },
+        {
+          "Entity": "dimDate",
+          "SourceTable": "global/Platinum/dimDate",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SQLScript": "WITH sourceTbl AS\r\n(\r\nselect\r\n ifnull(dimMonth.monthKey, -99) as pecYearMonthKey\r\n,ifnull(dimClient.clientKey, -99) as clientKey\r\n,ifnull(dimMember.memberkey, -99) as memberKey\r\n,ifnull(mrg.planID, '') as planID\r\n,ifnull(dimHCC.hccKey, -99) as hccKey\r\n,ifnull(dimDate1.dateKey, -99) as snapshotDateKey\r\n,ifnull(dimProvider.providerkey, -99) as planProviderKey\r\n,ifnull(dimAlertGroup.alertGroupKey, -99) as alertGroupKey\r\n,case when mrg.closureReason is not null then 'Y' else 'N' end as isHCCClosed\r\n,ifnull(dimDate2.dateKey, -99) as lastDCConfirmedDateKey\r\n,ifnull(dimDate3.dateKey, -99) as lastPCPVisitDateKey\r\n,ifnull(dimDate4.dateKey, -99) as lastAWVDateKey\r\n,current_date()  as loadDate\r\nfrom memberRevenueGap  mrg\r\nleft join dimMonth\r\n on mrg.reportMonth = concat(dimMonth.yearNumber,lpad(dimMonth.monthNumber,2,'0'))\r\nleft join  dimClient\r\n on upper(mrg.clientCode) = upper(dimClient.clientCode)\r\nleft join  dimMember\r\n on mrg.planMemberID = dimMember.planMemberID\r\n and dimMember.isCurrent = 1\r\nleft join dimHCC\r\n on mrg.hccNumber = dimHCC.hccNumber\r\n and substring(mrg.reportMonth, 1,4)  = dimHCC.EffectiveYear\r\n and mrg.HCCVersion = dimHCC.HCCVersion\r\n and upper(dimHCC.HCCType) in ('COMM', 'ESRD')\r\nleft join dimProvider\r\n on mrg.providerID = dimProvider.providerID\r\n and dimProvider.isCurrent=1\r\nleft join dimAlertGroup\r\n on mrg.alertCategory = dimAlertGroup.alertGroupCode\r\nleft join dimDate dimDate1\r\n on mrg.snapshotDate = dimDate1.date\r\nleft join dimDate dimDate2\r\n on mrg.lastDCConfirmedDate = dimDate2.date\r\nleft join dimDate dimDate3\r\n on mrg.lastPCPVisitDate = dimDate3.date\r\nleft join dimDate dimDate4\r\n on mrg.lastAWVDate = dimDate4.date\r\n )\r\nselect \r\npecYearMonthKey\r\n,clientKey\r\n,memberKey\r\n,planID\r\n,hccKey\r\n,snapshotDateKey\r\n,planProviderKey\r\n,alertGroupKey\r\n,isHCCClosed\r\n,lastDCConfirmedDateKey\r\n,lastPCPVisitDateKey\r\n,lastAWVDateKey\r\n,sha2(concat_ws('|', pecYearMonthKey, memberKey, hccKey, clientKey),256) as factMemberRevenueGapHashKey\r\n,sha2(concat_ws('|',\r\n   isHCCClosed,\r\n   planID,\r\n   snapshotDateKey,\r\n   planProviderKey,\r\n   alertGroupKey,\r\n   lastDCConfirmedDateKey,\r\n   lastPCPVisitDateKey,\r\n   lastAWVDateKey),256) as fullRowHash\r\n,ifnull(dim.dateKey, -99) as loadDateKey\r\nfrom\r\nsourceTbl sr\r\nCROSS JOIN dimDate dim\r\nON sr.loadDate = dim.date",
+      "MergeScript": "MERGE INTO DestinationTable t\r\nUSING (SELECT * FROM tempSQLScript) s\r\nON s.factMemberRevenueGapHashKey = t.factMemberRevenueGapHashKey\r\nand s.fullRowHash = t.fullRowHash\r\nWHEN NOT MATCHED \r\nTHEN INSERT\r\n(\r\n pecYearMonthKey\r\n,clientKey\r\n,memberKey\r\n,planID\r\n,hccKey\r\n,snapshotDateKey\r\n,planProviderKey\r\n,alertGroupKey\r\n,isHCCClosed\r\n,lastDCConfirmedDateKey\r\n,lastPCPVisitDateKey\r\n,lastAWVDateKey\r\n,factMemberRevenueGapHashKey\r\n,fullRowHash\r\n,loadDateKey\r\n)\r\nVALUES\r\n(\r\n s.pecYearMonthKey\r\n,s.clientKey\r\n,s.memberKey\r\n,s.planID\r\n,s.hccKey\r\n,s.snapshotDateKey\r\n,s.planProviderKey\r\n,s.alertGroupKey\r\n,s.isHCCClosed\r\n,s.lastDCConfirmedDateKey\r\n,s.lastPCPVisitDateKey\r\n,s.lastAWVDateKey\r\n,s.factMemberRevenueGapHashKey\r\n,s.fullRowHash\r\n,s.loadDateKey\r\n)"
+    }
+  ]
+}

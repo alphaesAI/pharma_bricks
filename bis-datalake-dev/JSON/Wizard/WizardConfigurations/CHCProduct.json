@@ -1,0 +1,13 @@
+{
+    "SourceTable": "#clientCode/consolidated/ACA/Data/Product",
+    "SourceTableMountPoint": "DataLake",
+    "LOB": "ACA",
+    "BatchTable": "#clientCode/BatchAudit/ACA/CHCProductBatch",
+    "BatchTableMountPoint": "Export",
+    "ExportFilePath": "#clientCode/ACA/CHCProduct",
+    "ExportFileMountPoint": "Export",
+    "ExportFileNamingConvention": "CHCProduct_<LOB>_<BatchId>_<DateTime>",
+    "ExportFileNamingExtension": ".json",
+    "ExportQuery": "select\r\n ProductID as productId\r\n,PlanID as planId\r\n,ProductLine as productLine\r\n,named_struct('groupId',PlanGroupID,'groupName',PlanGroupName,'subGroup',PlanSubGroup,'type',PlanType,'subType',PlanSubType) as plan\r\n,date_format(StartDate,'MM/dd/yyyy') as startDate\r\n,date_format(EndDate,'MM/dd/yyyy') as endDate\r\n,cast(ECDSIndicator as int) as ECDSIndicator\r\n,AlphaPrefix as alphaPrefix\r\n,ProductType as produtType\r\n,PlanMarketingName as planMarketingName\r\n,MarketCoverage as marketCoverage\r\n,NCQASubmissionID as NCQASubmissionId\r\n,MetalLevel as metalLevel\r\n,IssuerID as issuerId\r\nFROM QueryResult where FileLayoutDescription = 'ACAProduct'",
+  "FilterTables": []
+}

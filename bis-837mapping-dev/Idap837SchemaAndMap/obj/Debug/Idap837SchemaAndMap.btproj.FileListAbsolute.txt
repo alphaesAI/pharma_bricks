@@ -1,0 +1,7 @@
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\bin\Debug\Idap837SchemaAndMap.dll
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\bin\Debug\Idap837SchemaAndMap.pdb
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\bin\Debug\Integration.BIZ.CLMIB.PROF.Schemas.dll
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\bin\Debug\Integration.BIZ.CLMIB.Schemas.dll
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\bin\Debug\Integration.BIZ.Core.X12Schemas.Multiple837P.dll
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\obj\Debug\Idap837SchemaAndMap.dll
+M:\0Architecture\IDAP\Idap837SchemaAndMap\Idap837SchemaAndMap\obj\Debug\Idap837SchemaAndMap.pdb

@@ -1,0 +1,110 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "RecordType",
+          "DestinationColumn": "RecordType",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ReportID",
+          "DestinationColumn": "ReportID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MedicareAdvantageContractID",
+          "DestinationColumn": "MedicareAdvantageContractID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanEncounterID",
+          "DestinationColumn": "PlanEncounterID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "EncounterICN",
+          "DestinationColumn": "EncounterICN",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EncounterLineNumber",
+          "DestinationColumn": "EncounterLineNumber",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EncounterStatus",
+          "DestinationColumn": "EncounterStatus",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ErrorCode",
+          "DestinationColumn": "ErrorCode",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ErrorDescription",
+          "DestinationColumn": "ErrorDescription",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ReportDate",
+          "DestinationColumn": "ReportDate",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "TransactionDate",
+          "DestinationColumn": "TransactionDate",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+		  "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

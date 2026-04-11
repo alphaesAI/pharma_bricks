@@ -1,0 +1,13 @@
+{
+  "SourceTable": "#clientCode/consolidated/ACA/Data/Provider",
+  "SourceTableMountPoint": "DataLake",
+  "LOB": "ACA",
+  "BatchTable": "#clientCode/BatchAudit/ACA/CHCProviderBatch",
+  "BatchTableMountPoint": "Export",
+  "ExportFilePath": "#clientCode/ACA/CHCProvider",
+  "ExportFileMountPoint": "Export",
+  "ExportFileNamingConvention": "CHCProvider_<LOB>_<BatchId>_<DateTime>",
+  "ExportFileNamingExtension": ".json",
+  "ExportQuery": "\r\nSELECT providerId,\r\nnamed_struct('first',FirstName,'last',LastName,'middle',MiddleInitial) as name, \r\narray(named_struct('taxonomyCode',TaxonomyCode1, 'hpSpecialityCode',HpSpecialtyCode1)) as taxonomy,\r\nNPI, \r\nprescribePrivilege, \r\nDEA, \r\ncontracted\r\nFROM QueryResult\r\nWHERE FileLayoutDescription = 'CHCProvider' and ifnull(providerId,'') <>''\r\nAND ifnull(LastName,'') <>''\r\nAND ifnull(NPI,'') <>''",
+  "FilterTables": []
+}

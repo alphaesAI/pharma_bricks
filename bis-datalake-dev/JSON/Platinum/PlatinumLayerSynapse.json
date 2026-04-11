@@ -1,0 +1,29 @@
+{
+    "Synapse": [
+        {
+            "ClientOrder": 100,
+            "ClientGrouping": "GlobalRefData",
+            "SubGrouping": []
+        },
+        {
+            "ClientOrder": 200,
+            "ClientGrouping": "PlatinumSynGeneric",
+            "SubGrouping": [
+                {
+                    "TableName": "dimProvider",
+                    "ProcessingOrder": 10,
+                    "Datamodel": "fileconfig/JSON/Platinum/DataModels/dimProviderDataModel.json",
+                    "SourcePath": "/Platinum/dimProvider",
+                    "SynpaseNotebook": "ExecuteStreaming"
+                },
+                {
+                    "TableName": "dimMember",
+                    "ProcessingOrder": 20,
+                    "Datamodel": "fileconfig/JSON/Platinum/DataModels/dimMemberDataModel.json",
+                    "SourcePath": "/Platinum/dimMember",
+                    "SynpaseNotebook": "ExecuteStreaming"
+                }
+            ]
+        }
+    ]
+}

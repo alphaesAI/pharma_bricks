@@ -1,0 +1,34 @@
+{
+  "LayerGrouping": [
+    {
+      "LayerOrder": 1,
+      "LayerGrouping": "PECGoldLayerGeneric",
+      "SubGrouping": [
+        {
+          "SubGroupEntity": "providerGroupReference",
+          "SubGroupingOrder": 1,
+          "SubConfigPath": "fileconfig/JSON/Gold/providerGroupReference.json",
+          "Notebook": "./GenericSubGroupProcessing"
+        },
+        {
+          "SubGroupEntity": "pecReportBase",
+          "SubGroupingOrder": 3,
+          "SubConfigPath": "fileconfig/JSON/Gold/pecReportBase.json",
+          "Notebook": "./GenericSubGroupDupChkProcessing"
+        },
+        {
+          "SubGroupEntity": "cdiAlertLine",
+          "SubGroupingOrder": 4,
+          "SubConfigPath": "fileconfig/JSON/Gold/cdiAlertLine.json",
+          "Notebook": "./GenericSubGroupDupChkProcessing"
+        },
+        {
+          "SubGroupEntity": "MemberRevenueGaps",
+          "SubGroupingOrder": 5,
+          "SubConfigPath": "",
+          "Notebook": "./MemberRevenueGaps"
+        }
+      ]
+    }
+  ]
+}

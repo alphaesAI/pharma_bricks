@@ -1,0 +1,43 @@
+CREATE TABLE [devidap1].[platinum_factmonthlymembercdialert]
+( 
+	 [factMonthlyMemberCDIAlertHash] INT NOT NULL PRIMARY KEY NONCLUSTERED NOT ENFORCED
+	,[monthKey] NVARCHAR(6) NULL
+	,[clientKey] INT NULL
+	,[memberKey] BIGINT NULL
+	,[planID] NVARCHAR(40) NULL
+	,[isMemberActive] INT NULL
+	,[lineOfBusiness] NVARCHAR(50) NULL
+	,[isInReportBase] INT NULL
+	,[pcpProviderKey] INT NULL
+	,[apptProviderKey] INT NULL
+	,[alertsDistributedCnt] BIGINT NULL
+	,[alertsReturnedCnt] BIGINT NULL
+	,[alertsReturnedCompliantCnt] BIGINT NULL
+	,[isIncentiveUMARQualified] BIGINT NULL
+	,[isIncentiveQualifiedAlerts] BIGINT NULL
+	,[droppedConditionsIdentifiedCnt] BIGINT NULL
+	,[droppedConditionsAddressedCnt] BIGINT NULL
+	,[droppedConditionsYesResponseCnt] BIGINT NULL
+	,[droppedConditionsNoResponseCnt] BIGINT NULL
+	,[droppedConditionsNullResponseCnt] BIGINT NULL
+	,[opportunitiesIdentifiedCnt] BIGINT NULL
+	,[opportunitiesAddressedCnt] BIGINT NULL
+	,[opportunitiesYesResponseCnt] BIGINT NULL
+	,[opportunitiesNoResponseCnt] BIGINT NULL
+	,[opportunitiesnullResponseCnt] BIGINT NULL
+	,[starsIdentifiedCnt] BIGINT NULL
+	,[starsAddressedCnt] BIGINT NULL
+	,[alertsDistributedWithQueriesCnt] BIGINT NULL
+	,[alertsReturnedCompliantWithQueriesCnt] BIGINT NULL
+	,[queriesDistributedCnt] BIGINT NULL
+	,[queriesReturnedCnt] BIGINT NULL
+	,[queriesReturnedAddendedMRCnt] BIGINT NULL
+	,[queriesReturnedNoUpdateMRCnt] BIGINT NULL
+	,[alertsDistributedWithStarsCnt] BIGINT NULL
+	,[alertsReturnedWithStarsCnt] BIGINT NULL
+	,[alertsReturnedCompliantWithStarsCnt] BIGINT NULL
+	,[starsReturnedCompliantCnt] BIGINT NULL
+	,[starsAddressedReturnedCompliantCnt] BIGINT NULL
+	,[createdDatetime] DATETIME2 NULL
+	,[updatedDatetime] DATETIME2 NULL
+) 

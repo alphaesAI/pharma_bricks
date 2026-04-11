@@ -1,0 +1,37 @@
+CREATE TABLE #clientCode.consolidated_ma_memberroster (
+ClientName string 
+,POCode string 
+,POName string 
+,PracticeCode string 
+,PracticeName string
+,ProviderAddress1 string
+,ProviderAddress2 string
+,ProviderCity string
+,ProviderState string
+,ProviderZipCode string
+,ProviderFirstName string
+,ProviderMiddleName string
+,ProviderLastName string
+,ProviderID string
+,ProviderNPI string
+,ProviderPhoneNumber string
+,ReportingLevel string
+,PlanMemberID string 
+,MemberMBI string
+,MemberFirstName string
+,MemberMiddleName string
+,MemberLastName string 
+,MemberDOB date 
+,MemberPhoneNumber string 
+,PlanType string 
+,MemberPlanEligibilityStart date
+,NewPECMember boolean 
+,ProgramType string 
+,RosterMonth string 
+,FileLoadDate timestamp
+,ClientID string 
+,LoadDateTime timestamp
+,FileID integer 
+,FileLayoutID integer 
+,FileLayoutDescription string 
+)  USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/MemberRoster'

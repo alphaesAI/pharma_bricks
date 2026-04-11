@@ -1,0 +1,90 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "Client",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "PECProgramYear",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "POCode",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "POName",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "PracticeCode",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "PracticeName",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "EngagedDate",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "DisengagedDate",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "TargetStatus",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "ParticipationDecision",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "Product",
+      "DataType": "stringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "FileLoadDate",
+      "DataType": "DateType",
+      "Ordinal": 17
+    }    
+  ]
+}
+

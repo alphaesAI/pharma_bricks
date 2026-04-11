@@ -1,0 +1,170 @@
+{
+    "columnMapping": [
+        {
+            "recordType": [
+                {
+                "Field": "",
+                "Value": ""
+                }
+            ],
+            "selectColumns": [
+                {
+                    "SourceColumn": "FILE_ID",
+                    "DestinationColumn": "FileID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "",
+                    "DestinationColumn": "GeneratedMedicalClaimsUniqueKey",
+                    "ColumnQuery": "CONCAT(COALESCE(CLAIM_ID,''),'-',COALESCE(FILE_ID,''),'-',COALESCE(CLIENT_ID,''))",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "LINE_ID",
+                    "DestinationColumn": "ClaimLineNumber",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "CLAIM_PAYMENT_STATUS",
+                    "DestinationColumn": "PayStatus",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AUTHORIZATION_NO",
+                    "DestinationColumn": "AuthorizationNum",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "AMOUNT_PAID_BY_OTHER_INS",
+                    "DestinationColumn": "COBPaidAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "ALLOWED_AMOUNT",
+                    "DestinationColumn": "AllowedAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "BILL_AMOUNT",
+                    "DestinationColumn": "TotalChargeAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "COINSURANCE_AMT",
+                    "DestinationColumn": "CoinsuranceAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DEDUCTIBLE_AMT",
+                    "DestinationColumn": "DeductibleAmt",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PAID_AMOUNT",
+                    "DestinationColumn": "PaidAmount",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DATE_OF_SERVICE",
+                    "DestinationColumn": "DetailServiceDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "SERVICE_FROM_DATE",
+                    "DestinationColumn": "ServiceFromDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "SERVICE_THROUGH_DATE",
+                    "DestinationColumn": "ServiceToDate",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": "yyyyMMdd"
+                },
+                {
+                    "SourceColumn": "PROCEDURE_CODE",
+                    "DestinationColumn": "ProcCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "HCPCS_MODIFIERS",
+                    "DestinationColumn": "ProcMod1",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "HCPCS_MODIFIER2",
+                    "DestinationColumn": "ProcMod2",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "HCPCS_MODIFIER3",
+                    "DestinationColumn": "ProcMod3",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "HCPCS_MODIFIER4",
+                    "DestinationColumn": "ProcMod4",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PLACE_OF_SERVICE",
+                    "DestinationColumn": "PlaceOfService",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "DRG_CODE",
+                    "DestinationColumn": "MSDRG",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "REV_CODE",
+                    "DestinationColumn": "RevenueCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "PROVIDER_ID",
+                    "DestinationColumn": "RenderingProviderID",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "NATIONAL_PROVIDER_ID",
+                    "DestinationColumn": "RenderingProviderNPI",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "FEDERAL_TAX_ID",
+                    "DestinationColumn": "RenderingProviderTIN",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                },
+                {
+                    "SourceColumn": "SPECIALTY_ID",
+                    "DestinationColumn": "RenderingProviderSpecialtyCode",
+                    "ColumnQuery": "",
+                    "SourceColumnFormat": ""
+                }
+            ]
+        }
+    ]
+}

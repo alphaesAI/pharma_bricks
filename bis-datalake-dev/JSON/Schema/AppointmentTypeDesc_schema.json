@@ -1,0 +1,53 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Format": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "Client",
+      "Ordinal": 0,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Market",
+      "Ordinal": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Metric",
+      "Ordinal": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AppointmentTypeDesc",
+      "Ordinal": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AppointmentTypeDesc_USE",
+      "Ordinal": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CountFlag",
+      "Ordinal": 5,
+      "DataType": "string"
+    }
+  ]
+}

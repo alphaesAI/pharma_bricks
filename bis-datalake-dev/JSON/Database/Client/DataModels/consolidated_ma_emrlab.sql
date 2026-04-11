@@ -1,0 +1,42 @@
+CREATE TABLE #clientCode.consolidated_ma_emrlab (
+ ClientID string
+,LoadDateTime date
+,FileID int
+,FileLayoutID int
+,FileLayoutDescription string
+,UniquePersonKey string
+,PlanMemberID string
+,ProviderID string
+,ClaimNumber string
+,ClaimLineNumber string
+,ProviderNPI string
+,LocationID string
+,DOS date
+,ProductID string
+,ProviderSpecialty string
+,ClaimStatus string
+,LabCode string
+,BillingIden string
+,ClientNumber string
+,RefPCP string
+,UPIN string
+,DiagCode string
+,OrderCode string
+,OrderName string
+,CPTCode string
+,HCPCSCode string
+,HCPCSModifier string
+,SNOMEDCode string
+,LOINCode string
+,ResultCode string
+,ResultName string
+,ResultValue string
+,ResultUnit string
+,RefRangeLow string
+,RefRangeHigh string
+,RefRangeAlpha string
+,Comments string
+,ClaimSourceIndicator string
+,DateEnd string
+,SourceName string
+) USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/EMRLab'

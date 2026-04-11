@@ -1,0 +1,340 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"StartPos": "TEMPLATE",
+			"Length": "TEMPLATE"
+		},
+		{
+			"FieldName": "BeneficiaryID",
+			"OrdinalPosition": "1",
+			"StartPos": "12",
+			"Length": "12"
+		},
+		{
+			"FieldName": "Surname",
+			"OrdinalPosition": "2",
+			"StartPos": "13",
+			"Length": "12"
+		},
+		{
+			"FieldName": "FirstName",
+			"OrdinalPosition": "3",
+			"StartPos": "25",
+			"Length": "7"
+		},
+		{
+			"FieldName": "MiddleInitial",
+			"OrdinalPosition": "4",
+			"StartPos": "32",
+			"Length": "1"
+		},
+		{
+			"FieldName": "GenderCode",
+			"OrdinalPosition": "5",
+			"StartPos": "33",
+			"Length": "1"
+		},
+		{
+			"FieldName": "DateofBirth",
+			"OrdinalPosition": "6",
+			"StartPos": "34",
+			"Length": "8"
+		},
+		{
+			"FieldName": "MedicaidIndicator",
+			"OrdinalPosition": "7",
+			"StartPos": "42",
+			"Length": "1" 
+		},
+		{
+			"FieldName": "ContractNumber",
+			"OrdinalPosition": "8",
+			"StartPos": "43",
+			"Length": "5"
+		},
+		{
+			"FieldName": "StateCode",
+			"OrdinalPosition": "9",
+			"StartPos": "48",
+			"Length": "2"
+		},
+		{
+			"FieldName": "CountyCode",
+			"OrdinalPosition": "10",
+			"StartPos": "50",
+			"Length": "3"
+		},
+		{
+			"FieldName": "DisabilityIndicator",
+			"OrdinalPosition": "11",
+			"StartPos": "53",
+			"Length": "1"
+		},
+		{
+			"FieldName": "HospiceIndicator",
+			"OrdinalPosition": "12",
+			"StartPos": "54",
+			"Length": "1"
+		},
+		{
+			"FieldName": "InstitutionalIndicator",
+			"OrdinalPosition": "13",
+			"StartPos": "55",
+			"Length": "1"
+		},
+		{
+			"FieldName": "ESRDIndicator",
+			"OrdinalPosition": "14",
+			"StartPos": "56",
+			"Length": "1"
+		},
+		{
+			"FieldName": "TransactionReplyCode",
+			"OrdinalPosition": "15",
+			"StartPos": "57",
+			"Length": "3"
+		},
+		{
+			"FieldName": "TransactionCode",
+			"OrdinalPosition": "16",
+			"StartPos": "60",
+			"Length": "2"
+		},
+		{
+			"FieldName": "EntitlementTypeCode",
+			"OrdinalPosition": "17",
+			"StartPos": "62",
+			"Length": "1"
+		},
+		{
+			"FieldName": "EffectiveDate",
+			"OrdinalPosition": "18",
+			"StartPos": "63",
+			"Length": "8" 
+		},
+		{
+			"FieldName": "WAIndicator",
+			"OrdinalPosition": "19",
+			"StartPos": "71",
+			"Length": "1"
+		},
+		{
+			"FieldName": "PlanBenefitPackageID",
+			"OrdinalPosition": "20",
+			"StartPos": "72",
+			"Length": "3"
+		},
+		{
+			"FieldName": "RaceCode",
+			"OrdinalPosition": "21",
+			"StartPos": "75",
+			"Length": "1"
+		},
+		{
+			"FieldName": "TransactionDate",
+			"OrdinalPosition": "22",
+			"StartPos": "76",
+			"Length": "8"
+		},
+		{
+			"FieldName": "Filler_1",
+			"OrdinalPosition": "23",
+			"StartPos": "84",
+			"Length": "1"
+		},
+		{
+			"FieldName": "SubsidyEndDate",
+			"OrdinalPosition": "24",
+			"StartPos": "85",
+			"Length": "12"
+		},
+		{
+			"FieldName": "DistrictOfficeCode",
+			"OrdinalPosition": "25",
+			"StartPos": "97",
+			"Length": "3"
+		},
+		{
+			"FieldName": "Filler_2",
+			"OrdinalPosition": "26",
+			"StartPos": "100",
+			"Length": "8"
+		},
+		{
+			"FieldName": "Filler_3",
+			"OrdinalPosition": "27",
+			"StartPos": "108",
+			"Length": "8"
+		},
+		{
+			"FieldName": "SourceID",
+			"OrdinalPosition": "28",
+			"StartPos": "116",
+			"Length": "5"
+		},
+		{
+			"FieldName": "PriorPlanBenefitPackageID",
+			"OrdinalPosition": "29",
+			"StartPos": "121",
+			"Length": "3"
+		},
+		{
+			"FieldName": "ApplicationDate",
+			"OrdinalPosition": "30",
+			"StartPos": "124",
+			"Length": "8"
+		},
+		{
+			"FieldName": "Filler_4",
+			"OrdinalPosition": "31",
+			"StartPos": "132",
+			"Length": "2"
+		},
+		{
+			"FieldName": "OutofAreaFlag",
+			"OrdinalPosition": "32",
+			"StartPos": "134",
+			"Length": "1"
+		},
+		{
+			"FieldName": "SegmentNumber",
+			"OrdinalPosition": "33",
+			"StartPos": "135",
+			"Length": "3" 
+		},
+		{
+			"FieldName": "PartCBeneficiaryPremium",
+			"OrdinalPosition": "34",
+			"StartPos": "138",
+			"Length": "8"
+		},
+		{
+			"FieldName": "PartDBeneficiaryPremium",
+			"OrdinalPosition": "35",
+			"StartPos": "146",
+			"Length": "8"
+		},
+		{
+			"FieldName": "ElectionType",
+			"OrdinalPosition": "36",
+			"StartPos": "154",
+			"Length": "1"
+		},
+		{
+			"FieldName": "EnrollmentSourceCode",
+			"OrdinalPosition": "37",
+			"StartPos": "155",
+			"Length": "1"
+		},
+		{
+			"FieldName": "PartDOptOutFlag",
+			"OrdinalPosition": "38",
+			"StartPos": "156",
+			"Length": "1"
+		},
+		{
+			"FieldName": "Filler_5",
+			"OrdinalPosition": "39",
+			"StartPos": "157",
+			"Length": "1"
+		},
+		{
+			"FieldName": "NumberofUncoveredMonths",
+			"OrdinalPosition": "40",
+			"StartPos": "158",
+			"Length": "3"
+		},
+		{
+			"FieldName": "CreditableCoverageFlag",
+			"OrdinalPosition": "41",
+			"StartPos": "161",
+			"Length": "1"
+		},
+		{
+			"FieldName": "EmployerSubsidyOverrideFlag",
+			"OrdinalPosition": "42",
+			"StartPos": "162",
+			"Length": "1"
+		},
+		{
+			"FieldName": "RxID",
+			"OrdinalPosition": "43",
+			"StartPos": "163",
+			"Length": "20"
+		},
+		{
+			"FieldName": "RxGroup",
+			"OrdinalPosition": "44",
+			"StartPos": "183",
+			"Length": "15"
+		},
+		{
+			"FieldName": "SecondaryDrugInsuranceFlag",
+			"OrdinalPosition": "45",
+			"StartPos": "198",
+			"Length": "1" 
+		},
+		{
+			"FieldName": "SecondaryRxID",
+			"OrdinalPosition": "46",
+			"StartPos": "199",
+			"Length": "20"
+		},
+		{
+			"FieldName": "SecondaryRxGroup",
+			"OrdinalPosition": "47",
+			"StartPos": "219",
+			"Length": "15"
+		},
+		{
+			"FieldName": "EGHP",
+			"OrdinalPosition": "48",
+			"StartPos": "234",
+			"Length": "1"
+		},
+		{
+			"FieldName": "PartDLIPSLevel",
+			"OrdinalPosition": "49",
+			"StartPos": "235",
+			"Length": "3"
+		},
+		{
+			"FieldName": "LowIncomeCoPayCategory",
+			"OrdinalPosition": "50",
+			"StartPos": "238",
+			"Length": "1"
+		},
+		{
+			"FieldName": "LowIncomeCoPayEffectiveDate",
+			"OrdinalPosition": "51",
+			"StartPos": "239",
+			"Length": "8"
+		},
+		{
+			"FieldName": "PartDLEPAmount",
+			"OrdinalPosition": "52",
+			"StartPos": "247",
+			"Length": "8"
+		},
+		{
+			"FieldName": "PartDLEPWaivedAmount",
+			"OrdinalPosition": "53",
+			"StartPos": "255",
+			"Length": "8"
+		},
+		{
+			"FieldName": "PartDLEPSubsidyAmount",
+			"OrdinalPosition": "54",
+			"StartPos": "263",
+			"Length": "8"
+		},
+		{
+			"FieldName": "LowIncomePartDPremiumSubsidyAmount",
+			"OrdinalPosition": "55",
+			"StartPos": "271",
+			"Length": "8"
+		}
+	]
+}

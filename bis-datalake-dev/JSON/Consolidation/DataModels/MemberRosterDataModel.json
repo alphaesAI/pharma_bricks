@@ -1,0 +1,180 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientName",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "POCode",
+      "DataType": "StringType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "POName",
+      "DataType": "StringType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "PracticeCode",
+      "DataType": "StringType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "PracticeName",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "ProviderAddress1",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "ProviderAddress2",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "ProviderCity",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "ProviderState",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "ProviderZipCode",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "ProviderFirstName",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "ProviderMiddleName",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "ProviderLastName",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "ProviderID",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "ProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "ProviderPhoneNumber",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "ReportingLevel",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "PlanMemberID",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "MemberMBI",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "MemberFirstName",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "MemberMiddleName",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "MemberLastName",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "MemberDOB",
+      "DataType": "DateType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "MemberPhoneNumber",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "PlanType",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "MemberPlanEligibilityStart",
+      "DataType": "DateType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "NewPECMember",
+      "DataType": "BooleanType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "ProgramType",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "RosterMonth",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "FileLoadDate",
+      "DataType": "TimestampType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "TimestampType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 35
+    }
+  ]
+      
+}

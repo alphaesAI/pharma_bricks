@@ -1,0 +1,2230 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "CLAIM_ID",
+            "OrdinalPosition": "1",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RECEIVE_TIME",
+            "OrdinalPosition": "2",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DETAIL_COUNT",
+            "OrdinalPosition": "3",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AUTHORIZATION_NUMBER",
+            "OrdinalPosition": "4",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_STATUS",
+            "OrdinalPosition": "5",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAID_BY_PRIMARY_PAYER",
+            "OrdinalPosition": "6",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FIRST_SERVICE_DATE",
+            "OrdinalPosition": "7",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EXTERNAL_CLAIM_ID",
+            "OrdinalPosition": "8",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_CONTROL_NUMBER",
+            "OrdinalPosition": "9",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_ID_QUAL",
+            "OrdinalPosition": "10",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAID_BY_MEMBER",
+            "OrdinalPosition": "11",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EOB_NOTE",
+            "OrdinalPosition": "12",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EDI_SUBMITTER_ID",
+            "OrdinalPosition": "13",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EDI_RECEIVER_ID",
+            "OrdinalPosition": "14",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EDI_CORRECTION_LIST",
+            "OrdinalPosition": "15",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_NAME",
+            "OrdinalPosition": "16",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_ADD1",
+            "OrdinalPosition": "17",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_CITY",
+            "OrdinalPosition": "18",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REPRICER_RECVD_DATE",
+            "OrdinalPosition": "19",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_LIABILTY_AMT",
+            "OrdinalPosition": "20",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_ADD1",
+            "OrdinalPosition": "21",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_CITY",
+            "OrdinalPosition": "22",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PROVIDER_SIGNATURE_FILE_IND",
+            "OrdinalPosition": "23",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MEDICARE_ASSIGNMENT_CODE",
+            "OrdinalPosition": "24",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ASSIGNMENT_BENEFIT_IND",
+            "OrdinalPosition": "25",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RELEASE_INFO_CODE",
+            "OrdinalPosition": "26",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_EXTID",
+            "OrdinalPosition": "27",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_EXTID",
+            "OrdinalPosition": "28",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_INDICATOR",
+            "OrdinalPosition": "29",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ITS_PPSPA_REQUEST_ID",
+            "OrdinalPosition": "30",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ITS_CLAIM_TYPE",
+            "OrdinalPosition": "31",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TOTAL_CHARGES",
+            "OrdinalPosition": "32",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ICD_VERSION_IND",
+            "OrdinalPosition": "33",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRIMARY_PAID_DATE",
+            "OrdinalPosition": "34",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_ADD1",
+            "OrdinalPosition": "35",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_ADD2",
+            "OrdinalPosition": "36",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_CITY",
+            "OrdinalPosition": "37",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_STATE",
+            "OrdinalPosition": "38",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_ZIP",
+            "OrdinalPosition": "39",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LINE_NUMBER",
+            "OrdinalPosition": "40",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CONDITION_EMPLOYMENT",
+            "OrdinalPosition": "41",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CONDITION_AUTO_ACCIDENT",
+            "OrdinalPosition": "42",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CONDITION_OTHER_ACCIDENT",
+            "OrdinalPosition": "43",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_INSURANCE_FLAG",
+            "OrdinalPosition": "44",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FIRST_SYMPTOM_DATE",
+            "OrdinalPosition": "45",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FIRST_SIMILAR_SYMPTOM_DATE",
+            "OrdinalPosition": "46",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LOSS_OF_WORK_BEGIN",
+            "OrdinalPosition": "47",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LOSS_OF_WORK_END",
+            "OrdinalPosition": "48",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULATORY_PATIENT_GROUP",
+            "OrdinalPosition": "49",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DIAGNOSIS_CODES_LIST",
+            "OrdinalPosition": "50",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REPRICE_CHARGES",
+            "OrdinalPosition": "51",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CONDITION_CODES_LIST",
+            "OrdinalPosition": "52",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CLAIM_FREQUENCY_CODE",
+            "OrdinalPosition": "53",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_DATE_QUAL",
+            "OrdinalPosition": "54",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_DATE",
+            "OrdinalPosition": "55",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FIRST_SYMPTOM_DATE_QUAL",
+            "OrdinalPosition": "56",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LOCATION_CODE",
+            "OrdinalPosition": "57",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_CODE_QUALIFIER",
+            "OrdinalPosition": "58",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_CODE",
+            "OrdinalPosition": "59",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_MODIFIER_LIST",
+            "OrdinalPosition": "60",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_FROM_DATE",
+            "OrdinalPosition": "61",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_TO_DATE",
+            "OrdinalPosition": "62",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DIAGNOSIS_CODE_LIST",
+            "OrdinalPosition": "63",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NDC_CODE_LIST",
+            "OrdinalPosition": "64",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TYPE_OF_SERVICE",
+            "OrdinalPosition": "65",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "UNIT_MEASUREMENT",
+            "OrdinalPosition": "66",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "QUANTITY",
+            "OrdinalPosition": "67",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_PAID",
+            "OrdinalPosition": "68",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DIAGNOSIS_IDX",
+            "OrdinalPosition": "69",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TP_ORG_NOTES",
+            "OrdinalPosition": "70",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LINEITEM_CONTROL_NUMBER",
+            "OrdinalPosition": "71",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OBS_ANESTHSIA_ADDTNL_UNITS",
+            "OrdinalPosition": "72",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PROV_LINEITEM_NUM",
+            "OrdinalPosition": "73",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NATIONAL_DRUG_COUNT",
+            "OrdinalPosition": "74",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PAYTO_TAX_QUAL",
+            "OrdinalPosition": "75",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PAYTO_TAXONOMY",
+            "OrdinalPosition": "76",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "10"
+                }
+            ]
+        },
+        {
+            "FieldName": "BILL_PROVIDER_QUAL",
+            "OrdinalPosition": "77",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_LNAME",
+            "OrdinalPosition": "78",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_ID_QUAL",
+            "OrdinalPosition": "79",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "IsInAllowedValues",
+                    "InputValue": [
+                        "XX"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "BILL_PROVIDER_ID",
+            "OrdinalPosition": "80",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_NPI_ID",
+            "OrdinalPosition": "81",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "10"
+                }
+            ]
+        },
+        {
+            "FieldName": "BILL_PROVIDER_ADD1",
+            "OrdinalPosition": "82",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_ADD2",
+            "OrdinalPosition": "83",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_CITY",
+            "OrdinalPosition": "84",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_STATE",
+            "OrdinalPosition": "85",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_ZIP",
+            "OrdinalPosition": "86",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_REF",
+            "OrdinalPosition": "87",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_PER01",
+            "OrdinalPosition": "88",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_PER03",
+            "OrdinalPosition": "89",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILL_PROVIDER_PER04",
+            "OrdinalPosition": "90",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_QUAL",
+            "OrdinalPosition": "91",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_LNAME",
+            "OrdinalPosition": "92",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_FNAME",
+            "OrdinalPosition": "93",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_ID",
+            "OrdinalPosition": "94",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_NPI_ID",
+            "OrdinalPosition": "95",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_ADD1",
+            "OrdinalPosition": "96",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_CITY",
+            "OrdinalPosition": "97",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PROVIDER_REF",
+            "OrdinalPosition": "98",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REN_PROVIDER_TAXONOMY",
+            "OrdinalPosition": "99",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "10"
+                }
+            ]
+        },
+        {
+            "FieldName": "REN_PROVIDER_QUAL",
+            "OrdinalPosition": "100",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REN_PROVIDER_LNAME",
+            "OrdinalPosition": "101",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REN_REN_PROVIDER_FNAME",
+            "OrdinalPosition": "102",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REN_PROVIDER_ID_QUAL",
+            "OrdinalPosition": "103",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "IsInAllowedValues",
+                    "InputValue": [
+                        "XX"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "REN_PROVIDER_ID",
+            "OrdinalPosition": "104",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REN_PROVIDER_NPI_ID",
+            "OrdinalPosition": "105",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "10"
+                }
+            ]
+        },
+        {
+            "FieldName": "REN_PROVIDER_REF",
+            "OrdinalPosition": "106",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AREF_PROVIDER_TAXONOMY",
+            "OrdinalPosition": "107",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUPER_PROVIDER_TAXONOMY",
+            "OrdinalPosition": "108",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUPER_PROVIDER_QUAL",
+            "OrdinalPosition": "109",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUPER_PROVIDER_LNAME",
+            "OrdinalPosition": "110",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUPER_PROVIDER_REF",
+            "OrdinalPosition": "111",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_ENTITY_QUAL",
+            "OrdinalPosition": "112",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_QUAL",
+            "OrdinalPosition": "113",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_NAME",
+            "OrdinalPosition": "114",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_ID_QUAL",
+            "OrdinalPosition": "115",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "IsInAllowedValues",
+                    "InputValue": [
+                        "XX"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "SERVICE_PROV_ID",
+            "OrdinalPosition": "116",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_NPI_ID",
+            "OrdinalPosition": "117",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "10"
+                }
+            ]
+        },
+        {
+            "FieldName": "SERVICE_PROV_ADD1",
+            "OrdinalPosition": "118",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_ADD2",
+            "OrdinalPosition": "119",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_CITY",
+            "OrdinalPosition": "120",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_STATE",
+            "OrdinalPosition": "121",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_ZIP",
+            "OrdinalPosition": "122",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_REF",
+            "OrdinalPosition": "123",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_PER01",
+            "OrdinalPosition": "124",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_PER03",
+            "OrdinalPosition": "125",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SERVICE_PROV_PER04",
+            "OrdinalPosition": "126",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRIMARY_SEQ_NUMBER",
+            "OrdinalPosition": "127",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRIMARY_RELATION_CODE",
+            "OrdinalPosition": "128",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRIMARY_CLAIM_IND",
+            "OrdinalPosition": "129",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRIMARY_PAYER_REF",
+            "OrdinalPosition": "130",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_GROUP_ID",
+            "OrdinalPosition": "131",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_PAYER_ID",
+            "OrdinalPosition": "132",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_PAYER_NAME",
+            "OrdinalPosition": "133",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_ID_QUAL",
+            "OrdinalPosition": "134",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_ID",
+            "OrdinalPosition": "135",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_LAST_NAME",
+            "OrdinalPosition": "136",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_FIRST_NAME",
+            "OrdinalPosition": "137",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_MIDDLE_NAME",
+            "OrdinalPosition": "138",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_GENDER",
+            "OrdinalPosition": "139",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_BIRTH_DATE",
+            "OrdinalPosition": "140",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_ADD1",
+            "OrdinalPosition": "141",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_ADD2",
+            "OrdinalPosition": "142",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_CITY",
+            "OrdinalPosition": "143",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_STATE",
+            "OrdinalPosition": "144",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INSURED_ZIP",
+            "OrdinalPosition": "145",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_RELATION_CODE",
+            "OrdinalPosition": "146",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_ID_QUAL",
+            "OrdinalPosition": "147",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_ID",
+            "OrdinalPosition": "148",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_LAST_NAME",
+            "OrdinalPosition": "149",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_FIRST_NAME",
+            "OrdinalPosition": "150",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_MIDDLE_NAME",
+            "OrdinalPosition": "151",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_GENDER",
+            "OrdinalPosition": "152",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_BIRTH_DATE",
+            "OrdinalPosition": "153",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_DEATH",
+            "OrdinalPosition": "154",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_UOM",
+            "OrdinalPosition": "155",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_WEIGHT",
+            "OrdinalPosition": "156",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PATIENT_PRG_IND",
+            "OrdinalPosition": "157",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REPORT_TYPE_CODE",
+            "OrdinalPosition": "158",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRANSMISSION_CODE",
+            "OrdinalPosition": "159",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CONTROL_NUMBER",
+            "OrdinalPosition": "160",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FIXED_FORMAT_INFO",
+            "OrdinalPosition": "161",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DRUG_PROD_QUAL",
+            "OrdinalPosition": "162",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NATIONAL_DRUG_CODE",
+            "OrdinalPosition": "163",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DRUG_UNIT_PRICE",
+            "OrdinalPosition": "164",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DRUG_UNIT_COUNT",
+            "OrdinalPosition": "165",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DRUG_CODE_QUAL",
+            "OrdinalPosition": "166",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRE_CODE_QUAL",
+            "OrdinalPosition": "167",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRE_NUMBER",
+            "OrdinalPosition": "168",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_ID",
+            "OrdinalPosition": "169",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_ENTITYQUAL",
+            "OrdinalPosition": "170",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_LASTNAME",
+            "OrdinalPosition": "171",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_REF",
+            "OrdinalPosition": "172",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULANCE_PICKUP_ADD1",
+            "OrdinalPosition": "173",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULANCE_PICKUP_CITY",
+            "OrdinalPosition": "174",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULANCE_DROPOFF_ADD1",
+            "OrdinalPosition": "175",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULANCE_DROPOFF_CITY",
+            "OrdinalPosition": "176",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_SEQ_NUMBER",
+            "OrdinalPosition": "177",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_RELATION_CODE",
+            "OrdinalPosition": "178",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_GROUP_NAME",
+            "OrdinalPosition": "179",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_CLAIM_IND",
+            "OrdinalPosition": "180",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_ASSIGN_BENRFIT_IND",
+            "OrdinalPosition": "181",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_PAT_SIGN_SRC_CODE",
+            "OrdinalPosition": "182",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_RELEASE_INFO_CODE",
+            "OrdinalPosition": "183",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_LNAME",
+            "OrdinalPosition": "184",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_FNAME",
+            "OrdinalPosition": "185",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_MNAME",
+            "OrdinalPosition": "186",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_ID_QUAL",
+            "OrdinalPosition": "187",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_ID",
+            "OrdinalPosition": "188",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_PAYER_NAME",
+            "OrdinalPosition": "189",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_PAYER_ID",
+            "OrdinalPosition": "190",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_GENDER",
+            "OrdinalPosition": "191",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_DOB",
+            "OrdinalPosition": "192",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_PAYERPAID_AMT",
+            "OrdinalPosition": "193",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_PAYER_REF",
+            "OrdinalPosition": "194",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_REFERING_REF",
+            "OrdinalPosition": "195",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_RENDERING_REF",
+            "OrdinalPosition": "196",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_SERVICEFACILITY_REF",
+            "OrdinalPosition": "197",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_SUPERVISING_REF",
+            "OrdinalPosition": "198",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_BILLING_REF",
+            "OrdinalPosition": "199",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRI_INSURED_GENDER",
+            "OrdinalPosition": "200",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRI_INSURED_DOB",
+            "OrdinalPosition": "201",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILLING_NOTE_QUAL",
+            "OrdinalPosition": "202",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BILLING_NOTE",
+            "OrdinalPosition": "203",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CLAIM_NOTE_QUAL",
+            "OrdinalPosition": "204",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CLAIM_NOTE",
+            "OrdinalPosition": "205",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAYER_ESTAMT_QUAL",
+            "OrdinalPosition": "206",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAYER_ESTAMT",
+            "OrdinalPosition": "207",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CLAIM_QTY_QUAL",
+            "OrdinalPosition": "208",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CLAIM_QTY_DAYSCNT",
+            "OrdinalPosition": "209",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CLAIM_QTY_UOM",
+            "OrdinalPosition": "210",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ANESTHESIA_PROC_HI",
+            "OrdinalPosition": "211",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ANESTHESIA_CONDITION_HI",
+            "OrdinalPosition": "212",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ANESTHESIA_TREATMENTCODE_HI",
+            "OrdinalPosition": "213",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AUTO_ACCIDENT_STATE",
+            "OrdinalPosition": "214",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HIPAA_VERSION_NUMBER",
+            "OrdinalPosition": "215",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRANSACTION_SET_NUMBER",
+            "OrdinalPosition": "216",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BATCH_CONTROL_NUMBER",
+            "OrdinalPosition": "217",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUBMITTER_QUALIFIER",
+            "OrdinalPosition": "218",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUBMITTER_LAST_NAME",
+            "OrdinalPosition": "219",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SUBMITTER_ID_NM109",
+            "OrdinalPosition": "220",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RECEIVER_QUALIFIER",
+            "OrdinalPosition": "221",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RECEIVER_LAST_NAME",
+            "OrdinalPosition": "222",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RECEIVER_ID_NM109",
+            "OrdinalPosition": "223",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SOURCE_FILE_NAME",
+            "OrdinalPosition": "224",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CAS_ADJ_CODE_PAYER_A_LIST",
+            "OrdinalPosition": "225",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAYER_ADDRESS",
+            "OrdinalPosition": "226",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAYER_CITY",
+            "OrdinalPosition": "227",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_SECID",
+            "OrdinalPosition": "228",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_MIA_RESERVE_DAYS",
+            "OrdinalPosition": "229",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_B_MIA_RESERVE_DAYS",
+            "OrdinalPosition": "230",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_REMARK_CODE",
+            "OrdinalPosition": "231",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_B_REMARK_CODE",
+            "OrdinalPosition": "232",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_ADDRESS",
+            "OrdinalPosition": "233",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_B_ADDRESS",
+            "OrdinalPosition": "234",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_CITY",
+            "OrdinalPosition": "235",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_B_CITY",
+            "OrdinalPosition": "236",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_STATE",
+            "OrdinalPosition": "237",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_B_STATE",
+            "OrdinalPosition": "238",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_A_ZIP",
+            "OrdinalPosition": "239",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTHER_PAYER_B_ZIP",
+            "OrdinalPosition": "240",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_NONCOVEREDAMOUNT",
+            "OrdinalPosition": "241",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_ALLOWEDAMOUNT",
+            "OrdinalPosition": "242",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_TOTALSUBMITTEDCHARGES",
+            "OrdinalPosition": "243",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PAY_TO_PLAN_QUAL",
+            "OrdinalPosition": "244",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_LNAME",
+            "OrdinalPosition": "245",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_MNAME",
+            "OrdinalPosition": "246",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_FNAME",
+            "OrdinalPosition": "247",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_SUFFIX",
+            "OrdinalPosition": "248",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_QUAL",
+            "OrdinalPosition": "249",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_ID",
+            "OrdinalPosition": "250",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_NPI",
+            "OrdinalPosition": "251",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPERATING_PROVIDER_REF",
+            "OrdinalPosition": "252",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_LNAME",
+            "OrdinalPosition": "253",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_MNAME",
+            "OrdinalPosition": "254",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_FNAME",
+            "OrdinalPosition": "255",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_SUFFIX",
+            "OrdinalPosition": "256",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_QUAL",
+            "OrdinalPosition": "257",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_ID",
+            "OrdinalPosition": "258",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_NPI",
+            "OrdinalPosition": "259",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OTH_OPERATING_PROVIDER_REF",
+            "OrdinalPosition": "260",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_LNAME",
+            "OrdinalPosition": "261",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_MNAME",
+            "OrdinalPosition": "262",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_FNAME",
+            "OrdinalPosition": "263",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_SUFFIX",
+            "OrdinalPosition": "264",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_QUAL",
+            "OrdinalPosition": "265",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_ID",
+            "OrdinalPosition": "266",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_NPI",
+            "OrdinalPosition": "267",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ATTENDING_PROVIDER_REF",
+            "OrdinalPosition": "268",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_ATTENDING_QUAL",
+            "OrdinalPosition": "269",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_ATTENDING_REF",
+            "OrdinalPosition": "270",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_OPERATING_QUAL",
+            "OrdinalPosition": "271",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_INSURED_OPERATING_REF",
+            "OrdinalPosition": "272",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRI_INSURED_ATTENDING_QUAL",
+            "OrdinalPosition": "273",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRI_INSURED_ATTENDING_REF",
+            "OrdinalPosition": "274",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRI_INSURED_OPERATING_QUAL",
+            "OrdinalPosition": "275",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TRI_INSURED_OPERATING_REF",
+            "OrdinalPosition": "276",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RECEIVER_ID",
+            "OrdinalPosition": "277",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_APPROVEDAMOUNT",
+            "OrdinalPosition": "278",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_COVERAGEAMOUNT",
+            "OrdinalPosition": "279",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_DISCOUNTAMOUNT",
+            "OrdinalPosition": "280",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_PATIENT_RSP_ACTUAL",
+            "OrdinalPosition": "281",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_PATIENTPAIDAMOUNT",
+            "OrdinalPosition": "282",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_PERDAYLIMITAMOUNT",
+            "OrdinalPosition": "283",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PERFORMING_PROVIDER_SPECIALTY",
+            "OrdinalPosition": "284",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PERFORMING_PROVIDER_TYPE",
+            "OrdinalPosition": "285",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPL_CALC_METHOD",
+            "OrdinalPosition": "286",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPL_VALUE_AMOUNT_LIST",
+            "OrdinalPosition": "287",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OPL_VALUE_CODE_LIST",
+            "OrdinalPosition": "288",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RULE_NUMBER_PRIMARY",
+            "OrdinalPosition": "289",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RULE_NUMBER_SECONDARY",
+            "OrdinalPosition": "290",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SF_MESSAGE_CODE",
+            "OrdinalPosition": "291",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SPCC_AMOUNT",
+            "OrdinalPosition": "292",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SPCC_CODE",
+            "OrdinalPosition": "293",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SPCC_DAYS",
+            "OrdinalPosition": "294",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SPCC_PERCENT",
+            "OrdinalPosition": "295",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AVG_SEMI_PRIVATE_ROOM_RATE",
+            "OrdinalPosition": "296",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HOST_OPL_PROV_ARRANGEMENT",
+            "OrdinalPosition": "297",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FACILITY_TYPE",
+            "OrdinalPosition": "298",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PER_DIEM_RATE",
+            "OrdinalPosition": "299",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PERCENTAGE_FACTOR",
+            "OrdinalPosition": "300",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPO_AVAILABILITY",
+            "OrdinalPosition": "301",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPO_PROVIDER_TYPE_AVAILABILITY",
+            "OrdinalPosition": "302",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRIVATE_ROOM_RATE",
+            "OrdinalPosition": "303",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PRICING_METHOD",
+            "OrdinalPosition": "304",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "STREAMLINE_IND",
+            "OrdinalPosition": "305",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DF_MESSAGE_CODE",
+            "OrdinalPosition": "306",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "COB_PATIENTRESPONSIBILITYACTUAL",
+            "OrdinalPosition": "307",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_COB_PAYERPAIDAMOUNT",
+            "OrdinalPosition": "308",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_COB_PATIENTRESPONSIBILITYACTUAL",
+            "OrdinalPosition": "309",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SEC_COB_DISCOUNTAMOUNT",
+            "OrdinalPosition": "310",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REPRICED_CLAIM_NUMBER",
+            "OrdinalPosition": "311",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CONTRACT_TYPE",
+            "OrdinalPosition": "312",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CRC03_AMBULANCE_CODE1",
+            "OrdinalPosition": "313",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULANCE_QTY",
+            "OrdinalPosition": "314",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AMBULANCE_REASON_CODE",
+            "OrdinalPosition": "315",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CRC02_AMBULANCE_RESPONSECODE",
+            "OrdinalPosition": "316",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CR209_SPINAL_COND_CODE",
+            "OrdinalPosition": "317",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SRV_AUTH_EXPT_CODE",
+            "OrdinalPosition": "318",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MEDICARE_SEC_4081_IND",
+            "OrdinalPosition": "319",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ADJ_REPRICED_CLAIM_REF_NUM",
+            "OrdinalPosition": "320",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "INVST_DEVICE_EXPT_ID",
+            "OrdinalPosition": "321",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CARE_PLAN_OVERSIGHT_NUM",
+            "OrdinalPosition": "322",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HEARING_VISION_PRES_DT",
+            "OrdinalPosition": "323",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AUTH_NUMBER",
+            "OrdinalPosition": "324",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "REFERRAL_NUMBER",
+            "OrdinalPosition": "325",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_CLAIM_NUM",
+            "OrdinalPosition": "326",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_GROUP_BASE",
+            "OrdinalPosition": "327",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_FIRST_NAME",
+            "OrdinalPosition": "328",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_LAST_NAME",
+            "OrdinalPosition": "329",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_DOB",
+            "OrdinalPosition": "330",
+            "DataType": "date"
+        },
+        {
+            "FieldName": "MA_PATIENT_GENDER",
+            "OrdinalPosition": "331",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_BILL_PROV_ADDRESS_LINE_1",
+            "OrdinalPosition": "332",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_BILL_PROV_CITY",
+            "OrdinalPosition": "333",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ITS_ACCESS_FEE_AMT",
+            "OrdinalPosition": "334",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ITS_HOME_HOST_IND",
+            "OrdinalPosition": "335",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_BEGINNING_DOS",
+            "OrdinalPosition": "336",
+            "DataType": "date"
+        },
+        {
+            "FieldName": "MA_DOC_CNTL_NUM",
+            "OrdinalPosition": "337",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_FIRST_NAME",
+            "OrdinalPosition": "338",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_LAST_NAME",
+            "OrdinalPosition": "339",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_MIDDLE_NAME",
+            "OrdinalPosition": "340",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_BIRTH_DATE",
+            "OrdinalPosition": "341",
+            "DataType": "date"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_GENDER",
+            "OrdinalPosition": "342",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_COMPANY_CD",
+            "OrdinalPosition": "343",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_COB_IND",
+            "OrdinalPosition": "344",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SUBCRIBER_PATIENT_RELCODE",
+            "OrdinalPosition": "345",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_ID_NUM",
+            "OrdinalPosition": "346",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_INSUR_PLAN_NAME",
+            "OrdinalPosition": "347",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_INSUR_PLAN_ID",
+            "OrdinalPosition": "348",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_FIRST_NAME",
+            "OrdinalPosition": "349",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_LAST_NAME",
+            "OrdinalPosition": "350",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_MIDDLE_NAME",
+            "OrdinalPosition": "351",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_BIRTH_DATE",
+            "OrdinalPosition": "352",
+            "DataType": "date"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_GENDER",
+            "OrdinalPosition": "353",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_EMPLOYER",
+            "OrdinalPosition": "354",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_COB_IND",
+            "OrdinalPosition": "355",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_SEC_SBSCRBR_PATIENT_RELCODE",
+            "OrdinalPosition": "356",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_TER_SBSCRBR_BIRTH_DATE",
+            "OrdinalPosition": "357",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_TER_SBSCRBR_GENDER",
+            "OrdinalPosition": "358",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_MIDDLE_NAME",
+            "OrdinalPosition": "359",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_ADDR1",
+            "OrdinalPosition": "360",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_ADDR2",
+            "OrdinalPosition": "361",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_CITY",
+            "OrdinalPosition": "362",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_ZIPCODE",
+            "OrdinalPosition": "363",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_STATE",
+            "OrdinalPosition": "364",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_RLSE_OF_INFO_IND",
+            "OrdinalPosition": "365",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_RNDR_PROV_TYPE_CODE",
+            "OrdinalPosition": "366",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_BILL_PROV_TYPE_CODE",
+            "OrdinalPosition": "367",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_COND_EMPLOYMENT",
+            "OrdinalPosition": "368",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_COND_AUTO_ACCIDENT",
+            "OrdinalPosition": "369",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_COND_AUTO_ACCDNT_ST",
+            "OrdinalPosition": "370",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_COND_OTHER_ACCIDENT",
+            "OrdinalPosition": "371",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_CURRENT_ILLNESS_DT",
+            "OrdinalPosition": "372",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_SIMILAR_ILLNESS_DT",
+            "OrdinalPosition": "373",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_LAST_WORKED_DT",
+            "OrdinalPosition": "374",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_RETURN_WORK_DT",
+            "OrdinalPosition": "375",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_RFRG_PROV_AUTH_NUM",
+            "OrdinalPosition": "376",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_AMBULATORY_GROUP",
+            "OrdinalPosition": "377",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PATIENT_ACCOUNT_NUM",
+            "OrdinalPosition": "378",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ACCEPT_ASSGN_IND1",
+            "OrdinalPosition": "379",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_CLAIM_SUBMITTER_ID",
+            "OrdinalPosition": "380",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PHYSICIAN_SIGNATURE",
+            "OrdinalPosition": "381",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_CLAIM_ICD_VERSION_IND",
+            "OrdinalPosition": "382",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ATTND_PROV_NPI",
+            "OrdinalPosition": "383",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ATTND_PROV_LAST_NAME",
+            "OrdinalPosition": "384",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ATTND_PROV_FIRST_NAME",
+            "OrdinalPosition": "385",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ATTND_PROV_MIDDLE_NAME",
+            "OrdinalPosition": "386",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_ATTND_PROV_NAME_SUFFIX",
+            "OrdinalPosition": "387",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OPER_PROV_NPI",
+            "OrdinalPosition": "388",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OPER_PROV_LAST_NAME",
+            "OrdinalPosition": "389",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OPER_PROV_FIRST_NAME",
+            "OrdinalPosition": "390",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OPER_PROV_MIDDLE_NAME",
+            "OrdinalPosition": "391",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OPER_PROV_NAME_SUFFIX",
+            "OrdinalPosition": "392",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OTH_OPER_PROV_NPI",
+            "OrdinalPosition": "393",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OTH_OPER_PROV_LAST_NAME",
+            "OrdinalPosition": "394",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OTH_OPER_PROV_FIRST_NAME",
+            "OrdinalPosition": "395",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OTH_OPER_PROV_MIDDLE_NAME",
+            "OrdinalPosition": "396",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_OTH_OPER_PROV_NAME_SUFFIX",
+            "OrdinalPosition": "397",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_CLAIM_NUM",
+            "OrdinalPosition": "398",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequired"
+                }
+            ]
+        },
+        {
+            "FieldName": "MA_CLAIM_LINE_NUM",
+            "OrdinalPosition": "399",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_TYPE_OF_SERVICE",
+            "OrdinalPosition": "400",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_PLACE_OF_SERVICE",
+            "OrdinalPosition": "401",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "2"
+                }
+            ]
+        },
+        {
+            "FieldName": "MA_LINE_SERVICE_FROM_DT",
+            "OrdinalPosition": "402",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDateNotRequired",
+                    "Value": "yyyy-MM-dd"
+                }
+            ]
+        },
+        {
+            "FieldName": "MA_LINE_SERVICE_TO_DT",
+            "OrdinalPosition": "403",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isDateNotRequired",
+                    "Value": "yyyy-MM-dd"
+                }
+            ]
+        },
+        {
+            "FieldName": "MA_LINE_PROC_CD",
+            "OrdinalPosition": "404",
+            "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "dataLengthCheck",
+                    "Value": "5"
+                }
+            ]
+        },
+        {
+            "FieldName": "MA_LINE_PROC_MOD1",
+            "OrdinalPosition": "405",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_PROC_MOD2",
+            "OrdinalPosition": "406",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_PROC_MOD3",
+            "OrdinalPosition": "407",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_PROC_MOD4",
+            "OrdinalPosition": "408",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_AUTHORIZATION_NUM",
+            "OrdinalPosition": "409",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_NDC_CD_LIST",
+            "OrdinalPosition": "410",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_QUANTITY",
+            "OrdinalPosition": "411",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_UNIT_TYPE",
+            "OrdinalPosition": "412",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_CLAIM_UPDATED_DT",
+            "OrdinalPosition": "413",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD1",
+            "OrdinalPosition": "414",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD2",
+            "OrdinalPosition": "415",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD3",
+            "OrdinalPosition": "416",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD4",
+            "OrdinalPosition": "417",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD5",
+            "OrdinalPosition": "418",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD6",
+            "OrdinalPosition": "419",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD7",
+            "OrdinalPosition": "420",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD8",
+            "OrdinalPosition": "421",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD9",
+            "OrdinalPosition": "422",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD10",
+            "OrdinalPosition": "423",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD11",
+            "OrdinalPosition": "424",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MA_LINE_DIAG_CD12",
+            "OrdinalPosition": "425",
+            "DataType": "string"
+        }
+    ]
+}

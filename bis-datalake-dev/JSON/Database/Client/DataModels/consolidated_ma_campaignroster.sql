@@ -1,0 +1,36 @@
+CREATE TABLE #clientCode.consolidated_ma_campaignroster (
+ ClientID  string
+,LoadDateTime date
+,FileID  int
+,FileLayoutID  int
+,FileLayoutDescription  string
+,ClientName  string
+,POCode  string
+,POName  string
+,PracticeCode  string
+,PracticeName  string
+,ProviderFirstName  string
+,ProviderMiddleName  string
+,ProviderLastName  string
+,ClientProviderID  string
+,ProviderNPI  string
+,ClientMemberID  string
+,SPClientMemberLookup  string
+,BeneficiaryID  string
+,MemberFirstName  string
+,MemberMiddleName  string
+,MemberLastName  string
+,MemberDOB  string
+,EligibleForReview  string
+,MRRScannedFileName  string
+,MRRScannedStatus  string
+,PracticeRetrievalType  string
+,PracticeImplementationYear  string
+,PracticeAssignedPEC  string
+,ScanningCampaign  string
+,PriorYearDOSScannedPDFName  string
+,PriorYearDOSScannedPDFCount  string
+,GroupingID  string
+,ScanningComments  string
+,EngagedPractice  string
+) USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/CampaignRoster'

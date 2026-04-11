@@ -1,0 +1,110 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedMedicalClaimsUniqueKey",
+          "ColumnQuery": "CONCAT(COALESCE(OriginalClaimNumber,''),'-',COALESCE(ClaimNumber,''),'-',COALESCE(ClaimProcessDate,''),'-',COALESCE(ClaimStatus,''),'-',COALESCE(CLIENT_ID,''),'-',COALESCE(FILE_ID,''))",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimLineNumber",
+          "DestinationColumn": "LineNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "LineServiceFrom",
+          "DestinationColumn": "ServiceFromDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "LineServiceThu",
+          "DestinationColumn": "ServiceToDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "RevenueCode",
+          "DestinationColumn": "RevenueCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCode",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL THEN CPTCode ELSE HCPCSCode END",
+          "SourceColumnFormat": ""
+        },
+		{
+           "SourceColumn": "",
+           "DestinationColumn": "ProcCodeType",
+           "ColumnQuery": "CASE WHEN CPTCode BETWEEN 00000 AND 99999 AND LENGTH(CPTCode) = 5 THEN 'CPTCode' WHEN SUBSTRING(CPTCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(CPTCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(CPTCode)= 5 THEN 'HCPCSCode' WHEN CPTCode IS NOT NULL THEN 'Unknown' WHEN HCPCSCode BETWEEN 00000 AND 99999 AND LENGTH(HCPCSCode) = 5 THEN 'CPTCode' WHEN SUBSTRING(HCPCSCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(HCPCSCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(HCPCSCode)= 5 THEN 'HCPCSCode' WHEN HCPCSCode IS NOT NULL THEN 'Unknown' END",
+           "SourceColumnFormat": ""
+         },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcMod1",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL THEN CPTModifier1 ELSE HCPCSModifier END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier2",
+          "DestinationColumn": "ProcMod2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier3",
+          "DestinationColumn": "ProcMod3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier4",
+          "DestinationColumn": "ProcMod4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+		{
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCode1",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL THEN HCPCSCode END",
+          "SourceColumnFormat": ""
+        },
+		{
+           "SourceColumn": "",
+           "DestinationColumn": "ProcCode1Type",
+           "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL AND SUBSTRING(HCPCSCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(HCPCSCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(HCPCSCode)= 5 THEN 'HCPCSCode' WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL THEN 'Unknown' END",
+           "SourceColumnFormat": ""
+         },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCode1Mod1",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL THEN HCPCSModifier END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PaidAmount",
+          "DestinationColumn": "PrimaryPaidAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

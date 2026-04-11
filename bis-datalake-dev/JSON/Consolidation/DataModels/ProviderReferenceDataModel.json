@@ -1,0 +1,84 @@
+{
+  "Fields": [
+    {
+      "FieldName": "LastName",
+      "DataType": "StringType",
+      "Ordinal": "1"
+    },
+    {
+      "FieldName": "FirstName",
+      "DataType": "StringType",
+      "Ordinal": "2"
+    },
+    {
+      "FieldName": "TaxonomyCode",
+      "DataType": "StringType",
+      "Ordinal": "3"
+    },
+    {
+      "FieldName": "Addressline1",
+      "DataType": "StringType",
+      "Ordinal": "4"
+    },
+    {
+      "FieldName": "Addressline2",
+      "DataType": "StringType",
+      "Ordinal": "5"
+    },
+    {
+      "FieldName": "City",
+      "DataType": "StringType",
+      "Ordinal": "6"
+    },
+    {
+      "FieldName": "State",
+      "DataType": "StringType",
+      "Ordinal": "7"
+    },
+    {
+      "FieldName": "ZipCode",
+      "DataType": "StringType",
+      "Ordinal": "8"
+    },
+    {
+      "FieldName": "PhoneNumber",
+      "DataType": "StringType",
+      "Ordinal": "9"
+    },
+    {
+      "FieldName": "FaxNumber",
+      "DataType": "StringType",
+      "Ordinal": "10"
+    },
+    {
+      "FieldName": "ProviderType",
+      "DataType": "StringType",
+      "Ordinal": "11"
+    },
+    {
+      "FieldName": "NPI",
+      "DataType": "StringType",
+      "Ordinal": "12"
+    },
+    {
+      "FieldName": "DEA",
+      "DataType": "StringType",
+      "Ordinal": "13"
+    },
+    {
+      "FieldName": "OrganizationName",
+      "DataType": "StringType",
+      "Ordinal": "14"
+    },
+    {
+      "FieldName": "EntityCodeType",
+      "DataType": "StringType",
+      "Ordinal": "15"
+    },
+    {
+      "FieldName": "TIN",
+      "DataType": "StringType",
+      "Ordinal": "16"
+    }
+  ]
+}

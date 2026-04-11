@@ -1,0 +1,3485 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "CLAIM_ID",
+      "OrdinalPosition": 0,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LINE_ID",
+      "OrdinalPosition": 1,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_ID",
+      "OrdinalPosition": 2,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "MEMBER_HICN",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_CLASS",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LEGACY_CLAIM_ID",
+      "OrdinalPosition": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RECEIVED_DATE",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_ACTIVITY_DATE",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADJUSTED_CLAIM_ID",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADJUSTED_CLAIM_SEQUENCE_NUM",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_ADJUSTMENT_REASON_CODE",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REVERSAL_FLAG",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "FINALIZED_DATE",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_ACCT_NUMBER",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_MED_REC_NUMBER",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_STATUS",
+      "OrdinalPosition": 15,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "CLAIM_PAYMENT_STATUS",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_RECEIVED_DATE",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CAP_FFS_INDICATOR",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AUTHORIZATION_NO",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AMOUNT_MEDICARE_APPROVED",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AMOUNT_PAID_BY_OTHER_INS",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ALLOWED_AMOUNT",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BILL_AMOUNT",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COINSURANCE_AMT",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DEDUCTIBLE_AMT",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CONSIDERED_CHARGE",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DISALLOWED_AMT",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PAID_AMOUNT",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NON_COVERED_CHARGE",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_WITHHOLD_AMOUNT",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_OVERPAYMENT_AMT",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_INTEREST_AMT",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DENIED_AMT",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADJUSTED_AMT",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROMPT_PAY_AMT",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "STATE_SURCHARGE_TAX_AMT",
+      "OrdinalPosition": 36,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "STATE_SURCHARGE_TAX_CODE",
+      "OrdinalPosition": 37,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "QUANTITY",
+      "OrdinalPosition": 38,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "QUANTITY_ALLOWED",
+      "OrdinalPosition": 39,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PATIENT_PAY_AMOUNT",
+      "OrdinalPosition": 40,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PAID_DATE",
+      "OrdinalPosition": 41,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_PAID_AMOUNT",
+      "OrdinalPosition": 42,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_ADMIT_DATE",
+      "OrdinalPosition": 43,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_DISCHARGE_DATE",
+      "OrdinalPosition": 44,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HOSP_ADMIT_HOUR",
+      "OrdinalPosition": 45,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HOSP_CERT_DAYS",
+      "OrdinalPosition": 46,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HOSP_DISCHARGE_HOUR",
+      "OrdinalPosition": 47,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_ENTRY_DATE",
+      "OrdinalPosition": 48,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DATE_OF_SERVICE",
+      "OrdinalPosition": 49,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_FROM_DATE",
+      "OrdinalPosition": 50,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_THROUGH_DATE",
+      "OrdinalPosition": 51,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "STATEMENT_COVERS_FROM_DT",
+      "OrdinalPosition": 52,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "STATEMENT_COVERS_TO_DT",
+      "OrdinalPosition": 53,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE",
+      "OrdinalPosition": 54,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCPCS_MODIFIERS",
+      "OrdinalPosition": 55,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCPCS_MODIFIER2",
+      "OrdinalPosition": 56,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCPCS_MODIFIER3",
+      "OrdinalPosition": 57,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCPCS_MODIFIER4",
+      "OrdinalPosition": 58,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REFERRAL_NO",
+      "OrdinalPosition": 59,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AUTO_ACCIDENT_IND",
+      "OrdinalPosition": 60,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TYPE_OF_SERVICE",
+      "OrdinalPosition": 61,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PLACE_OF_SERVICE",
+      "OrdinalPosition": 62,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ACCIDENT_INDICATOR",
+      "OrdinalPosition": 63,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ACCIDENT_STATE",
+      "OrdinalPosition": 64,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RELEASE_IND",
+      "OrdinalPosition": 65,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BILL_TYPE",
+      "OrdinalPosition": 66,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DISPOSITION_CODE",
+      "OrdinalPosition": 67,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG_E",
+      "OrdinalPosition": 68,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_DENIAL_CODE",
+      "OrdinalPosition": 69,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DAYS_DENIED",
+      "OrdinalPosition": 70,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEDICARE_INDICATOR",
+      "OrdinalPosition": 71,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_TYPE",
+      "OrdinalPosition": 72,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_CATEGORY",
+      "OrdinalPosition": 73,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEDICAL_RECORD_NO",
+      "OrdinalPosition": 74,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_CARRIER_CODE",
+      "OrdinalPosition": 75,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_CARRIER_TYPE",
+      "OrdinalPosition": 76,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COB_TYPE",
+      "OrdinalPosition": 77,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COB_INDICATOR_FLAG",
+      "OrdinalPosition": 78,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADMISSION_TYPE",
+      "OrdinalPosition": 79,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADMISSION_SOURCE",
+      "OrdinalPosition": 80,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DRG_CODE",
+      "OrdinalPosition": 81,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SUBMITTED_DRG",
+      "OrdinalPosition": 82,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MS_DRG",
+      "OrdinalPosition": 83,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CMS_HCC_CODE",
+      "OrdinalPosition": 84,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_COINSURANCE_DAYS",
+      "OrdinalPosition": 85,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REV_CODE",
+      "OrdinalPosition": 86,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COVERED_DAYS",
+      "OrdinalPosition": 87,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_LIFE_RESERVE_DAYS",
+      "OrdinalPosition": 88,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE1",
+      "OrdinalPosition": 89,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE1",
+      "OrdinalPosition": 90,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE1",
+      "OrdinalPosition": 91,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE2",
+      "OrdinalPosition": 92,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE2",
+      "OrdinalPosition": 93,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE2",
+      "OrdinalPosition": 94,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE3",
+      "OrdinalPosition": 95,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE3",
+      "OrdinalPosition": 96,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE3",
+      "OrdinalPosition": 97,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE4",
+      "OrdinalPosition": 98,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE4",
+      "OrdinalPosition": 99,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE4",
+      "OrdinalPosition": 100,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE5",
+      "OrdinalPosition": 101,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE5",
+      "OrdinalPosition": 102,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE5",
+      "OrdinalPosition": 103,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE6",
+      "OrdinalPosition": 104,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE6",
+      "OrdinalPosition": 105,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE6",
+      "OrdinalPosition": 106,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE7",
+      "OrdinalPosition": 107,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE7",
+      "OrdinalPosition": 108,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE7",
+      "OrdinalPosition": 109,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE8",
+      "OrdinalPosition": 110,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE8",
+      "OrdinalPosition": 111,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE8",
+      "OrdinalPosition": 112,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE9",
+      "OrdinalPosition": 113,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE9",
+      "OrdinalPosition": 114,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE9",
+      "OrdinalPosition": 115,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE10",
+      "OrdinalPosition": 116,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE10",
+      "OrdinalPosition": 117,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE10",
+      "OrdinalPosition": 118,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE11",
+      "OrdinalPosition": 119,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE11",
+      "OrdinalPosition": 120,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE11",
+      "OrdinalPosition": 121,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE12",
+      "OrdinalPosition": 122,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE12",
+      "OrdinalPosition": 123,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE12",
+      "OrdinalPosition": 124,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE13",
+      "OrdinalPosition": 125,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE13",
+      "OrdinalPosition": 126,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE13",
+      "OrdinalPosition": 127,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE14",
+      "OrdinalPosition": 128,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE14",
+      "OrdinalPosition": 129,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE14",
+      "OrdinalPosition": 130,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE15",
+      "OrdinalPosition": 131,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE15",
+      "OrdinalPosition": 132,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE15",
+      "OrdinalPosition": 133,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE16",
+      "OrdinalPosition": 134,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE16",
+      "OrdinalPosition": 135,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE16",
+      "OrdinalPosition": 136,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE17",
+      "OrdinalPosition": 137,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE17",
+      "OrdinalPosition": 138,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE17",
+      "OrdinalPosition": 139,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE18",
+      "OrdinalPosition": 140,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE18",
+      "OrdinalPosition": 141,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE18",
+      "OrdinalPosition": 142,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE19",
+      "OrdinalPosition": 143,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE19",
+      "OrdinalPosition": 144,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE19",
+      "OrdinalPosition": 145,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE20",
+      "OrdinalPosition": 146,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE20",
+      "OrdinalPosition": 147,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE20",
+      "OrdinalPosition": 148,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE21",
+      "OrdinalPosition": 149,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE21",
+      "OrdinalPosition": 150,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE21",
+      "OrdinalPosition": 151,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE22",
+      "OrdinalPosition": 152,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE22",
+      "OrdinalPosition": 153,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE22",
+      "OrdinalPosition": 154,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE23",
+      "OrdinalPosition": 155,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE23",
+      "OrdinalPosition": 156,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE23",
+      "OrdinalPosition": 157,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_CODE24",
+      "OrdinalPosition": 158,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_FROM_DATE24",
+      "OrdinalPosition": 159,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UB92_OCC_SPAN_TO_DATE24",
+      "OrdinalPosition": 160,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADMIT_DIAGNOSIS",
+      "OrdinalPosition": 161,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ICD_INDICATOR",
+      "OrdinalPosition": 162,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PRINCIPAL_DIAGNOSIS",
+      "OrdinalPosition": 163,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG2",
+      "OrdinalPosition": 164,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG3",
+      "OrdinalPosition": 165,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG4",
+      "OrdinalPosition": 166,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG5",
+      "OrdinalPosition": 167,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG6",
+      "OrdinalPosition": 168,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG7",
+      "OrdinalPosition": 169,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG8",
+      "OrdinalPosition": 170,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG9",
+      "OrdinalPosition": 171,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG10",
+      "OrdinalPosition": 172,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG11",
+      "OrdinalPosition": 173,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG12",
+      "OrdinalPosition": 174,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG13",
+      "OrdinalPosition": 175,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG14",
+      "OrdinalPosition": 176,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG15",
+      "OrdinalPosition": 177,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG16",
+      "OrdinalPosition": 178,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG17",
+      "OrdinalPosition": 179,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG18",
+      "OrdinalPosition": 180,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG19",
+      "OrdinalPosition": 181,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG20",
+      "OrdinalPosition": 182,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG21",
+      "OrdinalPosition": 183,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG22",
+      "OrdinalPosition": 184,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG23",
+      "OrdinalPosition": 185,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG24",
+      "OrdinalPosition": 186,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG25",
+      "OrdinalPosition": 187,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG26",
+      "OrdinalPosition": 188,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG1",
+      "OrdinalPosition": 189,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG2",
+      "OrdinalPosition": 190,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG3",
+      "OrdinalPosition": 191,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG4",
+      "OrdinalPosition": 192,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG5",
+      "OrdinalPosition": 193,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG6",
+      "OrdinalPosition": 194,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG7",
+      "OrdinalPosition": 195,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POINTER_DIAG8",
+      "OrdinalPosition": 196,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE1",
+      "OrdinalPosition": 197,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT1",
+      "OrdinalPosition": 198,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE2",
+      "OrdinalPosition": 199,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT2",
+      "OrdinalPosition": 200,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE3",
+      "OrdinalPosition": 201,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT3",
+      "OrdinalPosition": 202,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE4",
+      "OrdinalPosition": 203,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT4",
+      "OrdinalPosition": 204,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE5",
+      "OrdinalPosition": 205,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT5",
+      "OrdinalPosition": 206,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE6",
+      "OrdinalPosition": 207,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT6",
+      "OrdinalPosition": 208,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE7",
+      "OrdinalPosition": 209,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT7",
+      "OrdinalPosition": 210,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE8",
+      "OrdinalPosition": 211,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT8",
+      "OrdinalPosition": 212,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE9",
+      "OrdinalPosition": 213,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT9",
+      "OrdinalPosition": 214,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE10",
+      "OrdinalPosition": 215,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT10",
+      "OrdinalPosition": 216,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE11",
+      "OrdinalPosition": 217,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT11",
+      "OrdinalPosition": 218,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE12",
+      "OrdinalPosition": 219,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT12",
+      "OrdinalPosition": 220,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE13",
+      "OrdinalPosition": 221,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT13",
+      "OrdinalPosition": 222,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE14",
+      "OrdinalPosition": 223,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT14",
+      "OrdinalPosition": 224,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE15",
+      "OrdinalPosition": 225,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT15",
+      "OrdinalPosition": 226,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE16",
+      "OrdinalPosition": 227,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT16",
+      "OrdinalPosition": 228,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE17",
+      "OrdinalPosition": 229,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT17",
+      "OrdinalPosition": 230,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE18",
+      "OrdinalPosition": 231,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT18",
+      "OrdinalPosition": 232,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE19",
+      "OrdinalPosition": 233,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT19",
+      "OrdinalPosition": 234,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE20",
+      "OrdinalPosition": 235,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT20",
+      "OrdinalPosition": 236,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE21",
+      "OrdinalPosition": 237,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT21",
+      "OrdinalPosition": 238,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE22",
+      "OrdinalPosition": 239,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT22",
+      "OrdinalPosition": 240,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE23",
+      "OrdinalPosition": 241,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT23",
+      "OrdinalPosition": 242,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_CODE24",
+      "OrdinalPosition": 243,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VALUE_AMOUNT24",
+      "OrdinalPosition": 244,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PRINCIPAL_SURG_PROC_CODE",
+      "OrdinalPosition": 245,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PRINCIPAL_SURG_PROC_CODE_DATE",
+      "OrdinalPosition": 246,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE1",
+      "OrdinalPosition": 247,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE1",
+      "OrdinalPosition": 248,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE2",
+      "OrdinalPosition": 249,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE2",
+      "OrdinalPosition": 250,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE3",
+      "OrdinalPosition": 251,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE3",
+      "OrdinalPosition": 252,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE4",
+      "OrdinalPosition": 253,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE4",
+      "OrdinalPosition": 254,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE5",
+      "OrdinalPosition": 255,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE5",
+      "OrdinalPosition": 256,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE6",
+      "OrdinalPosition": 257,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE6",
+      "OrdinalPosition": 258,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE7",
+      "OrdinalPosition": 259,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE7",
+      "OrdinalPosition": 260,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE8",
+      "OrdinalPosition": 261,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE8",
+      "OrdinalPosition": 262,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE9",
+      "OrdinalPosition": 263,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE9",
+      "OrdinalPosition": 264,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE10",
+      "OrdinalPosition": 265,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE10",
+      "OrdinalPosition": 266,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE11",
+      "OrdinalPosition": 267,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE11",
+      "OrdinalPosition": 268,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE12",
+      "OrdinalPosition": 269,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE12",
+      "OrdinalPosition": 270,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE13",
+      "OrdinalPosition": 271,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE13",
+      "OrdinalPosition": 272,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE14",
+      "OrdinalPosition": 273,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE14",
+      "OrdinalPosition": 274,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE15",
+      "OrdinalPosition": 275,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE15",
+      "OrdinalPosition": 276,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE16",
+      "OrdinalPosition": 277,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE16",
+      "OrdinalPosition": 278,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE17",
+      "OrdinalPosition": 279,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE17",
+      "OrdinalPosition": 280,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE18",
+      "OrdinalPosition": 281,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE18",
+      "OrdinalPosition": 282,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE19",
+      "OrdinalPosition": 283,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE19",
+      "OrdinalPosition": 284,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE20",
+      "OrdinalPosition": 285,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE20",
+      "OrdinalPosition": 286,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE21",
+      "OrdinalPosition": 287,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE21",
+      "OrdinalPosition": 288,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE22",
+      "OrdinalPosition": 289,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE22",
+      "OrdinalPosition": 290,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE23",
+      "OrdinalPosition": 291,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE23",
+      "OrdinalPosition": 292,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE24",
+      "OrdinalPosition": 293,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_DATE24",
+      "OrdinalPosition": 294,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC1",
+      "OrdinalPosition": 295,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC1_DATE",
+      "OrdinalPosition": 296,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC2",
+      "OrdinalPosition": 297,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC2_DATE",
+      "OrdinalPosition": 298,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC3",
+      "OrdinalPosition": 299,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC3_DATE",
+      "OrdinalPosition": 300,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC4",
+      "OrdinalPosition": 301,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC4_DATE",
+      "OrdinalPosition": 302,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC5",
+      "OrdinalPosition": 303,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC5_DATE",
+      "OrdinalPosition": 304,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC6",
+      "OrdinalPosition": 305,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC6_DATE",
+      "OrdinalPosition": 306,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC7",
+      "OrdinalPosition": 307,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC7_DATE",
+      "OrdinalPosition": 308,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC8",
+      "OrdinalPosition": 309,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC8_DATE",
+      "OrdinalPosition": 310,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC9",
+      "OrdinalPosition": 311,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC9_DATE",
+      "OrdinalPosition": 312,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC10",
+      "OrdinalPosition": 313,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC10_DATE",
+      "OrdinalPosition": 314,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC11",
+      "OrdinalPosition": 315,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC11_DATE",
+      "OrdinalPosition": 316,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC12",
+      "OrdinalPosition": 317,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC12_DATE",
+      "OrdinalPosition": 318,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC13",
+      "OrdinalPosition": 319,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC13_DATE",
+      "OrdinalPosition": 320,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC14",
+      "OrdinalPosition": 321,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC14_DATE",
+      "OrdinalPosition": 322,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC15",
+      "OrdinalPosition": 323,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC15_DATE",
+      "OrdinalPosition": 324,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC16",
+      "OrdinalPosition": 325,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC16_DATE",
+      "OrdinalPosition": 326,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC17",
+      "OrdinalPosition": 327,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC17_DATE",
+      "OrdinalPosition": 328,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC18",
+      "OrdinalPosition": 329,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC18_DATE",
+      "OrdinalPosition": 330,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC19",
+      "OrdinalPosition": 331,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC19_DATE",
+      "OrdinalPosition": 332,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC20",
+      "OrdinalPosition": 333,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC20_DATE",
+      "OrdinalPosition": 334,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC21",
+      "OrdinalPosition": 335,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC21_DATE",
+      "OrdinalPosition": 336,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC22",
+      "OrdinalPosition": 337,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC22_DATE",
+      "OrdinalPosition": 338,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC23",
+      "OrdinalPosition": 339,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC23_DATE",
+      "OrdinalPosition": 340,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC24",
+      "OrdinalPosition": 341,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OCC24_DATE",
+      "OrdinalPosition": 342,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE1",
+      "OrdinalPosition": 343,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE2",
+      "OrdinalPosition": 344,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE3",
+      "OrdinalPosition": 345,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE4",
+      "OrdinalPosition": 346,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE5",
+      "OrdinalPosition": 347,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE6",
+      "OrdinalPosition": 348,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE7",
+      "OrdinalPosition": 349,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE8",
+      "OrdinalPosition": 350,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE9",
+      "OrdinalPosition": 351,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE10",
+      "OrdinalPosition": 352,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE11",
+      "OrdinalPosition": 353,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE12",
+      "OrdinalPosition": 354,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE13",
+      "OrdinalPosition": 355,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE14",
+      "OrdinalPosition": 356,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE15",
+      "OrdinalPosition": 357,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE16",
+      "OrdinalPosition": 358,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE17",
+      "OrdinalPosition": 359,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE18",
+      "OrdinalPosition": 360,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE19",
+      "OrdinalPosition": 361,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE20",
+      "OrdinalPosition": 362,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE21",
+      "OrdinalPosition": 363,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE22",
+      "OrdinalPosition": 364,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE23",
+      "OrdinalPosition": 365,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COND_CODE24",
+      "OrdinalPosition": 366,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LINE_DENIED_FLAG",
+      "OrdinalPosition": 367,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_DENIED_FLAG",
+      "OrdinalPosition": 368,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SOURCE_BILL_TYPE",
+      "OrdinalPosition": 369,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TOTAL_BILL_AMT",
+      "OrdinalPosition": 370,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "INIT_NONSUBMIT_FLAG",
+      "OrdinalPosition": 371,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CDT",
+      "OrdinalPosition": 372,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TOOTH_SURFACE",
+      "OrdinalPosition": 373,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TOOTH_NUMBER",
+      "OrdinalPosition": 374,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTH_INS_TOTAL_BILL_AMT",
+      "OrdinalPosition": 375,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_AGE",
+      "OrdinalPosition": 376,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PATIENT_NO",
+      "OrdinalPosition": 377,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BILL_PROVIDER_ID",
+      "OrdinalPosition": 378,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "BILL_PROVIDER_NPI",
+      "OrdinalPosition": 379,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BILL_PROVIDER_TAX_ID",
+      "OrdinalPosition": 380,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BILL_PROVIDER_SPECIALTY_ID",
+      "OrdinalPosition": 381,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROVIDER_ID",
+      "OrdinalPosition": 382,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "NATIONAL_PROVIDER_ID",
+      "OrdinalPosition": 383,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "FEDERAL_TAX_ID",
+      "OrdinalPosition": 384,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SPECIALTY_ID",
+      "OrdinalPosition": 385,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_PROVIDER_PAR_STATUS",
+      "OrdinalPosition": 386,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ATTENDING_PHYSICIAN_ID",
+      "OrdinalPosition": 387,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ATTENDING_PROVIDER_NPI",
+      "OrdinalPosition": 388,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ATTENDING_PROVIDER_TAX_ID",
+      "OrdinalPosition": 389,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ATTENDING_PROVIDER_SPEC_ID",
+      "OrdinalPosition": 390,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REFERRING_PHYSICIAN_ID",
+      "OrdinalPosition": 391,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REFERRING_PROVIDER_NPI",
+      "OrdinalPosition": 392,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REFERRING_PROVIDER_TAX_ID",
+      "OrdinalPosition": 393,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "REFERRING_PROVIDER_SPEC_ID",
+      "OrdinalPosition": 394,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_PHYSICIAN_ID",
+      "OrdinalPosition": 395,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_PROVIDER_NPI",
+      "OrdinalPosition": 396,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_PROVIDER_TAX_ID",
+      "OrdinalPosition": 397,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_PROVIDER_SPECIALTY_ID",
+      "OrdinalPosition": 398,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_CONSIDERED_CHARGE",
+      "OrdinalPosition": 399,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_DISALLOWED_AMT",
+      "OrdinalPosition": 400,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_NON_COVERED_CHARGE",
+      "OrdinalPosition": 401,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_DENIED_AMT",
+      "OrdinalPosition": 402,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_LOCATION_ID",
+      "OrdinalPosition": 403,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLINIC_CODE",
+      "OrdinalPosition": 404,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCFAPOS",
+      "OrdinalPosition": 405,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DESTINATION_CODE",
+      "OrdinalPosition": 406,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_FACILITY_NPI",
+      "OrdinalPosition": 407,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SERVICE_FACILITY_TAX_ID",
+      "OrdinalPosition": 408,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RA_ELIGIBLE_FLAG",
+      "OrdinalPosition": 409,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RA_ACCEPTED_FLAG",
+      "OrdinalPosition": 410,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ANTSHIA_PROC",
+      "OrdinalPosition": 411,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VISIT_REASON1",
+      "OrdinalPosition": 412,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VISIT_REASON2",
+      "OrdinalPosition": 413,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VISIT_REASON3",
+      "OrdinalPosition": 414,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY1",
+      "OrdinalPosition": 415,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY2",
+      "OrdinalPosition": 416,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY3",
+      "OrdinalPosition": 417,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY4",
+      "OrdinalPosition": 418,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY5",
+      "OrdinalPosition": 419,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY6",
+      "OrdinalPosition": 420,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY7",
+      "OrdinalPosition": 421,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY8",
+      "OrdinalPosition": 422,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY9",
+      "OrdinalPosition": 423,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY10",
+      "OrdinalPosition": 424,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY11",
+      "OrdinalPosition": 425,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EXT_CSE_INJRY12",
+      "OrdinalPosition": 426,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE1",
+      "OrdinalPosition": 427,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE2",
+      "OrdinalPosition": 428,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE3",
+      "OrdinalPosition": 429,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE4",
+      "OrdinalPosition": 430,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE5",
+      "OrdinalPosition": 431,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE6",
+      "OrdinalPosition": 432,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE7",
+      "OrdinalPosition": 433,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE8",
+      "OrdinalPosition": 434,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE9",
+      "OrdinalPosition": 435,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE10",
+      "OrdinalPosition": 436,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE11",
+      "OrdinalPosition": 437,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TREATMENT_CODE12",
+      "OrdinalPosition": 438,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CPT_HCPCS",
+      "OrdinalPosition": 439,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CPTMOD1",
+      "OrdinalPosition": 440,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CPTMOD2",
+      "OrdinalPosition": 441,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CPT2",
+      "OrdinalPosition": 442,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LAB_RESULT",
+      "OrdinalPosition": 443,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LOINC",
+      "OrdinalPosition": 444,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PN_IND",
+      "OrdinalPosition": 445,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_FIRST_NAME",
+      "OrdinalPosition": 446,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_LAST_NAME",
+      "OrdinalPosition": 447,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_DOB",
+      "OrdinalPosition": 448,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_GENDER",
+      "OrdinalPosition": 449,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEMBER_SSN",
+      "OrdinalPosition": 450,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ORIGINAL_CLAIM_ID",
+      "OrdinalPosition": 451,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PRESCRIPTION_NUMBER",
+      "OrdinalPosition": 452,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "THERAPEUTIC_CLASS",
+      "OrdinalPosition": 453,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "INGREDIENT_AMT",
+      "OrdinalPosition": 454,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DISPENSING_FEE",
+      "OrdinalPosition": 455,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "INGREDIENT_PAID_AMT",
+      "OrdinalPosition": 456,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DISPENSING_FEE_PAID",
+      "OrdinalPosition": 457,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC1",
+      "OrdinalPosition": 458,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "NDC1_UOM",
+      "OrdinalPosition": 459,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC1_UNITS",
+      "OrdinalPosition": 460,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC2",
+      "OrdinalPosition": 461,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC2_UOM",
+      "OrdinalPosition": 462,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC2_UNITS",
+      "OrdinalPosition": 463,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC3",
+      "OrdinalPosition": 464,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC3_UOM",
+      "OrdinalPosition": 465,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC3_UNITS",
+      "OrdinalPosition": 466,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC4",
+      "OrdinalPosition": 467,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC4_UOM",
+      "OrdinalPosition": 468,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC4_UNITS",
+      "OrdinalPosition": 469,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC5",
+      "OrdinalPosition": 470,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC5_UOM",
+      "OrdinalPosition": 471,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC5_UNITS",
+      "OrdinalPosition": 472,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC6",
+      "OrdinalPosition": 473,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC6_UOM",
+      "OrdinalPosition": 474,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC6_UNITS",
+      "OrdinalPosition": 475,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC7",
+      "OrdinalPosition": 476,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC7_UOM",
+      "OrdinalPosition": 477,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC7_UNITS",
+      "OrdinalPosition": 478,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC8",
+      "OrdinalPosition": 479,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC8_UOM",
+      "OrdinalPosition": 480,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC8_UNITS",
+      "OrdinalPosition": 481,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC9",
+      "OrdinalPosition": 482,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC9_UOM",
+      "OrdinalPosition": 483,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC9_UNITS",
+      "OrdinalPosition": 484,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC10",
+      "OrdinalPosition": 485,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC10_UOM",
+      "OrdinalPosition": 486,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC10_UNITS",
+      "OrdinalPosition": 487,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC11",
+      "OrdinalPosition": 488,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC11_UOM",
+      "OrdinalPosition": 489,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC11_UNITS",
+      "OrdinalPosition": 490,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC12",
+      "OrdinalPosition": 491,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC12_UOM",
+      "OrdinalPosition": 492,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC12_UNITS",
+      "OrdinalPosition": 493,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC13",
+      "OrdinalPosition": 494,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC13_UOM",
+      "OrdinalPosition": 495,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC13_UNITS",
+      "OrdinalPosition": 496,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC14",
+      "OrdinalPosition": 497,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC14_UOM",
+      "OrdinalPosition": 498,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC14_UNITS",
+      "OrdinalPosition": 499,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC15",
+      "OrdinalPosition": 500,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC15_UOM",
+      "OrdinalPosition": 501,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC15_UNITS",
+      "OrdinalPosition": 502,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC16",
+      "OrdinalPosition": 503,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC16_UOM",
+      "OrdinalPosition": 504,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC16_UNITS",
+      "OrdinalPosition": 505,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC17",
+      "OrdinalPosition": 506,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC17_UOM",
+      "OrdinalPosition": 507,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC17_UNITS",
+      "OrdinalPosition": 508,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC18",
+      "OrdinalPosition": 509,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC18_UOM",
+      "OrdinalPosition": 510,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC18_UNITS",
+      "OrdinalPosition": 511,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC19",
+      "OrdinalPosition": 512,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC19_UOM",
+      "OrdinalPosition": 513,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC19_UNITS",
+      "OrdinalPosition": 514,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC20",
+      "OrdinalPosition": 515,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC20_UOM",
+      "OrdinalPosition": 516,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC20_UNITS",
+      "OrdinalPosition": 517,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC21",
+      "OrdinalPosition": 518,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC21_UOM",
+      "OrdinalPosition": 519,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC21_UNITS",
+      "OrdinalPosition": 520,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC22",
+      "OrdinalPosition": 521,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC22_UOM",
+      "OrdinalPosition": 522,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC22_UNITS",
+      "OrdinalPosition": 523,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC23",
+      "OrdinalPosition": 524,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC23_UOM",
+      "OrdinalPosition": 525,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC23_UNITS",
+      "OrdinalPosition": 526,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC24",
+      "OrdinalPosition": 527,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC24_UOM",
+      "OrdinalPosition": 528,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC24_UNITS",
+      "OrdinalPosition": 529,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC25",
+      "OrdinalPosition": 530,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC25_UOM",
+      "OrdinalPosition": 531,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NDC25_UNITS",
+      "OrdinalPosition": 532,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCEDURE_CODE_DESCRIPTION",
+      "OrdinalPosition": 533,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLIA_NUMBER",
+      "OrdinalPosition": 534,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PATIENT_CONDITION_CODE",
+      "OrdinalPosition": 535,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PATIENT_CONDITION_DATE",
+      "OrdinalPosition": 536,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ACCIDENT_DATE",
+      "OrdinalPosition": 537,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ACCIDENT_COUNTRY",
+      "OrdinalPosition": 538,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HOSPICE_EMPLOYED_PROVIDER",
+      "OrdinalPosition": 539,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PURCHASED_SERV_FLAG",
+      "OrdinalPosition": 540,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PURCHASED_SERV_CHARGE_AMT",
+      "OrdinalPosition": 541,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_PATIENT_WEIGHT",
+      "OrdinalPosition": 542,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_REASON_CODE",
+      "OrdinalPosition": 543,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_DISTANCE",
+      "OrdinalPosition": 544,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_CERTIFICATION",
+      "OrdinalPosition": 545,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_CONDITION_IND",
+      "OrdinalPosition": 546,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_DESC",
+      "OrdinalPosition": 547,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_PICKUP_ADDRESS",
+      "OrdinalPosition": 548,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_PICKUP_CITY",
+      "OrdinalPosition": 549,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_PICKUP_STATE",
+      "OrdinalPosition": 550,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_PICK_ZIP",
+      "OrdinalPosition": 551,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_DROPOFF_ADDRESS",
+      "OrdinalPosition": 552,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_DROPOFF_CITY",
+      "OrdinalPosition": 553,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_DROPOFF_STATE",
+      "OrdinalPosition": 554,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRANSPORT_DROPOFF_ZIP",
+      "OrdinalPosition": 555,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_ADDRESS",
+      "OrdinalPosition": 556,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_CITY",
+      "OrdinalPosition": 557,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_STATE",
+      "OrdinalPosition": 558,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTHER_INS_ZIP",
+      "OrdinalPosition": 559,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_PRINCIPAL",
+      "OrdinalPosition": 560,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA1",
+      "OrdinalPosition": 561,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA2",
+      "OrdinalPosition": 562,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA3",
+      "OrdinalPosition": 563,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA4",
+      "OrdinalPosition": 564,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA5",
+      "OrdinalPosition": 565,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA6",
+      "OrdinalPosition": 566,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA7",
+      "OrdinalPosition": 567,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA8",
+      "OrdinalPosition": 568,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA9",
+      "OrdinalPosition": 569,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA10",
+      "OrdinalPosition": 570,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA11",
+      "OrdinalPosition": 571,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA12",
+      "OrdinalPosition": 572,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA13",
+      "OrdinalPosition": 573,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA14",
+      "OrdinalPosition": 574,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA15",
+      "OrdinalPosition": 575,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA16",
+      "OrdinalPosition": 576,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA17",
+      "OrdinalPosition": 577,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA18",
+      "OrdinalPosition": 578,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA19",
+      "OrdinalPosition": 579,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA20",
+      "OrdinalPosition": 580,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA21",
+      "OrdinalPosition": 581,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA22",
+      "OrdinalPosition": 582,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA23",
+      "OrdinalPosition": 583,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA24",
+      "OrdinalPosition": 584,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT1",
+      "OrdinalPosition": 585,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT2",
+      "OrdinalPosition": 586,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT3",
+      "OrdinalPosition": 587,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT4",
+      "OrdinalPosition": 588,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT5",
+      "OrdinalPosition": 589,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT6",
+      "OrdinalPosition": 590,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT7",
+      "OrdinalPosition": 591,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT8",
+      "OrdinalPosition": 592,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT9",
+      "OrdinalPosition": 593,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT10",
+      "OrdinalPosition": 594,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT11",
+      "OrdinalPosition": 595,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA_EXT12",
+      "OrdinalPosition": 596,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AUX_TYPE",
+      "OrdinalPosition": 597,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_BASE_ID",
+      "OrdinalPosition": 598,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_SEG",
+      "OrdinalPosition": 599,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADJUSTED_CLAIM_BASE_ID",
+      "OrdinalPosition": 600,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ADJUSTED_CLAIM_SEG",
+      "OrdinalPosition": 601,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SPECIALTY_OVERRIDE",
+      "OrdinalPosition": 602,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OTH_INS_PAID_DATE",
+      "OrdinalPosition": 603,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLAIM_EXP_CODE",
+      "OrdinalPosition": 604,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROJ_NAME",
+      "OrdinalPosition": 605,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BUNDLED_PROC_CODE",
+      "OrdinalPosition": 606,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ALT_CLAIM_SOURCE_ID",
+      "OrdinalPosition": 607,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PROCESS_NTE",
+      "OrdinalPosition": 608,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEDICAID_INDICATOR",
+      "OrdinalPosition": 609,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DIAG_DEL_IND",
+      "OrdinalPosition": 610,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "VENDOR_TYPE",
+      "OrdinalPosition": 611,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM1",
+      "OrdinalPosition": 612,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM2",
+      "OrdinalPosition": 613,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM3",
+      "OrdinalPosition": 614,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM4",
+      "OrdinalPosition": 615,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM5",
+      "OrdinalPosition": 616,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM6",
+      "OrdinalPosition": 617,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM7",
+      "OrdinalPosition": 618,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM8",
+      "OrdinalPosition": 619,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM9",
+      "OrdinalPosition": 620,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM10",
+      "OrdinalPosition": 621,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM11",
+      "OrdinalPosition": 622,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM12",
+      "OrdinalPosition": 623,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM13",
+      "OrdinalPosition": 624,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM14",
+      "OrdinalPosition": 625,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM15",
+      "OrdinalPosition": 626,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM16",
+      "OrdinalPosition": 627,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM17",
+      "OrdinalPosition": 628,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM18",
+      "OrdinalPosition": 629,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM19",
+      "OrdinalPosition": 630,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM20",
+      "OrdinalPosition": 631,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM21",
+      "OrdinalPosition": 632,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM22",
+      "OrdinalPosition": 633,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM23",
+      "OrdinalPosition": 634,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM24",
+      "OrdinalPosition": 635,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM25",
+      "OrdinalPosition": 636,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM26",
+      "OrdinalPosition": 637,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM27",
+      "OrdinalPosition": 638,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM28",
+      "OrdinalPosition": 639,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM29",
+      "OrdinalPosition": 640,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM30",
+      "OrdinalPosition": 641,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM31",
+      "OrdinalPosition": 642,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM32",
+      "OrdinalPosition": 643,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM33",
+      "OrdinalPosition": 644,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM34",
+      "OrdinalPosition": 645,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM35",
+      "OrdinalPosition": 646,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM36",
+      "OrdinalPosition": 647,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM37",
+      "OrdinalPosition": 648,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM38",
+      "OrdinalPosition": 649,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM39",
+      "OrdinalPosition": 650,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM40",
+      "OrdinalPosition": 651,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM41",
+      "OrdinalPosition": 652,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM42",
+      "OrdinalPosition": 653,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM43",
+      "OrdinalPosition": 654,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM44",
+      "OrdinalPosition": 655,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM45",
+      "OrdinalPosition": 656,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM46",
+      "OrdinalPosition": 657,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM47",
+      "OrdinalPosition": 658,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM48",
+      "OrdinalPosition": 659,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM49",
+      "OrdinalPosition": 660,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "USER_CLM50",
+      "OrdinalPosition": 661,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PRESCRIPTION_FILL_COUNT",
+      "OrdinalPosition": 662,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DISPENSING_STATUS",
+      "OrdinalPosition": 663,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COB_AMOUNT",
+      "OrdinalPosition": 664,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CHECK_NUMBER",
+      "OrdinalPosition": 665,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COPAY",
+      "OrdinalPosition": 666,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CAPITATED_AMOUNT",
+      "OrdinalPosition": 667,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DISCOUNT",
+      "OrdinalPosition": 668,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MARKET",
+      "OrdinalPosition": 669,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RISK_POOL_ID",
+      "OrdinalPosition": 670,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEDICAL_GROUP_ID",
+      "OrdinalPosition": 671,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DRG_TYPE",
+      "OrdinalPosition": 672,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LAST_MENSTRUAL_PERIOD",
+      "OrdinalPosition": 673,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COMMERCIAL_PLAN_ID",
+      "OrdinalPosition": 674,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CLINICAL_SETTING_FLAG",
+      "OrdinalPosition": 675,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ANNUAL_WELLNESS_VISIT_FLAG",
+      "OrdinalPosition": 676,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LOCAL_MEMBER_ID",
+      "OrdinalPosition": 677,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ALTEGRA_CLAIM_ID",
+      "OrdinalPosition": 678,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MEDICARE_BENEFICIARY_ID",
+      "OrdinalPosition": 679,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RENDERING_NET_IND",
+      "OrdinalPosition": 680,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BILL_PROVIDER_NET_IND",
+      "OrdinalPosition": 681,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NON_NDC_PHARM_CD",
+      "OrdinalPosition": 682,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DAYS_SUPPLY",
+      "OrdinalPosition": 683,
+      "DataType": "integer",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "integer"
+        }
+      ]
+    }
+  ]
+}

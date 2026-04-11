@@ -1,0 +1,13 @@
+{
+    "SourceTable": "#clientCode/consolidated/ACA/Data/PCPAttribution",
+    "SourceTableMountPoint": "DataLake",
+    "LOB": "ACA",
+    "BatchTable": "#clientCode/BatchAudit/ACA/CHCProviderAttributionBatch",
+    "BatchTableMountPoint": "Export",
+    "ExportFilePath": "#clientCode/ACA/CHCProviderAttribution",
+    "ExportFileMountPoint": "Export",
+    "ExportFileNamingConvention": "CHCProviderAttribution_<LOB>_<BatchId>_<DateTime>",
+    "ExportFileNamingExtension": ".json",
+    "ExportQuery": "WITH THIS AS(\r\nSELECT\r\n   uniquePersonKey\r\n  ,beneficiaryID  \r\n  ,date_format(startDate, 'MM/dd/yyyy') as startDate\r\n  ,date_format(endDate, 'MM/dd/yyyy') as endDate\r\n  ,named_struct(\r\n          'id', ProviderID\r\n          ,'NPI', ProviderNPI\r\n          ,'TIN', ProviderTIN\r\n      ) as PCPProvider\r\n  ,named_struct(\r\n          'id', BillingProviderID\r\n          ,'NPI', BillingNPI\r\n          ,'TIN', BillingTIN\r\n      ) as billingProvider\r\n  ,array(\r\n      AltPCPReporting1,AltPCPReporting2,AltPCPReporting3,AltPCPReporting4,AltPCPReporting5,AltPCPReporting6,AltPCPReporting7,AltPCPReporting8,AltPCPReporting9,AltPCPReporting10\r\n  ) as altPCPReporting\r\nFROM QueryResult WHERE FileLayoutDescription = 'CHCPCP' and startDate < endDate \r\n)\r\nSELECT * \r\nFROM THIS",
+  "FilterTables": []
+}

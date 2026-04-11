@@ -1,0 +1,56 @@
+{
+  "DestinationTableName": "CHCProviderHierarchyErrors",
+  "DestinationTablePath": "/mnt/export#clientCode/BatchAuditErrors/ACA/CHCProviderHierarchyErrors",
+  "SourceTables": [
+    {
+      "IsSource": "1",
+      "TableName": "SourceTable",
+      "TablePath": "/mnt/#clientCode/consolidated/ACA/Data/ProviderHierarchy",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "BatchTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/ACA/CHCProviderHierarchyBatch",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "AuditTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/export_audit",
+      "TableFormat": "delta"
+    }
+  ],
+  "Validations": [
+    {
+      "Field": "ProviderLastName",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "ProviderNPI",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "LocationAddress1",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "LocationCity",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "LocationState",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "LocationZip",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    }
+  ]
+}

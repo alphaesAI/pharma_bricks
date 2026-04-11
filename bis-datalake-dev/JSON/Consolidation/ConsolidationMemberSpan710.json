@@ -1,0 +1,116 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+		{
+			"Field": "SpanType",
+			"Value": "PCP1"
+		}
+      ],
+		"selectColumns": [
+			{
+				"SourceColumn": "MemberNumber",
+				"DestinationColumn": "PlanMemberID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "HICNBenID",
+				"DestinationColumn": "BeneficiaryID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "MedicaidID",
+				"DestinationColumn": "MedicaidID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "StartDate",
+				"DestinationColumn": "StartDate",
+				"SourceColumnFormat": "MM/dd/yyyy",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "EndDate",
+				"DestinationColumn": "EndDate",
+				"SourceColumnFormat": "MM/dd/yyyy",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "SpanValue",
+				"DestinationColumn": "ProviderID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "AdditionalSpanValue",
+				"DestinationColumn": "LocationID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "AlternateMemberKey1",
+				"DestinationColumn": "AltPCPReporting1",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "AlternateMemberKey2",
+				"DestinationColumn": "AltPCPReporting2",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "AlternateMemberKey3",
+				"DestinationColumn": "AltPCPReporting3",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "AlternateMemberKey4",
+				"DestinationColumn": "AltPCPReporting4",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "AlternateMemberKey5",
+				"DestinationColumn": "AltPCPReporting5",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FILE_ID",
+				"DestinationColumn": "FileId",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FILE_LAYOUT_ID",
+				"DestinationColumn": "FileLayoutID",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+				"DestinationColumn": "FileLayoutDescription",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "CLIENT_ID",
+				"DestinationColumn": "ClientId",
+				"SourceColumnFormat": "",
+				"ColumnQuery": ""
+			},
+			{
+				"SourceColumn": "LOAD_DATETIME",
+				"DestinationColumn": "LoadDateTime",
+				"SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+				"ColumnQuery": ""
+			}
+		]
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "ClaimLineNumber",
+          "Value": "1"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedVisionClaimsUniqueKey",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CONCAT(COALESCE(OriginalClaimNumber,''),COALESCE(ClaimNumber,''),COALESCE(ClaimProcessDate,''),COALESCE(ClaimStatus,''),COALESCE(CLIENT_ID,''),COALESCE(FILE_ID,''))"
+        },
+        {
+          "SourceColumn": "MemberID",
+          "DestinationColumn": "PlanMemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "AdmitDiagnosisCode",
+          "DestinationColumn": "AdmitDiagnosisCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SpecialtyCode",
+          "DestinationColumn": "RenderingProviderSpecialtyCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RenderingProviderID",
+          "DestinationColumn": "RenderingProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimStatus",
+          "DestinationColumn": "ClaimsStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimNumber",
+          "DestinationColumn": "ClaimNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "OriginalClaimNumber",
+          "DestinationColumn": "OriginalClaimNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProductID",
+          "DestinationColumn": "ProductID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiagnosisType",
+          "DestinationColumn": "ClaimICDVersionInd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlaceOfService",
+          "DestinationColumn": "PlaceOfService",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PaidDate",
+          "DestinationColumn": "PaidDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PaidAmount",
+          "DestinationColumn": "PaidAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PayStatus",
+          "DestinationColumn": "PayStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CVX",
+          "DestinationColumn": "CVX",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimType",
+          "DestinationColumn": "ClaimType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimProcessDate",
+          "DestinationColumn": "ClaimProcessDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimReceivedDate",
+          "DestinationColumn": "ClaimReceivedDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure1",
+          "DestinationColumn": "PrimaryProcCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure2",
+          "DestinationColumn": "ProcCode2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure3",
+          "DestinationColumn": "ProcCode3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure4",
+          "DestinationColumn": "ProcCode4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure5",
+          "DestinationColumn": "ProcCode5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure6",
+          "DestinationColumn": "ProcCode6",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure7",
+          "DestinationColumn": "ProcCode7",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure8",
+          "DestinationColumn": "ProcCode8",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure9",
+          "DestinationColumn": "ProcCode9",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure10",
+          "DestinationColumn": "ProcCode10",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure11",
+          "DestinationColumn": "ProcCode11",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure12",
+          "DestinationColumn": "ProcCode12",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure13",
+          "DestinationColumn": "ProcCode13",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure14",
+          "DestinationColumn": "ProcCode14",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure15",
+          "DestinationColumn": "ProcCode15",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure16",
+          "DestinationColumn": "ProcCode16",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure17",
+          "DestinationColumn": "ProcCode17",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure18",
+          "DestinationColumn": "ProcCode18",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure19",
+          "DestinationColumn": "ProcCode19",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure20",
+          "DestinationColumn": "ProcCode20",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure21",
+          "DestinationColumn": "ProcCode21",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure22",
+          "DestinationColumn": "ProcCode22",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure23",
+          "DestinationColumn": "ProcCode23",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure24",
+          "DestinationColumn": "ProcCode24",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure25",
+          "DestinationColumn": "ProcCode25",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure26",
+          "DestinationColumn": "ProcCode26",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure27",
+          "DestinationColumn": "ProcCode27",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure28",
+          "DestinationColumn": "ProcCode28",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure29",
+          "DestinationColumn": "ProcCode29",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure30",
+          "DestinationColumn": "ProcCode30",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure31",
+          "DestinationColumn": "ProcCode31",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure32",
+          "DestinationColumn": "ProcCode32",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure33",
+          "DestinationColumn": "ProcCode33",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure34",
+          "DestinationColumn": "ProcCode34",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure35",
+          "DestinationColumn": "ProcCode35",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure36",
+          "DestinationColumn": "ProcCode36",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure37",
+          "DestinationColumn": "ProcCode37",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Procedure38",
+          "DestinationColumn": "ProcCode38",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PCPIndicator",
+          "DestinationColumn": "PCPIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RenderingProviderTIN",
+          "DestinationColumn": "RenderingProviderTIN",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SpecialtyCode",
+          "DestinationColumn": "SpecialtyCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysDenied",
+          "DestinationColumn": "DaysDenied",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RoomBoardFlag",
+          "DestinationColumn": "RoomBoard",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RRUUnitsofService",
+          "DestinationColumn": "RRUUnitsofService",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MajorSurgery",
+          "DestinationColumn": "MajorSurgery",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LocationID",
+          "DestinationColumn": "LocationID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },        
+        {
+          "SourceColumn": "ClaimStatus",
+          "DestinationColumn": "ClaimStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BillType",
+          "DestinationColumn": "BillTypeCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MSDRG",
+          "DestinationColumn": "ClaimDRG",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MSDRG2",
+          "DestinationColumn": "ClaimDRGCalculated",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DischargeStatusCode",
+          "DestinationColumn": "DischargeStatusCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimSourceIndicator",
+          "DestinationColumn": "ClaimSourceIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EyeExamResult",
+          "DestinationColumn": "EyeExamResult",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SourceName",
+          "DestinationColumn": "SourceName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

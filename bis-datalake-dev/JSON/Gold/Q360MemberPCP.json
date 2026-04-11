@@ -1,0 +1,23 @@
+{
+  "Entity": "Q360MemberPCP",
+  "DestinationTable": "#clientCode/Gold/MA/Q360/Q360MemberPCP",
+  "SourceTables": [
+    {
+      "Entity": "PCPAttribution",
+      "SourceTable": "#clientCode/consolidated/MA/Data/PCPAttribution",
+      "SourceFormat": "delta"
+    },    
+    {
+      "Entity": "HedisEligibleMember",
+      "SourceTable": "#clientCode/Gold/MA/Q360/HedisEligibleMember",
+      "SourceFormat": "delta"
+    },
+    {
+      "Entity": "MemberPersonBridge",
+      "SourceTable": "#clientCode/Gold/MA/Client/MemberPersonBridge",
+      "SourceFormat": "delta"
+    }
+  ],
+  "SQLScript": "  WITH MaxFileID AS (\r\n\tSELECT MAX(FileID) AS MaxFileID\r\n\tFROM PCPAttribution\r\n\tWHERE FileLayoutID = 34000\r\n)\r\n,EligibleMemberData AS(\r\nSELECT DISTINCT   \r\n    COALESCE(nullif(mpb.UniquePersonKey,'None'),nullif(mpb.PlanMemberID,'None')) AS MemberID\r\n  ,COALESCE(nullif(ompb.UniquePersonKey,'None'),nullif(ompb.PlanMemberID,'None')) AS OriginalMemberID\r\nFROM MemberPersonBridge mpb\r\n  INNER JOIN HedisEligibleMember hem\r\n    ON mpb.BISInternalPersonId = hem.BISInternalPersonId\r\n  LEFT JOIN MemberPersonBridge ompb\r\n    ON ompb.BISInternalPersonId = hem.BISInternalPersonId\r\n    AND ompb.IsOriginalMemberId = 1\r\n)\r\n,InitialMemberPCP AS (\r\n\tSELECT COALESCE(pcp.UniquePersonKey,pcp.PlanMemberID) AS MemberID\r\n\t\t\t,pcp.ProviderID\r\n\t\t\t,date_format(pcp.StartDate,'yyyyMMdd') AS StartDate\r\n\t\t\t,date_format(pcp.EndDate,'yyyyMMdd') AS EndDate\r\n\tFROM PCPAttribution pcp\r\n\t\tJOIN MaxFileID mfid ON pcp.FileID = mfid.MaxFileID\t\t\r\n)\r\n,OriginalMemberIds AS (\r\n\tSELECT em.OriginalMemberID\r\n\t\t\t,imp.*\r\n\tFROM InitialMemberPCP imp\r\n\t\t\tJOIN EligibleMemberData em ON imp.MemberID = em.MemberID\t\r\n)\r\nSELECT DISTINCT omi.OriginalMemberID AS MemberID\r\n\t\t,omi.ProviderID\r\n\t\t,omi.StartDate\r\n\t\t,omi.EndDate\r\n\t\t,'' AS AdditionalColumn1\r\n\t\t,'' AS AdditionalColumn2\r\n\t\t,'' AS AdditionalColumn3\r\n\t\t,'' AS AdditionalColumn4\r\n\t\t,'' AS AdditionalColumn5\r\n\t\t,'' AS Filler\r\n\t\t,current_timestamp() AS LoadDateTime\r\nFROM OriginalMemberIds omi\r\nORDER BY MemberID, StartDate\r\n",
+  "TruncateScript": "DELETE FROM Q360MemberPCP"
+}

@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "dimPracticeUnit",
+      "DestinationTable": "#clientCode/Platinum/dimPracticeUnit",
+      "SourceTables": [
+        {
+          "Entity": "MAMembershipStars",
+          "SourceTable": "#clientCode/Gold/MA/Quality/MAMembershipStars",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SQLScript": "select \r\n sha2(concat(practiceCode,'|',practiceName),256) as practiceUnitKey\r\n,practiceCode as practiceUnitID\r\n,practiceName as practiceUnitName\r\nfrom \r\n(\r\n select distinct practiceCode, practiceName \r\n from  MAMembershipStars\r\n where practiceCode is not null\r\n)\r\nunion all\r\nselect\r\n '-1' as practiceUnitKey\r\n,'unknown' as practiceUnitID\r\n,'unknown' as practiceUnitName",
+      "MergeScript": "MERGE INTO DestinationTable t\r\nUSING (SELECT * FROM tempSQLScript)s\r\nON s.practiceUnitID=t.practiceUnitID AND s.practiceUnitName=t.practiceUnitName\r\nWHEN NOT MATCHED THEN INSERT\r\n(\r\n practiceUnitKey\r\n,practiceUnitID\r\n,practiceUnitName\r\n)\r\nVALUES\r\n(\r\n s.practiceUnitKey\r\n,s.practiceUnitID\r\n,s.practiceUnitName\r\n)"
+	  }
+  ]
+}

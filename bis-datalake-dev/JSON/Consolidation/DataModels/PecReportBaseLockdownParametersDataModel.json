@@ -1,0 +1,54 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "LongType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "Client",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "ID",
+      "DataType": "IntegerType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "Type",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "LockDownReportBase",
+      "DataType": "IntegerType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "LastDynamicRosterMonth",
+      "DataType": "StringType",
+      "Ordinal": 10
+    }
+  ]
+}

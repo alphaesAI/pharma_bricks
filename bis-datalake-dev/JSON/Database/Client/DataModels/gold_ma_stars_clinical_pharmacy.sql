@@ -1,0 +1,46 @@
+CREATE TABLE #clientCode.gold_ma_stars_clinical_pharmacy (
+ ClientID  string
+,FileID  int
+,LoadDateTime date
+,FileLayoutID  int
+,FileLayoutDescription  string
+,MBI string
+,MemberID string
+,DOB Date
+,Gender string
+,LIS string
+,EnrollmentStart Date
+,EnrollmentEnd Date
+,DualEligible string
+,Disability string
+,DaysInIPDiab string
+,DaysInSNFDiab string
+,DiabPDCDenominator string
+,DiabPDCNumerator string
+,DiabPDCRate string
+,DiabPDCDenominatorUnadj string
+,DiabPDCNumeratorUnadj string
+,DiabPDCRateUnadj string
+,DiabNumeratorflag string
+,DaysInIPRAS string
+,DaysInSNFRAS string
+,RASPDCDenominator string
+,RASPDCNumerator string
+,RASPDCRate string
+,RASPDCDenominatorUnadj string
+,RASPDCNumeratorUnadj string
+,RASPDCRateUnadj string
+,RASNumeratorflag string
+,DaysInIPStatin string
+,DaysInSNFStatin string
+,StatinPDCDenominator string
+,StatinPDCNumerator string
+,StatinPDCRate string
+,StatinPDCDenominatorUnadj string
+,StatinPDCNumeratorUnadj string
+,StatinPDCRateUnadj string
+,StatinNumeratorflag string
+,SUPDNumeratorFlag string
+,RunID string
+,YearMonth int
+) USING delta LOCATION '/mnt/#clientCode/Gold/MA/Quality/StarsClinicalPharmacy'

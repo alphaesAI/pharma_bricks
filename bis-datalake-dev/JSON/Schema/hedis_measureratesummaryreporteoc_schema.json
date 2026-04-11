@@ -1,0 +1,162 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "SubmissionName",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ReviewSet",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BaseMeasureID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BaseMeasureName",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MeasureID",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MeasureName",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "AdminHybrid",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Age",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Gender",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SES",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Race",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Ethnicity",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Diagnosis",
+			"OrdinalPosition": 12,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EligiblePopulation",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Numerator",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AdminNumerator",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SupplementalNumerator",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RequiredExclusion",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MRSS",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MedicalNumerator",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AdminRate",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HybridRate",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		}				
+	]
+}

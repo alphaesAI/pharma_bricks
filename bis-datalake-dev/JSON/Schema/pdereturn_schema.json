@@ -1,0 +1,487 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "RecordType",
+            "OrdinalPosition": 0,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SubmitterID",
+            "OrdinalPosition": 1,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FileID",
+            "OrdinalPosition": 2,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TransDate",
+            "OrdinalPosition": 3,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProdTestCertInd",
+            "OrdinalPosition": 4,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DDPSSystemDate",
+            "OrdinalPosition": 5,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DDPSSystemTime",
+            "OrdinalPosition": 6,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DDPSReportID",
+            "OrdinalPosition": 7,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SequenceNo",
+            "OrdinalPosition": 8,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractNo",
+            "OrdinalPosition": 9,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PBPID",
+            "OrdinalPosition": 10,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimControlNumber",
+            "OrdinalPosition": 11,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MedicareBeneficiaryIdentifier",
+            "OrdinalPosition": 12,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CardholderID",
+            "OrdinalPosition": 13,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PatientDateOfBirth",
+            "OrdinalPosition": 14,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PatientGenderCode",
+            "OrdinalPosition": 15,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DateOfService",
+            "OrdinalPosition": 16,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PaidDate",
+            "OrdinalPosition": 17,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrescriptionServiceReferenceNo",
+            "OrdinalPosition": 18,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProductServiceID",
+            "OrdinalPosition": 19,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ServiceProviderIdQualifier",
+            "OrdinalPosition": 20,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ServiceProviderID",
+            "OrdinalPosition": 21,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DispensingStatus",
+            "OrdinalPosition": 22,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CompoundCode",
+            "OrdinalPosition": 23,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DispenseAsWrittenProductSelectionCode",
+            "OrdinalPosition": 24,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "QuantityDispensed",
+            "OrdinalPosition": 25,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DaysSupply",
+            "OrdinalPosition": 26,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrescriberIdQualifier",
+            "OrdinalPosition": 27,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrescriberID",
+            "OrdinalPosition": 28,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DrugCoverageStatusCode",
+            "OrdinalPosition": 29,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdjustmentDeletionCode",
+            "OrdinalPosition": 30,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NoNStandardFormatCode",
+            "OrdinalPosition": 31,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PricingExceptionCode",
+            "OrdinalPosition": 32,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CatastrophicCoverageCode",
+            "OrdinalPosition": 33,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "IngredientCostPaid",
+            "OrdinalPosition": 34,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DispensingFeePaid",
+            "OrdinalPosition": 35,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TotalAmountAttributedToSalesTax",
+            "OrdinalPosition": 36,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+            "OrdinalPosition": 37,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+            "OrdinalPosition": 38,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PatientPayAmount",
+            "OrdinalPosition": 39,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherTroopAmount",
+            "OrdinalPosition": 40,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LowIncomeCostSharingSubsidyamount",
+            "OrdinalPosition": 41,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+            "OrdinalPosition": 42,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CoveredDPlanPaidAmount",
+            "OrdinalPosition": 43,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NonCoveredPlanPaidAmount",
+            "OrdinalPosition": 44,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EstimatedRebateAtPos",
+            "OrdinalPosition": 45,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "VaccineAdministrationFee",
+            "OrdinalPosition": 46,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrescriptionOriginCode",
+            "OrdinalPosition": 47,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DateOriginalClaimReceived",
+            "OrdinalPosition": 48,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimAdjudicationBeganTimestamp",
+            "OrdinalPosition": 49,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TotalGrossCoveredDrugCostAccumulator",
+            "OrdinalPosition": 50,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TrueOutOfPocketAccumulator",
+            "OrdinalPosition": 51,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BrandGenericCode",
+            "OrdinalPosition": 52,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BeginningBenefitPhase",
+            "OrdinalPosition": 53,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EndingBenefitPhase",
+            "OrdinalPosition": 54,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReportedGapDiscount",
+            "OrdinalPosition": 55,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Tier",
+            "OrdinalPosition": 56,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FormularyCode",
+            "OrdinalPosition": 57,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OapIndicator",
+            "OrdinalPosition": 58,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PharmacyServiceType",
+            "OrdinalPosition": 59,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PatientResidence",
+            "OrdinalPosition": 60,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SubmissionClarificationCode",
+            "OrdinalPosition": 61,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdjustmentReasonCodeQualifier",
+            "OrdinalPosition": 62,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdjustmentReasonCode",
+            "OrdinalPosition": 63,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TypeOfFillCode",
+            "OrdinalPosition": 64,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CMSCalculatedGapDiscount",
+            "OrdinalPosition": 65,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PBPOfRecord",
+            "OrdinalPosition": 66,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternateServiceProviderIdQualifier",
+            "OrdinalPosition": 67,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AlternateServiceProviderID",
+            "OrdinalPosition": 68,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OriginalSubmittingContract",
+            "OrdinalPosition": 69,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "P2PContractOfRecord",
+            "OrdinalPosition": 70,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+            "OrdinalPosition": 71,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ErrorCount",
+            "OrdinalPosition": 72,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error1",
+            "OrdinalPosition": 73,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error2",
+            "OrdinalPosition": 74,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error3",
+            "OrdinalPosition": 75,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error4 ",
+            "OrdinalPosition": 76,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error5",
+            "OrdinalPosition": 77,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error6",
+            "OrdinalPosition": 78,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error7",
+            "OrdinalPosition": 79,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error8",
+            "OrdinalPosition": 80,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error9",
+            "OrdinalPosition": 81,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Error0",
+            "OrdinalPosition": 82,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExclusionReasonCode",
+            "OrdinalPosition": 83,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DetRecordTotal",
+            "OrdinalPosition": 84,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DetAcceptedRecordTotal",
+            "OrdinalPosition": 85,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DetInformationalRecordTotal",
+            "OrdinalPosition": 86,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DetRejectedRecordTotal",
+            "OrdinalPosition": 87,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TlrBhdRecordTotal",
+            "OrdinalPosition": 88,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TlrDetRecordTotal",
+            "OrdinalPosition": 89,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TlrDetAcceptedRecordTotal",
+            "OrdinalPosition": 90,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TlrDetInformationalRecordTotal",
+            "OrdinalPosition": 91,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TlrDetRejectedRecordTotal",
+            "OrdinalPosition": 92,
+            "DataType": "string"
+        }
+    ]
+}

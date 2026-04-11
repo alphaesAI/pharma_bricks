@@ -1,0 +1,24 @@
+SELECT
+	 RecordType
+	,MCOContractNumber
+	,PBPNumber
+	,BeneficiaryID
+	,Surname
+	,FirstName
+	,MiddleInitial
+	,Sex
+	,DateofBirth
+	,LowIncomePeriodStartDate
+	,LowIncomePeriodEndDate
+	,LIPSpercentage
+	,PremiumLISAmount
+	,LowIncomeCoPayLevelID
+	,BeneficiarySourceofSubsidyCode
+	,LISActivityFlag
+	,PBPStartDate
+	,NetPartDPremiumAmount
+	,ContractYear
+	,InstitutionalStatusIndicator
+	,PBPEnrollmentTerminationDate
+	,Filler
+FROM Q360LISHIST

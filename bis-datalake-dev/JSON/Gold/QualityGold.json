@@ -1,0 +1,28 @@
+{
+    "LayerGrouping": [        
+        {
+          "LayerOrder": 150,
+          "LayerGrouping": "GoldLayerGeneric",
+          "SubGrouping": [
+            {
+              "SubGroupEntity": "GapsInCare",
+              "SubGroupingOrder": 1,
+              "SubConfigPath": "fileconfig/JSON/Gold/GapsInCare.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "GapsInCareRR",
+              "SubGroupingOrder": 2,
+              "SubConfigPath": "fileconfig/JSON/Gold/GapsInCareRR.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "MAMembershipStars",
+              "SubGroupingOrder": 3,
+              "SubConfigPath": "fileconfig/JSON/Gold/MAMembershipStars.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            }
+          ]
+        }
+    ]
+}

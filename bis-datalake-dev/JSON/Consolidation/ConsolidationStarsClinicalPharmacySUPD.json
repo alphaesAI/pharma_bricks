@@ -1,0 +1,98 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MBI",
+          "DestinationColumn": "MBI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberID",
+          "DestinationColumn": "MemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "DOB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "to_date(DOB,'ddMMMyyyy')"
+        },
+        {
+          "SourceColumn": "Gender",
+          "DestinationColumn": "Gender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LIS",
+          "DestinationColumn": "LIS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "EnrollmentStart",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "to_date(EnrollmentStart,'ddMMMyyyy')"
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "EnrollmentEnd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "to_date(EnrollmentEnd,'ddMMMyyyy')"
+        },
+        {
+          "SourceColumn": "SUPDNumeratorFlag",
+          "DestinationColumn": "SUPDNumeratorFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "RunID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": " CONCAT(COALESCE(FILE_LAYOUT_ID,''), '_',  COALESCE(FILE_ID,''))"
+        }
+      ]
+    }
+  ]
+}

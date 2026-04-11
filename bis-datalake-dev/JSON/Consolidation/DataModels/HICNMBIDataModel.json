@@ -1,0 +1,84 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "Contract",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "PBP",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "HICN",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "MBI",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "Surname",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "FirstName",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "DateOfBirth",
+      "DataType": "IntegerType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "DateOfDeath",
+      "DataType": "IntegerType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "Gender",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "RecentEnrollmentDate",
+      "DataType": "IntegerType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "RecentDisenrollmentDate",
+      "DataType": "IntegerType",
+      "Ordinal": 16
+    }
+  ]
+}

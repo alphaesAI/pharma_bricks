@@ -1,0 +1,76 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"StartPos": "TEMPLATE",
+			"Length": "TEMPLATE"
+		},
+		{
+			"FieldName": "Contract",
+			"OrdinalPosition": "1",
+			"StartPos": "1",
+			"Length": "5"
+		},
+		{
+			"FieldName": "PBP",
+			"OrdinalPosition": "2",
+			"StartPos": "6",
+			"Length": "3"
+		},
+		{
+			"FieldName": "HICN",
+			"OrdinalPosition": "3",
+			"StartPos": "9",
+			"Length": "12"
+		},
+		{
+			"FieldName": "MBI",
+			"OrdinalPosition": "4",
+			"StartPos": "21",
+			"Length": "11"
+		},
+		{
+			"FieldName": "Surname",
+			"OrdinalPosition": "5",
+			"StartPos": "32",
+			"Length": "30"
+		},
+		{
+			"FieldName": "FirstName",
+			"OrdinalPosition": "6",
+			"StartPos": "62",
+			"Length": "12"
+		},
+		{
+			"FieldName": "DateOfBirth",
+			"OrdinalPosition": "7",
+			"StartPos": "74",
+			"Length": "8"
+		},
+		{
+			"FieldName": "DateOfDeath",
+			"OrdinalPosition": "8",
+			"StartPos": "82",
+			"Length": "8" 
+		},
+		{
+			"FieldName": "Gender",
+			"OrdinalPosition": "9",
+			"StartPos": "90",
+			"Length": "1"
+		},
+		{
+			"FieldName": "RecentEnrollmentDate",
+			"OrdinalPosition": "10",
+			"StartPos": "91",
+			"Length": "8"
+		},
+		{
+			"FieldName": "RecentDisenrollmentDate",
+			"OrdinalPosition": "11",
+			"StartPos": "99",
+			"Length": "8"
+		}
+	]
+}

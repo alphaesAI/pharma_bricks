@@ -1,0 +1,367 @@
+{
+   "columnNames": [
+      {
+         "FieldName": "TEMPLATE",
+         "OrdinalPosition": -1,
+         "DataType": "TEMPLATE",
+         "Validators": [
+            {
+               "Name": "TEMPLATE",
+               "Value": "TEMPLATE",
+               "InputValue": [
+                  "TEMPLATE"
+               ],
+               "ConditionCol": "TEMPLATE",
+               "ConditionVal": [
+                  "TEMPLATE"
+               ]
+            }
+         ]
+      },
+      {
+         "FieldName": "UniquePersonKey",
+         "OrdinalPosition": 0,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "MemberID",
+         "OrdinalPosition": 1,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "MedicareBeneficiaryID",
+         "OrdinalPosition": 2,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "MedicaidID",
+         "OrdinalPosition": 3,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "Source",
+         "OrdinalPosition": 4,
+         "DataType": "string",
+			"Validators": [
+			    {
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"PCPSpan",
+						"PCPAttribution"
+					]
+				}
+			]
+      },
+      {
+         "FieldName": "StartDate",
+         "OrdinalPosition": 5,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "isDate",
+               "Value": "MM/dd/YYyy"
+            }
+         ]
+      },
+      {
+         "FieldName": "EndDate",
+         "OrdinalPosition": 6,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "isDate",
+               "Value": "MM/dd/YYyy"
+            }
+         ]
+      },
+      {
+         "FieldName": "RenderingProviderID",
+         "OrdinalPosition": 7,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "RenderingProviderLastName",
+         "OrdinalPosition": 8,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "RenderingProviderMiddleInitial",
+         "OrdinalPosition": 9,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "RenderingProviderFirstName",
+         "OrdinalPosition": 10,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "RenderingNPI",
+         "OrdinalPosition": 11,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "TaxonomyCode",
+         "OrdinalPosition": 12,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "RenderingTIN",
+         "OrdinalPosition": 13,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MemberLastName",
+         "OrdinalPosition": 14,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "MemberFirstName",
+         "OrdinalPosition": 15,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "MemberMiddleIntial",
+         "OrdinalPosition": 16,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MemberDateOfBirth",
+         "OrdinalPosition": 17,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "isDate",
+               "Value": "MM/dd/YYyy"
+            }
+         ]
+      },
+      {
+         "FieldName": "PlanID",
+         "OrdinalPosition": 18,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "BillingProviderID",
+         "OrdinalPosition": 19,
+         "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequiredWithCondition",
+                    "ConditionCol": "Source",
+                    "ConditionVal": [
+                        "PCPAttribution"
+                    ]
+                }
+            ]
+      },
+      {
+         "FieldName": "BillingProviderLastName",
+         "OrdinalPosition": 20,
+         "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequiredWithCondition",
+                    "ConditionCol": "Source",
+                    "ConditionVal": [
+                        "PCPAttribution"
+                    ]
+                }
+            ]
+      },
+      {
+         "FieldName": "BillingProviderMiddleInitial",
+         "OrdinalPosition": 21,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderFirstName",
+         "OrdinalPosition": 22,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingNPI",
+         "OrdinalPosition": 23,
+         "DataType": "string",
+            "Validators": [
+                {
+                    "Name": "isRequiredWithCondition",
+                    "ConditionCol": "Source",
+                    "ConditionVal": [
+                        "PCPAttribution"
+                    ]
+                }
+            ]
+      },
+      {
+         "FieldName": "BillingTIN",
+         "OrdinalPosition": 24,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderAddressLine1",
+         "OrdinalPosition": 25,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderAddressLine2",
+         "OrdinalPosition": 26,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderCity",
+         "OrdinalPosition": 27,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderState",
+         "OrdinalPosition": 28,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderZip",
+         "OrdinalPosition": 29,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderCountyCode",
+         "OrdinalPosition": 30,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderPhoneNumber",
+         "OrdinalPosition": 31,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderFaxNumber",
+         "OrdinalPosition": 32,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "BillingProviderEmail",
+         "OrdinalPosition": 33,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "FileGenerationDateTime",
+         "OrdinalPosition": 34,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "isDate",
+               "Value": "YYyyMMddHHmm"
+            }
+         ]
+      },
+      {
+         "FieldName": "AltPCPReporting1",
+         "OrdinalPosition": 35,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting2",
+         "OrdinalPosition": 36,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting3",
+         "OrdinalPosition": 37,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting4",
+         "OrdinalPosition": 38,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting5",
+         "OrdinalPosition": 39,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting6",
+         "OrdinalPosition": 40,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting7",
+         "OrdinalPosition": 41,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting8",
+         "OrdinalPosition": 42,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting9",
+         "OrdinalPosition": 43,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "AltPCPReporting10",
+         "OrdinalPosition": 44,
+         "DataType": "string"
+      }
+   ]
+}

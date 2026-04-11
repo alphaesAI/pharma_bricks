@@ -1,0 +1,51 @@
+{
+  "DestinationTableName": "CHCMemberErrors",
+  "DestinationTablePath": "/mnt/export#clientCode/BatchAuditErrors/ACA/CHCMemberErrors",
+  "SourceTables": [
+    {
+      "IsSource": "1",
+      "TableName": "SourceTable",
+      "TablePath": "/mnt/#clientCode/consolidated/ACA/Data/Member",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "BatchTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/ACA/CHCMemberBatch",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "AuditTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/export_audit",
+      "TableFormat": "delta"
+    }
+  ],
+  "Validations": [
+    {
+      "Field": "LastName",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "PermanentAddressLine1",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "PermanentCity",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "PermanentState",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "PermanentZipCode",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    }
+  ]
+}

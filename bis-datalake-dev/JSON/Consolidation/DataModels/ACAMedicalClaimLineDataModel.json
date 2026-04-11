@@ -1,0 +1,134 @@
+{
+  "Fields": [
+    {
+      "FieldName": "FileID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "GeneratedMedicalClaimsUniqueKey",
+      "DataType": "StringType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "ClaimLineNumber",
+      "DataType": "IntegerType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "PayStatus",
+      "DataType": "StringType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "AuthorizationNum",
+      "DataType": "IntegerType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "COBPaidAmt",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "AllowedAmt",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "TotalChargeAmt",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "CoinsuranceAmt",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "DeductibleAmt",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "PaidAmount",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "DetailServiceDate",
+      "DataType": "DateType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "ServiceFromDate",
+      "DataType": "DateType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "ServiceToDate",
+      "DataType": "DateType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "ProcCode",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "ProcMod1",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "ProcMod2",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "ProcMod3",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "ProcMod4",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "PlaceOfService",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "MSDRG",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "RevenueCode",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "RenderingProviderID",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "RenderingProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "RenderingProviderTIN",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "RenderingProviderSpecialtyCode",
+      "DataType": "StringType",
+      "Ordinal": 26
+    }
+  ]
+}

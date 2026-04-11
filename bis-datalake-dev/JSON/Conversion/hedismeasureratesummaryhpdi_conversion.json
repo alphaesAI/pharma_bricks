@@ -1,0 +1,98 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "H",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "FieldNames",
+          "OrdinalPosition": 2
+        }
+      ]
+    },
+    {
+      "Type": "D",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "SubmissionID",
+          "OrdinalPosition": 2
+        },
+        {
+          "FieldName": "ReviewSet",
+          "OrdinalPosition": 3
+        },
+        {
+          "FieldName": "MeasureID",
+          "OrdinalPosition": 4
+        },
+        {
+          "FieldName": "MeasureName",
+          "OrdinalPosition": 5
+        },
+        {
+          "FieldName": "Metric",
+          "OrdinalPosition": 6
+        },
+        {
+          "FieldName": "Age",
+          "OrdinalPosition": 7
+        },
+        {
+          "FieldName": "Language",
+          "OrdinalPosition": 8
+        },
+        {
+          "FieldName": "Race",
+          "OrdinalPosition": 9
+        },
+        {
+          "FieldName": "Ethinicity",
+          "OrdinalPosition": 10
+        },
+        {
+          "FieldName": "MemberMonths",
+          "OrdinalPosition": 11
+        },
+        {
+          "FieldName": "MemberYears",
+          "OrdinalPosition": 12
+        },
+        {
+          "FieldName": "MemberCount",
+          "OrdinalPosition": 13
+        },
+        {
+          "FieldName": "Rate=MembercountPercentage",
+          "OrdinalPosition": 14
+        }                            
+      ]
+    },
+    {
+      "Type": "T",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "RecordCount",
+          "OrdinalPosition": 2
+        }
+      ]
+    }
+  ],
+  "Querries": [
+    {
+      "HeaderDataFrame": "SELECT \r\n  explode(RecordsSplitIntoArray) AS Header\r\nFROM SourceData\r\nWHERE\r\nRecordType  = 'H'\r\n",
+      "DetailDataFrame": "SELECT \r\n  RecordsSplitIntoArray AS Details\r\nFROM SourceData\r\nWHERE\r\nRecordType = 'D'\r\n",
+      "ControlDataFrame": "SELECT \r\n   RecordType\r\n  ,CAST(SUM(RestOfRecord) AS INT) AS RecordCount\r\nFROM SourceData\r\nWHERE\r\nRecordType = 'T'\r\nGROUP BY\r\n   RecordType\r\n"
+    }
+  ]
+}

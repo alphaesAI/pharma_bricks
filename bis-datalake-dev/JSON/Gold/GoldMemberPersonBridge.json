@@ -1,0 +1,16 @@
+{
+  "LayerGrouping": [
+    {
+      "LayerOrder": 1,
+      "LayerGrouping": "GoldMemberPersonBridgeGeneric",
+      "SubGrouping": [
+        {
+          "SubGroupEntity": "MemberPersonBridge",
+          "SubGroupingOrder": 1,
+          "SubConfigPath": "",
+          "Notebook": "./MemberPersonBridge"
+        }      
+      ]
+    }
+  ]
+}

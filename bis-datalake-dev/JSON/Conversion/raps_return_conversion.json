@@ -1,0 +1,861 @@
+{
+	"RecordTypes": [
+		{
+			"Type": "AAA",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "3"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "2",
+					"StartPos": "4",
+					"Length": "6",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "RAPSFileID",
+					"OrdinalPosition": "3",
+					"StartPos": "10",
+					"Length": "10",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "TransactionDate",
+					"OrdinalPosition": "4",
+					"StartPos": "20",
+					"Length": "8",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "ProdTestInd",
+					"OrdinalPosition": "5",
+					"StartPos": "28",
+					"Length": "4"
+				},
+				{
+					"FieldName": "FileDiagType",
+					"OrdinalPosition": "6",
+					"StartPos": "32",
+					"Length": "5"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "7",
+					"StartPos": "37",
+					"Length": "476"
+				}
+			]
+		},
+		{
+			"Type": "BBB",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "3"
+				},
+				{
+					"FieldName": "SEQNO",
+					"OrdinalPosition": "2",
+					"StartPos": "4",
+					"Length": "7"
+				},
+				{
+					"FieldName": "PLANNO",
+					"OrdinalPosition": "3",
+					"StartPos": "11",
+					"Length": "5",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "FILLER",
+					"OrdinalPosition": "4",
+					"StartPos": "16",
+					"Length": "497"					
+				}
+			]
+		},
+		{
+			"Type": "YYY",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "3"
+				},
+				{
+					"FieldName": "SEQNO",
+					"OrdinalPosition": "2",
+					"StartPos": "4",
+					"Length": "7"
+				},
+				{
+					"FieldName": "PLANNO",
+					"OrdinalPosition": "3",
+					"StartPos": "11",
+					"Length": "5"
+				},
+				{
+					"FieldName": "CCCRECORDTOTAL",
+					"OrdinalPosition": "4",
+					"StartPos": "16",
+					"Length": "7",
+					"ControlFile": "True"				
+				},
+				{
+					"FieldName": "FILLER",
+					"OrdinalPosition": "5",
+					"StartPos": "23",
+					"Length": "490"					
+				}
+			]
+		},
+		{
+			"Type": "ZZZ",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "3"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "2",
+					"StartPos": "4",
+					"Length": "6"
+				},
+				{
+					"FieldName": "FILEID",
+					"OrdinalPosition": "3",
+					"StartPos": "10",
+					"Length": "10"
+				},
+				{
+					"FieldName": "BBBRECORDTOTAL",
+					"OrdinalPosition": "4",
+					"StartPos": "20",
+					"Length": "7"					
+				},
+				{
+					"FieldName": "FILLER",
+					"OrdinalPosition": "5",
+					"StartPos": "27",
+					"Length": "486"					
+				}
+			]
+		},
+		{
+			"Type": "CCC",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3"
+				},
+				{
+					"FieldName": "SEQNO",
+					"OrdinalPosition": "2",
+					"StartPos": "4",
+					"EndPos": "10",
+					"Length": "7"
+				},
+				{
+					"FieldName": "SEQERRORCODE",
+					"OrdinalPosition": "3",
+					"StartPos": "11",
+					"EndPos": "13",
+					"Length": "3"
+				},
+				{
+					"FieldName": "PATIENTCONTROLNUMBER",
+					"OrdinalPosition": "4",
+					"StartPos": "14",
+					"EndPos": "53",
+					"Length": "40"
+				},
+				{
+					"FieldName": "MBI",
+					"OrdinalPosition": "5",
+					"StartPos": "54",
+					"EndPos": "78",
+					"Length": "25"
+				},
+				{
+					"FieldName": "MBIERRORCODE",
+					"OrdinalPosition": "6",
+					"StartPos": "79",
+					"EndPos": "81",
+					"Length": "3"
+				},
+				{
+					"FieldName": "PATIENTDOB",
+					"OrdinalPosition": "7",
+					"StartPos": "82",
+					"EndPos": "89",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DOBERRORCODE",
+					"OrdinalPosition": "8",
+					"StartPos": "90",
+					"EndPos": "92",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType1",
+					"OrdinalPosition": "9",
+					"StartPos": "93",
+					"EndPos": "94",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate1",
+					"OrdinalPosition": "10",
+					"StartPos": "95",
+					"EndPos": "102",
+					"Length": "8"
+				},
+				{
+					"FieldName": "ThruDate1",
+					"OrdinalPosition": "11",
+					"StartPos": "103",
+					"EndPos": "110",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd1",
+					"OrdinalPosition": "12",
+					"StartPos": "111",
+					"EndPos": "111",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode1",
+					"OrdinalPosition": "13",
+					"StartPos": "112",
+					"EndPos": "118",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR11",
+					"OrdinalPosition": "14",
+					"StartPos": "119",
+					"EndPos": "121",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR21",
+					"OrdinalPosition": "15",
+					"StartPos": "122",
+					"EndPos": "124",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType2",
+					"OrdinalPosition": "16",
+					"StartPos": "125",
+					"EndPos": "126",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate2",
+					"OrdinalPosition": "17",
+					"StartPos": "127",
+					"EndPos": "134",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate2",
+					"OrdinalPosition": "18",
+					"StartPos": "135",
+					"EndPos": "142",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd2",
+					"OrdinalPosition": "19",
+					"StartPos": "143",
+					"EndPos": "143",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode2",
+					"OrdinalPosition": "20",
+					"StartPos": "144",
+					"EndPos": "150",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR12",
+					"OrdinalPosition": "21",
+					"StartPos": "151",
+					"EndPos": "153",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR22",
+					"OrdinalPosition": "22",
+					"StartPos": "154",
+					"EndPos": "156",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType3",
+					"OrdinalPosition": "23",
+					"StartPos": "157",
+					"EndPos": "158",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate3",
+					"OrdinalPosition": "24",
+					"StartPos": "159",
+					"EndPos": "166",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate3",
+					"OrdinalPosition": "25",
+					"StartPos": "167",
+					"EndPos": "174",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd3",
+					"OrdinalPosition": "26",
+					"StartPos": "175",
+					"EndPos": "175",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode3",
+					"OrdinalPosition": "27",
+					"StartPos": "176",
+					"EndPos": "182",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR13",
+					"OrdinalPosition": "28",
+					"StartPos": "183",
+					"EndPos": "185",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR23",
+					"OrdinalPosition": "29",
+					"StartPos": "186",
+					"EndPos": "188",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType4",
+					"OrdinalPosition": "30",
+					"StartPos": "189",
+					"EndPos": "190",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate4",
+					"OrdinalPosition": "31",
+					"StartPos": "191",
+					"EndPos": "198",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate4",
+					"OrdinalPosition": "32",
+					"StartPos": "199",
+					"EndPos": "206",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd4",
+					"OrdinalPosition": "33",
+					"StartPos": "207",
+					"EndPos": "207",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode4",
+					"OrdinalPosition": "34",
+					"StartPos": "208",
+					"EndPos": "214",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR14",
+					"OrdinalPosition": "35",
+					"StartPos": "215",
+					"EndPos": "217",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR24",
+					"OrdinalPosition": "36",
+					"StartPos": "218",
+					"EndPos": "220",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType5",
+					"OrdinalPosition": "37",
+					"StartPos": "221",
+					"EndPos": "222",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate5",
+					"OrdinalPosition": "38",
+					"StartPos": "223",
+					"EndPos": "230",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate5",
+					"OrdinalPosition": "39",
+					"StartPos": "231",
+					"EndPos": "238",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd5",
+					"OrdinalPosition": "40",
+					"StartPos": "239",
+					"EndPos": "239",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode5",
+					"OrdinalPosition": "41",
+					"StartPos": "240",
+					"EndPos": "246",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR15",
+					"OrdinalPosition": "42",
+					"StartPos": "247",
+					"EndPos": "249",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR25",
+					"OrdinalPosition": "43",
+					"StartPos": "250",
+					"EndPos": "252",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType6",
+					"OrdinalPosition": "44",
+					"StartPos": "253",
+					"EndPos": "254",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate6",
+					"OrdinalPosition": "45",
+					"StartPos": "255",
+					"EndPos": "262",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate6",
+					"OrdinalPosition": "46",
+					"StartPos": "263",
+					"EndPos": "270",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd6",
+					"OrdinalPosition": "47",
+					"StartPos": "271",
+					"EndPos": "271",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode6",
+					"OrdinalPosition": "48",
+					"StartPos": "272",
+					"EndPos": "278",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR16",
+					"OrdinalPosition": "49",
+					"StartPos": "279",
+					"EndPos": "281",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR26",
+					"OrdinalPosition": "50",
+					"StartPos": "282",
+					"EndPos": "284",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType7",
+					"OrdinalPosition": "51",
+					"StartPos": "285",
+					"EndPos": "286",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate7",
+					"OrdinalPosition": "52",
+					"StartPos": "287",
+					"EndPos": "294",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate7",
+					"OrdinalPosition": "53",
+					"StartPos": "295",
+					"EndPos": "302",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd7",
+					"OrdinalPosition": "54",
+					"StartPos": "303",
+					"EndPos": "303",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode7",
+					"OrdinalPosition": "55",
+					"StartPos": "304",
+					"EndPos": "310",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR17",
+					"OrdinalPosition": "56",
+					"StartPos": "311",
+					"EndPos": "313",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR27",
+					"OrdinalPosition": "57",
+					"StartPos": "314",
+					"EndPos": "316",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType8",
+					"OrdinalPosition": "58",
+					"StartPos": "317",
+					"EndPos": "318",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate8",
+					"OrdinalPosition": "59",
+					"StartPos": "319",
+					"EndPos": "326",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate8",
+					"OrdinalPosition": "60",
+					"StartPos": "327",
+					"EndPos": "334",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd8",
+					"OrdinalPosition": "61",
+					"StartPos": "335",
+					"EndPos": "335",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode8",
+					"OrdinalPosition": "62",
+					"StartPos": "336",
+					"EndPos": "342",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR18",
+					"OrdinalPosition": "63",
+					"StartPos": "343",
+					"EndPos": "345",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR28",
+					"OrdinalPosition": "64",
+					"StartPos": "346",
+					"EndPos": "348",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType9",
+					"OrdinalPosition": "65",
+					"StartPos": "349",
+					"EndPos": "350",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate9",
+					"OrdinalPosition": "66",
+					"StartPos": "351",
+					"EndPos": "358",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate9",
+					"OrdinalPosition": "67",
+					"StartPos": "359",
+					"EndPos": "366",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd9",
+					"OrdinalPosition": "68",
+					"StartPos": "367",
+					"EndPos": "367",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode9",
+					"OrdinalPosition": "69",
+					"StartPos": "368",
+					"EndPos": "374",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR19",
+					"OrdinalPosition": "70",
+					"StartPos": "375",
+					"EndPos": "377",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR29",
+					"OrdinalPosition": "71",
+					"StartPos": "378",
+					"EndPos": "380",
+					"Length": "3"
+				},
+				{
+					"FieldName": "ProviderType10",
+					"OrdinalPosition": "72",
+					"StartPos": "381",
+					"EndPos": "382",
+					"Length": "2"
+				},
+				{
+					"FieldName": "FromDate10",
+					"OrdinalPosition": "73",
+					"StartPos": "383",
+					"EndPos": "390",
+                    "Length": "8"
+				},
+				{
+					"FieldName": "ThruDate10",
+					"OrdinalPosition": "74",
+					"StartPos": "391",
+					"EndPos": "398",
+					"Length": "8"
+				},
+				{
+					"FieldName": "DeleteInd10",
+					"OrdinalPosition": "75",
+					"StartPos": "399",
+					"EndPos": "399",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DiagnosisCode10",
+					"OrdinalPosition": "76",
+					"StartPos": "400",
+					"EndPos": "406",
+					"Length": "7"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR110",
+					"OrdinalPosition": "77",
+					"StartPos": "407",
+					"EndPos": "409",
+					"Length": "3"
+				},
+				{
+					"FieldName": "DIAGCLSTRERROR210",
+					"OrdinalPosition": "78",
+					"StartPos": "410",
+					"EndPos": "412",
+					"Length": "3"
+				},
+				{
+					"FieldName": "CorrectedHICNumber",
+					"OrdinalPosition": "79",
+					"StartPos": "413",
+					"EndPos": "437",
+					"Length": "25"
+				},
+				{
+					"FieldName": "RiskAssessmentCode1",
+					"OrdinalPosition": "80",
+					"StartPos": "438",
+					"EndPos": "438",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError1",
+					"OrdinalPosition": "81",
+					"StartPos": "439",
+					"EndPos": "441",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode2",
+					"OrdinalPosition": "82",
+					"StartPos": "442",
+					"EndPos": "442",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError2",
+					"OrdinalPosition": "83",
+					"StartPos": "443",
+					"EndPos": "445",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode3",
+					"OrdinalPosition": "84",
+					"StartPos": "446",
+					"EndPos": "446",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError3",
+					"OrdinalPosition": "85",
+					"StartPos": "447",
+					"EndPos": "449",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode4",
+					"OrdinalPosition": "86",
+					"StartPos": "450",
+					"EndPos": "450",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError4",
+					"OrdinalPosition": "87",
+					"StartPos": "451",
+					"EndPos": "453",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode5",
+					"OrdinalPosition": "88",
+					"StartPos": "454",
+					"EndPos": "454",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError5",
+					"OrdinalPosition": "89",
+					"StartPos": "455",
+					"EndPos": "457",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode6",
+					"OrdinalPosition": "90",
+					"StartPos": "458",
+					"EndPos": "458",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError6",
+					"OrdinalPosition": "91",
+					"StartPos": "459",
+					"EndPos": "461",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode7",
+					"OrdinalPosition": "92",
+					"StartPos": "462",
+					"EndPos": "462",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError7",
+					"OrdinalPosition": "93",
+					"StartPos": "463",
+					"EndPos": "465",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode8",
+					"OrdinalPosition": "94",
+					"StartPos": "466",
+					"EndPos": "466",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError8",
+					"OrdinalPosition": "95",
+					"StartPos": "467",
+					"EndPos": "469",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode9",
+					"OrdinalPosition": "96",
+					"StartPos": "470",
+					"EndPos": "470",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError9",
+					"OrdinalPosition": "97",
+					"StartPos": "471",
+					"EndPos": "473",
+					"Length": "3"
+				},
+				{
+					"FieldName": "RiskAssessmentCode10",
+					"OrdinalPosition": "98",
+					"StartPos": "474",
+					"EndPos": "474",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RiskAssessmentCodeError10",
+					"OrdinalPosition": "99",
+					"StartPos": "475",
+					"EndPos": "477",
+					"Length": "3"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "100",
+					"StartPos": "478",
+					"EndPos": "512",
+					"Length": "35"
+				}
+				
+			]
+		}
+	]
+}

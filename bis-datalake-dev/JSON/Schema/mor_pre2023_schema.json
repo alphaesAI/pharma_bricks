@@ -1,0 +1,960 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "ContractNumber",
+      "OrdinalPosition": 4,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "RunDate",
+      "OrdinalPosition": 5,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "PaymentYearandMonth",
+      "OrdinalPosition": 6,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMM"
+        }
+      ]
+    },
+    {
+      "FieldName": "RecordType",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MedicareBeneficiaryIdentifier",
+      "OrdinalPosition": 8,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "BeneficiaryLastName",
+      "OrdinalPosition": 9,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "BeneficiaryFirstName",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BeneficiaryInitial",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DateOfBirth",
+      "OrdinalPosition": 12,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "Sex",
+      "OrdinalPosition": 13,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "SocialSecurityNumber",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RASESRDIndicatorSwitch",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale0To34",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale35To44",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale45To54",
+      "OrdinalPosition": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale55To59",
+      "OrdinalPosition": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale60To64",
+      "OrdinalPosition": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale65To69",
+      "OrdinalPosition": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale70To74",
+      "OrdinalPosition": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale75To79",
+      "OrdinalPosition": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale80To84",
+      "OrdinalPosition": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale85To89",
+      "OrdinalPosition": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale90To94",
+      "OrdinalPosition": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupFemale95ToGT",
+      "OrdinalPosition": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale0To34",
+      "OrdinalPosition": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale35To44",
+      "OrdinalPosition": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale45To54",
+      "OrdinalPosition": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale55To59",
+      "OrdinalPosition": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale60To64",
+      "OrdinalPosition": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale65To69",
+      "OrdinalPosition": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale70To74",
+      "OrdinalPosition": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale75To79",
+      "OrdinalPosition": 35,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale80To84",
+      "OrdinalPosition": 36,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale85To89",
+      "OrdinalPosition": 37,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale90To94",
+      "OrdinalPosition": 38,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AgeGroupMale95ToGT",
+      "OrdinalPosition": 39,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MedicaidFemaleDisabled",
+      "OrdinalPosition": 40,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MedicaidFemaleAged",
+      "OrdinalPosition": 41,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MedicaidMaleDisabled",
+      "OrdinalPosition": 42,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MedicaidMaleAged",
+      "OrdinalPosition": 43,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OriginallyDisabledFemale",
+      "OrdinalPosition": 44,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OriginallyDisabledMale",
+      "OrdinalPosition": 45,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC001",
+      "OrdinalPosition": 46,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC002",
+      "OrdinalPosition": 47,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC006",
+      "OrdinalPosition": 48,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC008",
+      "OrdinalPosition": 49,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC009",
+      "OrdinalPosition": 50,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC010",
+      "OrdinalPosition": 51,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC011",
+      "OrdinalPosition": 52,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC012",
+      "OrdinalPosition": 53,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC017",
+      "OrdinalPosition": 54,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC018",
+      "OrdinalPosition": 55,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC019",
+      "OrdinalPosition": 56,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC021",
+      "OrdinalPosition": 57,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC022",
+      "OrdinalPosition": 58,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC023",
+      "OrdinalPosition": 59,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC027",
+      "OrdinalPosition": 60,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC028",
+      "OrdinalPosition": 61,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC029",
+      "OrdinalPosition": 62,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC033",
+      "OrdinalPosition": 63,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC034",
+      "OrdinalPosition": 64,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC035",
+      "OrdinalPosition": 65,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC039",
+      "OrdinalPosition": 66,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC040",
+      "OrdinalPosition": 67,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC046",
+      "OrdinalPosition": 68,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC047",
+      "OrdinalPosition": 69,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC048",
+      "OrdinalPosition": 70,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC051",
+      "OrdinalPosition": 71,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC052",
+      "OrdinalPosition": 72,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC054",
+      "OrdinalPosition": 73,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC055",
+      "OrdinalPosition": 74,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC056",
+      "OrdinalPosition": 75,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC057",
+      "OrdinalPosition": 76,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC058",
+      "OrdinalPosition": 77,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC059",
+      "OrdinalPosition": 78,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC060",
+      "OrdinalPosition": 79,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC070",
+      "OrdinalPosition": 80,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC071",
+      "OrdinalPosition": 81,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC072",
+      "OrdinalPosition": 82,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC073",
+      "OrdinalPosition": 83,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC074",
+      "OrdinalPosition": 84,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC075",
+      "OrdinalPosition": 85,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC076",
+      "OrdinalPosition": 86,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC077",
+      "OrdinalPosition": 87,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC078",
+      "OrdinalPosition": 88,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC079",
+      "OrdinalPosition": 89,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC080",
+      "OrdinalPosition": 90,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC082",
+      "OrdinalPosition": 91,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC083",
+      "OrdinalPosition": 92,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC084",
+      "OrdinalPosition": 93,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC085",
+      "OrdinalPosition": 94,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC086",
+      "OrdinalPosition": 95,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC087",
+      "OrdinalPosition": 96,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC088",
+      "OrdinalPosition": 97,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC096",
+      "OrdinalPosition": 98,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC099",
+      "OrdinalPosition": 99,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC100",
+      "OrdinalPosition": 100,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC103",
+      "OrdinalPosition": 101,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC104",
+      "OrdinalPosition": 102,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC106",
+      "OrdinalPosition": 103,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC107",
+      "OrdinalPosition": 104,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC108",
+      "OrdinalPosition": 105,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC110",
+      "OrdinalPosition": 106,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC111",
+      "OrdinalPosition": 107,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC112",
+      "OrdinalPosition": 108,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC114",
+      "OrdinalPosition": 109,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC115",
+      "OrdinalPosition": 110,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC122",
+      "OrdinalPosition": 111,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC124",
+      "OrdinalPosition": 112,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC134",
+      "OrdinalPosition": 113,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC135",
+      "OrdinalPosition": 114,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC136",
+      "OrdinalPosition": 115,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC137",
+      "OrdinalPosition": 116,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC138",
+      "OrdinalPosition": 117,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC139",
+      "OrdinalPosition": 118,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC140",
+      "OrdinalPosition": 119,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC141",
+      "OrdinalPosition": 120,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC157",
+      "OrdinalPosition": 121,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC158",
+      "OrdinalPosition": 122,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC159",
+      "OrdinalPosition": 123,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC160",
+      "OrdinalPosition": 124,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC161",
+      "OrdinalPosition": 125,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC162",
+      "OrdinalPosition": 126,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC166",
+      "OrdinalPosition": 127,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC167",
+      "OrdinalPosition": 128,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC169",
+      "OrdinalPosition": 129,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC170",
+      "OrdinalPosition": 130,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC173",
+      "OrdinalPosition": 131,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC176",
+      "OrdinalPosition": 132,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC186",
+      "OrdinalPosition": 133,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC188",
+      "OrdinalPosition": 134,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HCC189",
+      "OrdinalPosition": 135,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC006",
+      "OrdinalPosition": 136,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC034",
+      "OrdinalPosition": 137,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC046",
+      "OrdinalPosition": 138,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC054",
+      "OrdinalPosition": 139,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC055",
+      "OrdinalPosition": 140,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC110",
+      "OrdinalPosition": 141,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC176",
+      "OrdinalPosition": 142,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CancerImmune",
+      "OrdinalPosition": 143,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CHFCOPD",
+      "OrdinalPosition": 144,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CHFRenal",
+      "OrdinalPosition": 145,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COPDCardRespFail",
+      "OrdinalPosition": 146,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiabetesCHF",
+      "OrdinalPosition": 147,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SEPSISCardRespFail",
+      "OrdinalPosition": 148,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTHCC47_gCancer",
+      "OrdinalPosition": 149,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTDiabetes_CHF",
+      "OrdinalPosition": 150,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTCHFgCopdCF",
+      "OrdinalPosition": 151,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTHCC85gDiabetesMellit",
+      "OrdinalPosition": 152,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTHCC85_gCopdCF",
+      "OrdinalPosition": 153,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTHCC85gRenal",
+      "OrdinalPosition": 154,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTHCC85gRenalv24",
+      "OrdinalPosition": 155,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTsgCopdCFCardRespFail",
+      "OrdinalPosition": 156,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTHCC85HCC96",
+      "OrdinalPosition": 157,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTgRespDepandArregCOPDCF",
+      "OrdinalPosition": 158,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTgSubstanceAbusegPsychiatric",
+      "OrdinalPosition": 159,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Medicaid",
+      "OrdinalPosition": 160,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OriginallyDisabled",
+      "OrdinalPosition": 161,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC39",
+      "OrdinalPosition": 162,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC77",
+      "OrdinalPosition": 163,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC85",
+      "OrdinalPosition": 164,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DDHCC161",
+      "OrdinalPosition": 165,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTARTOpeningsPressureUlcer",
+      "OrdinalPosition": 166,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTASPSpecBactPneumPresUlcer",
+      "OrdinalPosition": 167,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTCOPDCFASPSpecBactPneum",
+      "OrdinalPosition": 168,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DisabledPressureUlcer",
+      "OrdinalPosition": 169,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTSchizoPhreniaCHF",
+      "OrdinalPosition": 170,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTSchizoPhreniagCopdCF",
+      "OrdinalPosition": 171,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTSchizoPhreniaSeizures",
+      "OrdinalPosition": 172,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTSepsisArtifOpenings",
+      "OrdinalPosition": 173,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTSepsisASPSpecBactPneum",
+      "OrdinalPosition": 174,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DINTSepsisPressureUlcer",
+      "OrdinalPosition": 175,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PaymentHCCCount",
+      "OrdinalPosition": 176,
+      "DataType": "string"
+    }
+  ],
+  "Rules": [
+    {
+      "Name": "VerifyTotalCount",
+      "Data_file_query": "select count(1) + 2 from data_file",
+      "control_file_query": "select TotalRecordCount from control_file"
+    }
+  ],
+  "RowCheck": [
+    {
+      "Name": "VerifyHCCCount",
+      "DataFileQuery": "select (COALESCE(HCC001, 0) +COALESCE(HCC002, 0) +COALESCE(HCC006, 0) +COALESCE(HCC008, 0) +COALESCE(HCC009, 0) + COALESCE(HCC010, 0) +COALESCE(HCC011, 0) +COALESCE(HCC012, 0) +COALESCE(HCC017, 0) +COALESCE(HCC018, 0) +COALESCE(HCC019, 0) +COALESCE(HCC021, 0) +COALESCE(HCC022, 0) +COALESCE(HCC023, 0) +COALESCE(HCC027, 0) +COALESCE(HCC028, 0) +COALESCE(HCC029, 0) +COALESCE(HCC033, 0) +COALESCE(HCC034, 0) +COALESCE(HCC035, 0) +COALESCE(HCC039, 0) +COALESCE(HCC040, 0) +COALESCE(HCC046, 0) +COALESCE(HCC047, 0) +COALESCE(HCC048, 0) +COALESCE(HCC051, 0) +COALESCE(HCC052, 0) +COALESCE(HCC054, 0) +COALESCE(HCC055, 0) +COALESCE(HCC056, 0) +COALESCE(HCC057, 0) +COALESCE(HCC058, 0) +COALESCE(HCC059, 0) +COALESCE(HCC060, 0) +COALESCE(HCC070, 0) +COALESCE(HCC071, 0) +COALESCE(HCC072, 0) +COALESCE(HCC073, 0) +COALESCE(HCC074, 0) +COALESCE(HCC075, 0) +COALESCE(HCC076, 0) +COALESCE(HCC077, 0) +COALESCE(HCC078, 0) +COALESCE(HCC079, 0) +COALESCE(HCC080, 0) +COALESCE(HCC082, 0) +COALESCE(HCC083, 0) +COALESCE(HCC084, 0) +COALESCE(HCC085, 0) +COALESCE(HCC086, 0) +COALESCE(HCC087, 0) +COALESCE(HCC088, 0) +COALESCE(HCC096, 0) +COALESCE(HCC099, 0) +COALESCE(HCC100, 0) +COALESCE(HCC103, 0) +COALESCE(HCC104, 0) +COALESCE(HCC106, 0) +COALESCE(HCC107, 0) +COALESCE(HCC108, 0) +COALESCE(HCC110, 0) +COALESCE(HCC111, 0) +COALESCE(HCC112, 0) +COALESCE(HCC114, 0) +COALESCE(HCC115, 0) +COALESCE(HCC122, 0) +COALESCE(HCC124, 0) +COALESCE(HCC134, 0) +COALESCE(HCC135, 0) +COALESCE(HCC136, 0) +COALESCE(HCC137, 0) +COALESCE(HCC138, 0) +COALESCE(HCC139, 0) +COALESCE(HCC140, 0) +COALESCE(HCC141, 0) +COALESCE(HCC157, 0) +COALESCE(HCC158, 0) +COALESCE(HCC159, 0) +COALESCE(HCC160, 0) +COALESCE(HCC161, 0) +COALESCE(HCC162, 0) +COALESCE(HCC166, 0) +COALESCE(HCC167, 0) +COALESCE(HCC169, 0) +COALESCE(HCC170, 0) +COALESCE(HCC173, 0) +COALESCE(HCC176, 0) +COALESCE(HCC186, 0) +COALESCE(HCC188, 0) +COALESCE(HCC189, 0) +COALESCE(DDHCC006, 0) +COALESCE(DDHCC034, 0) +COALESCE(DDHCC046, 0) +COALESCE(DDHCC054, 0) +COALESCE(DDHCC055, 0) +COALESCE(DDHCC110, 0) +COALESCE(DDHCC176, 0)) AS CheckVal, Row_ID, '' as data_file_query, '' as Name, '' as control_file_query, '' as dataFileOutput, '' as controlFileOutput, '' as validationOutput, RecordType from dataDF",
+      "Operator": "GreaterEqual",
+      "Value": "0"
+    },
+    {
+      "Name": "VerifyAgeCount",
+      "DataFileQuery": "select (COALESCE(AgeGroupFemale0To34, 0) +COALESCE(AgeGroupFemale35To44, 0) +COALESCE(AgeGroupFemale45To54, 0) +COALESCE(AgeGroupFemale55To59, 0) +COALESCE(AgeGroupFemale60To64, 0) + COALESCE(AgeGroupFemale65To69, 0) +COALESCE(AgeGroupFemale70To74, 0) +COALESCE(AgeGroupFemale75To79, 0) +COALESCE(AgeGroupFemale80To84, 0) +COALESCE(AgeGroupFemale85To89, 0) +COALESCE(AgeGroupFemale90To94, 0) +COALESCE(AgeGroupFemale95ToGT, 0) +COALESCE(AgeGroupMale0To34, 0) +COALESCE(AgeGroupMale35To44, 0) +COALESCE(AgeGroupMale45To54, 0) +COALESCE(AgeGroupMale55To59, 0) +COALESCE(AgeGroupMale60To64, 0) +COALESCE(AgeGroupMale65To69, 0) +COALESCE(AgeGroupMale70To74, 0) +COALESCE(AgeGroupMale75To79, 0) +COALESCE(AgeGroupMale80To84, 0) +COALESCE(AgeGroupMale85To89, 0) +COALESCE(AgeGroupMale90To94, 0) +COALESCE(AgeGroupMale95ToGT, 0)) AS CheckVal, Row_ID, '' as Name, '' as data_file_query, '' as control_file_query, '' as dataFileOutput, '' as controlFileOutput, '' as validationOutput, RecordType from dataDF",
+      "Operator": "Equals",
+      "Value": "1"
+    }
+  ]
+}

@@ -1,0 +1,908 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ContractNumber",
+          "DestinationColumn": "ContractNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RunDate",
+          "DestinationColumn": "RunDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "yyyyMMdd"
+        },
+        {
+          "SourceColumn": "PaymentYearandMonth",
+          "DestinationColumn": "PaymentYearandMonth",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RecordType",
+          "DestinationColumn": "RecordType",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MBI",
+          "DestinationColumn": "BeneficiaryID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "BeneficiaryLastName",
+          "DestinationColumn": "BeneficiaryLastName",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "BeneficiaryFirstName",
+          "DestinationColumn": "BeneficiaryFirstName",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "BeneficiaryInitial",
+          "DestinationColumn": "BeneficiaryInitial",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "DateOfBirth",
+          "DestinationColumn": "DateOfBirth",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "yyyyMMdd"
+        },
+        {
+          "SourceColumn": "Sex",
+          "DestinationColumn": "Sex",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "AgeGroupFemale0To34",
+          "DestinationColumn": "AgeGroupFemale0To34",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale35To44",
+          "DestinationColumn": "AgeGroupFemale35To44",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale45To54",
+          "DestinationColumn": "AgeGroupFemale45To54",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale55To59",
+          "DestinationColumn": "AgeGroupFemale55To59",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale60To64",
+          "DestinationColumn": "AgeGroupFemale60To64",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale65To69",
+          "DestinationColumn": "AgeGroupFemale65To69",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale70To74",
+          "DestinationColumn": "AgeGroupFemale70To74",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale75To79",
+          "DestinationColumn": "AgeGroupFemale75To79",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale80To84",
+          "DestinationColumn": "AgeGroupFemale80To84",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale85To89",
+          "DestinationColumn": "AgeGroupFemale85To89",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale90To94",
+          "DestinationColumn": "AgeGroupFemale90To94",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupFemale95ToGT",
+          "DestinationColumn": "AgeGroupFemale95ToGT",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale0To34",
+          "DestinationColumn": "AgeGroupMale0To34",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale35To44",
+          "DestinationColumn": "AgeGroupMale35To44",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale45To54",
+          "DestinationColumn": "AgeGroupMale45To54",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale55To59",
+          "DestinationColumn": "AgeGroupMale55To59",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale60To64",
+          "DestinationColumn": "AgeGroupMale60To64",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale65To69",
+          "DestinationColumn": "AgeGroupMale65To69",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale70To74",
+          "DestinationColumn": "AgeGroupMale70To74",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale75To79",
+          "DestinationColumn": "AgeGroupMale75To79",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale80To84",
+          "DestinationColumn": "AgeGroupMale80To84",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale85To89",
+          "DestinationColumn": "AgeGroupMale85To89",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale90To94",
+          "DestinationColumn": "AgeGroupMale90To94",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AgeGroupMale95ToGT",
+          "DestinationColumn": "AgeGroupMale95ToGT",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "OriginallyDisabledFemale",
+          "DestinationColumn": "OriginallyDisabledFemale",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "OriginallyDisabledMale",
+          "DestinationColumn": "OriginallyDisabledMale",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC1",
+          "DestinationColumn": "RXHCC1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC5",
+          "DestinationColumn": "RXHCC5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC15",
+          "DestinationColumn": "RXHCC15",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC16",
+          "DestinationColumn": "RXHCC16",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC17",
+          "DestinationColumn": "RXHCC17",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC18",
+          "DestinationColumn": "RXHCC18",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC19",
+          "DestinationColumn": "RXHCC19",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC20",
+          "DestinationColumn": "RXHCC20",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC21",
+          "DestinationColumn": "RXHCC21",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC22",
+          "DestinationColumn": "RXHCC22",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC30",
+          "DestinationColumn": "RXHCC30",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC31",
+          "DestinationColumn": "RXHCC31",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC40",
+          "DestinationColumn": "RXHCC40",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC41",
+          "DestinationColumn": "RXHCC41",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC42",
+          "DestinationColumn": "RXHCC42",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC43",
+          "DestinationColumn": "RXHCC43",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC44",
+          "DestinationColumn": "RXHCC44",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC47",
+          "DestinationColumn": "RXHCC47",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC54",
+          "DestinationColumn": "RXHCC54",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC55",
+          "DestinationColumn": "RXHCC55",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC56",
+          "DestinationColumn": "RXHCC56",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC59",
+          "DestinationColumn": "RXHCC59",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC65",
+          "DestinationColumn": "RXHCC65",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC66",
+          "DestinationColumn": "RXHCC66",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC67",
+          "DestinationColumn": "RXHCC67",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC80",
+          "DestinationColumn": "RXHCC80",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC81",
+          "DestinationColumn": "RXHCC81",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC82",
+          "DestinationColumn": "RXHCC82",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC83",
+          "DestinationColumn": "RXHCC83",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC84",
+          "DestinationColumn": "RXHCC84",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC87",
+          "DestinationColumn": "RXHCC87",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC95",
+          "DestinationColumn": "RXHCC95",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC96",
+          "DestinationColumn": "RXHCC96",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC98",
+          "DestinationColumn": "RXHCC98",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC99",
+          "DestinationColumn": "RXHCC99",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC100",
+          "DestinationColumn": "RXHCC100",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC111",
+          "DestinationColumn": "RXHCC111",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC112",
+          "DestinationColumn": "RXHCC112",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC130",
+          "DestinationColumn": "RXHCC130",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC131",
+          "DestinationColumn": "RXHCC131",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC132",
+          "DestinationColumn": "RXHCC132",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC133",
+          "DestinationColumn": "RXHCC133",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC146",
+          "DestinationColumn": "RXHCC146",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC147",
+          "DestinationColumn": "RXHCC147",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC148",
+          "DestinationColumn": "RXHCC148",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC153",
+          "DestinationColumn": "RXHCC153",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC154",
+          "DestinationColumn": "RXHCC154",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC155",
+          "DestinationColumn": "RXHCC155",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC157",
+          "DestinationColumn": "RXHCC157",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC158",
+          "DestinationColumn": "RXHCC158",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC159",
+          "DestinationColumn": "RXHCC159",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC160",
+          "DestinationColumn": "RXHCC160",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC161",
+          "DestinationColumn": "RXHCC161",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC163",
+          "DestinationColumn": "RXHCC163",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC164",
+          "DestinationColumn": "RXHCC164",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },      
+        {
+          "SourceColumn": "RXHCC166",
+          "DestinationColumn": "RXHCC166",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC168",
+          "DestinationColumn": "RXHCC168",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC183",
+          "DestinationColumn": "RXHCC183",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC184",
+          "DestinationColumn": "RXHCC184",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC186",
+          "DestinationColumn": "RXHCC186",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC187",
+          "DestinationColumn": "RXHCC187",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC188",
+          "DestinationColumn": "RXHCC188",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC191",
+          "DestinationColumn": "RXHCC191",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC193",
+          "DestinationColumn": "RXHCC193",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "RXHCC207",
+          "DestinationColumn": "RXHCC207",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC215",
+          "DestinationColumn": "RXHCC215",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC216",
+          "DestinationColumn": "RXHCC216",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC225",
+          "DestinationColumn": "RXHCC225",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC226",
+          "DestinationColumn": "RXHCC226",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC227",
+          "DestinationColumn": "RXHCC227",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC228",
+          "DestinationColumn": "RXHCC228",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC229",
+          "DestinationColumn": "RXHCC229",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },              
+        {
+          "SourceColumn": "RXHCC243",
+          "DestinationColumn": "RXHCC243",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC244",
+          "DestinationColumn": "RXHCC244",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC260",
+          "DestinationColumn": "RXHCC260",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC261",
+          "DestinationColumn": "RXHCC261",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC262",
+          "DestinationColumn": "RXHCC262",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC263",
+          "DestinationColumn": "RXHCC263",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC311",
+          "DestinationColumn": "RXHCC311",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC314",
+          "DestinationColumn": "RXHCC314",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC316",
+          "DestinationColumn": "RXHCC316",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC317",
+          "DestinationColumn": "RXHCC317",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC355",
+          "DestinationColumn": "RXHCC355",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC395",
+          "DestinationColumn": "RXHCC395",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC396",
+          "DestinationColumn": "RXHCC396",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },        
+        {
+          "SourceColumn": "NONAGEDRXHCC1",
+          "DestinationColumn": "NONAGEDRXHCC1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC130",
+          "DestinationColumn": "NONAGEDRXHCC130",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC131",
+          "DestinationColumn": "NONAGEDRXHCC131",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC132",
+          "DestinationColumn": "NONAGEDRXHCC132",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC133",
+          "DestinationColumn": "NONAGEDRXHCC133",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },      
+        {
+          "SourceColumn": "NONAGEDRXHCC159",
+          "DestinationColumn": "NONAGEDRXHCC159",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "NONAGEDRXHCC163",
+          "DestinationColumn": "NONAGEDRXHCC163",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC45",
+          "DestinationColumn": "RXHCC45",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC68",
+          "DestinationColumn": "RXHCC68",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC97",
+          "DestinationColumn": "RXHCC97",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC134",
+          "DestinationColumn": "RXHCC134",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC135",
+          "DestinationColumn": "RXHCC135",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC145",
+          "DestinationColumn": "RXHCC145",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC156",
+          "DestinationColumn": "RXHCC156",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC165",
+          "DestinationColumn": "RXHCC165",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC185",
+          "DestinationColumn": "RXHCC185",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC206",
+          "DestinationColumn": "RXHCC206",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC241",
+          "DestinationColumn": "RXHCC241",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RXHCC397",
+          "DestinationColumn": "RXHCC397",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "OriginallyDisabled",
+          "DestinationColumn": "OriginallyDisabled",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC134",
+          "DestinationColumn": "NONAGEDRXHCC134",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC135",
+          "DestinationColumn": "NONAGEDRXHCC135",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NONAGEDRXHCC160",
+          "DestinationColumn": "NONAGEDRXHCC160",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

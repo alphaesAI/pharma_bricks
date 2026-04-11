@@ -1,0 +1,182 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+{
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+{
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+{
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+{
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+{
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PROVIDERID",
+          "DestinationColumn": "ProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LASTNAME",
+          "DestinationColumn": "LastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FIRSTNAME",
+          "DestinationColumn": "FirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "TAXONOMYCODE1",
+          "DestinationColumn": "TaxonomyCode1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HPSPECIALTYCODE1",
+          "DestinationColumn": "HpSpecialtyCode1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "TAXONOMYCODE2",
+          "DestinationColumn": "TaxonomyCode2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HPSPECIALTYCODE2",
+          "DestinationColumn": "HpSpecialtyCode2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "TAXONOMYCODE3",
+          "DestinationColumn": "TaxonomyCode3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+  {
+          "SourceColumn": "HPSPECIALTYCODE3",
+          "DestinationColumn": "HpSpecialtyCode3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+       {
+          "SourceColumn": "TAXONOMYCODE4",
+          "DestinationColumn": "TaxonomyCode4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+  {
+          "SourceColumn": "HPSPECIALTYCODE4",
+          "DestinationColumn": "HpSpecialtyCode4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+      	{
+          "SourceColumn": "TAXONOMYCODE5",
+          "DestinationColumn": "TaxonomyCode5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+  {
+          "SourceColumn": "HPSPECIALTYCODE5",
+          "DestinationColumn": "HpSpecialtyCode5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NPI",
+          "DestinationColumn": "NPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PRESCRIBEPRIVILEGE",
+          "DestinationColumn": "PrescribePrivilege",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DEA",
+          "DestinationColumn": "DEA",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PAYORID",
+          "DestinationColumn": "PayorID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CONTRACTED",
+          "DestinationColumn": "Contracted",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PROVIDERHAI",
+          "DestinationColumn": "ProviderHAI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HOSPITALID",
+          "DestinationColumn": "HospitalID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EXCLUDEFROMPROVIDERREPORTING",
+          "DestinationColumn": "ExcludeFromProviderReporting",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ALTERNATEKEY1",
+          "DestinationColumn": "AltProvReporting1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+         "SourceColumn": "ALTERNATEKEY2",
+          "DestinationColumn": "AltProvReporting2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        }
+     ]
+    }
+  ]
+}

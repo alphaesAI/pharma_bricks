@@ -1,0 +1,294 @@
+{
+  "Fields": [
+    {
+      "FieldName": "GeneratedVisionClaimsUniqueKey",
+      "DataType": "StringType",
+      "Ordinal": "1"
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "LongType",
+      "Ordinal": "2"
+    },
+    {
+      "FieldName": "DetailServiceDate",
+      "DataType": "StringType",
+      "Ordinal": "3"
+    },
+    {
+      "FieldName": "ClaimNumber",
+      "DataType": "StringType",
+      "Ordinal": "4"
+    },
+    {
+      "FieldName": "ClaimLineNumber",
+      "DataType": "StringType",
+      "Ordinal": "5"
+    },
+    {
+      "FieldName": "LineServiceFrom",
+      "DataType": "DateType",
+      "Ordinal": "6"
+    },
+    {
+      "FieldName": "LineServiceToDate",
+      "DataType": "DateType",
+      "Ordinal": "7"
+    },
+    {
+      "FieldName": "ProcCode",
+      "DataType": "StringType",
+      "Ordinal": "8"
+    },
+    {
+      "FieldName": "ProcCodeType",
+      "DataType": "StringType",
+      "Ordinal": "9"
+    },
+    {
+      "FieldName": "ProcMod1",
+      "DataType": "StringType",
+      "Ordinal": "10"
+    },
+    {
+      "FieldName": "ProcMod2",
+      "DataType": "StringType",
+      "Ordinal": "11"
+    },
+    {
+      "FieldName": "ProcMod3",
+      "DataType": "StringType",
+      "Ordinal": "12"
+    },
+    {
+      "FieldName": "ProcMod4",
+      "DataType": "StringType",
+      "Ordinal": "13"
+    },
+	{
+      "FieldName": "ProcCode1",
+      "DataType": "StringType",
+      "Ordinal": "14"
+    },
+    {
+      "FieldName": "ProcCode1Type",
+      "DataType": "StringType",
+      "Ordinal": "15"
+    },
+    {
+      "FieldName": "ProcCode1Mod1",
+      "DataType": "StringType",
+      "Ordinal": "16"
+    },
+    {
+      "FieldName": "NDCCodeList",
+      "DataType": "StringType",
+      "Ordinal": "17"
+    },
+    {
+      "FieldName": "Quantity",
+      "DataType": "StringType",
+      "Ordinal": "18"
+    },
+    {
+      "FieldName": "UnitType",
+      "DataType": "StringType",
+      "Ordinal": "19"
+    },
+    {
+      "FieldName": "DiagCode1",
+      "DataType": "StringType",
+      "Ordinal": "20"
+    },
+    {
+      "FieldName": "DiagCode2",
+      "DataType": "StringType",
+      "Ordinal": "21"
+    },
+    {
+      "FieldName": "DiagCode3",
+      "DataType": "StringType",
+      "Ordinal": "22"
+    },
+    {
+      "FieldName": "DiagCode4",
+      "DataType": "StringType",
+      "Ordinal": "23"
+    },
+    {
+      "FieldName": "DiagCode5",
+      "DataType": "StringType",
+      "Ordinal": "24"
+    },
+    {
+      "FieldName": "DiagCode6",
+      "DataType": "StringType",
+      "Ordinal": "25"
+    },
+    {
+      "FieldName": "DiagCode7",
+      "DataType": "StringType",
+      "Ordinal": "26"
+    },
+    {
+      "FieldName": "DiagCode8",
+      "DataType": "StringType",
+      "Ordinal": "27"
+    },
+    {
+      "FieldName": "DiagCode9",
+      "DataType": "StringType",
+      "Ordinal": "28"
+    },
+    {
+      "FieldName": "DiagCode10",
+      "DataType": "StringType",
+      "Ordinal": "29"
+    },
+    {
+      "FieldName": "DiagCode11",
+      "DataType": "StringType",
+      "Ordinal": "30"
+    },
+    {
+      "FieldName": "DiagCode12",
+      "DataType": "StringType",
+      "Ordinal": "31"
+    },
+    {
+      "FieldName": "DiagCode13",
+      "DataType": "StringType",
+      "Ordinal": "32"
+    },
+    {
+      "FieldName": "DiagCode14",
+      "DataType": "StringType",
+      "Ordinal": "33"
+    },
+    {
+      "FieldName": "DiagCode15",
+      "DataType": "StringType",
+      "Ordinal": "34"
+    },
+    {
+      "FieldName": "DiagCode16",
+      "DataType": "StringType",
+      "Ordinal": "35"
+    },
+    {
+      "FieldName": "DiagCode17",
+      "DataType": "StringType",
+      "Ordinal": "36"
+    },
+    {
+      "FieldName": "DiagCode18",
+      "DataType": "StringType",
+      "Ordinal": "37"
+    },
+    {
+      "FieldName": "DiagCode19",
+      "DataType": "StringType",
+      "Ordinal": "38"
+    },
+    {
+      "FieldName": "DiagCode20",
+      "DataType": "StringType",
+      "Ordinal": "39"
+    },
+    {
+      "FieldName": "DiagCode21",
+      "DataType": "StringType",
+      "Ordinal": "40"
+    },
+    {
+      "FieldName": "DiagCode22",
+      "DataType": "StringType",
+      "Ordinal": "41"
+    },
+    {
+      "FieldName": "DiagCode23",
+      "DataType": "StringType",
+      "Ordinal": "42"
+    },
+    {
+      "FieldName": "DiagCode24",
+      "DataType": "StringType",
+      "Ordinal": "43"
+    },
+    {
+      "FieldName": "DiagCode25",
+      "DataType": "StringType",
+      "Ordinal": "44"
+    },
+    {
+      "FieldName": "DiagCode26",
+      "DataType": "StringType",
+      "Ordinal": "45"
+    },
+    {
+      "FieldName": "DiagCode27",
+      "DataType": "StringType",
+      "Ordinal": "46"
+    },
+    {
+      "FieldName": "DiagCode28",
+      "DataType": "StringType",
+      "Ordinal": "47"
+    },
+    {
+      "FieldName": "DiagCode29",
+      "DataType": "StringType",
+      "Ordinal": "48"
+    },
+    {
+      "FieldName": "DiagCode30",
+      "DataType": "StringType",
+      "Ordinal": "49"
+    },
+    {
+      "FieldName": "DiagCode31",
+      "DataType": "StringType",
+      "Ordinal": "50"
+    },
+    {
+      "FieldName": "DiagCode32",
+      "DataType": "StringType",
+      "Ordinal": "51"
+    },
+    {
+      "FieldName": "DiagCode33",
+      "DataType": "StringType",
+      "Ordinal": "52"
+    },
+    {
+      "FieldName": "DiagCode34",
+      "DataType": "StringType",
+      "Ordinal": "53"
+    },
+    {
+      "FieldName": "DiagCode35",
+      "DataType": "StringType",
+      "Ordinal": "54"
+    },
+    {
+      "FieldName": "DiagCode36",
+      "DataType": "StringType",
+      "Ordinal": "55"
+    },
+    {
+      "FieldName": "DiagCode37",
+      "DataType": "StringType",
+      "Ordinal": "56"
+    },
+    {
+      "FieldName": "DiagCode38",
+      "DataType": "StringType",
+      "Ordinal": "57"
+    },
+    {
+      "FieldName": "RevenueCode",
+      "DataType": "StringType",
+      "Ordinal": "58"
+    }
+  ]
+}

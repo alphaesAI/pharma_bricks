@@ -1,0 +1,140 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "ProductID",
+          "DestinationColumn": "ProductID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanID",
+          "DestinationColumn": "PlanID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProductLine",
+          "DestinationColumn": "ProductLine",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanGroupID",
+          "DestinationColumn": "PlanGroupID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanGroupName",
+          "DestinationColumn": "PlanGroupName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanSubGroup",
+          "DestinationColumn": "PlanSubGroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanType",
+          "DestinationColumn": "PlanType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanSubType",
+          "DestinationColumn": "PlanSubType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StartDate",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "yyyy-MM-dd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EndDate",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "yyyy-MM-dd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBP",
+          "DestinationColumn": "PBP",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ECDSFlag",
+          "DestinationColumn": "ECDSIndicator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "ProductType",
+          "DestinationColumn": "ProductType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MarketCoverage",
+          "DestinationColumn": "MarketCoverage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanMarketingName",
+          "DestinationColumn": "PlanMarketingName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "NCQASubmissionID",
+          "DestinationColumn": "NCQASubmissionID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

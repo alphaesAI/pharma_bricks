@@ -1,0 +1,643 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "MA_CLAIM_LINE_NUM",
+          "Value": "1"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedVisionClaimsUniqueKey",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CONCAT(COALESCE(MA_CLAIM_NUM,''),COALESCE(MA_CLAIM_NUM,''),COALESCE(MA_CLAIM_UPDATED_DT,''),COALESCE(CLAIM_NOTE,''),COALESCE(CLIENT_ID,''),COALESCE(FILE_ID,''))"
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_ID_NUM",
+          "DestinationColumn": "PlanMemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DIAGNOSIS_CODES_LIST",
+          "DestinationColumn": "DiagnosisCodesList",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SERVICE_CODE",
+          "DestinationColumn": "ServiceCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DIAGNOSIS_CODE_LIST",
+          "DestinationColumn": "AdmitDiagnosisCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_ID",
+          "DestinationColumn": "BillingProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_NPI_ID",
+          "DestinationColumn": "BillingProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_ADD1",
+          "DestinationColumn": "BillingProviderAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_CITY",
+          "DestinationColumn": "BillingProviderCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_STATE",
+          "DestinationColumn": "BillingProviderState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_ZIP",
+          "DestinationColumn": "BillingProviderZip",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BILL_PROVIDER_REF",
+          "DestinationColumn": "BillingProviderRef",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "REN_PROVIDER_TAXONOMY",
+          "DestinationColumn": "RenderingProviderSpecialtyCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "REN_PROVIDER_ID",
+          "DestinationColumn": "RenderingProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "REN_PROVIDER_NPI_ID",
+          "DestinationColumn": "RenderingProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SERVICE_PROV_ADD1",
+          "DestinationColumn": "ServicingProviderAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SERVICE_PROV_ADD2",
+          "DestinationColumn": "ServicingProviderAddress2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SERVICE_PROV_CITY",
+          "DestinationColumn": "ServicingProviderCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SERVICE_PROV_STATE",
+          "DestinationColumn": "ServicingProviderState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SERVICE_PROV_ZIP",
+          "DestinationColumn": "ServicingProviderZip",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "INSURED_PAYER_NAME",
+          "DestinationColumn": "InsuredPayerName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "INSURED_ID",
+          "DestinationColumn": "InsuredID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLAIM_NOTE",
+          "DestinationColumn": "ClaimStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "BATCH_CONTROL_NUMBER",
+          "DestinationColumn": "BatchControlNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_NUM",
+          "DestinationColumn": "ClaimNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_NUM",
+          "DestinationColumn": "OriginalClaimNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_GROUP_BASE",
+          "DestinationColumn": "GroupBase",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_FIRST_NAME",
+          "DestinationColumn": "PatientFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_LAST_NAME",
+          "DestinationColumn": "PatientLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_DOB",
+          "DestinationColumn": "PatientDateOfBirth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_GENDER",
+          "DestinationColumn": "PatientGender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_ADDRESS_LINE_1",
+          "DestinationColumn": "BillingProviderAddressLine1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_CITY",
+          "DestinationColumn": "PayToProviderCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ITS_ACCESS_FEE_AMT",
+          "DestinationColumn": "ITSAccessFeeAmount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ITS_HOME_HOST_IND",
+          "DestinationColumn": "ITSHomeHostInd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_BEGINNING_DOS",
+          "DestinationColumn": "BeginningDateOfService",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_DOC_CNTL_NUM",
+          "DestinationColumn": "DocControlNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_FIRST_NAME",
+          "DestinationColumn": "SubscriberFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_LAST_NAME",
+          "DestinationColumn": "SubscriberLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_MIDDLE_NAME",
+          "DestinationColumn": "SubscriberMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_BIRTH_DATE",
+          "DestinationColumn": "SubscriberDateOfBirth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_GENDER",
+          "DestinationColumn": "SubscriberGender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_COMPANY_CD",
+          "DestinationColumn": "SubscriberCompanyCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_COB_IND",
+          "DestinationColumn": "COBInd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_PATIENT_RELCODE",
+          "DestinationColumn": "SubscriberPatientRelCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_INSUR_PLAN_NAME",
+          "DestinationColumn": "SecSubscriberInsurPlanName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_INSUR_PLAN_ID",
+          "DestinationColumn": "SecSubscriberInsurPlanID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_FIRST_NAME",
+          "DestinationColumn": "SecSubscriberFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_LAST_NAME",
+          "DestinationColumn": "SecSubscriberLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_MIDDLE_NAME",
+          "DestinationColumn": "SecSubscriberMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_BIRTH_DATE",
+          "DestinationColumn": "SecSubscriberDateOfBirth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_GENDER",
+          "DestinationColumn": "SecSubscriberGender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_EMPLOYER",
+          "DestinationColumn": "SecSubscriberEmployer",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_COB_IND",
+          "DestinationColumn": "SecSubscriberCOBInd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_SEC_SBSCRBR_PATIENT_RELCODE",
+          "DestinationColumn": "SecSubscriberPatientRelCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_TER_SBSCRBR_BIRTH_DATE",
+          "DestinationColumn": "TerSubscriberDateOfBirth",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_TER_SBSCRBR_GENDER",
+          "DestinationColumn": "TerSubscriberGender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_MIDDLE_NAME",
+          "DestinationColumn": "PatientMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_ADDR1",
+          "DestinationColumn": "PatientAddress1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_ADDR2",
+          "DestinationColumn": "PatientAddress2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_CITY",
+          "DestinationColumn": "PatientCity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_ZIPCODE",
+          "DestinationColumn": "PatientZip",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_STATE",
+          "DestinationColumn": "PatientState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_RLSE_OF_INFO_IND",
+          "DestinationColumn": "PatientRlseOfInfoInd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_RNDR_PROV_TYPE_CODE",
+          "DestinationColumn": "RenderingProviderTypeCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_TYPE_CODE",
+          "DestinationColumn": "BillingProviderTypeCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_COND_EMPLOYMENT",
+          "DestinationColumn": "PatientCondEmployment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_COND_AUTO_ACCIDENT",
+          "DestinationColumn": "PatientCondAutoAccident",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_COND_AUTO_ACCDNT_ST",
+          "DestinationColumn": "PatientCondAutoAccidentState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_COND_OTHER_ACCIDENT",
+          "DestinationColumn": "PatientCondOtherAccident",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_CURRENT_ILLNESS_DT",
+          "DestinationColumn": "PatientCurrentIllnessDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_SIMILAR_ILLNESS_DT",
+          "DestinationColumn": "PatientSimilarIllnessDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_LAST_WORKED_DT",
+          "DestinationColumn": "PatientLastWorkedDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_RETURN_WORK_DT",
+          "DestinationColumn": "PatientReturnWorkDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_RFRG_PROV_AUTH_NUM",
+          "DestinationColumn": "ReferringProviderAuthNum",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_AMBULATORY_GROUP",
+          "DestinationColumn": "AmbulatoryGroup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_ACCOUNT_NUM",
+          "DestinationColumn": "PatientAccountNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ACCEPT_ASSGN_IND1",
+          "DestinationColumn": "AcceptAssgnInd1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_SUBMITTER_ID",
+          "DestinationColumn": "ClaimSubmitterID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PHYSICIAN_SIGNATURE",
+          "DestinationColumn": "PhysicianSignature",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ICD_VERSION_IND",
+          "DestinationColumn": "ClaimICDVersionInd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ATTND_PROV_NPI",
+          "DestinationColumn": "AttendingProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ATTND_PROV_LAST_NAME",
+          "DestinationColumn": "AttendingProviderLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ATTND_PROV_FIRST_NAME",
+          "DestinationColumn": "AttendingProviderFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ATTND_PROV_MIDDLE_NAME",
+          "DestinationColumn": "AttendingProviderMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_ATTND_PROV_NAME_SUFFIX",
+          "DestinationColumn": "AttendingProviderNameSuffix",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OPER_PROV_NPI",
+          "DestinationColumn": "OperatingProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OPER_PROV_LAST_NAME",
+          "DestinationColumn": "OperatingProviderLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OPER_PROV_FIRST_NAME",
+          "DestinationColumn": "OperatingProviderFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OPER_PROV_MIDDLE_NAME",
+          "DestinationColumn": "OperatingProviderMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OPER_PROV_NAME_SUFFIX",
+          "DestinationColumn": "OperatingProviderNameSuffix",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OTH_OPER_PROV_NPI",
+          "DestinationColumn": "OtherOperatingProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OTH_OPER_PROV_LAST_NAME",
+          "DestinationColumn": "OtherOperatingProviderLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OTH_OPER_PROV_FIRST_NAME",
+          "DestinationColumn": "OtherOperatingProviderFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OTH_OPER_PROV_MIDDLE_NAME",
+          "DestinationColumn": "OtherOperatingProviderMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_OTH_OPER_PROV_NAME_SUFFIX",
+          "DestinationColumn": "OtherOperatingProviderNameSuffix",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CLAIM_NUM",
+          "DestinationColumn": "LineClaimNum",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_TYPE_OF_SERVICE",
+          "DestinationColumn": "TypeOfService",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_PLACE_OF_SERVICE",
+          "DestinationColumn": "PlaceOfService",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_UPDATED_DT",
+          "DestinationColumn": "ClaimProcessDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss"
+        }
+      ]
+    }
+  ]
+}

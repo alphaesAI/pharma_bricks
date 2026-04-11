@@ -1,0 +1,138 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedMedicalClaimsUniqueKey",
+          "ColumnQuery": "CONCAT(COALESCE(ClaimNumber,''),'-',COALESCE(ClaimProcessDate,''),'-',COALESCE(ClaimStatus,''),'-',COALESCE(CLIENT_ID,''),'-',COALESCE(FILE_ID,''))",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimLineNumber",
+          "DestinationColumn": "LineNumber",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "TypeOfService",
+          "DestinationColumn": "TypeOfService",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlaceOfService",
+          "DestinationColumn": "PlaceOfService",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimChargeAmount",
+          "DestinationColumn": "TotalChargeAmt",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimAllowedAmount",
+          "DestinationColumn": "AllowedAmt",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ServiceFromDate",
+          "DestinationColumn": "ServiceFromDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "ServiceToDate",
+          "DestinationColumn": "ServiceToDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "ProcMod1",
+          "DestinationColumn": "ProcMod1Orig",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProcMod2",
+          "DestinationColumn": "ProcMod2Orig",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProcMod3",
+          "DestinationColumn": "ProcMod3Orig",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProcMod4",
+          "DestinationColumn": "ProcMod4Orig",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RevenueCode",
+          "DestinationColumn": "RevenueCode",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProcCode",
+          "DestinationColumn": "ProcCode",
+          "ColumnQuery": ""
+        },
+      	{
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCodeType",
+          "ColumnQuery": "CASE WHEN ProcCode BETWEEN 00000 AND 99999 AND LENGTH(ProcCode) = 5 THEN 'CPTCode' WHEN SUBSTRING(ProcCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(ProcCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(ProcCode)= 5 THEN 'HCPCSCode' WHEN ProcCode IS NOT NULL THEN 'Unknown' END",
+          "SourceColumnFormat": ""
+        },
+       {
+         "SourceColumn": "ProcMod1",
+         "DestinationColumn": "ProcMod1",
+         "ColumnQuery": "",
+         "SourceColumnFormat": ""
+       },
+       {
+        "SourceColumn": "ProcMod2",
+        "DestinationColumn": "ProcMod2",
+        "ColumnQuery": "",
+        "SourceColumnFormat": ""
+      },
+      {
+        "SourceColumn": "ProcMod3",
+        "DestinationColumn": "ProcMod3",
+        "ColumnQuery": "",
+        "SourceColumnFormat": ""
+      },
+      {
+        "SourceColumn": "ProcMod4",
+        "DestinationColumn": "ProcMod4",
+        "ColumnQuery": "",
+        "SourceColumnFormat": ""
+      },
+        {
+          "SourceColumn": "Quantity",
+          "DestinationColumn": "Quantity",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimPaidAmount",
+          "DestinationColumn": "PrimaryPaidAmt",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "WithholdAmt",
+          "DestinationColumn": "WithholdAmt",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

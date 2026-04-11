@@ -1,0 +1,665 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "0",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "1",
+          "Length": "1"
+        },
+        {
+          "FieldName": "ReportID",
+          "OrdinalPosition": "2",
+          "StartPos": "3",
+          "Length": "7"
+        },
+        {
+          "FieldName": "MedicareAdvantage",
+          "OrdinalPosition": "3",
+          "StartPos": "11",
+          "Length": "5"
+        },
+        {
+          "FieldName": "ReportDate",
+          "OrdinalPosition": "4",
+          "StartPos": "17",
+          "Length": "8",
+		  		"ControlFile": "True"
+        },
+        {
+          "FieldName": "ReportDescription",
+          "OrdinalPosition": "5",
+          "StartPos": "26",
+          "Length": "53",
+		  		"ControlFile": "True"
+        },
+        {
+          "FieldName": "Filler11",
+          "OrdinalPosition": "6",
+          "StartPos": "80",
+          "Length": "30"
+        },
+        {
+          "FieldName": "SubmissionFileType",
+          "OrdinalPosition": "7",
+          "StartPos": "111",
+          "Length": "4"
+        },
+        {
+          "FieldName": "Phase",
+          "OrdinalPosition": "8",
+          "StartPos": "116",
+          "Length": "1"
+        },
+        {
+          "FieldName": "Version",
+          "OrdinalPosition": "9",
+          "StartPos": "118",
+          "Length": "1"
+        },
+        {
+          "FieldName": "Filler19",
+          "OrdinalPosition": "10",
+          "StartPos": "120",
+          "Length": "381"
+        }
+      ]
+    },
+    {
+      "Type": "9",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "1",
+          "Length": "1"
+        },
+        {
+          "FieldName": "ReportID",
+          "OrdinalPosition": "2",
+          "StartPos": "3",
+          "Length": "7",
+		  		"ControlFile": "True"
+        },
+        {
+          "FieldName": "MedicareAdvantageContractID",
+          "OrdinalPosition": "3",
+          "StartPos": "11",
+          "Length": "5"
+        },
+        {
+          "FieldName": "TotalNumberofRecords",
+          "OrdinalPosition": "4",
+          "StartPos": "17",
+          "Length": "18",
+		  		"ControlFile": "True"
+        },
+        {
+          "FieldName": "Filler9",
+          "OrdinalPosition": "5",
+          "StartPos": "36",
+          "Length": "465"
+        }
+      ]
+    },
+    {
+      "Type": "1",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "1",
+          "Length": "1"
+        },
+        {
+          "FieldName": "ReportID",
+          "OrdinalPosition": "2",
+          "StartPos": "3",
+          "Length": "7"
+        },
+        {
+          "FieldName": "MedicareAdvantageContractID",
+          "OrdinalPosition": "3",
+          "StartPos": "11",
+          "Length": "5"
+        },
+        {
+          "FieldName": "BeneficiaryIdentifier",
+          "OrdinalPosition": "4",
+          "StartPos": "17",
+          "Length": "12"
+        },
+        {
+          "FieldName": "EncounterICN ",
+          "OrdinalPosition": "5",
+          "StartPos": "30",
+          "Length": "20"
+        },
+        {
+          "FieldName": "EncounterTypeSwitch ",
+          "OrdinalPosition": "6",
+          "StartPos": "51",
+          "Length": "1"
+        },
+        {
+          "FieldName": "ICNofEncounterLinkedTo",
+          "OrdinalPosition": "7",
+          "StartPos": "53",
+          "Length": "20"
+        },
+        {
+          "FieldName": "AllowedDisallowedStatusofEncounterLinkedTo",
+          "OrdinalPosition": "8",
+          "StartPos": "74",
+          "Length": "1"
+        },
+        {
+          "FieldName": "EncounterSubmissionDate ",
+          "OrdinalPosition": "9",
+          "StartPos": "76",
+          "Length": "8"
+        },
+        {
+          "FieldName": "FromDateofService ",
+          "OrdinalPosition": "10",
+          "StartPos": "85",
+          "Length": "8"
+        },
+        {
+          "FieldName": "ThroughDateofService",
+          "OrdinalPosition": "11",
+          "StartPos": "94",
+          "Length": "8"
+        },
+        {
+          "FieldName": "ServiceType ",
+          "OrdinalPosition": "12",
+          "StartPos": "103",
+          "Length": "1"
+        },
+        {
+          "FieldName": "AllowedDisallowedflag ",
+          "OrdinalPosition": "13",
+          "StartPos": "105",
+          "Length": "1"
+        },
+        {
+          "FieldName": "AllowedDisallowedReasonCode ",
+          "OrdinalPosition": "14",
+          "StartPos": "107",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosesICD",
+          "OrdinalPosition": "15",
+          "StartPos": "109",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCode1",
+          "OrdinalPosition": "16",
+          "StartPos": "111",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag1",
+          "OrdinalPosition": "17",
+          "StartPos": "119",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes2",
+          "OrdinalPosition": "18",
+          "StartPos": "121",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag2",
+          "OrdinalPosition": "19",
+          "StartPos": "129",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes3",
+          "OrdinalPosition": "20",
+          "StartPos": "131",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag3",
+          "OrdinalPosition": "21",
+          "StartPos": "139",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes4",
+          "OrdinalPosition": "22",
+          "StartPos": "141",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag4",
+          "OrdinalPosition": "23",
+          "StartPos": "149",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes5",
+          "OrdinalPosition": "24",
+          "StartPos": "151",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag5",
+          "OrdinalPosition": "25",
+          "StartPos": "159",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes6",
+          "OrdinalPosition": "26",
+          "StartPos": "161",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag6",
+          "OrdinalPosition": "27",
+          "StartPos": "169",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes7",
+          "OrdinalPosition": "28",
+          "StartPos": "171",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag7",
+          "OrdinalPosition": "29",
+          "StartPos": "179",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes8",
+          "OrdinalPosition": "30",
+          "StartPos": "181",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag8",
+          "OrdinalPosition": "31",
+          "StartPos": "189",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes9",
+          "OrdinalPosition": "32",
+          "StartPos": "191",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag9",
+          "OrdinalPosition": "33",
+          "StartPos": "199",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes10",
+          "OrdinalPosition": "34",
+          "StartPos": "201",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag10",
+          "OrdinalPosition": "35",
+          "StartPos": "209",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCode11",
+          "OrdinalPosition": "36",
+          "StartPos": "211",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag11",
+          "OrdinalPosition": "37",
+          "StartPos": "219",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes12",
+          "OrdinalPosition": "38",
+          "StartPos": "221",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag12",
+          "OrdinalPosition": "39",
+          "StartPos": "229",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes13",
+          "OrdinalPosition": "40",
+          "StartPos": "231",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag13",
+          "OrdinalPosition": "41",
+          "StartPos": "239",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes14",
+          "OrdinalPosition": "42",
+          "StartPos": "241",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag14",
+          "OrdinalPosition": "43",
+          "StartPos": "249",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes15",
+          "OrdinalPosition": "44",
+          "StartPos": "251",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag15",
+          "OrdinalPosition": "45",
+          "StartPos": "259",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes16",
+          "OrdinalPosition": "46",
+          "StartPos": "261",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag16",
+          "OrdinalPosition": "47",
+          "StartPos": "269",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes17",
+          "OrdinalPosition": "48",
+          "StartPos": "271",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag17",
+          "OrdinalPosition": "49",
+          "StartPos": "279",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes18",
+          "OrdinalPosition": "50",
+          "StartPos": "281",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag18",
+          "OrdinalPosition": "51",
+          "StartPos": "289",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes19",
+          "OrdinalPosition": "52",
+          "StartPos": "291",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag19",
+          "OrdinalPosition": "53",
+          "StartPos": "299",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes20",
+          "OrdinalPosition": "54",
+          "StartPos": "301",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag20",
+          "OrdinalPosition": "55",
+          "StartPos": "309",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCode21",
+          "OrdinalPosition": "56",
+          "StartPos": "311",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag21",
+          "OrdinalPosition": "57",
+          "StartPos": "319",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes22",
+          "OrdinalPosition": "58",
+          "StartPos": "321",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag22",
+          "OrdinalPosition": "59",
+          "StartPos": "329",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes23",
+          "OrdinalPosition": "60",
+          "StartPos": "331",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag23",
+          "OrdinalPosition": "61",
+          "StartPos": "339",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes24",
+          "OrdinalPosition": "62",
+          "StartPos": "341",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag24",
+          "OrdinalPosition": "63",
+          "StartPos": "349",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes25",
+          "OrdinalPosition": "64",
+          "StartPos": "351",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag25",
+          "OrdinalPosition": "65",
+          "StartPos": "359",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes26",
+          "OrdinalPosition": "66",
+          "StartPos": "361",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag26",
+          "OrdinalPosition": "67",
+          "StartPos": "369",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes27",
+          "OrdinalPosition": "68",
+          "StartPos": "371",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag27",
+          "OrdinalPosition": "69",
+          "StartPos": "379",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes28",
+          "OrdinalPosition": "70",
+          "StartPos": "381",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag28",
+          "OrdinalPosition": "71",
+          "StartPos": "389",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes29",
+          "OrdinalPosition": "72",
+          "StartPos": "391",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag29",
+          "OrdinalPosition": "73",
+          "StartPos": "399",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes30",
+          "OrdinalPosition": "74",
+          "StartPos": "401",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag30",
+          "OrdinalPosition": "75",
+          "StartPos": "409",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCode31",
+          "OrdinalPosition": "76",
+          "StartPos": "411",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag31",
+          "OrdinalPosition": "77",
+          "StartPos": "419",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes32",
+          "OrdinalPosition": "78",
+          "StartPos": "421",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag32",
+          "OrdinalPosition": "79",
+          "StartPos": "429",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes33",
+          "OrdinalPosition": "80",
+          "StartPos": "431",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag33",
+          "OrdinalPosition": "81",
+          "StartPos": "439",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes34",
+          "OrdinalPosition": "82",
+          "StartPos": "441",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag34",
+          "OrdinalPosition": "83",
+          "StartPos": "449",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes35",
+          "OrdinalPosition": "84",
+          "StartPos": "451",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag35",
+          "OrdinalPosition": "85",
+          "StartPos": "459",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes36",
+          "OrdinalPosition": "86",
+          "StartPos": "461",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag36",
+          "OrdinalPosition": "87",
+          "StartPos": "469",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes37",
+          "OrdinalPosition": "88",
+          "StartPos": "471",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag37",
+          "OrdinalPosition": "89",
+          "StartPos": "479",
+          "Length": "1"
+        },
+        {
+          "FieldName": "DiagnosisCodes38",
+          "OrdinalPosition": "90",
+          "StartPos": "481",
+          "Length": "7"
+        },
+        {
+          "FieldName": "AddorDeleteflag38",
+          "OrdinalPosition": "91",
+          "StartPos": "489",
+          "Length": "1"
+        },
+        {
+          "FieldName": "Filler183",
+          "OrdinalPosition": "92",
+          "StartPos": "491",
+          "Length": "1"
+        }
+      ]
+    }
+  ]
+}

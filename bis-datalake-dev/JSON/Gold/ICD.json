@@ -1,0 +1,22 @@
+{
+    "SubLayerProcessing": [
+        {
+            "SubGroupEntity": "icd",
+            "DestinationTable": "#clientCode/Gold/icd",
+            "SourceTables": [
+                {
+                    "Entity": "ICDDataset",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/TepReference/dbo/ICDDataset",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "ICDEffectiveYear",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/TepReference/dbo/ICDEffectiveYear",
+                    "SourceFormat": "parquet"
+                }
+            ],
+            "SQLScript": "SELECT icdKey, icd, icdCodeType, icdFormatted, icdShortDescription, icdLongDescription ,icdDisplayDescripton ,icdEffectiveYear ,icdEffectiveStartDate ,icdEffectiveEndDate ,isChronic ,isComplete FROM (SELECT hash(concat(IfNull(i.ICD, \" \") , \"| \",IfNull(i.CodeType, \" \") , \"| \",IfNull(i.ICDFormatted, \" \") , \"| \",IfNull(i.ShortDescription, \" \") , \"| \",IfNull(i.LongDescription, \" \") , \"| \",IfNull(i.DisplayDescription, \" \") , \"| \",IfNull(iey.EffectiveYear, \" \") , \"| \",IfNull(iey.EffectiveDateStart, \" \") , \"| \",IfNull(iey.EffectiveDateEnd, \" \") , \"| \",IfNull(i.IsChronic,false) , \"| \",IfNull(i.IsComplete,false))) AS icdKey ,i.ICD as icd ,i.CodeType as icdCodeType ,i.ICDFormatted as icdFormatted ,i.ShortDescription as icdShortDescription ,i.LongDescription as icdLongDescription ,i.DisplayDescription as icdDisplayDescripton ,iey.EffectiveYear as icdEffectiveYear ,iey.EffectiveDateStart as icdEffectiveStartDate ,iey.EffectiveDateEnd as icdEffectiveEndDate ,i.IsChronic as isChronic ,i.IsComplete as isComplete ,ROW_NUMBER() OVER(PARTITION BY IfNull(i.ICD, \" \"), IfNull(EffectiveYear, \" \") ORDER BY IfNull(i.CreationDatetime, \"9999-12-31\") DESC) AS RowNumber ,i.CreationDatetime FROM ICDDataset i JOIN ICDEffectiveYear iey on i.ICDEffectiveYearID = iey.ICDEffectiveYearID) q WHERE RowNumber = 1",
+            "MergeScript":"MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.icd,\"\")=IfNull(t.icd,\"\") AND IfNull(s.icdEffectiveYear,\"\") = IfNull(t.icdEffectiveYear,\"\") WHEN MATCHED AND t.icdKey <> s.icdKey THEN  UPDATE SET icdKey = s.icdKey ,icd = s.icd ,icdCodeType = s.icdCodeType ,icdFormatted = s.icdFormatted ,icdShortDescription = s.icdShortDescription ,icdLongDescription = s.icdLongDescription ,icdDisplayDescripton = s.icdDisplayDescripton ,icdEffectiveYear = s.icdEffectiveYear ,icdEffectiveStartDate = s.icdEffectiveStartDate ,icdEffectiveEndDate = s.icdEffectiveEndDate ,isChronic = s.isChronic ,isComplete = s.isComplete WHEN NOT MATCHED THEN INSERT (icdKey ,icd ,icdCodeType ,icdFormatted ,icdShortDescription ,icdLongDescription ,icdDisplayDescripton ,icdEffectiveYear ,icdEffectiveStartDate ,icdEffectiveEndDate ,isChronic ,isComplete ) VALUES (s.icdKey ,s.icd ,s.icdCodeType ,s.icdFormatted ,s.icdShortDescription ,s.icdLongDescription ,s.icdDisplayDescripton ,s.icdEffectiveYear ,s.icdEffectiveStartDate ,s.icdEffectiveEndDate ,s.isChronic ,s.isComplete)"
+        }
+    ]
+}

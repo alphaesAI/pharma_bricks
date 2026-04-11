@@ -1,0 +1,21 @@
+SELECT 
+	 MemberID
+	,DaysSupply
+	,ServiceDate
+	,NDCDrugCode
+	,ClaimStatus
+	,QuantityDispensed
+	,SupplementalData
+	,DataSourceName
+	,ProviderID
+	,ProviderNPI
+	,PharmacyNPI
+	,ClaimID
+	,ClaimlineID
+	,AdditionalColumn1
+	,AdditionalColumn2
+	,AdditionalColumn3
+	,AdditionalColumn4
+	,AdditionalColumn5
+	,Filler
+FROM Q360Pharmacy

@@ -1,0 +1,17 @@
+{
+    "SubLayerProcessing": [
+      {
+        "SubGroupEntity": "cdiStatus",
+        "DestinationTable": "#clientCode/Gold/cdiStatus",
+        "SourceTables": [
+          {
+            "Entity": "PECCDIStatus",
+            "SourceTable": "#clientCode/consolidated/MA/Data/PECCDIStatus",
+            "SourceFormat": "delta"
+          }
+        ],
+        "SQLScript": "\r\nselect clientCode, market,metric,cdiStatus,cdiStatusUse,countFlag,\nhash(concat(\n\t\tIfNull(clientCode, \"|\"), \n\t\t \"|\",IfNull(market, \"|\"), \n         \"|\",IfNull(metric, \"|\"),\n         \"|\",IfNull(cdiStatus, \"|\"),\n         \"|\",IfNull(cdiStatusUse, \"|\"), \n         \"|\",IfNull(countFlag, \"|\") )) as hashkey\nfrom (\nselect Client as clientCode,\nmarket,\nmetric,\ncdiStatus,\nCDIStatus_USE as cdiStatusUse,\ncountFlag,\nrow_number() over(partition by Client, Market, Metric, CDIStatus,CDIStatus_USE, CountFlag order by FileLoadDate desc) as rn,\nrank() over (order by loaddatetime desc,fileId desc) as Rankn\nfrom PECCDIStatus\n) cdi\nwhere rn = 1 and rankn = 1\r\n",
+        "MergeScript": "\r\nwith source_cte as (\r\nselect IFNULL(ss.clientCode,dt.clientCode) as clientCode, \r\nIFNULL(ss.market,dt.market) as market, \r\nIFNULL(ss.metric,dt.metric) as metric, \r\nIFNULL(ss.cdiStatus,dt.cdiStatus) as cdiStatus, \r\nIFNULL(ss.cdiStatusUse,dt.cdiStatusUse) as cdiStatusUse, \r\nIFNULL(ss.countFlag,dt.countFlag) as countFlag, \r\nIFNULL(ss.hashkey,dt.hashkey) as hashkey, \r\ncase when ss.hashkey = dt.hashkey then 'existingRecord'\r\nwhen ss.hashkey is not null and dt.hashkey is null then 'insertRecord'\r\nwhen ss.hashkey is null and dt.hashkey is not null then 'deleteRecord' end as Source\r\nFROM tempSQLScript ss \r\nFULL OUTER JOIN  DestinationTable dt \r\non IFNULL(ss.clientCode,'') = IFNULL(dt.clientCode,'') \r\nAND IFNULL(ss.market,'') = IFNULL(dt.market,'')\r\nAND IFNULL(ss.metric,'') = IFNULL(dt.metric,'')\r\nAND IFNULL(ss.cdiStatus,'') = IFNULL(dt.cdiStatus,'')\r\nAND IFNULL(ss.cdiStatusUse,'') = IFNULL(dt.cdiStatusUse,'')\r\nAND IFNULL(ss.countFlag,'') = IFNULL(dt.countFlag,'')\r\n)\r\n\r\nMERGE INTO DestinationTable t USING source_cte as  s \r\nON IFNULL(s.clientCode,'') = IFNULL(t.clientCode,'') \r\nAND IFNULL(s.market,'') = IFNULL(t.market,'')\r\nAND IFNULL(s.metric,'') = IFNULL(t.metric,'')\r\nAND IFNULL(s.cdiStatus,'') = IFNULL(t.cdiStatus,'')\r\nAND IFNULL(s.cdiStatusUse,'') = IFNULL(t.cdiStatusUse,'')\r\nAND IFNULL(s.countFlag,'') = IFNULL(t.countFlag,'')\r\nWHEN MATCHED AND  s.Source = 'deleteRecord'  \r\nTHEN DELETE\r\n\r\nWHEN NOT MATCHED AND s.Source ='insertRecord' \r\nTHEN INSERT (clientCode, market,metric,cdiStatus,cdiStatusUse,countFlag,hashkey)\r\nVALUES (s.clientCode, s.market,s.metric,s.cdiStatus,s.cdiStatusUse,s.countFlag,s.hashkey)\r\n"
+      }
+    ]
+}

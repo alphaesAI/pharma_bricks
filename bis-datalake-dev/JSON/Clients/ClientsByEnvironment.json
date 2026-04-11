@@ -1,0 +1,50 @@
+{
+    "Environments": [
+        {
+            "EnvironmentLetter": "d",
+            "Clients": [
+                "devidap1"
+                ,"devidap2"
+                ,"global"
+            ]
+        },
+        {
+            "EnvironmentLetter": "q",
+            "Clients": [
+                "qaidap1"
+                ,"qaidap2"
+                ,"global"
+            ]
+        },
+        {
+            "EnvironmentLetter": "s",
+            "Clients": [
+                "bcbsks"
+                ,"bcbsm"
+                ,"bcbsne"
+                ,"global"
+                ,"nbnd"
+                ,"premera"
+                ,"vba"
+                ,"wahp"
+                ,"fallon"
+                ,"clover"
+            ]
+        },
+        {
+            "EnvironmentLetter": "p",
+            "Clients": [
+                "bcbsks"
+                ,"bcbsm"
+                ,"bcbsne"
+                ,"global"
+                ,"nbnd"
+                ,"premera"
+                ,"vba"
+                ,"wahp"
+                ,"fallon"
+                ,"clover"
+            ]
+        }
+    ]
+}

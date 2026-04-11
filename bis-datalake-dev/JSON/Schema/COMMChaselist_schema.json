@@ -1,0 +1,396 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MemberID",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberMasterID",
+			"OrdinalPosition": 1,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "CMSRADVMemberID",
+			"OrdinalPosition": 2,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberHIC",
+			"OrdinalPosition": 3,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberContractNumber",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberFirstName",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberLastName",
+			"OrdinalPosition": 6,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberGender",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberDOB",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "EnrolleeID",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RRBHICID",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Source",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientCode",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "LOB",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FacilityType",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderNPI",
+			"OrdinalPosition": 15,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderSpecialty",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderFirstName",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderLastName",
+			"OrdinalPosition": 18,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderAddress1",
+			"OrdinalPosition": 19,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderAddress2",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderCity",
+			"OrdinalPosition": 21,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderState",
+			"OrdinalPosition": 22,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderZip",
+			"OrdinalPosition": 23,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderPhone",
+			"OrdinalPosition": 24,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderFax",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderContact",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderGroupName",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderGroupTIN",
+			"OrdinalPosition": 28,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProjectID",
+			"OrdinalPosition": 29,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProjectName",
+			"OrdinalPosition": 30,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimNumber",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientChartID",
+			"OrdinalPosition": 32,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ImageFileName",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCC",
+			"OrdinalPosition": 34,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCCModel",
+			"OrdinalPosition": 35,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD",
+			"OrdinalPosition": 36,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDType",
+			"OrdinalPosition": 37,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "SiteID",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TargetYearVisits",
+			"OrdinalPosition": 40,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "RetrievalMethod",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LastServiceDate",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RAF",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RAGain",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "BegDOS",
+			"OrdinalPosition": 45,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "EndDOS",
+			"OrdinalPosition": 46,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "OldContractNumber",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientDefinedText1",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientDefinedText2",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientDefinedNumber1",
+			"OrdinalPosition": 50,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "ClientDefinedNumber2",
+			"OrdinalPosition": 51,
+			"DataType": "integer"
+		},
+		{
+			"FieldName": "ClientDefinedDate1",
+			"OrdinalPosition": 52,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientDefinedDate2",
+			"OrdinalPosition": 53,
+			"DataType": "string"
+		}
+	]
+}

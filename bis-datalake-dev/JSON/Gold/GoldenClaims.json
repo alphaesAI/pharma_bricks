@@ -1,0 +1,28 @@
+{
+  "LayerGrouping": [
+    {
+      "LayerOrder": 1,
+      "LayerGrouping": "GoldenClaimsLayerGeneric",
+      "SubGrouping": [                
+        {
+          "SubGroupEntity": "GoldenClaim",
+          "SubGroupingOrder": 1,
+          "SubConfigPath": "",
+          "Notebook": "./GoldenClaimsGoldProcessing"
+        },
+        {
+          "SubGroupEntity": "MedicalGoldenClaimLineProcCodes",
+          "SubGroupingOrder": 2,
+          "SubConfigPath": "fileconfig/JSON/Gold/MedicalGoldenClaimLineProcCodes.json",
+          "Notebook": "./GenericSubGroupProcessing"
+        },
+        {
+          "SubGroupEntity": "MedicalGoldenClaimDiagnosis",
+          "SubGroupingOrder": 3,
+          "SubConfigPath": "fileconfig/JSON/Gold/MedicalGoldenClaimDiagnosis.json",
+          "Notebook": "./GenericSubGroupProcessing"
+        }       
+      ]
+    }
+  ]
+}

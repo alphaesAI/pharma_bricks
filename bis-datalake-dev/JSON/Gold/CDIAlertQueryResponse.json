@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "CDIAlertQueryResponse",
+      "DestinationTable": "#clientCode/Gold/cdiAlertQueryResponse",
+      "SourceTables": [
+        {
+          "Entity": "CDIAlertQueryResponse",
+          "SourceTable": "#clientCode/OperationalData/RAQ/TepAlert/dbo/CDIAlertQueryResponse",
+          "SourceFormat": "parquet"
+        }       
+      ],
+      "SQLScript": "SELECT cdiAlertQueryResponseDescription ,cdiAlertQueryResponseID ,createdDateTime ,updatedDateTime ,hashKey FROM( SELECT CDIAlertQueryResponseDesc AS cdiAlertQueryResponseDescription ,CDIAlertQueryResponseID AS cdiAlertQueryResponseID ,UpdatedDateTime AS updatedDateTime ,CreatedDateTime AS createdDateTime ,hash(concat(IfNull(CDIAlertQueryResponseDesc,\"\") ,\"|\",IfNull(CDIAlertQueryResponseID,\"\"))) AS hashKey FROM CDIAlertQueryResponse)",
+      "MergeScript": "MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.cdiAlertQueryResponseID,\"\")=IfNull(t.cdiAlertQueryResponseID,\"\") WHEN MATCHED AND t.hashKey <> s.hashKey THEN  UPDATE SET  cdiAlertQueryResponseDescription = s.cdiAlertQueryResponseDescription ,cdiAlertQueryResponseID = s.cdiAlertQueryResponseID , updatedDateTime = CURRENT_TIMESTAMP ,hashKey = s.hashKey WHEN NOT MATCHED THEN  INSERT(cdiAlertQueryResponseDescription ,cdiAlertQueryResponseID ,createdDateTime ,updatedDateTime , hashKey) VALUES ( s.cdiAlertQueryResponseDescription ,s.cdiAlertQueryResponseID, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, s.hashKey) "
+	  }
+  ]
+}

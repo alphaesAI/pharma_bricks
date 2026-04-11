@@ -1,0 +1,44 @@
+{
+  "SourceTable": "#clientCode/consolidated/ACA/Data/MemberConditionGap",
+  "SourceTableMountPoint": "DataLake",
+  "LOB": "ACA",
+  "BatchTable": "#clientCode/BatchAudit/ACA/ACAMemberConditionGapBatch",
+  "BatchTableMountPoint": "Export",
+  "ExportFilePath": "#clientCode/ACA/ACAMemberConditionGap",
+  "ExportFileMountPoint": "Export",
+  "ExportFileNamingConvention": "ACAMemberConditionGap_<LOB>_<BatchId>_<DateTime>",
+  "ExportFileNamingExtension": ".json",
+  "ExportQuery": "WITH\r\nCommDiags AS (\r\nSELECT DISTINCT\r\ndd.CommercialHCCNumber,dd.CommercialHCCDescription,dd.CommercialHCCVersion,dd.CommercialHCCType,dd.IsChronic HCCIsChronic\r\n,cc.AgeDOSMin,cc.AgeDOSMax,cc.AgeDOSDescription,cc.AgeLastMin,cc.AgeLastMax,cc.AgeLastDescription\r\n,aa.ICD,aa.DisplayDescription,aa.IsChronic ICDIsChronic,ee.EffectiveYear,cc.EffectiveStartDate as XRefStartDate,cc.EffectiveEndDate as XRefEndDate\r\nFROM ICDDataset aa\r\nINNER JOIN ICDEffectiveYear bb\r\n    ON aa.ICDEffectiveYearID = bb.ICDEffectiveYearID\r\nLEFT JOIN CommercialHCCICDDatasetXref cc\r\n   ON aa.ICDDatasetID = cc.ICDDatasetID\r\nLEFT JOIN CommercialHCCDataset dd\r\n    ON cc.CommercialHCCDatasetID = dd.CommercialHCCDatasetID\r\nLEFT JOIN HCCEffectiveYear ee\r\n    ON dd.HCCEffectiveYearID = ee.HCCEffectiveYearID\r\nWHERE ee.EffectiveYear > 2019\r\nGROUP BY dd.CommercialHCCNumber,dd.CommercialHCCDescription,dd.CommercialHCCVersion,dd.CommercialHCCType,dd.IsChronic\r\n,cc.AgeDOSMin,cc.AgeDOSMax,cc.AgeDOSDescription,cc.AgeLastMin,cc.AgeLastMax,cc.AgeLastDescription\r\n,aa.ICD,aa.DisplayDescription,aa.IsChronic,ee.EffectiveYear,cc.EffectiveStartDate,cc.EffectiveEndDate\r\n)\r\n,Result AS (\r\nSELECT DISTINCT\r\nMemberId\r\n,MedicareBeneficiaryID \r\n,MedicaidID \r\n,PlanID \r\n,LastName \r\n,FirstName \r\n,MiddleInitial\r\n,DateOfBirth\r\n,Gender\r\n,GapYear\r\n,SourceName,batchid\r\n,GapType\r\n,SuspectedHCC\r\n,HCCType\r\n,HCCVersion\r\n,EvidenceCodeValue\r\n,EvidenceCodeType\r\n,EvidenceCodeDescription\r\n,EvidenceDateOfService\r\n,CAST(EvidenceCodeResult AS DECIMAL(10,4)) EvidenceCodeResult\r\n,EvidenceIdentifier\r\n,CAST(ProbabilityScore AS DECIMAL(10,4)) ProbabilityScore\r\nFROM QueryResult qr\r\nJOIN CommDiags cd on cd.CommercialHCCNumber=qr.SuspectedHCC AND cd.ICD=qr.EvidenceCodeValue AND cd.CommercialHCCTYpe=qr.hcctype  AND cd.CommercialHCCVersion=qr.hccversion AND cd.EffectiveYear=qr.GapYear\r\nWHERE qr.GapType='Historical' AND qr.EvidenceCodeType='ICD' AND FileLayoutDescription = 'ACAMemberConditionGap'\r\nUNION\r\nSELECT DISTINCT\r\nMemberId\r\n,MedicareBeneficiaryID \r\n,MedicaidID \r\n,PlanID \r\n,LastName \r\n,FirstName \r\n,MiddleInitial\r\n,DateOfBirth\r\n,Gender\r\n,GapYear\r\n,SourceName,batchid\r\n,GapType\r\n,SuspectedHCC\r\n,HCCType\r\n,HCCVersion\r\n,EvidenceCodeValue\r\n,EvidenceCodeType\r\n,EvidenceCodeDescription\r\n,EvidenceDateOfService\r\n,CAST(EvidenceCodeResult AS DECIMAL(10,4)) EvidenceCodeResult\r\n,EvidenceIdentifier\r\n,CAST(ProbabilityScore AS DECIMAL(10,4)) ProbabilityScore\r\nFROM QueryResult\r\nWHERE FileLayoutDescription = 'ACAMemberConditionGap' AND (GapType<>'Historical'  or (GapType='Historical' AND EvidenceCodeType<>'ICD'))\r\n)\r\n,THIS AS(\r\nSELECT\r\n   MemberId\r\n  ,MedicareBeneficiaryID \r\n  ,MedicaidID \r\n  ,PlanID \r\n  ,LastName \r\n  ,FirstName \r\n  ,MiddleInitial\r\n  ,DateOfBirth\r\n  ,Gender\r\n  ,GapYear\r\n  ,SourceName\r\n  ,collect_set( --removes any dups found\r\n           named_struct(\r\n            'GapType', GapType\r\n           ,'SuspectedHCC', SuspectedHCC\r\n           ,'HCCType', HCCType\r\n           ,'HCCVersion', HCCVersion\r\n           ,'EvidenceCodeValue', EvidenceCodeValue\r\n           ,'EvidenceCodeType', EvidenceCodeType\r\n           ,'EvidenceCodeDescription', EvidenceCodeDescription\r\n           ,'EvidenceDateOfService', EvidenceDateOfService\r\n           ,'EvidenceCodeResult', CAST(EvidenceCodeResult AS DECIMAL(10,4))\r\n           ,'EvidenceIdentifier', EvidenceIdentifier\r\n           ,'ProbabilityScore', CAST(ProbabilityScore AS DECIMAL(10,4))\r\n           ) \r\n   ) as memberGap\r\nFROM Result\r\nGROUP BY\r\n   MemberId\r\n  ,MedicareBeneficiaryID \r\n  ,MedicaidID \r\n  ,PlanID \r\n  ,LastName \r\n  ,FirstName \r\n  ,MiddleInitial\r\n  ,DateOfBirth\r\n  ,Gender\r\n  ,GapYear\r\n  ,SourceName\r\n)\r\nSELECT *\r\nFROM THIS\r\n",
+  "FilterTables": [
+    {
+      "Entity": "ICDDataset",
+      "SourcePath": "global/OperationalData/RAQ/TepReference/dbo/ICDDataset",
+      "SourceFormat": "parquet",
+      "SourceTableMountPoint": "DataLake"
+    },
+    {
+      "Entity": "ICDEffectiveYear",
+      "SourcePath": "global/OperationalData/RAQ/TepReference/dbo/ICDEffectiveYear",
+      "SourceFormat": "parquet",
+      "SourceTableMountPoint": "DataLake"
+    },
+    {
+      "Entity": "CommercialHCCICDDatasetXref",
+      "SourcePath": "global/OperationalData/RAQ/TepReference/dbo/CommercialHCCICDDatasetXref",
+      "SourceFormat": "parquet",
+      "SourceTableMountPoint": "DataLake"
+    },
+    {
+      "Entity": "CommercialHCCDataset",
+      "SourcePath": "global/OperationalData/RAQ/TepReference/dbo/CommercialHCCDataset",
+      "SourceFormat": "parquet",
+      "SourceTableMountPoint": "DataLake"
+    },
+    {
+      "Entity": "HCCEffectiveYear",
+      "SourcePath": "global/OperationalData/RAQ/TepReference/dbo/HCCEffectiveYear",
+      "SourceFormat": "parquet",
+      "SourceTableMountPoint": "DataLake"
+    }
+  ]
+}

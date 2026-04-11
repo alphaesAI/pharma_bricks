@@ -1,0 +1,43 @@
+CREATE TABLE #clientCode.consolidated_ma_providerrollup (
+ ClientID  string
+,FileID  int
+,LoadDateTime date
+,FileLayoutID  int
+,FileLayoutDescription  string
+,RenderingProviderID  string
+,RenderingProviderNPI  string
+,Tier1BillingProviderID  string
+,Tier1BillingProviderNPI  string
+,Tier1BillingProviderTIN  string
+,Tier1Description  string
+,Tier2ID  string
+,Tier2Description  string
+,Tier3ID  string
+,Tier3Description  string
+,Tier4ID  string
+,Tier4Description  string
+,Tier5ID  string
+,Tier5Description  string
+,Tier6ID  string
+,Tier6Description  string
+,Tier7ID  string
+,Tier7Description  string
+,Tier8ID  string
+,Tier8Description  string
+,Tier9ID  string
+,Tier9Description  string
+,Tier10ID  string
+,Tier10Description  string
+,StartDate  date
+,EndDate  date
+,AltProvReporting1  string
+,AltProvReporting2  string
+,AltProvReporting3  string
+,AltProvReporting4  string
+,AltProvReporting5  string
+,AltProvReporting6  string
+,AltProvReporting7  string
+,AltProvReporting8  string
+,AltProvReporting9  string
+,AltProvReporting10  string
+) USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/ProviderRollup'

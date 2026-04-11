@@ -1,0 +1,110 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "Contract",
+          "DestinationColumn": "Contract",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBP",
+          "DestinationColumn": "PBP",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HICN",
+          "DestinationColumn": "HICN",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MBI",
+          "DestinationColumn": "MBI",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "Surname",
+          "DestinationColumn": "Surname",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FirstName",
+          "DestinationColumn": "FirstName",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DateOfBirth",
+          "DestinationColumn": "DateOfBirth",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DateOfDeath",
+          "DestinationColumn": "DateOfDeath",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Gender",
+          "DestinationColumn": "Gender",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RecentEnrollmentDate",
+          "DestinationColumn": "RecentEnrollmentDate",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RecentDisenrollmentDate",
+          "DestinationColumn": "RecentDisenrollmentDate",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+		  "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

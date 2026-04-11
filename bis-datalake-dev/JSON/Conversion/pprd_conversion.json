@@ -1,0 +1,4780 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "H",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "56",
+          "Length": "50",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "3",
+          "StartPos": "57",
+          "EndPos": "62",
+          "Length": "6",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "4",
+          "StartPos": "63",
+          "EndPos": "70",
+          "Length": "8",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "5",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "6",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "7",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "8",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "9",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "10",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "11",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "12",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "13",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "C",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "9",
+          "Length": "2",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "4",
+          "StartPos": "10",
+          "EndPos": "18",
+          "Length": "9",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "5",
+          "StartPos": "19",
+          "EndPos": "27",
+          "Length": "9",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "6",
+          "StartPos": "28",
+          "EndPos": "36",
+          "Length": "9",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "7",
+          "StartPos": "37",
+          "EndPos": "51",
+          "Length": "15",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "8",
+          "StartPos": "52",
+          "EndPos": "66",
+          "Length": "15",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "9",
+          "StartPos": "67",
+          "EndPos": "81",
+          "Length": "15",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "10",
+          "StartPos": "82",
+          "EndPos": "96",
+          "Length": "15",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "11",
+          "StartPos": "97",
+          "EndPos": "111",
+          "Length": "15",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "12",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "13",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "P",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "22",
+          "Length": "15",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "4",
+          "StartPos": "23",
+          "EndPos": "37",
+          "Length": "15",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "5",
+          "StartPos": "38",
+          "EndPos": "52",
+          "Length": "15",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "6",
+          "StartPos": "53",
+          "EndPos": "67",
+          "Length": "15",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "7",
+          "StartPos": "68",
+          "EndPos": "82",
+          "Length": "15",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "8",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "9",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "10",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "11",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "12",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "13",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "F",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "22",
+          "Length": "15",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "4",
+          "StartPos": "23",
+          "EndPos": "29",
+          "Length": "7",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "5",
+          "StartPos": "30",
+          "EndPos": "44",
+          "Length": "15",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "6",
+          "StartPos": "45",
+          "EndPos": "59",
+          "Length": "15",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "7",
+          "StartPos": "60",
+          "EndPos": "66",
+          "Length": "7",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "8",
+          "StartPos": "67",
+          "EndPos": "81",
+          "Length": "15",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "9",
+          "StartPos": "82",
+          "EndPos": "96",
+          "Length": "15",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "10",
+          "StartPos": "97",
+          "EndPos": "103",
+          "Length": "7",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "11",
+          "StartPos": "104",
+          "EndPos": "118",
+          "Length": "15",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "12",
+          "StartPos": "119",
+          "EndPos": "133",
+          "Length": "15",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "13",
+          "StartPos": "134",
+          "EndPos": "142",
+          "Length": "9",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "14",
+          "StartPos": "143",
+          "EndPos": "146",
+          "Length": "4",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "15",
+          "StartPos": "147",
+          "EndPos": "161",
+          "Length": "15",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "16",
+          "StartPos": "162",
+          "EndPos": "176",
+          "Length": "15",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "S",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIdNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "15",
+          "Length": "8",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "4",
+          "StartPos": "16",
+          "EndPos": "20",
+          "Length": "5",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "5",
+          "StartPos": "21",
+          "EndPos": "70",
+          "Length": "50",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "6",
+          "StartPos": "71",
+          "EndPos": "73",
+          "Length": "3",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "7",
+          "StartPos": "74",
+          "EndPos": "88",
+          "Length": "15",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "8",
+          "StartPos": "89",
+          "EndPos": "103",
+          "Length": "15",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "9",
+          "StartPos": "104",
+          "EndPos": "118",
+          "Length": "15",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "10",
+          "StartPos": "119",
+          "EndPos": "133",
+          "Length": "15",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "11",
+          "StartPos": "134",
+          "EndPos": "148",
+          "Length": "15",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "12",
+          "StartPos": "149",
+          "EndPos": "163",
+          "Length": "15",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "13",
+          "StartPos": "164",
+          "EndPos": "178",
+          "Length": "15",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "14",
+          "StartPos": "179",
+          "EndPos": "193",
+          "Length": "15",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "L",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "22",
+          "Length": "15",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "4",
+          "StartPos": "23",
+          "EndPos": "37",
+          "Length": "15",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "5",
+          "StartPos": "38",
+          "EndPos": "52",
+          "Length": "15",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "6",
+          "StartPos": "53",
+          "EndPos": "67",
+          "Length": "15",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "7",
+          "StartPos": "68",
+          "EndPos": "82",
+          "Length": "15",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "8",
+          "StartPos": "83",
+          "EndPos": "97",
+          "Length": "15",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "9",
+          "StartPos": "98",
+          "EndPos": "112",
+          "Length": "15",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "10",
+          "StartPos": "113",
+          "EndPos": "127",
+          "Length": "15",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "11",
+          "StartPos": "128",
+          "EndPos": "142",
+          "Length": "15",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "12",
+          "StartPos": "143",
+          "EndPos": "157",
+          "Length": "15",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "13",
+          "StartPos": "158",
+          "EndPos": "172",
+          "Length": "15",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "N",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "22",
+          "Length": "15",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "4",
+          "StartPos": "23",
+          "EndPos": "37",
+          "Length": "15",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "5",
+          "StartPos": "38",
+          "EndPos": "52",
+          "Length": "15",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "6",
+          "StartPos": "53",
+          "EndPos": "67",
+          "Length": "15",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "7",
+          "StartPos": "68",
+          "EndPos": "82",
+          "Length": "15",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "8",
+          "StartPos": "83",
+          "EndPos": "97",
+          "Length": "15",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "9",
+          "StartPos": "98",
+          "EndPos": "112",
+          "Length": "15",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "10",
+          "StartPos": "113",
+          "EndPos": "127",
+          "Length": "15",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "11",
+          "StartPos": "128",
+          "EndPos": "142",
+          "Length": "15",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount CarryForward",
+          "OrdinalPosition": "12",
+          "StartPos": "143",
+          "EndPos": "157",
+          "Length": "15",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "13",
+          "StartPos": "158",
+          "EndPos": "172",
+          "Length": "15",
+          "DestPos": "67"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOver Amount",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "74"
+        }
+      ]
+    },
+    {
+      "Type": "A",
+      "ColumnNames": [
+        {
+          "FieldName": "ContractNumber",
+          "OrdinalPosition": "0",
+          "StartPos": "1",
+          "EndPos": "5",
+          "Length": "5",
+          "DestPos": "1"
+        },
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": "1",
+          "StartPos": "6",
+          "EndPos": "6",
+          "Length": "1",
+          "DestPos": "2"
+        },
+        {
+          "FieldName": "TableIDNumber",
+          "OrdinalPosition": "2",
+          "StartPos": "7",
+          "EndPos": "7",
+          "Length": "1",
+          "DestPos": "6"
+        },
+        {
+          "FieldName": "PartAAmount",
+          "OrdinalPosition": "3",
+          "StartPos": "8",
+          "EndPos": "22",
+          "Length": "15",
+          "DestPos": "68"
+        },
+        {
+          "FieldName": "PartBAmount",
+          "OrdinalPosition": "4",
+          "StartPos": "23",
+          "EndPos": "37",
+          "Length": "15",
+          "DestPos": "69"
+        },
+        {
+          "FieldName": "PartDAmount",
+          "OrdinalPosition": "5",
+          "StartPos": "38",
+          "EndPos": "52",
+          "Length": "15",
+          "DestPos": "70"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmount",
+          "OrdinalPosition": "6",
+          "StartPos": "53",
+          "EndPos": "67",
+          "Length": "15",
+          "DestPos": "16"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmount",
+          "OrdinalPosition": "7",
+          "StartPos": "68",
+          "EndPos": "82",
+          "Length": "15",
+          "DestPos": "17"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidy",
+          "OrdinalPosition": "8",
+          "StartPos": "83",
+          "EndPos": "97",
+          "Length": "15",
+          "DestPos": "18"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenalty",
+          "OrdinalPosition": "9",
+          "StartPos": "98",
+          "EndPos": "112",
+          "Length": "15",
+          "DestPos": "19"
+        },
+        {
+          "FieldName": "EducationUserFeeAmount",
+          "OrdinalPosition": "10",
+          "StartPos": "113",
+          "EndPos": "127",
+          "Length": "15",
+          "DestPos": "71"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmount",
+          "OrdinalPosition": "11",
+          "StartPos": "128",
+          "EndPos": "142",
+          "Length": "15",
+          "DestPos": "72"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount",
+          "OrdinalPosition": "12",
+          "StartPos": "143",
+          "EndPos": "157",
+          "Length": "15",
+          "DestPos": "73"
+        },
+        {
+          "FieldName": "TotalNetPayment",
+          "OrdinalPosition": "13",
+          "StartPos": "158",
+          "EndPos": "172",
+          "Length": "15",
+          "DestPos": "74"
+        },
+        {
+          "FieldName": "ContractName",
+          "OrdinalPosition": "14",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "3"
+        },
+        {
+          "FieldName": "PaymentCycleDate",
+          "OrdinalPosition": "15",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "4"
+        },
+        {
+          "FieldName": "RunDate",
+          "OrdinalPosition": "16",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "5"
+        },
+        {
+          "FieldName": "AdjustmentReasonCode",
+          "OrdinalPosition": "17",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "7"
+        },
+        {
+          "FieldName": "PartATotalMembers",
+          "OrdinalPosition": "18",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "8"
+        },
+        {
+          "FieldName": "PartBTotalMembers",
+          "OrdinalPosition": "19",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "9"
+        },
+        {
+          "FieldName": "PartDTotalMembers",
+          "OrdinalPosition": "20",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "10"
+        },
+        {
+          "FieldName": "PartAPaymentAmount",
+          "OrdinalPosition": "21",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "11"
+        },
+        {
+          "FieldName": "PartBPaymentAmount",
+          "OrdinalPosition": "22",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "12"
+        },
+        {
+          "FieldName": "PartDPaymentAmount",
+          "OrdinalPosition": "23",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "13"
+        },
+        {
+          "FieldName": "CoverageGapDiscountAmount",
+          "OrdinalPosition": "24",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "14"
+        },
+        {
+          "FieldName": "TotalPayment",
+          "OrdinalPosition": "25",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "15"
+        },
+        {
+          "FieldName": "TotalPremiumSettlementAmount",
+          "OrdinalPosition": "26",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "20"
+        },
+        {
+          "FieldName": "NMECPartASubjecttoFee",
+          "OrdinalPosition": "27",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "21"
+        },
+        {
+          "FieldName": "NMECPartARate",
+          "OrdinalPosition": "28",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "22"
+        },
+        {
+          "FieldName": "PartAFeeAmount",
+          "OrdinalPosition": "29",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "23"
+        },
+        {
+          "FieldName": "NMECPartBSubjecttoFee",
+          "OrdinalPosition": "30",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "24"
+        },
+        {
+          "FieldName": "NMECPartBRate",
+          "OrdinalPosition": "31",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "25"
+        },
+        {
+          "FieldName": "PartBFeeAmount",
+          "OrdinalPosition": "32",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "26"
+        },
+        {
+          "FieldName": "NMECPartDSubjecttoFee",
+          "OrdinalPosition": "33",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "27"
+        },
+        {
+          "FieldName": "NMECPartDRate",
+          "OrdinalPosition": "34",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "28"
+        },
+        {
+          "FieldName": "PartDFeemount",
+          "OrdinalPosition": "35",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "29"
+        },
+        {
+          "FieldName": "TotalNMECFeeAssessed",
+          "OrdinalPosition": "36",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "30"
+        },
+        {
+          "FieldName": "TotalProspectivePartDMembers",
+          "OrdinalPosition": "37",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "31"
+        },
+        {
+          "FieldName": "RateforCOBFees",
+          "OrdinalPosition": "38",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "32"
+        },
+        {
+          "FieldName": "AmountofCOBFees",
+          "OrdinalPosition": "39",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "33"
+        },
+        {
+          "FieldName": "TotalofAssessedFees",
+          "OrdinalPosition": "40",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "34"
+        },
+        {
+          "FieldName": "DocumentId",
+          "OrdinalPosition": "41",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "35"
+        },
+        {
+          "FieldName": "Source",
+          "OrdinalPosition": "42",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "36"
+        },
+        {
+          "FieldName": "Description",
+          "OrdinalPosition": "43",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "37"
+        },
+        {
+          "FieldName": "AdjustmentType",
+          "OrdinalPosition": "44",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "38"
+        },
+        {
+          "FieldName": "AdjustmentToPartA",
+          "OrdinalPosition": "45",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "39"
+        },
+        {
+          "FieldName": "AdjustmentToPartB",
+          "OrdinalPosition": "46",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "40"
+        },
+        {
+          "FieldName": "AdjustmentToPartD",
+          "OrdinalPosition": "47",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "41"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartA",
+          "OrdinalPosition": "48",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "42"
+        },
+        {
+          "FieldName": "PremiumCWithholdingPartB",
+          "OrdinalPosition": "49",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "43"
+        },
+        {
+          "FieldName": "PremiumDWithholding",
+          "OrdinalPosition": "50",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "44"
+        },
+        {
+          "FieldName": "TotalAdjustmentAmount",
+          "OrdinalPosition": "51",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "45"
+        },
+        {
+          "FieldName": "PartACarryOverAmount",
+          "OrdinalPosition": "52",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "46"
+        },
+        {
+          "FieldName": "PartBCarryOverAmount",
+          "OrdinalPosition": "53",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "47"
+        },
+        {
+          "FieldName": "PartDCarryOverAmount",
+          "OrdinalPosition": "54",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "48"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "55",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "49"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingCarryOverAmount",
+          "OrdinalPosition": "56",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "50"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyCarryOverAmount",
+          "OrdinalPosition": "57",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "51"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyCarryOverAmount",
+          "OrdinalPosition": "58",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "52"
+        },
+        {
+          "FieldName": "EducationUserFeeCarryOverAmount",
+          "OrdinalPosition": "59",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "53"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeCarryOverAmount",
+          "OrdinalPosition": "60",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "54"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsCarryOverAmount",
+          "OrdinalPosition": "61",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "55"
+        },
+        {
+          "FieldName": "TotalCarryOverAmount",
+          "OrdinalPosition": "62",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "56"
+        },
+        {
+          "FieldName": "PartAAmountCarryForward",
+          "OrdinalPosition": "63",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "57"
+        },
+        {
+          "FieldName": "PartBAmountCarryForward",
+          "OrdinalPosition": "64",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "58"
+        },
+        {
+          "FieldName": "PartDAmountCarryForward",
+          "OrdinalPosition": "65",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "59"
+        },
+        {
+          "FieldName": "PartCPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "66",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "60"
+        },
+        {
+          "FieldName": "PartDPremiumWithholdingAmountCarryForward",
+          "OrdinalPosition": "67",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "61"
+        },
+        {
+          "FieldName": "PartDLowIncomePremiumSubsidyAmountCarryForward",
+          "OrdinalPosition": "68",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "62"
+        },
+        {
+          "FieldName": "PartDLateEnrollmentPenaltyAmountCarryForward",
+          "OrdinalPosition": "69",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "63"
+        },
+        {
+          "FieldName": "EducationUserFeeAmountCarryForward",
+          "OrdinalPosition": "70",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "64"
+        },
+        {
+          "FieldName": "PartDCOBUserFeeAmountCarryForward",
+          "OrdinalPosition": "71",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "65"
+        },
+        {
+          "FieldName": "CMSSpecialAdjustmentsAmount CarryForward",
+          "OrdinalPosition": "72",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "66"
+        },
+        {
+          "FieldName": "TotalCarryForwardAmount",
+          "OrdinalPosition": "73",
+          "StartPos": "0",
+          "EndPos": "0",
+          "Length": "0",
+          "DestPos": "67"
+        }
+      ]
+    }
+  ]
+}

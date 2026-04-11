@@ -1,0 +1,61 @@
+{
+  "DestinationTableName": "ACAMemberConditionGapErrors",
+  "DestinationTablePath": "/mnt/export#clientCode/BatchAuditErrors/ACA/ACAMemberConditionGapErrors",
+  "SourceTables": [
+    {
+      "IsSource": "1",
+      "TableName": "SourceTable",
+      "TablePath": "/mnt/#clientCode/consolidated/ACA/Data/MemberConditionGap",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "BatchTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/ACA/ACAMemberConditionGapBatch",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "AuditTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/export_audit",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "ICDDataset",
+      "TablePath": "/mnt/global/OperationalData/RAQ/TepReference/dbo/ICDDataset",
+      "TableFormat": "parquet"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "ICDEffectiveYear",
+      "TablePath": "/mnt/global/OperationalData/RAQ/TepReference/dbo/ICDEffectiveYear",
+      "TableFormat": "parquet"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "CommercialHCCICDDatasetXref",
+      "TablePath": "/mnt/global/OperationalData/RAQ/TepReference/dbo/CommercialHCCICDDatasetXref",
+      "TableFormat": "parquet"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "CommercialHCCDataset",
+      "TablePath": "/mnt/global/OperationalData/RAQ/TepReference/dbo/CommercialHCCDataset",
+      "TableFormat": "parquet"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "HCCEffectiveYear",
+      "TablePath": "/mnt/global/OperationalData/RAQ/TepReference/dbo/HCCEffectiveYear",
+      "TableFormat": "parquet"
+    }
+  ],
+  "Validations": [
+    {
+      "Field": "",
+      "Validator": "IsCustom",
+      "SQLQuery": "WITH CommDiags AS (\r\nSELECT DISTINCT\r\n   dd.CommercialHCCNumber\r\n  ,dd.CommercialHCCDescription\r\n  ,dd.CommercialHCCVersion\r\n  ,dd.CommercialHCCType\r\n  ,dd.IsChronic AS HCCIsChronic \r\n  ,cc.AgeDOSMin\r\n  ,cc.AgeDOSMax\r\n  ,cc.AgeDOSDescription\r\n  ,cc.AgeLastMin\r\n  ,cc.AgeLastMax\r\n  ,cc.AgeLastDescription\r\n  ,aa.ICD\r\n  ,aa.DisplayDescription\r\n  ,aa.IsChronic AS ICDIsChronic\r\n  ,ee.EffectiveYear\r\n  ,cc.EffectiveStartDate AS XRefStartDate\r\n  ,cc.EffectiveEndDate AS XRefEndDate\r\nFROM ICDDataset aa\r\n  INNER JOIN ICDEffectiveYear bb\r\n      ON aa.ICDEffectiveYearID = bb.ICDEffectiveYearID\r\n  LEFT JOIN CommercialHCCICDDatasetXref cc\r\n    ON aa.ICDDatasetID = cc.ICDDatasetID\r\n  LEFT JOIN CommercialHCCDataset dd\r\n      ON cc.CommercialHCCDatasetID = dd.CommercialHCCDatasetID\r\n  LEFT JOIN HCCEffectiveYear ee\r\n      ON dd.HCCEffectiveYearID = ee.HCCEffectiveYearID\r\nWHERE \r\n  ee.EffectiveYear > 2019\r\nGROUP BY \r\n  dd.CommercialHCCNumber\r\n  ,dd.CommercialHCCDescription\r\n  ,dd.CommercialHCCVersion\r\n  ,dd.CommercialHCCType\r\n  ,dd.IsChronic\r\n  ,cc.AgeDOSMin\r\n  ,cc.AgeDOSMax\r\n  ,cc.AgeDOSDescription\r\n  ,cc.AgeLastMin\r\n  ,cc.AgeLastMax\r\n  ,cc.AgeLastDescription\r\n  ,aa.ICD\r\n  ,aa.DisplayDescription\r\n  ,aa.IsChronic\r\n  ,ee.EffectiveYear\r\n  ,cc.EffectiveStartDate\r\n  ,cc.EffectiveEndDate\r\n),\r\nFinalQueryResult AS(\r\nSELECT\r\n   FileId\r\n  ,BatchId\r\n  ,HashOfRow\r\n  ,SourceFileName\r\n  ,SuspectedHCC\r\n  ,EvidenceCodeValue\r\n  ,hcctype\r\n  ,hccversion\r\n  ,GapYear\r\n  ,GapType\r\n  ,EvidenceCodeType\r\nFROM QueryResult qr\r\nWHERE\r\nFileLayoutDescription = 'ACAMemberConditionGap'\r\n),\r\nIdentifyGoodRecords AS(\r\nSELECT DISTINCT \r\n  HashOfRow \r\nFROM FinalQueryResult qr\r\n  INNER JOIN CommDiags cd \r\n    ON cd.CommercialHCCNumber = qr.SuspectedHCC \r\n      AND cd.ICD = qr.EvidenceCodeValue\r\n      AND cd.CommercialHCCTYpe = qr.hcctype \r\n      AND cd.CommercialHCCVersion = qr.hccversion\r\n      AND cd.EffectiveYear = qr.GapYear\r\nWHERE\r\nqr.EvidenceCodeType = 'ICD'\r\nAND\r\nqr.GapType = 'Historical'\r\nUNION\r\nSELECT DISTINCT\r\n  HashOfRow\r\nFROM FinalQueryResult\r\nWHERE\r\nGapType <> 'Historical'\r\nOR\r\n(GapType='Historical' AND EvidenceCodeType<>'ICD')\r\n),\r\nResult AS (\r\nSELECT DISTINCT\r\n   qr.FileId\r\n  ,qr.BatchId\r\n  ,qr.HashOfRow\r\n  ,qr.SourceFileName\r\nFROM FinalQueryResult qr\r\n  LEFT JOIN IdentifyGoodRecords igr\r\n    ON qr.HashOfRow = igr.HashOfRow\r\nWHERE\r\nigr.HashOfRow IS NULL\r\n)\r\nSELECT \r\n       FileId\r\n      ,BatchId\r\n      ,'' AS ColumnName\r\n      ,'IsCustom' AS ErrorCode\r\n      ,'ICDNotMappedBackToHCC' AS ErrorDescription\r\n      ,HashOfRow\r\n      ,SourceFileName\r\nFROM Result\r\n"
+    }
+  ]
+}

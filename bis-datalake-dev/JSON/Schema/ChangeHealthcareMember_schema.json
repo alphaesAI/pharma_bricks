@@ -1,0 +1,519 @@
+{
+   "ColumnNames": [
+      {
+         "FieldName": "TEMPLATE",
+         "OrdinalPosition": -1,
+         "DataType": "TEMPLATE",
+         "Validators": [
+            {
+               "Name": "TEMPLATE",
+               "Value": "TEMPLATE",
+               "InputValue": [
+                  "TEMPLATE"
+               ],
+               "ConditionCol": "TEMPLATE",
+               "ConditionVal": [
+                  "TEMPLATE"
+               ]
+            }
+         ]
+      },
+      {
+         "FieldName": "MEMBER_ID",
+         "OrdinalPosition": 0,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "SUBSCRIBER_ID",
+         "OrdinalPosition": 1,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_MEDICAID_ID",
+         "OrdinalPosition": 2,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "OTHER_ID",
+         "OrdinalPosition": 3,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_START",
+         "OrdinalPosition": 4,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_END",
+         "OrdinalPosition": 5,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_FIRST_NAME",
+         "OrdinalPosition": 6,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "MEMBER_LAST_NAME",
+         "OrdinalPosition": 7,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_MID_INITIAL",
+         "OrdinalPosition": 8,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_ADDRESS1",
+         "OrdinalPosition": 9,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_ADDRESS2",
+         "OrdinalPosition": 10,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_CITY",
+         "OrdinalPosition": 11,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_STATE",
+         "OrdinalPosition": 12,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_ZIP",
+         "OrdinalPosition": 13,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_COUNTY",
+         "OrdinalPosition": 14,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_REGION",
+         "OrdinalPosition": 15,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_HOME_PHONE",
+         "OrdinalPosition": 16,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_ALT_PHONE",
+         "OrdinalPosition": 17,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_WORK_PHONE",
+         "OrdinalPosition": 18,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_GENDER",
+         "OrdinalPosition": 19,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "IsInAllowedValues",
+               "InputValue": [
+                  "M",
+                  "F",
+                  "U"
+               ]
+            }
+         ]
+      },
+      {
+         "FieldName": "MEMBER_DOB",
+         "OrdinalPosition": 20,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            },
+            {
+               "Name": "isDate",
+               "Value": "yyyyMMdd"
+            }
+         ]
+      },
+      {
+         "FieldName": "MEMBER_DOD",
+         "OrdinalPosition": 21,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_SSN",
+         "OrdinalPosition": 22,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_ORIG_HICN",
+         "OrdinalPosition": 23,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_HICN",
+         "OrdinalPosition": 24,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_EMAIL_ADDRESS",
+         "OrdinalPosition": 25,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_MSP_REDETERMINATION_DATE",
+         "OrdinalPosition": 26,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEMBER_MEDICAID_REDETERMINATION_DATE",
+         "OrdinalPosition": 27,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_FIRST_NAME",
+         "OrdinalPosition": 28,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_LAST_NAME",
+         "OrdinalPosition": 29,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_MID_INITIAL",
+         "OrdinalPosition": 30,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_ADDRESS1",
+         "OrdinalPosition": 31,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_ADDRESS2",
+         "OrdinalPosition": 32,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_CITY",
+         "OrdinalPosition": 33,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_STATE",
+         "OrdinalPosition": 34,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_ZIP",
+         "OrdinalPosition": 35,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_PRIMARY_PHONE",
+         "OrdinalPosition": 36,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "POA_EMAIL_ADDRESS",
+         "OrdinalPosition": 37,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "HEAD_OF_HOUSEHOLD_FLAG",
+         "OrdinalPosition": 38,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PARENT_FIRST_NAME",
+         "OrdinalPosition": 39,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PARENT_LAST_NAME",
+         "OrdinalPosition": 40,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PARENT_MID_INITIAL",
+         "OrdinalPosition": 41,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "RACE",
+         "OrdinalPosition": 42,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "RACE_SOURCE",
+         "OrdinalPosition": 43,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "HISPANIC_ORIGIN",
+         "OrdinalPosition": 44,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "HISPANIC_ORIGIN_SOURCE",
+         "OrdinalPosition": 45,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SPOKEN_LANGUAGE",
+         "OrdinalPosition": 46,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SPOKEN_LANGUAGE_SOURCE",
+         "OrdinalPosition": 47,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "WRITTEN_LANGUAGE",
+         "OrdinalPosition": 48,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "WRITTEN_LANGUAGE_SOURCE",
+         "OrdinalPosition": 49,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "OTHER_LANGUAGE",
+         "OrdinalPosition": 50,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "OTHER_LANGUAGE_SOURCE",
+         "OrdinalPosition": 51,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "EMPLOYEE",
+         "OrdinalPosition": 52,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "EMPLOYER_GROUP",
+         "OrdinalPosition": 53,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "LOB",
+         "OrdinalPosition": 54,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "CMS_CONTRACT_ID",
+         "OrdinalPosition": 55,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM1",
+         "OrdinalPosition": 56,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM2",
+         "OrdinalPosition": 57,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM3",
+         "OrdinalPosition": 58,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM4",
+         "OrdinalPosition": 59,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM5",
+         "OrdinalPosition": 60,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM6",
+         "OrdinalPosition": 61,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM7",
+         "OrdinalPosition": 62,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM8",
+         "OrdinalPosition": 63,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM9",
+         "OrdinalPosition": 64,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM10",
+         "OrdinalPosition": 65,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM11",
+         "OrdinalPosition": 66,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM12",
+         "OrdinalPosition": 67,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM13",
+         "OrdinalPosition": 68,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM14",
+         "OrdinalPosition": 69,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM15",
+         "OrdinalPosition": 70,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM16",
+         "OrdinalPosition": 71,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM17",
+         "OrdinalPosition": 72,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM18",
+         "OrdinalPosition": 73,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM19",
+         "OrdinalPosition": 74,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "USER_MEM20",
+         "OrdinalPosition": 75,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "SUBSIDY_FLAG",
+         "OrdinalPosition": 76,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "EMPLOYER_GROUP_ID",
+         "OrdinalPosition": 77,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "COST_SHARING_INDICATOR",
+         "OrdinalPosition": 78,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "RELATIONSHIP_TO_SUBSCRIBER",
+         "OrdinalPosition": 79,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "COST_SHARING_PCT",
+         "OrdinalPosition": 80,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "OUT_OF_POCKET_MAX_AMT",
+         "OrdinalPosition": 81,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "PREMIUM_TAX_CREDIT_AMOUNT",
+         "OrdinalPosition": 82,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "METAL_LEVEL",
+         "OrdinalPosition": 83,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "IN_EXCHANGE_FLAG",
+         "OrdinalPosition": 84,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "HOUSEHOLD_SIZE",
+         "OrdinalPosition": 85,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "INCOME_AMOUNT",
+         "OrdinalPosition": 86,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "FEDERAL_POVERTY_LEVEL",
+         "OrdinalPosition": 87,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MASKED_ENROLLEE_ID",
+         "OrdinalPosition": 88,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "COST_SHARING_AMT",
+         "OrdinalPosition": 89,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "OON_OUT_PKT_MAX_AMT",
+         "OrdinalPosition": 90,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "ALTEGRA_MEMBER_ID",
+         "OrdinalPosition": 91,
+         "DataType": "string"
+      },
+      {
+         "FieldName": "MEDICARE_BENEFICIARY_ID",
+         "OrdinalPosition": 92,
+         "DataType": "string"
+      }
+   ]
+}

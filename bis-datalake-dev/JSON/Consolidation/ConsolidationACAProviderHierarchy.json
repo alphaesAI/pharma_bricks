@@ -1,0 +1,141 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProviderID",
+          "ColumnQuery": "CASE WHEN PROVIDER_ID IS NOT NULL THEN PROVIDER_ID END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProviderLastName",
+          "ColumnQuery": "CASE \r\n     WHEN PROVIDER_CLASS = 'SP' AND size(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")) > 1 THEN replace(trim(replace(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[0],\"-\",\" \")),\"'\",\"\") --LastName if LastName has more than one in the array\r\n     ELSE replace(trim(replace(replace(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\"-\",\" \"),\",\")),\"'\",\"\")\r\n    END\r\n",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NATIONAL_PROVIDER_ID",
+          "DestinationColumn": "ProviderNPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_ADDRESS1",
+          "DestinationColumn": "LocationAddress1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_ADDRESS2",
+          "DestinationColumn": "LocationAddress2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_CITY",
+          "DestinationColumn": "LocationCity",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_STATE",
+          "DestinationColumn": "LocationState",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_ZIP",
+          "DestinationColumn": "LocationZip",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_COUNTY",
+          "DestinationColumn": "CountyCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "LocationIDType",
+          "ColumnQuery": "CASE WHEN PROVIDER_CLASS = 'SP' THEN 'RENDERING' ELSE 'BILLING' END",
+          
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_PHONE",
+          "DestinationColumn": "PhoneNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_FAX",
+          "DestinationColumn": "FaxNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },        
+        {
+          "SourceColumn": "FEDERAL_TAX_ID",
+          "DestinationColumn": "LocationTIN",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "LocationID",
+          "ColumnQuery": "CASE WHEN PROVIDER_ID IS NOT NULL THEN PROVIDER_ID END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ContactPerson",
+          "ColumnQuery": "CONCAT(CONTACT_FIRST_NAME,' ',CONTACT_LAST_NAME)",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_CLASS",
+          "DestinationColumn": "ProviderClass",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

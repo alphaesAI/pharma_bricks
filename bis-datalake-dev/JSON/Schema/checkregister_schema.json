@@ -1,0 +1,122 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "PayerID",
+            "OrdinalPosition": 0,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CheckNumber",
+            "OrdinalPosition": 1,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CheckAmount",
+            "OrdinalPosition": 2,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeID",
+            "OrdinalPosition": 3,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeName",
+            "OrdinalPosition": 4,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CheckDate",
+            "OrdinalPosition": 5,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PostingDate",
+            "OrdinalPosition": 6,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Status",
+            "OrdinalPosition": 7,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "VoidDate",
+            "OrdinalPosition": 8,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NewCheckNumber",
+            "OrdinalPosition": 9,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "VoidReason",
+            "OrdinalPosition": 10,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeNPI",
+            "OrdinalPosition": 11,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeTaxID",
+            "OrdinalPosition": 12,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PaymentType",
+            "OrdinalPosition": 13,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeType",
+            "OrdinalPosition": 14,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeAddress1",
+            "OrdinalPosition": 15,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeAddress2",
+            "OrdinalPosition": 16,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeCity",
+            "OrdinalPosition": 17,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeState",
+            "OrdinalPosition": 18,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayeeZip",
+            "OrdinalPosition": 19,
+            "DataType": "string"
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "UniquePersonKey",
+      "OrdinalPosition": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "OrdinalPosition": 1,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "MedicaidID",
+      "OrdinalPosition": 2,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StartDate",
+      "OrdinalPosition": 3,
+      "DataType": "date",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "EndDate",
+      "OrdinalPosition": 4,
+      "DataType": "date",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "PCPProviderID",
+      "OrdinalPosition": 5,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "PCPProviderNPI",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillingProviderID",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillingProviderNPI",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillingProviderTIN",
+      "OrdinalPosition": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting1",
+      "OrdinalPosition": 9,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting2",
+      "OrdinalPosition": 8,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting3",
+      "OrdinalPosition": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting4",
+      "OrdinalPosition": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting5",
+      "OrdinalPosition": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting6",
+      "OrdinalPosition": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting7",
+      "OrdinalPosition": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting8",
+      "OrdinalPosition": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting9",
+      "OrdinalPosition": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AltPCPReporting10",
+      "OrdinalPosition": 17,
+      "DataType": "string"
+    }
+  ],
+  "Rules": [
+    {
+      "Name": "VerifyTotalCount",
+      "Data_file_query": "select count(1) + 1 from data_file",
+      "control_file_query": "select _c7 from control_file"
+    },
+    {
+      "Name": "VerifyTotalDataCount",
+      "Data_file_query": "select count(1) from data_file",
+      "control_file_query": "select _c8 from control_file"
+    }
+  ]
+}

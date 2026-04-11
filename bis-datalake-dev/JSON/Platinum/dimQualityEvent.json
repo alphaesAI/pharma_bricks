@@ -1,0 +1,22 @@
+{
+    "SubLayerProcessing": [
+        {
+            "SubGroupEntity": "dimQualityEvent",
+            "DestinationTable": "#clientCode/Platinum/dimQualityEvent",
+            "SourceTables": [
+                {
+                    "Entity": "GapsInCare",
+                    "SourceTable": "#clientCode/Gold/MA/Quality/GapsInCare",
+                    "SourceFormat": "delta"
+                },
+                {
+                    "Entity": "GapsInCareRR",
+                    "SourceTable": "#clientCode/Gold/MA/Quality/GapsInCareRR",
+                    "SourceFormat": "delta"
+                }
+            ],
+            "SQLScript": "select distinct eventName as qualityEventDescription, hash(eventName) as qualityEventKey\r\nfrom GapsInCare\r\nwhere eventName is not null and eventName <> ''\r\nUNION\r\nselect distinct eventName as qualityEventDescription, hash(eventName) as qualityEventKey\r\nfrom GapsInCareRR\r\nwhere eventName is not null and eventName <> '' \r\nUNION --default value\r\nselect 'UNKNOWN' as qualityEventDescription, -1 as qualityEventKey",
+            "MergeScript": "MERGE INTO DestinationTable t \r\nUSING \r\n(SELECT * FROM tempSQLScript)s\r\nON IfNull(s.qualityEventDescription,\"\") = IfNull(t.qualityEventDescription,\"\") \r\nWHEN NOT MATCHED \r\n    THEN INSERT (qualityEventKey,   qualityEventDescription)\r\n        VALUES (s.qualityEventKey,  s.qualityEventDescription)\r\n"
+        }
+    ]
+}

@@ -1,0 +1,478 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Format": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "OrdinalPosition": "1",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Surname",
+      "OrdinalPosition": "2",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "FirstName",
+      "OrdinalPosition": "3",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MiddleInitial",
+      "OrdinalPosition": "4",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "GenderCode",
+      "OrdinalPosition": "5",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DateOfBirth",
+      "OrdinalPosition": "6",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RecordType",
+      "OrdinalPosition": "7",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ContractNumber",
+      "OrdinalPosition": "8",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StateCode",
+      "OrdinalPosition": "9",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CountyCode",
+      "OrdinalPosition": "10",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DisabilityIndicator",
+      "OrdinalPosition": "11",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HoispiceIndicator",
+      "OrdinalPosition": "12",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "InstitutionalNHCHCBSIndicator",
+      "OrdinalPosition": "13",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ESRDIndicator",
+      "OrdinalPosition": "14",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TransactionReplyCode",
+      "OrdinalPosition": "15",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TransactionCode",
+      "OrdinalPosition": "16",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EntitlementTypeCode",
+      "OrdinalPosition": "17",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EffectiveDate",
+      "OrdinalPosition": "18",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "WAIndicator",
+      "OrdinalPosition": "19",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PBP",
+      "OrdinalPosition": "20",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TransactionDate",
+      "OrdinalPosition": "21",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UIInitiatedChangeFlag",
+      "OrdinalPosition": "22",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRCValue",
+      "OrdinalPosition": "23",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DistrictOfficeCode",
+      "OrdinalPosition": "24",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PreviousPartDContractPBPforTrOOPTransfer",
+      "OrdinalPosition": "25",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SourceID",
+      "OrdinalPosition": "26",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PriorPlanBenefitPackageID",
+      "OrdinalPosition": "27",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ApplicationDate",
+      "OrdinalPosition": "28",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UIUserOrganizationDesignation",
+      "OrdinalPosition": "29",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "OutofAreaFlag",
+      "OrdinalPosition": "30",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SegmentNumber",
+      "OrdinalPosition": "31",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartCBeneficiaryPremium",
+      "OrdinalPosition": "32",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDBeneficiaryPremium",
+      "OrdinalPosition": "33",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ElectionTypeCode",
+      "OrdinalPosition": "34",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EnrollmentSourceCode",
+      "OrdinalPosition": "35",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDOptOutFlag",
+      "OrdinalPosition": "36",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PremiumWithholdOptionPartsCD",
+      "OrdinalPosition": "37",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CumulativeNumberofUncoveredMonths",
+      "OrdinalPosition": "38",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CreditableCoverageFlag",
+      "OrdinalPosition": "39",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EmployerSubsidyOverrideFlag",
+      "OrdinalPosition": "40",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProcessingTimestamp",
+      "OrdinalPosition": "41",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EndDate",
+      "OrdinalPosition": "42",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SubmittedNumberofUncoveredMonths",
+      "OrdinalPosition": "43",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PreferredLanguageOtherThanEnglish",
+      "OrdinalPosition": "44",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AccessibleFormat",
+      "OrdinalPosition": "45",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SecondaryDrugInsuranceFlag",
+      "OrdinalPosition": "46",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SecondaryRxID",
+      "OrdinalPosition": "47",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SecondaryRxGroup",
+      "OrdinalPosition": "48",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EGHP",
+      "OrdinalPosition": "49",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLowIncomePremiumSubsidyLevel",
+      "OrdinalPosition": "50",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LowIncomeCoPayCategory",
+      "OrdinalPosition": "51",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LowIncomePeriodEffectiveDate",
+      "OrdinalPosition": "52",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLateEnrollmentPenaltyAmount",
+      "OrdinalPosition": "53",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLateEnrollmentPenaltyWaivedAmount",
+      "OrdinalPosition": "54",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDLateEnrollmentPenaltySubsidyAmount",
+      "OrdinalPosition": "55",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LowIncomePartDPremiumSubsidyAmount",
+      "OrdinalPosition": "56",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDRxBIN",
+      "OrdinalPosition": "57",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDRxPCN",
+      "OrdinalPosition": "58",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDRxGroup",
+      "OrdinalPosition": "59",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PartDRxID",
+      "OrdinalPosition": "60",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SecondaryRxBIN",
+      "OrdinalPosition": "61",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SecondaryRxPCN",
+      "OrdinalPosition": "62",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DeMinimisDifferentialAmount",
+      "OrdinalPosition": "63",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MSPStatusFlag",
+      "OrdinalPosition": "64",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LowIncomePeriodEndDate",
+      "OrdinalPosition": "65",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LowIncomeSubsidySourceCode",
+      "OrdinalPosition": "66",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "EnrolleeTypeFlagPBPLevel",
+      "OrdinalPosition": "67",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ApplicationDateIndicator",
+      "OrdinalPosition": "68",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TRCShortName",
+      "OrdinalPosition": "69",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DisenrollmentReasonCode",
+      "OrdinalPosition": "70",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MMPOptOutFlag",
+      "OrdinalPosition": "71",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CleanupID",
+      "OrdinalPosition": "72",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CARAStatusAddUpdateDeleteFlag",
+      "OrdinalPosition": "73",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POSDrugEditStatus",
+      "OrdinalPosition": "74",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DrugClass",
+      "OrdinalPosition": "75",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POSDrugEditCode",
+      "OrdinalPosition": "76",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CARAStatusNotificationStartDate",
+      "OrdinalPosition": "77",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CARAStatusImplementationStartDate",
+      "OrdinalPosition": "78",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CARAStatusNotificationEndDate",
+      "OrdinalPosition": "79",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "HospiceProviderNumber",
+      "OrdinalPosition": "80",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ICModelTypeIndicator",
+      "OrdinalPosition": "81",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ICModelEndDateReasonCode",
+      "OrdinalPosition": "82",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ICModelBenefitStatus",
+      "OrdinalPosition": "83",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "UpdatedMedicaidStatusCommunityRAFBeneficiary",
+      "OrdinalPosition": "84",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CARAStatusImplementationEndDate",
+      "OrdinalPosition": "85",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PrescriberLimitation",
+      "OrdinalPosition": "86",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PharmacyLimitation",
+      "OrdinalPosition": "87",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SystemAssignedTransactionTrackingID",
+      "OrdinalPosition": "88",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PlanAssignedTransactionTrackingID",
+      "OrdinalPosition": "89",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PlanTransactionText",
+      "OrdinalPosition": "90",
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TransactionAcceptRejectStatusFlag",
+      "OrdinalPosition": "91",
+      "DataType": "string"
+    }
+  ]
+}

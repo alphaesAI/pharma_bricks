@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "dimProviderOrg",
+      "DestinationTable": "#clientCode/Platinum/dimProviderOrg",
+      "SourceTables": [
+        {
+          "Entity": "MAMembershipStars",
+          "SourceTable": "#clientCode/Gold/MA/Quality/MAMembershipStars",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SQLScript": "WITH THIS AS(\r\n SELECT DISTINCT\r\n       poCode AS providerOrgID\r\n      ,poName AS providerOrgName\r\n FROM MAMembershipStars\r\n WHERE \r\n poCode IS NOT NULL \r\n)\r\nSELECT \r\n   sha2(concat(providerOrgID,'|',providerOrgName),256) AS providerOrgKey\r\n  ,providerOrgID\r\n  ,providerOrgName\r\nFROM THIS\r\nUNION ALL\r\nSELECT\r\n '-1' AS providerOrgKey\r\n,'unknown' AS providerOrgID\r\n,'unknown' AS providerOrgName\r\n",
+      "MergeScript": "MERGE INTO DestinationTable t\r\nUSING (SELECT * FROM tempSQLScript)s\r\n  ON s.providerOrgID = t.providerOrgID \r\n  AND s.providerOrgName = t.providerOrgName\r\nWHEN NOT MATCHED THEN INSERT\r\n(\r\n   providerOrgKey\r\n  ,providerOrgID\r\n  ,providerOrgName\r\n)\r\nVALUES\r\n(\r\n s.providerOrgKey\r\n,s.providerOrgID\r\n,s.providerOrgName\r\n)\r\n"
+	  }
+  ]
+}

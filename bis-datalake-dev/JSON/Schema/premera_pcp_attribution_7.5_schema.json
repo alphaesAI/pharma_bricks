@@ -1,0 +1,104 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PlanID",
+      "OrdinalPosition": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "HicNumber",
+      "OrdinalPosition": 1,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "MemberNumber",
+      "OrdinalPosition": 2,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "SpanType",
+      "OrdinalPosition": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SpanValue",
+      "OrdinalPosition": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "StartDate",
+      "OrdinalPosition": 5,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        },
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "EndDate",
+      "OrdinalPosition": 6,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "AdditionalSpanValue",
+      "OrdinalPosition": 7,
+      "DataType": "string"
+    }
+  ],
+  "Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) + 1 from data_file",
+			"control_file_query": "select _c7 from control_file"
+		},
+		{
+			"Name": "VerifyTotalDataCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select _c8 from control_file"
+		}
+  ]
+}

@@ -1,0 +1,46 @@
+CREATE TABLE #clientCode.consolidated_ma_provider (
+ ClientID  string
+,FileID  int
+,LoadDateTime date
+,FileLayoutID  int
+,FileLayoutDescription  string
+,ProviderID  string
+,LastName  string
+,MiddleInitial  string
+,FirstName  string
+,TaxonomyCode1  string
+,HpSpecialtyCode1  string
+,ADVProviderSpecialtyCode1  string
+,TaxonomyCode2  string
+,HpSpecialtyCode2  string
+,ADVProviderSpecialtyCode2  string
+,TaxonomyCode3  string
+,HpSpecialtyCode3  string
+,ADVProviderSpecialtyCode3  string
+,TaxonomyCode4  string
+,HpSpecialtyCode4  string
+,ADVProviderSpecialtyCode4  string
+,TaxonomyCode5  string
+,HpSpecialtyCode5  string
+,ADVProviderSpecialtyCode5  string
+,NPI  string
+,PrescribePrivilege  string
+,DEA  string
+,PayorID  string
+,Contracted  string
+,ProviderHAI  string
+,HospitalID  string
+,ExcludeFromProviderReporting  string
+,AltProvReporting1  string
+,AltProvReporting2  string
+,AltProvReporting3  string
+,AltProvReporting4  string
+,AltProvReporting5  string
+,AltProvReporting6  string
+,AltProvReporting7  string
+,AltProvReporting8  string
+,AltProvReporting9  string
+,AltProvReporting10  string
+,ProductID  string
+,ProviderType  string
+) USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/Provider'

@@ -1,0 +1,266 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MBI",
+          "DestinationColumn": "MBI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberID",
+          "DestinationColumn": "MemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "DOB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "to_date(DOB,'ddMMMyyyy')"
+        },
+        {
+          "SourceColumn": "Gender",
+          "DestinationColumn": "Gender",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LIS",
+          "DestinationColumn": "LIS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "EnrollmentStart",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "to_date(EnrollmentStart,'ddMMMyyyy')"
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "EnrollmentEnd",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "to_date(EnrollmentEnd,'ddMMMyyyy')"
+        },
+        {
+          "SourceColumn": "DualEligible",
+          "DestinationColumn": "DualEligible",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Disability",
+          "DestinationColumn": "Disability",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysInIPDiab",
+          "DestinationColumn": "DaysInIPDiab",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysInSNFDiab",
+          "DestinationColumn": "DaysInSNFDiab",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabPDCDenominator",
+          "DestinationColumn": "DiabPDCDenominator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabPDCNumerator",
+          "DestinationColumn": "DiabPDCNumerator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabPDCRate",
+          "DestinationColumn": "DiabPDCRate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabPDCDenominatorUnadj",
+          "DestinationColumn": "DiabPDCDenominatorUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabPDCNumeratorUnadj",
+          "DestinationColumn": "DiabPDCNumeratorUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabPDCRateUnadj",
+          "DestinationColumn": "DiabPDCRateUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DiabNumeratorflag",
+          "DestinationColumn": "DiabNumeratorflag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysInIPRAS",
+          "DestinationColumn": "DaysInIPRAS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysInSNFRAS",
+          "DestinationColumn": "DaysInSNFRAS",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASPDCDenominator",
+          "DestinationColumn": "RASPDCDenominator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASPDCNumerator",
+          "DestinationColumn": "RASPDCNumerator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASPDCRate",
+          "DestinationColumn": "RASPDCRate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASPDCDenominatorUnadj",
+          "DestinationColumn": "RASPDCDenominatorUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASPDCNumeratorUnadj",
+          "DestinationColumn": "RASPDCNumeratorUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASPDCRateUnadj",
+          "DestinationColumn": "RASPDCRateUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RASNumeratorflag",
+          "DestinationColumn": "RASNumeratorflag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysInIPStatin",
+          "DestinationColumn": "DaysInIPStatin",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DaysInSNFStatin",
+          "DestinationColumn": "DaysInSNFStatin",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinPDCDenominator",
+          "DestinationColumn": "StatinPDCDenominator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinPDCNumerator",
+          "DestinationColumn": "StatinPDCNumerator",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinPDCRate",
+          "DestinationColumn": "StatinPDCRate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinPDCDenominatorUnadj",
+          "DestinationColumn": "StatinPDCDenominatorUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinPDCNumeratorUnadj",
+          "DestinationColumn": "StatinPDCNumeratorUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinPDCRateUnadj",
+          "DestinationColumn": "StatinPDCRateUnadj",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StatinNumeratorflag",
+          "DestinationColumn": "StatinNumeratorflag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "RunID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": " CONCAT(COALESCE(FILE_LAYOUT_ID,''), '_',  COALESCE(FILE_ID,''))"
+        }
+      ]
+    }
+  ]
+}

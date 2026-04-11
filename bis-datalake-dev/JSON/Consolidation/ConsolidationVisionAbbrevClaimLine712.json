@@ -1,0 +1,338 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedVisionClaimsUniqueKey",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CONCAT(COALESCE(OriginalClaimNumber,''),COALESCE(ClaimNumber,''),COALESCE(ClaimProcessDate,''),COALESCE(ClaimStatus,''),COALESCE(CLIENT_ID,''),COALESCE(FILE_ID,''))"
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DetailServiceDate",
+          "DestinationColumn": "DetailServiceDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimLineNumber",
+          "DestinationColumn": "ClaimLineNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LineServiceFrom",
+          "DestinationColumn": "LineServiceFrom",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "LineServiceThu",
+          "DestinationColumn": "LineServiceToDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCode",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL THEN CPTCode ELSE HCPCSCode END",
+          "SourceColumnFormat": ""
+        },
+		{
+           "SourceColumn": "",
+           "DestinationColumn": "ProcCodeType",
+           "ColumnQuery": "CASE WHEN CPTCode BETWEEN 00000 AND 99999 AND LENGTH(CPTCode) = 5 THEN 'CPTCode' WHEN SUBSTRING(CPTCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(CPTCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(CPTCode)= 5 THEN 'HCPCSCode' WHEN CPTCode IS NOT NULL THEN 'Unknown' WHEN HCPCSCode BETWEEN 00000 AND 99999 AND LENGTH(HCPCSCode) = 5 THEN 'CPTCode' WHEN SUBSTRING(HCPCSCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(HCPCSCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(HCPCSCode)= 5 THEN 'HCPCSCode' WHEN HCPCSCode IS NOT NULL THEN 'Unknown' END",
+           "SourceColumnFormat": ""
+         },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcMod1",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL THEN CPTModifier1 ELSE HCPCSModifier END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier2",
+          "DestinationColumn": "ProcMod2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CPTModifier3",
+          "DestinationColumn": "ProcMod3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CPTModifier4",
+          "DestinationColumn": "ProcMod4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCode1",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL THEN HCPCSCode END",
+          "SourceColumnFormat": ""
+        },
+		{
+           "SourceColumn": "",
+           "DestinationColumn": "ProcCode1Type",
+           "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL AND SUBSTRING(HCPCSCode,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(HCPCSCode,2,5) BETWEEN 0000 AND 9999 AND LENGTH(HCPCSCode)= 5 THEN 'HCPCSCode' WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL THEN 'Unknown' END",
+           "SourceColumnFormat": ""
+         },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCode1Mod1",
+          "ColumnQuery": "CASE WHEN CPTCode IS NOT NULL AND HCPCSCode IS NOT NULL THEN HCPCSModifier END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ICDDx01",
+          "DestinationColumn": "DiagCode1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx02",
+          "DestinationColumn": "DiagCode2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx03",
+          "DestinationColumn": "DiagCode3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx04",
+          "DestinationColumn": "DiagCode4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx05",
+          "DestinationColumn": "DiagCode5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx06",
+          "DestinationColumn": "DiagCode6",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx07",
+          "DestinationColumn": "DiagCode7",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx08",
+          "DestinationColumn": "DiagCode8",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx09",
+          "DestinationColumn": "DiagCode9",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx10",
+          "DestinationColumn": "DiagCode10",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx11",
+          "DestinationColumn": "DiagCode11",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx12",
+          "DestinationColumn": "DiagCode12",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx13",
+          "DestinationColumn": "DiagCode13",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx14",
+          "DestinationColumn": "DiagCode14",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx15",
+          "DestinationColumn": "DiagCode15",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx16",
+          "DestinationColumn": "DiagCode16",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx17",
+          "DestinationColumn": "DiagCode17",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx18",
+          "DestinationColumn": "DiagCode18",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx19",
+          "DestinationColumn": "DiagCode19",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx20",
+          "DestinationColumn": "DiagCode20",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx21",
+          "DestinationColumn": "DiagCode21",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx22",
+          "DestinationColumn": "DiagCode22",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx23",
+          "DestinationColumn": "DiagCode23",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx24",
+          "DestinationColumn": "DiagCode24",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx25",
+          "DestinationColumn": "DiagCode25",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx26",
+          "DestinationColumn": "DiagCode26",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx27",
+          "DestinationColumn": "DiagCode27",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx28",
+          "DestinationColumn": "DiagCode28",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx29",
+          "DestinationColumn": "DiagCode29",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx30",
+          "DestinationColumn": "DiagCode30",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx31",
+          "DestinationColumn": "DiagCode31",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx32",
+          "DestinationColumn": "DiagCode32",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx33",
+          "DestinationColumn": "DiagCode33",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx34",
+          "DestinationColumn": "DiagCode34",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx35",
+          "DestinationColumn": "DiagCode35",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx36",
+          "DestinationColumn": "DiagCode36",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx37",
+          "DestinationColumn": "DiagCode37",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ICDDx38",
+          "DestinationColumn": "DiagCode38",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "RevenueCode",
+          "DestinationColumn": "RevenueCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        }       
+      ]
+    }
+  ]
+}

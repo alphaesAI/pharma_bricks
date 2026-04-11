@@ -1,0 +1,1070 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "MA_CLAIM_LINE_NUM",
+          "Value": "1"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedMedicalClaimsUniqueKey",
+          "ColumnQuery": "CONCAT(COALESCE(MA_LINE_CLAIM_NUM,''), '-', COALESCE(FILE_ID,''), '-',  COALESCE(CLIENT_ID,''))",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss"
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CLAIM_NUM",
+          "DestinationColumn": "ClaimNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ID_ORIG",
+          "DestinationColumn": "OriginalClaimNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SUBCRIBER_HIC_NUM",
+          "DestinationColumn": "BeneficiaryID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "PlanMemberID",
+          "ColumnQuery": "CASE WHEN CLIENT_ID IN (1,4,2300,1200) AND FILE_LAYOUT_ID IN (1000) AND LEN(MA_DEID_NUM) = 9 THEN CONCAT(MA_DEID_NUM,'00') ELSE MA_DEID_NUM END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CMS_CONTRACT_NUM",
+          "DestinationColumn": "CMSContractNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_TYPE",
+          "DestinationColumn": "ClaimFormType",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_TYPE_OF_BILL",
+          "DestinationColumn": "BillTypeCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_FACILITY_CLAIM_TYPE",
+          "DestinationColumn": "ClaimTypeInd",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_STATUS",
+          "DestinationColumn": "ClaimStatus",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BEGINNING_DOS",
+          "DestinationColumn": "DetailServiceDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ENTRY_DT",
+          "DestinationColumn": "ClaimEntryDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_UPDATED_DT",
+          "DestinationColumn": "ClaimProcessDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss"
+        },
+        {
+          "SourceColumn": "MA_CLAIM_RECEIVE_DATE",
+          "DestinationColumn": "ClaimReceivedDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_TOTAL_CHARGE_AMT",
+          "DestinationColumn": "ClaimTotalChargeAmount",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ALLOWED_AMT",
+          "DestinationColumn": "ClaimAllowedAmount",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CHECK_DATE",
+          "DestinationColumn": "CheckDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_FINALIZED_DT",
+          "DestinationColumn": "ClaimFinalizedDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_COINS_AMT",
+          "DestinationColumn": "CoinsuranceAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_DEDUCT_AMT",
+          "DestinationColumn": "DeductibleAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_COPAY_AMT",
+          "DestinationColumn": "CopayAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_NONIKA_PRIM_PAYER_ALLOW_AMT",
+          "DestinationColumn": "OtherPrimaryPayerAllowedAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ANOTHER_HEALTH_PLAN",
+          "DestinationColumn": "OtherHealthPlan",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ClaimWeight",
+          "ColumnQuery": "(10 * (unix_timestamp(MA_CLAIM_UPDATED_DT, 'MM/dd/yyyy HH:mm:ss')-unix_timestamp('01/01/2016 00:00:00','MM/dd/yyyy HH:mm:ss'))+CASE UPPER(MA_CLAIM_STATUS) WHEN '6' THEN 7 WHEN 'C' THEN 7 WHEN '8' THEN 5 WHEN 'O' THEN 1 ELSE 0 END)",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_SOURCE",
+          "DestinationColumn": "ClaimSource",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_HOSP_ADMIT_DT",
+          "DestinationColumn": "AdmissionDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_NPI",
+          "DestinationColumn": "ServiceFacilityNPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_PORTICO_ID",
+          "DestinationColumn": "ServiceFacilityID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_LOCATION_NAME",
+          "DestinationColumn": "ServiceFacilityLocation",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_ADDR1",
+          "DestinationColumn": "ServiceFacilityAddress1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_ADDR2",
+          "DestinationColumn": "ServiceFacilityAddress2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_CITY",
+          "DestinationColumn": "ServiceFacilityCity",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_STATE",
+          "DestinationColumn": "ServiceFacilityState",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_ZIPCODE",
+          "DestinationColumn": "ServiceFacilityZip",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_SVC_FAC_COUNTRY",
+          "DestinationColumn": "ServiceFacilityCountry",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_RNDR_PROV_PORTICO_ID",
+          "DestinationColumn": "RenderingProviderID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_RNDR_PROV_NPI",
+          "DestinationColumn": "RenderingProviderNPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_RNDR_PROV_FED_TAX_ID",
+          "DestinationColumn": "RenderingProviderTIN",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_RNDR_PROV_TAXONOMY",
+          "DestinationColumn": "RenderingProviderSpecialtyCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_PORTICO_ID",
+          "DestinationColumn": "BillingProviderID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_TO_PROVIDER_TAX_ID",
+          "DestinationColumn": "BillingProviderTIN",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_TAXONOMY",
+          "DestinationColumn": "BillingProviderTaxonomy",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_ADDRESS_LINE_1",
+          "DestinationColumn": "BillingProviderAddress1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_ADDRESS_LINE_2",
+          "DestinationColumn": "BillingProviderAddress2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_CITY",
+          "DestinationColumn": "BillingProviderCity",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_STATE",
+          "DestinationColumn": "BillingProviderState",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_ZIP",
+          "DestinationColumn": "BillingProviderZip",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_BILL_PROV_COUNTRY",
+          "DestinationColumn": "BillingProviderCountry",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_ATTND_PROV_NPI",
+          "DestinationColumn": "AttendingProviderNPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_PLACE_OF_SERVICE",
+          "DestinationColumn": "PlaceOfService",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_PATIENT_DISCHARGE_STATUS",
+          "DestinationColumn": "DischargeStatusCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_HOSP_DISCHARGE_DT",
+          "DestinationColumn": "DischargeDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_DRG",
+          "DestinationColumn": "MSDRG",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_DRG_CALCULATED",
+          "DestinationColumn": "MSDRG2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ICD_VERSION_IND",
+          "DestinationColumn": "ICDVersion",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_PRIM_DIAG_CD",
+          "DestinationColumn": "PrimaryDiagCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ADMIT_DIAG_CD",
+          "DestinationColumn": "AdmitDiagCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD2",
+          "DestinationColumn": "DiagCode2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD3",
+          "DestinationColumn": "DiagCode3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD4",
+          "DestinationColumn": "DiagCode4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD5",
+          "DestinationColumn": "DiagCode5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD6",
+          "DestinationColumn": "DiagCode6",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD7",
+          "DestinationColumn": "DiagCode7",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD8",
+          "DestinationColumn": "DiagCode8",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD9",
+          "DestinationColumn": "DiagCode9",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD10",
+          "DestinationColumn": "DiagCode10",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD11",
+          "DestinationColumn": "DiagCode11",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD12",
+          "DestinationColumn": "DiagCode12",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD13",
+          "DestinationColumn": "DiagCode13",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD14",
+          "DestinationColumn": "DiagCode14",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD15",
+          "DestinationColumn": "DiagCode15",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD16",
+          "DestinationColumn": "DiagCode16",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD17",
+          "DestinationColumn": "DiagCode17",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD18",
+          "DestinationColumn": "DiagCode18",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD19",
+          "DestinationColumn": "DiagCode19",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD20",
+          "DestinationColumn": "DiagCode20",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD21",
+          "DestinationColumn": "DiagCode21",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD22",
+          "DestinationColumn": "DiagCode22",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD23",
+          "DestinationColumn": "DiagCode23",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD24",
+          "DestinationColumn": "DiagCode24",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD25",
+          "DestinationColumn": "DiagCode25",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD26",
+          "DestinationColumn": "DiagCode26",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD27",
+          "DestinationColumn": "DiagCode27",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD28",
+          "DestinationColumn": "DiagCode28",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD29",
+          "DestinationColumn": "DiagCode29",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD30",
+          "DestinationColumn": "DiagCode30",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD31",
+          "DestinationColumn": "DiagCode31",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD32",
+          "DestinationColumn": "DiagCode32",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD33",
+          "DestinationColumn": "DiagCode33",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD34",
+          "DestinationColumn": "DiagCode34",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD35",
+          "DestinationColumn": "DiagCode35",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_DIAG_CD36",
+          "DestinationColumn": "DiagCode36",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_ADMIT_POA",
+          "DestinationColumn": "AdmitPOA",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_PRIM_POA",
+          "DestinationColumn": "PrimaryPOA",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_PRIM_PROC_CODE",
+          "DestinationColumn": "PrimaryProcCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_PRIM_PROC_DT",
+          "DestinationColumn": "PrimaryProcCodeDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_2",
+          "DestinationColumn": "ProcCode2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_2",
+          "DestinationColumn": "ProcCode2Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_3",
+          "DestinationColumn": "ProcCode3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_3",
+          "DestinationColumn": "ProcCode3Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_4",
+          "DestinationColumn": "ProcCode4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_4",
+          "DestinationColumn": "ProcCode4Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_5",
+          "DestinationColumn": "ProcCode5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_5",
+          "DestinationColumn": "ProcCode5Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_6",
+          "DestinationColumn": "ProcCode6",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_6",
+          "DestinationColumn": "ProcCode6Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_7",
+          "DestinationColumn": "ProcCode7",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_7",
+          "DestinationColumn": "ProcCode7Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_8",
+          "DestinationColumn": "ProcCode8",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_8",
+          "DestinationColumn": "ProcCode8Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_9",
+          "DestinationColumn": "ProcCode9",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_9",
+          "DestinationColumn": "ProcCode9Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_10",
+          "DestinationColumn": "ProcCode10",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_10",
+          "DestinationColumn": "ProcCode10Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_11",
+          "DestinationColumn": "ProcCode11",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_11",
+          "DestinationColumn": "ProcCode11Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_12",
+          "DestinationColumn": "ProcCode12",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_12",
+          "DestinationColumn": "ProcCode12Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_13",
+          "DestinationColumn": "ProcCode13",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_13",
+          "DestinationColumn": "ProcCode13Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_14",
+          "DestinationColumn": "ProcCode14",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_14",
+          "DestinationColumn": "ProcCode14Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_15",
+          "DestinationColumn": "ProcCode15",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_15",
+          "DestinationColumn": "ProcCode15Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_16",
+          "DestinationColumn": "ProcCode16",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_16",
+          "DestinationColumn": "ProcCode16Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_17",
+          "DestinationColumn": "ProcCode17",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_17",
+          "DestinationColumn": "ProcCode17Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_18",
+          "DestinationColumn": "ProcCode18",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_18",
+          "DestinationColumn": "ProcCode18Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_19",
+          "DestinationColumn": "ProcCode19",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_19",
+          "DestinationColumn": "ProcCode19Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_20",
+          "DestinationColumn": "ProcCode20",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_20",
+          "DestinationColumn": "ProcCode20Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_21",
+          "DestinationColumn": "ProcCode21",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_21",
+          "DestinationColumn": "ProcCode21Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_22",
+          "DestinationColumn": "ProcCode22",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_22",
+          "DestinationColumn": "ProcCode22Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_23",
+          "DestinationColumn": "ProcCode23",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_23",
+          "DestinationColumn": "ProcCode23Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_CD_24",
+          "DestinationColumn": "ProcCode24",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OTHER_PROC_DT_24",
+          "DestinationColumn": "ProcCode24Date",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD1",
+          "DestinationColumn": "OccurCode1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD2",
+          "DestinationColumn": "OccurCode2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD3",
+          "DestinationColumn": "OccurCode3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD4",
+          "DestinationColumn": "OccurCode4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD5",
+          "DestinationColumn": "OccurCode5",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD6",
+          "DestinationColumn": "OccurCode6",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD7",
+          "DestinationColumn": "OccurCode7",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD8",
+          "DestinationColumn": "OccurCode8",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD9",
+          "DestinationColumn": "OccurCode9",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD10",
+          "DestinationColumn": "OccurCode10",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD11",
+          "DestinationColumn": "OccurCode11",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD12",
+          "DestinationColumn": "OccurCode12",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD13",
+          "DestinationColumn": "OccurCode13",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD14",
+          "DestinationColumn": "OccurCode14",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD15",
+          "DestinationColumn": "OccurCode15",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD16",
+          "DestinationColumn": "OccurCode16",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD17",
+          "DestinationColumn": "OccurCode17",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD18",
+          "DestinationColumn": "OccurCode18",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD19",
+          "DestinationColumn": "OccurCode19",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD20",
+          "DestinationColumn": "OccurCode20",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD21",
+          "DestinationColumn": "OccurCode21",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD22",
+          "DestinationColumn": "OccurCode22",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD23",
+          "DestinationColumn": "OccurCode23",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_OCCUR_CD24",
+          "DestinationColumn": "OccurCode24",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_STATEMENT_FROM_DT",
+          "DestinationColumn": "StatementFromDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_STATEMENT_TO_DT",
+          "DestinationColumn": "StatementToDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "MA_ITS_SCCF_NUM",
+          "DestinationColumn": "SCCFClaimIdentifier",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "IS_DENIED_DUPLICATE",
+          "DestinationColumn": "IsDeniedDuplicate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "IS_SPLIT_CLAIM",
+          "DestinationColumn": "IsSplitClaim",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

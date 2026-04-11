@@ -1,0 +1,130 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "H",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "FieldNames",
+          "OrdinalPosition": 2
+        }
+      ]
+    },
+    {
+      "Type": "D",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "SubmissionID",
+          "OrdinalPosition": 2
+        },
+        {
+          "FieldName": "ReviewSet",
+          "OrdinalPosition": 3
+        },
+        {
+          "FieldName": "MemberID",
+          "OrdinalPosition": 4
+        },
+        {
+          "FieldName": "MeasureID",
+          "OrdinalPosition": 5
+        },
+        {
+          "FieldName": "SubmeasureID",
+          "OrdinalPosition": 6
+        },
+        {
+          "FieldName": "Event",
+          "OrdinalPosition": 7
+        },
+        {
+          "FieldName": "EventType",
+          "OrdinalPosition": 8
+        },
+        {
+          "FieldName": "Code",
+          "OrdinalPosition": 9
+        },
+        {
+          "FieldName": "CodeType",
+          "OrdinalPosition": 10
+        },
+        {
+          "FieldName": "ServiceDate",
+          "OrdinalPosition": 11
+        },
+        {
+          "FieldName": "AdmissionDate",
+          "OrdinalPosition": 12
+        },
+        {
+          "FieldName": "DischargeDate",
+          "OrdinalPosition": 13
+        },
+        {
+          "FieldName": "ClaimID",
+          "OrdinalPosition": 14
+        },
+        {
+          "FieldName": "ProviderID",
+          "OrdinalPosition": 15
+        },
+        {
+          "FieldName": "EventValue1",
+          "OrdinalPosition": 16
+        },
+        {
+          "FieldName": "EventValue2",
+          "OrdinalPosition": 17
+        },
+        {
+          "FieldName": "EventDate",
+          "OrdinalPosition": 18
+        },
+        {
+          "FieldName": "AdditionalData",
+          "OrdinalPosition": 19
+        },
+        {
+          "FieldName": "Datasource",
+          "OrdinalPosition": 20
+        },
+        {
+          "FieldName": "SourcefileName",
+          "OrdinalPosition": 21
+        },
+        {
+          "FieldName": "ClaimsThroughDate",
+          "OrdinalPosition": 22
+        }
+      ]
+    },
+    {
+      "Type": "T",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "RecordCount",
+          "OrdinalPosition": 2
+        }
+      ]
+    }
+  ],
+  "Querries": [
+    {
+      "HeaderDataFrame": "SELECT \r\n  explode(RecordsSplitIntoArray) AS Header\r\nFROM SourceData\r\nWHERE\r\nRecordType  = 'H'\r\n",
+      "DetailDataFrame": "SELECT \r\n  RecordsSplitIntoArray AS Details\r\nFROM SourceData\r\nWHERE\r\nRecordType = 'D'\r\n",
+      "ControlDataFrame": "SELECT \r\n   RecordType\r\n  ,CAST(SUM(RestOfRecord) AS INT) AS RecordCount\r\nFROM SourceData\r\nWHERE\r\nRecordType = 'T'\r\nGROUP BY\r\n   RecordType\r\n"
+    }
+  ]
+}

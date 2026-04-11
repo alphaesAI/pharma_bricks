@@ -1,0 +1,94 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "RecordType",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "ReportID",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "MedicareAdvantageContractID",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "PlanEncounterID",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "EncounterICN",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "PrelimRAFlag",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "PrelimReasonCode",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "EncounterLineNumber",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "EncounterStatus",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "ErrorCode",
+      "DataType": "IntegerType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "ErrorDescription",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "ReportDate",
+      "DataType": "DateType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "TransactionDate",
+      "DataType": "DateType",
+      "Ordinal": 18
+    }    
+  ]
+}

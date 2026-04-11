@@ -1,0 +1,176 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "GeneratedVisionClaimsUniqueKey",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CONCAT(COALESCE(MA_CLAIM_NUM,''),COALESCE(MA_CLAIM_NUM,''),COALESCE(MA_CLAIM_UPDATED_DT,''),COALESCE(CLAIM_NOTE,''),COALESCE(CLIENT_ID,''),COALESCE(FILE_ID,''))"
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_CLAIM_NUM",
+          "DestinationColumn": "ClaimNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_CLAIM_LINE_NUM",
+          "DestinationColumn": "ClaimLineNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_SERVICE_FROM_DT",
+          "DestinationColumn": "LineServiceFrom",
+          "SourceColumnFormat": "yyyy-MM-dd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_SERVICE_TO_DT",
+          "DestinationColumn": "LineServiceToDate",
+          "SourceColumnFormat": "yyyy-MM-dd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_CD",
+          "DestinationColumn": "ProcCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "ProcCodeType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CASE WHEN MA_LINE_PROC_CD BETWEEN 00000 AND 99999 AND LENGTH(MA_LINE_PROC_CD) = 5 THEN 'CPTCode' WHEN SUBSTRING(MA_LINE_PROC_CD,1,1) BETWEEN 'A' AND 'Z' AND SUBSTRING(MA_LINE_PROC_CD,2,5) BETWEEN 0000 AND 9999 AND LENGTH(MA_LINE_PROC_CD)= 5 THEN 'HCPCSCode' WHEN MA_LINE_PROC_CD IS NOT NULL THEN 'Unknown' END"
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD1",
+          "DestinationColumn": "ProcMod1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD2",
+          "DestinationColumn": "ProcMod2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD3",
+          "DestinationColumn": "ProcMod3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_PROC_MOD4",
+          "DestinationColumn": "ProcMod4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_NDC_CD_LIST",
+          "DestinationColumn": "NDCCodeList",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_QUANTITY",
+          "DestinationColumn": "Quantity",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_UNIT_TYPE",
+          "DestinationColumn": "UnitType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD1",
+          "DestinationColumn": "DiagCode1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD2",
+          "DestinationColumn": "DiagCode2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD3",
+          "DestinationColumn": "DiagCode3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD4",
+          "DestinationColumn": "DiagCode4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD5",
+          "DestinationColumn": "DiagCode5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD6",
+          "DestinationColumn": "DiagCode6",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD7",
+          "DestinationColumn": "DiagCode7",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD8",
+          "DestinationColumn": "DiagCode8",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD9",
+          "DestinationColumn": "DiagCode9",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD10",
+          "DestinationColumn": "DiagCode10",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD11",
+          "DestinationColumn": "DiagCode11",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MA_LINE_DIAG_CD12",
+          "DestinationColumn": "DiagCode12",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        }      
+      ]
+    }
+  ]
+}

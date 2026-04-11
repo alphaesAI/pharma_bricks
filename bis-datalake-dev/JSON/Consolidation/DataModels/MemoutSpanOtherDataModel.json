@@ -1,0 +1,619 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "SpanType",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "SubscriberID",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "StartDate",
+      "DataType": "DateType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "EndDate",
+      "DataType": "DateType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "AddressType",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "MemberPermanentAddress1",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "MemberPermanentAddress2",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "MemberPermanentAddress3",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "MemberPermanentCity",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "MemberPermanentCounty",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "MemberPermanentState",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "MemberPermanentSCC",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "MemberPermanentZipCode",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "MemberMailingAddress1",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "MemberMailingAddress2",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "MemberMailingAddress3",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "MemberMailingCity",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "MemberMailingState",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "MemberMailingZipCode",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "MemberBillingAddress1",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "MemberBillingAddress2",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "MemberBillingAddress3",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "MemberBillingCity",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "MemberBillingState",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "MemberBillingZipCode",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "BrokerName",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "BrokerCode",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "BrokerAssociation",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "CreditableCoverageFlag",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "LEPNumberofUncoveredMonths",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "PartDLEPAmount",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "PartDLEPWaivedAmount",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "PartDLEPSubsidyAmount",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "LEPSource",
+      "DataType": "StringType",
+      "Ordinal": 40
+    },
+    {
+      "FieldName": "CurrentLISPremiumSubsidy",
+      "DataType": "StringType",
+      "Ordinal": 41
+    },
+    {
+      "FieldName": "PartDLISSubsidyLevel",
+      "DataType": "StringType",
+      "Ordinal": 42
+    },
+    {
+      "FieldName": "PartDLISCopayCategory",
+      "DataType": "StringType",
+      "Ordinal": 43
+    },
+    {
+      "FieldName": "LISSourceCode",
+      "DataType": "StringType",
+      "Ordinal": 44
+    },
+    {
+      "FieldName": "Segment",
+      "DataType": "StringType",
+      "Ordinal": 45
+    },
+    {
+      "FieldName": "GroupID",
+      "DataType": "StringType",
+      "Ordinal": 46
+    },
+    {
+      "FieldName": "Subgroup",
+      "DataType": "StringType",
+      "Ordinal": 47
+    },
+    {
+      "FieldName": "ClassID",
+      "DataType": "StringType",
+      "Ordinal": 48
+    },
+    {
+      "FieldName": "PlanCode",
+      "DataType": "StringType",
+      "Ordinal": 49
+    },
+    {
+      "FieldName": "SuffixStartDate",
+      "DataType": "StringType",
+      "Ordinal": 50
+    },
+    {
+      "FieldName": "SuffixEndDate",
+      "DataType": "StringType",
+      "Ordinal": 51
+    },
+    {
+      "FieldName": "PlanRider",
+      "DataType": "StringType",
+      "Ordinal": 52
+    },
+    {
+      "FieldName": "RiderCode",
+      "DataType": "StringType",
+      "Ordinal": 53
+    },
+    {
+      "FieldName": "PaymentMethodType",
+      "DataType": "StringType",
+      "Ordinal": 54
+    },
+    {
+      "FieldName": "PremiumWithholdOption",
+      "DataType": "StringType",
+      "Ordinal": 55
+    },
+    {
+      "FieldName": "NameofAccountHolder",
+      "DataType": "StringType",
+      "Ordinal": 56
+    },
+    {
+      "FieldName": "AccountNumber",
+      "DataType": "StringType",
+      "Ordinal": 57
+    },
+    {
+      "FieldName": "BankRoutingNumber",
+      "DataType": "StringType",
+      "Ordinal": 58
+    },
+    {
+      "FieldName": "BankAccountType",
+      "DataType": "StringType",
+      "Ordinal": 59
+    },
+    {
+      "FieldName": "CreditCardType",
+      "DataType": "StringType",
+      "Ordinal": 60
+    },
+    {
+      "FieldName": "CreditCardAccountHolderName",
+      "DataType": "StringType",
+      "Ordinal": 61
+    },
+    {
+      "FieldName": "CreditCardNumber",
+      "DataType": "StringType",
+      "Ordinal": 62
+    },
+    {
+      "FieldName": "CreditCardSecurityCode",
+      "DataType": "StringType",
+      "Ordinal": 63
+    },
+    {
+      "FieldName": "CreditCardExpirationDate",
+      "DataType": "StringType",
+      "Ordinal": 64
+    },
+    {
+      "FieldName": "HospiceFlag",
+      "DataType": "StringType",
+      "Ordinal": 65
+    },
+    {
+      "FieldName": "MedicaidFlag",
+      "DataType": "StringType",
+      "Ordinal": 66
+    },
+    {
+      "FieldName": "WorkingAgedFlag",
+      "DataType": "StringType",
+      "Ordinal": 67
+    },
+    {
+      "FieldName": "InstitutionalFlag",
+      "DataType": "StringType",
+      "Ordinal": 68
+    },
+    {
+      "FieldName": "ESRDFlag",
+      "DataType": "StringType",
+      "Ordinal": 69
+    },
+    {
+      "FieldName": "TransplantFlag",
+      "DataType": "StringType",
+      "Ordinal": 70
+    },
+    {
+      "FieldName": "DialysisFlag",
+      "DataType": "StringType",
+      "Ordinal": 71
+    },
+    {
+      "FieldName": "DisabledFlag",
+      "DataType": "StringType",
+      "Ordinal": 72
+    },
+    {
+      "FieldName": "PlanOverrideIndicator",
+      "DataType": "StringType",
+      "Ordinal": 73
+    },
+    {
+      "FieldName": "NHCFlag",
+      "DataType": "StringType",
+      "Ordinal": 74
+    },
+    {
+      "FieldName": "EGHPFlag",
+      "DataType": "StringType",
+      "Ordinal": 75
+    },
+    {
+      "FieldName": "COBUpdateDate",
+      "DataType": "StringType",
+      "Ordinal": 76
+    },
+    {
+      "FieldName": "NameofOtherCoverage",
+      "DataType": "StringType",
+      "Ordinal": 77
+    },
+    {
+      "FieldName": "SubscriberIDofOtherCoverage",
+      "DataType": "StringType",
+      "Ordinal": 78
+    },
+    {
+      "FieldName": "GroupIDofOtherCoverage",
+      "DataType": "StringType",
+      "Ordinal": 79
+    },
+    {
+      "FieldName": "KindofOtherInsurance",
+      "DataType": "StringType",
+      "Ordinal": 80
+    },
+    {
+      "FieldName": "NameofOtherInsuranceCompany",
+      "DataType": "StringType",
+      "Ordinal": 81
+    },
+    {
+      "FieldName": "PlanMemberID",
+      "DataType": "StringType",
+      "Ordinal": 82
+    },
+    {
+      "FieldName": "MedicaidID",
+      "DataType": "StringType",
+      "Ordinal": 83
+    },
+    {
+      "FieldName": "CMSContractNumber",
+      "DataType": "StringType",
+      "Ordinal": 84
+    },
+    {
+      "FieldName": "ProductLine",
+      "DataType": "StringType",
+      "Ordinal": 85
+    },
+    {
+      "FieldName": "ProductID",
+      "DataType": "StringType",
+      "Ordinal": 86
+    },
+    {
+      "FieldName": "SecondProductID",
+      "DataType": "StringType",
+      "Ordinal": 87
+    },
+    {
+      "FieldName": "Spanvalue",
+      "DataType": "StringType",
+      "Ordinal": 88
+    },
+    {
+      "FieldName": "AdditionalSpanValue",
+      "DataType": "StringType",
+      "Ordinal": 89
+    },
+    {
+      "FieldName": "PlanBenefitPackage",
+      "DataType": "StringType",
+      "Ordinal": 90
+    },
+    {
+      "FieldName": "ECDSFlag",
+      "DataType": "StringType",
+      "Ordinal": 91
+    },
+    {
+      "FieldName": "AlphaPrefix",
+      "DataType": "StringType",
+      "Ordinal": 92
+    },
+    {
+      "FieldName": "Pharmacy",
+      "DataType": "StringType",
+      "Ordinal": 93
+    },
+    {
+      "FieldName": "Dental",
+      "DataType": "StringType",
+      "Ordinal": 94
+    },
+    {
+      "FieldName": "Vision",
+      "DataType": "StringType",
+      "Ordinal": 95
+    },
+    {
+      "FieldName": "MH",
+      "DataType": "StringType",
+      "Ordinal": 96
+    },
+    {
+      "FieldName": "MHIP",
+      "DataType": "StringType",
+      "Ordinal": 97
+    },
+    {
+      "FieldName": "MHDN",
+      "DataType": "StringType",
+      "Ordinal": 98
+    },
+    {
+      "FieldName": "MHAMB",
+      "DataType": "StringType",
+      "Ordinal": 99
+    },
+    {
+      "FieldName": "CD",
+      "DataType": "StringType",
+      "Ordinal": 100
+    },
+    {
+      "FieldName": "CDIP",
+      "DataType": "StringType",
+      "Ordinal": 101
+    },
+    {
+      "FieldName": "CDDN",
+      "DataType": "StringType",
+      "Ordinal": 102
+    },
+    {
+      "FieldName": "CDAMB",
+      "DataType": "StringType",
+      "Ordinal": 103
+    },
+    {
+      "FieldName": "SNPFlag",
+      "DataType": "StringType",
+      "Ordinal": 104
+    },
+    {
+      "FieldName": "SNPEnrolleeType",
+      "DataType": "IntegerType",
+      "Ordinal": 105
+    },
+    {
+      "FieldName": "IssuerID",
+      "DataType": "StringType",
+      "Ordinal": 106
+    },
+    {
+      "FieldName": "MetalLevel",
+      "DataType": "StringType",
+      "Ordinal": 107
+    },
+    {
+      "FieldName": "CostSharingVariant",
+      "DataType": "StringType",
+      "Ordinal": 108
+    },
+    {
+      "FieldName": "MarketCoverage",
+      "DataType": "StringType",
+      "Ordinal": 109
+    },
+    {
+      "FieldName": "CSREligibilityFlag",
+      "DataType": "StringType",
+      "Ordinal": 110
+    },
+    {
+      "FieldName": "MemberEnrollmentQHPState",
+      "DataType": "StringType",
+      "Ordinal": 111
+    },
+    {
+      "FieldName": "AlternateMemberKey1",
+      "DataType": "StringType",
+      "Ordinal": 112
+    },
+    {
+      "FieldName": "AlternateMemberKey2",
+      "DataType": "StringType",
+      "Ordinal": 113
+    },
+    {
+      "FieldName": "AlternateMemberKey3",
+      "DataType": "StringType",
+      "Ordinal": 114
+    },
+    {
+      "FieldName": "AlternateMemberKey4",
+      "DataType": "StringType",
+      "Ordinal": 115
+    },
+    {
+      "FieldName": "AlternateMemberKey5",
+      "DataType": "StringType",
+      "Ordinal": 116
+    },   
+    {
+      "FieldName": "PlanEmployeeFlag",
+      "DataType": "StringType",
+      "Ordinal": 117
+    },
+    {
+      "FieldName": "SourcefileID",
+      "DataType": "StringType",
+      "Ordinal": 118
+    },
+    {
+      "FieldName": "DualStatusCode",
+      "DataType": "StringType",
+      "Ordinal": 119
+    },
+    {
+      "FieldName": "MedicaidRecordType",
+      "DataType": "StringType",
+      "Ordinal": 120
+    },
+    {
+      "FieldName": "SPAPType",
+      "DataType": "StringType",
+      "Ordinal": 121
+    },
+    {
+      "FieldName": "SPAPID",
+      "DataType": "StringType",
+      "Ordinal": 122
+    },
+    {
+      "FieldName": "TransplantFlagType",
+      "DataType": "StringType",
+      "Ordinal": 123
+    }     
+  ]
+}

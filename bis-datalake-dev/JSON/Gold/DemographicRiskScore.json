@@ -1,0 +1,18 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "DemographicRiskScore",
+      "DestinationTable": "#clientCode/Gold/MA/Risk/DemographicRiskScore",
+      "SourceTables": [
+        {
+          "Entity": "cDemographicsRiskScore",
+          "SourceTable": "#clientCode/consolidated/MA/Data/DemographicsRiskScore",
+          "SourceFormat": "delta"
+        }
+      ],
+      "SqlScript": "select \r\n ClientID\r\n,FileID\r\n,LoadDateTime\r\n,FileLayoutID\r\n,FileLayoutDescription\r\n,PlanMemberID\r\n,GenderCode\r\n,MemberAge\r\n,RiskAdjustmentFactorTypeCode\r\n,MedicaidIndicator\r\n,OREC\r\n,MedicaidDualStatusCode\r\n,Hospice\r\n,ESRD\r\n,IsLatest\r\n,DemographicRiskAdjustmentFactor\r\n,ProgramYear\r\n,ProgramYearMonth\r\nfrom\r\n(select *, rank() over(partition by PlanmemberID, Programyear, ProgramYearMonth order by FileID desc) as rownum\r\n from cDemographicsRiskScore\r\n ) where rownum=1",
+      "DupScript": "select 1\r\nfrom tempSQLScript\r\ngroup by PlanmemberID, Programyear, ProgramYearMonth\r\nhaving count(*) > 1",
+      "MergeScript": "MERGE INTO DestinationTable t\r\nUSING (SELECT * from tempSQLScript) s \r\nON s.PlanmemberID = t.PlanmemberID AND s.Programyear = t.Programyear AND s.ProgramYearMonth = t.ProgramYearMonth\r\nWHEN MATCHED THEN \r\nUPDATE SET\r\n ClientID = s.ClientID\r\n,FileID = s.FileID\r\n,LoadDateTime = s.LoadDateTime\r\n,FileLayoutID = s.FileLayoutID\r\n,FileLayoutDescription = s.FileLayoutDescription\r\n,PlanMemberID = s.PlanMemberID\r\n,GenderCode = s.GenderCode\r\n,MemberAge = s.MemberAge\r\n,RiskAdjustmentFactorTypeCode = s.RiskAdjustmentFactorTypeCode\r\n,MedicaidIndicator = s.MedicaidIndicator\r\n,OREC = s.OREC\r\n,MedicaidDualStatusCode = s.MedicaidDualStatusCode\r\n,Hospice = s.Hospice\r\n,ESRD = s.ESRD\r\n,IsLatest = s.IsLatest\r\n,DemographicRiskAdjustmentFactor = s.DemographicRiskAdjustmentFactor\r\n,ProgramYear = s.ProgramYear\r\n,ProgramYearMonth = s.ProgramYearMonth\r\nWHEN NOT MATCHED THEN \r\nINSERT \r\n(\r\n ClientID\r\n,FileID\r\n,LoadDateTime\r\n,FileLayoutID\r\n,FileLayoutDescription\r\n,PlanMemberID\r\n,GenderCode\r\n,MemberAge\r\n,RiskAdjustmentFactorTypeCode\r\n,MedicaidIndicator\r\n,OREC\r\n,MedicaidDualStatusCode\r\n,Hospice\r\n,ESRD\r\n,IsLatest\r\n,DemographicRiskAdjustmentFactor\r\n,ProgramYear\r\n,ProgramYearMonth\r\n)\r\nVALUES\r\n(\r\n s.ClientID\r\n,s.FileID\r\n,s.LoadDateTime\r\n,s.FileLayoutID\r\n,s.FileLayoutDescription\r\n,s.PlanMemberID\r\n,s.GenderCode\r\n,s.MemberAge\r\n,s.RiskAdjustmentFactorTypeCode\r\n,s.MedicaidIndicator\r\n,s.OREC\r\n,s.MedicaidDualStatusCode\r\n,s.Hospice\r\n,s.ESRD\r\n,s.IsLatest\r\n,s.DemographicRiskAdjustmentFactor\r\n,s.ProgramYear\r\n,s.ProgramYearMonth\r\n)"
+    }
+  ]
+}

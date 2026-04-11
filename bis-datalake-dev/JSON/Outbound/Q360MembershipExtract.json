@@ -1,0 +1,28 @@
+{
+  "ClientCode": "#clientCode",
+  "SubClientCode": "#subClientCode",
+  "LOB": "MA",
+  "OutboundFileReferenceId": "#outboundFileReferenceId",
+  "OutboundFileExtract": [
+    {
+      "DestinationType":"csv",
+      "DestinationArchiveTablePath": "/Outbound/Archive/Q360/Q360Membership",
+      "DestinationTablePath": "/Outbound/Q360/Q360Membership",
+      "DestinationFileName": "MemGen_<ClientCode>_<YYYYMMDDhhmmss>",
+      "DestinationDelimiter": "|",
+      "DestinationExtension": ".txt",
+      "DestinationFirstRowAsHeader": "false",
+      "SourceTables": [
+        {
+          "Entity": "Q360Membership",
+          "SourcePath": "/Gold/MA/Q360/q360membership",
+          "Source": "DataLake",
+          "SourceFormat": "delta"
+        }
+      ],
+      "IsInlineQuery": "No",
+      "SQLScript": "",
+      "SQLScriptPath": "/fileconfig/JSON/Outbound/Queries/Q360MembershipQuery.sql"
+    }
+  ]
+}

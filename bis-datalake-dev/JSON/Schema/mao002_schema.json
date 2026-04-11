@@ -1,0 +1,131 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RecordType",
+			"OrdinalPosition": 1,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ReportID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"MAO-002"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MedicareAdvantageContractID",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PlanEncounterID",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EncounterICN",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EncounterLineNumber",
+			"OrdinalPosition": 6,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EncounterStatus",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"ACCEPTED",
+						"REJECTED",
+						"Accepted",
+						"Rejected"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "ErrorCode",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ErrorDescription",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ReportDate",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "TransactionDate",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		}
+	]
+}

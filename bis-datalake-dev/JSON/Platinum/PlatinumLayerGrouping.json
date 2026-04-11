@@ -1,0 +1,58 @@
+{
+    "LayerGrouping": [
+        {
+            "LayerOrder": 100,
+            "LayerGrouping": "GlobalRefData",
+            "SubGrouping": [
+                {
+                    "SubGroupEntity": "dimDate",
+                    "SubGroupingOrder": 10,
+                    "SubConfigPath": "",
+                    "Notebook": "./DimDateDimMonthProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimICD",
+                    "SubGroupingOrder": 100,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimICD.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimHCC",
+                    "SubGroupingOrder": 200,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimHCC.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimAlertGroup",
+                    "SubGroupingOrder": 300,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimAlertGroup.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                }
+            ]
+        },
+		{
+            "LayerOrder": 200,
+            "LayerGrouping": "PlatinumLayerGeneric",
+            "SubGrouping": [
+                {
+                    "SubGroupEntity": "dimProvider",
+                    "SubGroupingOrder": 10,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimProvider.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimMember",
+                    "SubGroupingOrder": 20,
+                    "SubConfigPath": "fileconfig/JSON/Platinum/dimMember.json",
+                    "Notebook": "./GenericSubGroupProcessing"
+                },
+                {
+                    "SubGroupEntity": "dimClient",
+                    "SubGroupingOrder": 30,
+                    "SubConfigPath": "",
+                    "Notebook": "./DimClientProcessing"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "Entity": "HedisEligibleMember",
+  "DestinationTable": "#clientCode/Gold/MA/Q360/HedisEligibleMember",
+  "SourceTables": [
+    {
+      "Entity": "MemberEnrollment",
+      "SourceTable": "#clientCode/consolidated/MA/Data/MemberEnrollment",
+      "SourceFormat": "delta"
+    },
+    {
+      "Entity": "MemberPersonBridge",
+      "SourceTable": "#clientCode/Gold/MA/Client/MemberPersonBridge",
+      "SourceFormat": "delta"
+    }
+  ],
+  "SQLScript": "WITH Months AS (\r\nSELECT \r\n         em.StartDate\r\n        ,em.EndDate\r\n        ,em.PlanMemberID\r\n        ,em.UniquePersonkey\r\n        ,COALESCE(nullif(em.UniquePersonKey,'None'),nullif(em.PlanMemberID,'None')) AS MemberID\r\n        ,em.FileId\r\n        ,em.StartDate OriginalStartDate\r\n        ,em.EndDate OriginalEndDate\r\n        ,explode(month_range(coalesce(StartDate,to_date('1900-01-01')), coalesce(EndDate,to_date('9999-12-31')))) AS SplitStartDate\r\nFROM MemberEnrollment em\r\nWHERE\r\nem.FileID = (SELECT MAX(mem.FileId) FROM MemberEnrollment mem WHERE mem.FileLayoutDescription LIKE '%Mem%Enroll%') \r\nAND\r\nem.StartDate <> IfNULL(to_date(em.EndDate),'9999-12-31') and em.StartDate < IfNULL(to_date(em.EndDate),'9999-12-31')\r\n),\r\nConvertToMontly AS(\r\nSELECT \r\n         em.SplitStartDate AS StartDate\r\n        ,last_day(SplitStartDate) AS EndDate\r\n        ,em.PlanMemberID\r\n        ,em.UniquePersonkey\r\n        ,em.MemberID\r\n        ,em.FileId\r\n        ,em.StartDate OriginalStartDate\r\n        ,em.EndDate OriginalEndDate\r\nFROM Months em\r\nWHERE \r\nlast_day(em.SplitStartDate) <= last_day(IfNULL(to_date(em.EndDate),'9999-12-31'))\r\n),\r\nApplyFilter AS(\r\nSELECT \r\n         PlanMemberID\r\n        ,UniquePersonkey\r\n        ,MemberID\r\n        ,FileId\r\n        ,StartDate\r\n        ,EndDate\r\n        ,OriginalStartDate\r\n        ,OriginalEndDate\r\nFROM ConvertToMontly\r\nWHERE\r\nadd_months(CAST(DATE_TRUNC(\"year\", current_date()) AS DATE), -30) <= StartDate\r\nAND\r\nEndDate <= last_day(current_date()) --eliminates possibility of future people\r\n),\r\nMemberPersonBridgeTemp AS (\r\nSELECT \r\n         BISInternalPersonID\r\n        ,nullif(PlanMemberID,'None') AS PlanMemberID\r\n        ,nullif(UniquePersonKey,'None') AS UniquePersonKey\r\n        ,COALESCE(nullif(UniquePersonKey,'None'),nullif(PlanMemberID,'None')) AS MemberID\r\n        ,IsCurrent\r\nFROM MemberPersonBridge\r\n),\r\nFilterMPBByApply AS (\r\nSELECT DISTINCT\r\n         mpb.BISInternalPersonID\r\n        ,nullif(mpb.PlanMemberID,'None') AS PlanMemberID\r\n        ,nullif(mpb.UniquePersonKey,'None') AS UniquePersonKey\r\n        ,mpb.MemberID\r\n        ,mpb.IsCurrent\r\nFROM MemberPersonBridgeTemp mpb \r\nWHERE\r\nmpb.BISInternalPersonID IN(\r\n      SELECT BISInternalPersonID\r\n      FROM MemberPersonBridgeTemp\r\n      WHERE\r\n      MemberID IN(SELECT MemberId FROM ApplyFilter)\r\n    )\r\n)\r\nSELECT\r\n   BISInternalPersonID\r\n  ,PlanMemberID\r\n  ,UniquePersonKey\r\nFROM FilterMPBByApply\r\nWHERE\r\nIsCurrent = 1\r\n",
+  "TruncateScript": "DELETE FROM HedisEligibleMember"
+}

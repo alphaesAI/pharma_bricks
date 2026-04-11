@@ -1,0 +1,754 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "TimestampType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "LongType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "ContractNumber",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "RunDate",
+      "DataType": "DateType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "PaymentYearandMonth",
+      "DataType": "IntegerType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "RecordType",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "BeneficiaryLastName",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "BeneficiaryFirstName",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "BeneficiaryInitial",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "DateOfBirth",
+      "DataType": "DateType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "Sex",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "SocialSecurityNumber",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "AgeGroupFemale0To34",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "AgeGroupFemale35To44",
+      "DataType": "StringType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "AgeGroupFemale45To54",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "AgeGroupFemale55To59",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "AgeGroupFemale60To64",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "AgeGroupFemale65To69",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "AgeGroupFemale70To74",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "AgeGroupFemale75To79",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "AgeGroupFemale80To84",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "AgeGroupFemale85To89",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "AgeGroupFemale90To94",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "AgeGroupFemale95ToGT",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "AgeGroupMale0To34",
+      "DataType": "StringType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "AgeGroupMale35To44",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "AgeGroupMale45To54",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "AgeGroupMale55To59",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "AgeGroupMale60To64",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "AgeGroupMale65To69",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "AgeGroupMale70To74",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "AgeGroupMale75To79",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "AgeGroupMale80To84",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "AgeGroupMale85To89",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "AgeGroupMale90To94",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "AgeGroupMale95ToGT",
+      "DataType": "StringType",
+      "Ordinal": 40
+    },
+    {
+      "FieldName": "OriginallyDisabledFemale",
+      "DataType": "StringType",
+      "Ordinal": 41
+    },
+    {
+      "FieldName": "OriginallyDisabledMale",
+      "DataType": "StringType",
+      "Ordinal": 42
+    },
+    {
+      "FieldName": "RXHCC1",
+      "DataType": "StringType",
+      "Ordinal": 43
+    },
+    {
+      "FieldName": "RXHCC5",
+      "DataType": "StringType",
+      "Ordinal": 44
+    },
+    {
+      "FieldName": "RXHCC15",
+      "DataType": "StringType",
+      "Ordinal": 45
+    },
+    {
+      "FieldName": "RXHCC16",
+      "DataType": "StringType",
+      "Ordinal": 46
+    },
+    {
+      "FieldName": "RXHCC17",
+      "DataType": "StringType",
+      "Ordinal": 47
+    },
+    {
+      "FieldName": "RXHCC18",
+      "DataType": "StringType",
+      "Ordinal": 48
+    },
+    {
+      "FieldName": "RXHCC19",
+      "DataType": "StringType",
+      "Ordinal": 49
+    },
+    {
+      "FieldName": "RXHCC20",
+      "DataType": "StringType",
+      "Ordinal": 50
+    },
+    {
+      "FieldName": "RXHCC21",
+      "DataType": "StringType",
+      "Ordinal": 51
+    },
+    {
+      "FieldName": "RXHCC22",
+      "DataType": "StringType",
+      "Ordinal": 52
+    },
+    {
+      "FieldName": "RXHCC30",
+      "DataType": "StringType",
+      "Ordinal": 53
+    },
+    {
+      "FieldName": "RXHCC31",
+      "DataType": "StringType",
+      "Ordinal": 54
+    },
+    {
+      "FieldName": "RXHCC40",
+      "DataType": "StringType",
+      "Ordinal": 55
+    },
+    {
+      "FieldName": "RXHCC41",
+      "DataType": "StringType",
+      "Ordinal": 56
+    },
+    {
+      "FieldName": "RXHCC42",
+      "DataType": "StringType",
+      "Ordinal": 57
+    },
+    {
+      "FieldName": "RXHCC43",
+      "DataType": "StringType",
+      "Ordinal": 58
+    },
+    {
+      "FieldName": "RXHCC44",
+      "DataType": "StringType",
+      "Ordinal": 59
+    },
+    {
+      "FieldName": "RXHCC45",
+      "DataType": "StringType",
+      "Ordinal": 60
+    },
+    {
+      "FieldName": "RXHCC47",
+      "DataType": "StringType",
+      "Ordinal": 61
+    },
+    {
+      "FieldName": "RXHCC54",
+      "DataType": "StringType",
+      "Ordinal": 62
+    },
+    {
+      "FieldName": "RXHCC55",
+      "DataType": "StringType",
+      "Ordinal": 63
+    },
+    {
+      "FieldName": "RXHCC56",
+      "DataType": "StringType",
+      "Ordinal": 64
+    },
+    {
+      "FieldName": "RXHCC59",
+      "DataType": "StringType",
+      "Ordinal": 65
+    },
+    {
+      "FieldName": "RXHCC65",
+      "DataType": "StringType",
+      "Ordinal": 66
+    },
+    {
+      "FieldName": "RXHCC66",
+      "DataType": "StringType",
+      "Ordinal": 67
+    },
+    {
+      "FieldName": "RXHCC67",
+      "DataType": "StringType",
+      "Ordinal": 68
+    },
+    {
+      "FieldName": "RXHCC68",
+      "DataType": "StringType",
+      "Ordinal": 69
+    },
+    {
+      "FieldName": "RXHCC80",
+      "DataType": "StringType",
+      "Ordinal": 70
+    },
+    {
+      "FieldName": "RXHCC81",
+      "DataType": "StringType",
+      "Ordinal": 71
+    },
+    {
+      "FieldName": "RXHCC82",
+      "DataType": "StringType",
+      "Ordinal": 72
+    },
+    {
+      "FieldName": "RXHCC83",
+      "DataType": "StringType",
+      "Ordinal": 73
+    },
+    {
+      "FieldName": "RXHCC84",
+      "DataType": "StringType",
+      "Ordinal": 74
+    },
+    {
+      "FieldName": "RXHCC87",
+      "DataType": "StringType",
+      "Ordinal": 75
+    },
+    {
+      "FieldName": "RXHCC95",
+      "DataType": "StringType",
+      "Ordinal": 76
+    },
+    {
+      "FieldName": "RXHCC96",
+      "DataType": "StringType",
+      "Ordinal": 77
+    },
+    {
+      "FieldName": "RXHCC97",
+      "DataType": "StringType",
+      "Ordinal": 78
+    },
+    {
+      "FieldName": "RXHCC98",
+      "DataType": "StringType",
+      "Ordinal": 79
+    },
+    {
+      "FieldName": "RXHCC99",
+      "DataType": "StringType",
+      "Ordinal": 80
+    },
+    {
+      "FieldName": "RXHCC100",
+      "DataType": "StringType",
+      "Ordinal": 81
+    },
+    {
+      "FieldName": "RXHCC111",
+      "DataType": "StringType",
+      "Ordinal": 82
+    },
+    {
+      "FieldName": "RXHCC112",
+      "DataType": "StringType",
+      "Ordinal": 83
+    },
+    {
+      "FieldName": "RXHCC130",
+      "DataType": "StringType",
+      "Ordinal": 84
+    },
+    {
+      "FieldName": "RXHCC131",
+      "DataType": "StringType",
+      "Ordinal": 85
+    },
+    {
+      "FieldName": "RXHCC132",
+      "DataType": "StringType",
+      "Ordinal": 86
+    },
+    {
+      "FieldName": "RXHCC133",
+      "DataType": "StringType",
+      "Ordinal": 87
+    },
+    {
+      "FieldName": "RXHCC134",
+      "DataType": "StringType",
+      "Ordinal": 88
+    },
+    {
+      "FieldName": "RXHCC135",
+      "DataType": "StringType",
+      "Ordinal": 89
+    },
+    {
+      "FieldName": "RXHCC145",
+      "DataType": "StringType",
+      "Ordinal": 90
+    },
+    {
+      "FieldName": "RXHCC146",
+      "DataType": "StringType",
+      "Ordinal": 91
+    },
+    {
+      "FieldName": "RXHCC147",
+      "DataType": "StringType",
+      "Ordinal": 92
+    },
+    {
+      "FieldName": "RXHCC148",
+      "DataType": "StringType",
+      "Ordinal": 93
+    },
+    {
+      "FieldName": "RXHCC153",
+      "DataType": "StringType",
+      "Ordinal": 94
+    },
+    {
+      "FieldName": "RXHCC154",
+      "DataType": "StringType",
+      "Ordinal": 95
+    },
+    {
+      "FieldName": "RXHCC155",
+      "DataType": "StringType",
+      "Ordinal": 96
+    },
+    {
+      "FieldName": "RXHCC156",
+      "DataType": "StringType",
+      "Ordinal": 97
+    },
+    {
+      "FieldName": "RXHCC157",
+      "DataType": "StringType",
+      "Ordinal": 98
+    },
+    {
+      "FieldName": "RXHCC158",
+      "DataType": "StringType",
+      "Ordinal": 99
+    },
+    {
+      "FieldName": "RXHCC159",
+      "DataType": "StringType",
+      "Ordinal": 100
+    },
+    {
+      "FieldName": "RXHCC160",
+      "DataType": "StringType",
+      "Ordinal": 101
+    },
+    {
+      "FieldName": "RXHCC161",
+      "DataType": "StringType",
+      "Ordinal": 102
+    },
+    {
+      "FieldName": "RXHCC163",
+      "DataType": "StringType",
+      "Ordinal": 103
+    },
+    {
+      "FieldName": "RXHCC164",
+      "DataType": "StringType",
+      "Ordinal": 104
+    },
+    {
+      "FieldName": "RXHCC165",
+      "DataType": "StringType",
+      "Ordinal": 105
+    },
+    {
+      "FieldName": "RXHCC166",
+      "DataType": "StringType",
+      "Ordinal": 106
+    },
+    {
+      "FieldName": "RXHCC168",
+      "DataType": "StringType",
+      "Ordinal": 107
+    },
+    {
+      "FieldName": "RXHCC183",
+      "DataType": "StringType",
+      "Ordinal": 108
+    },
+    {
+      "FieldName": "RXHCC184",
+      "DataType": "StringType",
+      "Ordinal": 109
+    },
+    {
+      "FieldName": "RXHCC185",
+      "DataType": "StringType",
+      "Ordinal": 110
+    },
+    {
+      "FieldName": "RXHCC186",
+      "DataType": "StringType",
+      "Ordinal": 111
+    },
+    {
+      "FieldName": "RXHCC187",
+      "DataType": "StringType",
+      "Ordinal": 112
+    },
+    {
+      "FieldName": "RXHCC188",
+      "DataType": "StringType",
+      "Ordinal": 113
+    },
+    {
+      "FieldName": "RXHCC191",
+      "DataType": "StringType",
+      "Ordinal": 114
+    },
+    {
+      "FieldName": "RXHCC193",
+      "DataType": "StringType",
+      "Ordinal": 115
+    },
+    {
+      "FieldName": "RXHCC206",
+      "DataType": "StringType",
+      "Ordinal": 116
+    },
+    {
+      "FieldName": "RXHCC207",
+      "DataType": "StringType",
+      "Ordinal": 117
+    },
+    {
+      "FieldName": "RXHCC215",
+      "DataType": "StringType",
+      "Ordinal": 118
+    },
+    {
+      "FieldName": "RXHCC216",
+      "DataType": "StringType",
+      "Ordinal": 119
+    },
+    {
+      "FieldName": "RXHCC225",
+      "DataType": "StringType",
+      "Ordinal": 120
+    },
+    {
+      "FieldName": "RXHCC226",
+      "DataType": "StringType",
+      "Ordinal": 121
+    },
+    {
+      "FieldName": "RXHCC227",
+      "DataType": "StringType",
+      "Ordinal": 122
+    },
+    {
+      "FieldName": "RXHCC228",
+      "DataType": "StringType",
+      "Ordinal": 123
+    },
+    {
+      "FieldName": "RXHCC229",
+      "DataType": "StringType",
+      "Ordinal": 124
+    },
+    {
+      "FieldName": "RXHCC241",
+      "DataType": "StringType",
+      "Ordinal": 125
+    },
+    {
+      "FieldName": "RXHCC243",
+      "DataType": "StringType",
+      "Ordinal": 126
+    },
+    {
+      "FieldName": "RXHCC244",
+      "DataType": "StringType",
+      "Ordinal": 127
+    },
+    {
+      "FieldName": "RXHCC260",
+      "DataType": "StringType",
+      "Ordinal": 128
+    },
+    {
+      "FieldName": "RXHCC261",
+      "DataType": "StringType",
+      "Ordinal": 129
+    },
+    {
+      "FieldName": "RXHCC262",
+      "DataType": "StringType",
+      "Ordinal": 130
+    },
+    {
+      "FieldName": "RXHCC263",
+      "DataType": "StringType",
+      "Ordinal": 131
+    },
+    {
+      "FieldName": "RXHCC311",
+      "DataType": "StringType",
+      "Ordinal": 132
+    },
+    {
+      "FieldName": "RXHCC314",
+      "DataType": "StringType",
+      "Ordinal": 133
+    },
+    {
+      "FieldName": "RXHCC316",
+      "DataType": "StringType",
+      "Ordinal": 134
+    },
+    {
+      "FieldName": "RXHCC317",
+      "DataType": "StringType",
+      "Ordinal": 135
+    },
+    {
+      "FieldName": "RXHCC355",
+      "DataType": "StringType",
+      "Ordinal": 136
+    },
+    {
+      "FieldName": "RXHCC395",
+      "DataType": "StringType",
+      "Ordinal": 137
+    },
+    {
+      "FieldName": "RXHCC396",
+      "DataType": "StringType",
+      "Ordinal": 138
+    },
+    {
+      "FieldName": "RXHCC397",
+      "DataType": "StringType",
+      "Ordinal": 139
+    },
+    {
+      "FieldName": "OriginallyDisabled",
+      "DataType": "StringType",
+      "Ordinal": 140
+    },
+    {
+      "FieldName": "NONAGEDRXHCC1",
+      "DataType": "StringType",
+      "Ordinal": 141
+    },
+    {
+      "FieldName": "NONAGEDRXHCC130",
+      "DataType": "StringType",
+      "Ordinal": 142
+    },
+    {
+      "FieldName": "NONAGEDRXHCC131",
+      "DataType": "StringType",
+      "Ordinal": 143
+    },
+    {
+      "FieldName": "NONAGEDRXHCC132",
+      "DataType": "StringType",
+      "Ordinal": 144
+    },
+    {
+      "FieldName": "NONAGEDRXHCC133",
+      "DataType": "StringType",
+      "Ordinal": 145
+    },
+    {
+      "FieldName": "NONAGEDRXHCC134",
+      "DataType": "StringType",
+      "Ordinal": 146
+    },
+    {
+      "FieldName": "NONAGEDRXHCC135",
+      "DataType": "StringType",
+      "Ordinal": 147
+    },
+    {
+      "FieldName": "NONAGEDRXHCC159",
+      "DataType": "StringType",
+      "Ordinal": 148
+    },
+    {
+      "FieldName": "NONAGEDRXHCC160",
+      "DataType": "StringType",
+      "Ordinal": 149
+    },
+    {
+      "FieldName": "NONAGEDRXHCC163",
+      "DataType": "StringType",
+      "Ordinal": 150
+    }
+  ]
+}

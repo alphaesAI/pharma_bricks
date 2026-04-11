@@ -1,0 +1,292 @@
+{
+	"Fields": [
+
+		{
+			"FieldName": "BeneficiaryID",
+			"DataType": "StringType",
+			"Ordinal": 1
+
+		},
+		{
+			"FieldName": "Surname",
+			"DataType": "StringType",
+			"Ordinal": 2
+		},
+		{
+			"FieldName": "FirstName",
+			"DataType": "StringType",
+			"Ordinal": 3
+		},
+		{
+			"FieldName": "MiddleInitial",
+			"DataType": "StringType",
+			"Ordinal": 4
+		},
+		{
+			"FieldName": "GenderCode",
+			"DataType": "IntegerType",
+			"Ordinal": 5
+
+		},
+		{
+			"FieldName": "DateofBirth",
+			"DataType": "DateType",
+			"Ordinal": 6
+
+		},
+		{
+			"FieldName": "MedicaidIndicator",
+			"DataType": "StringType",
+			"Ordinal": 7
+		},
+		{
+			"FieldName": "ContractNumber",
+			"DataType": "StringType",
+			"Ordinal": 8
+
+		},
+		{
+			"FieldName": "StateCode",
+			"DataType": "StringType",
+			"Ordinal": 9
+		},
+		{
+			"FieldName": "CountyCode",
+			"DataType": "StringType",
+			"Ordinal": 10
+		},
+		{
+			"FieldName": "DisabilityIndicator",
+			"DataType": "StringType",
+			"Ordinal": 11
+		},
+		{
+			"FieldName": "HospiceIndicator",
+			"DataType": "StringType",
+			"Ordinal": 12
+		},
+		{
+			"FieldName": "InstitutionalIndicator",
+			"DataType": "StringType",
+			"Ordinal": 13
+		},
+		{
+			"FieldName": "ESRDIndicator",
+			"DataType": "StringType",
+			"Ordinal": 14
+		},
+		{
+			"FieldName": "TransactionReplyCode",
+			"DataType": "StringType",
+			"Ordinal": 15
+		},
+		{
+			"FieldName": "TransactionCode",
+			"DataType": "StringType",
+			"Ordinal": 16
+		},
+		{
+			"FieldName": "EntitlementTypeCode",
+			"DataType": "StringType",
+			"Ordinal": 17
+		},
+		{
+			"FieldName": "EffectiveDate",
+			"DataType": "DateType",
+			"Ordinal": 18
+
+		},
+		{
+			"FieldName": "WAIndicator",
+			"DataType": "StringType",
+			"Ordinal": 19
+		},
+		{
+			"FieldName": "PlanBenefitPackageID",
+			"DataType": "StringType",
+			"Ordinal": 20
+		},
+		{
+			"FieldName": "RaceCode",
+			"DataType": "StringType",
+			"Ordinal": 21
+		},
+		{
+			"FieldName": "TransactionDate",
+			"DataType": "DateType",
+			"Ordinal": 22
+
+		},
+
+		{
+			"FieldName": "SubsidyEndDate",
+			"DataType": "StringType",
+			"Ordinal": 23
+		},
+		{
+			"FieldName": "DistrictOfficeCode",
+			"DataType": "StringType",
+			"Ordinal": 24
+		},
+
+		{
+			"FieldName": "SourceID",
+			"DataType": "StringType",
+			"Ordinal": 25
+		},
+		{
+			"FieldName": "PriorPlanBenefitPackageID",
+			"DataType": "StringType",
+			"Ordinal": 26
+		},
+		{
+			"FieldName": "ApplicationDate",
+			"DataType": "StringType",
+			"Ordinal": 27
+		},
+
+		{
+			"FieldName": "OutofAreaFlag",
+			"DataType": "StringType",
+			"Ordinal": 28
+		},
+		{
+			"FieldName": "SegmentNumber",
+			"DataType": "StringType",
+			"Ordinal": 29
+		},
+		{
+			"FieldName": "PartCBeneficiaryPremium",
+			"DataType": "StringType",
+			"Ordinal": 30
+		},
+		{
+			"FieldName": "PartDBeneficiaryPremium",
+			"DataType": "StringType",
+			"Ordinal": 31
+		},
+		{
+			"FieldName": "ElectionType",
+			"DataType": "StringType",
+			"Ordinal": 32
+		},
+		{
+			"FieldName": "EnrollmentSourceCode",
+			"DataType": "StringType",
+			"Ordinal": 33
+
+		},
+		{
+			"FieldName": "PartDOptOutFlag",
+			"DataType": "StringType",
+			"Ordinal": 34
+		},
+
+		{
+			"FieldName": "NumberofUncoveredMonths",
+			"DataType": "StringType",
+			"Ordinal": 35
+		},
+		{
+			"FieldName": "CreditableCoverageFlag",
+			"DataType": "StringType",
+			"Ordinal": 36
+		},
+		{
+			"FieldName": "EmployerSubsidyOverrideFlag",
+			"DataType": "StringType",
+			"Ordinal": 37
+		},
+		{
+			"FieldName": "RxID",
+			"DataType": "StringType",
+			"Ordinal": 38
+		},
+		{
+			"FieldName": "RxGroup",
+			"DataType": "StringType",
+			"Ordinal": 39
+		},
+		{
+			"FieldName": "SecondaryDrugInsuranceFlag",
+			"DataType": "StringType",
+			"Ordinal": 40
+		},
+		{
+			"FieldName": "SecondaryRxID",
+			"DataType": "StringType",
+			"Ordinal": 41
+		},
+		{
+			"FieldName": "SecondaryRxGroup",
+			"DataType": "StringType",
+			"Ordinal": 42
+		},
+		{
+			"FieldName": "EGHP",
+			"DataType": "StringType",
+			"Ordinal": 43
+		},
+		{
+			"FieldName": "PartDLIPSLevel",
+			"DataType": "StringType",
+			"Ordinal": 44
+		},
+		{
+			"FieldName": "LowIncomeCoPayCategory",
+			"DataType": "StringType",
+			"Ordinal": 45
+		},
+		{
+			"FieldName": "LowIncomeCoPayEffectiveDate",
+			"DataType": "StringType",
+			"Ordinal": 46
+		},
+		{
+			"FieldName": "PartDLEPAmount",
+			"DataType": "StringType",
+			"Ordinal": 47
+		},
+		{
+			"FieldName": "PartDLEPWaivedAmount",
+			"DataType": "StringType",
+			"Ordinal": 48
+		},
+		{
+			"FieldName": "PartDLEPSubsidyAmount",
+			"DataType": "StringType",
+			"Ordinal": 49
+		},
+		{
+			"FieldName": "LowIncomePartDPremiumSubsidyAmount",
+			"DataType": "StringType",
+			"Ordinal": 50
+		},
+		{
+			"FieldName": "FileID",
+			"DataType": "IntegerType",
+			"Ordinal": 51
+		},
+		{
+			"FieldName": "FileLayoutID",
+			"DataType": "IntegerType",
+			"Ordinal": 52
+		},
+		{
+			"FieldName": "FileLayoutDescription",
+			"DataType": "StringType",
+			"Ordinal": 53
+		},
+		{
+			"FieldName": "ClientID",
+			"DataType": "StringType",
+			"Ordinal": 54
+		},
+		{
+			"FieldName": "LoadDateTime",
+			"DataType": "DateType",
+			"Ordinal": 55
+		}
+	]
+
+}

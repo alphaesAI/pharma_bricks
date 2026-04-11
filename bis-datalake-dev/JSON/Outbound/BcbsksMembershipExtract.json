@@ -1,0 +1,28 @@
+{
+  "ClientCode": "#clientCode",
+  "SubClientCode": "#subClientCode",
+  "LOB": "MA",
+  "OutboundFileReferenceId": "#outboundFileReferenceId",
+  "OutboundFileExtract": [
+    {
+      "DestinationType":"csv",
+      "DestinationArchiveTablePath": "/Outbound/Archive/Risk/Membership",
+      "DestinationTablePath": "/Outbound/Risk/Membership",
+      "DestinationFileName": "ADV_<ClientCode>_MEMBERSHIP_<YYYY>_<YYYYMMDD>",
+      "DestinationDelimiter": "|",
+      "DestinationExtension": ".txt",
+      "DestinationFirstRowAsHeader": "true",
+      "SourceTables": [
+        {
+          "Entity": "Membership",
+          "SourcePath": "/Gold/MA/Risk/Membership",
+          "Source": "DataLake",
+          "SourceFormat": "delta"
+        }
+      ],
+      "IsInlineQuery": "No",
+      "SQLScript": "",
+      "SQLScriptPath": "/fileconfig/JSON/Outbound/Queries/BcbsksMembershipQuery.sql"
+    }
+  ]
+}

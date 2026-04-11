@@ -1,0 +1,482 @@
+{
+  "ColumnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Format": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "ClaimNumber",
+      "Ordinal": 0,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "ClaimLineNumber",
+      "Ordinal": 1,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "ClaimStatus",
+      "Ordinal": 2,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "ClaimFormType",
+      "Ordinal": 3,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimType",
+      "Ordinal": 4,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BenefitNetworkID",
+      "Ordinal": 5,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimSubmitterID",
+      "Ordinal": 6,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BenefitCategoryID",
+      "Ordinal": 7,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PlanMemberID",
+      "Ordinal": 8,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "ClaimProcessDate",
+      "Ordinal": 9,
+      "DataType": "string",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "MM/dd/yyyy"
+        }
+      ]
+    },
+    {
+      "FieldName": "ClaimEntryDate",
+      "Ordinal": 10,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ServiceFromDate",
+      "Ordinal": 11,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ServiceToDate",
+      "Ordinal": 12,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdmissionDate",
+      "Ordinal": 13,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "AdmitDiagnosisCode",
+      "Ordinal": 14,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimPaidDate",
+      "Ordinal": 15,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PayStatus",
+      "Ordinal": 16,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DischargeDate",
+      "Ordinal": 17,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "NetworkEligibilityIndicator",
+      "Ordinal": 18,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillingProviderID",
+      "Ordinal": 19,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillingProviderName",
+      "Ordinal": 20,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillingProviderNPI",
+      "Ordinal": 21,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProviderTaxonamy",
+      "Ordinal": 22,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RenderingProviderID",
+      "Ordinal": 23,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RenderingProviderNPI",
+      "Ordinal": 24,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode1",
+      "Ordinal": 25,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode2",
+      "Ordinal": 26,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode3",
+      "Ordinal": 27,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode4",
+      "Ordinal": 28,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode5",
+      "Ordinal": 29,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode6",
+      "Ordinal": 30,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode7",
+      "Ordinal": 31,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode8",
+      "Ordinal": 32,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode9",
+      "Ordinal": 33,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode10",
+      "Ordinal": 34,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode11",
+      "Ordinal": 35,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode12",
+      "Ordinal": 36,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode13",
+      "Ordinal": 37,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode14",
+      "Ordinal": 38,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DiagCode15",
+      "Ordinal": 39,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProcCode",
+      "Ordinal": 40,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BillType",
+      "Ordinal": 41,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "TypeOfService",
+      "Ordinal": 42,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PlaceOfService",
+      "Ordinal": 43,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MSDRG",
+      "Ordinal": 44,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "MSDRG2",
+      "Ordinal": 45,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "RevenueCode",
+      "Ordinal": 46,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProcMod1",
+      "Ordinal": 47,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProcMod2",
+      "Ordinal": 48,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProcMod3",
+      "Ordinal": 49,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ProcMod4",
+      "Ordinal": 50,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimChargeAmount",
+      "Ordinal": 51,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimAllowedAmount",
+      "Ordinal": 52,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimPaidAmount",
+      "Ordinal": 53,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ClaimCoinsuranceAmount",
+      "Ordinal": 54,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DeductibleAmount",
+      "Ordinal": 55,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CopayAmount",
+      "Ordinal": 56,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "COBAmount",
+      "Ordinal": 57,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "WithholdAmt",
+      "Ordinal": 58,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Quantity",
+      "Ordinal": 59,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "BenefitPlanID",
+      "Ordinal": 60,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ReferringProviderID",
+      "Ordinal": 61,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ReferringProviderNPI",
+      "Ordinal": 62,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "ReferringProviderTaxonomy",
+      "Ordinal": 63,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PlanBenefitPackage",
+      "Ordinal": 64,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "Product",
+      "Ordinal": 65,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "LengthOfStay",
+      "Ordinal": 66,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA1",
+      "Ordinal": 67,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA2",
+      "Ordinal": 68,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA3",
+      "Ordinal": 69,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA4",
+      "Ordinal": 70,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA5",
+      "Ordinal": 71,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA6",
+      "Ordinal": 72,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA7",
+      "Ordinal": 73,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA8",
+      "Ordinal": 74,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA9",
+      "Ordinal": 75,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA10",
+      "Ordinal": 76,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA11",
+      "Ordinal": 77,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA12",
+      "Ordinal": 78,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA13",
+      "Ordinal": 79,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA14",
+      "Ordinal": 80,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "POA15",
+      "Ordinal": 81,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "DischargeStatus",
+      "Ordinal": 82,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "CreateDate",
+      "Ordinal": 83,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "PayeeType",
+      "Ordinal": 84,
+      "DataType": "string"
+    },
+    {
+      "FieldName": "SourceFileName",
+      "Ordinal": 85,
+      "DataType": "string"
+    }
+  ]
+}

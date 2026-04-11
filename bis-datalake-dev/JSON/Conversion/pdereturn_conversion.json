@@ -1,0 +1,5343 @@
+{
+	"RecordTypes": [
+		{
+			"Type": "HDR",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "9",
+					"Length": "6",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "2",
+					"StartPos": "10",
+					"EndPos": "19",
+					"Length": "10",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "3",
+					"StartPos": "20",
+					"EndPos": "27",
+					"Length": "8",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "4",
+					"StartPos": "28",
+					"EndPos": "31",
+					"Length": "4",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "5",
+					"StartPos": "32",
+					"EndPos": "39",
+					"Length": "8",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "6",
+					"StartPos": "40",
+					"EndPos": "45",
+					"Length": "6",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "7",
+					"StartPos": "46",
+					"EndPos": "50",
+					"Length": "5",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "8",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "9",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "10",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "11",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "12",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderID",
+					"OrdinalPosition": "13",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "14",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "15",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "16",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "17",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "18",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "ProductServiceID",
+					"OrdinalPosition": "19",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "20",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderID",
+					"OrdinalPosition": "21",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "22",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "23",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "24",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "25",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "26",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "27",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberID",
+					"OrdinalPosition": "28",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "29",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "30",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "31",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "32",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "33",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "34",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "35",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "36",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "37",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "38",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "39",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "40",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "41",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "42",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "43",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "44",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "45",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "46",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "47",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "48",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "49",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "50",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "51",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "52",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "53",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "54",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "55",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "56",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "57",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "58",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "59",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "60",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "61",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "62",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "63",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "64",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "65",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "66",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "67",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderID",
+					"OrdinalPosition": "68",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "69",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "70",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "71",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "72",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "73",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "74",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "75",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "76",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "77",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "78",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "88"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "93"
+				}
+			]
+		},
+		{
+			"Type": "BHD",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "10",
+					"Length": "7",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "2",
+					"StartPos": "11",
+					"EndPos": "15",
+					"Length": "5",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "3",
+					"StartPos": "16",
+					"EndPos": "18",
+					"Length": "3",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "4",
+					"StartPos": "19",
+					"EndPos": "26",
+					"Length": "8",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "5",
+					"StartPos": "27",
+					"EndPos": "32",
+					"Length": "6",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "6",
+					"StartPos": "33",
+					"EndPos": "37",
+					"Length": "5",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "7",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "8",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "9",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "10",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "11",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "12",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderID",
+					"OrdinalPosition": "13",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "14",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "15",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "16",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "17",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "18",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "ProductServiceID",
+					"OrdinalPosition": "19",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "20",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderID",
+					"OrdinalPosition": "21",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "22",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "23",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "24",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "25",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "26",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "27",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberID",
+					"OrdinalPosition": "28",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "29",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "30",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "31",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "32",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "33",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "34",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "35",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "36",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "37",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "38",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "39",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "40",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "41",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "42",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "43",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "44",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "45",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "46",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "47",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "48",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "49",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "50",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "51",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "52",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "53",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "54",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "55",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "56",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "57",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "58",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "59",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "60",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "61",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "62",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "63",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "64",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "65",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "66",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "67",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderID",
+					"OrdinalPosition": "68",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "69",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "70",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "71",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "72",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "73",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "74",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "75",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "76",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "77",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "78",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "88"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "93"
+				}
+			]
+		},
+		{
+			"Type": "ACC",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "10",
+					"Length": "7",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "11",
+					"EndPos": "50",
+					"Length": "40",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "3",
+					"StartPos": "51",
+					"EndPos": "70",
+					"Length": "20",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderId",
+					"OrdinalPosition": "4",
+					"StartPos": "71",
+					"EndPos": "90",
+					"Length": "20",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "5",
+					"StartPos": "91",
+					"EndPos": "98",
+					"Length": "8",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "6",
+					"StartPos": "99",
+					"EndPos": "99",
+					"Length": "1",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "7",
+					"StartPos": "100",
+					"EndPos": "107",
+					"Length": "8",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "8",
+					"StartPos": "108",
+					"EndPos": "115",
+					"Length": "8",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "9",
+					"StartPos": "116",
+					"EndPos": "127",
+					"Length": "12",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "10",
+					"StartPos": "128",
+					"EndPos": "129",
+					"Length": "2",
+					"DestPos": "99999"
+				},
+				{
+					"FieldName": "ProductServiceId",
+					"OrdinalPosition": "11",
+					"StartPos": "130",
+					"EndPos": "148",
+					"Length": "19",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "12",
+					"StartPos": "149",
+					"EndPos": "150",
+					"Length": "2",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderId",
+					"OrdinalPosition": "13",
+					"StartPos": "151",
+					"EndPos": "165",
+					"Length": "15",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "Filler2",
+					"OrdinalPosition": "14",
+					"StartPos": "166",
+					"EndPos": "167",
+					"Length": "2",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "15",
+					"StartPos": "168",
+					"EndPos": "168",
+					"Length": "1",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "16",
+					"StartPos": "169",
+					"EndPos": "169",
+					"Length": "1",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "17",
+					"StartPos": "170",
+					"EndPos": "170",
+					"Length": "1",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "18",
+					"StartPos": "171",
+					"EndPos": "180",
+					"Length": "10",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "Filler3",
+					"OrdinalPosition": "19",
+					"StartPos": "181",
+					"EndPos": "182",
+					"Length": "2",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "20",
+					"StartPos": "183",
+					"EndPos": "185",
+					"Length": "3",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "21",
+					"StartPos": "186",
+					"EndPos": "187",
+					"Length": "2",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberId",
+					"OrdinalPosition": "22",
+					"StartPos": "188",
+					"EndPos": "202",
+					"Length": "15",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "23",
+					"StartPos": "203",
+					"EndPos": "203",
+					"Length": "1",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "24",
+					"StartPos": "204",
+					"EndPos": "204",
+					"Length": "1",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "25",
+					"StartPos": "205",
+					"EndPos": "205",
+					"Length": "1",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "26",
+					"StartPos": "206",
+					"EndPos": "206",
+					"Length": "1",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "27",
+					"StartPos": "207",
+					"EndPos": "207",
+					"Length": "1",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "28",
+					"StartPos": "208",
+					"EndPos": "215",
+					"Length": "8",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "29",
+					"StartPos": "216",
+					"EndPos": "223",
+					"Length": "8",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "30",
+					"StartPos": "224",
+					"EndPos": "231",
+					"Length": "8",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "31",
+					"StartPos": "232",
+					"EndPos": "239",
+					"Length": "8",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "32",
+					"StartPos": "240",
+					"EndPos": "247",
+					"Length": "8",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "33",
+					"StartPos": "248",
+					"EndPos": "255",
+					"Length": "8",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "34",
+					"StartPos": "256",
+					"EndPos": "263",
+					"Length": "8",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "35",
+					"StartPos": "264",
+					"EndPos": "271",
+					"Length": "8",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "36",
+					"StartPos": "272",
+					"EndPos": "279",
+					"Length": "8",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "37",
+					"StartPos": "280",
+					"EndPos": "287",
+					"Length": "8",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "38",
+					"StartPos": "288",
+					"EndPos": "295",
+					"Length": "8",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "39",
+					"StartPos": "296",
+					"EndPos": "303",
+					"Length": "8",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "40",
+					"StartPos": "304",
+					"EndPos": "311",
+					"Length": "8",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "41",
+					"StartPos": "312",
+					"EndPos": "312",
+					"Length": "1",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "42",
+					"StartPos": "313",
+					"EndPos": "320",
+					"Length": "8",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "43",
+					"StartPos": "321",
+					"EndPos": "346",
+					"Length": "26",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "44",
+					"StartPos": "347",
+					"EndPos": "355",
+					"Length": "9",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "45",
+					"StartPos": "356",
+					"EndPos": "363",
+					"Length": "8",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "46",
+					"StartPos": "364",
+					"EndPos": "364",
+					"Length": "1",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "47",
+					"StartPos": "365",
+					"EndPos": "365",
+					"Length": "1",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "48",
+					"StartPos": "366",
+					"EndPos": "366",
+					"Length": "1",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "49",
+					"StartPos": "367",
+					"EndPos": "374",
+					"Length": "8",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "50",
+					"StartPos": "375",
+					"EndPos": "375",
+					"Length": "1",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "51",
+					"StartPos": "376",
+					"EndPos": "376",
+					"Length": "1",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "52",
+					"StartPos": "377",
+					"EndPos": "377",
+					"Length": "1",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "53",
+					"StartPos": "378",
+					"EndPos": "379",
+					"Length": "2",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "54",
+					"StartPos": "380",
+					"EndPos": "381",
+					"Length": "2",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "55",
+					"StartPos": "382",
+					"EndPos": "383",
+					"Length": "2",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "56",
+					"StartPos": "384",
+					"EndPos": "384",
+					"Length": "1",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "57",
+					"StartPos": "385",
+					"EndPos": "396",
+					"Length": "12",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "58",
+					"StartPos": "397",
+					"EndPos": "397",
+					"Length": "1",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "Filler4",
+					"OrdinalPosition": "59",
+					"StartPos": "398",
+					"EndPos": "407",
+					"Length": "10",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "60",
+					"StartPos": "408",
+					"EndPos": "415",
+					"Length": "8",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "61",
+					"StartPos": "416",
+					"EndPos": "418",
+					"Length": "3",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "62",
+					"StartPos": "419",
+					"EndPos": "420",
+					"Length": "2",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderId",
+					"OrdinalPosition": "63",
+					"StartPos": "421",
+					"EndPos": "435",
+					"Length": "15",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "64",
+					"StartPos": "436",
+					"EndPos": "440",
+					"Length": "5",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "65",
+					"StartPos": "441",
+					"EndPos": "445",
+					"Length": "5",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "66",
+					"StartPos": "446",
+					"EndPos": "465",
+					"Length": "20",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "67",
+					"StartPos": "466",
+					"EndPos": "467",
+					"Length": "2",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "68",
+					"StartPos": "468",
+					"EndPos": "470",
+					"Length": "3",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "69",
+					"StartPos": "471",
+					"EndPos": "473",
+					"Length": "3",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "70",
+					"StartPos": "474",
+					"EndPos": "476",
+					"Length": "3",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "71",
+					"StartPos": "477",
+					"EndPos": "479",
+					"Length": "3",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "72",
+					"StartPos": "480",
+					"EndPos": "482",
+					"Length": "3",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "73",
+					"StartPos": "483",
+					"EndPos": "485",
+					"Length": "3",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "74",
+					"StartPos": "486",
+					"EndPos": "488",
+					"Length": "3",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "75",
+					"StartPos": "489",
+					"EndPos": "491",
+					"Length": "3",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "76",
+					"StartPos": "492",
+					"EndPos": "494",
+					"Length": "3",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "77",
+					"StartPos": "495",
+					"EndPos": "497",
+					"Length": "3",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "78",
+					"StartPos": "498",
+					"EndPos": "500",
+					"Length": "3",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "88"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "93",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "94",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "95",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "96",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "93"
+				}
+			]
+		},
+		{
+			"Type": "REJ",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "10",
+					"Length": "7",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "11",
+					"EndPos": "50",
+					"Length": "40",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "3",
+					"StartPos": "51",
+					"EndPos": "70",
+					"Length": "20",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderId",
+					"OrdinalPosition": "4",
+					"StartPos": "71",
+					"EndPos": "90",
+					"Length": "20",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "5",
+					"StartPos": "91",
+					"EndPos": "98",
+					"Length": "8",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "6",
+					"StartPos": "99",
+					"EndPos": "99",
+					"Length": "1",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "7",
+					"StartPos": "100",
+					"EndPos": "107",
+					"Length": "8",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "8",
+					"StartPos": "108",
+					"EndPos": "115",
+					"Length": "8",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "9",
+					"StartPos": "116",
+					"EndPos": "127",
+					"Length": "12",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "10",
+					"StartPos": "128",
+					"EndPos": "129",
+					"Length": "2",
+					"DestPos": "99999"
+				},
+				{
+					"FieldName": "ProductServiceId",
+					"OrdinalPosition": "11",
+					"StartPos": "130",
+					"EndPos": "148",
+					"Length": "19",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "12",
+					"StartPos": "149",
+					"EndPos": "150",
+					"Length": "2",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderId",
+					"OrdinalPosition": "13",
+					"StartPos": "151",
+					"EndPos": "165",
+					"Length": "15",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "Filler2",
+					"OrdinalPosition": "14",
+					"StartPos": "166",
+					"EndPos": "167",
+					"Length": "2",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "15",
+					"StartPos": "168",
+					"EndPos": "168",
+					"Length": "1",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "16",
+					"StartPos": "169",
+					"EndPos": "169",
+					"Length": "1",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "17",
+					"StartPos": "170",
+					"EndPos": "170",
+					"Length": "1",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "18",
+					"StartPos": "171",
+					"EndPos": "180",
+					"Length": "10",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "Filler3",
+					"OrdinalPosition": "19",
+					"StartPos": "181",
+					"EndPos": "182",
+					"Length": "2",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "20",
+					"StartPos": "183",
+					"EndPos": "185",
+					"Length": "3",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "21",
+					"StartPos": "186",
+					"EndPos": "187",
+					"Length": "2",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberId",
+					"OrdinalPosition": "22",
+					"StartPos": "188",
+					"EndPos": "202",
+					"Length": "15",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "23",
+					"StartPos": "203",
+					"EndPos": "203",
+					"Length": "1",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "24",
+					"StartPos": "204",
+					"EndPos": "204",
+					"Length": "1",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "25",
+					"StartPos": "205",
+					"EndPos": "205",
+					"Length": "1",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "26",
+					"StartPos": "206",
+					"EndPos": "206",
+					"Length": "1",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "27",
+					"StartPos": "207",
+					"EndPos": "207",
+					"Length": "1",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "28",
+					"StartPos": "208",
+					"EndPos": "215",
+					"Length": "8",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "29",
+					"StartPos": "216",
+					"EndPos": "223",
+					"Length": "8",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "30",
+					"StartPos": "224",
+					"EndPos": "231",
+					"Length": "8",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "31",
+					"StartPos": "232",
+					"EndPos": "239",
+					"Length": "8",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "32",
+					"StartPos": "240",
+					"EndPos": "247",
+					"Length": "8",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "33",
+					"StartPos": "248",
+					"EndPos": "255",
+					"Length": "8",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "34",
+					"StartPos": "256",
+					"EndPos": "263",
+					"Length": "8",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "35",
+					"StartPos": "264",
+					"EndPos": "271",
+					"Length": "8",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "36",
+					"StartPos": "272",
+					"EndPos": "279",
+					"Length": "8",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "37",
+					"StartPos": "280",
+					"EndPos": "287",
+					"Length": "8",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "38",
+					"StartPos": "288",
+					"EndPos": "295",
+					"Length": "8",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "39",
+					"StartPos": "296",
+					"EndPos": "303",
+					"Length": "8",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "40",
+					"StartPos": "304",
+					"EndPos": "311",
+					"Length": "8",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "41",
+					"StartPos": "312",
+					"EndPos": "312",
+					"Length": "1",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "42",
+					"StartPos": "313",
+					"EndPos": "320",
+					"Length": "8",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "43",
+					"StartPos": "321",
+					"EndPos": "346",
+					"Length": "26",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "44",
+					"StartPos": "347",
+					"EndPos": "355",
+					"Length": "9",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "45",
+					"StartPos": "356",
+					"EndPos": "363",
+					"Length": "8",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "46",
+					"StartPos": "364",
+					"EndPos": "364",
+					"Length": "1",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "47",
+					"StartPos": "365",
+					"EndPos": "365",
+					"Length": "1",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "48",
+					"StartPos": "366",
+					"EndPos": "366",
+					"Length": "1",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "49",
+					"StartPos": "367",
+					"EndPos": "374",
+					"Length": "8",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "50",
+					"StartPos": "375",
+					"EndPos": "375",
+					"Length": "1",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "51",
+					"StartPos": "376",
+					"EndPos": "376",
+					"Length": "1",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "52",
+					"StartPos": "377",
+					"EndPos": "377",
+					"Length": "1",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "53",
+					"StartPos": "378",
+					"EndPos": "379",
+					"Length": "2",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "54",
+					"StartPos": "380",
+					"EndPos": "381",
+					"Length": "2",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "55",
+					"StartPos": "382",
+					"EndPos": "383",
+					"Length": "2",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "56",
+					"StartPos": "384",
+					"EndPos": "384",
+					"Length": "1",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "57",
+					"StartPos": "385",
+					"EndPos": "396",
+					"Length": "12",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "58",
+					"StartPos": "397",
+					"EndPos": "397",
+					"Length": "1",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "Filler4",
+					"OrdinalPosition": "59",
+					"StartPos": "398",
+					"EndPos": "407",
+					"Length": "10",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "60",
+					"StartPos": "408",
+					"EndPos": "415",
+					"Length": "8",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "61",
+					"StartPos": "416",
+					"EndPos": "418",
+					"Length": "3",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "62",
+					"StartPos": "419",
+					"EndPos": "420",
+					"Length": "2",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderId",
+					"OrdinalPosition": "63",
+					"StartPos": "421",
+					"EndPos": "435",
+					"Length": "15",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "64",
+					"StartPos": "436",
+					"EndPos": "440",
+					"Length": "5",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "65",
+					"StartPos": "441",
+					"EndPos": "445",
+					"Length": "5",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "66",
+					"StartPos": "446",
+					"EndPos": "465",
+					"Length": "20",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "67",
+					"StartPos": "466",
+					"EndPos": "467",
+					"Length": "2",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "68",
+					"StartPos": "468",
+					"EndPos": "470",
+					"Length": "3",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "69",
+					"StartPos": "471",
+					"EndPos": "473",
+					"Length": "3",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "70",
+					"StartPos": "474",
+					"EndPos": "476",
+					"Length": "3",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "71",
+					"StartPos": "477",
+					"EndPos": "479",
+					"Length": "3",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "72",
+					"StartPos": "480",
+					"EndPos": "482",
+					"Length": "3",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "73",
+					"StartPos": "483",
+					"EndPos": "485",
+					"Length": "3",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "74",
+					"StartPos": "486",
+					"EndPos": "488",
+					"Length": "3",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "75",
+					"StartPos": "489",
+					"EndPos": "491",
+					"Length": "3",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "76",
+					"StartPos": "492",
+					"EndPos": "494",
+					"Length": "3",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "77",
+					"StartPos": "495",
+					"EndPos": "497",
+					"Length": "3",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "78",
+					"StartPos": "498",
+					"EndPos": "500",
+					"Length": "3",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "88"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "93",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "94",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "95",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "96",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "93"
+				}
+			]
+		},
+		{
+			"Type": "INF",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "10",
+					"Length": "7",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "11",
+					"EndPos": "50",
+					"Length": "40",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "3",
+					"StartPos": "51",
+					"EndPos": "70",
+					"Length": "20",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderId",
+					"OrdinalPosition": "4",
+					"StartPos": "71",
+					"EndPos": "90",
+					"Length": "20",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "5",
+					"StartPos": "91",
+					"EndPos": "98",
+					"Length": "8",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "6",
+					"StartPos": "99",
+					"EndPos": "99",
+					"Length": "1",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "7",
+					"StartPos": "100",
+					"EndPos": "107",
+					"Length": "8",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "8",
+					"StartPos": "108",
+					"EndPos": "115",
+					"Length": "8",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "9",
+					"StartPos": "116",
+					"EndPos": "127",
+					"Length": "12",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "10",
+					"StartPos": "128",
+					"EndPos": "129",
+					"Length": "2",
+					"DestPos": "99999"
+				},
+				{
+					"FieldName": "ProductServiceId",
+					"OrdinalPosition": "11",
+					"StartPos": "130",
+					"EndPos": "148",
+					"Length": "19",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "12",
+					"StartPos": "149",
+					"EndPos": "150",
+					"Length": "2",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderId",
+					"OrdinalPosition": "13",
+					"StartPos": "151",
+					"EndPos": "165",
+					"Length": "15",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "Filler2",
+					"OrdinalPosition": "14",
+					"StartPos": "166",
+					"EndPos": "167",
+					"Length": "2",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "15",
+					"StartPos": "168",
+					"EndPos": "168",
+					"Length": "1",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "16",
+					"StartPos": "169",
+					"EndPos": "169",
+					"Length": "1",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "17",
+					"StartPos": "170",
+					"EndPos": "170",
+					"Length": "1",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "18",
+					"StartPos": "171",
+					"EndPos": "180",
+					"Length": "10",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "Filler3",
+					"OrdinalPosition": "19",
+					"StartPos": "181",
+					"EndPos": "182",
+					"Length": "2",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "20",
+					"StartPos": "183",
+					"EndPos": "185",
+					"Length": "3",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "21",
+					"StartPos": "186",
+					"EndPos": "187",
+					"Length": "2",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberId",
+					"OrdinalPosition": "22",
+					"StartPos": "188",
+					"EndPos": "202",
+					"Length": "15",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "23",
+					"StartPos": "203",
+					"EndPos": "203",
+					"Length": "1",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "24",
+					"StartPos": "204",
+					"EndPos": "204",
+					"Length": "1",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "25",
+					"StartPos": "205",
+					"EndPos": "205",
+					"Length": "1",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "26",
+					"StartPos": "206",
+					"EndPos": "206",
+					"Length": "1",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "27",
+					"StartPos": "207",
+					"EndPos": "207",
+					"Length": "1",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "28",
+					"StartPos": "208",
+					"EndPos": "215",
+					"Length": "8",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "29",
+					"StartPos": "216",
+					"EndPos": "223",
+					"Length": "8",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "30",
+					"StartPos": "224",
+					"EndPos": "231",
+					"Length": "8",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "31",
+					"StartPos": "232",
+					"EndPos": "239",
+					"Length": "8",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "32",
+					"StartPos": "240",
+					"EndPos": "247",
+					"Length": "8",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "33",
+					"StartPos": "248",
+					"EndPos": "255",
+					"Length": "8",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "34",
+					"StartPos": "256",
+					"EndPos": "263",
+					"Length": "8",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "35",
+					"StartPos": "264",
+					"EndPos": "271",
+					"Length": "8",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "36",
+					"StartPos": "272",
+					"EndPos": "279",
+					"Length": "8",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "37",
+					"StartPos": "280",
+					"EndPos": "287",
+					"Length": "8",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "38",
+					"StartPos": "288",
+					"EndPos": "295",
+					"Length": "8",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "39",
+					"StartPos": "296",
+					"EndPos": "303",
+					"Length": "8",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "40",
+					"StartPos": "304",
+					"EndPos": "311",
+					"Length": "8",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "41",
+					"StartPos": "312",
+					"EndPos": "312",
+					"Length": "1",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "42",
+					"StartPos": "313",
+					"EndPos": "320",
+					"Length": "8",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "43",
+					"StartPos": "321",
+					"EndPos": "346",
+					"Length": "26",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "44",
+					"StartPos": "347",
+					"EndPos": "355",
+					"Length": "9",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "45",
+					"StartPos": "356",
+					"EndPos": "363",
+					"Length": "8",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "46",
+					"StartPos": "364",
+					"EndPos": "364",
+					"Length": "1",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "47",
+					"StartPos": "365",
+					"EndPos": "365",
+					"Length": "1",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "48",
+					"StartPos": "366",
+					"EndPos": "366",
+					"Length": "1",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "49",
+					"StartPos": "367",
+					"EndPos": "374",
+					"Length": "8",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "50",
+					"StartPos": "375",
+					"EndPos": "375",
+					"Length": "1",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "51",
+					"StartPos": "376",
+					"EndPos": "376",
+					"Length": "1",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "52",
+					"StartPos": "377",
+					"EndPos": "377",
+					"Length": "1",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "53",
+					"StartPos": "378",
+					"EndPos": "379",
+					"Length": "2",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "54",
+					"StartPos": "380",
+					"EndPos": "381",
+					"Length": "2",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "55",
+					"StartPos": "382",
+					"EndPos": "383",
+					"Length": "2",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "56",
+					"StartPos": "384",
+					"EndPos": "384",
+					"Length": "1",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "57",
+					"StartPos": "385",
+					"EndPos": "396",
+					"Length": "12",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "58",
+					"StartPos": "397",
+					"EndPos": "397",
+					"Length": "1",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "Filler4",
+					"OrdinalPosition": "59",
+					"StartPos": "398",
+					"EndPos": "407",
+					"Length": "10",
+					"DestPos": "9999"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "60",
+					"StartPos": "408",
+					"EndPos": "415",
+					"Length": "8",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "61",
+					"StartPos": "416",
+					"EndPos": "418",
+					"Length": "3",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "62",
+					"StartPos": "419",
+					"EndPos": "420",
+					"Length": "2",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderId",
+					"OrdinalPosition": "63",
+					"StartPos": "421",
+					"EndPos": "435",
+					"Length": "15",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "64",
+					"StartPos": "436",
+					"EndPos": "440",
+					"Length": "5",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "65",
+					"StartPos": "441",
+					"EndPos": "445",
+					"Length": "5",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "66",
+					"StartPos": "446",
+					"EndPos": "465",
+					"Length": "20",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "67",
+					"StartPos": "466",
+					"EndPos": "467",
+					"Length": "2",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "68",
+					"StartPos": "468",
+					"EndPos": "470",
+					"Length": "3",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "69",
+					"StartPos": "471",
+					"EndPos": "473",
+					"Length": "3",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "70",
+					"StartPos": "474",
+					"EndPos": "476",
+					"Length": "3",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "71",
+					"StartPos": "477",
+					"EndPos": "479",
+					"Length": "3",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "72",
+					"StartPos": "480",
+					"EndPos": "482",
+					"Length": "3",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "73",
+					"StartPos": "483",
+					"EndPos": "485",
+					"Length": "3",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "74",
+					"StartPos": "486",
+					"EndPos": "488",
+					"Length": "3",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "75",
+					"StartPos": "489",
+					"EndPos": "491",
+					"Length": "3",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "76",
+					"StartPos": "492",
+					"EndPos": "494",
+					"Length": "3",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "77",
+					"StartPos": "495",
+					"EndPos": "497",
+					"Length": "3",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "78",
+					"StartPos": "498",
+					"EndPos": "500",
+					"Length": "3",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "88"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "93",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "94",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "95",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "96",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "93"
+				}
+			]
+		},
+		{
+			"Type": "BTR",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "10",
+					"Length": "7",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "2",
+					"StartPos": "11",
+					"EndPos": "15",
+					"Length": "5",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "3",
+					"StartPos": "16",
+					"EndPos": "18",
+					"Length": "3",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "4",
+					"StartPos": "19",
+					"EndPos": "25",
+					"Length": "7",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "5",
+					"StartPos": "26",
+					"EndPos": "32",
+					"Length": "7",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "6",
+					"StartPos": "33",
+					"EndPos": "39",
+					"Length": "7",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "7",
+					"StartPos": "40",
+					"EndPos": "46",
+					"Length": "7",
+					"DestPos": "88"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "8",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "9",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "10",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "11",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "12",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "13",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "14",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "15",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "16",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderID",
+					"OrdinalPosition": "17",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "18",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "19",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "20",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "21",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "22",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "ProductServiceID",
+					"OrdinalPosition": "23",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "24",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderID",
+					"OrdinalPosition": "25",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "26",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "27",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "28",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "29",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "30",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "31",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberID",
+					"OrdinalPosition": "32",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "33",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "34",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "35",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "36",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "37",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "38",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "39",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "40",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "41",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "42",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "43",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "44",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "45",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "46",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "47",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "48",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "49",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "50",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "51",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "52",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "53",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "54",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "55",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "56",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "57",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "58",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "59",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "60",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "61",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "62",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "63",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "64",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "65",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "66",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "67",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "68",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "69",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "70",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "71",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderID",
+					"OrdinalPosition": "72",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "73",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "74",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "75",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "76",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "77",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "78",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "93"
+				}
+			]
+		},
+		{
+			"Type": "TLR",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "0",
+					"StartPos": "1",
+					"EndPos": "3",
+					"Length": "3",
+					"DestPos": "1"
+				},
+				{
+					"FieldName": "SubmitterID",
+					"OrdinalPosition": "1",
+					"StartPos": "4",
+					"EndPos": "9",
+					"Length": "6",
+					"DestPos": "2"
+				},
+				{
+					"FieldName": "FileID",
+					"OrdinalPosition": "2",
+					"StartPos": "10",
+					"EndPos": "19",
+					"Length": "10",
+					"DestPos": "3"
+				},
+				{
+					"FieldName": "TlrBhdRecordTotal",
+					"OrdinalPosition": "3",
+					"StartPos": "20",
+					"EndPos": "28",
+					"Length": "9",
+					"DestPos": "89"
+				},
+				{
+					"FieldName": "TlrDetRecordTotal",
+					"OrdinalPosition": "4",
+					"StartPos": "29",
+					"EndPos": "37",
+					"Length": "9",
+					"DestPos": "90"
+				},
+				{
+					"FieldName": "TlrDetAcceptedRecordTotal",
+					"OrdinalPosition": "5",
+					"StartPos": "38",
+					"EndPos": "46",
+					"Length": "9",
+					"DestPos": "91"
+				},
+				{
+					"FieldName": "TlrDetInformationalRecordTotal",
+					"OrdinalPosition": "6",
+					"StartPos": "47",
+					"EndPos": "55",
+					"Length": "9",
+					"DestPos": "92"
+				},
+				{
+					"FieldName": "TlrDetRejectedRecordTotal",
+					"OrdinalPosition": "7",
+					"StartPos": "56",
+					"EndPos": "64",
+					"Length": "9",
+					"DestPos": "93"
+				},
+				{
+					"FieldName": "TransDate",
+					"OrdinalPosition": "8",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "4"
+				},
+				{
+					"FieldName": "ProdTestCertInd",
+					"OrdinalPosition": "9",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "5"
+				},
+				{
+					"FieldName": "DDPSSystemDate",
+					"OrdinalPosition": "10",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "6"
+				},
+				{
+					"FieldName": "DDPSSystemTime",
+					"OrdinalPosition": "11",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "7"
+				},
+				{
+					"FieldName": "DDPSReportID",
+					"OrdinalPosition": "12",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "8"
+				},
+				{
+					"FieldName": "SequenceNo",
+					"OrdinalPosition": "13",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "9"
+				},
+				{
+					"FieldName": "ContractNo",
+					"OrdinalPosition": "14",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "10"
+				},
+				{
+					"FieldName": "PBPID",
+					"OrdinalPosition": "15",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "11"
+				},
+				{
+					"FieldName": "ClaimControlNumber",
+					"OrdinalPosition": "16",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "12"
+				},
+				{
+					"FieldName": "MedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "17",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "13"
+				},
+				{
+					"FieldName": "CardholderID",
+					"OrdinalPosition": "18",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "14"
+				},
+				{
+					"FieldName": "PatientDateOfBirth",
+					"OrdinalPosition": "19",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "15"
+				},
+				{
+					"FieldName": "PatientGenderCode",
+					"OrdinalPosition": "20",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "16"
+				},
+				{
+					"FieldName": "DateOfService",
+					"OrdinalPosition": "21",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "17"
+				},
+				{
+					"FieldName": "PaidDate",
+					"OrdinalPosition": "22",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "18"
+				},
+				{
+					"FieldName": "PrescriptionServiceReferenceNo",
+					"OrdinalPosition": "23",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "19"
+				},
+				{
+					"FieldName": "ProductServiceID",
+					"OrdinalPosition": "24",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "20"
+				},
+				{
+					"FieldName": "ServiceProviderIdQualifier",
+					"OrdinalPosition": "25",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "21"
+				},
+				{
+					"FieldName": "ServiceProviderID",
+					"OrdinalPosition": "26",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "22"
+				},
+				{
+					"FieldName": "DispensingStatus",
+					"OrdinalPosition": "27",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "23"
+				},
+				{
+					"FieldName": "CompoundCode",
+					"OrdinalPosition": "28",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "24"
+				},
+				{
+					"FieldName": "DispenseAsWrittenProductSelectionCode",
+					"OrdinalPosition": "29",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "25"
+				},
+				{
+					"FieldName": "QuantityDispensed",
+					"OrdinalPosition": "30",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "26"
+				},
+				{
+					"FieldName": "DaysSupply",
+					"OrdinalPosition": "31",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "27"
+				},
+				{
+					"FieldName": "PrescriberIdQualifier",
+					"OrdinalPosition": "32",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "28"
+				},
+				{
+					"FieldName": "PrescriberID",
+					"OrdinalPosition": "33",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "29"
+				},
+				{
+					"FieldName": "DrugCoverageStatusCode",
+					"OrdinalPosition": "34",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "30"
+				},
+				{
+					"FieldName": "AdjustmentDeletionCode",
+					"OrdinalPosition": "35",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "31"
+				},
+				{
+					"FieldName": "NoNStandardFormatCode",
+					"OrdinalPosition": "36",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "32"
+				},
+				{
+					"FieldName": "PricingExceptionCode",
+					"OrdinalPosition": "37",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "33"
+				},
+				{
+					"FieldName": "CatastrophicCoverageCode",
+					"OrdinalPosition": "38",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "34"
+				},
+				{
+					"FieldName": "IngredientCostPaid",
+					"OrdinalPosition": "39",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "35"
+				},
+				{
+					"FieldName": "DispensingFeePaid",
+					"OrdinalPosition": "40",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "36"
+				},
+				{
+					"FieldName": "TotalAmountAttributedToSalesTax",
+					"OrdinalPosition": "41",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "37"
+				},
+				{
+					"FieldName": "GrossDrugCostBelowOutOfPocketThreshold",
+					"OrdinalPosition": "42",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "38"
+				},
+				{
+					"FieldName": "GrossDrugCostAboveOutOfPocketThreshold ",
+					"OrdinalPosition": "43",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "39"
+				},
+				{
+					"FieldName": "PatientPayAmount",
+					"OrdinalPosition": "44",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "40"
+				},
+				{
+					"FieldName": "OtherTroopAmount",
+					"OrdinalPosition": "45",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "41"
+				},
+				{
+					"FieldName": "LowIncomeCostSharingSubsidyamount",
+					"OrdinalPosition": "46",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "42"
+				},
+				{
+					"FieldName": "PatientLiabilityReductionDueToOtherPayerAmount ",
+					"OrdinalPosition": "47",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "43"
+				},
+				{
+					"FieldName": "CoveredDPlanPaidAmount",
+					"OrdinalPosition": "48",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "44"
+				},
+				{
+					"FieldName": "NonCoveredPlanPaidAmount",
+					"OrdinalPosition": "49",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "45"
+				},
+				{
+					"FieldName": "EstimatedRebateAtPos",
+					"OrdinalPosition": "50",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "46"
+				},
+				{
+					"FieldName": "VaccineAdministrationFee",
+					"OrdinalPosition": "51",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "47"
+				},
+				{
+					"FieldName": "PrescriptionOriginCode",
+					"OrdinalPosition": "52",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "48"
+				},
+				{
+					"FieldName": "DateOriginalClaimReceived",
+					"OrdinalPosition": "53",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "49"
+				},
+				{
+					"FieldName": "ClaimAdjudicationBeganTimestamp",
+					"OrdinalPosition": "54",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "50"
+				},
+				{
+					"FieldName": "TotalGrossCoveredDrugCostAccumulator",
+					"OrdinalPosition": "55",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "51"
+				},
+				{
+					"FieldName": "TrueOutOfPocketAccumulator",
+					"OrdinalPosition": "56",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "52"
+				},
+				{
+					"FieldName": "BrandGenericCode",
+					"OrdinalPosition": "57",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "53"
+				},
+				{
+					"FieldName": "BeginningBenefitPhase",
+					"OrdinalPosition": "58",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "54"
+				},
+				{
+					"FieldName": "EndingBenefitPhase",
+					"OrdinalPosition": "59",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "55"
+				},
+				{
+					"FieldName": "ReportedGapDiscount",
+					"OrdinalPosition": "60",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "56"
+				},
+				{
+					"FieldName": "Tier",
+					"OrdinalPosition": "61",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "57"
+				},
+				{
+					"FieldName": "FormularyCode",
+					"OrdinalPosition": "62",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "58"
+				},
+				{
+					"FieldName": "OapIndicator",
+					"OrdinalPosition": "63",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "59"
+				},
+				{
+					"FieldName": "PharmacyServiceType",
+					"OrdinalPosition": "64",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "60"
+				},
+				{
+					"FieldName": "PatientResidence",
+					"OrdinalPosition": "65",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "61"
+				},
+				{
+					"FieldName": "SubmissionClarificationCode",
+					"OrdinalPosition": "66",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "62"
+				},
+				{
+					"FieldName": "AdjustmentReasonCodeQualifier",
+					"OrdinalPosition": "67",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "63"
+				},
+				{
+					"FieldName": "AdjustmentReasonCode",
+					"OrdinalPosition": "68",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "64"
+				},
+				{
+					"FieldName": "TypeOfFillCode",
+					"OrdinalPosition": "69",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "65"
+				},
+				{
+					"FieldName": "CMSCalculatedGapDiscount",
+					"OrdinalPosition": "70",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "66"
+				},
+				{
+					"FieldName": "PBPOfRecord",
+					"OrdinalPosition": "71",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "67"
+				},
+				{
+					"FieldName": "AlternateServiceProviderIdQualifier",
+					"OrdinalPosition": "72",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "68"
+				},
+				{
+					"FieldName": "AlternateServiceProviderID",
+					"OrdinalPosition": "73",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "69"
+				},
+				{
+					"FieldName": "OriginalSubmittingContract",
+					"OrdinalPosition": "74",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "70"
+				},
+				{
+					"FieldName": "P2PContractOfRecord",
+					"OrdinalPosition": "75",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "71"
+				},
+				{
+					"FieldName": "CorrectedMedicareBeneficiaryIdentifier",
+					"OrdinalPosition": "76",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "72"
+				},
+				{
+					"FieldName": "ErrorCount",
+					"OrdinalPosition": "77",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "73"
+				},
+				{
+					"FieldName": "Error1",
+					"OrdinalPosition": "78",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "74"
+				},
+				{
+					"FieldName": "Error2",
+					"OrdinalPosition": "79",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "75"
+				},
+				{
+					"FieldName": "Error3",
+					"OrdinalPosition": "80",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "76"
+				},
+				{
+					"FieldName": "Error4 ",
+					"OrdinalPosition": "81",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "77"
+				},
+				{
+					"FieldName": "Error5",
+					"OrdinalPosition": "82",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "78"
+				},
+				{
+					"FieldName": "Error6",
+					"OrdinalPosition": "83",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "79"
+				},
+				{
+					"FieldName": "Error7",
+					"OrdinalPosition": "84",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "80"
+				},
+				{
+					"FieldName": "Error8",
+					"OrdinalPosition": "85",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "81"
+				},
+				{
+					"FieldName": "Error9",
+					"OrdinalPosition": "86",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "82"
+				},
+				{
+					"FieldName": "Error10",
+					"OrdinalPosition": "87",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "83"
+				},
+				{
+					"FieldName": "ExclusionReasonCode",
+					"OrdinalPosition": "88",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "84"
+				},
+				{
+					"FieldName": "DetRecordTotal",
+					"OrdinalPosition": "89",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "85"
+				},
+				{
+					"FieldName": "DetAcceptedRecordTotal",
+					"OrdinalPosition": "90",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "86"
+				},
+				{
+					"FieldName": "DetInformationalRecordTotal",
+					"OrdinalPosition": "91",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "87"
+				},
+				{
+					"FieldName": "DetRejectedRecordTotal",
+					"OrdinalPosition": "92",
+					"StartPos": "0",
+					"EndPos": "0",
+					"Length": "0",
+					"DestPos": "88"
+				}
+			]
+		}
+	]
+}

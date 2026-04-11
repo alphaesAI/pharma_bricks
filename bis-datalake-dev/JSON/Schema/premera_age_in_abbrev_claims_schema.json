@@ -1,0 +1,715 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MemberNumber",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BeneficiaryID",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "RenderingProviderID",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimNumber",
+			"OrdinalPosition": 5,
+			"DataType": "integer",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimLineNumber",
+			"OrdinalPosition": 6,
+			"DataType": "integer",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "OriginalClaimNumber",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProductID",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimReceivedDate",
+			"OrdinalPosition": 9,
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyy-MM-dd"
+				}
+			]
+		},
+		{
+			"FieldName": "PrimaryServiceFrom",
+			"OrdinalPosition": 10,
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyy-MM-dd"
+				}
+			]
+		},
+		{
+			"FieldName": "PrimaryServiceThu",
+			"OrdinalPosition": 11,
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyy-MM-dd"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimProcessDate",
+			"OrdinalPosition": 12,
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyy-MM-dd"
+				}
+			]
+		},
+		{
+			"FieldName": "DetailServiceDate",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlaceOfService",
+			"OrdinalPosition": 14,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PaidDate",
+			"OrdinalPosition": 15,
+			"DataType": "date"
+		},
+		{
+			"FieldName": "PaidAmount",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PayStatus",
+			"OrdinalPosition": 17,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"P",
+						"D",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "HCPCSCode",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCPCSModifier",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTCode",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTModifier1",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTModifier2",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CVX",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},		
+		{
+			"FieldName": "ClaimType",
+			"OrdinalPosition": 24,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"P",
+						"I",
+						"O"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "AdmitDiagnosisCode",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE1",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_1",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE2",
+			"OrdinalPosition": 28,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_2",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE3",
+			"OrdinalPosition": 30,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_3",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE4",
+			"OrdinalPosition": 32,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_4",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE5",
+			"OrdinalPosition": 34,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_5",
+			"OrdinalPosition": 35,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE6",
+			"OrdinalPosition": 36,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_6",
+			"OrdinalPosition": 37,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE7",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_7",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE8",
+			"OrdinalPosition": 40,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_8",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE9",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_9",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE10",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_10",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE11",
+			"OrdinalPosition": 46,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_11",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE12",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_12",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE13",
+			"OrdinalPosition": 50,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_13",
+			"OrdinalPosition": 51,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE14",
+			"OrdinalPosition": 52,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_14",
+			"OrdinalPosition": 53,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE15",
+			"OrdinalPosition": 54,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_15",
+			"OrdinalPosition": 55,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE16",
+			"OrdinalPosition": 56,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_16",
+			"OrdinalPosition": 57,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE17",
+			"OrdinalPosition": 58,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_17",
+			"OrdinalPosition": 59,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE18",
+			"OrdinalPosition": 60,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_18",
+			"OrdinalPosition": 61,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE19",
+			"OrdinalPosition": 62,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_19",
+			"OrdinalPosition": 63,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE20",
+			"OrdinalPosition": 64,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_20",
+			"OrdinalPosition": 65,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE21",
+			"OrdinalPosition": 66,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_21",
+			"OrdinalPosition": 67,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE22",
+			"OrdinalPosition": 68,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_22",
+			"OrdinalPosition": 69,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE23",
+			"OrdinalPosition": 70,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_23",
+			"OrdinalPosition": 71,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE24",
+			"OrdinalPosition": 72,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_24",
+			"OrdinalPosition": 73,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE25",
+			"OrdinalPosition": 74,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_25",
+			"OrdinalPosition": 75,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE26",
+			"OrdinalPosition": 76,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_26",
+			"OrdinalPosition": 77,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE27",
+			"OrdinalPosition": 78,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_27",
+			"OrdinalPosition": 79,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE28",
+			"OrdinalPosition": 80,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_28",
+			"OrdinalPosition": 81,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE29",
+			"OrdinalPosition": 82,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_29",
+			"OrdinalPosition": 83,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE30",
+			"OrdinalPosition": 84,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_30",
+			"OrdinalPosition": 85,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE31",
+			"OrdinalPosition": 86,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_31",
+			"OrdinalPosition": 87,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE32",
+			"OrdinalPosition": 88,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_32",
+			"OrdinalPosition": 89,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE33",
+			"OrdinalPosition": 90,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_33",
+			"OrdinalPosition": 91,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE34",
+			"OrdinalPosition": 92,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_34",
+			"OrdinalPosition": 93,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE35",
+			"OrdinalPosition": 94,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_35",
+			"OrdinalPosition": 95,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE36",
+			"OrdinalPosition": 96,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_36",
+			"OrdinalPosition": 97,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE37",
+			"OrdinalPosition": 98,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_37",
+			"OrdinalPosition": 99,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICD9_10_CODE38",
+			"OrdinalPosition": 100,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Procedure_38",
+			"OrdinalPosition": 101,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PCPIndicator",
+			"OrdinalPosition": 102,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RenderingProviderTIN",
+			"OrdinalPosition": 103,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SpecialtyCode",
+			"OrdinalPosition": 104,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RevenueCode",
+			"OrdinalPosition": 105,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DaysDenied",
+			"OrdinalPosition": 106,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RoomBoardFlag",
+			"OrdinalPosition": 107,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RRUUnitsOfService",
+			"OrdinalPosition": 108,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MajorSurgery",
+			"OrdinalPosition": 109,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LocationID",
+			"OrdinalPosition": 110,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisType",
+			"OrdinalPosition": 111,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimStatus",
+			"OrdinalPosition": 112,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "BillType",
+			"OrdinalPosition": 113,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MSDRG",
+			"OrdinalPosition": 114,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MSDRG2",
+			"OrdinalPosition": 115,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DischargeStatusCode",
+			"OrdinalPosition": 116,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimSourceIndicator",
+			"OrdinalPosition": 117,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EyeExamResult",
+			"OrdinalPosition": 118,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SourceName",
+			"OrdinalPosition": 119,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) + 1 from data_file",
+			"control_file_query": "select _c7 from control_file"
+		},
+		{
+			"Name": "VerifyTotalDataCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select _c8 from control_file"
+		}
+	]
+}

@@ -1,0 +1,86 @@
+{
+    "columnMapping": [
+        {
+            "recordType": [
+                {
+                    "Field": "",
+                    "Value": ""
+                }
+            ],
+          "selectColumns": [
+            {
+              "SourceColumn": "FILE_ID",
+              "DestinationColumn": "FileId",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "Client_ID",
+              "DestinationColumn": "ClientId",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "FILE_LAYOUT_ID",
+              "DestinationColumn": "FilelayoutID",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+              "DestinationColumn": "FileLayoutDescription",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "LOAD_DATETIME",
+              "DestinationColumn": "LoadDateTime",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "PlanID",
+              "DestinationColumn": "CMSContractNumber",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "MemberNumber",
+              "DestinationColumn": "PlanMemberID",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "HicNumber",
+              "DestinationColumn": "BeneficiaryID",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "SpanValue",
+              "DestinationColumn": "ProviderID",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "StartDate",
+              "DestinationColumn": "StartDate",
+              "SourceColumnFormat": "MM/dd/yyyy",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "EndDate",
+              "DestinationColumn": "EndDate",
+              "SourceColumnFormat": "MM/dd/yyyy",
+              "ColumnQuery": ""
+            },
+            {
+              "SourceColumn": "AdditionalSpanValue",
+              "DestinationColumn": "AdditionalSpanValue",
+              "SourceColumnFormat": "",
+              "ColumnQuery": ""
+            }
+          ]
+        }
+    ]
+}

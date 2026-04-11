@@ -1,0 +1,52 @@
+{
+    "SubLayerProcessing": [
+        {
+            "SubGroupEntity": "SupplementalDiagnosis",
+            "DestinationTable": "#clientCode/Gold/MA/Risk/SupplementalDiagnosis",
+            "SourceTables": [              
+                {
+                    "Entity": "tblCapturedData",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblCapturedData",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "tblSuspectMembers",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblSuspectMembers",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "tblCapturedDataNotes",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblCapturedDataNotes",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "tblMemberMaster",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblMemberMaster",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "tblNotesText",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblNotesText",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "tblProviderMaster",
+                    "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblProviderMaster",
+                    "SourceFormat": "parquet"
+                },
+                {
+                    "Entity": "icdHCCXref",
+                    "SourceTable": "global/Gold/icdHCCXref",
+                    "SourceFormat": "delta"
+                },
+                {
+                    "Entity": "icd",
+                    "SourceTable": "global/Gold/icd",
+                    "SourceFormat": "delta"
+                }
+            ],
+            "SQLScript": "SELECT DISTINCT MM.MemberID planMemberID, YEAR(AA.PrimaryServiceThru) dosYear, CC.hccNumber hccNumber, CC.hccVersion hccVersion, 'CAPTURED' evidenceSource, CAST(AA.PrimaryService AS DATE) serviceFromDate, CAST(AA.PrimaryServiceThru AS DATE) serviceToDate, tblICD.isChronic isChronic, PM.ProviderID providerID, CC.icd ICD, hash(concat(IfNull(MM.MemberID,\" \") , \"|\",IfNull(YEAR(AA.PrimaryServiceThru), \" \"), \"| \",IfNull(CC.hccNumber, \" \"), \"|\", IfNull(CC.hccVersion, \" \"), \"|\",IfNull(AA.PrimaryService, \" \"), \"|\",IfNull(AA.PrimaryServiceThru, \" \"), \"|\", IfNull(tblICD.isChronic, false), \"|\", IfNull(PM.ProviderID, \" \") , IfNull(CC.icd, \" \"))) AS hashKey FROM tblCapturedData AA JOIN tblSuspectMembers BB ON AA.SuspectMembers_WK = BB.SuspectMembers_WK JOIN tblMemberMaster MM ON BB.MemberMaster_WK = MM.MemberMaster_WK JOIN tblProviderMaster PM ON AA.ProviderMaster_WK = PM.ProviderMaster_WK JOIN icdHCCXref CC ON AA.ICD9 = CC.icd AND CAST(AA.PrimaryServiceThru AS DATE) BETWEEN CC.effectiveStartDate AND CC.effectiveEndDate JOIN icd tblICD ON CC.icd = tblICD.icd and CC.icdCodeType = tblICD.icdCodeType AND CC.icdEffectiveYear = tblICD.icdEffectiveYear LEFT JOIN tblCapturedDataNotes DD ON AA.Claims_wk = DD.Claims_wk LEFT JOIN tblNotesText EE ON DD.Notes_wk = EE.Notes_wk AND (DD.Claims_wk IS NULL OR EE.IsSuspectNote = 0)",
+            "MergeScript": "MERGE INTO DestinationTable t USING ( SELECT ss.planMemberID, ss.dosYear, ss.hccNumber, ss.hccVersion, ss.evidenceSource, ss.serviceFromDate, ss.serviceToDate, ss.isChronic, ss.providerID, ss.ICD, ifnull(ss.hashKey, dt.hashKey) AS hashKey, CASE WHEN ss.hashKey IS NULL THEN 'RecordsToDelete' WHEN ss.hashKey = dt.hashKey THEN 'RecordsToUpdate' ELSE 'RecordsToInsert' END AS Source FROM tempSQLScript ss FULL OUTER JOIN DestinationTable dt ON ss.hashKey = dt.hashKey ) s ON t.hashKey = s.hashKey WHEN MATCHED AND s.Source = 'RecordsToDelete' THEN DELETE WHEN MATCHED AND s.Source = 'RecordsToUpdate' AND s.hashKey IS NOT NULL THEN UPDATE SET planMemberID = s.planMemberID, dosYear = s.dosYear, hccNumber = s.hccNumber, hccVersion = s.hccVersion, evidenceSource = s.evidenceSource, serviceFromDate = s.serviceFromDate, serviceToDate = s.serviceToDate, isChronic = s.isChronic, providerID = s.providerID, ICD=s.ICD, hashKey = s.hashKey WHEN NOT MATCHED AND s.hashKey IS NOT NULL THEN INSERT (planMemberID, dosYear, hccNumber, hccVersion, evidenceSource, serviceFromDate, serviceToDate, isChronic, providerID, ICD, hashkey) VALUES ( s.planMemberID, s.dosYear, s.hccNumber, s.hccVersion, s.evidenceSource, s.serviceFromDate, s.serviceToDate, s.isChronic, s.providerID, s.ICD ,s.hashkey )"
+        }
+    ]
+}

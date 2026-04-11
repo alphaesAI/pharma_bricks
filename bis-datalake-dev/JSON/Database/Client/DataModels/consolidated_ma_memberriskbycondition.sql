@@ -1,0 +1,30 @@
+CREATE TABLE #clientCode.consolidated_ma_memberriskbycondition (
+ ClientID string
+,FileID bigint
+,LoadDateTime date
+,FileLayoutID int
+,FileLayoutDescription string
+,MemberID string
+,MedicareBeneficiaryID string
+,MedicaidID string
+,PlanID string
+,LastName string
+,FirstName string
+,MiddleInitial string
+,DateOfBirth date
+,Gender string
+,SuspectedHCC string
+,HCCType string
+,HCCVersion string
+,EvidenceCodeValue string
+,EvidenceCodeType string
+,EvidenceCodeDescription string
+,EvidenceDateOfService date
+,EvidenceCodeResult string
+,EvidenceIdentifier string
+,ProbabilityScore string
+,SourceName string
+,GapYear int
+,GapType string
+,RAGain string
+)  USING delta LOCATION '/mnt/#clientCode/consolidated/MA/Data/MemberRiskByCondition'

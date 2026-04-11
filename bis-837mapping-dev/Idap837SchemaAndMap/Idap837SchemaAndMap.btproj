@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6681D7D9-F85A-4CE2-A9E4-2E2B1485C618}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>Idap837SchemaAndMap</RootNamespace>
+    <AssemblyName>Idap837SchemaAndMap</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Integration.BIZ.CLMIB.PROF.Schemas">
+      <HintPath>..\bin\Integration.BIZ.CLMIB.PROF.Schemas.dll</HintPath>
+    </Reference>
+    <Reference Include="Integration.BIZ.CLMIB.Schemas">
+      <HintPath>..\bin\Integration.BIZ.CLMIB.Schemas.dll</HintPath>
+    </Reference>
+    <Reference Include="Integration.BIZ.Core.X12Schemas.Multiple837P">
+      <HintPath>..\bin\Integration.BIZ.Core.X12Schemas.Multiple837P.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="RegularProfClaimPatientMap.btm">
+      <TypeName>RegularProfClaimPatientMap</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="RegularProfClaimSubscriberMap.btm">
+      <TypeName>RegularProfClaimSubscriberMap</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="RegularProfClaimSchema.xsd">
+      <TypeName>RegularProfClaimSchema</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="RepriceProfClaimSchema.xsd">
+      <TypeName>RepriceProfClaimSchema</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="RulesProfClaimSchema.xsd">
+      <TypeName>RulesProfClaimSchema</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="X12_00501_837_P.xsd">
+      <TypeName>X12_00501_837_P</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="X12_00501_837_P_Single.xsd">
+      <TypeName>X12_00501_837_P_Single</TypeName>
+      <Namespace>Idap837SchemaAndMap</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Schema\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XSLT\IDAP837PToSubscriber.xslt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

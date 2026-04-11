@@ -1,0 +1,80 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "Client",
+      "OrdinalPosition": 0,
+      "DataType": "String",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "ID",
+      "OrdinalPosition": 1,
+      "DataType": "int",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDataType",
+          "Value": "Integer"
+        }
+      ]
+    },
+    {
+      "FieldName": "Type",
+      "OrdinalPosition": 2,
+      "DataType": "String",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "LockdownReportBase",
+      "OrdinalPosition": 3,
+      "DataType": "int",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDataType",
+          "Value": "Integer"
+        }
+      ]
+    },
+    {
+      "FieldName": "LastDynamicRosterMonth",
+      "OrdinalPosition": 4,
+      "DataType": "String",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    }
+  ]
+}

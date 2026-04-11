@@ -1,0 +1,987 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RecordType",
+			"OrdinalPosition": 0,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ReportID",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"MAO-004"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MedicareAdvantageContractID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BeneficiaryIdentifier",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "EncounterICN",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EncounterTypeSwitch",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8",
+						"9"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "ICNofEncounterLinkedTo",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AllowedDisallowedStatusofEncounterLinkedTo",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "EncounterSubmissionDate",
+			"OrdinalPosition": 8,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "FromDateofService",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ThroughDateofService",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ServiceType",
+			"OrdinalPosition": 11,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"P",
+						"I",
+						"O",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "AllowedDisallowedflag",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "AllowedDisallowedReasonCode",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"H",
+						"D",
+						"N",
+						"T",
+						"Q"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosesICD",
+			"OrdinalPosition": 14,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"0",
+						"9"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode1",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag1",
+			"OrdinalPosition": 16,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes2",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag2",
+			"OrdinalPosition": 18,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes3",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag3",
+			"OrdinalPosition": 20,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes4",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag4",
+			"OrdinalPosition": 22,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes5",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag5",
+			"OrdinalPosition": 24,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes6",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag6",
+			"OrdinalPosition": 26,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes7",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag7",
+			"OrdinalPosition": 28,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes8",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag8",
+			"OrdinalPosition": 30,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes9",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag9",
+			"OrdinalPosition": 32,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes10",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag10",
+			"OrdinalPosition": 34,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode11",
+			"OrdinalPosition": 35,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag11",
+			"OrdinalPosition": 36,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes12",
+			"OrdinalPosition": 37,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag12",
+			"OrdinalPosition": 38,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes13",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag13",
+			"OrdinalPosition": 40,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes14",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag14",
+			"OrdinalPosition": 42,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes15",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag15",
+			"OrdinalPosition": 44,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes16",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag16",
+			"OrdinalPosition": 46,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes17",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag17",
+			"OrdinalPosition": 48,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes18",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag18",
+			"OrdinalPosition": 50,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes19",
+			"OrdinalPosition": 51,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag19",
+			"OrdinalPosition": 52,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes20",
+			"OrdinalPosition": 53,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag20",
+			"OrdinalPosition": 54,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode21",
+			"OrdinalPosition": 55,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag21",
+			"OrdinalPosition": 56,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes22",
+			"OrdinalPosition": 57,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag22",
+			"OrdinalPosition": 58,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes23",
+			"OrdinalPosition": 59,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag23",
+			"OrdinalPosition": 60,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes24",
+			"OrdinalPosition": 61,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag24",
+			"OrdinalPosition": 62,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes25",
+			"OrdinalPosition": 63,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag25",
+			"OrdinalPosition": 64,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes26",
+			"OrdinalPosition": 65,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag26",
+			"OrdinalPosition": 66,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes27",
+			"OrdinalPosition": 67,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag27",
+			"OrdinalPosition": 68,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes28",
+			"OrdinalPosition": 69,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag28",
+			"OrdinalPosition": 70,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes29",
+			"OrdinalPosition": 71,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag29",
+			"OrdinalPosition": 72,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes30",
+			"OrdinalPosition": 73,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag30",
+			"OrdinalPosition": 74,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode31",
+			"OrdinalPosition": 75,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag31",
+			"OrdinalPosition": 76,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes32",
+			"OrdinalPosition": 77,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag32",
+			"OrdinalPosition": 78,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes33",
+			"OrdinalPosition": 79,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag33",
+			"OrdinalPosition": 80,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes34",
+			"OrdinalPosition": 81,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag34",
+			"OrdinalPosition": 82,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes35",
+			"OrdinalPosition": 83,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag35",
+			"OrdinalPosition": 84,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes36",
+			"OrdinalPosition": 85,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag36",
+			"OrdinalPosition": 86,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes37",
+			"OrdinalPosition": 87,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag37",
+			"OrdinalPosition": 88,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCodes38",
+			"OrdinalPosition": 89,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AddorDeleteflag38",
+			"OrdinalPosition": 90,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "Filler183",
+			"OrdinalPosition": 91,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ReportDate",
+			"OrdinalPosition": 0,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) + 1 from data_file",
+			"control_file_query": "select TotalNumberofRecords + 1 from control_file"
+		},
+		{
+			"Name": "VerifyTotalDataCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select TotalNumberofRecords from control_file"
+		}
+	]
+}

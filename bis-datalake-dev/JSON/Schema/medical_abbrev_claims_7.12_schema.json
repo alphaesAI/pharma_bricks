@@ -1,0 +1,776 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "UniquePersonKey",
+			"OrdinalPosition": 1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BeneficiaryID",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "RenderingProviderID",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BillingProviderID",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimNumber",
+			"OrdinalPosition": 5,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimLineNumber",
+			"OrdinalPosition": 6,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "OriginalClaimNumber",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProductID",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimReceivedDate",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "LineServiceFrom",
+			"OrdinalPosition": 10,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "LineServiceThu",
+			"OrdinalPosition": 11,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimProcessDate",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "DetailServiceDate",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlaceOfService",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PaidDate",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PaidAmount",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PayStatus",
+			"OrdinalPosition": 17,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"P",
+						"D",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "HCPCSCode",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCPCSModifier",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTCode",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTModifier1",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTModifier2",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTModifier3",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTModifier4",
+			"OrdinalPosition": 24,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CVX",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimType",
+			"OrdinalPosition": 26,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"P",
+						"I",
+						"O"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "AdmitDiagnosisCode",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx01",
+			"OrdinalPosition": 28,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ICDDx02",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx03",
+			"OrdinalPosition": 30,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx04",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx05",
+			"OrdinalPosition": 32,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx06",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx07",
+			"OrdinalPosition": 34,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx08",
+			"OrdinalPosition": 35,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx09",
+			"OrdinalPosition": 36,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx10",
+			"OrdinalPosition": 37,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx11",
+			"OrdinalPosition": 38,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx12",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx13",
+			"OrdinalPosition": 40,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx14",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx15",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx16",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx17",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx18",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx19",
+			"OrdinalPosition": 46,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx20",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx21",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx22",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx23",
+			"OrdinalPosition": 50,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx24",
+			"OrdinalPosition": 51,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx25",
+			"OrdinalPosition": 52,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx26",
+			"OrdinalPosition": 53,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx27",
+			"OrdinalPosition": 54,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx28",
+			"OrdinalPosition": 55,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx29",
+			"OrdinalPosition": 56,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx30",
+			"OrdinalPosition": 57,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx31",
+			"OrdinalPosition": 58,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx32",
+			"OrdinalPosition": 59,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx33",
+			"OrdinalPosition": 60,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx34",
+			"OrdinalPosition": 61,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx35",
+			"OrdinalPosition": 62,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx36",
+			"OrdinalPosition": 63,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx37",
+			"OrdinalPosition": 64,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDDx38",
+			"OrdinalPosition": 65,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx01",
+			"OrdinalPosition": 66,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx02",
+			"OrdinalPosition": 67,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx03",
+			"OrdinalPosition": 68,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx04",
+			"OrdinalPosition": 69,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx05",
+			"OrdinalPosition": 70,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx06",
+			"OrdinalPosition": 71,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx07",
+			"OrdinalPosition": 72,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx08",
+			"OrdinalPosition": 73,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx09",
+			"OrdinalPosition": 74,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx10",
+			"OrdinalPosition": 75,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx11",
+			"OrdinalPosition": 76,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx12",
+			"OrdinalPosition": 77,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx13",
+			"OrdinalPosition": 78,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx14",
+			"OrdinalPosition": 79,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx15",
+			"OrdinalPosition": 80,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx16",
+			"OrdinalPosition": 81,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx17",
+			"OrdinalPosition": 82,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx18",
+			"OrdinalPosition": 83,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx19",
+			"OrdinalPosition": 84,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx20",
+			"OrdinalPosition": 85,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx21",
+			"OrdinalPosition": 86,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx22",
+			"OrdinalPosition": 87,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx23",
+			"OrdinalPosition": 88,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx24",
+			"OrdinalPosition": 89,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx25",
+			"OrdinalPosition": 90,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx26",
+			"OrdinalPosition": 91,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx27",
+			"OrdinalPosition": 92,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx28",
+			"OrdinalPosition": 93,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx29",
+			"OrdinalPosition": 94,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx30",
+			"OrdinalPosition": 95,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx31",
+			"OrdinalPosition": 96,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx32",
+			"OrdinalPosition": 97,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx33",
+			"OrdinalPosition": 98,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx34",
+			"OrdinalPosition": 99,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx35",
+			"OrdinalPosition": 100,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx36",
+			"OrdinalPosition": 101,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx37",
+			"OrdinalPosition": 102,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ICDPx38",
+			"OrdinalPosition": 103,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PCPIndicator",
+			"OrdinalPosition": 104,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RenderingProviderTIN",
+			"OrdinalPosition": 105,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SpecialtyCode",
+			"OrdinalPosition": 106,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RevenueCode",
+			"OrdinalPosition": 107,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DaysDenied",
+			"OrdinalPosition": 108,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RoomBoard",
+			"OrdinalPosition": 109,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RRUUnitsofService",
+			"OrdinalPosition": 110,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MajorSurgery",
+			"OrdinalPosition": 111,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "BillingProviderTIN",
+			"OrdinalPosition": 112,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CodeType",
+			"OrdinalPosition": 113,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimStatus",
+			"OrdinalPosition": 114,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D",
+						"I",
+						"P",
+						"R"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "BillType",
+			"OrdinalPosition": 115,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MSDRG",
+			"OrdinalPosition": 116,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MSDRG2",
+			"OrdinalPosition": 117,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DischargeStatusCode",
+			"OrdinalPosition": 118,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimSourceIndicator",
+			"OrdinalPosition": 119,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"S",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "EyeExamResult",
+			"OrdinalPosition": 120,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SourceName",
+			"OrdinalPosition": 121,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "SCCFClaimIdentifier",
+			"OrdinalPosition": 122,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AlternateClaimIdentifier1",
+			"OrdinalPosition": 123,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) + 1 from data_file",
+			"control_file_query": "select _c7 from control_file"
+		},
+		{
+			"Name": "VerifyTotalDataCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select _c8 from control_file"
+		}
+	]
+}

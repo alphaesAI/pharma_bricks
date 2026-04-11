@@ -1,0 +1,164 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "MemberNumber",
+          "DestinationColumn": "PlanMemberID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "HICNBenID",
+          "DestinationColumn": "BeneficiaryID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ProviderID",
+          "DestinationColumn": "ProviderID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ProviderNPI",
+          "DestinationColumn": "ProviderNPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimNumber",
+          "DestinationColumn": "ClaimNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ProductID",
+          "DestinationColumn": "ProductID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NDCCodeSTD",
+          "DestinationColumn": "NDCCodeSTD",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "RxFillDate",
+          "DestinationColumn": "RxFillDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "yyyyMMdd"
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "RxDaysSupply",
+          "ColumnQuery": "overpunch(RxDaysSupply)",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "GPI",
+          "DestinationColumn": "GPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },       
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "Quantity",
+          "ColumnQuery": "CASE WHEN Quantity>= 1000 THEN (Quantity /1000) ELSE  Quantity END",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "UnitsofMeasure",
+          "DestinationColumn": "UnitsOfMeasure",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriberNumber",
+          "DestinationColumn": "PrescriberNumber",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrescriberID",
+          "DestinationColumn": "PrescriberID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimStatus",
+          "DestinationColumn": "ClaimStatus",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AdjudicationDate",
+          "DestinationColumn": "AdjudicationDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimSourceIndicator",
+          "DestinationColumn": "ClaimSourceIndicator",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AlternateKey1",
+          "DestinationColumn": "AlternateKey1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "AlternateKey2",
+          "DestinationColumn": "AlternateKey2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ProviderSpecialty",
+          "DestinationColumn": "ProviderSpecialty",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

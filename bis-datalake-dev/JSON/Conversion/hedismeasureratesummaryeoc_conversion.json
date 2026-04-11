@@ -1,0 +1,138 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "H",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "FieldNames",
+          "OrdinalPosition": 2
+        }
+      ]
+    },
+    {
+      "Type": "D",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "SubmissionID",
+          "OrdinalPosition": 2
+        },
+        {
+          "FieldName": "ReviewSet",
+          "OrdinalPosition": 3
+        },
+        {
+          "FieldName": "BaseMeasureID",
+          "OrdinalPosition": 4
+        },
+        {
+          "FieldName": "BaseMeasureName",
+          "OrdinalPosition": 5
+        },
+        {
+          "FieldName": "MeasureID",
+          "OrdinalPosition": 6
+        },
+        {
+          "FieldName": "MeasureName",
+          "OrdinalPosition": 7
+        },
+        {
+          "FieldName": "AdminHybrid",
+          "OrdinalPosition": 8
+        },
+        {
+          "FieldName": "Age",
+          "OrdinalPosition": 9
+        },
+        {
+          "FieldName": "Gender",
+          "OrdinalPosition": 10
+        },
+        {
+          "FieldName": "SES",
+          "OrdinalPosition": 11
+        },
+        {
+          "FieldName": "Race",
+          "OrdinalPosition": 12
+        },
+        {
+          "FieldName": "Ethnicity",
+          "OrdinalPosition": 13
+        },
+        {
+          "FieldName": "Diagnosis",
+          "OrdinalPosition": 14
+        },
+        {
+          "FieldName": "EligiblePopulation",
+          "OrdinalPosition": 15
+        },
+        {
+          "FieldName": "Numerator",
+          "OrdinalPosition": 16
+        },
+        {
+          "FieldName": "AdminNumerator",
+          "OrdinalPosition": 17
+        },
+        {
+          "FieldName": "SupplementalNumerator",
+          "OrdinalPosition": 18
+        },
+        {
+          "FieldName": "RequiredExclusion",
+          "OrdinalPosition": 19
+        },
+        {
+          "FieldName": "OptionalExclusion",
+          "OrdinalPosition": 20
+        },
+        {
+          "FieldName": "MRSS",
+          "OrdinalPosition": 21
+        },
+        {
+          "FieldName": "MedicalNumerator",
+          "OrdinalPosition": 22
+        },
+        {
+          "FieldName": "AdminRateNumeratorEPOP",
+          "OrdinalPosition": 23
+        },
+        {
+          "FieldName": "HybridRateMNMRSS",
+          "OrdinalPosition": 24
+        }
+      ]
+    },
+    {
+      "Type": "T",
+      "ColumnNames": [
+        {
+          "FieldName": "RecordType",
+          "OrdinalPosition": 1
+        },
+        {
+          "FieldName": "RecordCount",
+          "OrdinalPosition": 2
+        }
+      ]
+    }
+  ],
+  "Querries": [
+    {
+      "HeaderDataFrame": "SELECT \r\n  explode(RecordsSplitIntoArray) AS Header\r\nFROM SourceData\r\nWHERE\r\nRecordType  = 'H'\r\n",
+      "DetailDataFrame": "SELECT \r\n  RecordsSplitIntoArray AS Details\r\nFROM SourceData\r\nWHERE\r\nRecordType = 'D'\r\n",
+      "ControlDataFrame": "SELECT \r\n   RecordType\r\n  ,CAST(SUM(RestOfRecord) AS INT) AS RecordCount\r\nFROM SourceData\r\nWHERE\r\nRecordType = 'T'\r\nGROUP BY\r\n   RecordType\r\n"
+    }
+  ]
+}

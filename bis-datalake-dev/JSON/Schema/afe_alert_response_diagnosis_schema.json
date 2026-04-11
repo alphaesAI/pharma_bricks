@@ -1,0 +1,185 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "PlanMemberID",
+			"OrdinalPosition": 1,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberLastName",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "MemberFirstName",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "MemberDOB",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				  }
+			  ]
+		},
+		{
+			"FieldName": "MRN",
+			"OrdinalPosition": 5,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderFirstName",
+			"OrdinalPosition": 6,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "ProviderLastName",
+			"OrdinalPosition": 7,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "PlanProviderID",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderNPI",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "PracticeID",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PracticeName",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "VisitDate",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				  }
+			  ]
+		},
+		{
+			"FieldName": "Status",
+			"OrdinalPosition": 13,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "CodeSystem",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisCode",
+			"OrdinalPosition": 15,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "DiagnosisOrCondition",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCC",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HccTypeVersion",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Client",
+			"OrdinalPosition": 19,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		},
+		{
+			"FieldName": "LOB",
+			"OrdinalPosition": 20,
+			"DataType": "string",
+			"Validators": [
+				{
+				  "Name": "isRequired"
+				}
+			  ]
+		}
+	]	
+}

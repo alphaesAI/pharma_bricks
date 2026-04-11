@@ -1,0 +1,62 @@
+/*replace the "devidap1" schema with client names for each environment:
+DEV - devidap1, devidap2
+QA - qaidap1,qaidap2
+*/
+CREATE TABLE [devidap1].[FEFD] 
+(
+   	 [FileId]	bigint NULL
+  	,[ClientId]	varchar(20) NULL
+   	,[FileLayoutID]	int NULL
+   	,[FileLayoutDescription] varchar(255) NULL
+  	,[LoadDateTime]	datetime2(7) NULL
+   	,[BeneficiaryID] varchar(15) NULL
+	,[Surname] varchar(15) NULL
+	,[FirstName] varchar(50) NULL
+	,[MiddleInitial] varchar(5) NULL
+	,[GenderCode] int NULL
+	,[DateofBirth] date NULL
+	,[MedicaidIndicator] varchar(1) NULL
+	,[ContractNumber] varchar(10) NULL
+	,[StateCode] varchar(2) NULL
+	,[CountyCode] varchar(3) NULL
+	,[DisabilityIndicator] varchar(1) NULL
+	,[HospiceIndicator] varchar(1) NULL
+	,[InstitutionalIndicator] varchar(1) NULL
+	,[ESRDIndicator] varchar(1) NULL
+	,[TransactionReplyCode] varchar(3) NULL
+	,[TransactionCode] varchar(2) NULL
+	,[EntitlementTypeCode] varchar(1) NULL
+	,[EffectiveDate] date NULL
+	,[WAIndicator] varchar(1) NULL
+	,[PlanBenefitPackageID] varchar(3) NULL
+	,[RaceCode] varchar(1) NULL
+	,[TransactionDate] date NULL
+	,[SubsidyEndDate] varchar(10) NULL
+	,[DistrictOfficeCode] varchar(5) NULL
+	,[SourceID] varchar(5) NULL
+	,[PriorPlanBenefitPackageID] varchar(3) NULL
+	,[ApplicationDate] varchar(10) NULL
+	,[OutofAreaFlag] varchar(1) NULL
+	,[SegmentNumber] varchar(3) NULL
+	,[PartCBeneficiaryPremium] varchar(10) NULL
+	,[PartDBeneficiaryPremium] varchar(10) NULL
+	,[ElectionType] varchar(1) NULL
+	,[EnrollmentSourceCode] varchar(1) NULL
+	,[PartDOptOutFlag] varchar(1) NULL
+	,[NumberofUncoveredMonths] varchar(3) NULL
+	,[CreditableCoverageFlag] varchar(1) NULL
+	,[EmployerSubsidyOverrideFlag] varchar(1) NULL
+	,[RxID] varchar(25) NULL
+	,[RxGroup] varchar(20) NULL
+	,[SecondaryDrugInsuranceFlag] varchar(1) NULL
+	,[SecondaryRxID] varchar(25) NULL
+	,[SecondaryRxGroup] varchar(20) NULL
+	,[EGHP] varchar(1) NULL
+	,[PartDLIPSLevel] varchar(3) NULL
+	,[LowIncomeCoPayCategory] varchar(1) NULL
+	,[LowIncomeCoPayEffectiveDate] varchar(10) NULL
+	,[PartDLEPAmount] varchar(10) NULL
+	,[PartDLEPWaivedAmount] varchar(10) NULL
+	,[PartDLEPSubsidyAmount] varchar(10) NULL
+	,[LowIncomePartDPremiumSubsidyAmount] varchar(10) NULL
+)

@@ -1,0 +1,47 @@
+CREATE TABLE #clientCode.gold_ma_medicalgoldenclaimdiagnosis (
+ GeneratedGoldenClaimsUniqueKey  string
+,GeneratedMedicalClaimsUniqueKey  string
+,ClientID  string
+,FileLayoutID  int
+,FileLayoutDescription  string
+,ClaimNumber  string
+,OriginalClaimNumber  string
+,BeneficiaryID  string
+,PlanMemberID  string
+,CMSContractNumber  string
+,BillTypeCode  string
+,ClaimTypeInd  string
+,ClaimStatus  string
+,ClaimProcessDate timestamp
+,ClaimFormType  string
+,DetailServiceDate  string
+,ClaimEntryDate  string
+,ClaimReceivedDate  string
+,ClaimTotalChargeAmount  string
+,ClaimAllowedAmount  string
+,CheckDate  string
+,ClaimFinalizedDate  string
+,CoinsuranceAmt  string
+,DeductibleAmt  string
+,CopayAmt  string
+,ServiceFacilityID  string
+,ServiceFacilityNPI  string
+,RenderingProviderID  string
+,RenderingProviderNPI  string
+,RenderingProviderTIN  string
+,RenderingProviderSpecialtyCode  string
+,BillingProviderID  string
+,BillingProviderTIN  string
+,BillingProviderTaxonomy  string
+,AttendingProviderNPI  string
+,PlaceOfService  string
+,StatementFromDate  string
+,StatementToDate  string
+,ICD  string
+,ICDCodeType  string
+,isPrimaryCode  int
+,isAdmitcode  int
+,IsRiskAdjustable int
+,hashKey  int
+,UniquePersonKey string
+) USING delta LOCATION '/mnt/#clientCode/Gold/MA/Client/MedicalGoldenClaimDiagnosis'

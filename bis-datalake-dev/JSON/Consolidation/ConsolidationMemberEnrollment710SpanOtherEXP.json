@@ -1,0 +1,290 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "SPANTYPE",
+          "Value": "EXP"
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "SPANTYPE",
+          "DestinationColumn": "SpanType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MEMBERNUMBER",
+          "DestinationColumn": "PlanMemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },    
+        {
+          "SourceColumn": "MEDICAIDID",
+          "DestinationColumn": "MedicaidID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "PLANID",
+          "DestinationColumn": "CMSContractNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PRODUCTLINE",
+          "DestinationColumn": "ProductLine",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PRODUCTID",
+          "DestinationColumn": "ProductID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SECONDPRODUCTID",
+          "DestinationColumn": "SecondProductID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "STARTDATE",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ENDDATE",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "MM/dd/yyyy",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HICNUMBER",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SPANVALUE",
+          "DestinationColumn": "Spanvalue",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ADDITIONALSPANVALUE",
+          "DestinationColumn": "AdditionalSpanValue",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBP",
+          "DestinationColumn": "PlanBenefitPackage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ECDSFLAG",
+          "DestinationColumn": "ECDSFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ALPHAPREFIX",
+          "DestinationColumn": "AlphaPrefix",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PHARMACY",
+          "DestinationColumn": "Pharmacy",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DENTAL",
+          "DestinationColumn": "Dental",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "VISION",
+          "DestinationColumn": "Vision",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MH",
+          "DestinationColumn": "MH",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MHIP",
+          "DestinationColumn": "MHIP",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MHDN",
+          "DestinationColumn": "MHDN",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MHAMB",
+          "DestinationColumn": "MHAMB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CD",
+          "DestinationColumn": "CD",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CDIP",
+          "DestinationColumn": "CDIP",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CDDN",
+          "DestinationColumn": "CDDN",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CDAMB",
+          "DestinationColumn": "CDAMB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SNPFLAG",
+          "DestinationColumn": "SNPFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SNPENROLLEETYPE",
+          "DestinationColumn": "SNPEnrolleeType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "HOSPICEFLAG",
+          "DestinationColumn": "HospiceFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },          
+        {
+          "SourceColumn": "ISSUERID",
+          "DestinationColumn": "IssuerID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "METALLEVEL",
+          "DestinationColumn": "MetalLevel",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "COSTSHARINGVARIANT",
+          "DestinationColumn": "CostSharingVariant",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MARKETCOVERAGE",
+          "DestinationColumn": "MarketCoverage",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CSRELIGIBILITYFLAG",
+          "DestinationColumn": "CSREligibilityFlag",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MEMBERENROLLMENTQHPSTATE",
+          "DestinationColumn": "MemberEnrollmentQHPState",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "ALTERNATEMEMBERKEY1",
+          "DestinationColumn": "AlternateMemberKey1",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ALTERNATEMEMBERKEY2",
+          "DestinationColumn": "AlternateMemberKey2",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ALTERNATEMEMBERKEY3",
+          "DestinationColumn": "AlternateMemberKey3",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ALTERNATEMEMBERKEY4",
+          "DestinationColumn": "AlternateMemberKey4",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ALTERNATEMEMBERKEY5",
+          "DestinationColumn": "AlternateMemberKey5",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SOURCEFILEID",
+          "DestinationColumn": "SourcefileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },  
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

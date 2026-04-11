@@ -1,0 +1,233 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "UniquePersonKey",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ProviderID",
+			"OrdinalPosition": 1,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimNumber",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ClaimLineNumber",
+			"OrdinalPosition": 3,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderNPI",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LocationID",
+			"OrdinalPosition": 5,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DOS",
+			"OrdinalPosition": 6,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "isDate",
+					"Value": "MM/dd/yyyy"
+				}
+			]
+		},
+		{
+			"FieldName": "ProductID",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderSpecialty",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimStatus",
+			"OrdinalPosition": 9,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "LabCode",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "BillingIden",
+			"OrdinalPosition": 11,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClientNumber",
+			"OrdinalPosition": 12,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RefPCP",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "UPIN",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagCode",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "OrderCode",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "OrderName",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CPTCode",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCPCSCode",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "HCPCSModifier",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SNOMEDCode",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LOINCode",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ResultCode",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ResultName",
+			"OrdinalPosition": 24,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ResultValue",
+			"OrdinalPosition": 25,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "ResultUnit",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RefRangeLow",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RefRangeHigh",
+			"OrdinalPosition": 28,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RefRangeAlpha",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Comments",
+			"OrdinalPosition": 30,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ClaimSourceIndicator",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DateEnd",
+			"OrdinalPosition": 32,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SourceName",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) + 1 from data_file",
+			"control_file_query": "select _c7 from control_file"
+		},
+		{
+			"Name": "VerifyTotalDataCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select _c8 from control_file"
+		}
+	]
+}

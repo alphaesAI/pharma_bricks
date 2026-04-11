@@ -1,0 +1,211 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "ClientName",
+          "DestinationColumn": "ClientName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POCode",
+          "DestinationColumn": "POCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "POName",
+          "DestinationColumn": "POName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PracticeCode",
+          "DestinationColumn": "PracticeCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PracticeName",
+          "DestinationColumn": "PracticeName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderFirstName",
+          "DestinationColumn": "ProviderFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderMiddleName",
+          "DestinationColumn": "ProviderMiddleName",        
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderLastName",
+          "DestinationColumn": "ProviderLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClientProviderID",
+          "DestinationColumn": "ClientProviderID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderNPI",
+          "DestinationColumn": "ProviderNPI",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClientMemberID",
+          "DestinationColumn": "ClientMemberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SPClient_MemberLookup",
+          "DestinationColumn": "SPClientMemberLookup",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberHICN",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberFirstName",
+          "DestinationColumn": "MemberFirstName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberMiddleName",
+          "DestinationColumn": "MemberMiddleName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberLastName",
+          "DestinationColumn": "MemberLastName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MemberDOB",
+          "DestinationColumn": "MemberDOB",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Eligible_For_Review",
+          "DestinationColumn": "EligibleForReview",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MRR_Scanned_File_Name",
+          "DestinationColumn": "MRRScannedFileName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MRR_Scanned_Status",
+          "DestinationColumn": "MRRScannedStatus",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Practice_Retrieval_Type",
+          "DestinationColumn": "PracticeRetrievalType",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Practice_Implementation_Year",
+          "DestinationColumn": "PracticeImplementationYear",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Practice_Assigned_PEC",
+          "DestinationColumn": "PracticeAssignedPEC",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Scanning_Campaign",
+          "DestinationColumn": "ScanningCampaign",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Prior_Year_DOS_Scanned_PDF_Name",
+          "DestinationColumn": "PriorYearDOSScannedPDFName",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Prior_Year_DOS_Scanned_PDF_Count",
+          "DestinationColumn": "PriorYearDOSScannedPDFCount",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },        
+        {
+          "SourceColumn": "Scanning_Comments",
+          "DestinationColumn": "ScanningComments",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "Engaged_Practice",
+          "DestinationColumn": "EngagedPractice",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },       
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

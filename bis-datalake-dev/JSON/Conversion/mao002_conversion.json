@@ -1,0 +1,210 @@
+{
+	"RecordTypes": [
+		{
+			"Type": "0",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "ReportID",
+					"OrdinalPosition": "2",
+					"StartPos": "3",
+					"Length": "7"
+				},
+				{
+					"FieldName": "ReportDate",
+					"OrdinalPosition": "3",
+					"StartPos": "11",
+					"Length": "8",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "TransactionDate",
+					"OrdinalPosition": "4",
+					"StartPos": "20",
+					"Length": "8",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "ReportDescription",
+					"OrdinalPosition": "5",
+					"StartPos": "29",
+					"Length": "39"
+				},
+				{
+					"FieldName": "Filler1",
+					"OrdinalPosition": "6",
+					"StartPos": "69",
+					"Length": "5"
+				},
+				{
+					"FieldName": "SubmissionInterchangeNumber",
+					"OrdinalPosition": "7",
+					"StartPos": "75",
+					"Length": "30"
+				},
+				{
+					"FieldName": "RecordType1",
+					"OrdinalPosition": "8",
+					"StartPos": "106",
+					"Length": "3"
+				},
+				{
+					"FieldName": "SubmissionFileType",
+					"OrdinalPosition": "9",
+					"StartPos": "110",
+					"Length": "4"
+				},
+				{
+					"FieldName": "Filler2",
+					"OrdinalPosition": "10",
+					"StartPos": "115",
+					"Length": "46"
+				}
+			]
+		},
+		{
+			"Type": "9",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "ReportID",
+					"OrdinalPosition": "2",
+					"StartPos": "3",
+					"Length": "7"
+				},
+				{
+					"FieldName": "TotalNumberOfProcessingErrors",
+					"OrdinalPosition": "3",
+					"StartPos": "11",
+					"Length": "8"
+				},
+				{
+					"FieldName": "TotalNumberOfEncounterLinesAccepted",
+					"OrdinalPosition": "4",
+					"StartPos": "20",
+					"Length": "28",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "TotalNumberOfEncounterLinesRejected",
+					"OrdinalPosition": "5",
+					"StartPos": "29",
+					"Length": "8"
+				},
+				{
+					"FieldName": "TotalNumberOfEncounterLinesSubmitted",
+					"OrdinalPosition": "6",
+					"StartPos": "38",
+					"Length": "8"
+				},
+				{
+					"FieldName": "TotalNumberOfEncounterRecordsAccepted",
+					"OrdinalPosition": "7",
+					"StartPos": "56",
+					"Length": "8"
+				},
+				{
+					"FieldName": "TotalNumberOfEncounterRecordsRejected",
+					"OrdinalPosition": "8",
+					"StartPos": "56",
+					"Length": "8"
+				},
+				{
+					"FieldName": "TotalNumberOfEncounterRecordsSubmitted",
+					"OrdinalPosition": "9",
+					"StartPos": "65",
+					"Length": "8"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "10",
+					"StartPos": "74",
+					"Length": "160"
+				}
+			]
+		},
+		{
+			"Type": "1",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"EndPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "ReportID",
+					"OrdinalPosition": "2",
+					"StartPos": "3",
+					"EndPos": "9",
+					"Length": "7"
+				},
+				{
+					"FieldName": "MedicareAdvantageContractID",
+					"OrdinalPosition": "5",
+					"StartPos": "11",
+					"EndPos": "15",
+					"Length": "5"
+				},
+				{
+					"FieldName": "PlanEncounterID(CCN)",
+					"OrdinalPosition": "6",
+					"StartPos": "17",
+					"EndPos": "54",
+					"Length": "38"
+				},
+				{
+					"FieldName": "EncounterICN",
+					"OrdinalPosition": "7",
+					"DataType": "string",
+					"StartPos": "56",
+					"EndPos": "99",
+					"Length": "44"
+				},
+				{
+					"FieldName": "EncounterLineNumber",
+					"OrdinalPosition": "8",
+					"DataType": "string",
+					"StartPos": "101",
+					"EndPos": "103",
+					"Length": "3"
+				},
+				{
+					"FieldName": "EncounterStatus",
+					"OrdinalPosition": "9",
+					"DataType": "string",
+					"StartPos": "105",
+					"EndPos": "112",
+					"Length": "8"
+				},
+				{
+					"FieldName": "ErrorCode",
+					"OrdinalPosition": "10",
+					"DataType": "string",
+					"StartPos": "114",
+					"EndPos": "118",
+					"Length": "5"
+				},
+				{
+					"FieldName": "ErrorDescription",
+					"OrdinalPosition": "11",
+					"DataType": "string",
+					"StartPos": "120",
+					"EndPos": "159",
+					"Length": "40"
+				}
+			]
+		}
+	]
+}

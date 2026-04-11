@@ -1,0 +1,13 @@
+{
+    "SourceTable": "#clientCode/consolidated/ACA/Data/ProviderHierarchy",
+    "SourceTableMountPoint": "DataLake",
+    "LOB": "ACA",
+    "BatchTable": "#clientCode/BatchAudit/ACA/CHCProviderHierarchyBatch",
+    "BatchTableMountPoint": "Export",
+    "ExportFilePath": "#clientCode/ACA/CHCProviderHierarchy",
+    "ExportFileMountPoint": "Export",
+    "ExportFileNamingConvention": "CHCProviderHierarchy_<LOB>_<BatchId>_<DateTime>",
+    "ExportFileNamingExtension": ".json",
+    "ExportQuery": "select\r\n named_struct(\"id\",ProviderID,\"providerLastName\",ProviderLastName,\"NPI\",ProviderNPI) as provider\r\n,ARRAY(\r\n\tnamed_struct(\"groupId\",LocationGroupID,\r\n\t\"location\",Array(named_struct(\"ranking\", COALESCE(LocationRanking,1), \"IDType\", LocationIDType,\"ID\", LocationID, \"desc\", LocationDesc, \"TIN\", LocationTIN, \"address\", named_struct(\"line1\", LocationAddress1, \"line2\", LocationAddress2, \"city\", \t\t\tLocationCity, \"state\", LocationState, \"zipCode\", LocationZip, \"countyCode\", CountyCode)\r\n\t\t, \"phoneNumber\", PhoneNumber\r\n\t\t, \"faxNumber\", FaxNumber\r\n\t\t, \"contactPerson\", ContactPerson\r\n\t\t, \"doNotChase\", DoNotChase\r\n\t\t, \"tiers\", Array(named_struct(\"IDType\", Tier2IDType, \"ID\", Tier2ID, \"desc\", Tier2Desc, \r\n\t\t\t\"address\", named_struct(\"line1\", Tier2Address1, \"line2\", Tier2Address2, \"city\", Tier2City, \"state\", Tier2State, \"zipCode\", Tier2Zip, \"CountyCode\", null)))\r\n\t\t, \"startDate\", date_format(StartDate,\"MM\\\/dd\\\/yyyy\")\r\n\t\t, \"endDate\", date_format(EndDate,\"MM\\\/dd\\\/yyyy\")\r\n\t\t))\r\n))as groups\r\nFROM QueryResult\r\nwhere FileLayoutDescription = 'CHCProvider' and \r\nifnull(ProviderID, \"\") <> \"\"\r\nand \r\nifnull(ProviderLastName, \"\") <> \"\"\r\nand \r\nifnull(ProviderNPI, \"\") <> \"\"\r\nAND\r\nifnull(LocationAddress1, \"\") <> \"\"\r\nAND\r\nifnull(LocationCity, \"\") <> \"\"\r\nAND\r\nifnull(LocationState, \"\") <> \"\"\r\nAND\r\nifnull(LocationZip, \"\") <> \"\"\r\n",
+  "FilterTables": []
+}

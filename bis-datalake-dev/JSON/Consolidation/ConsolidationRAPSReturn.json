@@ -1,0 +1,662 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+		{
+          "SourceColumn": "RecordType",
+          "DestinationColumn": "RecordType",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SEQNo",
+          "DestinationColumn": "SeqNo",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SEQErrorCode",
+          "DestinationColumn": "SeqErrorCode",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PatientControlNumber",
+          "DestinationColumn": "PatientControlNumber",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "MBI",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "MBIErrorCode",
+          "DestinationColumn": "MBIErrorCode",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PatientDOB",
+          "DestinationColumn": "PatientDOB",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "DOBErrorCode",
+          "DestinationColumn": "DOBErrorCode",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ProviderType1",
+          "DestinationColumn": "ProviderType1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FromDate1",
+          "DestinationColumn": "FromDate1",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate1",
+          "DestinationColumn": "ThruDate1",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd1",
+          "DestinationColumn": "DeleteInd1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode1",
+          "DestinationColumn": "DiagnosisCode1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError1",
+          "DestinationColumn": "DiagClstrError1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError1A",
+          "DestinationColumn": "DiagClstrError1A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType2",
+          "DestinationColumn": "ProviderType2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate2",
+          "DestinationColumn": "FromDate2",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate2",
+          "DestinationColumn": "ThruDate2",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd2",
+          "DestinationColumn": "DeleteInd2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode2",
+          "DestinationColumn": "DiagnosisCode2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError2",
+          "DestinationColumn": "DiagClstrError2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError2A",
+          "DestinationColumn": "DiagClstrError2A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType3",
+          "DestinationColumn": "ProviderType3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate3",
+          "DestinationColumn": "FromDate3",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate3",
+          "DestinationColumn": "ThruDate3",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd3",
+          "DestinationColumn": "DeleteInd3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode3",
+          "DestinationColumn": "DiagnosisCode3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError3",
+          "DestinationColumn": "DiagClstrError3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError3A",
+          "DestinationColumn": "DiagClstrError3A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType4",
+          "DestinationColumn": "ProviderType4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate4",
+          "DestinationColumn": "FromDate4",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate4",
+          "DestinationColumn": "ThruDate4",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd4",
+          "DestinationColumn": "DeleteInd4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode4",
+          "DestinationColumn": "DiagnosisCode4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError4",
+          "DestinationColumn": "DiagClstrError4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError4A",
+          "DestinationColumn": "DiagClstrError4A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType5",
+          "DestinationColumn": "ProviderType5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate5",
+          "DestinationColumn": "FromDate5",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate5",
+          "DestinationColumn": "ThruDate5",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd5",
+          "DestinationColumn": "DeleteInd5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode5",
+          "DestinationColumn": "DiagnosisCode5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError5",
+          "DestinationColumn": "DiagClstrError5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError5A",
+          "DestinationColumn": "DiagClstrError5A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType6",
+          "DestinationColumn": "ProviderType6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate6",
+          "DestinationColumn": "FromDate6",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate6",
+          "DestinationColumn": "ThruDate6",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd6",
+          "DestinationColumn": "DeleteInd6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode6",
+          "DestinationColumn": "DiagnosisCode6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError6",
+          "DestinationColumn": "DiagClstrError6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError6A",
+          "DestinationColumn": "DiagClstrError6A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType7",
+          "DestinationColumn": "ProviderType7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate7",
+          "DestinationColumn": "FromDate7",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate7",
+          "DestinationColumn": "ThruDate7",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd7",
+          "DestinationColumn": "DeleteInd7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode7",
+          "DestinationColumn": "DiagnosisCode7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError7",
+          "DestinationColumn": "DiagClstrError7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError7A",
+          "DestinationColumn": "DiagClstrError7A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType8",
+          "DestinationColumn": "ProviderType8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate8",
+          "DestinationColumn": "FromDate8",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate8",
+          "DestinationColumn": "ThruDate8",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd8",
+          "DestinationColumn": "DeleteInd8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode8",
+          "DestinationColumn": "DiagnosisCode8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError8",
+          "DestinationColumn": "DiagClstrError8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError8A",
+          "DestinationColumn": "DiagClstrError8A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType9",
+          "DestinationColumn": "ProviderType9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate9",
+          "DestinationColumn": "FromDate9",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate9",
+          "DestinationColumn": "ThruDate9",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd9",
+          "DestinationColumn": "DeleteInd9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode9",
+          "DestinationColumn": "DiagnosisCode9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError9",
+          "DestinationColumn": "DiagClstrError9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError9A",
+          "DestinationColumn": "DiagClstrError9A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ProviderType10",
+          "DestinationColumn": "ProviderType10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "FromDate10",
+          "DestinationColumn": "FromDate10",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "ThruDate10",
+          "DestinationColumn": "ThruDate10",
+          "SourceColumnFormat": "yyyyMMdd",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DeleteInd10",
+          "DestinationColumn": "DeleteInd10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagnosisCode10",
+          "DestinationColumn": "DiagnosisCode10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError10",
+          "DestinationColumn": "DiagClstrError10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "DiagClstrError10A",
+          "DestinationColumn": "DiagClstrError10A",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "CorrectedHICNumber",
+          "DestinationColumn": "CorrectedHICNumber",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode1",
+          "DestinationColumn": "RiskAssessmentCode1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError1",
+          "DestinationColumn": "RiskAssessmentCodeError1",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode2",
+          "DestinationColumn": "RiskAssessmentCode2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError2",
+          "DestinationColumn": "RiskAssessmentCodeError2",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode3",
+          "DestinationColumn": "RiskAssessmentCode3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError3",
+          "DestinationColumn": "RiskAssessmentCodeError3",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode4",
+          "DestinationColumn": "RiskAssessmentCode4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError4",
+          "DestinationColumn": "RiskAssessmentCodeError4",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode5",
+          "DestinationColumn": "RiskAssessmentCode5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError5",
+          "DestinationColumn": "RiskAssessmentCodeError5",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode6",
+          "DestinationColumn": "RiskAssessmentCode6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError6",
+          "DestinationColumn": "RiskAssessmentCodeError6",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode7",
+          "DestinationColumn": "RiskAssessmentCode7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError7",
+          "DestinationColumn": "RiskAssessmentCodeError7",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode8",
+          "DestinationColumn": "RiskAssessmentCode8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError8",
+          "DestinationColumn": "RiskAssessmentCodeError8",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode9",
+          "DestinationColumn": "RiskAssessmentCode9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError9",
+          "DestinationColumn": "RiskAssessmentCodeError9",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCode10",
+          "DestinationColumn": "RiskAssessmentCode10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RiskAssessmentCodeError10",
+          "DestinationColumn": "RiskAssessmentCodeError10",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "SubmitterID",
+          "DestinationColumn": "SubmitterID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "RapsFileID",
+          "DestinationColumn": "RapsFileID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "TransactionDate",
+          "DestinationColumn": "TransactionDate",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+		{
+          "SourceColumn": "PlanNo",
+          "DestinationColumn": "PlanNo",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+		  "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+		  "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

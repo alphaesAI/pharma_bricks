@@ -1,0 +1,157 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MCOContractNumber",
+			"OrdinalPosition": "1",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RunDate",
+			"OrdinalPosition": "2",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PaymentDate",
+			"OrdinalPosition": "3",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "AdjustmentReasonCode",
+			"OrdinalPosition": "4",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RecordDescription",
+			"OrdinalPosition": "5",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PaymentAdjustmentCount",
+			"OrdinalPosition": "6",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MonthCount",
+			"OrdinalPosition": "7",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartAMemberCount",
+			"OrdinalPosition": "8",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartAMonthCount",
+			"OrdinalPosition": "9",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartBMemberCount",
+			"OrdinalPosition": "10",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartBMonthCount",
+			"OrdinalPosition": "11",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartAPaymentAdjustmentAmount",
+			"OrdinalPosition": "12",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartBPaymentAdjustmentAmount",
+			"OrdinalPosition": "13",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TotalAmount",
+			"OrdinalPosition": "14",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartAAverage",
+			"OrdinalPosition": "15",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartBAverage",
+			"OrdinalPosition": "16",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PaymentAdjustmentIndicator",
+			"OrdinalPosition": "17",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PBPNumber",
+			"OrdinalPosition": "18",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SegmentNumber",
+			"OrdinalPosition": "19",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDMemberCount",
+			"OrdinalPosition": "20",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDMonthCount",
+			"OrdinalPosition": "21",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDAmount",
+			"OrdinalPosition": "22",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDAverage",
+			"OrdinalPosition": "23",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LISBand25MemberCount",
+			"OrdinalPosition": "24",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LISBand50MemberCount",
+			"OrdinalPosition": "25",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LISBand75MemberCount",
+			"OrdinalPosition": "26",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LISBand100MemberCount",
+			"OrdinalPosition": "27",
+			"DataType": "string"
+		}
+	]
+}

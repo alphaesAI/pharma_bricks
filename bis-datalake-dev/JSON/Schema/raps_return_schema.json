@@ -1,0 +1,770 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RecordType",
+			"OrdinalPosition": "5",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SEQNO",
+			"OrdinalPosition": "6",
+			"DataType": "integer",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "SEQErrorCode",
+			"OrdinalPosition": "7",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PatientControlNumber",
+			"OrdinalPosition": "8",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MBI",
+			"OrdinalPosition": "9",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "MBIErrorCode",
+			"OrdinalPosition": "10",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PatientDOB",
+			"OrdinalPosition": "11",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DOBErrorCode",
+			"OrdinalPosition": "12",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType1",
+			"OrdinalPosition": "13",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"10",
+						"20"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "FromDate1",
+			"OrdinalPosition": "14",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ThruDate1",
+			"OrdinalPosition": "15",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DeleteInd1",
+			"OrdinalPosition": "16",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"D"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode1",
+			"OrdinalPosition": "17",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError1",
+			"OrdinalPosition": "18",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError1A",
+			"OrdinalPosition": "19",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType2",
+			"OrdinalPosition": "20",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"10",
+						"20"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "FromDate2",
+			"OrdinalPosition": "21",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ThruDate2",
+			"OrdinalPosition": "22",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DeleteInd2",
+			"OrdinalPosition": "23",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"D"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode2",
+			"OrdinalPosition": "24",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError2",
+			"OrdinalPosition": "25",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError2A",
+			"OrdinalPosition": "26",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType3",
+			"OrdinalPosition": "27",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"10",
+						"20"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "FromDate3",
+			"OrdinalPosition": "28",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ThruDate3",
+			"OrdinalPosition": "29",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DeleteInd3",
+			"OrdinalPosition": "30",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"D"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode3",
+			"OrdinalPosition": "31",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError3",
+			"OrdinalPosition": "32",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError3A",
+			"OrdinalPosition": "33",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType4",
+			"OrdinalPosition": "34",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"10",
+						"20"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "FromDate4",
+			"OrdinalPosition": "35",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ThruDate4",
+			"OrdinalPosition": "36",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DeleteInd4",
+			"OrdinalPosition": "37",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"D"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode4",
+			"OrdinalPosition": "38",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError4",
+			"OrdinalPosition": "39",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError4A",
+			"OrdinalPosition": "40",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType5",
+			"OrdinalPosition": "41",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"10",
+						"20"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "FromDate5",
+			"OrdinalPosition": "42",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "ThruDate5",
+			"OrdinalPosition": "43",
+			"DataType": "date",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "DeleteInd5",
+			"OrdinalPosition": "44",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"D"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DiagnosisCode5",
+			"OrdinalPosition": "45",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError5",
+			"OrdinalPosition": "46",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError5A",
+			"OrdinalPosition": "47",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType6",
+			"OrdinalPosition": "48",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FromDate6",
+			"OrdinalPosition": "49",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "ThruDate6",
+			"OrdinalPosition": "50",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "DeleteInd6",
+			"OrdinalPosition": "51",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisCode6",
+			"OrdinalPosition": "52",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError6",
+			"OrdinalPosition": "53",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError6A",
+			"OrdinalPosition": "54",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType7",
+			"OrdinalPosition": "55",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FromDate7",
+			"OrdinalPosition": "56",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "ThruDate7",
+			"OrdinalPosition": "57",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "DeleteInd7",
+			"OrdinalPosition": "58",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisCode7",
+			"OrdinalPosition": "59",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError7",
+			"OrdinalPosition": "60",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError7A",
+			"OrdinalPosition": "61",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType8",
+			"OrdinalPosition": "62",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FromDate8",
+			"OrdinalPosition": "63",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "ThruDate8",
+			"OrdinalPosition": "64",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "DeleteInd8",
+			"OrdinalPosition": "65",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisCode8",
+			"OrdinalPosition": "66",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError8",
+			"OrdinalPosition": "67",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError8A",
+			"OrdinalPosition": "68",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType9",
+			"OrdinalPosition": "69",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FromDate9",
+			"OrdinalPosition": "70",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "ThruDate9",
+			"OrdinalPosition": "71",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "DeleteInd9",
+			"OrdinalPosition": "72",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisCode9",
+			"OrdinalPosition": "73",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError9",
+			"OrdinalPosition": "74",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError9A",
+			"OrdinalPosition": "75",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderType10",
+			"OrdinalPosition": "76",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FromDate10",
+			"OrdinalPosition": "77",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "ThruDate10",
+			"OrdinalPosition": "78",
+			"DataType": "date"
+		},
+		{
+			"FieldName": "DeleteInd10",
+			"OrdinalPosition": "79",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagnosisCode10",
+			"OrdinalPosition": "80",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError10",
+			"OrdinalPosition": "81",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DiagClstrError10A",
+			"OrdinalPosition": "82",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CorrectedHICNumber",
+			"OrdinalPosition": "83",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode1",
+			"OrdinalPosition": "84",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"B",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError1",
+			"OrdinalPosition": "85",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode2",
+			"OrdinalPosition": "86",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"B",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError2",
+			"OrdinalPosition": "87",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode3",
+			"OrdinalPosition": "88",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"B",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError3",
+			"OrdinalPosition": "89",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode4",
+			"OrdinalPosition": "90",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"B",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError4",
+			"OrdinalPosition": "91",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode5",
+			"OrdinalPosition": "92",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"B",
+						"C"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError5",
+			"OrdinalPosition": "93",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode6",
+			"OrdinalPosition": "94",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError6",
+			"OrdinalPosition": "95",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode7",
+			"OrdinalPosition": "96",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError7",
+			"OrdinalPosition": "97",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode8",
+			"OrdinalPosition": "98",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError8",
+			"OrdinalPosition": "99",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode9",
+			"OrdinalPosition": "100",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError9",
+			"OrdinalPosition": "101",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCode10",
+			"OrdinalPosition": "102",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RiskAssessmentCodeError10",
+			"OrdinalPosition": "103",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Filler",
+			"OrdinalPosition": "104",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SubmitterID",
+			"OrdinalPosition": "105",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "RapsFileID",
+			"OrdinalPosition": "106",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TransactionDate",
+			"OrdinalPosition": "107",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlanNo",
+			"OrdinalPosition": "108",
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalDataCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select CCCRECORDTOTAL from control_file"
+		}
+	]
+}

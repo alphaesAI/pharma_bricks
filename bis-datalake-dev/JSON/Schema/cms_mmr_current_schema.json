@@ -1,0 +1,1187 @@
+{
+  "columnNames": [
+    {
+      "FieldName": "TEMPLATE",
+      "OrdinalPosition": -1,
+      "DataType": "TEMPLATE",
+      "Format": "TEMPLATE",
+      "Validators": [
+        {
+          "Name": "TEMPLATE",
+          "Value": "TEMPLATE",
+          "InputValue": [
+            "TEMPLATE"
+          ],
+          "ConditionCol": "TEMPLATE",
+          "ConditionVal": [
+            "TEMPLATE"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "ContractNumber",
+      "OrdinalPosition": "1",
+      "DataType": "string",
+      "StartPos": "1",
+      "EndPos": "5",
+      "Length": "5",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "RunDate",
+      "OrdinalPosition": "2",
+      "DataType": "int",
+      "StartPos": "6",
+      "EndPos": "13",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "PaymentDate",
+      "OrdinalPosition": "3",
+      "DataType": "int",
+      "StartPos": "14",
+      "EndPos": "19",
+      "Length": "6",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMM"
+        }
+      ]
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "OrdinalPosition": "4",
+      "DataType": "string",
+      "StartPos": "20",
+      "EndPos": "31",
+      "Length": "12",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "Surname",
+      "OrdinalPosition": "5",
+      "DataType": "string",
+      "StartPos": "32",
+      "EndPos": "38",
+      "Length": "7",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "FirstInitial",
+      "OrdinalPosition": "6",
+      "DataType": "string",
+      "StartPos": "39",
+      "EndPos": "39",
+      "Length": "1"
+    },
+    {
+      "FieldName": "GenderCode",
+      "OrdinalPosition": "7",
+      "DataType": "string",
+      "StartPos": "40",
+      "EndPos": "40",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "M",
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "DateOfBirth",
+      "OrdinalPosition": "8",
+      "DataType": "int",
+      "StartPos": "41",
+      "EndPos": "48",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "AgeGroup",
+      "OrdinalPosition": "9",
+      "DataType": "string",
+      "StartPos": "49",
+      "EndPos": "52",
+      "Length": "4"
+    },
+    {
+      "FieldName": "StateAndCountyCode",
+      "OrdinalPosition": "10",
+      "DataType": "string",
+      "StartPos": "53",
+      "EndPos": "57",
+      "Length": "5"
+    },
+    {
+      "FieldName": "OutOfAreaIndicator",
+      "OrdinalPosition": "11",
+      "DataType": "string",
+      "StartPos": "58",
+      "EndPos": "58",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PartAEntitlement",
+      "OrdinalPosition": "12",
+      "DataType": "string",
+      "StartPos": "59",
+      "EndPos": "59",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PartBEntitlement",
+      "OrdinalPosition": "13",
+      "DataType": "string",
+      "StartPos": "60",
+      "EndPos": "60",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "Hospice",
+      "OrdinalPosition": "14",
+      "DataType": "string",
+      "StartPos": "61",
+      "EndPos": "61",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "Esrd",
+      "OrdinalPosition": "15",
+      "DataType": "string",
+      "StartPos": "62",
+      "EndPos": "62",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "AgedDisabledMsp",
+      "OrdinalPosition": "16",
+      "DataType": "string",
+      "StartPos": "63",
+      "EndPos": "63",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y",
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "Institutional",
+      "OrdinalPosition": "17",
+      "DataType": "string",
+      "StartPos": "64",
+      "EndPos": "64",
+      "Length": "1"
+    },
+    {
+      "FieldName": "NHC",
+      "OrdinalPosition": "18",
+      "DataType": "string",
+      "StartPos": "65",
+      "EndPos": "65",
+      "Length": "1"
+    },
+    {
+      "FieldName": "NewMedicareBeneficiaryMedicaidStatusFlag",
+      "OrdinalPosition": "19",
+      "DataType": "string",
+      "StartPos": "66",
+      "EndPos": "66",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y",
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "LTIFlag",
+      "OrdinalPosition": "20",
+      "DataType": "string",
+      "StartPos": "67",
+      "EndPos": "67",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MedicaidIndicator",
+      "OrdinalPosition": "21",
+      "DataType": "string",
+      "StartPos": "68",
+      "EndPos": "68",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PIPDCG ",
+      "OrdinalPosition": "22",
+      "DataType": "string",
+      "StartPos": "69",
+      "EndPos": "70",
+      "Length": "2"
+    },
+    {
+      "FieldName": "DefaultRiskFactorCode",
+      "OrdinalPosition": "23",
+      "DataType": "string",
+      "StartPos": "71",
+      "EndPos": "71",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "RiskAdjusterFactorA",
+      "OrdinalPosition": "24",
+      "DataType": "decimal(6,4)",
+      "StartPos": "72",
+      "EndPos": "78",
+      "Length": "7",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(6,4)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RiskAdjusterFactorB",
+      "OrdinalPosition": "25",
+      "DataType": "decimal(6,4)",
+      "StartPos": "79",
+      "EndPos": "85",
+      "Length": "7",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(6,4)"
+        }
+      ]
+    },
+    {
+      "FieldName": "NumberOfPaymentAdjustmentMonthsPartA",
+      "OrdinalPosition": "26",
+      "DataType": "int",
+      "StartPos": "86",
+      "EndPos": "87",
+      "Length": "2",
+      "Validators": [
+        {
+          "Name": "isMaxValue",
+          "Value": "99"
+        },
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "integer"
+        }
+      ]
+    },
+    {
+      "FieldName": "NumberOfPaymentAdjustmentMonthsPartB",
+      "OrdinalPosition": "27",
+      "DataType": "int",
+      "StartPos": "88",
+      "EndPos": "89",
+      "Length": "2",
+      "Validators": [
+        {
+          "Name": "isMaxValue",
+          "Value": "99"
+        },
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "integer"
+        }
+      ]
+    },
+    {
+      "FieldName": "AdjustmentReasonCode",
+      "OrdinalPosition": "28",
+      "DataType": "string",
+      "StartPos": "90",
+      "EndPos": "91",
+      "Length": "2",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "integer"
+        }
+      ]
+    },
+    {
+      "FieldName": "PaymentAdjustmentStartDate",
+      "OrdinalPosition": "29",
+      "DataType": "int",
+      "StartPos": "92",
+      "EndPos": "99",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "PaymentAdjustmentEndDate",
+      "OrdinalPosition": "30",
+      "DataType": "int",
+      "StartPos": "100",
+      "EndPos": "107",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDate",
+          "Value": "yyyyMMdd"
+        }
+      ]
+    },
+    {
+      "FieldName": "DemographicPaymentAdjustmentRatePartA",
+      "OrdinalPosition": "31",
+      "DataType": "decimal(8,2)",
+      "StartPos": "108",
+      "EndPos": "116",
+      "Length": "9"
+    },
+    {
+      "FieldName": "DemographicPaymentAdjustmentRatePartB",
+      "OrdinalPosition": "32",
+      "DataType": "decimal(8,2)",
+      "StartPos": "117",
+      "EndPos": "125",
+      "Length": "9"
+    },
+    {
+      "FieldName": "MonthlyPaymentAdjustmentAmountRateA",
+      "OrdinalPosition": "33",
+      "DataType": "decimal(8,2)",
+      "StartPos": "126",
+      "EndPos": "134",
+      "Length": "9"
+    },
+    {
+      "FieldName": "MonthlyPaymentAdjustmentAmountRateB",
+      "OrdinalPosition": "34",
+      "DataType": "decimal(8,4)",
+      "StartPos": "135",
+      "EndPos": "143",
+      "Length": "9"
+    },
+    {
+      "FieldName": "LisPremiumSubsidy",
+      "OrdinalPosition": "35",
+      "DataType": "decimal(7,2)",
+      "StartPos": "144",
+      "EndPos": "151",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "EsrdMspFlag",
+      "OrdinalPosition": "36",
+      "DataType": "string",
+      "StartPos": "152",
+      "EndPos": "152",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "T",
+            "N",
+            "Y",
+            "P"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "MTMAddOn",
+      "OrdinalPosition": "37",
+      "DataType": "decimal(9,2)",
+      "StartPos": "153",
+      "EndPos": "170",
+      "Length": "18"
+    },
+    {
+      "FieldName": "MedicaidFullPartialNondual",
+      "OrdinalPosition": "38",
+      "DataType": "string",
+      "StartPos": "171",
+      "EndPos": "171",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "1",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "RiskAdjustmentAgeGroup",
+      "OrdinalPosition": "39",
+      "DataType": "string",
+      "StartPos": "172",
+      "EndPos": "175",
+      "Length": "4",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        },
+        {
+          "Name": "isDataType",
+          "Value": "integer"
+        }
+      ]
+    },
+    {
+      "FieldName": "PreviousDisableRatio",
+      "OrdinalPosition": "40",
+      "DataType": "decimal(7,4)",
+      "StartPos": "176",
+      "EndPos": "182",
+      "Length": "7"
+    },
+    {
+      "FieldName": "DeMinimisPartD",
+      "OrdinalPosition": "41",
+      "DataType": "string",
+      "StartPos": "183",
+      "EndPos": "183",
+      "Length": "1"
+    },
+    {
+      "FieldName": "ConcurrentEnrollment",
+      "OrdinalPosition": "42",
+      "DataType": "string",
+      "StartPos": "184",
+      "EndPos": "184",
+      "Length": "1"
+    },
+    {
+      "FieldName": "PlanBenefitPackageID",
+      "OrdinalPosition": "43",
+      "DataType": "string",
+      "StartPos": "185",
+      "EndPos": "187",
+      "Length": "3",
+      "Validators": [
+        {
+          "Name": "isRequired"
+        }
+      ]
+    },
+    {
+      "FieldName": "RaceCode",
+      "OrdinalPosition": "44",
+      "DataType": "string",
+      "StartPos": "188",
+      "EndPos": "188",
+      "Length": "1"
+    },
+    {
+      "FieldName": "RiskAdjustmentFactorTypeCode",
+      "OrdinalPosition": "45",
+      "DataType": "string",
+      "StartPos": "189",
+      "EndPos": "190",
+      "Length": "2",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "C",
+            "C1",
+            "C3",
+            "C4",
+            "C5",
+            "C2",
+            "C6",
+            "C7",
+            "C8",
+            "CF",
+            "CP",
+            "CN",
+            "D",
+            "D1",
+            "D2",
+            "E",
+            "ED",
+            "E1",
+            "E2",
+            "G1",
+            "G2",
+            "I",
+            "I3",
+            "I4",
+            "I1",
+            "I5",
+            "I6",
+            "I7",
+            "I2",
+            "I8",
+            "I9",
+            "IA",
+            "SE",
+            "PA",
+            "PB",
+            "PC",
+            "PD",
+            "PE",
+            "PF",
+            "PG",
+            "PH",
+            "PI",
+            "PJ",
+            "PK",
+            "PL",
+            "PM"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "FrailtyIndicator",
+      "OrdinalPosition": "46",
+      "DataType": "string",
+      "StartPos": "191",
+      "EndPos": "191",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y",
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "OriginalReasonForEntitlementCode",
+      "OrdinalPosition": "47",
+      "DataType": "string",
+      "StartPos": "192",
+      "EndPos": "192",
+      "Length": "1"
+    },
+    {
+      "FieldName": "LagIndicator",
+      "OrdinalPosition": "48",
+      "DataType": "string",
+      "StartPos": "193",
+      "EndPos": "193",
+      "Length": "1"
+    },
+    {
+      "FieldName": "SegmentNumber",
+      "OrdinalPosition": "49",
+      "DataType": "string",
+      "StartPos": "194",
+      "EndPos": "196",
+      "Length": "3"
+    },
+    {
+      "FieldName": "EnrollmentSource",
+      "OrdinalPosition": "50",
+      "DataType": "string",
+      "StartPos": "197",
+      "EndPos": "197",
+      "Length": "1"
+    },
+    {
+      "FieldName": "EGHPFlag",
+      "OrdinalPosition": "51",
+      "DataType": "string",
+      "StartPos": "198",
+      "EndPos": "198",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y",
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PartCBasicPremiumPartAAmount",
+      "OrdinalPosition": "52",
+      "DataType": "decimal(7,2)",
+      "StartPos": "199",
+      "EndPos": "206",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "PartCBasicPremiumPartBAmount",
+      "OrdinalPosition": "53",
+      "DataType": "decimal(7,2)",
+      "StartPos": "207",
+      "EndPos": "214",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForPartACostSharingReduction",
+      "OrdinalPosition": "54",
+      "DataType": "decimal(7,2)",
+      "StartPos": "215",
+      "EndPos": "222",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForPartBCostSharingReduction",
+      "OrdinalPosition": "55",
+      "DataType": "decimal(7,2)",
+      "StartPos": "223",
+      "EndPos": "230",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForOtherPartAMandatorySupplementalBenefits",
+      "OrdinalPosition": "56",
+      "DataType": "decimal(7,2)",
+      "StartPos": "231",
+      "EndPos": "238",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForOtherPartBMandatorySupplementalBenefits",
+      "OrdinalPosition": "57",
+      "DataType": "decimal(7,2)",
+      "StartPos": "239",
+      "EndPos": "246",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForPartBPremiumReductionPartAAmount",
+      "OrdinalPosition": "58",
+      "DataType": "decimal(7,2)",
+      "StartPos": "247",
+      "EndPos": "254",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForPartBPremiumReductionPartBAmount",
+      "OrdinalPosition": "59",
+      "DataType": "decimal(7,2)",
+      "StartPos": "255",
+      "EndPos": "262",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForPartDSupplementalBenefitsPartAAmount",
+      "OrdinalPosition": "60",
+      "DataType": "decimal(7,2)",
+      "StartPos": "263",
+      "EndPos": "270",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "RebateForPartDSupplementalBenefitsPartBAmount",
+      "OrdinalPosition": "61",
+      "DataType": "decimal(7,2)",
+      "StartPos": "271",
+      "EndPos": "278",
+      "Length": "8",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(7,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "TotalPartAMAPayment",
+      "OrdinalPosition": "62",
+      "DataType": "decimal(9,2)",
+      "StartPos": "279",
+      "EndPos": "288",
+      "Length": "10",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(9,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "TotalPartBMAPayment",
+      "OrdinalPosition": "63",
+      "DataType": "decimal(9,2)",
+      "StartPos": "289",
+      "EndPos": "298",
+      "Length": "10",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(9,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "TotalMAPaymentAmount",
+      "OrdinalPosition": "64",
+      "DataType": "decimal(10,2)",
+      "StartPos": "299",
+      "EndPos": "309",
+      "Length": "11",
+      "Validators": [
+        {
+          "Name": "isDataTypeNotRequired",
+          "Value": "decimal(10,2)"
+        }
+      ]
+    },
+    {
+      "FieldName": "PartDRAFactor",
+      "OrdinalPosition": "65",
+      "DataType": "decimal(6,4)",
+      "StartPos": "310",
+      "EndPos": "316",
+      "Length": "7"
+    },
+    {
+      "FieldName": "PartDLowIncomeIndicator",
+      "OrdinalPosition": "66",
+      "DataType": "string",
+      "StartPos": "317",
+      "EndPos": "317",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "Y",
+            "N",
+            "1",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PartDLowIncomeMultiplier",
+      "OrdinalPosition": "67",
+      "DataType": "decimal(6,4)",
+      "StartPos": "318",
+      "EndPos": "324",
+      "Length": "7"
+    },
+    {
+      "FieldName": "PartDLongTermInstitutionalIndicator",
+      "OrdinalPosition": "68",
+      "DataType": "string",
+      "StartPos": "325",
+      "EndPos": "325",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "A",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PartDLongTermInstitutionalMultiplier",
+      "OrdinalPosition": "69",
+      "DataType": "decimal(6,4)",
+      "StartPos": "326",
+      "EndPos": "332",
+      "Length": "7"
+    },
+    {
+      "FieldName": "RebateForPartDBasicPremiumReduction",
+      "OrdinalPosition": "70",
+      "DataType": "decimal(7,2)",
+      "StartPos": "333",
+      "EndPos": "340",
+      "Length": "8"
+    },
+    {
+      "FieldName": "PartDBasicPremiumAmount",
+      "OrdinalPosition": "71",
+      "DataType": "decimal(7,2)",
+      "StartPos": "341",
+      "EndPos": "348",
+      "Length": "8"
+    },
+    {
+      "FieldName": "PartDDirectSubsidyMonthlyPaymentAmount",
+      "OrdinalPosition": "72",
+      "DataType": "decimal(9,2)",
+      "StartPos": "349",
+      "EndPos": "358",
+      "Length": "10"
+    },
+    {
+      "FieldName": "ReinsuranceSubsidyAmount",
+      "OrdinalPosition": "73",
+      "DataType": "decimal(9,2)",
+      "StartPos": "359",
+      "EndPos": "368",
+      "Length": "10"
+    },
+    {
+      "FieldName": "LowIncomeSubsidyCostSharingAmount",
+      "OrdinalPosition": "74",
+      "DataType": "decimal(9,2)",
+      "StartPos": "369",
+      "EndPos": "378",
+      "Length": "10"
+    },
+    {
+      "FieldName": "TotalPartDPayment",
+      "OrdinalPosition": "75",
+      "DataType": "decimal(10,2)",
+      "StartPos": "379",
+      "EndPos": "389",
+      "Length": "11"
+    },
+    {
+      "FieldName": "NumberOfPaymentAdjustmentMonthsPartD",
+      "OrdinalPosition": "76",
+      "DataType": "int",
+      "StartPos": "390",
+      "EndPos": "391",
+      "Length": "2"
+    },
+    {
+      "FieldName": "PACEPremiumAddOn",
+      "OrdinalPosition": "77",
+      "DataType": "decimal(9,2)",
+      "StartPos": "392",
+      "EndPos": "401",
+      "Length": "10"
+    },
+    {
+      "FieldName": "PACECostSharingAddOn",
+      "OrdinalPosition": "78",
+      "DataType": "decimal(9,2)",
+      "StartPos": "402",
+      "EndPos": "411",
+      "Length": "10"
+    },
+    {
+      "FieldName": "PartCFrailtyScoreFactor",
+      "OrdinalPosition": "79",
+      "DataType": "decimal(6,4)",
+      "StartPos": "412",
+      "EndPos": "418",
+      "Length": "7"
+    },
+    {
+      "FieldName": "MSPFactor",
+      "OrdinalPosition": "80",
+      "DataType": "decimal(6,4)",
+      "StartPos": "419",
+      "EndPos": "425",
+      "Length": "7"
+    },
+    {
+      "FieldName": "MSPReductionReductionAdjustmentAmountPartA",
+      "OrdinalPosition": "81",
+      "DataType": "decimal(9,2)",
+      "StartPos": "426",
+      "EndPos": "435",
+      "Length": "10"
+    },
+    {
+      "FieldName": "MSPReductionReductionAdjustmentAmountPartB",
+      "OrdinalPosition": "82",
+      "DataType": "decimal(9,2)",
+      "StartPos": "436",
+      "EndPos": "445",
+      "Length": "10"
+    },
+    {
+      "FieldName": "MedicaidDualStatusCode",
+      "OrdinalPosition": "83",
+      "DataType": "string",
+      "StartPos": "446",
+      "EndPos": "447",
+      "Length": "2"
+    },
+    {
+      "FieldName": "PartDCoverageGapDiscountAmount",
+      "OrdinalPosition": "84",
+      "DataType": "decimal(7,2)",
+      "StartPos": "448",
+      "EndPos": "455",
+      "Length": "8"
+    },
+    {
+      "FieldName": "PartDRiskAdjustmentFactorType",
+      "OrdinalPosition": "85",
+      "DataType": "string",
+      "StartPos": "456",
+      "EndPos": "457",
+      "Length": "2",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6",
+            "D7",
+            "D8",
+            "D9",
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "P7",
+            "P8",
+            "P9"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "DefaultPartDRiskAdjustmentFactorCode",
+      "OrdinalPosition": "86",
+      "DataType": "string",
+      "StartPos": "458",
+      "EndPos": "458",
+      "Length": "1",
+      "Validators": [
+        {
+          "Name": "IsInAllowedValues",
+          "InputValue": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        }
+      ]
+    },
+    {
+      "FieldName": "PartARiskAdjustedMonthlyRateAmountForPaymentAdjustment",
+      "OrdinalPosition": "87",
+      "DataType": "decimal(8,2)",
+      "StartPos": "459",
+      "EndPos": "467",
+      "Length": "9"
+    },
+    {
+      "FieldName": "PartBRiskAdjustedMonthlyRateAmountForPaymentAdjustment",
+      "OrdinalPosition": "88",
+      "DataType": "decimal(8,2)",
+      "StartPos": "468",
+      "EndPos": "476",
+      "Length": "9"
+    },
+    {
+      "FieldName": "PartDDirectSubsidyMonthlyRateAmountForPaymentAdjustment",
+      "OrdinalPosition": "89",
+      "DataType": "decimal(8,2)",
+      "StartPos": "477",
+      "EndPos": "485",
+      "Length": "9"
+    },
+    {
+      "FieldName": "CleanupID",
+      "OrdinalPosition": "90",
+      "DataType": "string",
+      "StartPos": "486",
+      "EndPos": "495",
+      "Length": "10"
+    }
+  ]
+}

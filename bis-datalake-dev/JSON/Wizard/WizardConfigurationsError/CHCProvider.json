@@ -1,0 +1,36 @@
+{
+  "DestinationTableName": "CHCProviderErrors",
+  "DestinationTablePath": "/mnt/export#clientCode/BatchAuditErrors/ACA/CHCProviderErrors",
+  "SourceTables": [
+    {
+      "IsSource": "1",
+      "TableName": "SourceTable",
+      "TablePath": "/mnt/#clientCode/consolidated/ACA/Data/Provider",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "BatchTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/ACA/CHCProviderBatch",
+      "TableFormat": "delta"
+    },
+    {
+      "IsSource": "0",
+      "TableName": "AuditTable",
+      "TablePath": "/mnt/export#clientCode/BatchAudit/export_audit",
+      "TableFormat": "delta"
+    }
+  ],
+  "Validations": [
+    {
+      "Field": "NPI",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    },
+    {
+      "Field": "LastName",
+      "Validator": "IsRequired",
+      "SQLQuery": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "SubLayerProcessing": [
+      {
+        "SubGroupEntity": "PECPracticeTargetEngagementStatus",
+        "DestinationTable": "#clientCode/Gold/practiceTargetEngagementStatus",
+        "SourceTables": [
+          {
+            "Entity": "PECPracticeTargetEngagementStatus",
+            "SourceTable": "#clientCode/consolidated/MA/Data/PECPracticeTargetEngagementStatus",
+            "SourceFormat": "delta"
+          }          
+        ],
+        "SQLScript": "SELECT DISTINCT \r\n\t p.Client AS clientCode\r\n\t,CAST(p.PECProgramYear AS INT) AS pecProgramYear\r\n\t,p.POCode AS poCode\r\n\t,p.POName AS poName\r\n\t,p.PracticeCode AS practiceCode\r\n\t,p.PracticeName AS practiceName\r\n\t,p.EngagedDate AS engagedDate\r\n\t,p.DisengagedDate AS disengagedDate\r\n\t,p.TargetStatus AS targetedStatus\r\n\t,p.ParticipationDecision AS participationDecision\r\n\t,p.Product AS product\r\n\t,hash(concat(IfNull(p.Client,\"\") ,\"|\",IfNull(p.PECProgramYear,\"\") ,\"|\",IfNull(p.PracticeCode,\"\"))) AS hashKey\r\nFROM PECPracticeTargetEngagementStatus p \r\n\tINNER JOIN (select MAX(FileID) AS LatestFileId FROM PECPracticeTargetEngagementStatus) lpt \r\n\t\tON p.FileID = lpt.LatestFileId\r\n",
+        "MergeScript": "MERGE INTO DestinationTable t USING (\r\n  SELECT\r\n    ss.clientCode,\r\n    ss.pecProgramYear,\r\n    ss.poCode,\r\n    ss.poName,\r\n    ss.practiceCode,\r\n    ss.practiceName,\r\n    ss.engagedDate,\r\n    ss.disengagedDate,\r\n    ss.targetedStatus,\r\n    ss.participationDecision,\r\n    ss.product,\r\n    ifnull(ss.hashKey, dt.hashKey) AS hashKey,\r\n    CASE\r\n      WHEN ss.hashKey = dt.hashKey THEN 'RecordsToUpdate'\r\n      WHEN ss.hashKey IS NOT NULL THEN 'RecordsToInsert'\r\n      ELSE 'RecordsToDelete'\r\n    END AS Source\r\n  FROM tempSQLScript ss \r\n     FULL OUTER JOIN DestinationTable dt \r\n       ON ss.HashKey = dt.HashKey\r\n) s ON  t.hashKey = s.hashKey\r\nWHEN MATCHED AND s.Source = 'RecordsToDelete' THEN \r\n  DELETE\r\nWHEN MATCHED AND s.Source = 'RecordsToUpdate' AND s.hashKey IS NOT NULL THEN\r\n  UPDATE\r\n  SET\r\n    clientCode = s.clientCode,\r\n    pecProgramYear = s.pecProgramYear,\r\n    poCode = s.poCode,\r\n    poName = s.poName,\r\n    practiceCode = s.practiceCode,\r\n    practiceName = s.practiceName,\r\n    engagedDate = s.engagedDate,\r\n    disengagedDate = s.disengagedDate,\r\n    targetedStatus = s.targetedStatus,\r\n    participationDecision = s.participationDecision,\r\n    product = s.product,\r\n    hashKey = s.hashKey\r\nWHEN NOT MATCHED AND s.hashKey IS NOT NULL THEN\r\n  INSERT (\r\n      clientCode,\r\n      pecProgramYear,\r\n      poCode,\r\n      poName,\r\n      practiceCode,\r\n      practiceName,\r\n      engagedDate,\r\n      disengagedDate,\r\n      targetedStatus,\r\n      participationDecision,\r\n      product,\r\n      hashkey\r\n  )\r\n  VALUES(\r\n      s.clientCode,\r\n      s.pecProgramYear,\r\n      s.poCode,\r\n      s.poName,\r\n      s.practiceCode,\r\n      s.practiceName,\r\n      s.engagedDate,\r\n      s.disengagedDate,\r\n      s.targetedStatus,\r\n      s.participationDecision,\r\n      s.product,\r\n      s.hashkey\r\n    )\r\n"
+      }
+    ]
+}

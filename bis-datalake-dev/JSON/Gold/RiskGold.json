@@ -1,0 +1,46 @@
+{
+    "LayerGrouping": [        
+        {
+          "LayerOrder": 100,
+          "LayerGrouping": "GoldLayerGeneric",
+          "SubGrouping": [
+            {
+              "SubGroupEntity": "ResponseMAO004Diagnosis",
+              "SubGroupingOrder": 1,
+              "SubConfigPath": "fileconfig/JSON/Gold/ResponseMAO004Diagnosis.json",
+              "Notebook": "./GenericSubGroupDupChkProcessing"
+            },
+            {
+              "SubGroupEntity": "SupplementalDiagnosis",
+              "SubGroupingOrder": 2,
+              "SubConfigPath": "fileconfig/JSON/Gold/SupplementalDiagnosis.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "CacheSuspectAnalysis",
+              "SubGroupingOrder": 3,
+              "SubConfigPath": "fileconfig/JSON/Gold/CacheSuspectAnalysis.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },
+            {
+              "SubGroupEntity": "CacheSuspectAnalysisHistory",
+              "SubGroupingOrder": 4,
+              "SubConfigPath": "fileconfig/JSON/Gold/CacheSuspectAnalysisHistory.json",
+              "Notebook": "./GenericSubGroupProcessing"
+            },            
+            {
+              "SubGroupEntity": "DemographicRiskScore",
+              "SubGroupingOrder": 5,
+              "SubConfigPath": "fileconfig/JSON/Gold/DemographicRiskScore.json",
+              "Notebook": "./GenericSubGroupDupChkProcessing"
+            },
+			{
+              "SubGroupEntity": "Membership",
+              "SubGroupingOrder": 6,
+              "SubConfigPath": "fileconfig/JSON/Gold/Membership.json",
+              "Notebook": "./GenericSubGroupDupChkProcessing"
+            }
+          ]
+        }
+    ]
+}

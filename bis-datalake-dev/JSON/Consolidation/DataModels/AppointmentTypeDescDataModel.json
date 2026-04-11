@@ -1,0 +1,59 @@
+{
+  "Fields": [
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "LongType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "Client",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "Market",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "Metric",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "AppointmentTypeDesc",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "AppointmentTypeDesc_USE",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "CountFlag",
+      "DataType": "StringType",
+      "Ordinal": 11
+    }
+  ]
+}

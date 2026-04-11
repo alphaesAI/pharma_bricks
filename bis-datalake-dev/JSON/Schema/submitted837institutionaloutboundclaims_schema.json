@@ -1,0 +1,4352 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "RecordType",
+            "OrdinalPosition": 0,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EncounterICN",
+            "OrdinalPosition": 1,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CMSContractNumber",
+            "OrdinalPosition": 2,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderLastOrOrg",
+            "OrdinalPosition": 3,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderFirstName",
+            "OrdinalPosition": 4,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderMiddleName",
+            "OrdinalPosition": 5,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderNameSuffix",
+            "OrdinalPosition": 6,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderNPI",
+            "OrdinalPosition": 7,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderAddressLine1",
+            "OrdinalPosition": 8,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderAddressLine2",
+            "OrdinalPosition": 9,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCity",
+            "OrdinalPosition": 10,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderState",
+            "OrdinalPosition": 11,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderZip",
+            "OrdinalPosition": 12,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderTIN",
+            "OrdinalPosition": 13,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberLastName",
+            "OrdinalPosition": 14,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberFirstName",
+            "OrdinalPosition": 15,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberMiddleName",
+            "OrdinalPosition": 16,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberNameSuffix",
+            "OrdinalPosition": 17,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HICNumber",
+            "OrdinalPosition": 18,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberAddress1",
+            "OrdinalPosition": 19,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberAddress2",
+            "OrdinalPosition": 20,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberCity",
+            "OrdinalPosition": 21,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberState",
+            "OrdinalPosition": 22,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberZip",
+            "OrdinalPosition": 23,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberCountry",
+            "OrdinalPosition": 24,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberCountrySubdivision",
+            "OrdinalPosition": 25,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberDOB",
+            "OrdinalPosition": 26,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MemberGender",
+            "OrdinalPosition": 27,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PropCasualty",
+            "OrdinalPosition": 28,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BilledAmount",
+            "OrdinalPosition": 29,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PlaceOfService",
+            "OrdinalPosition": 30,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FrequencyTypeCd",
+            "OrdinalPosition": 31,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrvAcceptAssignCd",
+            "OrdinalPosition": 32,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BeneAssignCertInd",
+            "OrdinalPosition": 33,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReleaseOfInfoCd",
+            "OrdinalPosition": 34,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DelayReasonCd",
+            "OrdinalPosition": 35,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HospDischargeHr",
+            "OrdinalPosition": 36,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrimaryServiceFrom",
+            "OrdinalPosition": 37,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrimaryServiceThru",
+            "OrdinalPosition": 38,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "HospAdmitDt",
+            "OrdinalPosition": 39,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RepricerReceivedDate",
+            "OrdinalPosition": 40,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdmitType",
+            "OrdinalPosition": 41,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdmitSourceCode",
+            "OrdinalPosition": 42,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PatientStatusCode",
+            "OrdinalPosition": 43,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0101",
+            "OrdinalPosition": 44,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0102",
+            "OrdinalPosition": 45,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0106",
+            "OrdinalPosition": 46,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0201",
+            "OrdinalPosition": 47,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0202",
+            "OrdinalPosition": 48,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0206",
+            "OrdinalPosition": 49,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0301",
+            "OrdinalPosition": 50,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0302",
+            "OrdinalPosition": 51,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0306",
+            "OrdinalPosition": 52,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0401",
+            "OrdinalPosition": 53,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0402",
+            "OrdinalPosition": 54,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0406",
+            "OrdinalPosition": 55,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0501",
+            "OrdinalPosition": 56,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0502",
+            "OrdinalPosition": 57,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0506",
+            "OrdinalPosition": 58,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0601",
+            "OrdinalPosition": 59,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0602",
+            "OrdinalPosition": 60,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0606",
+            "OrdinalPosition": 61,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0701",
+            "OrdinalPosition": 62,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0702",
+            "OrdinalPosition": 63,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0706",
+            "OrdinalPosition": 64,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0801",
+            "OrdinalPosition": 65,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0802",
+            "OrdinalPosition": 66,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0806",
+            "OrdinalPosition": 67,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0901",
+            "OrdinalPosition": 68,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0902",
+            "OrdinalPosition": 69,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo0906",
+            "OrdinalPosition": 70,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo1001",
+            "OrdinalPosition": 71,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo1002",
+            "OrdinalPosition": 72,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfo1006",
+            "OrdinalPosition": 73,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractTypeCd02",
+            "OrdinalPosition": 74,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Contractamt",
+            "OrdinalPosition": 75,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractPrcnt",
+            "OrdinalPosition": 76,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractCode",
+            "OrdinalPosition": 77,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractDiscnt",
+            "OrdinalPosition": 78,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ContractVer",
+            "OrdinalPosition": 79,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SrvAuthExcptCode",
+            "OrdinalPosition": 80,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReferralNum",
+            "OrdinalPosition": 81,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AuthNum",
+            "OrdinalPosition": 82,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OrigClaimNum",
+            "OrdinalPosition": 83,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReprcRef",
+            "OrdinalPosition": 84,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdjReprcRef",
+            "OrdinalPosition": 85,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "InvDevNum",
+            "OrdinalPosition": 86,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TraceNum",
+            "OrdinalPosition": 87,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AutoAccidentState",
+            "OrdinalPosition": 88,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProjNum",
+            "OrdinalPosition": 89,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProNum",
+            "OrdinalPosition": 90,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K301",
+            "OrdinalPosition": 91,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K302",
+            "OrdinalPosition": 92,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K303",
+            "OrdinalPosition": 93,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K304",
+            "OrdinalPosition": 94,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K305",
+            "OrdinalPosition": 95,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K306",
+            "OrdinalPosition": 96,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K307",
+            "OrdinalPosition": 97,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K308",
+            "OrdinalPosition": 98,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K309",
+            "OrdinalPosition": 99,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "K310",
+            "OrdinalPosition": 100,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0101",
+            "OrdinalPosition": 101,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0102",
+            "OrdinalPosition": 102,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0201",
+            "OrdinalPosition": 103,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0202",
+            "OrdinalPosition": 104,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0301",
+            "OrdinalPosition": 105,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0302",
+            "OrdinalPosition": 106,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0401",
+            "OrdinalPosition": 107,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0402",
+            "OrdinalPosition": 108,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0501",
+            "OrdinalPosition": 109,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0502",
+            "OrdinalPosition": 110,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0601",
+            "OrdinalPosition": 111,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0602",
+            "OrdinalPosition": 112,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0701",
+            "OrdinalPosition": 113,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0702",
+            "OrdinalPosition": 114,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0801",
+            "OrdinalPosition": 115,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0802",
+            "OrdinalPosition": 116,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0901",
+            "OrdinalPosition": 117,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte0902",
+            "OrdinalPosition": 118,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte1001",
+            "OrdinalPosition": 119,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Nte1002",
+            "OrdinalPosition": 120,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillNote",
+            "OrdinalPosition": 121,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EPSDTReferralConditionIndicator",
+            "OrdinalPosition": 122,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EPSDTConditionCode1",
+            "OrdinalPosition": 123,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EPSDTConditionCode2",
+            "OrdinalPosition": 124,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "EPSDTConditionCode3",
+            "OrdinalPosition": 125,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrincDiagCd",
+            "OrdinalPosition": 126,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrincDiagPresentOnAdmit",
+            "OrdinalPosition": 127,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdmitDiagnosisCode",
+            "OrdinalPosition": 128,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "VisitReason01",
+            "OrdinalPosition": 129,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "VisitReason02",
+            "OrdinalPosition": 130,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "VisitReason03",
+            "OrdinalPosition": 131,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX1",
+            "OrdinalPosition": 132,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent1",
+            "OrdinalPosition": 133,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX2",
+            "OrdinalPosition": 134,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent2",
+            "OrdinalPosition": 135,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX3",
+            "OrdinalPosition": 136,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent3",
+            "OrdinalPosition": 137,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX4",
+            "OrdinalPosition": 138,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent4",
+            "OrdinalPosition": 139,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX5",
+            "OrdinalPosition": 140,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent5",
+            "OrdinalPosition": 141,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX6",
+            "OrdinalPosition": 142,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent6",
+            "OrdinalPosition": 143,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX7",
+            "OrdinalPosition": 144,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent7",
+            "OrdinalPosition": 145,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX8",
+            "OrdinalPosition": 146,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent8",
+            "OrdinalPosition": 147,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX9",
+            "OrdinalPosition": 148,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent9",
+            "OrdinalPosition": 149,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX10",
+            "OrdinalPosition": 150,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent10",
+            "OrdinalPosition": 151,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX11",
+            "OrdinalPosition": 152,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent11",
+            "OrdinalPosition": 153,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDX12",
+            "OrdinalPosition": 154,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ExternalCauseInjuryDXPresent12",
+            "OrdinalPosition": 155,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DRGCd",
+            "OrdinalPosition": 156,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag1",
+            "OrdinalPosition": 157,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd01",
+            "OrdinalPosition": 158,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag2",
+            "OrdinalPosition": 159,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd02",
+            "OrdinalPosition": 160,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag3",
+            "OrdinalPosition": 161,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd03",
+            "OrdinalPosition": 162,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag4",
+            "OrdinalPosition": 163,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd04",
+            "OrdinalPosition": 164,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag5",
+            "OrdinalPosition": 165,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd05",
+            "OrdinalPosition": 166,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag6",
+            "OrdinalPosition": 167,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd06",
+            "OrdinalPosition": 168,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag7",
+            "OrdinalPosition": 169,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd07",
+            "OrdinalPosition": 170,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag8",
+            "OrdinalPosition": 171,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd08",
+            "OrdinalPosition": 172,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag9",
+            "OrdinalPosition": 173,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd09",
+            "OrdinalPosition": 174,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag10",
+            "OrdinalPosition": 175,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd10",
+            "OrdinalPosition": 176,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag11",
+            "OrdinalPosition": 177,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd11",
+            "OrdinalPosition": 178,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag12",
+            "OrdinalPosition": 179,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd12",
+            "OrdinalPosition": 180,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag13",
+            "OrdinalPosition": 181,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd13",
+            "OrdinalPosition": 182,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag14",
+            "OrdinalPosition": 183,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd14",
+            "OrdinalPosition": 184,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag15",
+            "OrdinalPosition": 185,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd15",
+            "OrdinalPosition": 186,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag16",
+            "OrdinalPosition": 187,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd16",
+            "OrdinalPosition": 188,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag17",
+            "OrdinalPosition": 189,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd17",
+            "OrdinalPosition": 190,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag18",
+            "OrdinalPosition": 191,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd18",
+            "OrdinalPosition": 192,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag19",
+            "OrdinalPosition": 193,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd19",
+            "OrdinalPosition": 194,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag20",
+            "OrdinalPosition": 195,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd20",
+            "OrdinalPosition": 196,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag21",
+            "OrdinalPosition": 197,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd21",
+            "OrdinalPosition": 198,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag22",
+            "OrdinalPosition": 199,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd22",
+            "OrdinalPosition": 200,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag23",
+            "OrdinalPosition": 201,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd23",
+            "OrdinalPosition": 202,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Diag24",
+            "OrdinalPosition": 203,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PresentOnAdmitInd24",
+            "OrdinalPosition": 204,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrincProcCd",
+            "OrdinalPosition": 205,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PrincProcDt",
+            "OrdinalPosition": 206,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd01",
+            "OrdinalPosition": 207,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt01",
+            "OrdinalPosition": 208,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd02",
+            "OrdinalPosition": 209,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt02",
+            "OrdinalPosition": 210,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd03",
+            "OrdinalPosition": 211,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt03",
+            "OrdinalPosition": 212,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd04",
+            "OrdinalPosition": 213,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt04",
+            "OrdinalPosition": 214,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd05",
+            "OrdinalPosition": 215,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt05",
+            "OrdinalPosition": 216,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd06",
+            "OrdinalPosition": 217,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt06",
+            "OrdinalPosition": 218,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd07",
+            "OrdinalPosition": 219,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt07",
+            "OrdinalPosition": 220,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd08",
+            "OrdinalPosition": 221,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt08",
+            "OrdinalPosition": 222,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd09",
+            "OrdinalPosition": 223,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt09",
+            "OrdinalPosition": 224,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd10",
+            "OrdinalPosition": 225,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt10",
+            "OrdinalPosition": 226,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd11",
+            "OrdinalPosition": 227,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt11",
+            "OrdinalPosition": 228,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd12",
+            "OrdinalPosition": 229,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt12",
+            "OrdinalPosition": 230,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd13",
+            "OrdinalPosition": 231,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt13",
+            "OrdinalPosition": 232,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd14",
+            "OrdinalPosition": 233,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt14",
+            "OrdinalPosition": 234,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd15",
+            "OrdinalPosition": 235,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt15",
+            "OrdinalPosition": 236,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd16",
+            "OrdinalPosition": 237,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt16",
+            "OrdinalPosition": 238,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd17",
+            "OrdinalPosition": 239,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt17",
+            "OrdinalPosition": 240,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd18",
+            "OrdinalPosition": 241,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt18",
+            "OrdinalPosition": 242,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd19",
+            "OrdinalPosition": 243,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt19",
+            "OrdinalPosition": 244,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd20",
+            "OrdinalPosition": 245,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt20",
+            "OrdinalPosition": 246,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd21",
+            "OrdinalPosition": 247,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt21",
+            "OrdinalPosition": 248,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd22",
+            "OrdinalPosition": 249,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt22",
+            "OrdinalPosition": 250,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd23",
+            "OrdinalPosition": 251,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt23",
+            "OrdinalPosition": 252,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcCd24",
+            "OrdinalPosition": 253,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcDt24",
+            "OrdinalPosition": 254,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd01",
+            "OrdinalPosition": 255,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt01",
+            "OrdinalPosition": 256,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd02",
+            "OrdinalPosition": 257,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt02",
+            "OrdinalPosition": 258,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd03",
+            "OrdinalPosition": 259,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt03",
+            "OrdinalPosition": 260,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd04",
+            "OrdinalPosition": 261,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt04",
+            "OrdinalPosition": 262,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd05",
+            "OrdinalPosition": 263,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt05",
+            "OrdinalPosition": 264,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd06",
+            "OrdinalPosition": 265,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt06",
+            "OrdinalPosition": 266,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd07",
+            "OrdinalPosition": 267,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt07",
+            "OrdinalPosition": 268,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd08",
+            "OrdinalPosition": 269,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt08",
+            "OrdinalPosition": 270,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd09",
+            "OrdinalPosition": 271,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt09",
+            "OrdinalPosition": 272,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd10",
+            "OrdinalPosition": 273,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt10",
+            "OrdinalPosition": 274,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd11",
+            "OrdinalPosition": 275,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt11",
+            "OrdinalPosition": 276,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd12",
+            "OrdinalPosition": 277,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt12",
+            "OrdinalPosition": 278,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd13",
+            "OrdinalPosition": 279,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt13",
+            "OrdinalPosition": 280,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd14",
+            "OrdinalPosition": 281,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt14",
+            "OrdinalPosition": 282,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd15",
+            "OrdinalPosition": 283,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt15",
+            "OrdinalPosition": 284,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd16",
+            "OrdinalPosition": 285,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt16",
+            "OrdinalPosition": 286,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd17",
+            "OrdinalPosition": 287,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt17",
+            "OrdinalPosition": 288,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd18",
+            "OrdinalPosition": 289,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt18",
+            "OrdinalPosition": 290,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd19",
+            "OrdinalPosition": 291,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt19",
+            "OrdinalPosition": 292,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd20",
+            "OrdinalPosition": 293,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt20",
+            "OrdinalPosition": 294,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd21",
+            "OrdinalPosition": 295,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt21",
+            "OrdinalPosition": 296,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd22",
+            "OrdinalPosition": 297,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt22",
+            "OrdinalPosition": 298,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd23",
+            "OrdinalPosition": 299,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt23",
+            "OrdinalPosition": 300,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanCd24",
+            "OrdinalPosition": 301,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SpanDt24",
+            "OrdinalPosition": 302,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd01",
+            "OrdinalPosition": 303,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt01",
+            "OrdinalPosition": 304,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd02",
+            "OrdinalPosition": 305,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt02",
+            "OrdinalPosition": 306,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd03",
+            "OrdinalPosition": 307,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt03",
+            "OrdinalPosition": 308,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd04",
+            "OrdinalPosition": 309,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt04",
+            "OrdinalPosition": 310,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd05",
+            "OrdinalPosition": 311,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt05",
+            "OrdinalPosition": 312,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd06",
+            "OrdinalPosition": 313,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt06",
+            "OrdinalPosition": 314,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd07",
+            "OrdinalPosition": 315,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt07",
+            "OrdinalPosition": 316,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd08",
+            "OrdinalPosition": 317,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt08",
+            "OrdinalPosition": 318,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd09",
+            "OrdinalPosition": 319,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt09",
+            "OrdinalPosition": 320,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd10",
+            "OrdinalPosition": 321,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt10",
+            "OrdinalPosition": 322,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd11",
+            "OrdinalPosition": 323,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt11",
+            "OrdinalPosition": 324,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd12",
+            "OrdinalPosition": 325,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt12",
+            "OrdinalPosition": 326,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd13",
+            "OrdinalPosition": 327,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt13",
+            "OrdinalPosition": 328,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd14",
+            "OrdinalPosition": 329,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt14",
+            "OrdinalPosition": 330,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd15",
+            "OrdinalPosition": 331,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt15",
+            "OrdinalPosition": 332,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd16",
+            "OrdinalPosition": 333,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt16",
+            "OrdinalPosition": 334,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd17",
+            "OrdinalPosition": 335,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt17",
+            "OrdinalPosition": 336,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd18",
+            "OrdinalPosition": 337,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt18",
+            "OrdinalPosition": 338,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd19",
+            "OrdinalPosition": 339,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt19",
+            "OrdinalPosition": 340,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd20",
+            "OrdinalPosition": 341,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt20",
+            "OrdinalPosition": 342,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd21",
+            "OrdinalPosition": 343,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt21",
+            "OrdinalPosition": 344,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd22",
+            "OrdinalPosition": 345,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt22",
+            "OrdinalPosition": 346,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd23",
+            "OrdinalPosition": 347,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt23",
+            "OrdinalPosition": 348,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceCd24",
+            "OrdinalPosition": 349,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OccurrenceDt24",
+            "OrdinalPosition": 350,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd01",
+            "OrdinalPosition": 351,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt01",
+            "OrdinalPosition": 352,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd02",
+            "OrdinalPosition": 353,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt02",
+            "OrdinalPosition": 354,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd03",
+            "OrdinalPosition": 355,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt03",
+            "OrdinalPosition": 356,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd04",
+            "OrdinalPosition": 357,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt04",
+            "OrdinalPosition": 358,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd05",
+            "OrdinalPosition": 359,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt05",
+            "OrdinalPosition": 360,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd06",
+            "OrdinalPosition": 361,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt06",
+            "OrdinalPosition": 362,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd07",
+            "OrdinalPosition": 363,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt07",
+            "OrdinalPosition": 364,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd08",
+            "OrdinalPosition": 365,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt08",
+            "OrdinalPosition": 366,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd09",
+            "OrdinalPosition": 367,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt09",
+            "OrdinalPosition": 368,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd10",
+            "OrdinalPosition": 369,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt10",
+            "OrdinalPosition": 370,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd11",
+            "OrdinalPosition": 371,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt11",
+            "OrdinalPosition": 372,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd12",
+            "OrdinalPosition": 373,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt12",
+            "OrdinalPosition": 374,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd13",
+            "OrdinalPosition": 375,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt13",
+            "OrdinalPosition": 376,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd14",
+            "OrdinalPosition": 377,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt14",
+            "OrdinalPosition": 378,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd15",
+            "OrdinalPosition": 379,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt15",
+            "OrdinalPosition": 380,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd16",
+            "OrdinalPosition": 381,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt16",
+            "OrdinalPosition": 382,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd17",
+            "OrdinalPosition": 383,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt17",
+            "OrdinalPosition": 384,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd18",
+            "OrdinalPosition": 385,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt18",
+            "OrdinalPosition": 386,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd19",
+            "OrdinalPosition": 387,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt19",
+            "OrdinalPosition": 388,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd20",
+            "OrdinalPosition": 389,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt20",
+            "OrdinalPosition": 390,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd21",
+            "OrdinalPosition": 391,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt21",
+            "OrdinalPosition": 392,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd22",
+            "OrdinalPosition": 393,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt22",
+            "OrdinalPosition": 394,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd23",
+            "OrdinalPosition": 395,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt23",
+            "OrdinalPosition": 396,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCd24",
+            "OrdinalPosition": 397,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ValueCdAmt24",
+            "OrdinalPosition": 398,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd01",
+            "OrdinalPosition": 399,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd02",
+            "OrdinalPosition": 400,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd03",
+            "OrdinalPosition": 401,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd04",
+            "OrdinalPosition": 402,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd05",
+            "OrdinalPosition": 403,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd06",
+            "OrdinalPosition": 404,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd07",
+            "OrdinalPosition": 405,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd08",
+            "OrdinalPosition": 406,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd09",
+            "OrdinalPosition": 407,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd10",
+            "OrdinalPosition": 408,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd11",
+            "OrdinalPosition": 409,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd12",
+            "OrdinalPosition": 410,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd13",
+            "OrdinalPosition": 411,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd14",
+            "OrdinalPosition": 412,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd15",
+            "OrdinalPosition": 413,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd16",
+            "OrdinalPosition": 414,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd17",
+            "OrdinalPosition": 415,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd18",
+            "OrdinalPosition": 416,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd19",
+            "OrdinalPosition": 417,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd20",
+            "OrdinalPosition": 418,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd21",
+            "OrdinalPosition": 419,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd22",
+            "OrdinalPosition": 420,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd23",
+            "OrdinalPosition": 421,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ConditionCd24",
+            "OrdinalPosition": 422,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd01",
+            "OrdinalPosition": 423,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd02",
+            "OrdinalPosition": 424,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd03",
+            "OrdinalPosition": 425,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd04",
+            "OrdinalPosition": 426,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd05",
+            "OrdinalPosition": 427,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd06",
+            "OrdinalPosition": 428,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd07",
+            "OrdinalPosition": 429,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd08",
+            "OrdinalPosition": 430,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd09",
+            "OrdinalPosition": 431,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd10",
+            "OrdinalPosition": 432,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd11",
+            "OrdinalPosition": 433,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd12",
+            "OrdinalPosition": 434,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd13",
+            "OrdinalPosition": 435,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd14",
+            "OrdinalPosition": 436,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd15",
+            "OrdinalPosition": 437,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd16",
+            "OrdinalPosition": 438,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd17",
+            "OrdinalPosition": 439,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd18",
+            "OrdinalPosition": 440,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd19",
+            "OrdinalPosition": 441,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd20",
+            "OrdinalPosition": 442,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd21",
+            "OrdinalPosition": 443,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd22",
+            "OrdinalPosition": 444,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd23",
+            "OrdinalPosition": 445,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "TxCd24",
+            "OrdinalPosition": 446,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AttendingProviderLastName",
+            "OrdinalPosition": 447,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AttendingProviderFirstName",
+            "OrdinalPosition": 448,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AttendingProviderMiddleName",
+            "OrdinalPosition": 449,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AttendingProviderNameSuffix",
+            "OrdinalPosition": 450,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AttendingProviderNPI",
+            "OrdinalPosition": 451,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OperatingProviderLastName",
+            "OrdinalPosition": 452,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OperatingProviderFirstName",
+            "OrdinalPosition": 453,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OperatingProviderMiddleName",
+            "OrdinalPosition": 454,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OperatingProviderNameSuffix",
+            "OrdinalPosition": 455,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OperatingProviderNPI",
+            "OrdinalPosition": 456,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherOperatingProviderLastName",
+            "OrdinalPosition": 457,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherOperatingProviderFirstName",
+            "OrdinalPosition": 458,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherOperatingProviderMiddleName",
+            "OrdinalPosition": 459,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherOperatingProviderNameSuffix",
+            "OrdinalPosition": 460,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherOperatingProviderNPI",
+            "OrdinalPosition": 461,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RenderingProviderLastName",
+            "OrdinalPosition": 462,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RenderingProviderFirstName",
+            "OrdinalPosition": 463,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RenderingProviderMiddleName",
+            "OrdinalPosition": 464,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RenderingProviderNameSuffix",
+            "OrdinalPosition": 465,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RenderingProviderNPI",
+            "OrdinalPosition": 466,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacName",
+            "OrdinalPosition": 467,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacFirstName",
+            "OrdinalPosition": 468,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacMiddleName",
+            "OrdinalPosition": 469,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacNameSuffix",
+            "OrdinalPosition": 470,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacNPI",
+            "OrdinalPosition": 471,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacAddressLine1",
+            "OrdinalPosition": 472,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacAddressLine2",
+            "OrdinalPosition": 473,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacCity",
+            "OrdinalPosition": 474,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacState",
+            "OrdinalPosition": 475,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SvcFacZIP",
+            "OrdinalPosition": 476,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReferringProviderLastName",
+            "OrdinalPosition": 477,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReferringProviderFirstName",
+            "OrdinalPosition": 478,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReferringProviderMiddleName",
+            "OrdinalPosition": 479,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReferringProviderNameSuffix",
+            "OrdinalPosition": 480,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReferringProviderNPI",
+            "OrdinalPosition": 481,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayerResponseCd",
+            "OrdinalPosition": 482,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PolicyNum",
+            "OrdinalPosition": 483,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PlanName",
+            "OrdinalPosition": 484,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjGrpCd1",
+            "OrdinalPosition": 485,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd101",
+            "OrdinalPosition": 486,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt101",
+            "OrdinalPosition": 487,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty101",
+            "OrdinalPosition": 488,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd102",
+            "OrdinalPosition": 489,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt102",
+            "OrdinalPosition": 490,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty102",
+            "OrdinalPosition": 491,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd103",
+            "OrdinalPosition": 492,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt103",
+            "OrdinalPosition": 493,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty103",
+            "OrdinalPosition": 494,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd104",
+            "OrdinalPosition": 495,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt104",
+            "OrdinalPosition": 496,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty104",
+            "OrdinalPosition": 497,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd105",
+            "OrdinalPosition": 498,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt105",
+            "OrdinalPosition": 499,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty105",
+            "OrdinalPosition": 500,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd106",
+            "OrdinalPosition": 501,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt106",
+            "OrdinalPosition": 502,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty106",
+            "OrdinalPosition": 503,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjGrpCd2",
+            "OrdinalPosition": 504,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd201",
+            "OrdinalPosition": 505,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt201",
+            "OrdinalPosition": 506,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty201",
+            "OrdinalPosition": 507,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd202",
+            "OrdinalPosition": 508,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt202",
+            "OrdinalPosition": 509,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty202",
+            "OrdinalPosition": 510,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd203",
+            "OrdinalPosition": 511,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt203",
+            "OrdinalPosition": 512,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty203",
+            "OrdinalPosition": 513,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd204",
+            "OrdinalPosition": 514,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt204",
+            "OrdinalPosition": 515,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty204",
+            "OrdinalPosition": 516,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd205",
+            "OrdinalPosition": 517,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt205",
+            "OrdinalPosition": 518,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty205",
+            "OrdinalPosition": 519,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd206",
+            "OrdinalPosition": 520,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt206",
+            "OrdinalPosition": 521,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty206",
+            "OrdinalPosition": 522,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjGrpCd3",
+            "OrdinalPosition": 523,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd301",
+            "OrdinalPosition": 524,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt301",
+            "OrdinalPosition": 525,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty301",
+            "OrdinalPosition": 526,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd302",
+            "OrdinalPosition": 527,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt302",
+            "OrdinalPosition": 528,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty302",
+            "OrdinalPosition": 529,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd303",
+            "OrdinalPosition": 530,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt303",
+            "OrdinalPosition": 531,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty303",
+            "OrdinalPosition": 532,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd304",
+            "OrdinalPosition": 533,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt304",
+            "OrdinalPosition": 534,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty304",
+            "OrdinalPosition": 535,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd305",
+            "OrdinalPosition": 536,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt305",
+            "OrdinalPosition": 537,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty305",
+            "OrdinalPosition": 538,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd306",
+            "OrdinalPosition": 539,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt306",
+            "OrdinalPosition": 540,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty306",
+            "OrdinalPosition": 541,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjGrpCd4",
+            "OrdinalPosition": 542,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd401",
+            "OrdinalPosition": 543,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt401",
+            "OrdinalPosition": 544,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty401",
+            "OrdinalPosition": 545,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd402",
+            "OrdinalPosition": 546,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt402",
+            "OrdinalPosition": 547,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty402",
+            "OrdinalPosition": 548,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd403",
+            "OrdinalPosition": 549,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt403",
+            "OrdinalPosition": 550,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty403",
+            "OrdinalPosition": 551,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd404",
+            "OrdinalPosition": 552,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt404",
+            "OrdinalPosition": 553,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty404",
+            "OrdinalPosition": 554,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd405",
+            "OrdinalPosition": 555,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt405",
+            "OrdinalPosition": 556,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty405",
+            "OrdinalPosition": 557,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd406",
+            "OrdinalPosition": 558,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt406",
+            "OrdinalPosition": 559,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty406",
+            "OrdinalPosition": 560,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjGrpCd5",
+            "OrdinalPosition": 561,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd501",
+            "OrdinalPosition": 562,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt501",
+            "OrdinalPosition": 563,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty501",
+            "OrdinalPosition": 564,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd502",
+            "OrdinalPosition": 565,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt502",
+            "OrdinalPosition": 566,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty502",
+            "OrdinalPosition": 567,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd503",
+            "OrdinalPosition": 568,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt503",
+            "OrdinalPosition": 569,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty503",
+            "OrdinalPosition": 570,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd504",
+            "OrdinalPosition": 571,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt504",
+            "OrdinalPosition": 572,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty504",
+            "OrdinalPosition": 573,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd505",
+            "OrdinalPosition": 574,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt505",
+            "OrdinalPosition": 575,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty505",
+            "OrdinalPosition": 576,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjReasCd506",
+            "OrdinalPosition": 577,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjAmt506",
+            "OrdinalPosition": 578,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjQty506",
+            "OrdinalPosition": 579,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PaidAmount",
+            "OrdinalPosition": 580,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RemainPatientLiab",
+            "OrdinalPosition": 581,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NonCovrdChrgAmt",
+            "OrdinalPosition": 582,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "InpatientCoveredDays",
+            "OrdinalPosition": 583,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LifetimePsychiatricDays",
+            "OrdinalPosition": 584,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimDRGAmount",
+            "OrdinalPosition": 585,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MIARemarkCode1",
+            "OrdinalPosition": 586,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimDisproportionateShareAmt",
+            "OrdinalPosition": 587,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimMSPPassThrough",
+            "OrdinalPosition": 588,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimPPSCapital",
+            "OrdinalPosition": 589,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSCapitalFSPDRG",
+            "OrdinalPosition": 590,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSCapitalHSPDRG",
+            "OrdinalPosition": 591,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSCapitalDSHDRG",
+            "OrdinalPosition": 592,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OldCapitalAmt",
+            "OrdinalPosition": 593,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSCapitalIMEAmt",
+            "OrdinalPosition": 594,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSHospitalSpecificDRG",
+            "OrdinalPosition": 595,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CostReportDays",
+            "OrdinalPosition": 596,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSFederalDRG",
+            "OrdinalPosition": 597,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSCapitalOutlier",
+            "OrdinalPosition": 598,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "IndirectTeachingAmt",
+            "OrdinalPosition": 599,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NonPayableProfCompAmt",
+            "OrdinalPosition": 600,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MIARemarkCode2",
+            "OrdinalPosition": 601,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MIARemarkCode3",
+            "OrdinalPosition": 602,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MIARemarkCode4",
+            "OrdinalPosition": 603,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MIARemarkCode5",
+            "OrdinalPosition": 604,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PPSCapitalExceptionAmt",
+            "OrdinalPosition": 605,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOAReimbursementRate",
+            "OrdinalPosition": 606,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOAHCPCSPayableAmt",
+            "OrdinalPosition": 607,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOARemarkCode1",
+            "OrdinalPosition": 608,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOARemarkCode2",
+            "OrdinalPosition": 609,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOARemarkCode3",
+            "OrdinalPosition": 610,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOARemarkCode4",
+            "OrdinalPosition": 611,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOARemarkCode5",
+            "OrdinalPosition": 612,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ESRDPaymentAmt",
+            "OrdinalPosition": 613,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MOANonPayableComponentAmt",
+            "OrdinalPosition": 614,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MSPIND",
+            "OrdinalPosition": 615,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthInsuredLastName",
+            "OrdinalPosition": 616,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthInsuredFirstName",
+            "OrdinalPosition": 617,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthInsuredMiddleName",
+            "OrdinalPosition": 618,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherInsuredSuffix",
+            "OrdinalPosition": 619,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsHICNbr",
+            "OrdinalPosition": 620,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsAddrLine1",
+            "OrdinalPosition": 621,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsAddrLine2",
+            "OrdinalPosition": 622,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsCity",
+            "OrdinalPosition": 623,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsState",
+            "OrdinalPosition": 624,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsZip",
+            "OrdinalPosition": 625,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsCountryCode",
+            "OrdinalPosition": 626,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsCountrySubdivisionCode",
+            "OrdinalPosition": 627,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrOrgName",
+            "OrdinalPosition": 628,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrPlanID",
+            "OrdinalPosition": 629,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrAddrLine1",
+            "OrdinalPosition": 630,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrAddrLine2",
+            "OrdinalPosition": 631,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrCity",
+            "OrdinalPosition": 632,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrState",
+            "OrdinalPosition": 633,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrZip",
+            "OrdinalPosition": 634,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CheckRemitDt",
+            "OrdinalPosition": 635,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrAdjClaimCtrlNum",
+            "OrdinalPosition": 636,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PaidAmountCOB",
+            "OrdinalPosition": 637,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RemainPatientLiabCOB",
+            "OrdinalPosition": 638,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NonCovrdChrgAmtCOB",
+            "OrdinalPosition": 639,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BeneAssignCertIndCOB",
+            "OrdinalPosition": 640,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReleaseOfInfoCdCOB",
+            "OrdinalPosition": 641,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthInsuredLastNameCOB",
+            "OrdinalPosition": 642,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthInsuredFirstNameCOB",
+            "OrdinalPosition": 643,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthInsuredMiddleNameCOB",
+            "OrdinalPosition": 644,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherInsuredSuffixCOB",
+            "OrdinalPosition": 645,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsHICNbrCOB",
+            "OrdinalPosition": 646,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsAddrLine1COB",
+            "OrdinalPosition": 647,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsAddrLine2COB",
+            "OrdinalPosition": 648,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsCityCOB",
+            "OrdinalPosition": 649,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsStateCOB",
+            "OrdinalPosition": 650,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthSubsZipCOB",
+            "OrdinalPosition": 651,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrOrgNameCOB",
+            "OrdinalPosition": 652,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrPayerId",
+            "OrdinalPosition": 653,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrAddrLine1COB",
+            "OrdinalPosition": 654,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrAddrLine2COB",
+            "OrdinalPosition": 655,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrCityCOB",
+            "OrdinalPosition": 656,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrStateCOB",
+            "OrdinalPosition": 657,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OthPayrZipCOB",
+            "OrdinalPosition": 658,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CheckRemitDtCOB",
+            "OrdinalPosition": 659,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderTaxonomy",
+            "OrdinalPosition": 660,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "MRN",
+            "OrdinalPosition": 661,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AttendingProviderTaxonomy",
+            "OrdinalPosition": 662,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayToAddressLine1",
+            "OrdinalPosition": 663,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayToAddressLine2",
+            "OrdinalPosition": 664,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayToCity",
+            "OrdinalPosition": 665,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayToState",
+            "OrdinalPosition": 666,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "PayToZip",
+            "OrdinalPosition": 667,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderContactName",
+            "OrdinalPosition": 668,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCommQual1",
+            "OrdinalPosition": 669,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCommNum1",
+            "OrdinalPosition": 670,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCommQual2",
+            "OrdinalPosition": 671,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCommNum2",
+            "OrdinalPosition": 672,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCommQual3",
+            "OrdinalPosition": 673,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BillingProviderCommNum3",
+            "OrdinalPosition": 674,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Submitted837IMedicalClaimKey",
+            "OrdinalPosition": 675,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRecordType",
+            "OrdinalPosition": 676,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineEncounterICN",
+            "OrdinalPosition": 677,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineNumber",
+            "OrdinalPosition": 678,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RevenueCode1",
+            "OrdinalPosition": 679,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcedureCodeQualifier",
+            "OrdinalPosition": 680,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcedureCode",
+            "OrdinalPosition": 681,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod1",
+            "OrdinalPosition": 682,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod2",
+            "OrdinalPosition": 683,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod3",
+            "OrdinalPosition": 684,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod4",
+            "OrdinalPosition": 685,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcedureDescription",
+            "OrdinalPosition": 686,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "BilledAmountLine",
+            "OrdinalPosition": 687,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LiUomQual",
+            "OrdinalPosition": 688,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LiServiceUnitCnt",
+            "OrdinalPosition": 689,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LiDenied",
+            "OrdinalPosition": 690,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine101",
+            "OrdinalPosition": 691,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine102",
+            "OrdinalPosition": 692,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine106",
+            "OrdinalPosition": 693,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine201",
+            "OrdinalPosition": 694,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine202",
+            "OrdinalPosition": 695,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine206",
+            "OrdinalPosition": 696,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine301",
+            "OrdinalPosition": 697,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine302",
+            "OrdinalPosition": 698,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine306",
+            "OrdinalPosition": 699,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine401",
+            "OrdinalPosition": 700,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine402",
+            "OrdinalPosition": 701,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine406",
+            "OrdinalPosition": 702,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine501",
+            "OrdinalPosition": 703,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine502",
+            "OrdinalPosition": 704,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine506",
+            "OrdinalPosition": 705,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine601",
+            "OrdinalPosition": 706,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine602",
+            "OrdinalPosition": 707,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine606",
+            "OrdinalPosition": 708,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine701",
+            "OrdinalPosition": 709,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine702",
+            "OrdinalPosition": 710,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine706",
+            "OrdinalPosition": 711,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine801",
+            "OrdinalPosition": 712,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine802",
+            "OrdinalPosition": 713,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine806",
+            "OrdinalPosition": 714,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine901",
+            "OrdinalPosition": 715,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine902",
+            "OrdinalPosition": 716,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine906",
+            "OrdinalPosition": 717,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine1001",
+            "OrdinalPosition": 718,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine1002",
+            "OrdinalPosition": 719,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "SuppInfoLine1006",
+            "OrdinalPosition": 720,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DetailServiceFrom",
+            "OrdinalPosition": 721,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DetailServiceThru",
+            "OrdinalPosition": 722,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "Licn",
+            "OrdinalPosition": 723,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ReprcRefLine",
+            "OrdinalPosition": 724,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AdjReprcRefLine",
+            "OrdinalPosition": 725,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ServTax",
+            "OrdinalPosition": 726,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FacTax",
+            "OrdinalPosition": 727,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LiTpoNoteText",
+            "OrdinalPosition": 728,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "NationalDrugCd",
+            "OrdinalPosition": 729,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DrugUnitCnt",
+            "OrdinalPosition": 730,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DrugUomQual",
+            "OrdinalPosition": 731,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DrugScrptQual",
+            "OrdinalPosition": 732,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "DrugScrptNum",
+            "OrdinalPosition": 733,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOperatingProviderLastName",
+            "OrdinalPosition": 734,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOperatingProviderFirstName",
+            "OrdinalPosition": 735,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOperatingProviderMiddleName",
+            "OrdinalPosition": 736,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOperatingProviderNameSuffix",
+            "OrdinalPosition": 737,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOperatingProviderNPI",
+            "OrdinalPosition": 738,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOtherOperatingProviderLastName",
+            "OrdinalPosition": 739,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOtherOperatingProviderFirstName",
+            "OrdinalPosition": 740,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOtherOperatingProviderMiddleName",
+            "OrdinalPosition": 741,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOtherOperatingProviderNameSuffix",
+            "OrdinalPosition": 742,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineOtherOperatingProviderNPI",
+            "OrdinalPosition": 743,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRenderingProviderLastName",
+            "OrdinalPosition": 744,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRenderingProviderFirstName",
+            "OrdinalPosition": 745,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRenderingProviderMiddleName",
+            "OrdinalPosition": 746,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRenderingProviderNameSuffix",
+            "OrdinalPosition": 747,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRenderingProviderNPI",
+            "OrdinalPosition": 748,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineReferringProviderLastName",
+            "OrdinalPosition": 749,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineReferringProviderFirstName",
+            "OrdinalPosition": 750,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineReferringProviderMiddleName",
+            "OrdinalPosition": 751,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineReferringProviderNameSuffix",
+            "OrdinalPosition": 752,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineReferringProviderNPI",
+            "OrdinalPosition": 753,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "OtherPayerPrimaryID",
+            "OrdinalPosition": 754,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLinePaidAmount",
+            "OrdinalPosition": 755,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcedureCodeQualifierCOB",
+            "OrdinalPosition": 756,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTCodeLine",
+            "OrdinalPosition": 757,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod1Line",
+            "OrdinalPosition": 758,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod2Line",
+            "OrdinalPosition": 759,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod3Line",
+            "OrdinalPosition": 760,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CPTMod4Line",
+            "OrdinalPosition": 761,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ProcedureDescriptionLine",
+            "OrdinalPosition": 762,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "RevCodeLine",
+            "OrdinalPosition": 763,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LiPaidSvcUnitCnt",
+            "OrdinalPosition": 764,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "LiBundledLineNbr",
+            "OrdinalPosition": 765,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineGrpCd1",
+            "OrdinalPosition": 766,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd101",
+            "OrdinalPosition": 767,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt101",
+            "OrdinalPosition": 768,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty101",
+            "OrdinalPosition": 769,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd102",
+            "OrdinalPosition": 770,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt102",
+            "OrdinalPosition": 771,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty102",
+            "OrdinalPosition": 772,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd103",
+            "OrdinalPosition": 773,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt103",
+            "OrdinalPosition": 774,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty103",
+            "OrdinalPosition": 775,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd104",
+            "OrdinalPosition": 776,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt104",
+            "OrdinalPosition": 777,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty104",
+            "OrdinalPosition": 778,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd105",
+            "OrdinalPosition": 779,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt105",
+            "OrdinalPosition": 780,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty105",
+            "OrdinalPosition": 781,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd106",
+            "OrdinalPosition": 782,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt106",
+            "OrdinalPosition": 783,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty106",
+            "OrdinalPosition": 784,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineGrpCd2",
+            "OrdinalPosition": 785,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd201",
+            "OrdinalPosition": 786,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt201",
+            "OrdinalPosition": 787,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty201",
+            "OrdinalPosition": 788,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd202",
+            "OrdinalPosition": 789,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt202",
+            "OrdinalPosition": 790,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty202",
+            "OrdinalPosition": 791,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd203",
+            "OrdinalPosition": 792,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt203",
+            "OrdinalPosition": 793,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty203",
+            "OrdinalPosition": 794,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd204",
+            "OrdinalPosition": 795,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt204",
+            "OrdinalPosition": 796,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty204",
+            "OrdinalPosition": 797,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd205",
+            "OrdinalPosition": 798,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt205",
+            "OrdinalPosition": 799,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty205",
+            "OrdinalPosition": 800,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd206",
+            "OrdinalPosition": 801,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt206",
+            "OrdinalPosition": 802,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty206",
+            "OrdinalPosition": 803,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineGrpCd3",
+            "OrdinalPosition": 804,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd301",
+            "OrdinalPosition": 805,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt301",
+            "OrdinalPosition": 806,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty301",
+            "OrdinalPosition": 807,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd302",
+            "OrdinalPosition": 808,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt302",
+            "OrdinalPosition": 809,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty302",
+            "OrdinalPosition": 810,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd303",
+            "OrdinalPosition": 811,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt303",
+            "OrdinalPosition": 812,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty303",
+            "OrdinalPosition": 813,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd304",
+            "OrdinalPosition": 814,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt304",
+            "OrdinalPosition": 815,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty304",
+            "OrdinalPosition": 816,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd305",
+            "OrdinalPosition": 817,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt305",
+            "OrdinalPosition": 818,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty305",
+            "OrdinalPosition": 819,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd306",
+            "OrdinalPosition": 820,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt306",
+            "OrdinalPosition": 821,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty306",
+            "OrdinalPosition": 822,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineGrpCd4",
+            "OrdinalPosition": 823,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd401",
+            "OrdinalPosition": 824,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt401",
+            "OrdinalPosition": 825,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty401",
+            "OrdinalPosition": 826,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd402",
+            "OrdinalPosition": 827,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt402",
+            "OrdinalPosition": 828,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty402",
+            "OrdinalPosition": 829,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd403",
+            "OrdinalPosition": 830,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt403",
+            "OrdinalPosition": 831,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty403",
+            "OrdinalPosition": 832,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd404",
+            "OrdinalPosition": 833,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt404",
+            "OrdinalPosition": 834,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty404",
+            "OrdinalPosition": 835,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd405",
+            "OrdinalPosition": 836,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt405",
+            "OrdinalPosition": 837,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty405",
+            "OrdinalPosition": 838,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd406",
+            "OrdinalPosition": 839,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt406",
+            "OrdinalPosition": 840,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty406",
+            "OrdinalPosition": 841,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineGrpCd5",
+            "OrdinalPosition": 842,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd501",
+            "OrdinalPosition": 843,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt501",
+            "OrdinalPosition": 844,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty501",
+            "OrdinalPosition": 845,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd502",
+            "OrdinalPosition": 846,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt502",
+            "OrdinalPosition": 847,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty502",
+            "OrdinalPosition": 848,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd503",
+            "OrdinalPosition": 849,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt503",
+            "OrdinalPosition": 850,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty503",
+            "OrdinalPosition": 851,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd504",
+            "OrdinalPosition": 852,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt504",
+            "OrdinalPosition": 853,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty504",
+            "OrdinalPosition": 854,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd505",
+            "OrdinalPosition": 855,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt505",
+            "OrdinalPosition": 856,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty505",
+            "OrdinalPosition": 857,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineReasCd506",
+            "OrdinalPosition": 858,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineAmt506",
+            "OrdinalPosition": 859,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClmAdjLineQty506",
+            "OrdinalPosition": 860,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineCheckRemitDt",
+            "OrdinalPosition": 861,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRemainPatientLiab",
+            "OrdinalPosition": 862,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLinePaidAmountCOB",
+            "OrdinalPosition": 863,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineCheckRemitDtCOB",
+            "OrdinalPosition": 864,
+            "DataType": "string"
+        },
+        {
+            "FieldName": "ClaimLineRemainPatientLiabilityCOB",
+            "OrdinalPosition": 865,
+            "DataType": "string"
+        }
+    ]
+}

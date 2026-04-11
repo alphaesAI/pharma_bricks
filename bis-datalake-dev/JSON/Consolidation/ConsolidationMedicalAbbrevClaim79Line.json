@@ -1,0 +1,98 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "GeneratedClaimsUniqueKey",
+          "DestinationColumn": "GeneratedClaimsUniqueKey",
+          "ColumnQuery": "CONCAT(COALESCE(OriginalClaimNumber,''),'-',COALESCE(ClaimNumber,''),'-',COALESCE(ClaimProcessDate,''),'-',COALESCE(ClaimStatus,''),'-',COALESCE(FILE_ID,''),'-',COALESCE(CLIENT_ID,''))",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "ClaimLineNumber",
+          "DestinationColumn": "ClaimLineNum",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PrimaryServiceFrom",
+          "DestinationColumn": "ServiceFromDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "PrimaryServiceThu",
+          "DestinationColumn": "ServiceToDate",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy"
+        },
+        {
+          "SourceColumn": "RevenueCode",
+          "DestinationColumn": "RevenueCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "HCPCSCode",
+          "DestinationColumn": "HCPCSCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "HCPCSModifier",
+          "DestinationColumn": "HCPCSModifier",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTCode",
+          "DestinationColumn": "CPTCode",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier1",
+          "DestinationColumn": "CPTModifier1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier2",
+          "DestinationColumn": "CPTModifier2",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier3",
+          "DestinationColumn": "CPTModifier3",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CPTModifier4",
+          "DestinationColumn": "CPTModifier4",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PaidAmount",
+          "DestinationColumn": "PrimaryPaidAmt",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

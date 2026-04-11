@@ -1,0 +1,23 @@
+{
+  "Entity": "Q360AgeInPharmacy",
+  "DestinationTable": "#clientCode/Gold/MA/Q360/Q360AgeInPharmacy",
+  "SourceTables": [
+    {
+      "Entity": "Pharmacy",
+      "SourceTable": "#clientCode/consolidated/MA/Data/Pharmacy",
+      "SourceFormat": "delta"
+    }
+    ,{
+      "Entity": "HedisEligibleMember",
+      "SourceTable": "#clientCode/Gold/MA/Q360/HedisEligibleMember",
+      "SourceFormat": "delta"
+    }
+    ,{
+      "Entity": "MemberPersonBridge",
+      "SourceTable": "#clientCode/Gold/MA/Client/MemberPersonBridge",
+      "SourceFormat": "delta"
+    }
+  ],
+  "SQLScript": "WITH EligibleMemberData AS(\r\n\tSELECT DISTINCT\r\n\t\t\tCOALESCE(nullif(mpb.UniquePersonKey,'None'),nullif(mpb.PlanMemberID,'None')) AS MemberID\r\n\t\t\t,COALESCE(nullif(ompb.UniquePersonKey,'None'),nullif(ompb.PlanMemberID,'None')) AS OriginalMemberID\r\n\tFROM MemberPersonBridge mpb\r\n\t\t\tJOIN HedisEligibleMember hem\r\n\t\t\t\t\tON mpb.BISInternalPersonId = hem.BISInternalPersonId\r\n\t\t\tLEFT JOIN MemberPersonBridge ompb\r\n\t\t\t\t\tON ompb.BISInternalPersonId = hem.BISInternalPersonId\r\n\t\t\t\t\tAND ompb.IsOriginalMemberId = 1\r\n)\r\n,MaxFileID AS (\r\n\tSELECT MAX(FileID) AS MaxFileID\r\n\tFROM Pharmacy\r\n\tWHERE FileLayoutID IN (38000)\r\n)\r\nSELECT DISTINCT emd.OriginalMemberID AS MemberID\r\n\t,p.RXDaysSupply AS DaysSupply\r\n\t,date_format(p.RxFillDate,'yyyyMMdd') AS ServiceDate\r\n\t,p.NDCCodeSTD AS NDCDrugCode\r\n\t,CASE ClaimStatus\r\n\t\tWHEN 'I' THEN '1'\r\n\t\tWHEN 'D' THEN '2'\r\n\t\tWHEN 'A' THEN '3'\r\n\t\tWHEN 'P' THEN '3'\r\n\t\tWHEN 'R' THEN '4'\r\n\t\tEND AS ClaimStatus\r\n\t,CAST(p.Quantity AS STRING) AS QuantityDispensed\r\n\t,'N' AS SupplementalData\r\n\t,p.SourceName AS DataSourceName\r\n\t,p.ProviderID\r\n\t,p.ProviderNPI \r\n\t,p.PharmacyNPI\r\n\t,p.ClaimNumber AS ClaimID\r\n\t,'1' AS ClaimLineID\r\n\t,p.AdjudicationDate AS AdditionalColumn1\r\n\t,p.AlternateKey1 AS AdditionalColumn2\r\n\t,p.AlternateKey2 AS AdditionalColumn3\r\n\t,'' AS AdditionalColumn4\r\n\t,'' AS AdditionalColumn5\r\n\t,'' AS Filler\r\n,current_timestamp() AS LoadDateTime\r\nFROM Pharmacy p\r\n\tJOIN MaxFileID mfid ON p.FileID = mfid.MaxFileID\r\n\tJOIN EligibleMemberData emd ON IfNUll(p.PlanMemberID, p.UniquePersonKey) = emd.MemberID\r\n",
+  "TruncateScript": "DELETE FROM Q360AgeInPharmacy"
+}

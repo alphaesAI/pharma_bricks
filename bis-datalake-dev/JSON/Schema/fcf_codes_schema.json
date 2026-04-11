@@ -1,0 +1,89 @@
+{
+	"columnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MA-CODESET-CATEGORY",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"USR",
+						"STD",
+						"SYS"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MA-CODESET-CODE-TYPE",
+			"OrdinalPosition": 1,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MA-CODESET-CODE-ID",
+			"OrdinalPosition": 2,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MA-CODESET-CODE-STATUS",
+			"OrdinalPosition": 3,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MA-CODESET-CODE-NAME",
+			"OrdinalPosition": 4,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MA-CODESET-CODE-DESCRIPTION",
+			"OrdinalPosition": 5,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MA-CODESET-USERID",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MA-CODESET-UPDATE",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FILE_ID",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(distinct(MEMBERNUMBER)) from data_file",
+			"control_file_query": "select _c9 from control_file"
+		},
+		{
+			"Name": "VerifyTotalLineCount",
+			"Data_file_query": "select count(distinct(MEMBERNUMBER)) + 1 from data_file",
+			"control_file_query": "select _c8 from control_file"
+		}
+	]
+}

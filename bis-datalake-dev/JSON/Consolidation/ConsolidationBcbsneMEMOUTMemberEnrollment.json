@@ -1,0 +1,116 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "TransactionType",
+          "Value": "P  "
+        }
+      ],
+      "selectColumns": [       
+        {
+          "SourceColumn": "HICN",
+          "DestinationColumn": "BeneficiaryID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "StartDate",
+          "DestinationColumn": "StartDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "EndDate",
+          "DestinationColumn": "EndDate",
+          "SourceColumnFormat": "yyyyMMdd",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ContractNumber",
+          "DestinationColumn": "CMSContractNumber",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClaimsSubscriberIDNumber",
+          "DestinationColumn": "SubscriberID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PBP",
+          "DestinationColumn": "PBP",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "MemberGroupCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": "CONCAT(COALESCE(GroupID,''),COALESCE(SubGroup,''))"
+        },
+        {
+          "SourceColumn": "Segment",
+          "DestinationColumn": "Segment",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "ClassID",
+          "DestinationColumn": "HealthPlanClassID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "PlanCode",
+          "DestinationColumn": "HealthPlanCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "SignatureDate",
+          "DestinationColumn": "SignatureDate",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },     
+        {
+          "SourceColumn": "TermReasonCode",
+          "DestinationColumn": "TermReasonCode",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "SourceColumnFormat": "",
+          "ColumnQuery": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss",
+          "ColumnQuery": ""
+        }
+      ]
+    }
+  ]
+}

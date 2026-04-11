@@ -1,0 +1,47 @@
+{
+   "columnNames": [
+      {
+         "FieldName": "TEMPLATE",
+         "OrdinalPosition": -1,
+         "DataType": "TEMPLATE",
+         "Validators": [
+            {
+               "Name": "TEMPLATE",
+               "Value": "TEMPLATE",
+               "InputValue": [
+                  "TEMPLATE"
+               ],
+               "ConditionCol": "TEMPLATE",
+               "ConditionVal": [
+                  "TEMPLATE"
+               ]
+            }
+         ]
+      },
+      {
+         "FieldName": "PlanID",
+         "OrdinalPosition": 0,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "PlanDescription",
+         "OrdinalPosition": 1,
+         "DataType": "string",
+         "Validators": [
+            {
+               "Name": "isRequired"
+            }
+         ]
+      },
+      {
+         "FieldName": "IsActive",
+         "OrdinalPosition": 2,
+         "DataType": "string"
+      }
+   ]
+}

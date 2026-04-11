@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "CDIAlertWorkflowStatus",
+      "DestinationTable": "#clientCode/Gold/cdiAlertWorkflowStatus",
+      "SourceTables": [
+        {
+          "Entity": "CDIAlertWorkflowStatus",
+          "SourceTable": "#clientCode/OperationalData/RAQ/TepAlert/dbo/CDIAlertWorkflowStatus",
+          "SourceFormat": "parquet"
+        }       
+      ],
+      "SQLScript": "SELECT cdiAlertWorkflowStatusDescription ,cdiAlertWorkflowStatusID ,hashKey FROM( SELECT CDIAlertStatusDesc AS cdiAlertWorkflowStatusDescription ,CDIAlertWorkflowStatusID AS cdiAlertWorkflowStatusID ,hash(concat(IfNull(CDIAlertStatusDesc,\"\") ,\"|\",IfNull(CDIAlertWorkflowStatusID,\"\"))) AS hashKey FROM CDIAlertWorkflowStatus)",
+      "MergeScript": "MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.cdiAlertWorkflowStatusID,\"\")=IfNull(t.cdiAlertWorkflowStatusID,\"\") WHEN MATCHED AND t.hashKey <> s.hashKey THEN  UPDATE SET  cdiAlertWorkflowStatusDescription = s.cdiAlertWorkflowStatusDescription ,cdiAlertWorkflowStatusID = s.cdiAlertWorkflowStatusID , updatedDateTime = CURRENT_TIMESTAMP ,hashKey = s.hashKey WHEN NOT MATCHED THEN  INSERT(cdiAlertWorkflowStatusDescription ,cdiAlertWorkflowStatusID ,createdDateTime ,updatedDateTime , hashKey) VALUES ( s.cdiAlertWorkflowStatusDescription ,s.cdiAlertWorkflowStatusID, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, s.hashKey) "
+	  }
+  ]
+}

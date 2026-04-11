@@ -1,0 +1,32 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "CacheSuspectAnalysisHistory",
+      "DestinationTable": "#clientCode/Gold/MA/Risk/CacheSuspectAnalysisHistory",
+      "SourceTables": [
+        {
+          "Entity": "Suspect",
+          "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblCacheSuspectAnalysisHistory",
+          "SourceFormat": "parquet"
+        },
+        {
+          "Entity": "MemberMaster",
+          "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblMemberMaster",
+          "SourceFormat": "parquet"
+        },
+        {
+          "Entity": "ProviderMaster",
+          "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/tblProviderMaster",
+          "SourceFormat": "parquet"
+        },
+        {
+          "Entity": "ReviewType",
+          "SourceTable": "#clientCode/OperationalData/RAQ/MerlinRA7/dbo/LkupReviewType",
+          "SourceFormat": "parquet"
+        }
+      ],
+      "SQLScript": "select \r\n  a.* \r\n ,base64(concat( \r\n IfNull(StatisticsID,\"\"),\"|\", \r\n IfNull(ReviewTypeID,\"\"),\"|\", \r\n IfNull(ReviewTypeDescription,\"\"),\"|\", \r\n IfNull(PlanMemberID,\"\"),\"|\", \r\n IfNull(ProviderID,\"\"),\"|\", \r\n IfNull(SuspectFor,\"\"),\"|\", \r\n IfNull(HCC,\"\"),\"|\", \r\n IfNull(HCCGroup,\"\"),\"|\", \r\n IfNull(RuleUsed,\"\"),\"|\", \r\n IfNull(SuspectType,\"\"),\"|\", \r\n IfNull(InsertedDate,\"\"),\"|\", \r\n IfNull(Weight,\"\"),\"|\", \r\n IfNull(RAF,\"\"),\"|\", \r\n IfNull(cast(IsSuspect as string),\"\"),\"|\", \r\n IfNull(WeightDesc,\"\"),\"|\", \r\n IfNull(RAGain,\"\"),\"|\", \r\n IfNull(TrumpingHCC,\"\"),\"|\", \r\n IfNull(BaseRate,\"\"),\"|\", \r\n IfNull(DiseaseSuspectPriority,\"\"),\"|\", \r\n IfNull(RecordType,\"\"),\"|\", \r\n IfNull(DOSYear,\"\"),\"|\", \r\n IfNull(EvidenceType,\"\"),\"|\", \r\n IfNull(EvidenceValue,\"\"),\"|\", \r\n IfNull(EvidenceResult,\"\"),\"|\", \r\n IfNull(EvidenceDate,\"\") \r\n )) as HashKey \r\n from \r\n ( \r\n select distinct \r\n  Suspect.StatisticsID \r\n ,Suspect.ReviewTypeID \r\n ,ReviewType.Description as ReviewTypeDescription \r\n ,MemberMaster.MemberID as PlanMemberID \r\n ,ProviderMaster.ProviderID \r\n ,Suspect.SuspectFor \r\n ,Suspect.HCC \r\n ,Suspect.HCCGroup \r\n ,Suspect.RuleUsed \r\n ,Suspect.SuspectType \r\n ,Suspect.InsertedDate \r\n ,Suspect.Weight \r\n ,Suspect.RAF \r\n ,Suspect.IsSuspect \r\n ,Suspect.WeightDesc \r\n ,Suspect.RAGain \r\n ,Suspect.TrumpingHCC \r\n ,Suspect.BaseRate \r\n ,Suspect.DiseaseSuspectPriority \r\n ,Suspect.RecordType \r\n ,Suspect.DOSYear \r\n ,Suspect.EvidenceType \r\n ,Suspect.EvidenceValue \r\n ,Suspect.EvidenceResult \r\n ,Suspect.EvidenceDate \r\n  \r\n from Suspect  \r\n left join  MemberMaster on Suspect.MemberMaster_WK = MemberMaster.MemberMaster_WK \r\n left join ProviderMaster on Suspect.ProviderMaster_WK = ProviderMaster.ProviderMaster_WK \r\n left join ReviewType on Suspect.ReviewTypeID = ReviewType.ReviewTypeID \r\n )a",
+      "MergeScript": "MERGE INTO DestinationTable t \r\n USING \r\n ( \r\n SELECT \r\n  ss.StatisticsID \r\n ,ss.ReviewTypeID \r\n ,ss.ReviewTypeDescription \r\n ,ss.PlanMemberID \r\n ,ss.ProviderID \r\n ,ss.SuspectFor \r\n ,ss.HCC \r\n ,ss.HCCGroup \r\n ,ss.RuleUsed \r\n ,ss.SuspectType \r\n ,ss.InsertedDate \r\n ,ss.Weight \r\n ,ss.RAF \r\n ,ss.IsSuspect \r\n ,ss.WeightDesc \r\n ,ss.RAGain \r\n ,ss.TrumpingHCC \r\n ,ss.BaseRate \r\n ,ss.DiseaseSuspectPriority \r\n ,ss.RecordType \r\n ,ss.DOSYear \r\n ,ss.EvidenceType \r\n ,ss.EvidenceValue \r\n ,ss.EvidenceResult \r\n ,ss.EvidenceDate \r\n ,ss.HashKey \r\n ,ifnull(ss.HashKey,dt.HashKey) as merge_HashKey \r\n  \r\n FROM tempSQLScript ss \r\n FULL OUTER JOIN DestinationTable dt \r\n on  ss.HashKey = dt.HashKey \r\n )s \r\n ON s.merge_HashKey = t.HashKey \r\n WHEN MATCHED AND s.hashKey is null THEN DELETE \r\n WHEN NOT MATCHED THEN INSERT \r\n ( \r\n  StatisticsID \r\n ,ReviewTypeID \r\n ,ReviewTypeDescription \r\n ,PlanMemberID \r\n ,ProviderID \r\n ,SuspectFor \r\n ,HCC \r\n ,HCCGroup \r\n ,RuleUsed \r\n ,SuspectType \r\n ,InsertedDate \r\n ,Weight \r\n ,RAF \r\n ,IsSuspect \r\n ,WeightDesc \r\n ,RAGain \r\n ,TrumpingHCC \r\n ,BaseRate \r\n ,DiseaseSuspectPriority \r\n ,RecordType \r\n ,DOSYear \r\n ,EvidenceType \r\n ,EvidenceValue \r\n ,EvidenceResult \r\n ,EvidenceDate \r\n ,HashKey \r\n ) \r\n VALUES \r\n ( \r\n  s.StatisticsID \r\n ,s.ReviewTypeID \r\n ,s.ReviewTypeDescription \r\n ,s.PlanMemberID \r\n ,s.ProviderID \r\n ,s.SuspectFor \r\n ,s.HCC \r\n ,s.HCCGroup \r\n ,s.RuleUsed \r\n ,s.SuspectType \r\n ,s.InsertedDate \r\n ,s.Weight \r\n ,s.RAF \r\n ,s.IsSuspect \r\n ,s.WeightDesc \r\n ,s.RAGain \r\n ,s.TrumpingHCC \r\n ,s.BaseRate \r\n ,s.DiseaseSuspectPriority \r\n ,s.RecordType \r\n ,s.DOSYear \r\n ,s.EvidenceType \r\n ,s.EvidenceValue \r\n ,s.EvidenceResult \r\n ,s.EvidenceDate \r\n ,s.HashKey \r\n )"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "columnMapping": [
+    {
+      "recordType": [
+        {
+          "Field": "",
+          "Value": ""
+        }
+      ],
+      "selectColumns": [
+        {
+          "SourceColumn": "CLIENT_ID",
+          "DestinationColumn": "ClientID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "LOAD_DATETIME",
+          "DestinationColumn": "LoadDateTime",
+          "ColumnQuery": "",
+          "SourceColumnFormat": "MM/dd/yyyy HH:mm:ss"
+        },
+        {
+          "SourceColumn": "FILE_ID",
+          "DestinationColumn": "FileID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_ID",
+          "DestinationColumn": "FileLayoutID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "FILE_LAYOUT_DESCRIPTION",
+          "DestinationColumn": "FileLayoutDescription",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_ID",
+          "DestinationColumn": "ProviderID",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "NATIONAL_PROVIDER_ID",
+          "DestinationColumn": "NPI",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "FirstName",
+          "ColumnQuery": "   CASE \r\n     WHEN PROVIDER_CLASS = 'SP' AND size(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")) > 1 AND length(split(trim(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[1]), \" \")[1]) = 1 THEN replace(trim(replace(split(trim(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[1]), \" \")[0],\"-\",\" \")),\"'\",\"\") --FirstName with a middle initial\r\n     WHEN PROVIDER_CLASS = 'SP' AND size(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")) > 1 THEN replace(replace(trim(replace(replace(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\"-\",\" \"),\",\")),trim(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[0]) ,\"\"),\"'\",\"\")\r\n     ELSE trim(replace(replace(replace(trim(replace(replace(PROVIDER_FIRST_NAME,\".\",\"\"),\"#\")),\"-\",\" \"),\",\"),\"'\",\"\"))\r\n    END \r\n",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "LastName",
+          "ColumnQuery": "CASE \r\n     WHEN PROVIDER_CLASS = 'SP' AND size(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")) > 1 THEN replace(trim(replace(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[0],\"-\",\" \")),\"'\",\"\") --LastName if LastName has more than one in the array\r\n     ELSE replace(trim(replace(replace(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\"-\",\" \"),\",\")),\"'\",\"\")\r\n    END\r\n",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "",
+          "DestinationColumn": "MiddleInitial",
+          "ColumnQuery": "CASE \r\n     WHEN PROVIDER_CLASS = 'SP' AND size(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")) > 1 AND length(split(trim(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[1]), \" \")[1]) = 1 THEN  replace(trim(replace(split(trim(split(trim(replace(replace(PROVIDER_LAST_NAME,\".\",\"\"),\"#\")),\",\")[1]), \" \")[1],\"-\",\" \")),\"'\",\"\")\r\n     ELSE replace(trim(replace(replace(trim(replace(replace(PROVIDER_MID_INITIAL,\".\",\"\"),\"#\")),\"-\",\" \"),\",\")),\"'\",\"\")\r\n    END\r\n",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "TAXONOMY_CODE",
+          "DestinationColumn": "TaxonomyCode1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "DEA",
+          "DestinationColumn": "DEA",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "SPECIALTY_ID",
+          "DestinationColumn": "HpSpecialtyCode1",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROV_PRES",
+          "DestinationColumn": "PrescribePrivilege",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "CURRENT_PAR_IND",
+          "DestinationColumn": "Contracted",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        },
+        {
+          "SourceColumn": "PROVIDER_CLASS",
+          "DestinationColumn": "ProviderClass",
+          "ColumnQuery": "",
+          "SourceColumnFormat": ""
+        }
+      ]
+    }
+  ]
+}

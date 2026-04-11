@@ -1,0 +1,265 @@
+{
+	"ColumnNames": [
+		{
+			"FieldName": "TEMPLATE",
+			"OrdinalPosition": -1,
+			"DataType": "TEMPLATE",
+			"Format": "TEMPLATE",
+			"Validators": [
+				{
+					"Name": "TEMPLATE",
+					"Value": "TEMPLATE",
+					"InputValue": [
+						"TEMPLATE"
+					],
+					"ConditionCol": "TEMPLATE",
+					"ConditionVal": [
+						"TEMPLATE"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "RecordType",
+			"OrdinalPosition": "1",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MCOContractNumber",
+			"OrdinalPosition": "2",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "PBPNumber",
+			"OrdinalPosition": "3",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "BeneficiaryID",
+			"OrdinalPosition": "4",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "Surname",
+			"OrdinalPosition": "5",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				}
+			]
+		},
+		{
+			"FieldName": "FirstName",
+			"OrdinalPosition": "6",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MiddleInitial",
+			"OrdinalPosition": "7",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Sex",
+			"OrdinalPosition": "8",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isRequired"
+				},
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"F",
+						"M"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "DateOfBirth",
+			"OrdinalPosition": "9",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "LowIncomePeriodStartDate",
+			"OrdinalPosition": "10",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "LowIncomePeriodEndDate",
+			"OrdinalPosition": "11",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "LIPSPercentage",
+			"OrdinalPosition": "12",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"100",
+						"075",
+						"050",
+						"025"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "PremiumLISAmount",
+			"OrdinalPosition": "13",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDataTypeNotRequired",
+					"Value": "decimal(8,2)"
+				}
+			]
+		},
+		{
+			"FieldName": "LowIncomeCoPayLevelID",
+			"OrdinalPosition": "14",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"3",
+						"4"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "BeneficiarySourceofSubsidyCode",
+			"OrdinalPosition": "15",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"A",
+						"D"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "LISActivityFlag",
+			"OrdinalPosition": "16",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"Y",
+						"N"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "PBPStartDate",
+			"OrdinalPosition": "17",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "NetPartDPremiumAmount",
+			"OrdinalPosition": "18",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDataTypeNotRequired",
+					"Value": "decimal(8,2)"
+				}
+			]
+		},
+		{
+			"FieldName": "ContractYear",
+			"OrdinalPosition": "19",
+			"DataType": "string"
+		},
+		{
+			"FieldName": "InstitutionalStatusIndicator",
+			"OrdinalPosition": "20",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValues",
+					"InputValue": [
+						"1",
+						"2",
+						"3",
+						"9"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "PBPEnrollmentTerminationDate",
+			"OrdinalPosition": "21",
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDate",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "Filler",
+			"OrdinalPosition": "22",
+			"DataType": "string"
+		}
+	],
+	"Rules": [
+		{
+			"Name": "VerifyTotalCount",
+			"Data_file_query": "select count(1) from data_file",
+			"control_file_query": "select TotalNumberOfDetailRecords from control_file"
+		}
+	]
+}

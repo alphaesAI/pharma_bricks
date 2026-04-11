@@ -1,0 +1,48 @@
+{
+    "columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Format": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "FieldName": "CDIAlertStatusDesc",
+            "OrdinalPosition": "1",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "AppointmentTypeDesc",
+            "OrdinalPosition": "2",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "CDIStatus",
+            "OrdinalPosition": "3",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FinalRankStandard",
+            "OrdinalPosition": "4",
+            "DataType": "string"
+        },
+        {
+            "FieldName": "FinalRankNY",
+            "OrdinalPosition": "5",
+            "DataType": "string"
+        }
+    ]
+}

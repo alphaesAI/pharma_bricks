@@ -1,0 +1,17 @@
+{
+  "SubLayerProcessing": [
+    {
+      "SubGroupEntity": "appointmentType",
+      "DestinationTable": "#clientCode/Gold/appointmentType",
+      "SourceTables": [
+        {
+          "Entity": "appointmentType",
+          "SourceTable": "#clientCode/OperationalData/RAQ/TepAlert/dbo/AppointmentType",
+          "SourceFormat": "parquet"
+        }       
+      ],
+      "SQLScript": "SELECT appointmentTypeID ,appointmentTypeDescription ,isDeleted ,createdDateTime,updatedDateTime, hashKey FROM( SELECT AppointmentTypeID AS appointmentTypeID ,AppointmentTypeDesc AS appointmentTypeDescription ,IsDeleted AS isDeleted ,UpdatedDateTime AS updatedDateTime ,CreatedDateTime AS createdDateTime ,hash(concat(IfNull(AppointmentTypeID,\"\") ,\"|\",IfNull(AppointmentTypeDesc,\"\") ,\"|\", IfNull(IsDeleted,false))) AS hashKey FROM AppointmentType)",
+      "MergeScript": "MERGE INTO DestinationTable t USING (SELECT * FROM tempSQLScript)s ON IfNull(s.appointmentTypeID,\"\")=IfNull(t.appointmentTypeID,\"\") WHEN MATCHED AND t.hashKey <> s.hashKey THEN  UPDATE SET  appointmentTypeID = s.appointmentTypeID ,appointmentTypeDescription = s.appointmentTypeDescription ,isDeleted = s.isDeleted ,updatedDateTime = CURRENT_TIMESTAMP ,hashKey = s.hashKey WHEN NOT MATCHED THEN  INSERT(appointmentTypeID ,appointmentTypeDescription ,isDeleted ,createdDateTime ,updatedDateTime , hashKey) VALUES ( s.appointmentTypeID ,s.appointmentTypeDescription, s.isDeleted, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, s.hashKey) "
+	  }
+  ]
+}

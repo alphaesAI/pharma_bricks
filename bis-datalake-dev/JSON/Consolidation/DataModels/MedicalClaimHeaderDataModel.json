@@ -1,0 +1,1109 @@
+{
+  "Fields": [
+    {
+      "FieldName": "GeneratedMedicalClaimsUniqueKey",
+      "DataType": "StringType",
+      "Ordinal": 1
+    },
+    {
+      "FieldName": "ClientID",
+      "DataType": "StringType",
+      "Ordinal": 2
+    },
+    {
+      "FieldName": "FileID",
+      "DataType": "IntegerType",
+      "Ordinal": 3
+    },
+    {
+      "FieldName": "LoadDateTime",
+      "DataType": "DateType",
+      "Ordinal": 4
+    },
+    {
+      "FieldName": "FileLayoutID",
+      "DataType": "IntegerType",
+      "Ordinal": 5
+    },
+    {
+      "FieldName": "FileLayoutDescription",
+      "DataType": "StringType",
+      "Ordinal": 6
+    },
+    {
+      "FieldName": "ClaimNumber",
+      "DataType": "StringType",
+      "Ordinal": 7
+    },
+    {
+      "FieldName": "OriginalClaimNumber",
+      "DataType": "StringType",
+      "Ordinal": 8
+    },
+    {
+      "FieldName": "BeneficiaryID",
+      "DataType": "StringType",
+      "Ordinal": 9
+    },
+    {
+      "FieldName": "PlanMemberID",
+      "DataType": "StringType",
+      "Ordinal": 10
+    },
+    {
+      "FieldName": "CMSContractNumber",
+      "DataType": "StringType",
+      "Ordinal": 11
+    },
+    {
+      "FieldName": "ClaimFormType",
+      "DataType": "StringType",
+      "Ordinal": 12
+    },
+    {
+      "FieldName": "BillTypeCode",
+      "DataType": "StringType",
+      "Ordinal": 13
+    },
+    {
+      "FieldName": "ClaimTypeInd",
+      "DataType": "StringType",
+      "Ordinal": 14
+    },
+    {
+      "FieldName": "ClaimStatus",
+      "DataType": "StringType",
+      "Ordinal": 15
+    },
+    {
+      "FieldName": "DetailServiceDate",
+      "DataType": "StringType",
+      "Ordinal": 16
+    },
+    {
+      "FieldName": "ClaimEntryDate",
+      "DataType": "StringType",
+      "Ordinal": 17
+    },
+    {
+      "FieldName": "ClaimProcessDate",
+      "DataType": "TimestampType",
+      "Ordinal": 18
+    },
+    {
+      "FieldName": "ClaimReceivedDate",
+      "DataType": "StringType",
+      "Ordinal": 19
+    },
+    {
+      "FieldName": "ClaimTotalChargeAmount",
+      "DataType": "StringType",
+      "Ordinal": 20
+    },
+    {
+      "FieldName": "ClaimAllowedAmount",
+      "DataType": "StringType",
+      "Ordinal": 21
+    },
+    {
+      "FieldName": "CheckDate",
+      "DataType": "StringType",
+      "Ordinal": 22
+    },
+    {
+      "FieldName": "ClaimFinalizedDate",
+      "DataType": "StringType",
+      "Ordinal": 23
+    },
+    {
+      "FieldName": "CoinsuranceAmt",
+      "DataType": "StringType",
+      "Ordinal": 24
+    },
+    {
+      "FieldName": "DeductibleAmt",
+      "DataType": "StringType",
+      "Ordinal": 25
+    },
+    {
+      "FieldName": "CopayAmt",
+      "DataType": "StringType",
+      "Ordinal": 26
+    },
+    {
+      "FieldName": "OtherPrimaryPayerAllowedAmt",
+      "DataType": "StringType",
+      "Ordinal": 27
+    },
+    {
+      "FieldName": "OtherHealthPlan",
+      "DataType": "StringType",
+      "Ordinal": 28
+    },
+    {
+      "FieldName": "ClaimWeight",
+      "DataType": "LongType",
+      "Ordinal": 29
+    },
+    {
+      "FieldName": "ClaimSource",
+      "DataType": "StringType",
+      "Ordinal": 30
+    },
+    {
+      "FieldName": "AdmissionDate",
+      "DataType": "StringType",
+      "Ordinal": 31
+    },
+    {
+      "FieldName": "ServiceFacilityNPI",
+      "DataType": "StringType",
+      "Ordinal": 32
+    },
+    {
+      "FieldName": "ServiceFacilityID",
+      "DataType": "StringType",
+      "Ordinal": 33
+    },
+    {
+      "FieldName": "ServiceFacilityLocation",
+      "DataType": "StringType",
+      "Ordinal": 34
+    },
+    {
+      "FieldName": "ServiceFacilityAddress1",
+      "DataType": "StringType",
+      "Ordinal": 35
+    },
+    {
+      "FieldName": "ServiceFacilityAddress2",
+      "DataType": "StringType",
+      "Ordinal": 36
+    },
+    {
+      "FieldName": "ServiceFacilityCity",
+      "DataType": "StringType",
+      "Ordinal": 37
+    },
+    {
+      "FieldName": "ServiceFacilityState",
+      "DataType": "StringType",
+      "Ordinal": 38
+    },
+    {
+      "FieldName": "ServiceFacilityZip",
+      "DataType": "StringType",
+      "Ordinal": 39
+    },
+    {
+      "FieldName": "ServiceFacilityCountry",
+      "DataType": "StringType",
+      "Ordinal": 40
+    },
+    {
+      "FieldName": "RenderingProviderID",
+      "DataType": "StringType",
+      "Ordinal": 41
+    },
+    {
+      "FieldName": "RenderingProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 42
+    },
+    {
+      "FieldName": "RenderingProviderTIN",
+      "DataType": "StringType",
+      "Ordinal": 43
+    },
+    {
+      "FieldName": "RenderingProviderSpecialtyCode",
+      "DataType": "StringType",
+      "Ordinal": 44
+    },
+    {
+      "FieldName": "BillingProviderID",
+      "DataType": "StringType",
+      "Ordinal": 45
+    },
+    {
+      "FieldName": "BillingProviderTIN",
+      "DataType": "StringType",
+      "Ordinal": 46
+    },
+    {
+      "FieldName": "BillingProviderTaxonomy",
+      "DataType": "StringType",
+      "Ordinal": 47
+    },
+    {
+      "FieldName": "BillingProviderAddress1",
+      "DataType": "StringType",
+      "Ordinal": 48
+    },
+    {
+      "FieldName": "BillingProviderAddress2",
+      "DataType": "StringType",
+      "Ordinal": 49
+    },
+    {
+      "FieldName": "BillingProviderCity",
+      "DataType": "StringType",
+      "Ordinal": 50
+    },
+    {
+      "FieldName": "BillingProviderState",
+      "DataType": "StringType",
+      "Ordinal": 51
+    },
+    {
+      "FieldName": "BillingProviderZip",
+      "DataType": "StringType",
+      "Ordinal": 52
+    },
+    {
+      "FieldName": "BillingProviderCountry",
+      "DataType": "StringType",
+      "Ordinal": 53
+    },
+    {
+      "FieldName": "AttendingProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 54
+    },
+    {
+      "FieldName": "PlaceOfService",
+      "DataType": "StringType",
+      "Ordinal": 55
+    },
+    {
+      "FieldName": "DischargeStatusCode",
+      "DataType": "StringType",
+      "Ordinal": 56
+    },
+    {
+      "FieldName": "DischargeDate",
+      "DataType": "StringType",
+      "Ordinal": 57
+    },
+    {
+      "FieldName": "MSDRG",
+      "DataType": "StringType",
+      "Ordinal": 58
+    },
+    {
+      "FieldName": "MSDRG2",
+      "DataType": "StringType",
+      "Ordinal": 59
+    },
+    {
+      "FieldName": "ICDVersion",
+      "DataType": "StringType",
+      "Ordinal": 60
+    },
+    {
+      "FieldName": "PrimaryDiagCode",
+      "DataType": "StringType",
+      "Ordinal": 61
+    },
+    {
+      "FieldName": "AdmitDiagCode",
+      "DataType": "StringType",
+      "Ordinal": 62
+    },
+    {
+      "FieldName": "DiagCode2",
+      "DataType": "StringType",
+      "Ordinal": 63
+    },
+    {
+      "FieldName": "DiagCode3",
+      "DataType": "StringType",
+      "Ordinal": 64
+    },
+    {
+      "FieldName": "DiagCode4",
+      "DataType": "StringType",
+      "Ordinal": 65
+    },
+    {
+      "FieldName": "DiagCode5",
+      "DataType": "StringType",
+      "Ordinal": 66
+    },
+    {
+      "FieldName": "DiagCode6",
+      "DataType": "StringType",
+      "Ordinal": 67
+    },
+    {
+      "FieldName": "DiagCode7",
+      "DataType": "StringType",
+      "Ordinal": 68
+    },
+    {
+      "FieldName": "DiagCode8",
+      "DataType": "StringType",
+      "Ordinal": 69
+    },
+    {
+      "FieldName": "DiagCode9",
+      "DataType": "StringType",
+      "Ordinal": 70
+    },
+    {
+      "FieldName": "DiagCode10",
+      "DataType": "StringType",
+      "Ordinal": 71
+    },
+    {
+      "FieldName": "DiagCode11",
+      "DataType": "StringType",
+      "Ordinal": 72
+    },
+    {
+      "FieldName": "DiagCode12",
+      "DataType": "StringType",
+      "Ordinal": 73
+    },
+    {
+      "FieldName": "DiagCode13",
+      "DataType": "StringType",
+      "Ordinal": 74
+    },
+    {
+      "FieldName": "DiagCode14",
+      "DataType": "StringType",
+      "Ordinal": 75
+    },
+    {
+      "FieldName": "DiagCode15",
+      "DataType": "StringType",
+      "Ordinal": 76
+    },
+    {
+      "FieldName": "DiagCode16",
+      "DataType": "StringType",
+      "Ordinal": 77
+    },
+    {
+      "FieldName": "DiagCode17",
+      "DataType": "StringType",
+      "Ordinal": 78
+    },
+    {
+      "FieldName": "DiagCode18",
+      "DataType": "StringType",
+      "Ordinal": 79
+    },
+    {
+      "FieldName": "DiagCode19",
+      "DataType": "StringType",
+      "Ordinal": 80
+    },
+    {
+      "FieldName": "DiagCode20",
+      "DataType": "StringType",
+      "Ordinal": 81
+    },
+    {
+      "FieldName": "DiagCode21",
+      "DataType": "StringType",
+      "Ordinal": 82
+    },
+    {
+      "FieldName": "DiagCode22",
+      "DataType": "StringType",
+      "Ordinal": 83
+    },
+    {
+      "FieldName": "DiagCode23",
+      "DataType": "StringType",
+      "Ordinal": 84
+    },
+    {
+      "FieldName": "DiagCode24",
+      "DataType": "StringType",
+      "Ordinal": 85
+    },
+    {
+      "FieldName": "DiagCode25",
+      "DataType": "StringType",
+      "Ordinal": 86
+    },
+    {
+      "FieldName": "DiagCode26",
+      "DataType": "StringType",
+      "Ordinal": 87
+    },
+    {
+      "FieldName": "DiagCode27",
+      "DataType": "StringType",
+      "Ordinal": 88
+    },
+    {
+      "FieldName": "DiagCode28",
+      "DataType": "StringType",
+      "Ordinal": 89
+    },
+    {
+      "FieldName": "DiagCode29",
+      "DataType": "StringType",
+      "Ordinal": 90
+    },
+    {
+      "FieldName": "DiagCode30",
+      "DataType": "StringType",
+      "Ordinal": 91
+    },
+    {
+      "FieldName": "DiagCode31",
+      "DataType": "StringType",
+      "Ordinal": 92
+    },
+    {
+      "FieldName": "DiagCode32",
+      "DataType": "StringType",
+      "Ordinal": 93
+    },
+    {
+      "FieldName": "DiagCode33",
+      "DataType": "StringType",
+      "Ordinal": 94
+    },
+    {
+      "FieldName": "DiagCode34",
+      "DataType": "StringType",
+      "Ordinal": 95
+    },
+    {
+      "FieldName": "DiagCode35",
+      "DataType": "StringType",
+      "Ordinal": 96
+    },
+    {
+      "FieldName": "DiagCode36",
+      "DataType": "StringType",
+      "Ordinal": 97
+    },
+    {
+      "FieldName": "DiagCode37",
+      "DataType": "StringType",
+      "Ordinal": 98
+    },
+    {
+      "FieldName": "DiagCode38",
+      "DataType": "StringType",
+      "Ordinal": 99
+    },
+    {
+      "FieldName": "AdmitPOA",
+      "DataType": "StringType",
+      "Ordinal": 100
+    },
+    {
+      "FieldName": "PrimaryPOA",
+      "DataType": "StringType",
+      "Ordinal": 101
+    },
+    {
+      "FieldName": "PrimaryProcCode",
+      "DataType": "StringType",
+      "Ordinal": 102
+    },
+    {
+      "FieldName": "PrimaryProcCodeDate",
+      "DataType": "StringType",
+      "Ordinal": 103
+    },
+    {
+      "FieldName": "ProcCode2",
+      "DataType": "StringType",
+      "Ordinal": 104
+    },
+    {
+      "FieldName": "ProcCode2Date",
+      "DataType": "StringType",
+      "Ordinal": 105
+    },
+    {
+      "FieldName": "ProcCode3",
+      "DataType": "StringType",
+      "Ordinal": 106
+    },
+    {
+      "FieldName": "ProcCode3Date",
+      "DataType": "StringType",
+      "Ordinal": 107
+    },
+    {
+      "FieldName": "ProcCode4",
+      "DataType": "StringType",
+      "Ordinal": 108
+    },
+    {
+      "FieldName": "ProcCode4Date",
+      "DataType": "StringType",
+      "Ordinal": 109
+    },
+    {
+      "FieldName": "ProcCode5",
+      "DataType": "StringType",
+      "Ordinal": 110
+    },
+    {
+      "FieldName": "ProcCode5Date",
+      "DataType": "StringType",
+      "Ordinal": 111
+    },
+    {
+      "FieldName": "ProcCode6",
+      "DataType": "StringType",
+      "Ordinal": 112
+    },
+    {
+      "FieldName": "ProcCode6Date",
+      "DataType": "StringType",
+      "Ordinal": 113
+    },
+    {
+      "FieldName": "ProcCode7",
+      "DataType": "StringType",
+      "Ordinal": 114
+    },
+    {
+      "FieldName": "ProcCode7Date",
+      "DataType": "StringType",
+      "Ordinal": 115
+    },
+    {
+      "FieldName": "ProcCode8",
+      "DataType": "StringType",
+      "Ordinal": 116
+    },
+    {
+      "FieldName": "ProcCode8Date",
+      "DataType": "StringType",
+      "Ordinal": 117
+    },
+    {
+      "FieldName": "ProcCode9",
+      "DataType": "StringType",
+      "Ordinal": 118
+    },
+    {
+      "FieldName": "ProcCode9Date",
+      "DataType": "StringType",
+      "Ordinal": 119
+    },
+    {
+      "FieldName": "ProcCode10",
+      "DataType": "StringType",
+      "Ordinal": 120
+    },
+    {
+      "FieldName": "ProcCode10Date",
+      "DataType": "StringType",
+      "Ordinal": 121
+    },
+    {
+      "FieldName": "ProcCode11",
+      "DataType": "StringType",
+      "Ordinal": 122
+    },
+    {
+      "FieldName": "ProcCode11Date",
+      "DataType": "StringType",
+      "Ordinal": 123
+    },
+    {
+      "FieldName": "ProcCode12",
+      "DataType": "StringType",
+      "Ordinal": 124
+    },
+    {
+      "FieldName": "ProcCode12Date",
+      "DataType": "StringType",
+      "Ordinal": 125
+    },
+    {
+      "FieldName": "ProcCode13",
+      "DataType": "StringType",
+      "Ordinal": 126
+    },
+    {
+      "FieldName": "ProcCode13Date",
+      "DataType": "StringType",
+      "Ordinal": 127
+    },
+    {
+      "FieldName": "ProcCode14",
+      "DataType": "StringType",
+      "Ordinal": 128
+    },
+    {
+      "FieldName": "ProcCode14Date",
+      "DataType": "StringType",
+      "Ordinal": 129
+    },
+    {
+      "FieldName": "ProcCode15",
+      "DataType": "StringType",
+      "Ordinal": 130
+    },
+    {
+      "FieldName": "ProcCode15Date",
+      "DataType": "StringType",
+      "Ordinal": 131
+    },
+    {
+      "FieldName": "ProcCode16",
+      "DataType": "StringType",
+      "Ordinal": 132
+    },
+    {
+      "FieldName": "ProcCode16Date",
+      "DataType": "StringType",
+      "Ordinal": 133
+    },
+    {
+      "FieldName": "ProcCode17",
+      "DataType": "StringType",
+      "Ordinal": 134
+    },
+    {
+      "FieldName": "ProcCode17Date",
+      "DataType": "StringType",
+      "Ordinal": 135
+    },
+    {
+      "FieldName": "ProcCode18",
+      "DataType": "StringType",
+      "Ordinal": 136
+    },
+    {
+      "FieldName": "ProcCode18Date",
+      "DataType": "StringType",
+      "Ordinal": 137
+    },
+    {
+      "FieldName": "ProcCode19",
+      "DataType": "StringType",
+      "Ordinal": 138
+    },
+    {
+      "FieldName": "ProcCode19Date",
+      "DataType": "StringType",
+      "Ordinal": 139
+    },
+    {
+      "FieldName": "ProcCode20",
+      "DataType": "StringType",
+      "Ordinal": 140
+    },
+    {
+      "FieldName": "ProcCode20Date",
+      "DataType": "StringType",
+      "Ordinal": 141
+    },
+    {
+      "FieldName": "ProcCode21",
+      "DataType": "StringType",
+      "Ordinal": 142
+    },
+    {
+      "FieldName": "ProcCode21Date",
+      "DataType": "StringType",
+      "Ordinal": 143
+    },
+    {
+      "FieldName": "ProcCode22",
+      "DataType": "StringType",
+      "Ordinal": 144
+    },
+    {
+      "FieldName": "ProcCode22Date",
+      "DataType": "StringType",
+      "Ordinal": 145
+    },
+    {
+      "FieldName": "ProcCode23",
+      "DataType": "StringType",
+      "Ordinal": 146
+    },
+    {
+      "FieldName": "ProcCode23Date",
+      "DataType": "StringType",
+      "Ordinal": 147
+    },
+    {
+      "FieldName": "ProcCode24",
+      "DataType": "StringType",
+      "Ordinal": 148
+    },
+    {
+      "FieldName": "ProcCode24Date",
+      "DataType": "StringType",
+      "Ordinal": 149
+    },
+    {
+      "FieldName": "ProcCode25",
+      "DataType": "StringType",
+      "Ordinal": 150
+    },
+    {
+      "FieldName": "ProcCode26",
+      "DataType": "StringType",
+      "Ordinal": 151
+    },
+    {
+      "FieldName": "ProcCode27",
+      "DataType": "StringType",
+      "Ordinal": 152
+    },
+    {
+      "FieldName": "ProcCode28",
+      "DataType": "StringType",
+      "Ordinal": 153
+    },
+    {
+      "FieldName": "ProcCode29",
+      "DataType": "StringType",
+      "Ordinal": 154
+    },
+    {
+      "FieldName": "ProcCode30",
+      "DataType": "StringType",
+      "Ordinal": 155
+    },
+    {
+      "FieldName": "ProcCode31",
+      "DataType": "StringType",
+      "Ordinal": 156
+    },
+    {
+      "FieldName": "ProcCode32",
+      "DataType": "StringType",
+      "Ordinal": 157
+    },
+    {
+      "FieldName": "ProcCode33",
+      "DataType": "StringType",
+      "Ordinal": 158
+    },
+    {
+      "FieldName": "ProcCode34",
+      "DataType": "StringType",
+      "Ordinal": 159
+    },
+    {
+      "FieldName": "ProcCode35",
+      "DataType": "StringType",
+      "Ordinal": 160
+    },
+    {
+      "FieldName": "ProcCode36",
+      "DataType": "StringType",
+      "Ordinal": 161
+    },
+    {
+      "FieldName": "ProcCode37",
+      "DataType": "StringType",
+      "Ordinal": 162
+    },
+    {
+      "FieldName": "ProcCode38",
+      "DataType": "StringType",
+      "Ordinal": 163
+    },
+    {
+      "FieldName": "OccurCode1",
+      "DataType": "StringType",
+      "Ordinal": 164
+    },
+    {
+      "FieldName": "OccurCode2",
+      "DataType": "StringType",
+      "Ordinal": 165
+    },
+    {
+      "FieldName": "OccurCode3",
+      "DataType": "StringType",
+      "Ordinal": 166
+    },
+    {
+      "FieldName": "OccurCode4",
+      "DataType": "StringType",
+      "Ordinal": 167
+    },
+    {
+      "FieldName": "OccurCode5",
+      "DataType": "StringType",
+      "Ordinal": 168
+    },
+    {
+      "FieldName": "OccurCode6",
+      "DataType": "StringType",
+      "Ordinal": 169
+    },
+    {
+      "FieldName": "OccurCode7",
+      "DataType": "StringType",
+      "Ordinal": 170
+    },
+    {
+      "FieldName": "OccurCode8",
+      "DataType": "StringType",
+      "Ordinal": 171
+    },
+    {
+      "FieldName": "OccurCode9",
+      "DataType": "StringType",
+      "Ordinal": 172
+    },
+    {
+      "FieldName": "OccurCode10",
+      "DataType": "StringType",
+      "Ordinal": 173
+    },
+    {
+      "FieldName": "OccurCode11",
+      "DataType": "StringType",
+      "Ordinal": 174
+    },
+    {
+      "FieldName": "OccurCode12",
+      "DataType": "StringType",
+      "Ordinal": 175
+    },
+    {
+      "FieldName": "OccurCode13",
+      "DataType": "StringType",
+      "Ordinal": 176
+    },
+    {
+      "FieldName": "OccurCode14",
+      "DataType": "StringType",
+      "Ordinal": 177
+    },
+    {
+      "FieldName": "OccurCode15",
+      "DataType": "StringType",
+      "Ordinal": 178
+    },
+    {
+      "FieldName": "OccurCode16",
+      "DataType": "StringType",
+      "Ordinal": 179
+    },
+    {
+      "FieldName": "OccurCode17",
+      "DataType": "StringType",
+      "Ordinal": 180
+    },
+    {
+      "FieldName": "OccurCode18",
+      "DataType": "StringType",
+      "Ordinal": 181
+    },
+    {
+      "FieldName": "OccurCode19",
+      "DataType": "StringType",
+      "Ordinal": 182
+    },
+    {
+      "FieldName": "OccurCode20",
+      "DataType": "StringType",
+      "Ordinal": 183
+    },
+    {
+      "FieldName": "OccurCode21",
+      "DataType": "StringType",
+      "Ordinal": 184
+    },
+    {
+      "FieldName": "OccurCode22",
+      "DataType": "StringType",
+      "Ordinal": 185
+    },
+    {
+      "FieldName": "OccurCode23",
+      "DataType": "StringType",
+      "Ordinal": 186
+    },
+    {
+      "FieldName": "OccurCode24",
+      "DataType": "StringType",
+      "Ordinal": 187
+    },
+    {
+      "FieldName": "StatementFromDate",
+      "DataType": "StringType",
+      "Ordinal": 188
+    },
+    {
+      "FieldName": "StatementToDate",
+      "DataType": "StringType",
+      "Ordinal": 189
+    },
+    {
+      "FieldName": "SCCFClaimIdentifier",
+      "DataType": "StringType",
+      "Ordinal": 190
+    },
+    {
+      "FieldName": "UniquePersonKey",
+      "DataType": "StringType",
+      "Ordinal": 191
+    },
+    {
+      "FieldName": "ProductID",
+      "DataType": "StringType",
+      "Ordinal": 192
+    },
+    {
+      "FieldName": "CVX",
+      "DataType": "StringType",
+      "Ordinal": 193
+    },
+    {
+      "FieldName": "DaysDenied",
+      "DataType": "StringType",
+      "Ordinal": 194
+    },
+    {
+      "FieldName": "RoomBoard",
+      "DataType": "StringType",
+      "Ordinal": 195
+    },
+    {
+      "FieldName": "RRUUnitsofService",
+      "DataType": "StringType",
+      "Ordinal": 196
+    },
+    {
+      "FieldName": "MajorSurgery",
+      "DataType": "StringType",
+      "Ordinal": 197
+    },
+    {
+      "FieldName": "LocationID",
+      "DataType": "StringType",
+      "Ordinal": 198
+    },
+    {
+      "FieldName": "PCPIndicator",
+      "DataType": "StringType",
+      "Ordinal": 199
+    },
+    {
+      "FieldName": "ClaimSourceInd",
+      "DataType": "StringType",
+      "Ordinal": 200
+    },
+    {
+      "FieldName": "EyeExamResult",
+      "DataType": "StringType",
+      "Ordinal": 201
+    },
+    {
+      "FieldName": "SourceName",
+      "DataType": "StringType",
+      "Ordinal": 202
+    },
+    {
+      "FieldName": "AlternateClaimIdentifier1",
+      "DataType": "StringType",
+      "Ordinal": 203
+    },
+    {
+      "FieldName": "PaidDate",
+      "DataType": "StringType",
+      "Ordinal": 204
+    },
+    {
+      "FieldName": "PayStatus",
+      "DataType": "StringType",
+      "Ordinal": 205
+    },
+    {
+      "FieldName": "IsDeniedDuplicate",
+      "DataType": "StringType",
+      "Ordinal": 206
+    },
+    {
+      "FieldName": "IsSplitClaim",
+      "DataType": "StringType",
+      "Ordinal": 207
+    },
+    {
+      "FieldName": "BenefitNetworkID",
+      "DataType": "StringType",
+      "Ordinal": 208
+    },
+    {
+      "FieldName": "ClaimSubmitterID",
+      "DataType": "StringType",
+      "Ordinal": 209
+    },
+    {
+      "FieldName": "BenefitCategoryID",
+      "DataType": "StringType",
+      "Ordinal": 210
+    },
+    {
+      "FieldName": "NetworkEligibilityIndicator",
+      "DataType": "StringType",
+      "Ordinal": 211
+    },
+    {
+      "FieldName": "BillingProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 212
+    },
+    {
+      "FieldName": "BillingProviderName",
+      "DataType": "StringType",
+      "Ordinal": 213
+    },
+    {
+      "FieldName": "ProviderTaxonamy",
+      "DataType": "StringType",
+      "Ordinal": 214
+    },
+    {
+      "FieldName": "PayeeType",
+      "DataType": "StringType",
+      "Ordinal": 215
+    },
+    {
+      "FieldName": "BenefitPlanID",
+      "DataType": "StringType",
+      "Ordinal": 216
+    },
+    {
+      "FieldName": "ReferringProviderID",
+      "DataType": "StringType",
+      "Ordinal": 217
+    },
+    {
+      "FieldName": "ReferringProviderNPI",
+      "DataType": "StringType",
+      "Ordinal": 218
+    },
+    {
+      "FieldName": "ReferringProviderTaxonomy",
+      "DataType": "StringType",
+      "Ordinal": 219
+    },
+    {
+      "FieldName": "PlanBenefitPackage",
+      "DataType": "StringType",
+      "Ordinal": 220
+    },
+    {
+      "FieldName": "LengthOfStay",
+      "DataType": "StringType",
+      "Ordinal": 221
+    }
+  ]
+}

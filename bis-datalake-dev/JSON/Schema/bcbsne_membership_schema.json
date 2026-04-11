@@ -1,0 +1,727 @@
+{
+	"columnNames": [
+        {
+            "FieldName": "TEMPLATE",
+            "OrdinalPosition": -1,
+            "DataType": "TEMPLATE",
+            "Format": "TEMPLATE",
+            "Validators": [
+                {
+                    "Name": "TEMPLATE",
+                    "Value": "TEMPLATE",
+                    "InputValue": [
+                        "TEMPLATE"
+                    ],
+                    "ConditionCol": "TEMPLATE",
+                    "ConditionVal": [
+                        "TEMPLATE"
+                    ]
+                }
+            ]
+        },
+		{
+			"FieldName": "TransactionType",
+			"OrdinalPosition": 0,
+			"DataType": "string",
+			"Validators": [
+                {
+                    "Name": "IsInAllowedValues",
+                    "InputValue": [
+                        "D  ",
+                        "P  ",
+                        "COB",
+                        "F  ",
+                        "LEP",
+                        "LIS",
+                        "PW ",
+						"GRP"
+					]
+				}
+            ]				
+		},
+		{
+			"FieldName": "ClaimsSubscriberIDNumber",
+			"OrdinalPosition": 1,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "StartDate",
+			"OrdinalPosition": 2,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "Enddate",
+			"OrdinalPosition": 3,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "SubscriberFlag",
+			"OrdinalPosition": 4,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "MemberName",
+			"OrdinalPosition": 5,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "MemberLastName",
+			"OrdinalPosition": 6,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberFirstName",
+			"OrdinalPosition": 7,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MiddleInitial",
+			"OrdinalPosition": 8,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MembersTitle",
+			"OrdinalPosition": 9,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MembersSuffix",
+			"OrdinalPosition": 10,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberDOB",
+			"OrdinalPosition": 11,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberGender",
+			"OrdinalPosition": 12,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "F",
+						"M"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "HICN",
+			"OrdinalPosition": 13,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EmployeeNumber",
+			"OrdinalPosition": 14,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MedicaidID",
+			"OrdinalPosition": 15,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProviderNumber",
+			"OrdinalPosition": 16,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentAddress1",
+			"OrdinalPosition": 17,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentAddress2",
+			"OrdinalPosition": 18,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentAddress3",
+			"OrdinalPosition": 19,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentCity",
+			"OrdinalPosition": 20,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentCounty",
+			"OrdinalPosition": 21,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentState",
+			"OrdinalPosition": 22,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberPermanentZipCode",
+			"OrdinalPosition": 23,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingAddress1",
+			"OrdinalPosition": 24,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingAddress2",
+			"OrdinalPosition": 25,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingAddress3",
+			"OrdinalPosition": 26,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingCity",
+			"OrdinalPosition": 27,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingCounty",
+			"OrdinalPosition": 28,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingState",
+			"OrdinalPosition": 29,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberMailingZipCode",
+			"OrdinalPosition": 30,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberBusinessPhone",
+			"OrdinalPosition": 31,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberHomePhone",
+			"OrdinalPosition": 32,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberEmailAddress",
+			"OrdinalPosition": 33,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MemberDateOfDeath",
+			"OrdinalPosition": 34,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "MemberSSN",
+			"OrdinalPosition": 35,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MedicarePartAEffDate",
+			"OrdinalPosition": 36,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "MedicarePartAEndDate",
+			"OrdinalPosition": 37,
+			"DataType": "string"			
+		},
+		{
+			"FieldName": "MedicarePartBEffDate",
+			"OrdinalPosition": 38,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "MedicarePartBEndDate",
+			"OrdinalPosition": 39,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MedicarePartDEffDate",
+			"OrdinalPosition": 40,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "MedicarePartDEndDate",
+			"OrdinalPosition": 41,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LanguageCode",
+			"OrdinalPosition": 42,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FaxNumber",
+			"OrdinalPosition": 43,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ThirdPartyLiabilityEffectiveDate",
+			"OrdinalPosition": 44,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ThirdPartyLiabilityTermDate",
+			"OrdinalPosition": 45,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EGHPFlag",
+			"OrdinalPosition": 46,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POAName",
+			"OrdinalPosition": 47,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POAAddress1",
+			"OrdinalPosition": 48,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POAAddress2",
+			"OrdinalPosition": 49,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POACity",
+			"OrdinalPosition": 50,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POACounty",
+			"OrdinalPosition": 51,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POAState",
+			"OrdinalPosition": 52,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POAZipCode",
+			"OrdinalPosition": 53,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "POARelationship",
+			"OrdinalPosition": 54,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "IDCardTriggerFlag",
+			"OrdinalPosition": 55,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CreditableCoverageFlag",
+			"OrdinalPosition": 56,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LEPNumberofUnCoveredMonths",
+			"OrdinalPosition": 57,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDLepAmount",
+			"OrdinalPosition": 58,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDLEPWaivedAmount",
+			"OrdinalPosition": 59,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDLEPSubsidyAmount",
+			"OrdinalPosition": 60,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "CurrentLISPremiumSubsidy",
+			"OrdinalPosition": 61,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDLISSubsidyLevel",
+			"OrdinalPosition": 62,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PartDLISCopayCategory",
+			"OrdinalPosition": 63,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ContractNumber",
+			"OrdinalPosition": 64,
+			"DataType": "string",
+			"Validators": [
+                {
+                    "Name": "isRequiredWithCondition", 
+                    "ConditionCol": "TransactionType", 
+                    "ConditionVal": ["P  "]                           
+                }
+            ]
+		},
+		{
+			"FieldName": "PBP",
+			"OrdinalPosition": 65,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Segment",
+			"OrdinalPosition": 66,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "GroupID",
+			"OrdinalPosition": 67,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "Subgroup",
+			"OrdinalPosition": 68,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlanCode",
+			"OrdinalPosition": 69,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PlanRider",
+			"OrdinalPosition": 70,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TermReasonCode",
+			"OrdinalPosition": 71,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PaymentMethodType",
+			"OrdinalPosition": 72,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PremiumWithHoldOption",
+			"OrdinalPosition": 73,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "D",
+						"S",
+						"R",
+						"N"
+					]
+				}
+			]			
+		},
+		{
+			"FieldName": "HospiceFlag",
+			"OrdinalPosition": 74,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]			
+		},
+		{
+			"FieldName": "MedicaidFlag",
+			"OrdinalPosition": 75,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "InstitutionalFlag",
+			"OrdinalPosition": 76,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "ESRDFlag",
+			"OrdinalPosition": 77,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "NHCFlag",
+			"OrdinalPosition": 78,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "COBUpdateDate",
+			"OrdinalPosition": 79,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "NameOfOtherCoverage",
+			"OrdinalPosition": 80,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SubscriberIDofOtherCoverage",
+			"OrdinalPosition": 81,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "GroupIDofOtherCoverage",
+			"OrdinalPosition": 82,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ProcessDate",
+			"OrdinalPosition": 83,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "GatewayMemberStatus",
+			"OrdinalPosition": 84,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "LISSourceCode",
+			"OrdinalPosition": 85,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SuffixStartDate",
+			"OrdinalPosition": 86,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SuffixEndDate",
+			"OrdinalPosition": 87,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "EndangeredMemberFlag",
+			"OrdinalPosition": 88,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "N",
+						"Y"
+					]
+				}
+			]
+		},
+		{
+			"FieldName": "NameofAccountHolder",
+			"OrdinalPosition": 89,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "ESEOFlag",
+			"OrdinalPosition": 90,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PCOFlag",
+			"OrdinalPosition": 91,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PDOOFlag",
+			"OrdinalPosition": 92,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "PRDAFlag",
+			"OrdinalPosition": 93,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "WorkingAgedFlag",
+			"OrdinalPosition": 94,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "ClassID",
+			"OrdinalPosition": 95,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "DisabledFlag",
+			"OrdinalPosition": 96,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "ProviderName",
+			"OrdinalPosition": 97,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "SignatureDate",
+			"OrdinalPosition": 98,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "isDateNotRequired",
+					"Value": "yyyyMMdd"
+				}
+			]
+		},
+		{
+			"FieldName": "FillerOne",
+			"OrdinalPosition": 99,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "MSPWorkingAgedFlag",
+			"OrdinalPosition": 100,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "FillerTwo",
+			"OrdinalPosition": 101,
+			"DataType": "string"
+		},
+		{
+			"FieldName": "TransplantFlag",
+			"OrdinalPosition": 102,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "DialysisFlag",
+			"OrdinalPosition": 103,
+			"DataType": "string",
+			"Validators": [
+				{
+					"Name": "IsInAllowedValuesAndNull",
+					"InputValue": [
+                        "Y",
+						"N"
+					]
+				}
+			]	
+		},
+		{
+			"FieldName": "POAPhoneNumber",
+			"OrdinalPosition": 104,
+			"DataType": "string"
+		}		
+	]
+}

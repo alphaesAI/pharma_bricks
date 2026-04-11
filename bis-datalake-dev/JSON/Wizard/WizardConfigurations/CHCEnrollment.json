@@ -1,0 +1,13 @@
+{
+    "SourceTable": "#clientCode/consolidated/ACA/Data/MemberEnrollment",
+    "SourceTableMountPoint": "DataLake",
+    "LOB": "ACA",
+    "BatchTable": "#clientCode/BatchAudit/ACA/CHCEnrollmentBatch",
+    "BatchTableMountPoint": "Export",
+    "ExportFilePath": "#clientCode/ACA/CHCEnrollment",
+    "ExportFileMountPoint": "Export",
+    "ExportFileNamingConvention": "CHCEnrollment_<LOB>_<BatchId>_<DateTime>",
+    "ExportFileNamingExtension": ".json",
+    "ExportQuery": "select\r\n UniquePersonKey as uniquePersonKey\r\n,BeneficiaryID as beneficiaryID\r\n,MedicaidID as medicaidID\r\n,date_format(StartDate,'MM/dd/yyyy') as startDate\r\n,date_format(EndDate,'MM/dd/yyyy') as endDate\r\n,PlanMemberID as planMemberId\r\n,SubscriberID as subscriberId\r\n,ProductID as productId\r\n,CommPlanID as planId\r\n,'Commercial' as productLine\r\n,PBP as PBP\r\n,Pharmacy as pharmacy\r\n,Dental as dental\r\n,Vision as vision\r\n,MH as MH\r\n,MHIP as MHIP\r\n,MHDN as MHDN\r\n,MHAMB as MHAMB\r\n,CD as CD\r\n,CDIP as CDIP\r\n,CDDN as CDDN\r\n,CDAMB as CDAMB\r\n,Hospice as hospice\r\n,SNP as SNP\r\n,SNPEnrolleeType as SNPEnrolleeType\r\n,CostSharingVariant as costSharingVariant\r\n,CSREligibility as CSREligibility\r\n,MemberEnrollmentQHPState as memberEnrollmentQHPState\r\n,LongTermInstitution as longTermInstitution\r\n,PlanEmployee as planEmployee\r\n,MedicaidExpansionQHPEnrollee as medicaidExpansionQHPEnrollee\r\n,MemberGroupCode as memberGroupCode\r\n,array(AltSpanReporting1,AltSpanReporting2,AltSpanReporting3,AltSpanReporting4,AltSpanReporting5,AltSpanReporting6,\r\n AltSpanReporting7,AltSpanReporting8,AltSpanReporting9,AltSpanReporting10) as altSpanReporting\r\nFROM QueryResult\r\n WHERE FileLayoutDescription = 'CHCMemberEnrollment' and ifnull(PlanMemberID,'')<>'' and StartDate is not null and EndDate is not null \r\n",
+  "FilterTables": []
+}

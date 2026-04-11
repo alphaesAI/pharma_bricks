@@ -1,0 +1,2607 @@
+{
+    "RecordTypes": [
+		{
+			"Type": "1",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "ContractNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"Length": "5",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "RunDate",
+					"OrdinalPosition": "3",
+					"StartPos": "7",
+					"Length": "8",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "PaymentYearandMonth",
+					"OrdinalPosition": "4",
+					"StartPos": "15",
+					"Length": "6",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "5",
+					"StartPos": "21",
+					"Length": "160"					
+				}
+			]
+		},
+		{
+			"Type": "3",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "ContractNumber",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"Length": "5"
+				},
+				{
+					"FieldName": "TotalNumberOfRecords",
+					"OrdinalPosition": "3",
+					"StartPos": "7",
+					"Length": "9",
+					"ControlFile": "True"
+				},
+				{
+					"FieldName": "Filler",
+					"OrdinalPosition": "4",
+					"StartPos": "16",
+					"Length": "165"					
+				}
+			]
+		},
+		{
+			"Type": "2",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"EndPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "MBI",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"EndPos": "13",
+					"Length": "12"
+				},
+				{
+					"FieldName": "BeneficiaryLastName",
+					"OrdinalPosition": "3",
+					"StartPos": "14",
+					"EndPos": "25",
+					"Length": "12"
+				},
+				{
+					"FieldName": "BeneficiaryFirstName",
+					"OrdinalPosition": "4",
+					"StartPos": "26",
+					"EndPos": "32",
+					"Length": "7"
+				},
+				{
+					"FieldName": "BeneficiaryInitial",
+					"OrdinalPosition": "5",
+					"StartPos": "33",
+					"EndPos": "33",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DateOfBirth",
+					"OrdinalPosition": "6",
+					"StartPos": "34",
+					"EndPos": "41",
+					"Length": "8"
+				},
+				{
+					"FieldName": "Sex",
+					"OrdinalPosition": "7",
+					"StartPos": "42",
+					"EndPos": "42",
+					"Length": "1"
+				},
+				{
+					"FieldName": "SocialSecurityNumber",
+					"OrdinalPosition": "8",
+					"StartPos": "43",
+					"EndPos": "51",
+					"Length": "9"
+				},
+				{
+					"FieldName": "AgeGroupFemale0To34",
+					"OrdinalPosition": "9",
+					"StartPos": "52",
+					"EndPos": "52",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale35To44",
+					"OrdinalPosition": "10",
+					"StartPos": "53",
+					"EndPos": "53",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale45To54",
+					"OrdinalPosition": "11",
+					"StartPos": "54",
+					"EndPos": "54",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale55To59",
+					"OrdinalPosition": "12",
+					"StartPos": "55",
+					"EndPos": "55",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale60To64",
+					"OrdinalPosition": "13",
+					"StartPos": "56",
+					"EndPos": "56",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale65To69",
+					"OrdinalPosition": "14",
+					"StartPos": "57",
+					"EndPos": "57",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale70To74",
+					"OrdinalPosition": "15",
+					"StartPos": "58",
+					"EndPos": "58",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale75To79",
+					"OrdinalPosition": "16",
+					"StartPos": "59",
+					"EndPos": "59",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale80To84",
+					"OrdinalPosition": "17",
+					"StartPos": "60",
+					"EndPos": "60",
+                    "Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale85To89",
+					"OrdinalPosition": "18",
+					"StartPos": "61",
+					"EndPos": "61",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale90To94",
+					"OrdinalPosition": "19",
+					"StartPos": "62",
+					"EndPos": "62",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale95ToGT",
+					"OrdinalPosition": "20",
+					"StartPos": "63",
+					"EndPos": "63",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale0To34",
+					"OrdinalPosition": "21",
+					"StartPos": "64",
+					"EndPos": "64",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale35To44",
+					"OrdinalPosition": "22",
+					"StartPos": "65",
+					"EndPos": "65",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale45To54",
+					"OrdinalPosition": "23",
+					"StartPos": "66",
+					"EndPos": "66",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale55To59",
+					"OrdinalPosition": "24",
+					"StartPos": "67",
+					"EndPos": "67",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale60To64",
+					"OrdinalPosition": "25",
+					"StartPos": "68",
+					"EndPos": "68",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale65To69",
+					"OrdinalPosition": "26",
+					"StartPos": "69",
+					"EndPos": "69",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale70To74",
+					"OrdinalPosition": "27",
+					"StartPos": "70",
+					"EndPos": "70",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale75To79",
+					"OrdinalPosition": "28",
+					"StartPos": "71",
+					"EndPos": "71",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale80To84",
+					"OrdinalPosition": "29",
+					"StartPos": "72",
+					"EndPos": "72",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale85To89",
+					"OrdinalPosition": "30",
+					"StartPos": "73",
+					"EndPos": "73",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale90To94",
+					"OrdinalPosition": "31",
+					"StartPos": "74",
+					"EndPos": "74",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale95ToGT",
+					"OrdinalPosition": "32",
+					"StartPos": "75",
+					"EndPos": "75",
+					"Length": "1"
+				},
+				{
+					"FieldName": "OriginallyDisabledFemale",
+					"OrdinalPosition": "33",
+					"StartPos": "76",
+					"EndPos": "76",
+					"Length": "1"
+				},
+				{
+					"FieldName": "OriginallyDisabledMale",
+					"OrdinalPosition": "34",
+					"StartPos": "77",
+					"EndPos": "77",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC1",
+					"OrdinalPosition": "35",
+					"StartPos": "78",
+					"EndPos": "78",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC5",
+					"OrdinalPosition": "36",
+					"StartPos": "79",
+					"EndPos": "79",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC15",
+					"OrdinalPosition": "37",
+					"StartPos": "80",
+					"EndPos": "80",
+					"Length": "1"
+				},								
+				{
+					"OrdinalPosition": "38",
+					"FieldName": "RXHCC16",
+					"StartPos": "81",
+					"EndPos": "81",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "39",
+					"FieldName": "RXHCC17",
+					"StartPos": "82",
+					"EndPos": "82",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "40",
+					"FieldName": "RXHCC18",
+					"StartPos": "83",
+					"EndPos": "83",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "41",
+					"FieldName": "RXHCC19",
+					"StartPos": "84",
+					"EndPos": "84",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "42",
+					"FieldName": "RXHCC30",
+					"StartPos": "85",
+					"EndPos": "85",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "43",
+					"FieldName": "RXHCC31",
+					"StartPos": "86",
+					"EndPos": "86",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "44",
+					"FieldName": "RXHCC40",
+					"StartPos": "87",
+					"EndPos": "87",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "45",
+					"FieldName": "RXHCC41",
+					"StartPos": "88",
+					"EndPos": "88",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "46",
+					"FieldName": "RXHCC42",
+					"StartPos": "89",
+					"EndPos": "89",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "47",
+					"FieldName": "RXHCC43",
+					"StartPos": "90",
+					"EndPos": "90",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "48",
+					"FieldName": "RXHCC45",
+					"StartPos": "91",
+					"EndPos": "91",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "49",
+					"FieldName": "RXHCC54",
+					"StartPos": "92",
+					"EndPos": "92",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "50",
+					"FieldName": "RXHCC55",
+					"StartPos": "93",
+					"EndPos": "93",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "51",
+					"FieldName": "RXHCC65",
+					"StartPos": "94",
+					"EndPos": "94",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "52",
+					"FieldName": "RXHCC66",
+					"StartPos": "95",
+					"EndPos": "95",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "53",
+					"FieldName": "RXHCC67",
+					"StartPos": "96",
+					"EndPos": "96",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "54",
+					"FieldName": "RXHCC68",
+					"StartPos": "97",
+					"EndPos": "97",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "55",
+					"FieldName": "RXHCC80",
+					"StartPos": "98",
+					"EndPos": "98",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "56",
+					"FieldName": "RXHCC82",
+					"StartPos": "99",
+					"EndPos": "99",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "57",
+					"FieldName": "RXHCC83",
+					"StartPos": "100",
+					"EndPos": "100",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "58",
+					"FieldName": "RXHCC84",
+					"StartPos": "101",
+					"EndPos": "101",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "59",
+					"FieldName": "RXHCC87",
+					"StartPos": "102",
+					"EndPos": "102",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "60",
+					"FieldName": "RXHCC95",
+					"StartPos": "103",
+					"EndPos": "103",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "61",
+					"FieldName": "RXHCC96",
+					"StartPos": "104",
+					"EndPos": "104",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "62",
+					"FieldName": "RXHCC97",
+					"StartPos": "105",
+					"EndPos": "105",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "63",
+					"FieldName": "RXHCC98",
+					"StartPos": "106",
+					"EndPos": "106",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "64",
+					"FieldName": "RXHCC111",
+					"StartPos": "107",
+					"EndPos": "107",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "65",
+					"FieldName": "RXHCC112",
+					"StartPos": "108",
+					"EndPos": "108",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "66",
+					"FieldName": "RXHCC130",
+					"StartPos": "109",
+					"EndPos": "109",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "67",
+					"FieldName": "RXHCC131",
+					"StartPos": "110",
+					"EndPos": "110",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "68",
+					"FieldName": "RXHCC132",
+					"StartPos": "111",
+					"EndPos": "111",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "69",
+					"FieldName": "RXHCC133",
+					"StartPos": "112",
+					"EndPos": "112",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "70",
+					"FieldName": "RXHCC134",
+					"StartPos": "113",
+					"EndPos": "113",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "71",
+					"FieldName": "RXHCC135",
+					"StartPos": "114",
+					"EndPos": "114",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "72",
+					"FieldName": "RXHCC145",
+					"StartPos": "115",
+					"EndPos": "115",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "73",
+					"FieldName": "RXHCC146",
+					"StartPos": "116",
+					"EndPos": "116",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "74",
+					"FieldName": "RXHCC147",
+					"StartPos": "117",
+					"EndPos": "117",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "75",
+					"FieldName": "RXHCC148",
+					"StartPos": "118",
+					"EndPos": "118",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "76",
+					"FieldName": "RXHCC156",
+					"StartPos": "119",
+					"EndPos": "119",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "77",
+					"FieldName": "RXHCC157",
+					"StartPos": "120",
+					"EndPos": "120",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "78",
+					"FieldName": "RXHCC159",
+					"StartPos": "121",
+					"EndPos": "121",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "79",
+					"FieldName": "RXHCC160",
+					"StartPos": "122",
+					"EndPos": "122",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "80",
+					"FieldName": "RXHCC161",
+					"StartPos": "123",
+					"EndPos": "123",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "81",
+					"FieldName": "RXHCC163",
+					"StartPos": "124",
+					"EndPos": "124",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "82",
+					"FieldName": "RXHCC164",
+					"StartPos": "125",
+					"EndPos": "125",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "83",
+					"FieldName": "RXHCC165",
+					"StartPos": "126",
+					"EndPos": "126",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "84",
+					"FieldName": "RXHCC166",
+					"StartPos": "127",
+					"EndPos": "127",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "85",
+					"FieldName": "RXHCC168",
+					"StartPos": "128",
+					"EndPos": "128",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "86",
+					"FieldName": "RXHCC185",
+					"StartPos": "129",
+					"EndPos": "129",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "87",
+					"FieldName": "RXHCC186",
+					"StartPos": "130",
+					"EndPos": "130",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "88",
+					"FieldName": "RXHCC187",
+					"StartPos": "131",
+					"EndPos": "131",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "89",
+					"FieldName": "RXHCC188",
+					"StartPos": "132",
+					"EndPos": "132",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "90",
+					"FieldName": "RXHCC193",
+					"StartPos": "133",
+					"EndPos": "133",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "91",
+					"FieldName": "RXHCC206",
+					"StartPos": "134",
+					"EndPos": "134",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "92",
+					"FieldName": "RXHCC207",
+					"StartPos": "135",
+					"EndPos": "135",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "93",
+					"FieldName": "RXHCC215",
+					"StartPos": "136",
+					"EndPos": "136",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "94",
+					"FieldName": "RXHCC216",
+					"StartPos": "137",
+					"EndPos": "137",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "95",
+					"FieldName": "RXHCC225",
+					"StartPos": "138",
+					"EndPos": "138",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "96",
+					"FieldName": "RXHCC226",
+					"StartPos": "139",
+					"EndPos": "139",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "97",
+					"FieldName": "RXHCC227",
+					"StartPos": "140",
+					"EndPos": "140",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "98",
+					"FieldName": "RXHCC241",
+					"StartPos": "141",
+					"EndPos": "141",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "99",
+					"FieldName": "RXHCC243",
+					"StartPos": "142",
+					"EndPos": "142",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "100",
+					"FieldName": "RXHCC260",
+					"StartPos": "143",
+					"EndPos": "143",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "101",
+					"FieldName": "RXHCC261",
+					"StartPos": "144",
+					"EndPos": "144",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "102",
+					"FieldName": "RXHCC262",
+					"StartPos": "145",
+					"EndPos": "145",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "103",
+					"FieldName": "RXHCC263",
+					"StartPos": "146",
+					"EndPos": "146",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "104",
+					"FieldName": "RXHCC311",
+					"StartPos": "147",
+					"EndPos": "147",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "105",
+					"FieldName": "RXHCC314",
+					"StartPos": "148",
+					"EndPos": "148",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "106",
+					"FieldName": "RXHCC316",
+					"StartPos": "149",
+					"EndPos": "149",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "107",
+					"FieldName": "RXHCC355",
+					"StartPos": "150",
+					"EndPos": "150",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "108",
+					"FieldName": "RXHCC395",
+					"StartPos": "151",
+					"EndPos": "151",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "109",
+					"FieldName": "RXHCC396",
+					"StartPos": "152",
+					"EndPos": "152",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "110",
+					"FieldName": "RXHCC397",
+					"StartPos": "153",
+					"EndPos": "153",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "111",
+					"FieldName": "OriginallyDisabled",
+					"StartPos": "154",
+					"EndPos": "154",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "112",
+					"FieldName": "NONAGEDRXHCC1",
+					"StartPos": "155",
+					"EndPos": "155",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "113",
+					"FieldName": "NONAGEDRXHCC130",
+					"StartPos": "156",
+					"EndPos": "156",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "114",
+					"FieldName": "NONAGEDRXHCC131",
+					"StartPos": "157",
+					"EndPos": "157",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "115",
+					"FieldName": "NONAGEDRXHCC132",
+					"StartPos": "158",
+					"EndPos": "158",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "116",
+					"FieldName": "NONAGEDRXHCC133",
+					"StartPos": "159",
+					"EndPos": "159",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "117",
+					"FieldName": "NONAGEDRXHCC134",
+					"StartPos": "160",
+					"EndPos": "160",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "118",
+					"FieldName": "NONAGEDRXHCC135",
+					"StartPos": "161",
+					"EndPos": "161",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "119",
+					"FieldName": "NONAGEDRXHCC160",
+					"StartPos": "162",
+					"EndPos": "162",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "120",
+					"FieldName": "NONAGEDRXHCC163",
+					"StartPos": "163",
+					"EndPos": "163",
+					"Length": "1"
+				}				
+			]
+		},
+		{
+			"Type": "4",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"EndPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "MBI",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"EndPos": "13",
+					"Length": "12"
+				},
+				{
+					"FieldName": "BeneficiaryLastName",
+					"OrdinalPosition": "3",
+					"StartPos": "14",
+					"EndPos": "25",
+					"Length": "12"
+				},
+				{
+					"FieldName": "BeneficiaryFirstName",
+					"OrdinalPosition": "4",
+					"StartPos": "26",
+					"EndPos": "32",
+					"Length": "7"
+				},
+				{
+					"FieldName": "BeneficiaryInitial",
+					"OrdinalPosition": "5",
+					"StartPos": "33",
+					"EndPos": "33",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DateOfBirth",
+					"OrdinalPosition": "6",
+					"StartPos": "34",
+					"EndPos": "41",
+					"Length": "8"
+				},
+				{
+					"FieldName": "Sex",
+					"OrdinalPosition": "7",
+					"StartPos": "42",
+					"EndPos": "42",
+					"Length": "1"
+				},
+				{
+					"FieldName": "SocialSecurityNumber",
+					"OrdinalPosition": "8",
+					"StartPos": "43",
+					"EndPos": "51",
+					"Length": "9"
+				},
+				{
+					"FieldName": "AgeGroupFemale0To34",
+					"OrdinalPosition": "9",
+					"StartPos": "52",
+					"EndPos": "52",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale35To44",
+					"OrdinalPosition": "10",
+					"StartPos": "53",
+					"EndPos": "53",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale45To54",
+					"OrdinalPosition": "11",
+					"StartPos": "54",
+					"EndPos": "54",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale55To59",
+					"OrdinalPosition": "12",
+					"StartPos": "55",
+					"EndPos": "55",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale60To64",
+					"OrdinalPosition": "13",
+					"StartPos": "56",
+					"EndPos": "56",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemaleT65o69",
+					"OrdinalPosition": "14",
+					"StartPos": "57",
+					"EndPos": "57",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale70To74",
+					"OrdinalPosition": "15",
+					"StartPos": "58",
+					"EndPos": "58",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale75To79",
+					"OrdinalPosition": "16",
+					"StartPos": "59",
+					"EndPos": "59",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale80To84",
+					"OrdinalPosition": "17",
+					"StartPos": "60",
+					"EndPos": "60",
+                    "Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale85To89",
+					"OrdinalPosition": "18",
+					"StartPos": "61",
+					"EndPos": "61",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale90To94",
+					"OrdinalPosition": "19",
+					"StartPos": "62",
+					"EndPos": "62",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale95ToGT",
+					"OrdinalPosition": "20",
+					"StartPos": "63",
+					"EndPos": "63",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale0To34",
+					"OrdinalPosition": "21",
+					"StartPos": "64",
+					"EndPos": "64",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale35To44",
+					"OrdinalPosition": "22",
+					"StartPos": "65",
+					"EndPos": "65",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale45To54",
+					"OrdinalPosition": "23",
+					"StartPos": "66",
+					"EndPos": "66",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale55To59",
+					"OrdinalPosition": "24",
+					"StartPos": "67",
+					"EndPos": "67",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale60To64",
+					"OrdinalPosition": "25",
+					"StartPos": "68",
+					"EndPos": "68",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale65To69",
+					"OrdinalPosition": "26",
+					"StartPos": "69",
+					"EndPos": "69",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale70To74",
+					"OrdinalPosition": "27",
+					"StartPos": "70",
+					"EndPos": "70",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale75To79",
+					"OrdinalPosition": "28",
+					"StartPos": "71",
+					"EndPos": "71",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale80To84",
+					"OrdinalPosition": "29",
+					"StartPos": "72",
+					"EndPos": "72",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale85To89",
+					"OrdinalPosition": "30",
+					"StartPos": "73",
+					"EndPos": "73",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale90To94",
+					"OrdinalPosition": "31",
+					"StartPos": "74",
+					"EndPos": "74",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale97ToGT",
+					"OrdinalPosition": "32",
+					"StartPos": "75",
+					"EndPos": "75",
+					"Length": "1"
+				},
+				{
+					"FieldName": "OriginallyDisabledFemale",
+					"OrdinalPosition": "33",
+					"StartPos": "76",
+					"EndPos": "76",
+					"Length": "1"
+				},
+				{
+					"FieldName": "OriginallyDisabledMale",
+					"OrdinalPosition": "34",
+					"StartPos": "77",
+					"EndPos": "77",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC1",
+					"OrdinalPosition": "35",
+					"StartPos": "78",
+					"EndPos": "78",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC5",
+					"OrdinalPosition": "36",
+					"StartPos": "79",
+					"EndPos": "79",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC15",
+					"OrdinalPosition": "37",
+					"StartPos": "80",
+					"EndPos": "80",
+					"Length": "1"
+				},								
+				{
+					"OrdinalPosition": "38",
+					"FieldName": "RXHCC16",
+					"StartPos": "81",
+					"EndPos": "81",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "39",
+					"FieldName": "RXHCC17",
+					"StartPos": "82",
+					"EndPos": "82",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "40",
+					"FieldName": "RXHCC18",
+					"StartPos": "83",
+					"EndPos": "83",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "41",
+					"FieldName": "RXHCC19",
+					"StartPos": "84",
+					"EndPos": "84",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "42",
+					"FieldName": "RXHCC30",
+					"StartPos": "85",
+					"EndPos": "85",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "43",
+					"FieldName": "RXHCC31",
+					"StartPos": "86",
+					"EndPos": "86",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "44",
+					"FieldName": "RXHCC40",
+					"StartPos": "87",
+					"EndPos": "87",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "45",
+					"FieldName": "RXHCC41",
+					"StartPos": "88",
+					"EndPos": "88",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "46",
+					"FieldName": "RXHCC42",
+					"StartPos": "89",
+					"EndPos": "89",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "47",
+					"FieldName": "RXHCC43",
+					"StartPos": "90",
+					"EndPos": "90",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "48",
+					"FieldName": "RXHCC45",
+					"StartPos": "91",
+					"EndPos": "91",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "49",
+					"FieldName": "RXHCC54",
+					"StartPos": "92",
+					"EndPos": "92",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "50",
+					"FieldName": "RXHCC55",
+					"StartPos": "93",
+					"EndPos": "93",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "51",
+					"FieldName": "RXHCC65",
+					"StartPos": "94",
+					"EndPos": "94",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "52",
+					"FieldName": "RXHCC66",
+					"StartPos": "95",
+					"EndPos": "95",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "53",
+					"FieldName": "RXHCC67",
+					"StartPos": "96",
+					"EndPos": "96",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "54",
+					"FieldName": "RXHCC68",
+					"StartPos": "97",
+					"EndPos": "97",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "55",
+					"FieldName": "RXHCC80",
+					"StartPos": "98",
+					"EndPos": "98",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "56",
+					"FieldName": "RXHCC82",
+					"StartPos": "99",
+					"EndPos": "99",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "57",
+					"FieldName": "RXHCC83",
+					"StartPos": "100",
+					"EndPos": "100",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "58",
+					"FieldName": "RXHCC84",
+					"StartPos": "101",
+					"EndPos": "101",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "59",
+					"FieldName": "RXHCC87",
+					"StartPos": "102",
+					"EndPos": "102",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "60",
+					"FieldName": "RXHCC95",
+					"StartPos": "103",
+					"EndPos": "103",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "61",
+					"FieldName": "RXHCC96",
+					"StartPos": "104",
+					"EndPos": "104",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "62",
+					"FieldName": "RXHCC97",
+					"StartPos": "105",
+					"EndPos": "105",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "63",
+					"FieldName": "RXHCC98",
+					"StartPos": "106",
+					"EndPos": "106",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "64",
+					"FieldName": "RXHCC111",
+					"StartPos": "107",
+					"EndPos": "107",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "65",
+					"FieldName": "RXHCC112",
+					"StartPos": "108",
+					"EndPos": "108",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "66",
+					"FieldName": "RXHCC130",
+					"StartPos": "109",
+					"EndPos": "109",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "67",
+					"FieldName": "RXHCC131",
+					"StartPos": "110",
+					"EndPos": "110",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "68",
+					"FieldName": "RXHCC132",
+					"StartPos": "111",
+					"EndPos": "111",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "69",
+					"FieldName": "RXHCC133",
+					"StartPos": "112",
+					"EndPos": "112",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "70",
+					"FieldName": "RXHCC134",
+					"StartPos": "113",
+					"EndPos": "113",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "71",
+					"FieldName": "RXHCC135",
+					"StartPos": "114",
+					"EndPos": "114",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "72",
+					"FieldName": "RXHCC145",
+					"StartPos": "115",
+					"EndPos": "115",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "73",
+					"FieldName": "RXHCC146",
+					"StartPos": "116",
+					"EndPos": "116",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "74",
+					"FieldName": "RXHCC147",
+					"StartPos": "117",
+					"EndPos": "117",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "75",
+					"FieldName": "RXHCC148",
+					"StartPos": "118",
+					"EndPos": "118",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "76",
+					"FieldName": "RXHCC156",
+					"StartPos": "119",
+					"EndPos": "119",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "77",
+					"FieldName": "RXHCC157",
+					"StartPos": "120",
+					"EndPos": "120",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "78",
+					"FieldName": "RXHCC159",
+					"StartPos": "121",
+					"EndPos": "121",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "79",
+					"FieldName": "RXHCC160",
+					"StartPos": "122",
+					"EndPos": "122",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "80",
+					"FieldName": "RXHCC161",
+					"StartPos": "123",
+					"EndPos": "123",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "81",
+					"FieldName": "RXHCC163",
+					"StartPos": "124",
+					"EndPos": "124",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "82",
+					"FieldName": "RXHCC164",
+					"StartPos": "125",
+					"EndPos": "125",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "83",
+					"FieldName": "RXHCC165",
+					"StartPos": "126",
+					"EndPos": "126",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "84",
+					"FieldName": "RXHCC166",
+					"StartPos": "127",
+					"EndPos": "127",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "85",
+					"FieldName": "RXHCC168",
+					"StartPos": "128",
+					"EndPos": "128",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "86",
+					"FieldName": "RXHCC185",
+					"StartPos": "129",
+					"EndPos": "129",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "87",
+					"FieldName": "RXHCC186",
+					"StartPos": "130",
+					"EndPos": "130",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "88",
+					"FieldName": "RXHCC187",
+					"StartPos": "131",
+					"EndPos": "131",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "89",
+					"FieldName": "RXHCC188",
+					"StartPos": "132",
+					"EndPos": "132",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "90",
+					"FieldName": "RXHCC193",
+					"StartPos": "133",
+					"EndPos": "133",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "91",
+					"FieldName": "RXHCC206",
+					"StartPos": "134",
+					"EndPos": "134",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "92",
+					"FieldName": "RXHCC207",
+					"StartPos": "135",
+					"EndPos": "135",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "93",
+					"FieldName": "RXHCC215",
+					"StartPos": "136",
+					"EndPos": "136",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "94",
+					"FieldName": "RXHCC216",
+					"StartPos": "137",
+					"EndPos": "137",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "95",
+					"FieldName": "RXHCC225",
+					"StartPos": "138",
+					"EndPos": "138",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "96",
+					"FieldName": "RXHCC226",
+					"StartPos": "139",
+					"EndPos": "139",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "97",
+					"FieldName": "RXHCC227",
+					"StartPos": "140",
+					"EndPos": "140",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "98",
+					"FieldName": "RXHCC241",
+					"StartPos": "141",
+					"EndPos": "141",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "99",
+					"FieldName": "RXHCC243",
+					"StartPos": "142",
+					"EndPos": "142",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "100",
+					"FieldName": "RXHCC260",
+					"StartPos": "143",
+					"EndPos": "143",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "101",
+					"FieldName": "RXHCC261",
+					"StartPos": "144",
+					"EndPos": "144",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "102",
+					"FieldName": "RXHCC262",
+					"StartPos": "145",
+					"EndPos": "145",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "103",
+					"FieldName": "RXHCC263",
+					"StartPos": "146",
+					"EndPos": "146",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "104",
+					"FieldName": "RXHCC311",
+					"StartPos": "147",
+					"EndPos": "147",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "105",
+					"FieldName": "RXHCC314",
+					"StartPos": "148",
+					"EndPos": "148",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "106",
+					"FieldName": "RXHCC316",
+					"StartPos": "149",
+					"EndPos": "149",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "107",
+					"FieldName": "RXHCC355",
+					"StartPos": "150",
+					"EndPos": "150",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "108",
+					"FieldName": "RXHCC395",
+					"StartPos": "151",
+					"EndPos": "151",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "109",
+					"FieldName": "RXHCC396",
+					"StartPos": "152",
+					"EndPos": "152",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "110",
+					"FieldName": "RXHCC397",
+					"StartPos": "153",
+					"EndPos": "153",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "111",
+					"FieldName": "OriginallyDisabled",
+					"StartPos": "154",
+					"EndPos": "154",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "112",
+					"FieldName": "NONAGEDRXHCC1",
+					"StartPos": "155",
+					"EndPos": "155",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "113",
+					"FieldName": "NONAGEDRXHCC130",
+					"StartPos": "156",
+					"EndPos": "156",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "114",
+					"FieldName": "NONAGEDRXHCC131",
+					"StartPos": "157",
+					"EndPos": "157",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "115",
+					"FieldName": "NONAGEDRXHCC132",
+					"StartPos": "158",
+					"EndPos": "158",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "116",
+					"FieldName": "NONAGEDRXHCC133",
+					"StartPos": "159",
+					"EndPos": "159",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "117",
+					"FieldName": "NONAGEDRXHCC134",
+					"StartPos": "160",
+					"EndPos": "160",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "118",
+					"FieldName": "NONAGEDRXHCC135",
+					"StartPos": "161",
+					"EndPos": "161",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "119",
+					"FieldName": "NONAGEDRXHCC160",
+					"StartPos": "162",
+					"EndPos": "162",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "120",
+					"FieldName": "NONAGEDRXHCC163",
+					"StartPos": "163",
+					"EndPos": "163",
+					"Length": "1"
+				}								
+			]
+		},
+		{
+			"Type": "5",
+			"ColumnNames": [
+				{
+					"FieldName": "RecordType",
+					"OrdinalPosition": "1",
+					"StartPos": "1",
+					"EndPos": "1",
+					"Length": "1"
+				},
+				{
+					"FieldName": "MBI",
+					"OrdinalPosition": "2",
+					"StartPos": "2",
+					"EndPos": "13",
+					"Length": "12"
+				},
+				{
+					"FieldName": "BeneficiaryLastName",
+					"OrdinalPosition": "3",
+					"StartPos": "14",
+					"EndPos": "25",
+					"Length": "12"
+				},
+				{
+					"FieldName": "BeneficiaryFirstName",
+					"OrdinalPosition": "4",
+					"StartPos": "26",
+					"EndPos": "32",
+					"Length": "7"
+				},
+				{
+					"FieldName": "BeneficiaryInitial",
+					"OrdinalPosition": "5",
+					"StartPos": "33",
+					"EndPos": "33",
+					"Length": "1"
+				},
+				{
+					"FieldName": "DateOfBirth",
+					"OrdinalPosition": "6",
+					"StartPos": "34",
+					"EndPos": "41",
+					"Length": "8"
+				},
+				{
+					"FieldName": "Sex",
+					"OrdinalPosition": "7",
+					"StartPos": "42",
+					"EndPos": "42",
+					"Length": "1"
+				},
+				{
+					"FieldName": "SocialSecurityNumber",
+					"OrdinalPosition": "8",
+					"StartPos": "43",
+					"EndPos": "51",
+					"Length": "9"
+				},
+				{
+					"FieldName": "AgeGroupFemale0To34",
+					"OrdinalPosition": "9",
+					"StartPos": "52",
+					"EndPos": "52",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale35To44",
+					"OrdinalPosition": "10",
+					"StartPos": "53",
+					"EndPos": "53",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale45To54",
+					"OrdinalPosition": "11",
+					"StartPos": "54",
+					"EndPos": "54",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale55To59",
+					"OrdinalPosition": "12",
+					"StartPos": "55",
+					"EndPos": "55",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale60To64",
+					"OrdinalPosition": "13",
+					"StartPos": "56",
+					"EndPos": "56",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemaleT65o69",
+					"OrdinalPosition": "14",
+					"StartPos": "57",
+					"EndPos": "57",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale70To74",
+					"OrdinalPosition": "15",
+					"StartPos": "58",
+					"EndPos": "58",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale75To79",
+					"OrdinalPosition": "16",
+					"StartPos": "59",
+					"EndPos": "59",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale80To84",
+					"OrdinalPosition": "17",
+					"StartPos": "60",
+					"EndPos": "60",
+                    "Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale85To89",
+					"OrdinalPosition": "18",
+					"StartPos": "61",
+					"EndPos": "61",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale90To94",
+					"OrdinalPosition": "19",
+					"StartPos": "62",
+					"EndPos": "62",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupFemale95ToGT",
+					"OrdinalPosition": "20",
+					"StartPos": "63",
+					"EndPos": "63",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale0To34",
+					"OrdinalPosition": "21",
+					"StartPos": "64",
+					"EndPos": "64",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale35To44",
+					"OrdinalPosition": "22",
+					"StartPos": "65",
+					"EndPos": "65",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale45To54",
+					"OrdinalPosition": "23",
+					"StartPos": "66",
+					"EndPos": "66",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale55To59",
+					"OrdinalPosition": "24",
+					"StartPos": "67",
+					"EndPos": "67",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale60To64",
+					"OrdinalPosition": "25",
+					"StartPos": "68",
+					"EndPos": "68",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale65To69",
+					"OrdinalPosition": "26",
+					"StartPos": "69",
+					"EndPos": "69",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale70To74",
+					"OrdinalPosition": "27",
+					"StartPos": "70",
+					"EndPos": "70",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale75To79",
+					"OrdinalPosition": "28",
+					"StartPos": "71",
+					"EndPos": "71",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale80To84",
+					"OrdinalPosition": "29",
+					"StartPos": "72",
+					"EndPos": "72",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale85To89",
+					"OrdinalPosition": "30",
+					"StartPos": "73",
+					"EndPos": "73",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale90To94",
+					"OrdinalPosition": "31",
+					"StartPos": "74",
+					"EndPos": "74",
+					"Length": "1"
+				},
+				{
+					"FieldName": "AgeGroupMale97ToGT",
+					"OrdinalPosition": "32",
+					"StartPos": "75",
+					"EndPos": "75",
+					"Length": "1"
+				},
+				{
+					"FieldName": "OriginallyDisabledFemale",
+					"OrdinalPosition": "33",
+					"StartPos": "76",
+					"EndPos": "76",
+					"Length": "1"
+				},
+				{
+					"FieldName": "OriginallyDisabledMale",
+					"OrdinalPosition": "34",
+					"StartPos": "77",
+					"EndPos": "77",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC1",
+					"OrdinalPosition": "35",
+					"StartPos": "78",
+					"EndPos": "78",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC5",
+					"OrdinalPosition": "36",
+					"StartPos": "79",
+					"EndPos": "79",
+					"Length": "1"
+				},
+				{
+					"FieldName": "RXHCC15",
+					"OrdinalPosition": "37",
+					"StartPos": "80",
+					"EndPos": "80",
+					"Length": "1"
+				},								
+				{
+					"OrdinalPosition": "38",
+					"FieldName": "RXHCC16",
+					"StartPos": "81",
+					"EndPos": "81",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "39",
+					"FieldName": "RXHCC17",
+					"StartPos": "82",
+					"EndPos": "82",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "40",
+					"FieldName": "RXHCC18",
+					"StartPos": "83",
+					"EndPos": "83",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "41",
+					"FieldName": "RXHCC19",
+					"StartPos": "84",
+					"EndPos": "84",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "42",
+					"FieldName": "RXHCC30",
+					"StartPos": "85",
+					"EndPos": "85",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "43",
+					"FieldName": "RXHCC31",
+					"StartPos": "86",
+					"EndPos": "86",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "44",
+					"FieldName": "RXHCC40",
+					"StartPos": "87",
+					"EndPos": "87",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "45",
+					"FieldName": "RXHCC41",
+					"StartPos": "88",
+					"EndPos": "88",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "46",
+					"FieldName": "RXHCC42",
+					"StartPos": "89",
+					"EndPos": "89",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "47",
+					"FieldName": "RXHCC43",
+					"StartPos": "90",
+					"EndPos": "90",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "48",
+					"FieldName": "RXHCC45",
+					"StartPos": "91",
+					"EndPos": "91",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "49",
+					"FieldName": "RXHCC54",
+					"StartPos": "92",
+					"EndPos": "92",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "50",
+					"FieldName": "RXHCC55",
+					"StartPos": "93",
+					"EndPos": "93",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "51",
+					"FieldName": "RXHCC65",
+					"StartPos": "94",
+					"EndPos": "94",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "52",
+					"FieldName": "RXHCC66",
+					"StartPos": "95",
+					"EndPos": "95",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "53",
+					"FieldName": "RXHCC67",
+					"StartPos": "96",
+					"EndPos": "96",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "54",
+					"FieldName": "RXHCC68",
+					"StartPos": "97",
+					"EndPos": "97",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "55",
+					"FieldName": "RXHCC80",
+					"StartPos": "98",
+					"EndPos": "98",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "56",
+					"FieldName": "RXHCC82",
+					"StartPos": "99",
+					"EndPos": "99",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "57",
+					"FieldName": "RXHCC83",
+					"StartPos": "100",
+					"EndPos": "100",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "58",
+					"FieldName": "RXHCC84",
+					"StartPos": "101",
+					"EndPos": "101",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "59",
+					"FieldName": "RXHCC87",
+					"StartPos": "102",
+					"EndPos": "102",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "60",
+					"FieldName": "RXHCC95",
+					"StartPos": "103",
+					"EndPos": "103",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "61",
+					"FieldName": "RXHCC96",
+					"StartPos": "104",
+					"EndPos": "104",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "62",
+					"FieldName": "RXHCC97",
+					"StartPos": "105",
+					"EndPos": "105",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "63",
+					"FieldName": "RXHCC98",
+					"StartPos": "106",
+					"EndPos": "106",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "64",
+					"FieldName": "RXHCC111",
+					"StartPos": "107",
+					"EndPos": "107",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "65",
+					"FieldName": "RXHCC112",
+					"StartPos": "108",
+					"EndPos": "108",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "66",
+					"FieldName": "RXHCC130",
+					"StartPos": "109",
+					"EndPos": "109",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "67",
+					"FieldName": "RXHCC131",
+					"StartPos": "110",
+					"EndPos": "110",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "68",
+					"FieldName": "RXHCC132",
+					"StartPos": "111",
+					"EndPos": "111",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "69",
+					"FieldName": "RXHCC133",
+					"StartPos": "112",
+					"EndPos": "112",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "70",
+					"FieldName": "RXHCC134",
+					"StartPos": "113",
+					"EndPos": "113",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "71",
+					"FieldName": "RXHCC135",
+					"StartPos": "114",
+					"EndPos": "114",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "72",
+					"FieldName": "RXHCC145",
+					"StartPos": "115",
+					"EndPos": "115",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "73",
+					"FieldName": "RXHCC146",
+					"StartPos": "116",
+					"EndPos": "116",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "74",
+					"FieldName": "RXHCC147",
+					"StartPos": "117",
+					"EndPos": "117",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "75",
+					"FieldName": "RXHCC148",
+					"StartPos": "118",
+					"EndPos": "118",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "76",
+					"FieldName": "RXHCC156",
+					"StartPos": "119",
+					"EndPos": "119",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "77",
+					"FieldName": "RXHCC157",
+					"StartPos": "120",
+					"EndPos": "120",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "78",
+					"FieldName": "RXHCC159",
+					"StartPos": "121",
+					"EndPos": "121",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "79",
+					"FieldName": "RXHCC160",
+					"StartPos": "122",
+					"EndPos": "122",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "80",
+					"FieldName": "RXHCC161",
+					"StartPos": "123",
+					"EndPos": "123",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "81",
+					"FieldName": "RXHCC163",
+					"StartPos": "124",
+					"EndPos": "124",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "82",
+					"FieldName": "RXHCC164",
+					"StartPos": "125",
+					"EndPos": "125",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "83",
+					"FieldName": "RXHCC165",
+					"StartPos": "126",
+					"EndPos": "126",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "84",
+					"FieldName": "RXHCC166",
+					"StartPos": "127",
+					"EndPos": "127",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "85",
+					"FieldName": "RXHCC168",
+					"StartPos": "128",
+					"EndPos": "128",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "86",
+					"FieldName": "RXHCC185",
+					"StartPos": "129",
+					"EndPos": "129",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "87",
+					"FieldName": "RXHCC186",
+					"StartPos": "130",
+					"EndPos": "130",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "88",
+					"FieldName": "RXHCC187",
+					"StartPos": "131",
+					"EndPos": "131",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "89",
+					"FieldName": "RXHCC188",
+					"StartPos": "132",
+					"EndPos": "132",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "90",
+					"FieldName": "RXHCC193",
+					"StartPos": "133",
+					"EndPos": "133",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "91",
+					"FieldName": "RXHCC206",
+					"StartPos": "134",
+					"EndPos": "134",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "92",
+					"FieldName": "RXHCC207",
+					"StartPos": "135",
+					"EndPos": "135",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "93",
+					"FieldName": "RXHCC215",
+					"StartPos": "136",
+					"EndPos": "136",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "94",
+					"FieldName": "RXHCC216",
+					"StartPos": "137",
+					"EndPos": "137",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "95",
+					"FieldName": "RXHCC225",
+					"StartPos": "138",
+					"EndPos": "138",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "96",
+					"FieldName": "RXHCC226",
+					"StartPos": "139",
+					"EndPos": "139",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "97",
+					"FieldName": "RXHCC227",
+					"StartPos": "140",
+					"EndPos": "140",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "98",
+					"FieldName": "RXHCC241",
+					"StartPos": "141",
+					"EndPos": "141",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "99",
+					"FieldName": "RXHCC243",
+					"StartPos": "142",
+					"EndPos": "142",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "100",
+					"FieldName": "RXHCC260",
+					"StartPos": "143",
+					"EndPos": "143",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "101",
+					"FieldName": "RXHCC261",
+					"StartPos": "144",
+					"EndPos": "144",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "102",
+					"FieldName": "RXHCC262",
+					"StartPos": "145",
+					"EndPos": "145",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "103",
+					"FieldName": "RXHCC263",
+					"StartPos": "146",
+					"EndPos": "146",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "104",
+					"FieldName": "RXHCC311",
+					"StartPos": "147",
+					"EndPos": "147",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "105",
+					"FieldName": "RXHCC314",
+					"StartPos": "148",
+					"EndPos": "148",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "106",
+					"FieldName": "RXHCC316",
+					"StartPos": "149",
+					"EndPos": "149",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "107",
+					"FieldName": "RXHCC355",
+					"StartPos": "150",
+					"EndPos": "150",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "108",
+					"FieldName": "RXHCC395",
+					"StartPos": "151",
+					"EndPos": "151",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "109",
+					"FieldName": "RXHCC396",
+					"StartPos": "152",
+					"EndPos": "152",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "110",
+					"FieldName": "RXHCC397",
+					"StartPos": "153",
+					"EndPos": "153",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "111",
+					"FieldName": "OriginallyDisabled",
+					"StartPos": "154",
+					"EndPos": "154",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "112",
+					"FieldName": "NONAGEDRXHCC1",
+					"StartPos": "155",
+					"EndPos": "155",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "113",
+					"FieldName": "NONAGEDRXHCC130",
+					"StartPos": "156",
+					"EndPos": "156",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "114",
+					"FieldName": "NONAGEDRXHCC131",
+					"StartPos": "157",
+					"EndPos": "157",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "115",
+					"FieldName": "NONAGEDRXHCC132",
+					"StartPos": "158",
+					"EndPos": "158",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "116",
+					"FieldName": "NONAGEDRXHCC133",
+					"StartPos": "159",
+					"EndPos": "159",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "117",
+					"FieldName": "NONAGEDRXHCC134",
+					"StartPos": "160",
+					"EndPos": "160",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "118",
+					"FieldName": "NONAGEDRXHCC135",
+					"StartPos": "161",
+					"EndPos": "161",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "119",
+					"FieldName": "NONAGEDRXHCC160",
+					"StartPos": "162",
+					"EndPos": "162",
+					"Length": "1"
+				},
+				{
+					"OrdinalPosition": "120",
+					"FieldName": "NONAGEDRXHCC163",
+					"StartPos": "163",
+					"EndPos": "163",
+					"Length": "1"
+				}			
+			]
+		}
+	]
+}
