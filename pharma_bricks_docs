@@ -1,0 +1,4 @@
+shared/unity catalog
+linked aws to databricks. used a quickstart (cloudformation) to securely connect databricks to the s3 bucket.
+configured unity catalog: created a storage credential (key) and an external location (path)
+

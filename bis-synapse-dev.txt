@@ -1,0 +1,220 @@
+================================================================================
+BIS-SYNAPSE-DEV COMPLETE FILE STRUCTURE AND PURPOSE DOCUMENTATION
+================================================================================
+
+ROOT FOLDER: bis-synapse-dev/
+Purpose: Azure Synapse Dedicated SQL Pool database definitions
+         This is the final destination - Platinum layer tables
+         Data flows: Databricks Delta → Synapse SQL tables
+
+================================================================================
+TOP-LEVEL FILES
+================================================================================
+
+README.md - Generic README template (not detailed documentation)
+
+================================================================================
+FOLDER: SynapseDB/SynapseDB/
+Purpose: SQL Database Project for Visual Studio / Azure Data Studio
+================================================================================
+
+SynapseDB.sqlproj - SQL Server Database Project file (Visual Studio project)
+SynapseDB.sqlproj.user - User-specific project settings
+
+------------------------------------------------------------------------------
+SUBFOLDER: PreDeployment/
+Purpose: Scripts to run BEFORE deployment (cleanup, table drops)
+------------------------------------------------------------------------------
+
+BIS-47_TruncMedicalVision712Tbls.sql - Truncate Medical/Vision 712 tables
+IDAP-1925_AlterAndTruncPharmacyTbl.sql - Alter and truncate Pharmacy table
+PreDeploymentMaster.sql - Master pre-deployment orchestrator script
+R2 Drop ClaimHeader.sql - Drop Claim Header table (for R2 deployment)
+R2DropStatisticsforClaimWeight.sql - Drop statistics for claim weight calculations
+
+------------------------------------------------------------------------------
+SUBFOLDER: PostDeployment/
+Purpose: Scripts to run AFTER deployment (indexes, permissions)
+------------------------------------------------------------------------------
+
+IDAP-2296_DropTables.sql - Drop specific tables (post-deployment cleanup)
+PostDeploymentMaster.sql - Master post-deployment orchestrator
+R2ReEnableAutoStatistics.sql - Re-enable auto statistics after deployment
+
+------------------------------------------------------------------------------
+SUBFOLDER: Security/Schemas/
+Purpose: Database schema definitions
+------------------------------------------------------------------------------
+
+devidap1.sql - Create devidap1 schema for IDAP development tables
+
+------------------------------------------------------------------------------
+SUBFOLDER: dw/Stored Procedures/
+Purpose: Reusable SQL stored procedures
+------------------------------------------------------------------------------
+
+ClientSchema.sql - Stored procedure for client-specific schema operations
+
+------------------------------------------------------------------------------
+SUBFOLDER: dw/Tables/
+Purpose: CREATE TABLE definitions for all fact and dimension tables
+         90+ table definitions organized by layer
+------------------------------------------------------------------------------
+
+=== CONSOLIDATED ZONE TABLES (Mirror of Databricks Consolidated) ===
+
+ConsolidatedMMR.sql - Consolidated Monthly Membership Report table
+DemographicsRiskScore.sql - Demographics and Risk Score table
+EMRLab.sql - EMR Lab results table
+EMRMedicalClaims.sql - EMR Medical Claims table
+FEFD.sql - First Encounter First Diagnosis table
+HICN_MBI_CrossWalk.sql - HICN to MBI crosswalk table
+LISHIST.sql - Low Income Subsidy History table
+Lab.sql - Lab results table
+MAO002.sql - Medicare Advantage Part C base table
+MAO004.sql - Medicare Advantage monthly membership table
+MMR.sql - Monthly Membership Report table
+MOR.sql - Monthly Operating Report table
+MORD.sql - Monthly Operating Report Detail table
+MedicalClaimHeader.sql - Medical Claim Header fact table
+MedicalClaimLine.sql - Medical Claim Line fact table
+Member.sql - Member dimension table
+MemberConditionGap.sql - Member Condition Gap table
+MemberEnrollment.sql - Member Enrollment table
+MemberRoster.sql - Member Roster table
+PCPAttribution.sql - Primary Care Provider Attribution table
+PecReportbaseLockdownParameters.sql - PEC Report Lockdown Parameters table
+Pharmacy.sql - Pharmacy claims table
+Product.sql - Product dimension table
+Provider.sql - Provider dimension table
+ProviderHierarchy.sql - Provider Hierarchy table
+ProviderRollup.sql - Provider Rollup table
+RAPSReturn.sql - RAPS Return data table
+SpanOther.sql - Span Other table
+StarsClinicalPharmacy.sql - Stars Clinical Pharmacy table
+VisionClaimHeader.sql - Vision Claim Header table
+VisionClaimLine.sql - Vision Claim Line table
+CampaignRoster.sql - Campaign Roster table
+ChaseList.sql - Chase List table
+
+=== GOLD LAYER TABLES (Enriched, Business-Ready) ===
+
+gold_alertgroup.sql - Gold Alert Group dimension
+gold_alertresponseoption.sql - Gold Alert Response Option dimension
+gold_appointmenttype.sql - Gold Appointment Type dimension
+gold_cdialertquerycode.sql - Gold CDI Alert Query Code dimension
+gold_cdialertqueryresponse.sql - Gold CDI Alert Query Response dimension
+gold_cdialertworkflowexceptionoption.sql - Gold CDI Workflow Exception dimension
+gold_cdialertworkflowstatus.sql - Gold CDI Workflow Status dimension
+gold_cdistatus.sql - Gold CDI Status dimension
+gold_closurereason.sql - Gold Closure Reason dimension
+gold_hcc.sql - Gold HCC (Hierarchical Condition Category) dimension
+gold_icd.sql - Gold ICD (Diagnosis Code) dimension
+gold_icdhccxref.sql - Gold ICD-HCC Cross Reference table
+gold_ma_cachesuspectanalysis.sql - Gold MA Cache Suspect Analysis table
+gold_ma_cachesuspectanalysishistory.sql - Gold MA Cache Suspect Analysis History
+gold_ma_cdialertline.sql - Gold MA CDI Alert Line fact table
+gold_ma_chaseproviderlist.sql - Gold MA Chase Provider List
+gold_ma_consolidatedmmr.sql - Gold MA Consolidated MMR
+gold_ma_demographicriskscore.sql - Gold MA Demographic Risk Score
+gold_ma_gapsincare.sql - Gold MA Gaps in Care fact table
+gold_ma_gapsincarerr.sql - Gold MA Gaps in Care Error table
+gold_ma_goldenclaim.sql - Gold MA Golden Claim
+gold_ma_goldenclaimhistory.sql - Gold MA Golden Claim History
+gold_ma_mamembershipstars.sql - Gold MA Membership Stars
+gold_ma_medicalgoldenclaimdiagnosis.sql - Gold MA Medical Golden Claim Diagnosis
+gold_ma_medicalgoldenclaimlineproccodes.sql - Gold MA Medical Golden Claim Procedure Codes
+gold_ma_member.sql - Gold MA Member dimension
+gold_ma_membergroup.sql - Gold MA Member Group dimension
+gold_ma_memberpersonbridge.sql - Gold MA Member Person Bridge
+gold_ma_memberrevenuegap.sql - Gold MA Member Revenue Gap fact
+gold_ma_memberroster.sql - Gold MA Member Roster
+gold_ma_membership.sql - Gold MA Membership fact
+gold_ma_pcpattribution.sql - Gold MA PCP Attribution
+gold_ma_pecreportbase.sql - Gold MA PEC Report Base
+gold_ma_product.sql - Gold MA Product dimension
+gold_ma_provider.sql - Gold MA Provider dimension
+gold_ma_providergroupreference.sql - Gold MA Provider Group Reference
+gold_ma_providerhierarchy.sql - Gold MA Provider Hierarchy
+gold_ma_q360gapsincare.sql - Gold MA Q360 Gaps in Care
+gold_ma_q360membershipstars.sql - Gold MA Q360 Membership Stars
+gold_ma_responsemao004diagnosis.sql - Gold MA Response MAO004 Diagnosis
+gold_ma_riskbyhcc.sql - Gold MA Risk by HCC
+gold_ma_riskbymember.sql - Gold MA Risk by Member
+gold_ma_stars_clinical_pharmacy.sql - Gold MA Stars Clinical Pharmacy
+gold_ma_supplementaldiagnosis.sql - Gold MA Supplemental Diagnosis
+gold_mult_providerNPI.sql - Gold Multi-Provider NPI
+gold_practicetargetengagementstatus.sql - Gold Practice Target Engagement Status
+gold_trumpinghcc.sql - Gold Trumping HCC
+
+=== PLATINUM LAYER TABLES (Final Star Schema for Analytics) ===
+
+platinum_dimPracticeUnit.sql - Platinum Practice Unit dimension
+platinum_dimProviderNPI.sql - Platinum Provider NPI dimension
+platinum_dimProviderOrg.sql - Platinum Provider Organization dimension
+platinum_dimQualityMeasure.sql - Platinum Quality Measure dimension
+platinum_dimalertgroup.sql - Platinum Alert Group dimension
+platinum_dimcdialertworkflowstatus.sql - Platinum CDI Alert Workflow Status dimension
+platinum_dimclient.sql - Platinum Client dimension
+platinum_dimclosurereason.sql - Platinum Closure Reason dimension
+platinum_dimdate.sql - Platinum Date dimension (conformed dimension)
+platinum_dimhcc.sql - Platinum HCC dimension
+platinum_dimicd.sql - Platinum ICD dimension
+platinum_dimmember.sql - Platinum Member dimension
+platinum_dimmonth.sql - Platinum Month dimension
+platinum_dimprovider.sql - Platinum Provider dimension
+platinum_dimqualityevent.sql - Platinum Quality Event dimension
+platinum_dimqualityyearmonth.sql - Platinum Quality Year-Month dimension
+platinum_factgapsincare.sql - Platinum Gaps in Care fact table
+platinum_factgapsincarerr.sql - Platinum Gaps in Care Error fact table
+platinum_factmemberrevenuegap.sql - Platinum Member Revenue Gap fact table
+platinum_factmonthlymembercdialert.sql - Platinum Monthly Member CDI Alert fact table
+
+================================================================================
+WORKFLOW (How data flows into Synapse)
+================================================================================
+
+Databricks Platinum Delta Tables
+         ↓
+    JDBC Connection (SetupSQLConnectionJDBC.py)
+         ↓
+    StreamGoldAndPlatinumToSynapse.py
+         ↓
+    Azure Synapse Dedicated SQL Pool
+         ↓
+    Platinum Tables (platinum_*) ← FINAL ANALYTICS LAYER
+         ↓
+    Power BI / Reporting Tools
+
+================================================================================
+KEY TABLES FOR 837 CLAIMS ANALYTICS
+================================================================================
+
+FACT TABLES:
+- platinum_factgapsincare.sql - Clinical quality gaps
+- platinum_factmemberrevenuegap.sql - Revenue analysis
+- platinum_factmonthlymembercdialert.sql - Clinical documentation alerts
+
+DIMENSION TABLES:
+- platinum_dimmember.sql - Member attributes
+- platinum_dimprovider.sql - Provider attributes
+- platinum_dimdate.sql - Time dimension (conformed)
+- platinum_dimicd.sql - Diagnosis codes
+
+SOURCE TABLES:
+- MedicalClaimHeader.sql - 837 claim header data
+- MedicalClaimLine.sql - 837 claim line items
+
+================================================================================
+FOR YOUR REBUILD (PostgreSQL instead of Synapse)
+================================================================================
+
+These SQL CREATE TABLE scripts can be ADAPTED for PostgreSQL:
+1. Replace Synapse-specific types (VARCHAR(MAX), etc.)
+2. Convert to PostgreSQL syntax
+3. Keep table structures and relationships
+4. Maintain Gold/Platinum naming convention
+
+================================================================================
+END OF DOCUMENTATION
+================================================================================
