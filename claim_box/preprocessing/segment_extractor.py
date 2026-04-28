@@ -19,7 +19,7 @@ class LoopType(Enum):
     GS = "GS"    # Functional Group Header
     ST = "ST"    # Transaction Set Header
     HEADER_1000A = "1000A"  # Submitter
-    HEADER_1000B = "1000B"  # Receiver
+    HEADER_1000B = "1000B"  # Receiver || Insurance company receiving it
     BILLING_PROVIDER_2000A = "2000A"  # Billing Provider HL
     SUBSCRIBER_2000B = "2000B"  # Subscriber HL
     PATIENT_2000C = "2000C"  # Patient HL
