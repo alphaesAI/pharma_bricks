@@ -1,0 +1,19 @@
+{
+  "description": "Gold layer configuration for alert groups",
+  "version": "1.0.0",
+  "gold_tables": [
+    {
+      "entity": "alertgroup",
+      "destination_table": "gold_alertgroup",
+      "source_tables": [
+        {
+          "entity": "gapsincare",
+          "table_name": "gold_ma_gapsincare",
+          "source_type": "postgresql"
+        }
+      ],
+      "sql_script": "SELECT DISTINCT 'AG-' || measureID || '-' || measureCode as alertGroupID, measureCode as alertGroupCode, measureName as alertGroupDescription, measureID as category, 1 as isActive, CURRENT_TIMESTAMP as createdDateTime FROM gold_ma_gapsincare WHERE measureID IS NOT NULL",
+      "merge_key": "alertGroupID"
+    }
+  ]
+}

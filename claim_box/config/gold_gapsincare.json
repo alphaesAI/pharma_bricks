@@ -1,0 +1,24 @@
+{
+  "description": "Gold layer configuration for gaps in care - simplified BIS-style",
+  "version": "1.0.0",
+  "gold_tables": [
+    {
+      "entity": "gapsincare",
+      "destination_table": "gold_ma_gapsincare",
+      "source_tables": [
+        {
+          "entity": "claim_headers",
+          "table_name": "claim_headers",
+          "source_type": "postgresql"
+        },
+        {
+          "entity": "claim_lines",
+          "table_name": "claim_lines",
+          "source_type": "postgresql"
+        }
+      ],
+      "sql_script": "SELECT ch.\"EncounterICN\" as gapsInCareID, DATE_PART('year', CURRENT_DATE) * 100 + DATE_PART('month', CURRENT_DATE) as yearMonth, ch.\"HICNumber\" as planMemberID, 'DIABETES' as measureID, 'A1C' as subMeasureID, 'HEDIS_DIABETES_A1C' as measureCode, 'Diabetes A1C Control' as measureName, CASE WHEN EXISTS (SELECT 1 FROM claim_lines cl WHERE cl.\"ClaimLineEncounterICN\" = ch.\"EncounterICN\" AND cl.\"ServiceLineProcedureCode\" IN ('83036', '83037')) THEN 1 ELSE 0 END as numerCnt, 1 as denomCnt, 'A1C Test Required' as eventName, ch.\"MemberDOB\" as dateOfService, ch.\"BillingProviderNPI\" as providerID, ch.\"BillingProviderLastOrOrg\" as providerName, ch.\"PrincipalDiagnosisCode\" as claimNumber, CURRENT_TIMESTAMP as creationDateTime FROM claim_headers ch WHERE ch.\"RecordType\" = 'C' AND (ch.\"PrincipalDiagnosisCode\" LIKE 'E11%' OR ch.\"Diag1\" LIKE 'E11%' OR ch.\"Diag2\" LIKE 'E11%')",
+      "merge_key": "gapsInCareID"
+    }
+  ]
+}
