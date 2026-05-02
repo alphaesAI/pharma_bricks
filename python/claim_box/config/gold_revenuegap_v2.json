@@ -1,0 +1,46 @@
+{
+  "description": "Gold layer configuration for revenue gap with dimension references",
+  "version": "2.0.0",
+  "layer": "gold",
+  "entity_type": "fact",
+  "gold_tables": [
+    {
+      "entity": "revenuegap",
+      "destination_table": "gold_ma_revenuegap",
+      "source_tables": [
+        {
+          "entity": "claim_headers",
+          "table_name": "claim_headers",
+          "source_type": "postgresql"
+        },
+        {
+          "entity": "claim_lines",
+          "table_name": "claim_lines",
+          "source_type": "postgresql"
+        },
+        {
+          "entity": "dimMember",
+          "table_name": "platinum_dimmember",
+          "source_type": "postgresql"
+        },
+        {
+          "entity": "dimProvider",
+          "table_name": "platinum_dimprovider",
+          "source_type": "postgresql"
+        }
+      ],
+      "sql_script": "SELECT ch.\"EncounterICN\" as revenueGapID, EXTRACT(YEAR FROM CURRENT_DATE) * 100 + EXTRACT(MONTH FROM CURRENT_DATE) as yearMonth, COALESCE(dm.memberKey, ch.\"HICNumber\") as memberKey, ch.\"HICNumber\" as planMemberID, COALESCE(dp.providerKey, ch.\"BillingProviderNPI\") as providerKey, ch.\"BillingProviderNPI\" as billingProviderID, COALESCE(SUM(CAST(NULLIF(cl.\"ServiceLineChargeAmount\", '') AS DECIMAL)), 0) as totalBilledAmount, COALESCE(SUM(CAST(NULLIF(cl.\"ServiceLineUnitCount\", '') AS DECIMAL)), 0) as totalUnits, COUNT(cl.\"ClaimLineNumber\") as lineCount, ch.\"PrincipalDiagnosisCode\" as primaryDiagnosis, CASE WHEN ch.\"PrincipalDiagnosisCode\" LIKE 'E11%' THEN 'Diabetes' WHEN ch.\"PrincipalDiagnosisCode\" LIKE 'I25%' THEN 'Heart Disease' ELSE 'Other' END as conditionCategory, 'Pending Review' as gapStatus, CURRENT_TIMESTAMP as createdDateTime FROM claim_headers ch LEFT JOIN claim_lines cl ON ch.\"EncounterICN\" = cl.\"ClaimLineEncounterICN\" LEFT JOIN platinum_dimmember dm ON ch.\"HICNumber\" = dm.planMemberID AND dm.isCurrent = 1 LEFT JOIN platinum_dimprovider dp ON ch.\"BillingProviderNPI\" = dp.npi AND dp.isCurrent = 1 WHERE ch.\"RecordType\" = 'C' GROUP BY ch.\"EncounterICN\", ch.\"HICNumber\", dm.memberKey, ch.\"BillingProviderNPI\", dp.providerKey, ch.\"PrincipalDiagnosisCode\"",
+      "merge_key": "revenueGapID",
+      "foreign_keys": [
+        {
+          "column": "memberKey",
+          "references": "platinum_dimmember(memberKey)"
+        },
+        {
+          "column": "providerKey",
+          "references": "platinum_dimprovider(providerKey)"
+        }
+      ]
+    }
+  ]
+}

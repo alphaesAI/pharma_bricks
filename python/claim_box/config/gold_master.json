@@ -1,0 +1,9 @@
+{
+  "description": "Master configuration to process all gold tables in order",
+  "version": "1.0.0",
+  "processing_order": [
+    "claim_box/config/gold_gapsincare.json",
+    "claim_box/config/gold_alertgroup.json",
+    "claim_box/config/gold_revenuegap.json"
+  ]
+}
