@@ -1,0 +1,449 @@
+{
+  "RecordTypes": [
+    {
+      "Type": "C",
+      "TempViewName": "ClaimHeader"
+    },
+    {
+      "Type": "L", 
+      "TempViewName": "ClaimLine"
+    }
+  ],
+  "ColumnNames": [
+    {
+      "FieldName": "RecordType",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "EncounterICN",
+      "Length": 20,
+      "Type": "C"
+    },
+    {
+      "FieldName": "CMSContractNumber",
+      "Length": 15,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderLastOrOrg",
+      "Length": 60,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderFirstName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderMiddleName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderNameSuffix",
+      "Length": 10,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderNPI",
+      "Length": 10,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderAddressLine1",
+      "Length": 55,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderAddressLine2",
+      "Length": 55,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderCity",
+      "Length": 30,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderState",
+      "Length": 2,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderZip",
+      "Length": 9,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BillingProviderTIN",
+      "Length": 9,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberLastName",
+      "Length": 60,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberFirstName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberMiddleName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberNameSuffix",
+      "Length": 10,
+      "Type": "C"
+    },
+    {
+      "FieldName": "HICNumber",
+      "Length": 12,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberAddress1",
+      "Length": 55,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberAddress2",
+      "Length": 55,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberCity",
+      "Length": 30,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberState",
+      "Length": 2,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberZip",
+      "Length": 9,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberCountry",
+      "Length": 3,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberCountrySubdivision",
+      "Length": 3,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberDOB",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "MemberGender",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "PatientLastName",
+      "Length": 60,
+      "Type": "C"
+    },
+    {
+      "FieldName": "PatientFirstName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "PatientDOB",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "PatientGender",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BilledAmount",
+      "Length": 12,
+      "Type": "C"
+    },
+    {
+      "FieldName": "PlaceOfService",
+      "Length": 2,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ClaimFrequencyCode",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ProviderAcceptAssignmentCode",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "BenefitsAssignmentCertificationIndicator",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ReleaseOfInformationCode",
+      "Length": 1,
+      "Type": "C"
+    },
+    {
+      "FieldName": "DelayReasonCode",
+      "Length": 2,
+      "Type": "C"
+    },
+    {
+      "FieldName": "OnsetDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "InitialTreatmentDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "LastSeenDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "AccidentDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "HospitalAdmitDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "HospitalDischargeDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "RepricerReceivedDate",
+      "Length": 8,
+      "Type": "C"
+    },
+    {
+      "FieldName": "PrincipalDiagnosisCode",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag1",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag2",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag3",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag4",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag5",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag6",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag7",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag8",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag9",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag10",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag11",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "Diag12",
+      "Length": 7,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ReferralNumber",
+      "Length": 16,
+      "Type": "C"
+    },
+    {
+      "FieldName": "AuthorizationNumber",
+      "Length": 16,
+      "Type": "C"
+    },
+    {
+      "FieldName": "OriginalClaimNumber",
+      "Length": 38,
+      "Type": "C"
+    },
+    {
+      "FieldName": "RenderingProviderLastName",
+      "Length": 60,
+      "Type": "C"
+    },
+    {
+      "FieldName": "RenderingProviderFirstName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "RenderingProviderMiddleName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "RenderingProviderNPI",
+      "Length": 10,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ReferringProviderLastName",
+      "Length": 60,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ReferringProviderFirstName",
+      "Length": 35,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ReferringProviderNPI",
+      "Length": 10,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ServiceFacilityName",
+      "Length": 60,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ServiceFacilityNPI",
+      "Length": 10,
+      "Type": "C"
+    },
+    {
+      "FieldName": "ClaimLineEncounterICN",
+      "Length": 20,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ClaimLineNumber",
+      "Length": 4,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineProcedureCode",
+      "Length": 10,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineProcedureModifier1",
+      "Length": 5,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineProcedureModifier2",
+      "Length": 5,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineProcedureModifier3",
+      "Length": 5,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineProcedureModifier4",
+      "Length": 5,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineChargeAmount",
+      "Length": 12,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineUnitCount",
+      "Length": 8,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineDiagnosisPointer1",
+      "Length": 2,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineDiagnosisPointer2",
+      "Length": 2,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineDiagnosisPointer3",
+      "Length": 2,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineDiagnosisPointer4",
+      "Length": 2,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineFromDate",
+      "Length": 8,
+      "Type": "L"
+    },
+    {
+      "FieldName": "ServiceLineToDate",
+      "Length": 8,
+      "Type": "L"
+    }
+  ],
+  "Queries": [
+    {
+      "FinalQuery": "SELECT ch.*, cl.ClaimLineEncounterICN, cl.ClaimLineNumber, cl.ServiceLineProcedureCode, cl.ServiceLineProcedureModifier1, cl.ServiceLineProcedureModifier2, cl.ServiceLineProcedureModifier3, cl.ServiceLineProcedureModifier4, cl.ServiceLineChargeAmount, cl.ServiceLineUnitCount, cl.ServiceLineDiagnosisPointer1, cl.ServiceLineDiagnosisPointer2, cl.ServiceLineDiagnosisPointer3, cl.ServiceLineDiagnosisPointer4, cl.ServiceLineFromDate, cl.ServiceLineToDate FROM ClaimHeader ch LEFT JOIN ClaimLine cl ON ch.EncounterICN = cl.ClaimLineEncounterICN ORDER BY ch.EncounterICN, cl.ClaimLineNumber"
+    }
+  ]
+}
