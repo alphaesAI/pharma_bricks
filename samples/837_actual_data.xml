@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<X12 transaction_type="837">
+  <Segment id="ISA">
+    <Element position="1">00</Element>
+    <Element position="2">          </Element>
+    <Element position="3">00</Element>
+    <Element position="4">          </Element>
+    <Element position="5">ZZ</Element>
+    <Element position="6">SUBMITTER12345 </Element>
+    <Element position="7">ZZ</Element>
+    <Element position="8">60054          </Element>
+    <Element position="9">240503</Element>
+    <Element position="10">1400</Element>
+    <Element position="11">^</Element>
+    <Element position="12">00501</Element>
+    <Element position="13">100000001</Element>
+    <Element position="14">0</Element>
+    <Element position="15">P</Element>
+    <Element position="16" component="1" type="composite" />
+    <Element position="16" component="2" type="composite" />
+  </Segment>
+  <Segment id="GS">
+    <Element position="1">HC</Element>
+    <Element position="2">SUBMITTER12345</Element>
+    <Element position="3">60054</Element>
+    <Element position="4">20240503</Element>
+    <Element position="5">1400</Element>
+    <Element position="6">1001</Element>
+    <Element position="7">X</Element>
+    <Element position="8">005010X222A1</Element>
+  </Segment>
+  <Segment id="ST">
+    <Element position="1">837</Element>
+    <Element position="2">0001</Element>
+    <Element position="3">005010X222A1</Element>
+  </Segment>
+  <Segment id="BHT">
+    <Element position="1">0019</Element>
+    <Element position="2">00</Element>
+    <Element position="3">BATCH2024050301</Element>
+    <Element position="4">20240503</Element>
+    <Element position="5">1400</Element>
+    <Element position="6">CH</Element>
+  </Segment>
+  <Segment id="NM1">
+    <Element position="1">41</Element>
+    <Element position="2">2</Element>
+    <Element position="3">RELIABLE BILLING LLC</Element>
+    <Element position="4" />
+    <Element position="5" />
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8">46</Element>
+    <Element position="9">SUBMITTER12345</Element>
+  </Segment>
+  <Segment id="PER">
+    <Element position="1">IC</Element>
+    <Element position="2">EDI DEPT</Element>
+    <Element position="3">TE</Element>
+    <Element position="4">8005551234</Element>
+  </Segment>
+  <Segment id="NM1">
+    <Element position="1">40</Element>
+    <Element position="2">2</Element>
+    <Element position="3">AETNA</Element>
+    <Element position="4" />
+    <Element position="5" />
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8">46</Element>
+    <Element position="9">60054</Element>
+  </Segment>
+  <Segment id="HL">
+    <Element position="1">1</Element>
+    <Element position="2" />
+    <Element position="3">20</Element>
+    <Element position="4">1</Element>
+  </Segment>
+  <Segment id="NM1">
+    <Element position="1">85</Element>
+    <Element position="2">2</Element>
+    <Element position="3">METRO HEALTH CENTER</Element>
+    <Element position="4" />
+    <Element position="5" />
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8">XX</Element>
+    <Element position="9">1234567890</Element>
+  </Segment>
+  <Segment id="N3">
+    <Element position="1">456 MEDICAL PLAZA</Element>
+    <Element position="2">STE 200</Element>
+  </Segment>
+  <Segment id="N4">
+    <Element position="1">NEW YORK</Element>
+    <Element position="2">NY</Element>
+    <Element position="3">10001</Element>
+  </Segment>
+  <Segment id="REF">
+    <Element position="1">EI</Element>
+    <Element position="2">123456789</Element>
+  </Segment>
+  <Segment id="HL">
+    <Element position="1">2</Element>
+    <Element position="2">1</Element>
+    <Element position="3">22</Element>
+    <Element position="4">0</Element>
+  </Segment>
+  <Segment id="SBR">
+    <Element position="1">P</Element>
+    <Element position="2">18</Element>
+    <Element position="3" />
+    <Element position="4" />
+    <Element position="5" />
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8" />
+    <Element position="9">CI</Element>
+  </Segment>
+  <Segment id="NM1">
+    <Element position="1">IL</Element>
+    <Element position="2">1</Element>
+    <Element position="3">DOE</Element>
+    <Element position="4">JOHN</Element>
+    <Element position="5">M</Element>
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8">MI</Element>
+    <Element position="9">W123456789</Element>
+  </Segment>
+  <Segment id="N3">
+    <Element position="1">789 NORTH DRIVE</Element>
+  </Segment>
+  <Segment id="N4">
+    <Element position="1">BROOKLYN</Element>
+    <Element position="2">NY</Element>
+    <Element position="3">11201</Element>
+  </Segment>
+  <Segment id="DMG">
+    <Element position="1">D8</Element>
+    <Element position="2">19750615</Element>
+    <Element position="3">M</Element>
+  </Segment>
+  <Segment id="NM1">
+    <Element position="1">PR</Element>
+    <Element position="2">2</Element>
+    <Element position="3">AETNA</Element>
+    <Element position="4" />
+    <Element position="5" />
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8">PI</Element>
+    <Element position="9">60054</Element>
+  </Segment>
+  <Segment id="CLM">
+    <Element position="1">CLAIM999001</Element>
+    <Element position="2">175.50</Element>
+    <Element position="3" />
+    <Element position="4" />
+    <Element position="5" component="1" type="composite">11</Element>
+    <Element position="5" component="2" type="composite">B</Element>
+    <Element position="5" component="3" type="composite">1</Element>
+    <Element position="6">Y</Element>
+    <Element position="7">A</Element>
+    <Element position="8">Y</Element>
+    <Element position="9">Y</Element>
+  </Segment>
+  <Segment id="HI">
+    <Element position="1" component="1" type="composite">BK</Element>
+    <Element position="1" component="2" type="composite">M545</Element>
+  </Segment>
+  <Segment id="NM1">
+    <Element position="1">82</Element>
+    <Element position="2">1</Element>
+    <Element position="3">SMITH</Element>
+    <Element position="4">SARAH</Element>
+    <Element position="5">L</Element>
+    <Element position="6" />
+    <Element position="7" />
+    <Element position="8">XX</Element>
+    <Element position="9">1987654321</Element>
+  </Segment>
+  <Segment id="LX">
+    <Element position="1">1</Element>
+  </Segment>
+  <Segment id="SV1">
+    <Element position="1" component="1" type="composite">HC</Element>
+    <Element position="1" component="2" type="composite">99214</Element>
+    <Element position="2">175.50</Element>
+    <Element position="3">UN</Element>
+    <Element position="4">1</Element>
+    <Element position="5" />
+    <Element position="6" />
+    <Element position="7">1</Element>
+  </Segment>
+  <Segment id="DTP">
+    <Element position="1">472</Element>
+    <Element position="2">D8</Element>
+    <Element position="3">20240501</Element>
+  </Segment>
+  <Segment id="SE">
+    <Element position="1">26</Element>
+    <Element position="2">0001</Element>
+  </Segment>
+  <Segment id="GE">
+    <Element position="1">1</Element>
+    <Element position="2">1001</Element>
+  </Segment>
+  <Segment id="IEA">
+    <Element position="1">1</Element>
+    <Element position="2">100000001</Element>
+  </Segment>
+</X12>
