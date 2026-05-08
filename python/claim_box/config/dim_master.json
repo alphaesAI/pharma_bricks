@@ -1,8 +1,0 @@
-{
-  "description": "Master configuration to process all dimension tables",
-  "version": "1.0.0",
-  "processing_order": [
-    "claim_box/config/dim_member.json",
-    "claim_box/config/dim_provider.json"
-  ]
-}

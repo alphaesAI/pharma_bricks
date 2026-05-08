@@ -12,7 +12,9 @@ def main():
     xml_root = parser.parse("samples/837_actual_data.txt")
 
     context_service = LoopContextService(xml_root)
+    print("context_service:", context_service)
     contexts = context_service.build_contexts()
+    print("contexts:", contexts)
 
     provider = ProviderExtractor().extract(contexts)
     subscriber = SubscriberExtractor().extract(contexts)

@@ -1,6 +1,6 @@
 from lxml import etree
-from pyx12.params import params
-from pyx12.error_handler import errh_null
+# from pyx12.params import params
+# from pyx12.error_handler import errh_null
 from .base_parser import BaseParser
 
 
