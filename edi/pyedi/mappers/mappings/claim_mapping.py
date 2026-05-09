@@ -58,7 +58,86 @@ MAPPING_DEFINITION = {
                 "heading.transaction_set_header_loop.transaction_set_header_BHT.transaction_set_creation_date",
 
             "transaction_creation_time":
-                "heading.transaction_set_header_loop.transaction_set_header_BHT.transaction_set_creation_time_05"
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.transaction_set_creation_time_05",
+
+            "claim_or_encounter_identifier":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.claim_or_encounter_identifier"
+        },
+
+        # =========================================================
+        # SUBMITTER / NM1*41 + PER
+        # =========================================================
+        "submitter": {
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].entity_type_qualifier",
+
+            "submitter_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_name",
+
+            "submitter_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].first_name",
+
+            "submitter_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].middle_name",
+
+            "submitter_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_prefix",
+
+            "submitter_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_suffix",
+
+            "submitter_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_id_qualifier",
+
+            "submitter_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_id",
+
+            "contact_function_code":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].contact_function_code",
+
+            "contact_name":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].ordering_provider_contact_name",
+
+            "communication_number_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].communication_number_qualifier_03",
+
+            "communication_number":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].communication_number_04"
+        },
+
+        # =========================================================
+        # RECEIVER / NM1*40
+        # =========================================================
+        "receiver": {
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].entity_type_qualifier",
+
+            "receiver_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_name",
+
+            "receiver_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].first_name",
+
+            "receiver_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].middle_name",
+
+            "receiver_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_prefix",
+
+            "receiver_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_suffix",
+
+            "receiver_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_id_qualifier",
+
+            "receiver_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_id"
         },
 
         # =========================================================
@@ -75,6 +154,18 @@ MAPPING_DEFINITION = {
 
             "billing_provider_name":
                 "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_name",
+
+            "billing_provider_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].first_name",
+
+            "billing_provider_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].middle_name",
+
+            "billing_provider_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_prefix",
+
+            "billing_provider_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_suffix",
 
             "billing_provider_id_qualifier":
                 "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_id_qualifier",
@@ -107,8 +198,46 @@ MAPPING_DEFINITION = {
             "hierarchical_id":
                 "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_id_number",
 
+            "parent_hierarchical_id":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_parent_id_number_02",
+
             "hierarchical_level_code":
-                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_level_code"
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_level_code",
+
+            "hierarchical_child_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_child_code"
+        },
+
+        # =========================================================
+        # RENDERING PROVIDER / 2310B / NM1*82
+        # =========================================================
+        "rendering_provider": {
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].entity_type_qualifier",
+
+            "rendering_provider_last_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_last_name",
+
+            "rendering_provider_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_first_name",
+
+            "rendering_provider_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_middle_name",
+
+            "rendering_provider_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_prefix",
+
+            "rendering_provider_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_suffix",
+
+            "rendering_provider_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_id_qualifier",
+
+            "rendering_provider_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_id"
         },
 
         # =========================================================
@@ -139,6 +268,9 @@ MAPPING_DEFINITION = {
                 "detail.submitter_NM1_loop.transaction_set_header_NM1[3].insured_id",
 
             # DMG
+            "date_time_period_format_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_DMG[0].date_time_period_format_qualifier",
+
             "birth_date":
                 "detail.submitter_NM1_loop.transaction_set_header_DMG[0].patient_birth_date",
 
@@ -148,6 +280,9 @@ MAPPING_DEFINITION = {
             # N3
             "address_line_1":
                 "detail.submitter_NM1_loop.transaction_set_header_N3[1].rendering_provider_address_line_1",
+
+            "address_line_2":
+                "detail.submitter_NM1_loop.transaction_set_header_N3[1].rendering_provider_address_line_2",
 
             # N4
             "city":
@@ -166,6 +301,24 @@ MAPPING_DEFINITION = {
             "relationship_code":
                 "detail.submitter_NM1_loop.transaction_set_header_SBR.individual_relationship_code",
 
+            "insured_group_or_policy_number":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.insured_group_or_policy_number_03",
+
+            "other_insured_group_name":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.other_insured_group_name",
+
+            "insurance_type_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.insurance_type_code",
+
+            "coordination_of_benefits_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.coordination_of_benefits_code",
+
+            "yes_no_condition_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.yes_no_condition_or_response_code",
+
+            "employment_status_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.employment_status_code",
+
             "claim_filing_indicator":
                 "detail.submitter_NM1_loop.transaction_set_header_SBR.claim_filing_indicator_code",
 
@@ -177,7 +330,10 @@ MAPPING_DEFINITION = {
                 "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_parent_id_number_02",
 
             "hierarchical_level_code":
-                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_level_code"
+                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_level_code",
+
+            "hierarchical_child_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_child_code"
         },
 
         # =========================================================
@@ -188,8 +344,23 @@ MAPPING_DEFINITION = {
             "entity_identifier_code":
                 "detail.submitter_NM1_loop.transaction_set_header_NM1[4].entity_identifier_code",
 
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].entity_type_qualifier",
+
             "payer_name":
                 "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_name",
+
+            "payer_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].first_name",
+
+            "payer_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].middle_name",
+
+            "payer_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_prefix",
+
+            "payer_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_suffix",
 
             "payer_id_qualifier":
                 "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_id_qualifier",
@@ -235,6 +406,17 @@ MAPPING_DEFINITION = {
         },
 
         # =========================================================
+        # CLAIM DATES / DTP
+        # =========================================================
+        "claim_dates": {
+            "date_time_period_format_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_DTP[0].date_time_period_format_qualifier",
+
+            "service_date":
+                "detail.submitter_NM1_loop.transaction_set_header_DTP[0].service_date"
+        },
+
+        # =========================================================
         # DIAGNOSIS / HI
         # =========================================================
         "diagnosis": {
@@ -268,6 +450,15 @@ MAPPING_DEFINITION = {
 
             "service_unit_count":
                 "detail.submitter_NM1_loop.transaction_set_header_SV1[0].service_unit_count_104",
+
+            "place_of_service_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].place_of_service_code",
+
+            "service_type_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].service_type_code",
+
+            "sv107_107":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].sv107_107",
 
             "service_date":
                 "detail.submitter_NM1_loop.transaction_set_header_DTP[0].service_date"

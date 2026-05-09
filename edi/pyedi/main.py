@@ -1,4 +1,4 @@
-from services.pipeline_service import PipelineService
+from .services.pipeline_service import PipelineService
 
 
 if __name__ == "__main__":
