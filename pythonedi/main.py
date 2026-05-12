@@ -1,19 +1,21 @@
 from .parsers.edi_parser import EDIParser
 from .formatters.transaction_formatters import TransactionFormatter
 from .mappers.mappings.schema_mapper import ETLSchemaMapper
-from .tables.subscriber.subscriber import SubscriberProcessor
-from .tables.interchange.interchange import InterchangeProcessor
-from .tables.functional_group.functional_group import FunctionalGroupProcessor
-from .tables.transaction_header.transaction_header import TransactionHeaderProcessor
-from .tables.submitter.submitter import SubmitterProcessor
-from .tables.receiver.receiver import ReceiverProcessor
-from .tables.billing_provider.billing_provider import BillingProviderProcessor
-from .tables.rendering_provider.rendering_provider import RenderingProviderProcessor
-from .tables.payer.payer import PayerProcessor
-from .tables.claim.claim import ClaimProcessor
-from .tables.claim_dates.claim_dates import ClaimDatesProcessor
-from .tables.diagnosis.diagnosis import DiagnosisProcessor
-from .tables.service_line.service_line import ServiceLineProcessor
+from .tables import *
+# from .consolidation import MedicalClaimHeaderProcessor
+# from .tables.subscriber.subscriber import SubscriberProcessor
+# from .tables.interchange.interchange import InterchangeProcessor
+# from .tables.functional_group.functional_group import FunctionalGroupProcessor
+# from .tables.transaction_header.transaction_header import TransactionHeaderProcessor
+# from .tables.submitter.submitter import SubmitterProcessor
+# from .tables.receiver.receiver import ReceiverProcessor
+# from .tables.billing_provider.billing_provider import BillingProviderProcessor
+# from .tables.rendering_provider.rendering_provider import RenderingProviderProcessor
+# from .tables.payer.payer import PayerProcessor
+# from .tables.claim.claim import ClaimProcessor
+# from .tables.claim_dates.claim_dates import ClaimDatesProcessor
+# from .tables.diagnosis.diagnosis import DiagnosisProcessor
+# from .tables.service_line.service_line import ServiceLineProcessor
 import psycopg2
 
 parser = EDIParser()
@@ -48,6 +50,9 @@ ClaimDatesProcessor(conn).process(result)
 DiagnosisProcessor(conn).process(result)
 ServiceLineProcessor(conn).process(result)
 
+# -----------------------------------
+# Consolidation Layer
+# -----------------------------------
+# MedicalClaimHeaderProcessor(conn).process(result)
+
 conn.close()
-
-

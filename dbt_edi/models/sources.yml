@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: billing_provider
+      - name: claim
+      - name: claim_dates
+      - name: diagnosis
+      - name: functional_group
+      - name: interchange
+      - name: payer
+      - name: receiver
+      - name: rendering_provider
+      - name: service_line
+      - name: submitter
+      - name: subscriber
+      - name: transaction_header

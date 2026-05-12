@@ -1,0 +1,420 @@
+{
+    "MAPPING_DEFINITION": {
+    "name": "EDI 837 Comprehensive Dimension Tables Mapping",
+    "mapping_type": "only_mapped",
+
+    "expressions": {
+
+
+        "interchange": {
+            "sender_id": "interchange.sender_id",
+            "sender_qualifier": "interchange.sender_qualifier",
+            "receiver_id": "interchange.receiver_id",
+            "receiver_qualifier": "interchange.receiver_qualifier",
+            "interchange_date": "interchange.date",
+            "interchange_time": "interchange.time",
+            "control_number": "interchange.control_number",
+            "version": "interchange.version",
+            "test_indicator": "interchange.test_indicator"
+        },
+
+        "functional_group": {
+            "functional_id": "functional_group.functional_id",
+            "sender_code": "functional_group.sender_code",
+            "receiver_code": "functional_group.receiver_code",
+            "group_date": "functional_group.date",
+            "group_time": "functional_group.time",
+            "group_control_number": "functional_group.control_number",
+            "implementation_version": "functional_group.version"
+        },
+
+        "transaction_header": {
+            "transaction_set_identifier":
+                "heading.transaction_set_header_loop.transaction_set_header_ST.transaction_set_identifier_code",
+
+            "transaction_control_number":
+                "heading.transaction_set_header_loop.transaction_set_header_ST.transaction_set_control_number_02",
+
+            "implementation_reference":
+                "heading.transaction_set_header_loop.transaction_set_header_ST.implementation_convention_reference_03",
+
+            "hierarchical_structure_code":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.hierarchical_structure_code",
+
+            "transaction_purpose_code":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.transaction_set_purpose_code",
+
+            "batch_id":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.originator_application_transaction_identifier",
+
+            "transaction_creation_date":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.transaction_set_creation_date",
+
+            "transaction_creation_time":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.transaction_set_creation_time_05",
+
+            "claim_or_encounter_identifier":
+                "heading.transaction_set_header_loop.transaction_set_header_BHT.claim_or_encounter_identifier"
+        },
+
+        "submitter": {
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].entity_type_qualifier",
+
+            "submitter_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_name",
+
+            "submitter_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].first_name",
+
+            "submitter_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].middle_name",
+
+            "submitter_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_prefix",
+
+            "submitter_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_suffix",
+
+            "submitter_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_id_qualifier",
+
+            "submitter_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[0].submitter_id",
+
+            "contact_function_code":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].contact_function_code",
+
+            "contact_name":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].ordering_provider_contact_name",
+
+            "communication_number_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].communication_number_qualifier_03",
+
+            "communication_number":
+                "detail.submitter_NM1_loop.transaction_set_header_PER[0].communication_number_04"
+        },
+
+        "receiver": {
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].entity_type_qualifier",
+
+            "receiver_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_name",
+
+            "receiver_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].first_name",
+
+            "receiver_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].middle_name",
+
+            "receiver_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_prefix",
+
+            "receiver_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_suffix",
+
+            "receiver_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_id_qualifier",
+
+            "receiver_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[1].receiver_id"
+        },
+
+        "billing_provider": {
+
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].entity_type_qualifier",
+
+            "billing_provider_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_name",
+
+            "billing_provider_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].first_name",
+
+            "billing_provider_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].middle_name",
+
+            "billing_provider_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_prefix",
+
+            "billing_provider_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_suffix",
+
+            "billing_provider_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_id_qualifier",
+
+            "billing_provider_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[2].billing_provider_id",
+
+            "address_line_1":
+                "detail.submitter_NM1_loop.transaction_set_header_N3[0].rendering_provider_address_line_1",
+
+            "address_line_2":
+                "detail.submitter_NM1_loop.transaction_set_header_N3[0].rendering_provider_address_line_2",
+
+            "city":
+                "detail.submitter_NM1_loop.transaction_set_header_N4[0].rendering_provider_city",
+
+            "state":
+                "detail.submitter_NM1_loop.transaction_set_header_N4[0].rendering_provider_state",
+
+            "zip_code":
+                "detail.submitter_NM1_loop.transaction_set_header_N4[0].rendering_provider_zip_code",
+
+            "tax_id":
+                "detail.submitter_NM1_loop.transaction_set_header_REF[0].employer_id",
+
+            "hierarchical_id":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_id_number",
+
+            "parent_hierarchical_id":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_parent_id_number_02",
+
+            "hierarchical_level_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_level_code",
+
+            "hierarchical_child_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[0].hierarchical_child_code"
+        },
+
+        "rendering_provider": {
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].entity_type_qualifier",
+
+            "rendering_provider_last_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_last_name",
+
+            "rendering_provider_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_first_name",
+
+            "rendering_provider_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_middle_name",
+
+            "rendering_provider_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_prefix",
+
+            "rendering_provider_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_suffix",
+
+            "rendering_provider_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_id_qualifier",
+
+            "rendering_provider_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[5].rendering_provider_id"
+        },
+
+        "subscriber": {
+
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].entity_type_qualifier",
+
+            "subscriber_last_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].insured_last_name",
+
+            "subscriber_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].insured_first_name",
+
+            "subscriber_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].insured_middle_name",
+
+            "subscriber_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].insured_id_qualifier",
+
+            "subscriber_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[3].insured_id",
+
+            "date_time_period_format_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_DMG[0].date_time_period_format_qualifier",
+
+            "birth_date":
+                "detail.submitter_NM1_loop.transaction_set_header_DMG[0].patient_birth_date",
+
+            "gender":
+                "detail.submitter_NM1_loop.transaction_set_header_DMG[0].patient_gender_code",
+
+            "address_line_1":
+                "detail.submitter_NM1_loop.transaction_set_header_N3[1].rendering_provider_address_line_1",
+
+            "address_line_2":
+                "detail.submitter_NM1_loop.transaction_set_header_N3[1].rendering_provider_address_line_2",
+
+            "city":
+                "detail.submitter_NM1_loop.transaction_set_header_N4[1].rendering_provider_city",
+
+            "state":
+                "detail.submitter_NM1_loop.transaction_set_header_N4[1].rendering_provider_state",
+
+            "zip_code":
+                "detail.submitter_NM1_loop.transaction_set_header_N4[1].rendering_provider_zip_code",
+
+            "payer_responsibility_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.payer_responsibility_sequence_number_code",
+
+            "relationship_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.individual_relationship_code",
+
+            "insured_group_or_policy_number":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.insured_group_or_policy_number_03",
+
+            "other_insured_group_name":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.other_insured_group_name",
+
+            "insurance_type_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.insurance_type_code",
+
+            "coordination_of_benefits_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.coordination_of_benefits_code",
+
+            "yes_no_condition_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.yes_no_condition_or_response_code",
+
+            "employment_status_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.employment_status_code",
+
+            "claim_filing_indicator":
+                "detail.submitter_NM1_loop.transaction_set_header_SBR.claim_filing_indicator_code",
+
+            "hierarchical_id":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_id_number",
+
+            "parent_hierarchical_id":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_parent_id_number_02",
+
+            "hierarchical_level_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_level_code",
+
+            "hierarchical_child_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HL[1].hierarchical_child_code"
+        },
+
+        "payer": {
+
+            "entity_identifier_code":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].entity_identifier_code",
+
+            "entity_type_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].entity_type_qualifier",
+
+            "payer_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_name",
+
+            "payer_first_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].first_name",
+
+            "payer_middle_name":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].middle_name",
+
+            "payer_prefix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_prefix",
+
+            "payer_suffix":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_suffix",
+
+            "payer_id_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_id_qualifier",
+
+            "payer_id":
+                "detail.submitter_NM1_loop.transaction_set_header_NM1[4].payer_id"
+        },
+
+        "claim": {
+
+            "claim_number":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.patient_control_number",
+
+            "total_charge_amount":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.total_charge_amount",
+
+            "facility_code":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.facility_code",
+
+            "place_of_service":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.place_of_service",
+
+            "frequency_code":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.frequency_code",
+
+            "claim_type_code":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.claim_type_code",
+
+            "provider_signature_indicator":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.provider_signature_indicator",
+
+            "assignment_participation_code":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.assignment_participation_code",
+
+            "assignment_certification_indicator":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.assignment_certification_indicator",
+
+            "release_of_information_code":
+                "detail.submitter_NM1_loop.transaction_set_header_CLM.release_of_information_code"
+        },
+
+        "claim_dates": {
+            "date_time_period_format_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_DTP[0].date_time_period_format_qualifier",
+
+            "service_date":
+                "detail.submitter_NM1_loop.transaction_set_header_DTP[0].service_date"
+        },
+
+        "diagnosis": {
+
+            "diagnosis_type":
+                "detail.submitter_NM1_loop.transaction_set_header_HI[0].hi01_01[0]",
+
+            "diagnosis_code":
+                "detail.submitter_NM1_loop.transaction_set_header_HI[0].hi01_01[1]"
+        },
+
+        "service_line": {
+
+            "line_number":
+                "detail.submitter_NM1_loop.transaction_set_header_LX[0].assigned_number",
+
+            "procedure_qualifier":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].sv101_101[0]",
+
+            "procedure_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].sv101_101[1]",
+
+            "line_charge_amount":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].line_item_charge_amount",
+
+            "unit_measurement_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].unit_or_basis_for_measurement_code",
+
+            "service_unit_count":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].service_unit_count_104",
+
+            "place_of_service_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].place_of_service_code",
+
+            "service_type_code":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].service_type_code",
+
+            "sv107_107":
+                "detail.submitter_NM1_loop.transaction_set_header_SV1[0].sv107_107",
+
+            "service_date":
+                "detail.submitter_NM1_loop.transaction_set_header_DTP[0].service_date"
+        }
+    }
+}
+}

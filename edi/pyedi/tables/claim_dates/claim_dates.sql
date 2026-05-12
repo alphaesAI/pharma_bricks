@@ -1,8 +1,0 @@
-CREATE TABLE IF NOT EXISTS claim_dates (
-
-    id SERIAL PRIMARY KEY,
-
-    service_date VARCHAR(20),
-
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
