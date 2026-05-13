@@ -55,4 +55,6 @@ ServiceLineProcessor(conn).process(result)
 # -----------------------------------
 # MedicalClaimHeaderProcessor(conn).process(result)
 
+conn.commit()
+
 conn.close()
