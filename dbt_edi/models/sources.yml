@@ -9,10 +9,15 @@ sources:
       - name: diagnosis
       - name: functional_group
       - name: interchange
+      - name: my_first_dbt_model
+      - name: my_second_dbt_model
       - name: payer
       - name: receiver
       - name: rendering_provider
       - name: service_line
+      - name: stg_billing_provider
+      - name: stg_claim
+      - name: stg_payer
+      - name: stg_subscriber
       - name: submitter
       - name: subscriber
-      - name: transaction_header

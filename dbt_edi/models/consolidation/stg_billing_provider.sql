@@ -1,14 +1,17 @@
 with source as (
+
     select * from {{ source('public', 'billing_provider') }}
+
 ),
+
 renamed as (
+
     select
-        id,
+        billing_provider_id,
         entity_identifier_code,
         entity_type_qualifier,
         billing_provider_name,
         billing_provider_id_qualifier,
-        billing_provider_id,
         address_line_1,
         address_line_2,
         city,
@@ -19,7 +22,9 @@ renamed as (
         hierarchical_level_code,
         hierarchical_child_code,
         created_at
+
     from source
+
 )
 
 select * from renamed

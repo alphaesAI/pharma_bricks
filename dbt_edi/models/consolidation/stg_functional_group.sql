@@ -1,7 +1,11 @@
 with source as (
+
     select * from {{ source('public', 'functional_group') }}
+
 ),
+
 renamed as (
+
     select
         id,
         functional_id,
@@ -12,6 +16,9 @@ renamed as (
         group_control_number,
         implementation_version,
         created_at
+
     from source
+
 )
+
 select * from renamed

@@ -1,7 +1,11 @@
 with source as (
+
     select * from {{ source('public', 'interchange') }}
+
 ),
+
 renamed as (
+
     select
         id,
         sender_id,
@@ -14,6 +18,9 @@ renamed as (
         version,
         test_indicator,
         created_at
+
     from source
+
 )
+
 select * from renamed

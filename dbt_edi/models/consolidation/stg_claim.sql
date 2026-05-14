@@ -1,10 +1,16 @@
 with source as (
+
     select * from {{ source('public', 'claim') }}
+
 ),
+
 renamed as (
+
     select
-        id as claim_id,
         claim_number,
+        subscriber_id,
+        billing_provider_id,
+        payer_id,
         total_charge_amount,
         facility_code,
         place_of_service,
@@ -15,7 +21,9 @@ renamed as (
         assignment_certification_indicator,
         release_of_information_code,
         created_at
+
     from source
+
 )
 
 select * from renamed

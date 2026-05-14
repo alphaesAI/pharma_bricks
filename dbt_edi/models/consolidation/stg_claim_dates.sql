@@ -8,6 +8,7 @@ renamed as (
 
     select
         id,
+        claim_number,
         service_date,
         created_at
 

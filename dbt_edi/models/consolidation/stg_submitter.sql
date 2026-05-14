@@ -1,7 +1,11 @@
 with source as (
+
     select * from {{ source('public', 'submitter') }}
+
 ),
+
 renamed as (
+
     select
         id,
         entity_identifier_code,
@@ -14,6 +18,9 @@ renamed as (
         communication_number_qualifier,
         communication_number,
         created_at
+
     from source
+
 )
+
 select * from renamed
