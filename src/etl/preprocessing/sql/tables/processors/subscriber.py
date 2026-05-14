@@ -1,7 +1,7 @@
 from psycopg2.extras import RealDictCursor
 
 
-class FunctionalGroupProcessor:
+class SubscriberProcessor:
 
     def __init__(self, conn):
         self.conn = conn
@@ -11,41 +11,40 @@ class FunctionalGroupProcessor:
         # -----------------------------------
         # isolate
         # -----------------------------------
-        if "functional_group" not in mapped_data:
-            print("functional_group not found")
+        if "subscriber" not in mapped_data:
+            print("subscriber not found")
             return
 
-        functional_group = mapped_data["functional_group"]
+        subscriber = mapped_data["subscriber"]
 
         # -----------------------------------
         # persist
         # -----------------------------------
-        self.insert(functional_group)
+        self.insert(subscriber)
 
-    def insert(self, functional_group: dict):
+    def insert(self, subscriber: dict):
 
-        columns = list(functional_group.keys())
-        values = list(functional_group.values())
-
+        columns = list(subscriber.keys())
         print("Columns:", columns)
 
+        values = list(subscriber.values())
+
         column_string = ", ".join(columns)
+
         placeholder_string = ", ".join(["%s"] * len(values))
 
         query = f"""
-        INSERT INTO functional_group (
+        INSERT INTO subscriber (
             {column_string}
         )
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (group_control_number)
+        ON CONFLICT (subscriber_id) 
         DO NOTHING
         """
 
-        cursor = self.conn.cursor(
-            cursor_factory=RealDictCursor
-        )
+        cursor = self.conn.cursor(cursor_factory=RealDictCursor)
 
         cursor.execute(query, values)
 
@@ -53,4 +52,4 @@ class FunctionalGroupProcessor:
 
         cursor.close()
 
-        print("functional_group inserted successfully")
+        print("subscriber inserted successfully")

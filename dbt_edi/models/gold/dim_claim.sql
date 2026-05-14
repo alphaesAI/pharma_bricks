@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 WITH claim_base AS (
 
     SELECT
@@ -22,7 +24,7 @@ WITH claim_base AS (
 
         created_at
 
-    FROM {{ source('edi_source', 'claim') }}
+    FROM {{ source('public', 'claim') }}
 
 ),
 
@@ -35,7 +37,7 @@ diagnosis_data AS (
         diagnosis_type,
         diagnosis_code
 
-    FROM {{ source('edi_source', 'diagnosis') }}
+    FROM {{ source('public', 'diagnosis') }}
 
 ),
 
@@ -59,7 +61,7 @@ service_data AS (
 
         sv107_107
 
-    FROM {{ source('edi_source', 'service_line') }}
+    FROM {{ source('public', 'service_line') }}
 
 ),
 
@@ -71,7 +73,7 @@ claim_dates_data AS (
 
         service_date AS claim_service_date
 
-    FROM {{ source('edi_source', 'claim_dates') }}
+    FROM {{ source('public', 'claim_dates') }}
 
 ),
 
@@ -87,7 +89,7 @@ rendering_provider_data AS (
         rendering_provider_first_name,
         rendering_provider_middle_name
 
-    FROM {{ source('edi_source', 'rendering_provider') }}
+    FROM {{ source('public', 'rendering_provider') }}
 
 )
 

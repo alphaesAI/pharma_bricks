@@ -1,7 +1,7 @@
 from psycopg2.extras import RealDictCursor
 
 
-class FunctionalGroupProcessor:
+class RenderingProviderProcessor:
 
     def __init__(self, conn):
         self.conn = conn
@@ -11,21 +11,29 @@ class FunctionalGroupProcessor:
         # -----------------------------------
         # isolate
         # -----------------------------------
-        if "functional_group" not in mapped_data:
-            print("functional_group not found")
+        if "rendering_provider" not in mapped_data:
+            print("rendering_provider not found")
             return
 
-        functional_group = mapped_data["functional_group"]
+        rendering_provider = mapped_data["rendering_provider"]
+
+        # -----------------------------------
+        # inject foreign key
+        # -----------------------------------
+        if "claim" in mapped_data:
+            rendering_provider["claim_number"] = (
+                mapped_data["claim"]["claim_number"]
+            )
 
         # -----------------------------------
         # persist
         # -----------------------------------
-        self.insert(functional_group)
+        self.insert(rendering_provider)
 
-    def insert(self, functional_group: dict):
+    def insert(self, rendering_provider: dict):
 
-        columns = list(functional_group.keys())
-        values = list(functional_group.values())
+        columns = list(rendering_provider.keys())
+        values = list(rendering_provider.values())
 
         print("Columns:", columns)
 
@@ -33,14 +41,13 @@ class FunctionalGroupProcessor:
         placeholder_string = ", ".join(["%s"] * len(values))
 
         query = f"""
-        INSERT INTO functional_group (
+        INSERT INTO rendering_provider (
             {column_string}
         )
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (group_control_number)
-        DO NOTHING
+        ON CONFLICT DO NOTHING
         """
 
         cursor = self.conn.cursor(
@@ -53,4 +60,4 @@ class FunctionalGroupProcessor:
 
         cursor.close()
 
-        print("functional_group inserted successfully")
+        print("rendering_provider inserted successfully")

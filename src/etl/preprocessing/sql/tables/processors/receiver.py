@@ -13,15 +13,14 @@ class ReceiverProcessor:
             return
 
         receiver = mapped_data["receiver"]
-
         self.insert(receiver)
 
     def insert(self, receiver: dict):
 
         columns = list(receiver.keys())
-        values = list(receiver.values())
-
         print("Columns:", columns)
+
+        values = list(receiver.values())
 
         column_string = ", ".join(columns)
         placeholder_string = ", ".join(["%s"] * len(values))
@@ -33,18 +32,11 @@ class ReceiverProcessor:
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (receiver_id)
-        DO NOTHING
         """
 
-        cursor = self.conn.cursor(
-            cursor_factory=RealDictCursor
-        )
-
+        cursor = self.conn.cursor(cursor_factory=RealDictCursor)
         cursor.execute(query, values)
-
         self.conn.commit()
-
         cursor.close()
 
         print("receiver inserted successfully")

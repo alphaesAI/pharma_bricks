@@ -1,7 +1,7 @@
 from psycopg2.extras import RealDictCursor
 
 
-class FunctionalGroupProcessor:
+class DiagnosisProcessor:
 
     def __init__(self, conn):
         self.conn = conn
@@ -11,21 +11,29 @@ class FunctionalGroupProcessor:
         # -----------------------------------
         # isolate
         # -----------------------------------
-        if "functional_group" not in mapped_data:
-            print("functional_group not found")
+        if "diagnosis" not in mapped_data:
+            print("diagnosis not found")
             return
 
-        functional_group = mapped_data["functional_group"]
+        diagnosis = mapped_data["diagnosis"]
+
+        # -----------------------------------
+        # inject foreign key
+        # -----------------------------------
+        if "claim" in mapped_data:
+            diagnosis["claim_number"] = (
+                mapped_data["claim"]["claim_number"]
+            )
 
         # -----------------------------------
         # persist
         # -----------------------------------
-        self.insert(functional_group)
+        self.insert(diagnosis)
 
-    def insert(self, functional_group: dict):
+    def insert(self, diagnosis: dict):
 
-        columns = list(functional_group.keys())
-        values = list(functional_group.values())
+        columns = list(diagnosis.keys())
+        values = list(diagnosis.values())
 
         print("Columns:", columns)
 
@@ -33,14 +41,13 @@ class FunctionalGroupProcessor:
         placeholder_string = ", ".join(["%s"] * len(values))
 
         query = f"""
-        INSERT INTO functional_group (
+        INSERT INTO diagnosis (
             {column_string}
         )
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (group_control_number)
-        DO NOTHING
+        ON CONFLICT DO NOTHING
         """
 
         cursor = self.conn.cursor(
@@ -53,4 +60,4 @@ class FunctionalGroupProcessor:
 
         cursor.close()
 
-        print("functional_group inserted successfully")
+        print("diagnosis inserted successfully")

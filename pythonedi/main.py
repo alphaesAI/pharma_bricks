@@ -36,19 +36,19 @@ conn = psycopg2.connect(
     password="12345"
 )
 
-# InterchangeProcessor(conn).process(result)
-# FunctionalGroupProcessor(conn).process(result)
+InterchangeProcessor(conn).process(result)
+FunctionalGroupProcessor(conn).process(result)
 # TransactionHeaderProcessor(conn).process(result)
-# SubmitterProcessor(conn).process(result)
-# ReceiverProcessor(conn).process(result)
+SubmitterProcessor(conn).process(result)
+ReceiverProcessor(conn).process(result)
 BillingProviderProcessor(conn).process(result)
-# RenderingProviderProcessor(conn).process(result)
+RenderingProviderProcessor(conn).process(result)
 SubscriberProcessor(conn).process(result)
 PayerProcessor(conn).process(result)
 ClaimProcessor(conn).process(result)
-# ClaimDatesProcessor(conn).process(result)
-# DiagnosisProcessor(conn).process(result)
-# ServiceLineProcessor(conn).process(result)
+ClaimDatesProcessor(conn).process(result)
+DiagnosisProcessor(conn).process(result)
+ServiceLineProcessor(conn).process(result)
 
 # -----------------------------------
 # Consolidation Layer

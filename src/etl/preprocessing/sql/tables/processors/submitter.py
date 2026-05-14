@@ -1,50 +1,42 @@
 from psycopg2.extras import RealDictCursor
 
 
-class ReceiverProcessor:
+class SubmitterProcessor:
 
     def __init__(self, conn):
         self.conn = conn
 
     def process(self, mapped_data: dict):
 
-        if "receiver" not in mapped_data:
-            print("receiver not found")
+        if "submitter" not in mapped_data:
+            print("submitter not found")
             return
 
-        receiver = mapped_data["receiver"]
+        submitter = mapped_data["submitter"]
+        self.insert(submitter)
 
-        self.insert(receiver)
+    def insert(self, submitter: dict):
 
-    def insert(self, receiver: dict):
-
-        columns = list(receiver.keys())
-        values = list(receiver.values())
-
+        columns = list(submitter.keys())
         print("Columns:", columns)
+
+        values = list(submitter.values())
 
         column_string = ", ".join(columns)
         placeholder_string = ", ".join(["%s"] * len(values))
 
         query = f"""
-        INSERT INTO receiver (
+        INSERT INTO submitter (
             {column_string}
         )
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (receiver_id)
-        DO NOTHING
         """
 
-        cursor = self.conn.cursor(
-            cursor_factory=RealDictCursor
-        )
-
+        cursor = self.conn.cursor(cursor_factory=RealDictCursor)
         cursor.execute(query, values)
-
         self.conn.commit()
-
         cursor.close()
 
-        print("receiver inserted successfully")
+        print("submitter inserted successfully")

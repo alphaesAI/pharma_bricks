@@ -13,14 +13,15 @@ class SubmitterProcessor:
             return
 
         submitter = mapped_data["submitter"]
+
         self.insert(submitter)
 
     def insert(self, submitter: dict):
 
         columns = list(submitter.keys())
-        print("Columns:", columns)
-
         values = list(submitter.values())
+
+        print("Columns:", columns)
 
         column_string = ", ".join(columns)
         placeholder_string = ", ".join(["%s"] * len(values))
@@ -32,11 +33,18 @@ class SubmitterProcessor:
         VALUES (
             {placeholder_string}
         )
+        ON CONFLICT (submitter_id)
+        DO NOTHING
         """
 
-        cursor = self.conn.cursor(cursor_factory=RealDictCursor)
+        cursor = self.conn.cursor(
+            cursor_factory=RealDictCursor
+        )
+
         cursor.execute(query, values)
+
         self.conn.commit()
+
         cursor.close()
 
         print("submitter inserted successfully")

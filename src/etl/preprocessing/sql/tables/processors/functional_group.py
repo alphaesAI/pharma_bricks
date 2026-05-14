@@ -8,26 +8,19 @@ class FunctionalGroupProcessor:
 
     def process(self, mapped_data: dict):
 
-        # -----------------------------------
-        # isolate
-        # -----------------------------------
         if "functional_group" not in mapped_data:
             print("functional_group not found")
             return
 
         functional_group = mapped_data["functional_group"]
-
-        # -----------------------------------
-        # persist
-        # -----------------------------------
         self.insert(functional_group)
 
     def insert(self, functional_group: dict):
 
         columns = list(functional_group.keys())
-        values = list(functional_group.values())
-
         print("Columns:", columns)
+
+        values = list(functional_group.values())
 
         column_string = ", ".join(columns)
         placeholder_string = ", ".join(["%s"] * len(values))
@@ -39,18 +32,11 @@ class FunctionalGroupProcessor:
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (group_control_number)
-        DO NOTHING
         """
 
-        cursor = self.conn.cursor(
-            cursor_factory=RealDictCursor
-        )
-
+        cursor = self.conn.cursor(cursor_factory=RealDictCursor)
         cursor.execute(query, values)
-
         self.conn.commit()
-
         cursor.close()
 
         print("functional_group inserted successfully")

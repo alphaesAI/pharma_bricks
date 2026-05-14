@@ -1,7 +1,7 @@
 from psycopg2.extras import RealDictCursor
 
 
-class FunctionalGroupProcessor:
+class ServiceLineProcessor:
 
     def __init__(self, conn):
         self.conn = conn
@@ -11,21 +11,29 @@ class FunctionalGroupProcessor:
         # -----------------------------------
         # isolate
         # -----------------------------------
-        if "functional_group" not in mapped_data:
-            print("functional_group not found")
+        if "service_line" not in mapped_data:
+            print("service_line not found")
             return
 
-        functional_group = mapped_data["functional_group"]
+        service_line = mapped_data["service_line"]
+
+        # -----------------------------------
+        # inject foreign key
+        # -----------------------------------
+        if "claim" in mapped_data:
+            service_line["claim_number"] = (
+                mapped_data["claim"]["claim_number"]
+            )
 
         # -----------------------------------
         # persist
         # -----------------------------------
-        self.insert(functional_group)
+        self.insert(service_line)
 
-    def insert(self, functional_group: dict):
+    def insert(self, service_line: dict):
 
-        columns = list(functional_group.keys())
-        values = list(functional_group.values())
+        columns = list(service_line.keys())
+        values = list(service_line.values())
 
         print("Columns:", columns)
 
@@ -33,14 +41,13 @@ class FunctionalGroupProcessor:
         placeholder_string = ", ".join(["%s"] * len(values))
 
         query = f"""
-        INSERT INTO functional_group (
+        INSERT INTO service_line (
             {column_string}
         )
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (group_control_number)
-        DO NOTHING
+        ON CONFLICT DO NOTHING
         """
 
         cursor = self.conn.cursor(
@@ -53,4 +60,4 @@ class FunctionalGroupProcessor:
 
         cursor.close()
 
-        print("functional_group inserted successfully")
+        print("service_line inserted successfully")
