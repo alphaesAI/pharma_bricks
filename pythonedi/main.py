@@ -1,7 +1,7 @@
 from .parsers.edi_parser import EDIParser
 from .formatters.transaction_formatters import TransactionFormatter
 from .mappers.mappings.schema_mapper import ETLSchemaMapper
-from .tables import *
+from .tables.processors import *
 # from .consolidation import MedicalClaimHeaderProcessor
 # from .tables.subscriber.subscriber import SubscriberProcessor
 # from .tables.interchange.interchange import InterchangeProcessor
@@ -31,24 +31,24 @@ print("Mapped result:", result)
 
 conn = psycopg2.connect(
     host="localhost",
-    database="edi_pipeline",
+    database="edi",
     user="postgres",
     password="12345"
 )
 
-InterchangeProcessor(conn).process(result)
-FunctionalGroupProcessor(conn).process(result)
-TransactionHeaderProcessor(conn).process(result)
-SubmitterProcessor(conn).process(result)
-ReceiverProcessor(conn).process(result)
+# InterchangeProcessor(conn).process(result)
+# FunctionalGroupProcessor(conn).process(result)
+# TransactionHeaderProcessor(conn).process(result)
+# SubmitterProcessor(conn).process(result)
+# ReceiverProcessor(conn).process(result)
 BillingProviderProcessor(conn).process(result)
-RenderingProviderProcessor(conn).process(result)
+# RenderingProviderProcessor(conn).process(result)
 SubscriberProcessor(conn).process(result)
 PayerProcessor(conn).process(result)
 ClaimProcessor(conn).process(result)
-ClaimDatesProcessor(conn).process(result)
-DiagnosisProcessor(conn).process(result)
-ServiceLineProcessor(conn).process(result)
+# ClaimDatesProcessor(conn).process(result)
+# DiagnosisProcessor(conn).process(result)
+# ServiceLineProcessor(conn).process(result)
 
 # -----------------------------------
 # Consolidation Layer
