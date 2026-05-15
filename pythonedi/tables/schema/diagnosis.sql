@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS diagnosis (
 
     id SERIAL PRIMARY KEY,
 
-    claim_number VARCHAR(100),
+    claim_number VARCHAR(100) REFERENCES claim(claim_number),
 
     -- HI[0] – Principal Diagnosis (ICD-10-CM / ICD-9-CM)
     principal_diagnosis_type VARCHAR(10),
@@ -65,9 +65,5 @@ CREATE TABLE IF NOT EXISTS diagnosis (
     condition_code_type VARCHAR(10),
     condition_code VARCHAR(20),
 
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    CONSTRAINT fk_diagnosis_claim
-        FOREIGN KEY (claim_number)
-        REFERENCES claim(claim_number)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

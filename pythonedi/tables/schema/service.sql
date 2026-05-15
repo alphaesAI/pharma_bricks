@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS service_line (
 
     id SERIAL PRIMARY KEY,
 
-    claim_number VARCHAR(100),
+    claim_number VARCHAR(100) REFERENCES claim(claim_number),
 
     -- LX – Line Counter
     line_number VARCHAR(20),
@@ -103,9 +103,5 @@ CREATE TABLE IF NOT EXISTS service_line (
     line_policy_compliance_code VARCHAR(10),
     line_exception_code VARCHAR(10),
 
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    CONSTRAINT fk_service_line_claim
-        FOREIGN KEY (claim_number)
-        REFERENCES claim(claim_number)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

@@ -3,10 +3,10 @@ CREATE TABLE IF NOT EXISTS claim (
     claim_number VARCHAR(100) PRIMARY KEY,
 
     -- Foreign Keys
-    subscriber_id VARCHAR(100),
-    billing_provider_npi VARCHAR(100),
-    payer_id VARCHAR(100),
-    rendering_provider_npi VARCHAR(100),
+    subscriber_id VARCHAR(100) REFERENCES subscriber(subscriber_id),
+    billing_provider_npi VARCHAR(100) REFERENCES billing_provider(billing_provider_npi),
+    payer_id VARCHAR(100) REFERENCES payer(payer_id),
+    rendering_provider_npi VARCHAR(100) REFERENCES rendering_provider(rendering_provider_npi),
 
     -- CLM Segment
     total_charge_amount DECIMAL(18,2),

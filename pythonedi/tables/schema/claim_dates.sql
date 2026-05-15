@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS claim_dates (
 
     id SERIAL PRIMARY KEY,
 
-    claim_number VARCHAR(100),
+    claim_number VARCHAR(100) REFERENCES claim(claim_number),
 
     -- DTP[0] – Service Date (431)
     service_date_qualifier VARCHAR(10),
@@ -64,9 +64,5 @@ CREATE TABLE IF NOT EXISTS claim_dates (
     return_to_work_date_qualifier VARCHAR(10),
     return_to_work_date VARCHAR(25),
 
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    CONSTRAINT fk_claim_dates_claim
-        FOREIGN KEY (claim_number)
-        REFERENCES claim(claim_number)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

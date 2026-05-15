@@ -45,10 +45,10 @@ BillingProviderProcessor(conn).process(result)
 RenderingProviderProcessor(conn).process(result)
 SubscriberProcessor(conn).process(result)
 PayerProcessor(conn).process(result)
-ClaimProcessor(conn).process(result)
 ClaimDatesProcessor(conn).process(result)
 DiagnosisProcessor(conn).process(result)
 ServiceLineProcessor(conn).process(result)
+ClaimProcessor(conn).process(result)
 
 # -----------------------------------
 # Consolidation Layer
