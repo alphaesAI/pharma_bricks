@@ -41,14 +41,5 @@ CREATE TABLE IF NOT EXISTS claim (
     -- Metadata
     transaction_control_number VARCHAR(100),
 
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    -- Foreign Key Constraints
-    CONSTRAINT fk_claim_subscriber
-        FOREIGN KEY (subscriber_id)
-        REFERENCES subscriber(subscriber_id),
-
-    CONSTRAINT fk_claim_payer
-        FOREIGN KEY (payer_id)
-        REFERENCES payer(payer_id)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
