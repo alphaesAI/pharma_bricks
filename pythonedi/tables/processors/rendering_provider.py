@@ -47,7 +47,8 @@ class RenderingProviderProcessor:
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT DO NOTHING
+        ON CONFLICT (rendering_provider_npi) 
+        DO NOTHING
         """
 
         cursor = self.conn.cursor(

@@ -21,7 +21,7 @@ class ClaimProcessor:
             claim["subscriber_id"] = mapped_data["subscriber"]["subscriber_id"]
 
         if "billing_provider" in mapped_data:
-            claim["billing_provider_id"] = mapped_data["billing_provider"]["billing_provider_id"]
+            claim["billing_provider_id"] = mapped_data["billing_provider"]["billing_provider_npi"]
 
         if "payer" in mapped_data:
             claim["payer_id"] = mapped_data["payer"]["payer_id"]

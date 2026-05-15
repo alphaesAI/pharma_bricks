@@ -32,7 +32,7 @@ class BillingProviderProcessor:
         VALUES (
             {placeholder_string}
         )
-        ON CONFLICT (billing_provider_id)
+        ON CONFLICT (billing_provider_npi)
         DO NOTHING
         """
 

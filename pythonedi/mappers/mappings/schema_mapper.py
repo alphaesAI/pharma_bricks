@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 from pyedi import SchemaMapper
 from .mapping import MAPPING_DEFINITION
 
