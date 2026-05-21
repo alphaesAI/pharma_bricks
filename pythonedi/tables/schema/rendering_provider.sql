@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS rendering_provider (
 
     id SERIAL PRIMARY KEY,
 
-    claim_number VARCHAR(100) REFERENCES claim(claim_number),
+    claim_number VARCHAR(100),
 
     -- NM1 Segment
     entity_identifier_code VARCHAR(20),

@@ -21,9 +21,11 @@ class DiagnosisProcessor:
         # inject foreign key
         # -----------------------------------
         if "claim" in mapped_data:
-            diagnosis["claim_number"] = (
-                mapped_data["claim"]["claim_number"]
-            )
+            claim_val = mapped_data["claim"].get("claim_number")
+            if isinstance(claim_val, list):
+                diagnosis["claim_number"] = claim_val[0] if claim_val else None
+            else:
+                diagnosis["claim_number"] = claim_val
 
         # -----------------------------------
         # persist

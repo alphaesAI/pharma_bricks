@@ -21,9 +21,11 @@ class ServiceLineProcessor:
         # inject foreign key
         # -----------------------------------
         if "claim" in mapped_data:
-            service_line["claim_number"] = (
-                mapped_data["claim"]["claim_number"]
-            )
+            claim_val = mapped_data["claim"].get("claim_number")
+            if isinstance(claim_val, list):
+                service_line["claim_number"] = claim_val[0] if claim_val else None
+            else:
+                service_line["claim_number"] = claim_val
 
         # -----------------------------------
         # persist

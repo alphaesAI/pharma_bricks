@@ -18,19 +18,32 @@ class ClaimProcessor:
         claim = mapped_data["claim"]
 
         if "subscriber" in mapped_data:
-            claim["subscriber_id"] = mapped_data["subscriber"]["subscriber_id"]
+            claim["subscriber_id"] = mapped_data["subscriber"].get("subscriber_id")
 
         if "billing_provider" in mapped_data:
-            claim["billing_provider_id"] = mapped_data["billing_provider"]["billing_provider_npi"]
+            claim["billing_provider_id"] = mapped_data["billing_provider"].get("billing_provider_npi")
 
         if "payer" in mapped_data:
-            claim["payer_id"] = mapped_data["payer"]["payer_id"]
+            claim["payer_id"] = mapped_data["payer"].get("payer_id")
 
         # -----------------------------------
-        # persist
+        # persist (Handling single or multiple claims)
         # -----------------------------------
-
-        self.insert(claim)
+        claim_numbers = claim.get("claim_number")
+        if isinstance(claim_numbers, list):
+            num_claims = len(claim_numbers)
+            for i in range(num_claims):
+                single_claim = {}
+                for key, val in claim.items():
+                    if isinstance(val, list) and len(val) == num_claims:
+                        single_claim[key] = val[i]
+                    elif isinstance(val, list):
+                        single_claim[key] = val[i] if i < len(val) else None
+                    else:
+                        single_claim[key] = val
+                self.insert(single_claim)
+        else:
+            self.insert(claim)
 
     def insert(self, claim: dict):
 

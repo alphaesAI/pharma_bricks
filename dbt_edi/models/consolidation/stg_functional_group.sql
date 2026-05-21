@@ -14,7 +14,10 @@ renamed as (
         group_date,
         group_time,
         group_control_number,
+        responsible_agency_code,
         implementation_version,
+        transaction_set_count,
+        ge_control_number,
         created_at
 
     from source

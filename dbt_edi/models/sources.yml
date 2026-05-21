@@ -15,9 +15,5 @@ sources:
       - name: receiver
       - name: rendering_provider
       - name: service_line
-      - name: stg_billing_provider
-      - name: stg_claim
-      - name: stg_payer
-      - name: stg_subscriber
       - name: submitter
       - name: subscriber

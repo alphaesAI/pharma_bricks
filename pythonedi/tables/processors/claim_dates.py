@@ -21,9 +21,11 @@ class ClaimDatesProcessor:
         # inject foreign key
         # -----------------------------------
         if "claim" in mapped_data:
-            claim_dates["claim_number"] = (
-                mapped_data["claim"]["claim_number"]
-            )
+            claim_val = mapped_data["claim"].get("claim_number")
+            if isinstance(claim_val, list):
+                claim_dates["claim_number"] = claim_val[0] if claim_val else None
+            else:
+                claim_dates["claim_number"] = claim_val
 
         # -----------------------------------
         # persist
