@@ -1,0 +1,1 @@
+from .edi_mapping import MAPPING_DEFINITION
