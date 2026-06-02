@@ -5,7 +5,7 @@ from src.etl.preprocessing.mappings.csv_schema_mapper import CSVSchemaMapper
 from src.etl.preprocessing.mappings.csv_converter import CSVConverter
 
 
-def test_formatter():
+def main():
     # 1. Initialize our standard tools (Removed the redundant empty csv_converter initialization)
     parser = EDIParser()
     formatter = TransactionFormatter()
@@ -41,5 +41,8 @@ def test_formatter():
     print(json.dumps(claims_profile, indent=2))
 
 
+def fileprocessor():
+    pass
+
 if __name__ == "__main__":
-    test_formatter()
+    main()
