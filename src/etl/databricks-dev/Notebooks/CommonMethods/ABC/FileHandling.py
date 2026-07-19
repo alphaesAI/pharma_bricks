@@ -1,6 +1,6 @@
 # Databricks notebook source
 from pyspark.sql import DataFrame
-from pyspark.sql.functions import explode, col
+from pyspark.sql.functions import explode, col, lit
 from pyspark.sql.types import StructType, StructField, StringType
 
 # COMMAND ----------
@@ -45,19 +45,37 @@ def withoutHeader(file: str, validation: str, delimiter: str, textQualifier: str
 # DBTITLE 1,Method: DelimitedFile
 def delimitedFile(file: str, validation: str, header: str, delimiter: str, textQualifier: str) -> DataFrame:
   
+  # Read CSV with all columns first (let Spark infer structure)
+  df_raw = spark.read.format("csv") \
+      .option("header", header) \
+      .option("delimiter", delimiter) \
+      .option("quote", textQualifier) \
+      .option("inferSchema", "false") \
+      .load(file)
+  
+  # Drop TEMPLATE column if it exists
+  if "TEMPLATE" in df_raw.columns:
+    df_raw = df_raw.drop("TEMPLATE")
+  
+  # Filter out template marker rows (where first data column = "TEMPLATE")
+  first_col = df_raw.columns[0]
+  df_raw = df_raw.filter(col(first_col) != "TEMPLATE")
+  
+  # Load schema definition (excluding TEMPLATE)
   fullSchema = spark.read.format("json").option("multiline", "true").load(validation)
   parsedSchema = fullSchema.select(explode(col("columnNames"))).select(col("col.FieldName"), col("col.DataType")).filter(col("col.FieldName") != "TEMPLATE")
   
   schemHeader = [row[0].strip() for row in parsedSchema.select("FieldName").collect()]
-  fields = [StructField(fieldName, StringType(), nullable=True) for fieldName in schemHeader] 
-  schema = StructType(fields)
   
-  dfFile = spark.read.format("csv") \
-      .schema(schema) \
-      .option("header", header) \
-      .option("delimiter", delimiter) \
-      .option("quote", textQualifier) \
-      .load(file)
+  # Select columns in schema order (add missing columns as NULL)
+  select_exprs = []
+  for col_name in schemHeader:
+    if col_name in df_raw.columns:
+      select_exprs.append(col(col_name).cast(StringType()))
+    else:
+      select_exprs.append(lit(None).cast(StringType()).alias(col_name))
+  
+  dfFile = df_raw.select(select_exprs)
   
   return dfFile
 

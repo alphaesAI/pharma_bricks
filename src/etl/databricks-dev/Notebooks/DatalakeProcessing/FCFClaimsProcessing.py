@@ -42,7 +42,7 @@ from functools import reduce
 # COMMAND ----------
 
 # DBTITLE 1,Call SynJSONCreatorClass
-# MAGIC %run "../CommonMethods/ABC/SynJSONCreatorClass"
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/CommonMethods/ABC/SyncJSONCreatorClass"
 
 # COMMAND ----------
 
@@ -229,57 +229,92 @@ def deLinkClaims(df):
 # COMMAND ----------
 
 # DBTITLE 1,Get JobID
+# Get Job ID - Serverless compatible version
 ErrorMessage = ""
 doubleQuote = '"'
 
-# Replaces Scala context logic with official Databricks Java-Python Gateway interface 
-ctx = dbutils.notebook.entry_point.getDbutils().notebook().getContext()
-currentJobId = ctx.tags().get("jobId").getOrElse(lambda: "Undefined")
+try:
+    # Try to get job ID - works on classic clusters
+    ctx = dbutils.notebook.entry_point.getDbutils().notebook().getContext()
+    currentJobId = ctx.tags().get("jobId").getOrElse(lambda: "Undefined")
+except Exception:
+    # Serverless fallback - ctx.tags() is not whitelisted on Serverless
+    currentJobId = "Undefined"
 
 # COMMAND ----------
 
 # DBTITLE 1,File Structure Check, Create DataFrame, Write to Processed
-rJSON = synJSONCreator()
-
-ErrorMessage = ""
-
-rJSON.addBraceStart()
-rJSON.addNewEntry("CurrentJobId", currentJobId)
-
-dfFile = spark.createDataFrame([], StructType([]))
-
-try:
-    dfFile = createDF(FullFileName, SchemaFile, ColumnDelimiter)
+def process_fcf_claims(ClientId, FileId, FileLayoutId, FileLayoutDescription, 
+                       ColumnDelimiter, HasHeader, IgnoreHeader, textQualifier,
+                       FullFileName, SchemaFile, ProcessedPath):
+    """
+    Main FCF claims processing function that can be called directly.
+    Returns JSON string with processing results.
+    """
+    rJSON = synJSONCreator()
+    ErrorMessage = ""
+    doubleQuote = '"'
     
-    # Check if dataframe is not empty matching Scala's dfFile.rdd.isEmpty == false logic
-    if not dfFile.rdd.isEmpty():
-        dfFile = deLinkClaims(dfFile)
-        dfFile = dfFile \
-            .withColumn("GENERATED_CLAIMS_UNIQUE_KEY", concat(col("MA_LINE_CLAIM_NUM"), lit("-"), col("FILE_ID"), lit("-"), col("CLIENT_ID"))) \
-            .withColumn("GENERATED_GOLDEN_CLAIMS_UNIQUE_KEY", concat(col("MA_CLAIM_ID_ORIG"), lit("-"), col("FILE_LAYOUT_ID"), lit("-"), col("CLIENT_ID"))) \
-            .withColumn("LOAD_DATETIME", to_timestamp(current_timestamp(), "MM/dd/yyyy HH:mm:ss")) \
-            .withColumn("PARTITION_KEY", year(to_date(col("MA_LINE_SERVICE_FROM_DT"), "MM/dd/yyyy")))
-
-        dfFile.write \
-            .format("parquet") \
-            .mode("append") \
-            .partitionBy("PARTITION_KEY") \
-            .save(ProcessedPath)
+    # Get job ID - Serverless compatible
+    try:
+        ctx = dbutils.notebook.entry_point.getDbutils().notebook().getContext()
+        currentJobId = ctx.tags().get("jobId").getOrElse(lambda: "Undefined")
+    except Exception:
+        currentJobId = "Undefined"
+    
+    rJSON.addBraceStart()
+    rJSON.addNewEntry("CurrentJobId", currentJobId)
+    
+    dfFile = spark.createDataFrame([], StructType([]))
+    
+    try:
+        dfFile = createDF(FullFileName, SchemaFile, ColumnDelimiter)
         
-        rJSON.addNewEntry("Status", "SUCCESS")
-        rJSON.addNewEntry("ProcessedCount", str(dfFile.count()))
-        rJSON.addNewEntry("ErrorMessage", "", newLine=False) 
+        if len(dfFile.take(1)) > 0:
+            dfFile = deLinkClaims(dfFile)
+            dfFile = dfFile \
+                .withColumn("GENERATED_CLAIMS_UNIQUE_KEY", concat(col("MA_LINE_CLAIM_NUM"), lit("-"), col("FILE_ID"), lit("-"), col("CLIENT_ID"))) \
+                .withColumn("GENERATED_GOLDEN_CLAIMS_UNIQUE_KEY", concat(col("MA_CLAIM_ID_ORIG"), lit("-"), col("FILE_LAYOUT_ID"), lit("-"), col("CLIENT_ID"))) \
+                .withColumn("LOAD_DATETIME", to_timestamp(current_timestamp(), "MM/dd/yyyy HH:mm:ss")) \
+                .withColumn("PARTITION_KEY", year(to_date(col("MA_LINE_SERVICE_FROM_DT"), "MM/dd/yyyy")))
 
-except Exception as e:
-    clean_err = str(e).strip().replace(doubleQuote, "")
-    rJSON.addNewEntry("Status", "FAILED")
-    rJSON.addNewEntry("ProcessedCount", "0")
-    rJSON.addNewEntry("ErrorMessage", clean_err, newLine=False) 
+            dfFile.write \
+                .format("parquet") \
+                .mode("append") \
+                .partitionBy("PARTITION_KEY") \
+                .save(ProcessedPath)
+            
+            rJSON.addNewEntry("Status", "SUCCESS")
+            rJSON.addNewEntry("ProcessedCount", str(dfFile.count()))
+            rJSON.addNewEntry("ErrorMessage", "", newLine=False) 
 
-rJSON.addBraceEnd()
+    except Exception as e:
+        # Clean error message: remove quotes, newlines, and control characters that break JSON
+        clean_err = str(e).strip().replace(doubleQuote, "").replace("\n", " ").replace("\r", " ").replace("\t", " ")
+        rJSON.addNewEntry("Status", "FAILED")
+        rJSON.addNewEntry("ProcessedCount", "0")
+        rJSON.addNewEntry("ErrorMessage", clean_err, newLine=False) 
+
+    rJSON.addBraceEnd()
+    return rJSON.getJSON()
 
 # COMMAND ----------
 
-# DBTITLE 1,Add Processed Records Return
-returnVal = rJSON.getJSON()
-dbutils.notebook.exit(returnVal)
+# DBTITLE 0,Main Processing Function
+# When run as a standalone notebook, call the function with widget parameters
+# When loaded via %run, this cell is skipped (function is already in scope)
+if __name__ == '__main__':
+    returnVal = process_fcf_claims(
+        ClientId=ClientId,
+        FileId=FileId,
+        FileLayoutId=FileLayoutId,
+        FileLayoutDescription=FileLayoutDescription,
+        ColumnDelimiter=ColumnDelimiter,
+        HasHeader=HasHeader,
+        IgnoreHeader=IgnoreHeader,
+        textQualifier=textQualifier,
+        FullFileName=FullFileName,
+        SchemaFile=SchemaFile,
+        ProcessedPath=ProcessedPath
+    )
+    print(returnVal)

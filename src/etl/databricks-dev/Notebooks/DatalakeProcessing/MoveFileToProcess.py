@@ -34,13 +34,13 @@ ProcessedPath = dbutils.widgets.get("ProcessedPath")
 
 # COMMAND ----------
 
-# DBTITLE 1,Call SynJSONCreatorClass -  FIX BEFORE CHECK IN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# MAGIC %run "../CommonMethods/ABC/SynJSONCreatorClass"
+# DBTITLE 1,Call SynJSONCreatorClass
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/CommonMethods/ABC/SyncJSONCreatorClass"
 
 # COMMAND ----------
 
 # DBTITLE 1,Call FileHandling Notebook
-# MAGIC %run "../CommonMethods/ABC/FileHandling"
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/CommonMethods/ABC/FileHandling"
 
 # COMMAND ----------
 
@@ -51,59 +51,74 @@ from pyspark.sql.functions import lit, to_timestamp, current_timestamp
 ErrorMessage = ""
 doubleQuote = '"'
 
-# Replaces Scala context logic with official Databricks Java-Python Gateway interface
-ctx = dbutils.notebook.entry_point.getDbutils().notebook().getContext()
-currentJobId = ctx.tags().get("jobId").getOrElse(lambda: "Undefined")
+# Get job ID - Serverless compatible version
+try:
+    ctx = dbutils.notebook.entry_point.getDbutils().notebook().getContext()
+    currentJobId = ctx.tags().get("jobId").getOrElse(lambda: "Undefined")
+except Exception:
+    # Serverless fallback - ctx.tags() is not whitelisted on Serverless
+    currentJobId = "Undefined"
 
 # COMMAND ----------
 
 # DBTITLE 1,Copy Dataframe to Parquet Format and add FileID
-rJSON = synJSONCreator()
+def process_move_file(ClientId, FileId, FileLayoutId, FileLayoutDescription,
+                      ColumnDelimiter, HasHeader, IgnoreHeader, textQualifier,
+                      FullFileName, SchemaFile, ProcessedPath):
+    """
+    Main file move processing function that can be called directly.
+    Returns JSON string with processing results.
+    """
+    rJSON = synJSONCreator()
+    ErrorMessage = ""
+    doubleQuote = '"'
+    
+    # Get job ID - Serverless compatible
+    try:
+        ctx = dbutils.notebook.entry_point.getDbutils().notebook().getContext()
+        currentJobId = ctx.tags().get("jobId").getOrElse(lambda: "Undefined")
+    except Exception:
+        currentJobId = "Undefined"
+    
+    rJSON.addBraceStart()
+    rJSON.addNewEntry("CurrentJobId", currentJobId)
+    
+    dfFile = spark.createDataFrame([], StructType([]))
+    
+    try:
+        if IgnoreHeader == "False":
+            dfFile = delimitedFile(FullFileName, SchemaFile, HasHeader, ColumnDelimiter, textQualifier)
+        elif IgnoreHeader == "True" and HasHeader == "True":
+            dfFile = isIgnoreHeader(FullFileName, SchemaFile, ColumnDelimiter, textQualifier)
 
-ErrorMessage = ""
+        # Serverless-compatible empty check: use len(df.take(1)) instead of df.rdd.isEmpty()
+        if len(dfFile.take(1)) > 0:
+            filtered_cols = [col_name for col_name in dfFile.columns if not col_name.startswith("Filler_")]
+            dfFile = dfFile.select(filtered_cols)
+            
+            dfFile = dfFile.withColumn("FILE_ID", lit(FileId)) \
+                .withColumn("FILE_LAYOUT_ID", lit(FileLayoutId)) \
+                .withColumn("FILE_LAYOUT_DESCRIPTION", lit(FileLayoutDescription)) \
+                .withColumn("CLIENT_ID", lit(ClientId)) \
+                .withColumn("LOAD_DATETIME", to_timestamp(current_timestamp(), "MM/dd/yyyy HH:mm:ss"))
 
-rJSON.addBraceStart()
-rJSON.addNewEntry("CurrentJobId", currentJobId)
+            dfFile.write.format("parquet").mode("append").save(ProcessedPath)
 
-# Empty DataFrame initialisation matching sqlContext.emptyDataFrame
-dfFile = spark.createDataFrame([], StructType([]))
+            rJSON.addNewEntry("Status", "SUCCESS")
+            rJSON.addNewEntry("ProcessedCount", str(dfFile.count()))
+            rJSON.addNewEntry("ErrorMessage", "", newLine=False)
+        else:
+            # Empty DataFrame after filtering - not an error, just no data
+            rJSON.addNewEntry("Status", "SUCCESS")
+            rJSON.addNewEntry("ProcessedCount", "0")
+            rJSON.addNewEntry("ErrorMessage", "No records after filtering", newLine=False)
+            
+    except Exception as e:
+        # Clean error message: remove quotes, newlines, and control characters that break JSON
+        clean_err = str(e).strip().replace(doubleQuote, "").replace("\n", " ").replace("\r", " ").replace("\t", " ")
+        rJSON.addNewEntry("Status", "FAILED")
+        rJSON.addNewEntry("ProcessedCount", "0")
+        rJSON.addNewEntry("ErrorMessage", clean_err, newLine=False) 
 
-try:
-    # Routes parameters using your helper methods derived from FileHandling
-    if IgnoreHeader == "False":
-        dfFile = delimitedFile(FullFileName, SchemaFile, HasHeader, ColumnDelimiter, textQualifier)
-    elif IgnoreHeader == "True" and HasHeader == "True":
-        dfFile = isIgnoreHeader(FullFileName, SchemaFile, ColumnDelimiter, textQualifier)
-
-    if not dfFile.rdd.isEmpty():
-        # Cleanly filters out columns that start with "Filler_" mimicking Scala's dynamic map filter sequence
-        filtered_cols = [col_name for col_name in dfFile.columns if not col_name.startswith("Filler_")]
-        dfFile = dfFile.select(filtered_cols)
-        
-        # Add file based columns to df
-        dfFile = dfFile.withColumn("FILE_ID", lit(FileId)) \
-            .withColumn("FILE_LAYOUT_ID", lit(FileLayoutId)) \
-            .withColumn("FILE_LAYOUT_DESCRIPTION", lit(FileLayoutDescription)) \
-            .withColumn("CLIENT_ID", lit(ClientId)) \
-            .withColumn("LOAD_DATETIME", to_timestamp(current_timestamp(), "MM/dd/yyyy HH:mm:ss"))
-
-        # write dataframe to processed path
-        dfFile.write.format("parquet").mode("append").save(ProcessedPath)
-
-        rJSON.addNewEntry("Status", "SUCCESS")
-        rJSON.addNewEntry("ProcessedCount", str(dfFile.count()))
-        rJSON.addNewEntry("ErrorMessage", "", newLine=False) 
-        
-except Exception as e:
-    clean_err = str(e).strip().replace(doubleQuote, "")
-    rJSON.addNewEntry("Status", "FAILED")
-    rJSON.addNewEntry("ProcessedCount", "0")
-    rJSON.addNewEntry("ErrorMessage", clean_err, newLine=False) 
-
-rJSON.addBraceEnd()
-
-# COMMAND ----------
-
-# DBTITLE 1,Add Processed Records Return
-returnVal = rJSON.getJSON()
-dbutils.notebook.exit(returnVal)
+    rJSON.addBraceEnd()
+    return rJSON.getJSON()

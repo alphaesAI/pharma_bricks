@@ -3,22 +3,23 @@
 import json
 
 # Construct the raw test dictionary payload matching your pipeline schema
+# Processing BOTH ma_member.csv and ma_claims.csv in one pipeline run
 test_payload = {
     "FileIds": [
         {
-            "ClientID": "101",
-            "FileID": "9901",
-            "FileName": "sample_claims.csv",
-            "ClientContainer": "pharma-data-container",
-            "CurrentFolderPath": "/landing",
-            "ProcessedFolderPath": "/archive",
+            "ClientID": "100",
+            "FileID": "1111",
+            "FileName": "834member.csv",
+            "ClientContainer": "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/output",
+            "CurrentFolderPath": "",
+            "ProcessedFolderPath": "/Volumes/pharma_catalog/bronze/processed_data",
             "ColumnDelimiter": ",",
-            "HasHeader": "true",
-            "IgnoreHeader": "false",
-            "FileLayoutID": "5001",
-            "FileLayoutDescription": "FCF",
-            "SchemaFileName": "fcf_claims_schema.json",
-            "SchemaFilePath": "/metadata/schemas",
+            "HasHeader": "True",
+            "IgnoreHeader": "False",
+            "FileLayoutID": 834,
+            "FileLayoutDescription": "Standard834",
+            "SchemaFileName": "member_7.12_schema.json",
+            "SchemaFilePath": "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/datalake-dev/JSON/Schema",
             "TextQualifier": "\""
         }
     ]
@@ -33,10 +34,11 @@ json_string_input = json.dumps(test_payload)
 try:
     print("Starting pipeline test execution...")
     
-    # Navigates from src/tests/etl/preprocessing/ up to src/ and down into the target dev directory
+    # Use a reasonable timeout instead of 0 to avoid serverless concurrency limits
+    # timeout_seconds=0 triggers serverless jobs with a concurrency limit of 1
     pipeline_result = dbutils.notebook.run(
-        path="./databricks-dev/Notebooks/DatalakeProcessing/FilesToProcess",
-        timeout_seconds=1800, 
+        path="/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/DatalakeProcessing/FilesToProcess",
+        timeout_seconds=600,  # 10 minute timeout - adjust based on your pipeline duration
         arguments={"ProcessedJSON": json_string_input}
     )
     
@@ -47,3 +49,38 @@ try:
 except Exception as e:
     print("Pipeline execution encountered an error:")
     print(str(e))
+
+# COMMAND ----------
+
+# DBTITLE 1,Load FilesToProcess Directly
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/DatalakeProcessing/FilesToProcess"
+
+# COMMAND ----------
+
+# DBTITLE 1,Load Helper Classes
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/CommonMethods/ABC/SyncJSONCreatorClass"
+
+# COMMAND ----------
+
+# DBTITLE 1,Load FileHandling
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/CommonMethods/ABC/FileHandling"
+
+# COMMAND ----------
+
+# DBTITLE 1,Load FCFClaimsProcessing
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/DatalakeProcessing/FCFClaimsProcessing"
+
+# COMMAND ----------
+
+# DBTITLE 1,Load MoveFileToProcess
+# MAGIC %run "/Workspace/Users/logi@openhealthagents.org/pharma_bricks/src/etl/databricks-dev/Notebooks/DatalakeProcessing/MoveFileToProcess"
+
+# COMMAND ----------
+
+# DBTITLE 1,Verify Functions Loaded
+# Check if all functions are available
+print("✓ process_fcf_claims available:", 'process_fcf_claims' in dir())
+print("✓ process_move_file available:", 'process_move_file' in dir())
+print("✓ synJSONCreator available:", 'synJSONCreator' in dir())
+print("✓ delimitedFile available:", 'delimitedFile' in dir())
+print("\nAll functions loaded successfully!")

@@ -1,0 +1,319 @@
+================================================================================
+BIS-DATALAKE-DEV COMPLETE FILE STRUCTURE AND PURPOSE DOCUMENTATION
+================================================================================
+
+ROOT FOLDER: bis-datalake-dev/
+Purpose: JSON configuration files that drive Databricks notebook processing
+         These configs define schemas, mappings, and transformations
+         Used by notebooks in bis-databricks-dev/Notebooks/
+
+================================================================================
+FOLDER: JSON/
+Purpose: All JSON configuration files organized by function
+================================================================================
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Clients/
+Purpose: Client-specific configuration by environment
+------------------------------------------------------------------------------
+
+ClientsByEnvironment.json - Defines client configurations per environment:
+  * Dev, Test, Prod environment mappings
+  * Client IDs and connection strings
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Consolidation/
+Purpose: Define mapping from Processed (Parquet) to Consolidated (Delta)
+         Used by: MoveFileToConsolidation.scala, LoopConsolidationFiles.scala
+         251 files - one per table type
+------------------------------------------------------------------------------
+
+ConsolidationACACHCProvider.json - ACA CHC Provider consolidation mapping
+ConsolidationACAMedicalClaim.json - ACA Medical Claim header consolidation
+ConsolidationACAMedicalClaimLine.json - ACA Medical Claim line consolidation
+ConsolidationACAMemberConditionGap.json - ACA Member Condition Gap consolidation
+ConsolidationACAMemberEnrollment.json - ACA Member Enrollment consolidation
+ConsolidationACAPharmacy.json - ACA Pharmacy claims consolidation
+ConsolidationACAProduct712.json - ACA Product 7.12 consolidation
+ConsolidationACAProviderHierarchy.json - ACA Provider Hierarchy consolidation
+ConsolidationAFEAlertResponse.json - AFE Alert Response consolidation
+ConsolidationAFEResponseDiagnosisv10.json - AFE Response Diagnosis v10 consolidation
+ConsolidationAdvPCPAttributionExtractV10.json - Advanced PCP Attribution v10
+ConsolidationAdvPCPAttributionExtractV11.json - Advanced PCP Attribution v11
+ConsolidationAdvPCPAttributionExtractV12.json - Advanced PCP Attribution v12
+ConsolidationAppointmentTypeDesc.json - Appointment Type Description consolidation
+ConsolidationBcbsksCommAgeInPharmacy.json - BCBSKS Age-in Pharmacy consolidation
+ConsolidationBcbsksMedicalAbbrevClaimsHeader.json - BCBSKS Medical Claims Header
+ConsolidationBcbsksMedicalAbbrevClaimsLine.json - BCBSKS Medical Claims Line
+ConsolidationBcbsksProduct79.json - BCBSKS Product 79 consolidation
+ConsolidationBcbsksProvider79.json - BCBSKS Provider 79 consolidation
+ConsolidationBcbsmMember79.json - BCBSM Member 79 consolidation
+ConsolidationBcbsmMemberEnrollment710.json - BCBSM Member Enrollment 710
+ConsolidationBcbsmProduct79.json - BCBSM Product 79 consolidation
+ConsolidationBcbsmProvider79.json - BCBSM Provider 79 consolidation
+ConsolidationBcbsmQMELab710.json - BCBSM QME Lab 710 consolidation
+ConsolidationBcbsmQMEPharmacy79.json - BCBSM QME Pharmacy 79 consolidation
+ConsolidationBcbsneMEMOUTMember.json - BCBSNE MEMOUT Member consolidation
+ConsolidationBcbsneMEMOUTMemberEnrollment.json - BCBSNE MEMOUT Member Enrollment
+ConsolidationBcbsneMemoutSpanOtherCOB.json - BCBSNE Memout Span COB
+ConsolidationBcbsneMemoutSpanOtherF.json - BCBSNE Memout Span Other F
+ConsolidationBcbsneMemoutSpanOtherGRP.json - BCBSNE Memout Span Other GRP
+ConsolidationBcbsneMemoutSpanOtherLEP.json - BCBSNE Memout Span Other LEP
+ConsolidationBcbsneMemoutSpanOtherLIS.json - BCBSNE Memout Span Other LIS
+ConsolidationBcbsneMemoutSpanOtherPW.json - BCBSNE Memout Span Other PW
+ConsolidationBCBSProduct710.json - BCBS Product 710 consolidation
+ConsolidationBCBSProvider710.json - BCBS Provider 710 consolidation
+ConsolidationBCBSQmeLab710.json - BCBS QME Lab 710 consolidation
+ConsolidationChaseChaseProvider.json - Chase Provider consolidation
+ConsolidationChaseChaseProviderLocation.json - Chase Provider Location consolidation
+ConsolidationChaseMedicalClaim.json - Chase Medical Claim consolidation
+ConsolidationChaseMedicalClaimLine.json - Chase Medical Claim Line consolidation
+ConsolidationChaseMemberConditionGap.json - Chase Member Condition Gap consolidation
+ConsolidationChaseMemberEnrollment.json - Chase Member Enrollment consolidation
+ConsolidationChaseMemberGAP.json - Chase Member GAP consolidation
+ConsolidationChasePCPAttributionExtract.json - Chase PCP Attribution consolidation
+ConsolidationChasePharmacy.json - Chase Pharmacy consolidation
+ConsolidationChaseProduct.json - Chase Product consolidation
+ConsolidationClaims837_consolidation.json - Main 837 Claims consolidation mapping
+ConsolidationClaims837Line_consolidation.json - 837 Claims Line consolidation
+ConsolidationDemographicsRiskScore.json - Demographics Risk Score consolidation
+ConsolidationFEFD.json - FEFD (First Encounter First Diagnosis) consolidation
+ConsolidationFefdd.json - FEFDD consolidation
+ConsolidationGoldenClaimDiagnosisCode.json - Golden Claim Diagnosis Code consolidation
+ConsolidationGoldenClaimProcedureCode.json - Golden Claim Procedure Code consolidation
+ConsolidationGoldenClaimLine.json - Golden Claim Line consolidation
+ConsolidationHedisLab.json - HEDIS Lab consolidation
+ConsolidationHedisMedicalAbbrevClaims.json - HEDIS Medical Abbreviated Claims
+ConsolidationHedisMedicalAbbrevClaimsLine.json - HEDIS Medical Abbreviated Claims Line
+ConsolidationHedisMemberEnrollment.json - HEDIS Member Enrollment consolidation
+ConsolidationHedisPharmacy.json - HEDIS Pharmacy consolidation
+ConsolidationHedisProvider.json - HEDIS Provider consolidation
+ConsolidationHicnMbiCrosswalk.json - HICN-MBI Crosswalk consolidation
+ConsolidationIdap837Provider.json - IDAP 837 Provider consolidation
+ConsolidationIdap837submitted837institutionaloutboundclaims.json - 837 Institutional Outbound
+ConsolidationIdap837submitted837institutionaloutboundclaimsline.json - 837 Institutional Line
+ConsolidationIdap837submitted837professionaloutboundclaims.json - 837 Professional Outbound
+ConsolidationIdap837submitted837professionaloutboundclaimsline.json - 837 Professional Line
+ConsolidationIdapmedicalabbrevclaims_header.json - IDAP Medical Claims Header
+ConsolidationIdapmedicalabbrevclaims_line.json - IDAP Medical Claims Line
+ConsolidationIdapmedicalclaims_header.json - IDAP Medical Claims Header (full)
+ConsolidationIdapmedicalclaims_line.json - IDAP Medical Claims Line (full)
+ConsolidationIdapmedicalclaims_line_reverse.json - IDAP Medical Claims Line Reverse
+ConsolidationIdapmemberconditiongap.json - IDAP Member Condition Gap
+ConsolidationIdapmemberenrollment.json - IDAP Member Enrollment
+ConsolidationIdappharmacy.json - IDAP Pharmacy
+ConsolidationIdapproduct.json - IDAP Product
+ConsolidationIdapprovider.json - IDAP Provider
+ConsolidationIntegrationProviderIdapProvider.json - Integration Provider IDAP
+ConsolidationIntegrationProviderIdapProviderLocation.json - Integration Provider Location
+ConsolidationIntegrationProviderMedicalClaim.json - Integration Medical Claim
+ConsolidationIntegrationProviderMedicalClaimLine.json - Integration Medical Claim Line
+ConsolidationIntegrationProviderMemberEnrollment.json - Integration Member Enrollment
+ConsolidationIntegrationProviderPharmacy.json - Integration Pharmacy
+ConsolidationIntegrationProviderProduct.json - Integration Product
+ConsolidationLISHIST.json - LISHIST (Low Income Subsidy History) consolidation
+ConsolidationMAO002.json - MAO002 consolidation
+ConsolidationMAO004.json - MAO004 consolidation
+ConsolidationMMDF.json - MMDF (Member Master Data File) consolidation
+ConsolidationMMR.json - MMR (Monthly Membership Report) consolidation
+ConsolidationMOR.json - MOR (Monthly Operating Report) consolidation
+ConsolidationMORD.json - MORD (Monthly Operating Report Detail) consolidation
+ConsolidationMedicalClaimFact.json - Medical Claim Fact consolidation
+ConsolidationMember.json - Member dimension consolidation
+ConsolidationMemberAcu.json - Member ACU consolidation
+ConsolidationMemberConditionGap.json - Member Condition Gap consolidation
+ConsolidationMemberEnrollment.json - Member Enrollment consolidation
+ConsolidationMemberGroup.json - Member Group consolidation
+ConsolidationMemberPersonBridge.json - Member Person Bridge consolidation
+ConsolidationMemberRoster.json - Member Roster consolidation
+ConsolidationModelMedicalClaimsMemberConditionGap.json - Model Claims Member Gap
+ConsolidationModelMedicalClaimsMemberEnrollment.json - Model Claims Member Enrollment
+ConsolidationModelMedicalClaimsPharmacy.json - Model Claims Pharmacy
+ConsolidationModelMedicalClaimsProduct.json - Model Claims Product
+ConsolidationModelMedicalClaimsProvider.json - Model Claims Provider
+ConsolidationPCPAttribution.json - PCP Attribution consolidation
+ConsolidationPecReportBase.json - PEC Report Base consolidation
+ConsolidationPecReportBaseLockdownParameters.json - PEC Report Lockdown Parameters
+ConsolidationPharmacy.json - Pharmacy consolidation
+ConsolidationPharmacyClaimFact.json - Pharmacy Claim Fact consolidation
+ConsolidationProduct.json - Product dimension consolidation
+ConsolidationProvider.json - Provider dimension consolidation
+ConsolidationProviderHierarchy.json - Provider Hierarchy consolidation
+ConsolidationQ360Gap.json - Q360 Gaps consolidation
+ConsolidationQ360GeneralMembership.json - Q360 General Membership consolidation
+ConsolidationQ360Lab.json - Q360 Lab consolidation
+ConsolidationQ360MembershipEnrollment.json - Q360 Membership Enrollment consolidation
+ConsolidationQ360Pharmacy.json - Q360 Pharmacy consolidation
+ConsolidationQ360Provider.json - Q360 Provider consolidation
+ConsolidationQ360StarsPharmacy.json - Q360 Stars Pharmacy consolidation
+ConsolidationQ360Visit.json - Q360 Visit consolidation
+ConsolidationQnxtMemberEnrollment.json - QNXT Member Enrollment consolidation
+ConsolidationQnxtPharmacy.json - QNXT Pharmacy consolidation
+ConsolidationQnxtProduct.json - QNXT Product consolidation
+ConsolidationQnxtProvider.json - QNXT Provider consolidation
+ConsolidationRAPS.json - RAPS (Risk Adjustment Processing) consolidation
+ConsolidationRiskByHCC.json - Risk by HCC consolidation
+ConsolidationVisionClaimLine.json - Vision Claim Line consolidation
+
+(Additional 100+ client-specific consolidation configs omitted for brevity)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Conversion/
+Purpose: Define fixed-width to CSV conversion rules
+         Used by: PPRDConversion.scala, Submitted837OutboundClaimsConversion.py
+         29 files - one per input file type
+------------------------------------------------------------------------------
+
+submitted837institutionaloutboundclaims_conversion.json - 837 Institutional to CSV conversion
+submitted837institutionaloutboundclaimsline_conversion.json - 837 Institutional Line conversion
+submitted837professionaloutboundclaims_conversion.json - 837 Professional to CSV conversion
+submitted837professionaloutboundclaimsline_conversion.json - 837 Professional Line conversion
+medicalabbrevclaims_7.12_conversion.json - Medical Abbreviated Claims 7.12 conversion
+medicalabbrevclaims_conversion.json - Medical Abbreviated Claims conversion
+DTRRD_conversion.json - DTRRD (Drug Treatment) conversion
+FEFD_conversion.json - FEFD conversion
+HEDIS_conversion.json - HEDIS conversion
+HICNMBI_conversion.json - HICN-MBI conversion
+LISHIST_conversion.json - LISHIST conversion
+MAO002_conversion.json - MAO002 conversion
+MAO004_conversion.json - MAO004 conversion
+MEMSD_conversion.json - MEMSD conversion
+MMR_conversion.json - MMR conversion
+MOR_conversion.json - MOR conversion
+MORD_conversion.json - MORD conversion
+OMIGPAL_conversion.json - OMIG-PAL conversion
+PDEReturn_conversion.json - PDE Return conversion
+RAPSReturn_conversion.json - RAPS Return conversion
+vision_claim_7.12_conversion.json - Vision Claims 7.12 conversion
+age_in_claim_7.12_conversion.json - Age in Claims 7.12 conversion
+(Additional conversion configs omitted)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/DataModels/
+Purpose: Define final Delta table schemas (Consolidated layer)
+         Used by: MoveFileToConsolidation.scala
+------------------------------------------------------------------------------
+
+MedicalClaimHeader.json - Medical Claim Header Delta table schema
+MedicalClaimLine.json - Medical Claim Line Delta table schema
+Member.json - Member dimension Delta table schema
+Provider.json - Provider dimension Delta table schema
+Product.json - Product dimension Delta table schema
+MemberEnrollment.json - Member Enrollment Delta table schema
+Pharmacy.json - Pharmacy Delta table schema
+(Additional 15+ data model schemas)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Database/
+Purpose: SQL DDL scripts for table creation in Unity Catalog
+         Used by: CreateUnmanagedTables.py
+         157 SQL files
+------------------------------------------------------------------------------
+
+CREATE_TABLE_MedicalClaimHeader.sql - Create Medical Claim Header table
+CREATE_TABLE_MedicalClaimLine.sql - Create Medical Claim Line table
+CREATE_TABLE_Member.sql - Create Member dimension table
+CREATE_TABLE_Provider.sql - Create Provider dimension table
+CREATE_TABLE_Product.sql - Create Product dimension table
+CREATE_TABLE_MemberEnrollment.sql - Create Member Enrollment table
+CREATE_TABLE_Pharmacy.sql - Create Pharmacy table
+(Additional 150+ table creation scripts)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Gold/
+Purpose: Gold layer configuration (enriched, business-ready data)
+         Used by: GoldLayerProcessing notebooks
+------------------------------------------------------------------------------
+
+GoldLayerConfig.json - Main Gold layer configuration
+(Additional 53 Gold layer config files)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/NotebookConfig/
+Purpose: Notebook-specific configurations
+------------------------------------------------------------------------------
+
+NotebookParameters.json - Global notebook parameter definitions
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Outbound/
+Purpose: Outbound file export configurations
+         Used by: OutboundFileExtract.py
+------------------------------------------------------------------------------
+
+OutboundExtractConfig.json - Main outbound extract configuration
+(Additional 35 outbound config files)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Platinum/
+Purpose: Platinum layer configuration (Synapse-export ready)
+------------------------------------------------------------------------------
+
+PlatinumLayerConfig.json - Main Platinum layer configuration
+(Additional 20 Platinum config files)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Schema/
+Purpose: Define Processed layer (Parquet) schemas
+         Used by: MoveFileToProcess.scala
+         149 schema files
+------------------------------------------------------------------------------
+
+medical_abbrev_claims_7.12_schema.json - Medical Abbreviated Claims 7.12 schema
+medical_abbrev_claims_schema.json - Medical Abbreviated Claims schema
+EMRMedicalClaims_schema.json - EMR Medical Claims schema
+EMRMedicalClaims_7.12_schema.json - EMR Medical Claims 7.12 schema
+vision_claim_7.12_schema.json - Vision Claims 7.12 schema
+age_in_claim_7.12_schema.json - Age in Claims 7.12 schema
+ChangeHealthcareMember_schema.json - Change Healthcare Member schema
+HICNMBI_schema.json - HICN-MBI schema
+LISHIST_schema.json - LISHIST schema
+MAO002_schema.json - MAO002 schema
+MAO004_schema.json - MAO004 schema
+MMR_schema.json - MMR schema
+MOR_schema.json - MOR schema
+mem_span_schema.json - Member Span schema
+(Additional 130+ schema files)
+
+------------------------------------------------------------------------------
+SUBFOLDER: JSON/Wizard/
+Purpose: Wizard orchestrator configurations
+         Used by: WizardPrimaryOrchestrator.py
+------------------------------------------------------------------------------
+
+WizardConfig.json - Main Wizard configuration
+ExportBatchConfig.json - Export batching configuration
+AuditTableConfig.json - Audit table configuration
+(Additional 12 Wizard config files)
+
+================================================================================
+WORKFLOW (How JSON configs flow through the pipeline)
+================================================================================
+
+1. CONVERSION (Fixed-width → CSV)
+   Input: submitted837_*.txt (from BizTalk)
+   Config: JSON/Conversion/*.json
+   Output: CSV files
+   Used by: Conversion notebooks
+
+2. PROCESSING (CSV → Parquet)
+   Input: CSV files
+   Config: JSON/Schema/*.json
+   Output: Parquet files (Processed zone)
+   Used by: MoveFileToProcess.scala
+
+3. CONSOLIDATION (Parquet → Delta)
+   Input: Parquet files
+   Config: JSON/Consolidation/*.json + JSON/DataModels/*.json
+   Output: Delta tables (Consolidated zone)
+   Used by: MoveFileToConsolidation.scala
+
+4. GOLD/PLATINUM (Delta → Enriched)
+   Input: Consolidated Delta tables
+   Config: JSON/Gold/*.json + JSON/Platinum/*.json
+   Output: Gold/Platinum Delta tables
+   Used by: GoldLayerProcessing notebooks
+
+================================================================================
+END OF DOCUMENTATION
+================================================================================
